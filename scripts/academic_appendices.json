@@ -127,7 +127,7 @@
     "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
     "bullets": [
       "Doğrudan incelenen akademik metinler: Lazer et al. (2018), Vosoughi et al. (2018), Grinberg et al. (2019), Allen et al. (2020). Erişilebilir depo/yazar kopyaları kullanıldı.",
-      "Bibliyografik düzey: Allcott ve Gentzkow; Cohen; Earl ve arkadaşları; Leetaru ve Schrodt; Wardle ve Derakhshan. Tam metinleri bu oturumda incelenmedi.",
+      "Bibliyografik düzey: Allcott ve Gentzkow; Cohen; Leetaru ve Schrodt; Wardle ve Derakhshan. Tam metinleri bu oturumda incelenmedi.",
       "Wardle ve Derakhshan kavramsal çerçevesi Lazer et al. (2018) üzerinden aktarılır; bu ikincil erişim durumu metinde belirtilir.",
       "DOI bağlantıları verilir; yayıncı/Crossref alan adlarının çözümlemesi ortam ağ politikası nedeniyle doğrulanamadı. Kaynak türleri hakemlilik açısından ayrıldı.",
       "Birincil ampirik kanıt Meta CSV’sidir. Teknik belge ve konferans bildirisi hakemli dergi makalesi gibi sunulmaz."
@@ -145,7 +145,7 @@
     "title": "EK I · Harita ve fotoğraf künyesi",
     "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
     "bullets": [
-      "Ülke sınırları: Natural Earth 1:110m; ülke hedef etiketleri: Meta CSV. Sınırlar ve kent fotoğrafları ayrı veri katmanlarıdır.",
+      "Harita motoru: Leaflet 1.9.4. Çevrimiçi taban: OpenStreetMap standart döşemeleri, görünür katkıcı atfıyla. Döşeme erişimi yoksa Natural Earth 1:110m sınır katmanı kullanılır.",
       "Berlin/Potsdamer Platz, Londra/Adams Place Bridge, Venice Sunset: HDRI Haven / Poly Haven gerçek panoramaları; pmndrs/drei-assets kopyaları; CC0.",
       "Paris/Eiffel Kulesi: Wildo Coda (2018), eddyte/paris-photoblog galeri küçük resmi. Açık yeniden kullanım lisansı doğrulanmadı; CC0 denmez.",
       "Koordinatlar kent/yer işareti referanslarıdır. Kamera GPS konumu doğrulanmadı. Görseller olay anını, saldırı rotasını veya şehirde operasyonu göstermez."
@@ -153,10 +153,12 @@
     "notes": "Tam kaynak URL, lisans notu, işleme, koordinat temeli ve SHA-256 assets/locations/locations.json dosyasındadır. Animasyonlar tarihsel olay ilerleyişi veya canlı trafik değil, anlatım vurgusudur.",
     "seconds": 0,
     "citations": [
+      "leaflet",
+      "openstreetmap",
       "naturalearth",
       "meta2022"
     ],
-    "source": "Natural Earth, n.d.; Meta, 2022"
+    "source": "Agafonkin & Leaflet contributors, 2023; OpenStreetMap contributors, n.d.; Natural Earth, n.d.; Meta, 2022"
   },
   {
     "title": "EK J · Literatürden araştırma problemine",
@@ -182,99 +184,118 @@
     "title": "EK K1 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
-      "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. Journal of Economic Perspectives, 31(2), 211–236. https://doi.org/10.1257/jep.31.2.211",
-      "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. Science Advances, 6(14), Article eaay3539. https://doi.org/10.1126/sciadv.aay3539"
+      "Agafonkin, V., & Leaflet contributors. (2023). Leaflet (Version 1.9.4) [Computer software]. GitHub. https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4",
+      "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. Journal of Economic Perspectives, 31(2), 211–236. https://doi.org/10.1257/jep.31.2.211"
     ],
-    "notes": "Allcott & Gentzkow, 2017: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar Allen et al. (2020) kaynakça 1 ve Grinberg et al. (2019) kaynakça 8 ile karşılaştırıldı. DOI bağlantısı bu ortamda çözümlenmedi.\n\nAllen et al., 2020: Erişilebilir makale metni incelendi. Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı.",
+    "notes": "Agafonkin & Leaflet contributors, 2023: Sürüm dosyaları ve lisans indirildi. Leaflet 1.9.4 JavaScript/CSS yerel olarak gömülüdür. BSD-2-Clause lisans künyesi assets/vendor/LEAFLET_LICENSE.txt içinde korunur.\n\nAllcott & Gentzkow, 2017: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar Allen et al. (2020) kaynakça 1 ve Grinberg et al. (2019) kaynakça 8 ile karşılaştırıldı. DOI bağlantısı bu ortamda çözümlenmedi.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
-      "allcott2017",
-      "allen2020"
+      "leaflet",
+      "allcott2017"
     ],
     "reference_ids": [
-      "allcott2017",
-      "allen2020"
+      "leaflet",
+      "allcott2017"
     ]
   },
   {
     "title": "EK K2 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
-      "Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37–46. https://doi.org/10.1177/001316446002000104",
-      "Earl, J., Martin, A., McCarthy, J. D., & Soule, S. A. (2004). The use of newspaper data in the study of collective action. Annual Review of Sociology, 30, 65–80. https://doi.org/10.1146/annurev.soc.30.012703.110603"
+      "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. Science Advances, 6(14), Article eaay3539. https://doi.org/10.1126/sciadv.aay3539",
+      "Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37–46. https://doi.org/10.1177/001316446002000104"
     ],
-    "notes": "Cohen, 1960: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar CRAN irr paketinin kappa2.Rd belgesiyle karşılaştırıldı; DOI çözümlemesi yapılamadı.\n\nEarl et al., 2004: Bibliyografik bağlantı bulundu; tam metin incelenmedi. DOI bağlantısı erişilebilir ikincil bir araştırma önerisinde bulundu. Tam bibliyografik kayıt yayıncıdan bu oturumda doğrulanamadı; belirli alıntı veya ampirik sayı aktarılmadı.",
+    "notes": "Allen et al., 2020: Erişilebilir makale metni incelendi. Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı.\n\nCohen, 1960: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar CRAN irr paketinin kappa2.Rd belgesiyle karşılaştırıldı; DOI çözümlemesi yapılamadı.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
-      "cohen1960",
-      "earl2004"
+      "allen2020",
+      "cohen1960"
     ],
     "reference_ids": [
-      "cohen1960",
-      "earl2004"
+      "allen2020",
+      "cohen1960"
     ]
   },
   {
     "title": "EK K3 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
-      "GDELT Project. (2017). GDELT DOC 2.0 API debuts! https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
-      "Grinberg, N., Joseph, K., Friedland, L., Swire-Thompson, B., & Lazer, D. (2019). Fake news on Twitter during the 2016 U.S. presidential election. Science, 363(6425), 374–378. https://doi.org/10.1126/science.aau2706"
+      "GDELT Cloud. (n.d.). GDELT Cloud plugins [Technical documentation and software]. GitHub. https://github.com/gdelt-cloud/plugins",
+      "GDELT Project. (2017). GDELT DOC 2.0 API debuts! https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/"
     ],
-    "notes": "GDELT Project, 2017: Resmî bağlantı mevcut; canlı sayfaya erişilemedi. DOC sözleşmesi açık kaynak istemci koduyla karşılaştırıldı. Teknik işlev, hakemli yöntem doğrulaması veya başarılı veri indirmesi değildir.\n\nGrinberg et al., 2019: Erişilebilir makale metni incelendi. Makale metnindeki yazar, başlık, dergi ve DOI karşılaştırıldı. ABD/Twitter örneklemi Batı Avrupa etkisine genellenmedi.",
+    "notes": "GDELT Cloud, n.d.: Resmî GitHub teknik belgeleri indirildi ve incelendi. REST V2 uç noktası, Event/Story ürün ayrımı, filtreler, sayfalama ve kapsam ilkeleri incelendi. Belge erişimi, başarılı veri indirmesi veya anahtar geçerliliği değildir.\n\nGDELT Project, 2017: Resmî bağlantı mevcut; canlı sayfaya erişilemedi. DOC sözleşmesi açık kaynak istemci koduyla karşılaştırıldı. Teknik işlev, hakemli yöntem doğrulaması veya başarılı veri indirmesi değildir.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
-      "gdelt2017",
-      "grinberg2019"
+      "gdeltcloud",
+      "gdelt2017"
     ],
     "reference_ids": [
-      "gdelt2017",
-      "grinberg2019"
+      "gdeltcloud",
+      "gdelt2017"
     ]
   },
   {
     "title": "EK K4 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
-      "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. Science, 359(6380), 1094–1096. https://doi.org/10.1126/science.aao2998",
-      "Leetaru, K., & Schrodt, P. A. (2013, April). GDELT: Global data on events, location, and tone, 1979–2012 [Conference presentation]. International Studies Association Annual Convention, San Francisco, CA, United States. http://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf"
+      "Grinberg, N., Joseph, K., Friedland, L., Swire-Thompson, B., & Lazer, D. (2019). Fake news on Twitter during the 2016 U.S. presidential election. Science, 363(6425), 374–378. https://doi.org/10.1126/science.aau2706",
+      "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. Science, 359(6380), 1094–1096. https://doi.org/10.1126/science.aao2998"
     ],
-    "notes": "Lazer et al., 2018: Erişilebilir yazar sürümü incelendi. Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor.\n\nLeetaru & Schrodt, 2013: Bibliyografik başvuru; tam metin incelenmedi. GDELT’in tarihsel araştırma bağlamı için verilir. 2013 bildirisi DOC 2.0 veya Cloud REST V2 teknik sözleşmesinin kanıtı olarak kullanılmadı.",
+    "notes": "Grinberg et al., 2019: Erişilebilir makale metni incelendi. Makale metnindeki yazar, başlık, dergi ve DOI karşılaştırıldı. ABD/Twitter örneklemi Batı Avrupa etkisine genellenmedi.\n\nLazer et al., 2018: Erişilebilir yazar sürümü incelendi. Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
-      "lazer2018",
-      "leetaru2013"
+      "grinberg2019",
+      "lazer2018"
     ],
     "reference_ids": [
-      "lazer2018",
-      "leetaru2013"
+      "grinberg2019",
+      "lazer2018"
     ]
   },
   {
     "title": "EK K5 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
-      "Meta. (2022, September 27). 2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv [Data set]. GitHub. https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv",
-      "Natural Earth. (n.d.). Admin 0—Countries, 1:110m [Map]. https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/"
+      "Leetaru, K., & Schrodt, P. A. (2013, April). GDELT: Global data on events, location, and tone, 1979–2012 [Conference presentation]. International Studies Association Annual Convention, San Francisco, CA, United States. http://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf",
+      "Meta. (2022, September 27). 2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv [Data set]. GitHub. https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv"
     ],
-    "notes": "Meta, 2022: Ham veri indirildi, incelendi ve yeniden sayıldı. Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir.\n\nNatural Earth, n.d.: GeoJSON kopyası indirildi ve incelendi. nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir.",
+    "notes": "Leetaru & Schrodt, 2013: Bibliyografik başvuru; tam metin incelenmedi. GDELT’in tarihsel araştırma bağlamı için verilir. 2013 bildirisi DOC 2.0 veya Cloud REST V2 teknik sözleşmesinin kanıtı olarak kullanılmadı.\n\nMeta, 2022: Ham veri indirildi, incelendi ve yeniden sayıldı. Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
-      "meta2022",
-      "naturalearth"
+      "leetaru2013",
+      "meta2022"
     ],
     "reference_ids": [
-      "meta2022",
-      "naturalearth"
+      "leetaru2013",
+      "meta2022"
     ]
   },
   {
     "title": "EK K6 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Natural Earth. (n.d.). Admin 0—Countries, 1:110m [Map]. https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+      "OpenStreetMap contributors. (n.d.). OpenStreetMap [Map]. https://www.openstreetmap.org/copyright"
+    ],
+    "notes": "Natural Earth, n.d.: GeoJSON kopyası indirildi ve incelendi. nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir.\n\nOpenStreetMap contributors, n.d.: Standart döşeme uç noktası yapılandırıldı; canlı erişim ağ koşullarına bağlı. https://tile.openstreetmap.org/{z}/{x}/{y}.png kullanılır. Atıf haritada görünür. Döşeme erişimi başarısızsa Natural Earth sınır katmanı açıkça farklı etiketle gösterilir. OSM, IOC bulgularının kaynağı değildir.",
+    "seconds": 0,
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
+    "citations": [
+      "naturalearth",
+      "openstreetmap"
+    ],
+    "reference_ids": [
+      "naturalearth",
+      "openstreetmap"
+    ]
+  },
+  {
+    "title": "EK K7 · Kaynakça / APA 7",
     "kicker": "KAYNAKÇA / ALFABETİK SIRA",
     "bullets": [
       "Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. Science, 359(6380), 1146–1151. https://doi.org/10.1126/science.aap9559",
@@ -282,7 +303,7 @@
     ],
     "notes": "Vosoughi et al., 2018: Erişilebilir makale metni incelendi. Metin başlık, yazar ve DOI bilgisini içeriyor; nihai sayfalar Allen et al. (2020) kaynakçasıyla karşılaştırıldı. Yanlışlık, kasıt ve aktör atfı ayrıldı.\n\nWardle & Derakhshan, 2017: Bibliyografik kayıt karşılaştırıldı; özgün rapor incelenmedi. Yazar, başlık ve rapor numarası Lazer et al. (2018) kaynakça 1 ile karşılaştırıldı. Tanım aktarımı Lazer et al. üzerinden ikincil atıfla açıklandı.",
     "seconds": 0,
-    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "source": "APA 7 tam künyeler; kaynak türü ve erişim düzeyi ayrıca belirtilir.",
     "citations": [
       "vosoughi2018",
       "wardle2017"

@@ -1,5 +1,14 @@
 [
   {
+    "id": "leaflet",
+    "cite": "Agafonkin & Leaflet contributors, 2023",
+    "apa": "Agafonkin, V., & Leaflet contributors. (2023). <i>Leaflet</i> (Version 1.9.4) [Computer software]. GitHub.",
+    "url": "https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4",
+    "kind": "Harita yazılımı; hakemli yayın değil",
+    "access": "Sürüm dosyaları ve lisans indirildi",
+    "verification": "Leaflet 1.9.4 JavaScript/CSS yerel olarak gömülüdür. BSD-2-Clause lisans künyesi assets/vendor/LEAFLET_LICENSE.txt içinde korunur."
+  },
+  {
     "id": "allcott2017",
     "cite": "Allcott & Gentzkow, 2017",
     "apa": "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. <i>Journal of Economic Perspectives, 31</i>(2), 211–236.",
@@ -27,13 +36,13 @@
     "verification": "Başlık, yazar, yıl, cilt ve sayfalar CRAN irr paketinin kappa2.Rd belgesiyle karşılaştırıldı; DOI çözümlemesi yapılamadı."
   },
   {
-    "id": "earl2004",
-    "cite": "Earl et al., 2004",
-    "apa": "Earl, J., Martin, A., McCarthy, J. D., & Soule, S. A. (2004). The use of newspaper data in the study of collective action. <i>Annual Review of Sociology, 30</i>, 65–80.",
-    "url": "https://doi.org/10.1146/annurev.soc.30.012703.110603",
-    "kind": "Hakemli yöntem derlemesi",
-    "access": "Bibliyografik bağlantı bulundu; tam metin incelenmedi",
-    "verification": "DOI bağlantısı erişilebilir ikincil bir araştırma önerisinde bulundu. Tam bibliyografik kayıt yayıncıdan bu oturumda doğrulanamadı; belirli alıntı veya ampirik sayı aktarılmadı."
+    "id": "gdeltcloud",
+    "cite": "GDELT Cloud, n.d.",
+    "apa": "GDELT Cloud. (n.d.). <i>GDELT Cloud plugins</i> [Technical documentation and software]. GitHub.",
+    "url": "https://github.com/gdelt-cloud/plugins",
+    "kind": "Resmî teknik belge ve istemci iş akışları; hakemli makale değil",
+    "access": "Resmî GitHub teknik belgeleri indirildi ve incelendi",
+    "verification": "REST V2 uç noktası, Event/Story ürün ayrımı, filtreler, sayfalama ve kapsam ilkeleri incelendi. Belge erişimi, başarılı veri indirmesi veya anahtar geçerliliği değildir."
   },
   {
     "id": "gdelt2017",
@@ -88,6 +97,15 @@
     "kind": "Kartografik veri",
     "access": "GeoJSON kopyası indirildi ve incelendi",
     "verification": "nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir."
+  },
+  {
+    "id": "openstreetmap",
+    "cite": "OpenStreetMap contributors, n.d.",
+    "apa": "OpenStreetMap contributors. (n.d.). <i>OpenStreetMap</i> [Map].",
+    "url": "https://www.openstreetmap.org/copyright",
+    "kind": "İşbirlikli coğrafi veri ve taban haritası",
+    "access": "Standart döşeme uç noktası yapılandırıldı; canlı erişim ağ koşullarına bağlı",
+    "verification": "https://tile.openstreetmap.org/{z}/{x}/{y}.png kullanılır. Atıf haritada görünür. Döşeme erişimi başarısızsa Natural Earth sınır katmanı açıkça farklı etiketle gösterilir. OSM, IOC bulgularının kaynağı değildir."
   },
   {
     "id": "vosoughi2018",

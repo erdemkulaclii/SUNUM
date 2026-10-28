@@ -60,3 +60,8 @@ Her dosyanın kaynak URL'si, lisans açıklaması, işleme bilgisi ve SHA-256 de
 ## Akademik kaynakça ve erişim günlüğü
 
 APA 7 tam kaynakça: [output/APA7_KAYNAKCA.md](output/APA7_KAYNAKCA.md). Yayıncıya erişim, okunmuş yazar/depo kopyası ve bibliyografik karşılaştırma ayrı düzeylerdir: [AKADEMIK_KAYNAK_DENETIMI.md](AKADEMIK_KAYNAK_DENETIMI.md). Dört erişilebilir akademik metnin özgün yöntem dersleri araştırma dosyasına işlendi; ABD/Twitter bulguları Batı Avrupa etkisi olarak aktarılmadı.
+
+
+## Leaflet / OpenStreetMap
+
+Leaflet 1.9.4: https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4 . Lisans ve dosya özetleri assets/vendor/ içindedir. OpenStreetMap: https://www.openstreetmap.org/copyright . Standart döşemeler yalnız normal etkileşim sırasında istenir; toplu indirme yapılmaz. Canlı erişim yoksa kullanılan Natural Earth sınır katmanı ayrıca etiketlenir.

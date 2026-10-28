@@ -1,3 +1,5 @@
 *.pdf binary
 *.pptx binary
 *.docx binary
+# Preserve the exact upstream vendor bytes and their recorded checksums.
+assets/vendor/* -whitespace

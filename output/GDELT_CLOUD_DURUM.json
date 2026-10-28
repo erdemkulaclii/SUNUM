@@ -7,5 +7,7 @@
   "configuration_draft_saved": true,
   "requires_publish": true,
   "live_download_verified": false,
-  "synthetic_contract_tests_passed": 8
+  "synthetic_contract_tests_passed": 8,
+  "current_runtime_report": "GDELT_CLOUD_RUNTIME_STATUS.json",
+  "note": "Bu eski yönetilen ortam bağlaması kaydıdır. Verilen anahtarın özel sunucu yapılandırmasındaki güncel kullanım durumu ayrı rapordadır."
 }

@@ -1,12 +1,16 @@
-GÖRÜNMEZ CEPHE — AKADEMİK SUNUM
+GÖRÜNMEZ CEPHE — COĞRAFİ OSINT ARAŞTIRMASI
 
-1. SINEMATIK_SUNUM.html dosyasını Firefox/Chrome/Edge ile aç.
-2. F11 tam ekran; sağ/sol ok sahne; boşluk otomatik 15 dakikalık akış.
-3. “Araştırma dosyası · APA 7”: kaynakça, yöntem, savunma ve konuşma metni.
-4. GDELT güncel haber sorgusu açılışta otomatik çalışır. Elle bağlamak gerekmez.
-5. KONUSMA_METNI_15_DK.docx veya .pdf dosyasından prova yap.
+PROFESYONEL_SUNUM.html dosyasını Firefox/Chrome/Edge ile aç.
+F11 tam ekran. Sağ/sol ok: sahne. Boşluk: 15 dakikalık akış. N: konuşma metni.
+Kaynakça üst menüde ve ana sunumun son sahnesinde. Sonuç sondan bir önceki sahnede.
+35 slayt = 18 ana sahne + 17 ek. Akış planı 900 saniye; prova gerekir.
 
-34 slayt = 18 ana sahne + 16 ek. Ana akış planı 900 saniye; gerçek okuma süresi prova ile ölçülmelidir.
+Harita Leaflet + OpenStreetMap. İnternet/OSM erişimi yoksa etiketli Natural Earth sınır katmanı çalışır. Fotoğraflar coğrafi bağlamdır; şehirde operasyon kanıtı değildir.
 
-Gömülü gerçek IOC haritası internet olmadan çalışır. Canlı haber sorgusu internet/API erişimi ister. Bağlantı yoksa veri uydurulmaz; uygun eski API yanıtı varsa tarihi ve önbellek etiketiyle gösterilir.
-Güncel GDELT haber seçkisi 2022 tarihsel karşılaştırmasının yerine geçmez. 311, Meta’nın benzersiz alan adı göstergesidir; haber veya operasyon sayısı değildir.
+GDELT ücretsiz DOC sorgusu açılışta otomatik denenir. Anahtarlı GDELT Cloud için kök klasörde BASLAT.sh sunuculu sürümü açar; anahtar çalışma ortamında tutulur. GitHub/ZIP özel anahtarı içermez. API erişimi veya sunucu yoksa bu durum gizlenmez ve haber uydurulmaz.
+
+KONUSMA_METNI_15_DK.docx / .pdf: okunabilir konuşma metni.
+APA7_KAYNAKCA.pdf: 14 kaynak.
+AKADEMIK_ARASTIRMA_DOSYASI.pdf: soru, yöntem, savunma ve literatür.
+
+Sonuç: Bu 2022 listesinde 311 benzersiz alan adı göstergesinin 298’i Almanya hedefli etiketlidir (%95,8). Bu, bütün operasyonların dağılımı veya kamuoyu etkisi değildir. Güncel API seçkisi 2022 tarihsel karşılaştırmasının yerine geçmez.

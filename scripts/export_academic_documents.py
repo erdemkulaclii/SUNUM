@@ -10,14 +10,14 @@ from docx import Document
 from docx.shared import Pt,Cm,RGBColor
 R=Path(__file__).resolve().parents[1];O=R/'output'
 N=json.loads((R/'scripts/cinematic_narrative.json').read_text());A=json.loads((R/'scripts/academic_appendices.json').read_text());F=json.loads((R/'scripts/academic_references.json').read_text())
-for name,file in [('Body','DejaVuSans.ttf'),('BodyItalic','DejaVuSans-Oblique.ttf'),('BodyBold','DejaVuSans-Bold.ttf'),('Heading','DejaVuSerif.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
+for name,file in [('Body','DejaVuSans.ttf'),('BodyItalic','DejaVuSans-Oblique.ttf'),('BodyBold','DejaVuSans-Bold.ttf'),('Heading','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
 pdfmetrics.registerFontFamily('Body',normal='Body',italic='BodyItalic',bold='BodyBold',boldItalic='BodyItalic')
 styles={
- 'title':ParagraphStyle('title',fontName='Heading',fontSize=25,leading=32,textColor='#304732',spaceAfter=20),
- 'h':ParagraphStyle('h',fontName='Heading',fontSize=17,leading=23,textColor='#304732',spaceBefore=15,spaceAfter=12,keepWithNext=True),
- 'body':ParagraphStyle('body',fontName='Body',fontSize=11,leading=19,textColor='#334333',spaceAfter=12),
- 'small':ParagraphStyle('small',fontName='Body',fontSize=8.5,leading=14,textColor='#77735b',spaceAfter=10),
- 'apa':ParagraphStyle('apa',fontName='Body',fontSize=9.5,leading=19,leftIndent=18,firstLineIndent=-18,spaceAfter=14,textColor='#334333'),
+ 'title':ParagraphStyle('title',fontName='Heading',fontSize=25,leading=32,textColor='#14263a',spaceAfter=20),
+ 'h':ParagraphStyle('h',fontName='Heading',fontSize=17,leading=23,textColor='#14263a',spaceBefore=15,spaceAfter=12,keepWithNext=True),
+ 'body':ParagraphStyle('body',fontName='Body',fontSize=11,leading=19,textColor='#26384b',spaceAfter=12),
+ 'small':ParagraphStyle('small',fontName='Body',fontSize=8.5,leading=14,textColor='#64788c',spaceAfter=10),
+ 'apa':ParagraphStyle('apa',fontName='Body',fontSize=9.5,leading=19,leftIndent=18,firstLineIndent=-18,spaceAfter=14,textColor='#26384b'),
 }
 def para(t,style='body',markup=False):return Paragraph(t.replace('&','&amp;') if markup else html.escape(t),styles[style])
 def footer(c,d):
@@ -27,7 +27,7 @@ word=Document();section=word.sections[0];section.top_margin=Cm(2);section.bottom
 normal=word.styles['Normal'];normal.font.name='Calibri';normal.font.size=Pt(12);normal.paragraph_format.line_spacing=1.5
 word.core_properties.title='Görünmez Cephe — 15 dakikalık konuşma metni'
 word.add_heading('Görünmez Cephe',0);word.add_paragraph('15 dakikalık akademik sunum — doğrudan okunabilir konuşma metni')
-intro='18 ana sahne; planlanan toplam 900 saniye. Yaklaşık 1.554 sözcük. Gerçek süre konuşmacının hızına ve harita duraklamalarına bağlıdır; sunum öncesi prova yapılmalıdır. Köşeli sahne yönergeleri okunmaz. Güncel otomatik GDELT yanıtı, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.'
+intro='18 ana sahne; planlanan toplam 900 saniye. Yaklaşık 1559 sözcük. Gerçek süre konuşmacının hızına ve harita duraklamalarına bağlıdır; sunum öncesi prova yapılmalıdır. Köşeli sahne yönergeleri okunmaz. Güncel otomatik GDELT yanıtı, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.'
 word.add_paragraph(intro)
 flow=[para('Görünmez Cephe','title'),para('15 dakikalık akademik konuşma metni','h'),para(intro,'small')];elapsed=0
 for i,s in enumerate(N):

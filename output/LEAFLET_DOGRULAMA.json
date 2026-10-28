@@ -1,0 +1,31 @@
+{
+  "checks_passed": true,
+  "Leaflet": "1.9.4",
+  "core_scenes": 18,
+  "total_slides": 35,
+  "APA_references": 14,
+  "planned_seconds": 900,
+  "IOC_indicators": 311,
+  "actual_GDELT_network_verified": false,
+  "test_data": "SYNTHETIC FIXTURES ONLY; not in distributed presentation",
+  "checks": [
+    "true Leaflet map and OSM tile configuration",
+    "offline boundary fallback labelled",
+    "four geographic photo popups anchored to returned reference coordinates",
+    "country evidence counts",
+    "map pan preserves popup",
+    "source geography separate from IOC targets",
+    "Cloud Event only mapped when explicit valid coordinates returned",
+    "current query fixed UTC window",
+    "no-click DOC startup",
+    "unsafe URL rejection and deduplication",
+    "Cloud through same-origin server",
+    "cache retains original receipt and provenance",
+    "dedicated conclusion and bibliography scenes",
+    "all speech notes accessible",
+    "keyboard/autoplay/tour",
+    "mobile no horizontal overflow",
+    "offline retains 311 records"
+  ],
+  "javascript_errors": []
+}

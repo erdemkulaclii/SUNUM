@@ -1,0 +1,14 @@
+{
+  "provider": "GDELT Cloud",
+  "key_configured": true,
+  "checked_at": "2026-10-28T21:22:33.727176+00:00",
+  "query": {
+    "search": "Russian disinformation operations targeting Western Europe Doppelganger",
+    "date_start": "2026-10-21",
+    "date_end": "2026-10-27",
+    "limit": 10
+  },
+  "gateway_cache": false,
+  "status": "request_failed",
+  "message": "Proxy / ağ / TLS bağlantısı kurulamadı. Anahtarın geçerliliği henüz sınanamadı."
+}

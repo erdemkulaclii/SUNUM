@@ -25,19 +25,12 @@ for f in geo['features']:
 payload={'records':data,'features':features,'slides':slides,'narrative':narrative,'locations':locations,'references':references,
  'source':'https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv',
  'hash':json.loads((R/'output/veri_manifest.json').read_text())['files'][str(raw.relative_to(R))]['sha256']}
-template=(R/'scripts/interactive.html').read_text()
+template=(R/'scripts/professional.html').read_text()
 result=template.replace('__PAYLOAD__',json.dumps(payload,ensure_ascii=False).replace('</','<\\/'))
-result=result.replace('</head>','<style>'+(R/'scripts/editorial.css').read_text()+'</style></head>')
-result=result.replace('</body>','<script>'+(R/'scripts/editorial.js').read_text()+'</script></body>')
-result=result.replace('</body>','<script>'+(R/'scripts/editorial_story.js').read_text()+'</script></body>')
-result=result.replace('</head>','<style>'+(R/'scripts/cinematic.css').read_text()+'</style></head>')
-result=result.replace('</body>','<script>'+(R/'scripts/cinematic.js').read_text()+'</script></body>')
-result=result.replace('</head>','<style>'+(R/'scripts/academic.css').read_text()+'</style></head>')
-result=result.replace('</body>','<script>'+(R/'scripts/academic.js').read_text()+'</script></body>')
-result=result.replace('</body>','<script>'+(R/'scripts/automatic_gdelt.js').read_text()+'</script></body>')
-(R/'output/CANLI_HARITA.html').write_text(result,encoding='utf8')
-(R/'output/GORUNMEZ_CEPHE_ATLAS.html').write_text(result,encoding='utf8')
-(R/'output/SINEMATIK_SUNUM.html').write_text(result,encoding='utf8')
+result=result.replace('__LEAFLET_CSS__',(R/'assets/vendor/leaflet.css').read_text()).replace('__LEAFLET_JS__',re.sub(r'//# sourceMappingURL=.*','',(R/'assets/vendor/leaflet.js').read_text()))
+result=result.replace('__STYLE__',(R/'scripts/professional.css').read_text()).replace('__SCRIPT__',(R/'scripts/professional.js').read_text())
+for name in ['PROFESYONEL_SUNUM.html','CANLI_HARITA.html','GORUNMEZ_CEPHE_ATLAS.html','SINEMATIK_SUNUM.html']:
+ (R/'output'/name).write_text(result,encoding='utf8')
 notes=['# Görünmez Cephe — akademik konuşma metni','', f"18 ana sahne · 15 dakika · {len(appendices)} yöntem/kaynakça eki. Yaklaşık {sum(len(x['notes'].split()) for x in narrative)} sözcük; 104 sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.",'', 'Konum görselleri bağlamdır. Güncel otomatik GDELT yanıtı gelmesi, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.',''];elapsed=0
 for i,s in enumerate(slides):
  end=elapsed+s['seconds'];slot=f'{elapsed//60:02}:{elapsed%60:02}–{end//60:02}:{end%60:02}' if i<len(narrative) else 'Soru-cevap eki'
@@ -45,4 +38,4 @@ for i,s in enumerate(slides):
 notes.extend(['## APA 7 kaynakça','']+[re.sub('<[^>]+>','',r['apa'])+' '+r['url']+'\n' for r in references])
 (R/'output/KONUSMACI_NOTLARI.md').write_text('\n'.join(notes),encoding='utf8')
 (R/'output/APA7_KAYNAKCA.md').write_text('# APA 7 kaynakça\n\nAlfabetik sıra. Erişim türleri ve denetim sınırları AKADEMIK_KAYNAK_DENETIMI.md içindedir.\n\n'+'\n\n'.join(r['apa'].replace('<i>','*').replace('</i>','*')+' '+r['url'] for r in references),encoding='utf8')
-print('Offline cinematic atlas:',len(data),'unique indicators;',len(narrative),'timed scenes;',len(slides),'slides; 4 real context images.')
+print('Leaflet research presentation:',len(data),'unique indicators;',len(narrative),'timed scenes;',len(slides),'slides; 4 real context images.')

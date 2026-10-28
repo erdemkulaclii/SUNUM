@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-10-28T21:22:33.747616+00:00",
+  "server_health": {
+    "status": "ok",
+    "cloud_key_configured": true,
+    "cloud_endpoint": "https://gdeltcloud.com/api/v2",
+    "key_exposed": false
+  },
+  "private_configuration_served": false,
+  "cloud_status": "request_failed",
+  "cloud_key_configured": true,
+  "OSM_tile_status": "NETWORK_BLOCKED",
+  "OSM_error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+}

@@ -3,9 +3,12 @@
   "video_fps": 8,
   "video_seconds": 17.0,
   "gif_input_frames": 68,
-  "gif_frames": 67,
+  "gif_frames": 28,
   "gif_seconds": 17.0,
   "data_snapshot": "2022-09-27",
+  "map_engine": "Leaflet 1.9.4",
+  "export_basemap": "Natural Earth boundary fallback; OSM tile network access blocked",
+  "interactive_basemap": "OpenStreetMap when accessible",
   "interpretation": "Narrative camera tour with real geographic context images. Not historical event progression, live traffic, or operational routes.",
   "images": "assets/locations/locations.json"
 }

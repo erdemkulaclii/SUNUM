@@ -88,3 +88,11 @@ https://rm.coe.int/information-disorder-toward-an-interdisciplinary-framework-fo
   SHA-256: `7d0a4246c615e071bce73f2b1aa8876f09dd3677ea485ced2792cb552bd9f03e`. Araştırmaya yansıyan yöntem dersi: Veri kapsamı, temsil ve doğru payda belirleyicidir. Görünürlük veya tüketim ölçümü bile tek başına ikna etkisini çözmez.
 
 Ek bibliyografik dayanaklar: Cohen künyesi https://raw.githubusercontent.com/cran/irr/master/man/kappa2.Rd ; Earl DOI bağlantısının bulunduğu ikincil kayıt https://github.com/TechLabs-Berlin/project_proposals/issues/13 . Earl özgün yayın metni ve yayıncı künyesi bu oturumda karşılaştırılamadı.
+
+
+## 29 Ekim 2026 — Harita ve API sürümü
+
+Leaflet 1.9.4 kütüphanesi, CSS ve BSD-2-Clause lisansı resmî sürüm kaynaklarından indirildi; sürüm ve dosya özetleri assets/vendor/MANIFEST.json içinde. OpenStreetMap standart döşeme adresi kullanılır ve atıf gösterilir. Bu bulut ortamında gerçek döşeme isteği ağ/proxy aşamasında engellendi. Statik sunumlarda etiketli Natural Earth sınır katmanı kullanılır. Verilen GDELT Cloud anahtarı özel sunucu yapılandırmasıyla gerçek istekte kullanıldı; ağ erişimi kurulamadığından geçerliliği doğrulanmadı. Anahtar kaynakça, HTML, Git veya ZIP’e eklenmedi.
+
+
+Güncel kaynakçada GDELT Cloud resmî teknik belgeleri de APA künyesiyle yer alır. Yalnız ikincil bağlantısı bulunan Earl et al. (2004) güncel atıf listesinden çıkarıldı; yukarıdaki keşif kaydı tarihsel denetim izi olarak korunur.
