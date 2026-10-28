@@ -28,7 +28,7 @@ payload={'records':data,'features':features,'slides':slides,'narrative':narrativ
 template=(R/'scripts/professional.html').read_text()
 result=template.replace('__PAYLOAD__',json.dumps(payload,ensure_ascii=False).replace('</','<\\/'))
 result=result.replace('__LEAFLET_CSS__',(R/'assets/vendor/leaflet.css').read_text()).replace('__LEAFLET_JS__',re.sub(r'//# sourceMappingURL=.*','',(R/'assets/vendor/leaflet.js').read_text()))
-result=result.replace('__STYLE__',(R/'scripts/professional.css').read_text()).replace('__SCRIPT__',(R/'scripts/professional.js').read_text())
+result=result.replace('__STYLE__',(R/'scripts/professional.css').read_text()).replace('__SCRIPT__',(R/'scripts/basemap.js').read_text()+'\n'+(R/'scripts/professional.js').read_text())
 for name in ['PROFESYONEL_SUNUM.html','CANLI_HARITA.html','GORUNMEZ_CEPHE_ATLAS.html','SINEMATIK_SUNUM.html']:
  (R/'output'/name).write_text(result,encoding='utf8')
 notes=['# Görünmez Cephe — akademik konuşma metni','', f"18 ana sahne · 15 dakika · {len(appendices)} yöntem/kaynakça eki. Yaklaşık {sum(len(x['notes'].split()) for x in narrative)} sözcük; 104 sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.",'', 'Konum görselleri bağlamdır. Güncel otomatik GDELT yanıtı gelmesi, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.',''];elapsed=0

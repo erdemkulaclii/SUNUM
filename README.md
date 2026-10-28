@@ -6,15 +6,17 @@ Rusya bağlantılı olarak raporlanan bir ağın yayımlanmış alan adı göste
 
 ## Açılış
 
-`output/PROFESYONEL_SUNUM.html` tek dosya olarak Firefox/Chrome/Edge ile açılır. GitHub HTML’yi çalıştırmaz; dosyayı indirin. F11 tam ekran; sağ/sol ok sahne; boşluk 15 dakikalık akış; N o sahnenin konuşma metni. Kaynakça ve konuşma metni üst menüde, sonuç ve kaynakça ayrıca ana sunumun son iki sahnesindedir.
+`output/PROFESYONEL_SUNUM.html` dosyasına çift tıklayarak Firefox/Chrome/Edge ile açın. Bu doğrudan açılışta harita dosyanın içindeki Natural Earth verisini kullanır; OpenStreetMap’e döşeme isteği göndermez. Harita, ülke seçimi ve fotoğraflar internet olmadan çalışır. GitHub HTML’yi çalıştırmaz; dosyayı indirin. F11 tam ekran; sağ/sol ok sahne; boşluk 15 dakikalık akış; N o sahnenin konuşma metni. Kaynakça ve konuşma metni üst menüde, sonuç ve kaynakça ayrıca ana sunumun son iki sahnesindedir.
 
 **35 slayt:** 18 ana sahne, 17 yöntem/savunma/kaynakça eki. 900 saniye planlanan akıştır; gerçek konuşma süresi prova ile ölçülmelidir.
 
 ## Harita
 
-Harita motoru gerçek **Leaflet 1.9.4**; kütüphane ve lisansı dosyaya gömülüdür. Çevrimiçi taban **OpenStreetMap** standart döşemeleridir. Atıf haritada görünür. Ülke seçiminde gerçek enlem/boylama uçuş yapılır, fotoğraf penceresi coğrafi referansa bağlı kalır. Kaynak hedef ülkeleri ve GDELT kaynak coğrafyası ayrı katmanlardır.
+Harita motoru gerçek **Leaflet 1.9.4**; kütüphane ve lisansı dosyaya gömülüdür. Dosyaya çift tıklayarak açılan `file://` sürümü, gömülü **Natural Earth sınır haritasıyla** başlar. Ülke seçiminde gerçek enlem/boylama uçuş yapılır, fotoğraf penceresi coğrafi referansa bağlı kalır. Kaynak hedef ülkeleri ve GDELT kaynak coğrafyası ayrı katmanlardır.
 
-OSM erişimi olmazsa **Natural Earth sınır katmanı** kullanılır ve bu durum etiketlenir. Bu bulut ortamında OSM döşemeleri ağ politikasıyla engellendi; statik PDF/PPTX/video çıktıları bu açıkça etiketli sınır katmanıyla üretildi. Kendi tarayıcınızdaki internet erişimi çalışırsa OSM sokak/kent ayrıntıları yüklenir. Toplu döşeme indirmesi veya önceden önbellekleme yapılmaz.
+**OpenStreetMap sokak/kent ayrıntıları için** kök klasörde `BASLAT.sh` çalıştırılabilir. Bu sunuculu HTTP sürümü, tarayıcının normal Referer bilgisiyle OSM standart döşemelerini ister. Erişimin kabul edilmesi OSM ve ağ koşullarına bağlıdır. Döşeme görüntülenmeden önce HTTP durumu ve görüntü içerik türü denetlenir. 403 veya başka bir erişim hatası gelirse çevrimiçi katman tamamen kaldırılır ve gömülü harita gösterilir; hata görselleri haritanın üzerine dizilmez. Haritada hangi tabanın kullanıldığı yazılıdır.
+
+Ekrandaki eski “403 Access blocked” sorunu, reddedilmiş bir görüntünün yüklenmiş harita sanılmasından kaynaklanıyordu. Dosya açılışında OSM isteği göndermemek ve HTTP sürümünde yanıtı görüntülemeden denetlemek bu iki durumu ayırır. Başka sağlayıcıya veya aynaya geçerek erişim engeli aşılmaya çalışılmaz. Toplu döşeme indirmesi veya önceden önbellekleme yapılmaz. Bu bulut ortamında OSM erişimi engelli olduğundan statik PDF/PPTX/video çıktıları da etiketli gömülü sınır haritasıyla üretildi.
 
 Kent işaretleri, fotoğrafların yer/kent referanslarıdır; kamera GPS veya operasyon konumu değildir. IOC verisi hedef ülke düzeyindedir. Fotoğraf kaynakları, lisanslar ve SHA-256: [konum künyesi](assets/locations/locations.json). Paris küçük resminin açık yeniden kullanım lisansı doğrulanmadı; CC0 diye etiketlenmez.
 
@@ -28,7 +30,7 @@ Sunucu en fazla 10 Event adayı içeren bir sayfa ister; pencere son 7 tamamlanm
 
 Cloud sunucusu yoksa HTML ücretsiz **GDELT Project DOC 2.0** sorgusunu otomatik dener. Bu ayrı ürün anahtar gerektirmez. Son 30 günlük pencere UTC başlangıç/bitiş zamanlarıyla sabitlenir; en fazla 250 haber URL’si gelir. Kaynak ülke operasyon hedefi değildir. Önbellek özgün alım tarihiyle etiketlenir. Başarısız veya boş yanıttan gözlem uydurulmaz.
 
-Mevcut bulut ortamının GDELT/OSM ağ izinleri henüz uygulanmış değil. Gerekli alan adları ve sunucu başlangıç talimatı ortam yapılandırma taslağına kaydedildi. Taslağın kaydedilmesi, çalışan ortamın ağ erişiminin açıldığı anlamına gelmez.
+Mevcut bulut ortamının GDELT/OSM ağ izinleri henüz uygulanmış değil. Gerekli alan adları ve sunucu başlangıç talimatı ortam yapılandırma taslağına kaydedildi. Taslağın kaydedilmesi, çalışan ortamın ağ erişiminin açıldığı anlamına gelmez. Harita döşemelerinin düzeltilmesi, GDELT Cloud anahtarını veya canlı veri erişimini doğrulamaz; bunların bağlantı durumları ayrı tutulur.
 
 ## Araştırma ve sonuç
 

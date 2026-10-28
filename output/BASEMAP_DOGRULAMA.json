@@ -1,0 +1,17 @@
+{
+  "automated_checks_passed": true,
+  "test_responses": "SYNTHETIC FIXTURES ONLY; no map screenshots or scientific observations generated",
+  "file_navigation": "blocked_by_chromium_enterprise_policy",
+  "non_http_branch_verified_via_about_blank": true,
+  "live_OSM_verified": false,
+  "checked_at_utc": "2026-10-28T21:50:22.336425+00:00",
+  "outcomes": [
+    "about:blank embedded map: no OSM requests; Germany evidence and anchor intact",
+    "file:// navigation: blocked by Chromium enterprise policy; about:blank behavior verified separately",
+    "403 decodable PNG: removed and correctly labelled as fallback",
+    "200 HTML error: removed and correctly labelled as fallback",
+    "200 invalid PNG: removed and correctly labelled as fallback",
+    "network failure: clean embedded fallback",
+    "valid PNG -> later 403: online state revoked and all raster tiles removed"
+  ]
+}
