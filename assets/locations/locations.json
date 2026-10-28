@@ -1,0 +1,74 @@
+{
+  "Germany": {
+    "city": "Berlin",
+    "place": "Potsdamer Platz",
+    "coordinates": [
+      13.3761,
+      52.5096
+    ],
+    "image": "berlin_panorama.jpg",
+    "kind": "Gerçek 360° panorama",
+    "credit": "HDRI Haven / Poly Haven; kopya: pmndrs/drei-assets",
+    "source": "https://polyhaven.com/a/potsdamer_platz",
+    "download": "https://raw.githubusercontent.com/pmndrs/drei-assets/master/hdri/potsdamer_platz_1k.hdr",
+    "license": "CC0 (HDRI Haven / Poly Haven)",
+    "coordinate_basis": "Potsdamer Platz yer işareti referansı; fotoğrafın kamera GPS konumu doğrulanmadı.",
+    "sha256": "48809a7881e276df0d9927880ead4b96b05fcea763ba30aef23fd3cd19a8d010",
+    "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
+    "processing": "Radiance HDR panorama converted to display JPEG"
+  },
+  "UK": {
+    "city": "Londra",
+    "place": "Adams Place Bridge",
+    "coordinates": [
+      -0.0192,
+      51.506
+    ],
+    "image": "london_panorama.jpg",
+    "kind": "Gerçek 360° panorama",
+    "credit": "HDRI Haven / Poly Haven; kopya: pmndrs/drei-assets",
+    "source": "https://polyhaven.com/a/adams_place_bridge",
+    "download": "https://raw.githubusercontent.com/pmndrs/drei-assets/master/hdri/adams_place_bridge_1k.hdr",
+    "license": "CC0 (HDRI Haven / Poly Haven)",
+    "coordinate_basis": "Canary Wharf / köprü için yaklaşık yer işareti referansı; kamera GPS konumu doğrulanmadı.",
+    "sha256": "07767155660f53c1bcf5d7b05dab1d70a3bba1eb7409f48fbc980c73531e317c",
+    "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
+    "processing": "Radiance HDR panorama converted to display JPEG"
+  },
+  "France": {
+    "city": "Paris",
+    "place": "Eiffel Kulesi",
+    "coordinates": [
+      2.2945,
+      48.8584
+    ],
+    "image": "paris.jpg",
+    "kind": "Gerçek fotoğraf · kaynak galeri küçük resmi",
+    "credit": "Wildo Coda, Paris photoblog (2018); eddyte/paris-photoblog",
+    "source": "https://github.com/eddyte/paris-photoblog/blob/dev/gallerie.html",
+    "download": "https://raw.githubusercontent.com/eddyte/paris-photoblog/dev/images/toureiffelmini.jpg",
+    "license": "Kaynak © 2018 Wildo Coda; açık yeniden kullanım lisansı belirtilmiyor. CC0 değildir.",
+    "coordinate_basis": "Eiffel Kulesi yer işareti referansı; fotoğrafın kamera GPS konumu doğrulanmadı.",
+    "sha256": "8f2dd8c7f5195ef3108ca7207110ed4e41ddea0c6cae38fd3aad3aa4f8a8f630",
+    "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
+    "processing": "Original small gallery preview; no generative editing"
+  },
+  "Italy": {
+    "city": "Venedik",
+    "place": "Lagün kıyısı · Venice Sunset",
+    "coordinates": [
+      12.36,
+      45.4298
+    ],
+    "image": "venice_panorama.jpg",
+    "kind": "Gerçek 360° panorama",
+    "credit": "HDRI Haven / Poly Haven; kopya: pmndrs/drei-assets",
+    "source": "https://polyhaven.com/a/venice_sunset",
+    "download": "https://raw.githubusercontent.com/pmndrs/drei-assets/master/hdri/venice_sunset_1k.hdr",
+    "license": "CC0 (HDRI Haven / Poly Haven)",
+    "coordinate_basis": "Venedik doğu kıyısı için yaklaşık kent referansı; kamera GPS konumu doğrulanmadı.",
+    "sha256": "1b02f0d39b76e818d422858be218a4b7305e0d8eb42728a97e22b8c53c66c9d1",
+    "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
+    "processing": "Radiance HDR panorama converted to display JPEG"
+  }
+}

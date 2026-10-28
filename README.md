@@ -6,7 +6,7 @@ GitHub, HTML sunumunu doğrudan çalıştırmaz. Atlas dosyasını **Download ra
 
 Türkçe, akademik, 15 dakikalık sunum paketi. **Bu sürüm tamamlanmış GDELT araştırması değildir.** Gerçek Meta gösterge verisinden üretilmiş vaka analizi ve GDELT araştırma tasarımıdır. Ağ erişimi açılmadan GDELT sonucu üretilmemiştir.
 
-## Son sürüm: Editoryal atlas + gerçek GDELT bağlantısı
+## Son sürüm: Sinematik konum dosyaları ve 18 sahnelik anlatı
 
 Öncelikle `output/GORUNMEZ_CEPHE_ATLAS.html` dosyasını açın. Yeni baskıda kâğıt tonları, serif başlıklar, kaynak gösteren harita, veri temizleme ve kanıt zinciri diyagramları kullanılır. Güncel PowerPoint/PDF: `output/ATLAS_SUNUMU.pptx` ve `output/ATLAS_SUNUMU.pdf`. Eski sürümler arşiv için korunmuştur.
 
@@ -16,6 +16,18 @@ Gerçek API yanıtı geldiğinde haber URL’leri tekilleştirilir; kaynak ülke
 
 Detaylar: `output/GDELT_API_REHBERI.md`.
 
+## Sinematik sunum
+
+Önce [SINEMATIK_SUNUM.html](output/SINEMATIK_SUNUM.html) dosyasını indirip Chrome/Edge ile açın. [PowerPoint](output/SINEMATIK_SUNUM.pptx), [PDF](output/SINEMATIK_SUNUM.pdf) ve [17 saniyelik harita turu](output/HARITA_TURU.mp4) aynı anlatımı tamamlar. 18 ana sahne, 8 ek; konuşmacı zaman planı tam 900 saniyedir.
+
+Ülke seçildiğinde kamera gerçek bir yer/kent referansına yaklaşır. Fotoğraf kartı, SVG coğrafi işaretine bağlı kalır; sürükleme, yakınlaşma ve ekran boyutu değişiminde bağlantı çizgisi yeniden hesaplanır. Berlin/Potsdamer Platz, Londra/Adams Place Bridge, Paris/Eiffel Kulesi ve Venedik kıyısı için gerçek arşiv görselleri gömülüdür. “Ülke turu” 4 dosyayı sırayla açar. Sinematik ve açık atlas görünümleri arasında geçilebilir; azaltılmış hareket tercihleri korunur.
+
+**Coğrafi kesinlik:** Koordinatlar yer işareti/kent referansıdır; kamera GPS konumu doğrulanmış değildir. Fotoğraflar operasyon anını veya operasyonun şehirde gerçekleştiğini göstermez. IOC verisi hedef ülke düzeyindedir. Künye, kaynak URL, işleme, lisans açıklaması ve SHA-256: [assets/locations/locations.json](assets/locations/locations.json). Paris görseli açık lisanslı diye etiketlenmez; kaynak galerinin küçük resmi ve telif künyesi korunur.
+
+PowerPoint 26 slaytta yumuşak geçiş içerir; 6. slaytta döngüsel harita animasyonu bulunur. PowerPoint masaüstü oynatma davranışı bu ortamda test edilemedi; en kapsamlı etkileşim HTML sürümündedir. PDF statiktir. Video, tarihsel bir olay zaman çizelgesi veya gerçek zamanlı trafik değildir.
+
+Yeniden üretim: `python scripts/prepare_location_assets.py`, `python scripts/build_interactive.py`, `python scripts/render_cinematic_tour.py`, `python scripts/export_editorial.py`. Tarayıcı çıktısı ve video için Chromium/Playwright ile ffmpeg gerekir. Hazır yerel JPEG varlıkları zaten depoda olduğundan yeniden indirme gerekmez. `python scripts/verify_cinematic.py`, fotoğrafın coğrafi işaretine piksel hizası, kanıt filtreleri, 18 sahne/900 saniye, mobil yerleşim ve sıfır başlangıç ağ isteğini denetler.
+
 ## Etkileşimli atlasın kullanımı
 
 **Önerilen dosya: `output/CANLI_HARITA.html`.** İndirip Chrome veya Edge ile açın. Harita, veri, tasarım ve kod tek dosyada gömülüdür. İnternet veya sunucu gerektirmez. Başlangıçta dış ağ isteği yapılmaz. Kaynak bağlantıları ve yeni GDELT veri getirme düğmesi, kullanıcı tıkladığında ilgili dış servise bağlanır.
@@ -24,7 +36,7 @@ Detaylar: `output/GDELT_API_REHBERI.md`.
 - “Kanıt kayıtlarını incele”: kaynak satırlarını arayın, ülke filtresi uygulayın, filtrelenmiş CSV indirin.
 - Haritayı sürükleyin; + / − ile yakınlaşın. Konum simgesi görünümü sıfırlar.
 - “Tüm hedef etiketleri”: Letonya ve Ukrayna da görünür. Çoklu hedef kaydı yapay bir konuma atanmaz.
-- Ok tuşları: 14 anlatım sahnesi. Boşluk / oynat: toplam 15 dakikalık zamanlı ilerleme. Bu ilerleme veri zaman serisi değildir.
+- Ok tuşları: 18 anlatım sahnesi. Boşluk / oynat: toplam 15 dakikalık zamanlı ilerleme. Bu ilerleme veri zaman serisi değildir.
 - “Sunum modu”: uygun tarayıcıda tam ekran. Escape ile çıkın. N ile konuşmacı notlarını açın.
 - “Hareket açık/kapalı”: dekoratif ışıma ve geçişleri kapatır. Sisteminizin azaltılmış hareket tercihi de desteklenir.
 - Alttaki 311 kare, 311 gerçek benzersiz alan adını temsil eder. Kareler coğrafi konum değildir.

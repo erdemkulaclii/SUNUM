@@ -1,129 +1,159 @@
-# Konuşmacı metni — 15 dakika
+# Görünmez Cephe — sinematik sunum konuşma metni
 
-Durum: Gerçek Meta IOC verisi analiz edildi; GDELT sonuçları henüz elde edilmedi. Bu not, sunumda korunmalıdır.
+18 ana sahne · 15 dakika · 8 soru-cevap eki. Konum görselleri yalnızca bağlamdır; GDELT canlı sonuçları henüz elde edilmedi.
 
-## 1. Hibrit savaşın görünmez cephesi · 00:00–00:40
+## 1. Hibrit savaşın görünmez cephesi. · 00:00–00:40
 
-Bugün görünmez cepheyi, yani haber ve platform ağlarında dolaşıma giren etki operasyonlarını tartışacağım. Temel sorum, Rusya bağlantılı olarak raporlanan ağların Batı Avrupa yönelimini coğrafi olarak nasıl inceleyebileceğimiz. Burada iki farklı kanıt türünü ayırıyorum: Meta tarafından yayımlanmış somut alan adı göstergeleri ve bu vakaların haberlerdeki görünürlüğünü ölçmek için tasarlanan GDELT katmanı. İlk katman gerçek verilerden hesaplandı. GDELT katmanı ağ erişimi nedeniyle henüz indirilmedi. Bu nedenle sunum, tamamlanmış bir GDELT bulgu raporu olarak değil, doğrulanabilir vaka analizi ve uygulanabilir araştırma tasarımı olarak okunmalıdır.
+Sunuma kısa bir soruyla başla: Bir haber bağlantısı tanıdık bir markaya benziyorsa, onu açmadan önce adresin hangi bölümüne bakarsınız? İki saniye bekle. Ardından çalışmanın başlığını söyle: Hibrit Savaşın Görünmez Cephesi. Bu sunumun çıkış noktası, görünür bir haber markası ile görünmeyen bir yayın altyapısı arasındaki fark. Elimizde Meta’nın yayımladığı gerçek bir gösterge dosyası var. Harita ve sayımlar bu dosyadan üretildi. GDELT haber katmanı için bağlantı altyapısı hazır; henüz canlı sonuç elde edilmiş değil. Bu ayrımı baştan kurarak, hem görsel olarak güçlü hem de kanıt sınırlarına sadık bir inceleme yapacağız.
 
-Kaynak: Meta IOC listesi [1–2]; GDELT sonuçları üretilmedi
+Kaynak: Meta, 27.09.2022 IOC listesi; 311 benzersiz alan adı.
 
-## 2. Asıl soru: Nerede, hangi kanıtla? · 00:40–01:45
+## 2. Bir uzantı kadar yakın. · 00:40–01:30
 
-Bir coğrafi haritanın ikna edici görünmesi, doğru şeyi ölçtüğü anlamına gelmez. Bu çalışmada önce ölçülen nesneyi tanımlıyorum. İlk soruda birimimiz, yayımlanmış bir listede bulunan benzersiz alan adıdır. İkinci soruda birimimiz GDELT tarafından indekslenen haber URL’si olacaktır. Bir haberin Fransa hakkında olması, Fransa’daki bir kaynaktan yayımlanması ve Fransa’daki seçmenleri hedeflemesi farklı önermelerdir. Hipotezimiz bunların örtüşmek zorunda olmadığıdır. Dolayısıyla tek bir yoğunluk haritası yerine, kaynak konumu ve doğrulanmış hedef konumu için ayrı katmanlar gerekir. Bu ayrım, araştırmanın geçerliliğini belirler.
+Ekrandaki alan adına dikkat çek. Burada bir haber başlığı uydurmuyoruz veya kapanmış bir sitenin ekranını taklit etmiyoruz. Kaynak dosyada gerçekten bulunan bir alan adını inceliyoruz. BILD adı tanıdık gelebilir; fakat tanıdık sözcük, doğru alan adıyla aynı şey değildir. Bu, haber markasının güveninin başka bir adrese taşınması riskini somutlaştırıyor. Yine de bir dize benzerliği bize tek başına kimin işlettiğini söylemez. Bu örneği rastgele seçilmiş şüpheli bir site olduğu için değil, Meta’nın yayımladığı CIB gösterge listesinde bulunduğu için kullanıyoruz. İlk çıkarımımız: operasyonu anlamak için içeriğin yanında dağıtım altyapısını da incelemek gerekir.
 
-Kaynak: Yöntemsel değerlendirme
+Kaynak: Meta CSV: bild.pics, spiegel.ltd, dailymail.top, repubblica.life.
 
-## 3. Hibrit tehditten ölçülebilir vakaya · 01:45–02:45
+## 3. “Nerede?” tek bir soru değil. · 01:30–02:10
 
-Hibrit savaş kavramını, her çevrim içi tartışmayı savaş faaliyeti sayacak kadar genişletmemek gerekir. Bu sunum, askerî sonuçları ölçmüyor; bilgi alanındaki manipülasyon mekanizmalarını inceliyor. Dezenformasyon içerikle ve yanıltma amacıyla ilgilidir. FIMI ise davranışın yabancı aktörlerle bağlantısı, koordinasyonu ve manipülatif niteliği üzerinde durur. Meta’nın CIB kategorisi de içerikteki her önermenin yanlış olduğunu söylemez; hesapların ve varlıkların davranışsal koordinasyonunu tanımlar. Bu nedenle IOC listesinde bulunmak ile bir haber metninin yanlışlığı ayrı ayrı doğrulanmalıdır. Operasyon düzeyindeki etiketleri otomatik olarak bütün kullanıcı ve haber kayıtlarına taşımıyoruz.
+Bir örnek ver: Londra merkezli bir yayın, Almanya’yı hedefleyen bir sahte haber ağı hakkında eleştirel haber yayımlayabilir. Haber kaynağı Birleşik Krallık, hedef etiketi Almanya, metinde geçen yer ise bunlara ek olarak başka ülkeler olabilir. Bu nedenle haritada neresi sorusunu sormadan önce, hangi coğrafi değişkeni göstereceğimizi belirtmeliyiz. Bugünkü kırmızı harita, yalnızca yayımlanan IOC dosyasının hedef ülke etiketlerini gösteriyor. Daha sonra bağlanacak GDELT katmanı ise haber kaynaklarını gösterebilir. Aynı harita tabanını kullanmak, iki verinin aynı şeyi ölçtüğü anlamına gelmez.
 
-Kaynak: Kavramsal çerçeve; Meta README [2]. FIMI resmî kaynak doğrulaması bekliyor.
+Kaynak: Araştırma tasarımı; hedef etiketi ≠ sourcecountry ≠ anılan yer.
 
-## 4. Kanıt zinciri: Atıf → gösterge → haber · 02:45–03:50
+## 4. Bir vaka. Dört kanıt adımı. · 02:10–03:00
 
-Araştırmanın omurgası kanıt zinciridir. Aktör atfı için ilk adım platform veya kamu kurumu raporudur. İkinci adım, bu raporla ilişkilendirilen somut göstergeleri ve metaveriyi kaydetmektir. Üçüncü adım, GDELT üzerinde kampanya adı ve gerekirse doğrulanmış göstergelerle ilişkili haberleri aramaktır. Son adımda, haberin operasyonu yayması ile operasyonu eleştirmesini ayırırız. Burada önemli bir sınırlılık var: Meta veri dosyası indirildi ve kaynağı arşivlendi; atfı bağımsız kamu raporlarıyla çapraz doğrulama bu ortamda henüz tamamlanmadı. Bu nedenle Rusya atfını bizim keşfimiz gibi değil, kaynağın değerlendirmesi olarak sunuyoruz.
+Bu vaka literatürde Doppelganger başlığıyla incelenen haber markası taklidi örüntüsüyle ilişkilendiriliyor. Ancak bizim yaptığımız iş, yeni bir aktör atfı üretmek değil. Kaynak raporun değerlendirmesi ile kendi hesaplamamızı ayrı tutuyoruz. Kanıt zinciri dört adım: rapor, somut gösterge, haber kaydı ve insan denetimi. Rapor aktör ilişkisini tartışır; IOC dosyası incelenebilir varlıkları verir; GDELT haberlerdeki görünürlüğü ölçmeye yardım eder; son aşamada içerik, hedef ve çürütme ayrımı elle kodlanır. Burada bir adımı atlamak, örneğin bir haberin ülkesinden doğrudan operasyon hedefi çıkarmak, sağlam görünen ama yanlış bir sonuç üretebilir.
 
-Kaynak: Meta veri dosyası, index.json ve README [1–3]
+Kaynak: Meta CSV, index.json ve depo README; bağımsız çapraz atıf açık iş.
 
-## 5. Gerçek veri: 350 kayıt, 313 alan adı · 03:50–05:00
+## 5. Önce veriye itiraz et. · 03:00–03:50
 
-Bu slayttaki bütün sayılar doğrudan indirilen CSV dosyasından hesaplandı. Dosyada toplam üç yüz elli kayıt bulunuyor. Bunların üç yüz on üçü alan adı satırı, yirmi ikisi CIB URL’si ve on beşi Telegram URL’sidir. Aynı alan adının tekrarını önlemek için küçük harfe dönüştürülmüş değerler üzerinde benzersizlik kontrolü yaptım. İki yinelenen alan adı çıkarıldı; üç yüz on bir benzersiz alan adı kaldı. Dosyanın başlığı hem Çin hem Rusya vakalarını içerdiği için başlığa bakarak bütün satırları tek operasyon saymadım. Özellikle Çin etiketli iki dilekçe URL’si, alan adı filtresinin dışında kaldı. Bu seçim kuralı ve ham veri dosyası teslim paketinde bulunuyor.
+Bu slaytta ham veriye itiraz etmenin önemini göster. İlk bakışta dosyada üç yüz on üç alan adı satırı var. Ama benzersizlik kontrolü iki tekrar buluyor. Doğru analitik toplam üç yüz on bir. Bu küçük düzeltme, sunumdaki sayıyı değiştirdiği gibi yöntemin ciddiyetini de gösterir. Ayrıca dosyada yirmi iki CIB URL’si ve on beş Telegram URL’si bulunuyor. Bunlar farklı analiz birimleri olduğu için aynı paydada toplanmadı. Hedef ülke, alan adının uzantısından tahmin edilmedi; kaynağın açık yorum alanından alındı. Bir dosyanın yayımlanmış olması, onu temizlemeden sayabileceğimiz anlamına gelmez.
 
-Kaynak: [1] CSV; [3] index.json. Ham dosya + SHA-256 teslim paketinde.
+Kaynak: Gerçek CSV: 350 satır, 313 domain_name satırı, 311 benzersiz değer.
 
-## 6. Harita: Yayımlanan hedef etiketleri · 05:00–06:15
+## 6. Avrupa’ya açılan dosya. · 03:50–04:40
 
-Haritada görülen noktalar alan adlarının sunucu koordinatları değildir. Kaynak dosyanın hedef ülke etiketlerini ülke düzeyindeki temsil noktalarında gösteriyorum. Böylece ağ altyapısının bulunduğu yer ile hedef kitlenin bulunduğu yeri karıştırmıyorum. Almanya, Fransa, Birleşik Krallık ve İtalya bu vaka için çalışma odağını oluşturuyor. İtalya ve Birleşik Krallık farklı coğrafi sınıflandırmalarda başka Avrupa alt bölgelerine yerleştirilebilir; bu yüzden kullandığım kapsamı açıkça operasyonel bir seçim olarak belirtiyorum. Harita yalnızca yayımlanmış göstergeleri içeriyor. İşaret bulunmayan başka ülkeler için operasyon olmadığı sonucuna varılamaz. Bu ülkelerde gözlemimiz bulunmaması ile gerçek dünyada faaliyet bulunmaması farklıdır.
+Haritayı birkaç saniye sessiz bırak. Ardından dört odak ülkeyi say. Bu, Batı Avrupa için evrensel bir sınıflandırma değil; belirli bir vakayı incelemek üzere seçilmiş çalışma kümesidir. Haritada yer almayan ülkelerde faaliyet olmadığı söylenmiyor. Şimdi ülkeleri tek tek açacağız. Her kartta bir gerçek konum görseli bulunacak, ama bu görsel yalnızca coğrafi bağlam içindir. Alan adı listesi ülke düzeyinde olduğundan, örneğin Berlin fotoğrafı göstermek operasyonun Berlin’de yürütüldüğünü veya yalnızca Berlin’i hedeflediğini kanıtlamaz. Görselin konumunu ve verinin çözünürlüğünü aynı ekranda ayrı etiketlerle göreceğiz.
 
-Kaynak: [1] Hedef etiketleri; [4] Natural Earth ülke sınırları
+Kaynak: Hedef etiketleri: Almanya 298; Birleşik Krallık 4; Fransa 2; İtalya 2.
 
-## 7. Almanya yoğunluğu: Güçlü ama dar bulgu · 06:15–07:30
+## 7. Almanya: dosyanın ağırlığı. · 04:40–05:50
 
-Grafik, yayımlanan listenin Almanya yönelimini çok açık gösteriyor. Ancak tam olarak hangi paydayı kullandığımızı belirtmeliyiz. İki yüz doksan sekiz alan adı, üç yüz on bir benzersiz alan adının yüzde doksan beş virgül sekizidir. Yalnızca odak ülkeleri kapsayan üç yüz altı kayıt içinde ise pay yüzde doksan yedi virgül dörttür. Bu oranlar seçilmiş bir gösterge listesinin kompozisyonunu anlatır. İki yüz doksan sekiz alan adı, iki yüz doksan sekiz ayrı operasyon demek değildir. Aynı ağ çok sayıda alan adını döndürebilir. Ayrıca Meta’nın tespit ettiği ve yayımlamayı seçtiği varlıklar bütün evreni oluşturmaz. Bu nedenle grafiği Avrupa’daki toplam dezenformasyonun ülkelere dağılımı olarak okumuyoruz.
+Almanya’yı seç ve kamera hareketinin bitmesini bekle. Fotoğrafın Berlin’deki Potsdamer Platz bağlamını gösterdiğini, verinin ise Almanya ülke etiketinden geldiğini açıkla. Üç yüz on bir benzersiz alan adının iki yüz doksan sekizi Almanya hedefli. Bu, dosyanın yüzde doksan beş virgül sekizine karşılık geliyor. Dört odak ülkenin toplamı içinde pay yüzde doksan yedi virgül dört. Bu iki paydanın neden farklı olduğunu bir cümleyle belirt. Ardından bir veya iki göstergeyi aç. Çok sayıda alan adı görmek, aynı sayıda ayrı operasyon olduğunu söylemez; bir ağ çok sayıda alan adını kullanmış olabilir. Liste ayrıca platformun tespit ve yayım seçimini yansıtır. Güçlü sonuç, yalnızca bu tarihsel seçkideki Almanya yoğunluğudur.
 
-Kaynak: [1] Yeniden hesaplanan değerler; hedef_ulke_sayimlari.csv
+Kaynak: Meta: Germany-targeting CIB domain; görsel: Potsdamer Platz / HDRI Haven.
 
-## 8. Mekanizma: Haber markasının taklidi · 07:30–08:35
+## 8. Birleşik Krallık: küçük sayı, somut iz. · 05:50–06:35
 
-Alan adları, mekanizmayı somutlaştırıyor. Bild, Spiegel veya Daily Mail gibi tanınan haber markalarına benzeyen adlar, farklı uzantılarla kullanılıyor. Böyle bir tasarım, kullanıcının tanıdığı bir medya kuruluşunun güvenilirliğini ödünç alma girişimiyle tutarlıdır. Bununla birlikte yalnızca benzer bir ad görmek, tek başına koordinasyon veya Rusya atfı sağlamaz. Burada örnekleri zaten kaynak dosyada CIB göstergesi olarak listelendikleri için tartışıyoruz. Örnek alan adlarını güvenli biçimde, köşeli parantezli noktayla gösteriyorum; sunum sırasında bunları ziyaret etmek gerekmiyor. Özellikle güncel sahiplik, kapanma veya yeniden kayıt durumu bu tarihsel veri dosyasından çıkarılamaz.
+Londra görselini aç. Kayıttaki dört alan adı içinde dailymail adıyla benzerlik taşıyan örnekler bulunuyor. Burada Almanya ile sayı farkı çok büyük; fakat bu farkı tehdit veya ikna sıralaması gibi sunmuyoruz. Kaynak liste, platformun yayımladığı varlıkları kapsıyor. Bir ülkeye ilişkin dört gösterge bulunması, o ülkenin az hedeflendiği veya etkinin düşük kaldığı sonucunu tek başına vermez. Bu sahnenin amacı, büyük bir toplamın yanında küçük ama incelenebilir kayıtların da bulunduğunu göstermek. Fotoğrafın Londra’daki bir yer referansı olduğunu, operasyonun kamera noktasında gerçekleştiği anlamına gelmediğini kısa tutarak tekrar hatırlat.
 
-Kaynak: [1] Örnekler doğrudan CSV kayıtları; güncel siteler ziyaret edilmedi.
+Kaynak: Meta UK-targeting etiketi; görsel: Adams Place Bridge / HDRI Haven.
 
-## 9. GDELT: Neyi ölçer, neyi söylemez? · 08:35–09:45
+## 9. Fransa: iki adres, aynı soru. · 06:35–07:20
 
-GDELT dünya haberlerini tarayan bir veri altyapısıdır. Bu araştırma için DOC API üzerinden haber seçkileri, GKG üzerinden de haberlerde tanınan yerler ve temalar kullanılabilir. Fakat haberin kaynak ülkesi ile haberin konuştuğu ülke aynı değildir. Örneğin Birleşik Krallık merkezli bir yayın, Almanya’yı hedefleyen sahte haber ağını eleştiren bir haber yayımlayabilir. Böyle bir kayıt kaynak coğrafyasında Birleşik Krallık, olay veya konu coğrafyasında Almanya ile ilişkilendirilebilir. Hedef ülkeyi ise yalnızca bu iki alandan otomatik türetmek doğru olmaz. Ayrıca GDELT’in indeksleme zamanı, içeriğin ilk üretim veya operasyonun başlangıç zamanı olarak kabul edilmemelidir.
+Paris kartını aç ve iki alan adını göster. Sayı az olduğu için, tüm kayıtları tek tek denetlemek mümkün. Bu, küçük örneklerin yöntem açısından bir avantajıdır. Ancak aynı nedenle ülke hakkında genel bir çıkarım yapmak daha da sınırlıdır. Alan adı uzantısından ülke çıkarmadığımızı vurgula: Fransa etiketini kaynak dosyanın yorum alanından aldık. Eiffel Kulesi görseli yalnızca Paris için bir yer işareti referansıdır. Bu dosya, saldırının kulede veya Paris’in belirli bir noktasında gerçekleştiğini söylemez. Sunumun görsel etkisini korurken, coğrafi kesinlik iddiasını ülke düzeyinde tutuyoruz.
 
-Kaynak: [5–6] Resmî GDELT dokümantasyon bağlantıları; canlı veri doğrulanmadı.
+Kaynak: Meta France-targeting etiketi; Paris görseli: Wildo Coda galeri küçük resmi.
 
-## 10. GDELT sorgusu: Tekrarlanabilir protokol · 09:45–10:55
+## 10. İtalya: markaya benzeyen altyapı. · 07:20–08:05
 
-Önerdiğim sorgu önce kampanya adlarını kullanarak ilgili haberlere ulaşmayı amaçlıyor. Bu adlar aynı kampanyayı ifade etmediği için son analizde hepsini tek kategoriye yığmamak gerekir. Dil varyasyonlarını eklemek ve çıkan haberleri elle elemek gerekir. Teslim edilen betik DOC API için ham yanıtları ve sorgu metaverisini kaydedecek şekilde hazırlandı; fakat gerçek indirme henüz başarılmadı. Güncel keşif penceresi iki bin yirmi altı yılı içindedir. Bu pencereyi iki bin yirmi iki tarihli IOC sayımlarıyla doğrudan zaman karşılaştırmasına sokmuyoruz. İki bin yirmi iki için GKG arşivi veya BigQuery kullanmak gerekir. API’nin iki yüz elli haber sınırı tam evren sağlamaz.
+Venedik kıyısına ait panoramayı aç. İtalya örneklerinde de tanıdık haber adlarının farklı alan adı uzantılarıyla birlikte kullanıldığını görüyoruz. Bununla birlikte iki alan adı, aynı aktörün bütün altyapısını göstermez. Bu sahnede mekanizmayı tekrar görünür kıl: bir marka adı, kullanıcıya meşruiyet hissi verebilir; fakat adresi ve kaynağın bağlamını denetlemek gerekir. Fotoğraf, ülkeyi izleyicinin zihninde somutlaştırmak için kullanılıyor. Kanıt değeri ise URL benzerliğinde değil, kaynak dosyadaki gösterge kaydıyla birlikte değerlendirildiğinde ortaya çıkıyor. Ardından dört ülkeyi yeniden aynı haritada düşünmeye geç.
 
-Kaynak: scripts/fetch_gdelt.py; bu protokol henüz ampirik sonuç üretmedi.
+Kaynak: Meta Italy-targeting etiketi; görsel: Venice Sunset / HDRI Haven.
 
-## 11. Üç harita, üç farklı değişken · 10:55–12:00
+## 11. Tanıdık adın ödünç gücü. · 08:05–08:55
 
-Tamamlanmış çalışmada üç ayrı harita sunmak istiyorum. Birinci harita hedef coğrafyasını gösterecek; bugün bu harita Meta’nın yayımladığı etiketlerle üretildi. İkinci harita GDELT’te ilgili haberleri yayımlayan kaynakların coğrafyasını gösterecek. Üçüncü harita haber metinlerinde anılan yerleri gösterecek. Bu üç haritanın birbirinden ayrılması, bir yerde fazla haber üretilmesinin o yerin daha çok hedeflendiği anlamına gelmediğini anlatacak. Veri eksikliği olduğunda ülkeyi sıfır değerle boyamak yerine veri yok olarak işaretlemek gerekir. Özellikle kaynak listesine alınmayan bir ülke için haritada beyaz alan bırakmak bile yanlış yorumlanabileceğinden, açıklama ve kapsam etiketleri gereklidir.
+Ülke turundan mekanizmaya dön. Aynı örüntünün farklı dil ve marka bağlamlarında nasıl görünebildiğini anlat. Burada iki düzeyi ayırıyoruz: ağın koordineli sahte davranışı ve tek tek içeriklerin doğruluğu. Platformun CIB sınıflandırması davranışsal bir değerlendirmedir. Bu listede yer alan her haberin bütün cümlelerinin yanlış olduğu sonucunu otomatik olarak çıkaramayız. Bir araştırma bunu içerik düzeyinde incelemek istiyorsa, metinlere ulaşmalı, iddiaları kodlamalı ve bağımsız doğrulama yapmalıdır. Bugünkü veri daha dar bir şeyi, yayımlanmış altyapı göstergelerinin ülke etiketlerini, ölçmemize izin veriyor.
 
-Kaynak: Yöntemsel değerlendirme
+Kaynak: Meta CIB tanımı ve gösterge örnekleri; içerik düzeyinde doğruluk analizi yapılmadı.
 
-## 12. Geçerlilik: Görünürlük, etki değildir · 12:00–13:10
+## 12. GDELT ile ikinci mercek. · 08:55–09:55
 
-Çalışmanın en kritik sınırı, görünürlüğü etkiyle karıştırma riskidir. Bir operasyon hakkında çok haber çıkması, o operasyonun başarılı olduğu anlamına gelmez. Tam tersine, kapsamlı bir ifşa raporu haber hacmini yükseltmiş olabilir. Haberleri kaynak ülkenin toplam haber hacmine bölerek karşılaştırmak bazı hacim farklarını azaltır, ama dil ve indeksleme yanlılığını ortadan kaldırmaz. Meta listesinde de platformun tespit ve yayım süreçleri belirleyicidir. Kamuoyunun ikna edilip edilmediğini göstermek için anket, maruziyet verisi veya uygun araştırma tasarımı gerekir. Bu çalışmanın bugün savunabileceği iddia daha dardır: yayımlanmış göstergelerin ülke etiketleri ve gelecekte ölçülecek haber görünürlüğü.
+Bu aşamada GDELT’in neden gerekli olduğunu anlat. IOC dosyası bir ağın yayımlanmış altyapı izlerini verirken, haber verisi vakaların kamuya açık görünürlüğünü incelemeye yardım eder. Burada iki farklı ürünü karıştırmamak gerekir. GDELT Project DOC API haber URL’leri ve kaynak ülkesi gibi alanlar döndürür; anahtar istemez. GDELT Cloud ise ayrı bir anahtarlı üründür; kendi Event kodlamasını, Story kümelerini ve metriklerini üretir. Cloud verisini Project’in kodlanmış olayı gibi etiketlememeliyiz. Bu ortamda canlı veri indirmesi ağ ve sır yapılandırması tamamlanmadığı için henüz doğrulanmadı. Bağlantı arayüzü ve istemci hazırdır; veri yokluğu sunumda sonuç gibi gizlenmiyor.
 
-Kaynak: Yöntemsel değerlendirme
+Kaynak: GDELT DOC istemci belgeleri; gdelt-cloud/plugins ve demos resmî depoları.
 
-## 13. Bulgu, yorum ve açık kalan iş · 13:10–14:10
+## 13. Bir haritaya üç cevap yükleme. · 09:55–10:45
 
-Sonuçları üç düzeyde ayırarak bitiriyorum. Birinci düzey doğrudan veri bulgusudur: incelenen alan adı listesinde Almanya hedefli etiketler baskındır. İkinci düzey, bu listenin belirli bir vaka içindeki yönelimi gösterdiği yorumudur. Üçüncü düzey ise henüz desteklenmeyen iddialardır: bütün Rusya bağlantılı operasyonların dağılımı, hedef toplumdaki gerçek erişim ve kamuoyu etkisi bu veriyle hesaplanamaz. GDELT katmanı tamamlandığında, bu yönelimin haber görünürlüğüyle nasıl ilişkilendiği araştırılabilir. Ancak bugün bu ilişkiyi kurulmuş gibi sunmuyorum. Araştırmanın akademik değeri yalnızca bir harita üretmesinde değil, haritanın hangi kanıttan ve hangi sınırlılıkla üretildiğini göstermesindedir.
+Şimdi izleyicinin gördüğü katmanları yeniden bir araya getir. Birinci katman, kaynaktaki hedef ülke etiketleri. İkinci katman, GDELT haberlerinin kaynak ülkeleri. Üçüncü görsel öğe ise belirli bir kente veya yer işaretine bağlanmış bağlam fotoğrafı. Bu öğelerin üçü de coğrafyayla ilgili olsa da aynı şeyi ölçmüyor. Fotoğrafın görsel kesinliği, verinin ülke düzeyindeki çözünürlüğünü yükseltmez. Haritada daha ayrıntılı bir görüntü göstermek, daha ayrıntılı operasyon bilgisine sahip olduğumuz anlamına gelmez. Bu ayrım özellikle konuma bağlı sinematik kartlarda önemlidir; kartın açıklaması ve kaynak künyesi bu yüzden görünür tutulur.
 
-Kaynak: Yöntemsel değerlendirme
+Kaynak: Harita katmanları ve coğrafi çözünürlük protokolü.
 
-## 14. Ana mesaj: Haritayı kanıtla birlikte okuyun · 14:10–15:00
+## 14. Sorgu da kanıtın parçası. · 10:45–11:30
 
-Bu sunumdan kalmasını istediğim ana fikir şu: bilgi operasyonlarının haritasını çıkarmak yalnızca coğrafi veri bulmak değildir. Önce neresi sorusunun neyi ifade ettiğini belirlemek gerekir. Hedef ülke mi, kaynak ülke mi, haber metnindeki ülke mi? İkinci olarak sayılan şeyin ne olduğunu açık tutmalıyız: alan adı mı, haber mi, kullanıcı mı? Üçüncü olarak belirsizliği saklamamalıyız. Bugünkü analiz gerçek bir IOC dosyasına dayanıyor, fakat GDELT sonuçları tamamlanmış değil. Bu ayrımlara sadık kalındığında, hem daha dürüst hem de tekrar üretilebilir bir akademik araştırma kurulabilir. Ek slaytlar, veri ve yöntem sorularını ayrıntılandırıyor.
+API ile veri çekmek, araştırmayı otomatik olarak tekrar üretilebilir yapmaz. Sorgu metnini, seçilen dönemi, dil kapsamını, sayfa sınırını ve indirilen ham yanıtı saklamak gerekir. DOC artlist için iki yüz elli sonuç üst sınırı var. Bu nedenle görünen URL listesini bütün haber evreni gibi sayamayız. Cloud’da anlamsal Event adayları da sınırlı bir geri getirme kümesidir; nüfus sayımı değildir. Ayrıca tarihleri eşleştirmeliyiz: güncel haber araması, iki bin yirmi iki tarihli gösterge dosyasını aynı dönem için doğrulamaz. Bu kontrol yapılmadığında, farklı dönemlerden veriler birleştirilerek sahte bir zaman anlatısı kurulabilir.
 
-Kaynak: Yöntemsel değerlendirme
+Kaynak: DOC artlist ve GDELT Cloud sınırlı anlamsal arama protokolleri.
 
-## 15. EK A · Veri sözlüğü ve dönüşümler · Soru-cevap eki
+## 15. Bulgu net. Kapsamı da net. · 11:30–12:25
+
+Sonuç slaytında hesabı açık söyle: iki yüz doksan sekiz bölü üç yüz on bir, yüzde doksan beş virgül sekiz. Bu, yayımlanmış gösterge dosyasının ülke dağılımıdır. Sayıyı Avrupa’daki bütün Rusya bağlantılı operasyonların payı olarak yeniden adlandırmıyoruz. Grafik, Almanya’yı bu tarihsel vaka seçkisinin ağırlık merkezi olarak gösteriyor. Neden böyle bir yoğunluk bulunduğunu açıklamak için platformun tespit süreci, operasyonun gerçek altyapısı ve yayım seçimi gibi başka bilgiler gerekir. Bu dosya tek başına o nedenleri ayıramaz. Dar ama denetlenebilir bir bulgu, kapsamı belirsiz büyük bir iddiadan bilimsel olarak daha sağlamdır.
+
+Kaynak: Tekilleştirilmiş Meta CSV; 298/311, odak kümede 298/306.
+
+## 16. Görünürlük, başarı ölçüsü değil. · 12:25–13:20
+
+Bu slayt, sunumun aşırı iddia üretmesini engelliyor. Bir operasyon ifşa edildiğinde hakkında daha çok haber çıkabilir. Haber hacmi artışı böylece başarıyı değil, tespit ve karşı koymayı yansıtabilir. Erişilen kullanıcı sayısı bile ikna edilen kişi sayısına eşit değildir. Kamuoyu etkisi için anket, maruziyet ölçümü veya uygun nedensel tasarım gerekir. Verinin dil kapsamı, yayın hacmi ve tekrar basımları da görünürlüğü etkiler. Bu nedenle bir haber yoğunluğu haritasını doğrudan bir toplumsal etki haritasına çevirmiyoruz. Harita iyi görünse bile, ölçmediği bir değişken için kanıt olamaz.
+
+Kaynak: Geçerlilik değerlendirmesi; ikna/oy davranışı bu veriyle ölçülmedi.
+
+## 17. Bildiğimiz ve açık kalan. · 13:20–14:10
+
+Sonuçtan sonra bir araştırma durum özeti ver. Tamamlanan işler: ham gösterge dosyasının indirilmesi, türlerin ayrılması, tekilleştirme, ülke etiketlerinin sayımı ve kaynakla ilişkilendirilmiş harita. Açık işler: GDELT canlı verisinin alınması, haber kayıtlarının konu uygunluğu ve çürütme niteliği bakımından kodlanması, aktör atfının bağımsız birincil belgelerle çapraz denetlenmesi. Etki ölçümü ise ayrı bir veri ve tasarım gerektiriyor. Bu ayrım bir eksikliği saklamak için değil, tamamlanmış analizin sınırlarını görünür kılmak için yapılıyor. Sunumda güzel görünen her görselin araştırma bulgusu olmadığını son kez netleştir.
+
+Kaynak: Veri manifesti, kaynak dosyaları ve bağlantı durum raporları.
+
+## 18. Haritayı kanıtla birlikte oku. · 14:10–15:00
+
+Açılıştaki soruya dön: Bir haber sitesine güvenmemizi sağlayan ne? Artık cevabın yalnızca tanıdık bir ad veya etkileyici bir görsel olmadığını görüyoruz. Kaynağın izlenebilirliği, veri biriminin açıklığı ve belirsizliğin dürüstçe korunması gerekiyor. Bu çalışma, belirli bir gösterge dosyasındaki Almanya yoğunluğunu ortaya koydu. Fakat bu bulguyu her operasyonun veya kamuoyu etkisinin dağılımı gibi sunmadı. Konuma bağlı fotoğraflar ve animasyonlar, anlatıyı anlaşılır kılmak içindi; yeni kanıt üretmediler. Son cümleyi yavaş söyle: Haritayı kanıtla birlikte okuyun. Ardından soru-cevap için kaynak ve yöntem eklerine geç.
+
+Kaynak: Kaynakça, koordinat/görsel künyeleri ve yöntem ekleri.
+
+## 19. EK A · Veri sözlüğü ve dönüşümler · Soru-cevap eki
 
 Bir alan adını coğrafi olarak kodlamak için ülke uzantısını kullanmadım. Kaynağın açık hedef etiketi varsa onu aldım. Çoklu hedef etiketi ayrı tutuldu. Böylece kaynakta olmayan ayrıntı uydurulmadı.
 
 Kaynak: [1]; scripts/build_presentation.py
 
-## 16. EK B · GDELT kodlama ve kalite kontrolü · Soru-cevap eki
+## 20. EK B · GDELT kodlama ve kalite kontrolü · Soru-cevap eki
 
 Bu ek bir uygulanmış kalite raporu değil, önceden belirlenmiş protokoldür. Kodlayıcı sayısı ve uyum katsayısı gerçekleşmeden sonuç olarak yazılamaz. Dil bazlı hata ve kapsam ayrıca raporlanmalıdır.
 
 Kaynak: Yöntemsel değerlendirme
 
-## 17. EK C · Tarihsel GDELT için doğru yol · Soru-cevap eki
+## 21. EK C · Tarihsel GDELT için doğru yol · Soru-cevap eki
 
 Tarihsel eşleştirme yapılacaksa öncelikle aynı dönemden GKG veya başka yetkili arşiv verisi gerekir. Tek bir on beş dakikalık dosyayı indirip bütün ayı temsil ediyormuş gibi göstermek uygun olmaz. Tam kapsam mümkün değilse örneklem tasarımı açıkça belirtilmelidir.
 
 Kaynak: [5–6]; tarihsel analiz henüz yürütülmedi.
 
-## 18. EK D · Jürinin sorabileceği sorular · Soru-cevap eki
+## 22. EK D · Jürinin sorabileceği sorular · Soru-cevap eki
 
 Zor sorular geldiğinde verinin cevaplamadığı bir soruya tahminle cevap vermeyin. Özellikle atıf, nedensellik ve etki sorularında kaynak türünü ve ölçüm birimini tekrar edin.
 
 Kaynak: Yöntemsel değerlendirme
 
-## 19. EK E · Kaynakça: Erişilen kanıtlar · Soru-cevap eki
+## 23. EK E · Kaynakça: Erişilen kanıtlar · Soru-cevap eki
 
 Aktif kaynak bağlantıları KAYNAKLAR.md dosyasında bulunuyor. Veri dosyaları yerel olarak teslim ediliyor. Meta verisi MIT lisansıyla, Natural Earth ise kamu malı olarak yayımlanmıştır. Kaynağın sonraki değişikliklerine karşı arşiv özeti ve dosya hashleri saklanmıştır.
 
 Kaynak: Tam URL’ler ve SHA-256: KAYNAKLAR.md / veri_manifest.json
 
-## 20. EK F · Kaynakça: Erişim bekleyenler · Soru-cevap eki
+## 24. EK F · Kaynakça: Erişim bekleyenler · Soru-cevap eki
 
 Bu slayt, erişilmiş kaynakları erişilmemiş kaynaklarla karıştırmamak için ayrıdır. Resmî raporlar açılıp sayfa ve bölüm düzeyinde denetlenmeden onlardan yeni sayı veya kesin bulgu aktarılmamalıdır.
 
 Kaynak: Yöntemsel değerlendirme
 
-## 21. EK G · Teslim ve tamamlanma durumu · Soru-cevap eki
+## 25. EK G · Teslim ve tamamlanma durumu · Soru-cevap eki
 
 Sunumun kapsamı ve veri durumu her paylaşımda korunmalıdır. Ağ erişimi açılıp veri analizi yapılırsa bu slayt ve ana sonuç bölümü gerçek yeni bulgularla güncellenmelidir.
 
 Kaynak: Yöntemsel değerlendirme
+
+## 26. EK H · Konum görselleri ve coğrafi kesinlik · Soru-cevap eki
+
+Fotoğrafların kaynağını ve bağlam rolünü açıklayın. Kaynak URL’leri, işleme bilgisi, SHA-256 ve koordinat temeli assets/locations/locations.json içinde korunur.
+
+Kaynak: assets/locations/locations.json; gerçek coğrafi bağlam, operasyon kanıtı değil.

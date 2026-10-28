@@ -47,3 +47,11 @@ VIGINUM, EEAS/AB Konseyi ve ABD Adalet Bakanlığı belgeleri bağımsız çapra
 Üçüncü taraf açık kaynak istemci: https://github.com/alex9smith/gdelt-doc-api . README, `gdeltdoc/api_client.py` ve `gdeltdoc/filters.py` indirildi; kopyaları `research/gdelt_docs/` altındadır. Bu kaynak GDELT'in kurumsal yayını değildir. Resmî DOC uç noktası, ArtList alan adları, 250 sonuç sınırı ve TimelineVolRaw yanıt yapısı bu kodla karşılaştırıldı. Belgelerin okunması, GDELT'ten haber indirildiği anlamına gelmez.
 
 Yeni atlas, kullanıcının kendi tarayıcısından resmî API'ye istek gönderme ve JSON dosyası içe aktarma özellikleri içerir. Bir dosyanın yanıt şemasına uyması köken doğrulaması sayılmaz; böyle dosyalar ayrı etiket alır. Entegrasyon testlerindeki sentetik yanıtlar araştırma bulgularına veya dağıtılan atlasın başlangıç verisine eklenmedi.
+
+## Sinematik coğrafi bağlam görselleri
+
+Berlin/Potsdamer Platz, Londra/Adams Place Bridge ve Venice Sunset gerçek 360° HDR panoramalarıdır. Kaynak HDRI Haven / Poly Haven; indirilen kopyalar `pmndrs/drei-assets/hdri` deposundadır. Kaynak deponun README'si HDRI Haven atfını taşır. Panoramalar ekranda gösterim için JPEG'e dönüştürüldü; üretken görsel kullanılmadı.
+
+Paris/Eiffel Kulesi görseli, `eddyte/paris-photoblog` deposunun `dev/images/toureiffelmini.jpg` galeri küçük resmidir. Galeri bunu “Tour Eiffel” olarak adlandırır ve © 2018 Wildo Coda künyesi taşır. Açık yeniden kullanım lisansı doğrulanmadı; bu görsel CC0 olarak sunulmaz.
+
+Her dosyanın kaynak URL'si, lisans açıklaması, işleme bilgisi ve SHA-256 değeri `assets/locations/locations.json` içinde bulunur. Koordinatlar yer işareti/kent referanslarıdır; fotoğrafların kamera GPS konumu doğrulanmadı. Ülke etiketli IOC verisinden bu şehirlerde operasyon gerçekleştiği çıkarılamaz. Fotoğraflar olay kanıtı veya aynı döneme ait operasyon görüntüsü değildir. Harita bağlantı çizgisi fotoğrafı yer referansına bağlar; saldırı rotası göstermez.

@@ -48,7 +48,7 @@ with sync_playwright() as p:
     page.keyboard.press('Escape')
     page.evaluate('go(0)')
     page.keyboard.press('ArrowRight')
-    assert page.locator('#page').inner_text()=='02 / 14'
+    assert page.locator('#page').inner_text()=='02 / 18'
     page.locator('#play').click()
     page.wait_for_timeout(2100)
     assert page.locator('#clock').inner_text()=='00:42 / 15:00'

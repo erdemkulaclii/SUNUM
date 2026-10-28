@@ -1,11 +1,12 @@
 """Render the authored narrative as a matching presentation and PDF."""
 from pathlib import Path
-import textwrap
+import textwrap,shutil
 from playwright.sync_api import sync_playwright
 from pptx import Presentation
 from pptx.util import Inches,Pt
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
+from pptx.oxml import parse_xml
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -15,16 +16,17 @@ with sync_playwright() as p:
  page.set_content((O/'CANLI_HARITA.html').read_text());page.add_style_tag(content='.transport,.map-tabs,.map-tools,.chips,.hint,#scope,#notes{display:none!important}.timeline{height:70px}.reading .stage{height:calc(100vh - 70px)}.story-caption{font-size:12px}.evidence-short{font-size:10px}')
  page.evaluate("document.body.classList.add('reading')")
  slides=page.evaluate('D.slides')
- for i in range(14):
-  page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(700);page.screenshot(path=str(T/f'{i:02}.png'))
+ main_count=page.evaluate('D.narrative.length')
+ for i in range(main_count):
+  page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(1800 if i in [6,7,8,9] else 700);page.screenshot(path=str(T/f'{i:02}.png'))
  b.close()
 prs=Presentation();prs.slide_width=Inches(13.333);prs.slide_height=Inches(7.5)
-prs.core_properties.title='Görünmez Cephe — OSINT Atlası';prs.core_properties.subject='Gerçek Meta IOC analizi ve anahtarsız GDELT bağlantısı. GDELT canlı indirmesi bu ortamda doğrulanmadı.'
+prs.core_properties.title='Görünmez Cephe — Sinematik OSINT Sunumu';prs.core_properties.subject='18 ana sahne, 15 dakika, gerçek konum bağlamı. Ülke düzeyindeki Meta IOC verisi; konum görselleri operasyon kanıtı değildir.'
 pdfmetrics.registerFont(TTFont('Atlas','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'));pdfmetrics.registerFont(TTFont('AtlasSerif','/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf'))
 pdf=canvas.Canvas(str(O/'ATLAS_SUNUMU.pdf'),pagesize=(960,540))
 for i,s in enumerate(slides):
  sl=prs.slides.add_slide(prs.slide_layouts[6])
- if i<14:
+ if i<main_count:
   sl.shapes.add_picture(str(O/'HAREKETLI_HARITA.gif') if i==5 else str(T/f'{i:02}.png'),0,0,width=prs.slide_width,height=prs.slide_height)
   pdf.drawImage(str(T/f'{i:02}.png'),0,0,width=960,height=540)
  else:
@@ -53,6 +55,9 @@ for i,s in enumerate(slides):
   assert y<6.8,(i,y)
   text(s['source'],.7,7.05,10.9,8,'66715B');text(f'{i+1:02d}',12,6.93,.7,24,'A03D2C',True)
  sl.notes_slide.notes_text_frame.text=f"Süre: {s['seconds']} saniye\n\n{s['notes']}\n\nKaynak: {s['source']}\n\nYeni sürüm: CANLI_HARITA.html dosyasında GDELT API bağlantısı ve JSON içe aktarma vardır. API canlı indirmesi bu ortamda doğrulanmadı. 6. slayttaki GIF yalnızca tarihsel veriyi vurgular; gerçek zamanlı trafik değildir."
+ transition=parse_xml('<p:transition xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" spd="med"><p:fade/></p:transition>')
+ sl._element.insert_element_before(transition,'p:timing','p:extLst')
  pdf.showPage()
 prs.save(O/'ATLAS_SUNUMU.pptx');pdf.save()
-print('Exported 21-slide editorial PPTX + PDF; GIF on slide 6, source notes preserved.')
+shutil.copyfile(O/'ATLAS_SUNUMU.pptx',O/'SINEMATIK_SUNUM.pptx');shutil.copyfile(O/'ATLAS_SUNUMU.pdf',O/'SINEMATIK_SUNUM.pdf')
+print(f'Exported {len(slides)} slides: {main_count} core + {len(slides)-main_count} appendices; fade transitions + animated map; matching PDF.')
