@@ -1,0 +1,17 @@
+{
+  "checks_passed": true,
+  "test_type": "synthetic UI responses, not scientific observations",
+  "live_GDELT_download_verified": false,
+  "javascript_errors": [],
+  "checks": [
+    "network failure yields no observations",
+    "URL deduplication and invalid protocol rejection",
+    "source-country map separated from IOC targets",
+    "IOC layer restored after news map",
+    "imported provenance explicitly unverified",
+    "export preserves provenance",
+    "bad schema rejected",
+    "fresh startup has no sample articles",
+    "mobile API dialog does not overflow"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "download_date": "2026-10-28",
+  "meta_commit": "2d664e985e55fb754de7b1175f713e11f73cf8c8",
+  "gdelt_status": "NOT_DOWNLOADED_NETWORK_BLOCKED",
+  "counts": {
+    "France": 2,
+    "Germany": 298,
+    "Multiple": 1,
+    "UK": 4,
+    "Italy": 2,
+    "Latvia": 3,
+    "Ukraine": 1
+  },
+  "files": {
+    "research/meta/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv": {
+      "sha256": "9f216a37e15c4772019d20ee620eafabf57a3876d4a7ab72fff5330fa8167d8d",
+      "bytes": 25213
+    },
+    "research/meta-threat-research.zip": {
+      "sha256": "f8d8d0a22bdf633dae7fc808a8fd9ae54aa487330c1585803b2a254bf2aa55ca",
+      "bytes": 831449
+    },
+    "research/countries.geojson": {
+      "sha256": "6866c877d39cba9c357620878839b336d569f8c662d3cfab4cb1dbe2d39c977f",
+      "bytes": 838726
+    }
+  }
+}

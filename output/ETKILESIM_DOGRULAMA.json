@@ -1,0 +1,19 @@
+{
+  "browser": "Chromium",
+  "javascript_errors": [],
+  "external_requests": [],
+  "unique_records": 311,
+  "checks": [
+    "country evidence 298",
+    "UK filter and CSV export 4",
+    "domain search",
+    "GDELT unavailable layer",
+    "six-country scope",
+    "zoom",
+    "keyboard navigation",
+    "speaker notes",
+    "timed playback",
+    "mobile without horizontal overflow",
+    "animated GIF and embedded PPTX"
+  ]
+}

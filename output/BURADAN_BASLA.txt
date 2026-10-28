@@ -1,0 +1,26 @@
+GÖRÜNMEZ CEPHE — YENİ ATLAS BASKISI
+
+ÖNCE AÇ: GORUNMEZ_CEPHE_ATLAS.html
+Dosyayı indirip Chrome veya Edge ile aç. İnternet olmadan IOC verisi ve sunum çalışır.
+
+GDELT VERİSİ:
+1. “GDELT verisini bağla” düğmesine bas.
+2. Kampanya ve dönem seç; “GDELT’ten veriyi getir”i dene.
+3. Erişim hatasında resmî haber sorgusunu aç. JSON yanıtını kaydet ve içeri aktar.
+4. Haber kaynaklarını haritala. Mavi kaynak ülkeleri, kırmızı IOC hedeflerinden ayrıdır.
+5. Veri ve sorguyu indirerek sakla.
+API anahtarı gerekmez. Bu ortamda canlı indirme HTTP 403 nedeniyle doğrulanamadı.
+
+SUNUM:
+PowerPoint: ATLAS_SUNUMU.pptx
+PDF: ATLAS_SUNUMU.pdf
+Konuşma metni: KONUSMACI_NOTLARI.md
+14 ana slayt + 7 ek; 15 dakikalık anlatım.
+
+Oklar: sahneleri ilerlet. Boşluk: otomatik anlatım. N: konuşmacı notları.
+Ülkeye tıkla: kanıtlar. + / −: yakınlaş. Escape: açık pencereyi kapat.
+
+311 gerçek Meta alan adı göstergesi kullanılır; haber veya operasyon sayısı değildir.
+Animasyonlar vurgu amaçlıdır; gerçek zamanlı trafik gösterilmez.
+JSON içe aktarma, dosya kökeninin bağımsız doğrulandığı anlamına gelmez.
+GDELT_API_REHBERI.md dosyasında hazır resmî sorgular ve sınırlılıklar vardır.

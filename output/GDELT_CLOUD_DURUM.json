@@ -1,0 +1,11 @@
+{
+  "provider": "GDELT Cloud",
+  "canonical_rest_origin": "https://gdeltcloud.com/api/v2",
+  "secret_requirement_saved": "GDELT_API_KEY",
+  "key_value_injected": false,
+  "runtime_access": "blocked_by_proxy_403",
+  "configuration_draft_saved": true,
+  "requires_publish": true,
+  "live_download_verified": false,
+  "synthetic_contract_tests_passed": 8
+}

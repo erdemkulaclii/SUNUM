@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Download bundles and superseded exports remain local; publish current atlas files.
+/output/*.zip
+/output/SUNUM_15dk.pdf
+/output/SUNUM_15dk.pptx
+/output/SUNUM_HAREKETLI.pptx
+
+# Third-party examples were read for documentation; not required to rebuild the atlas.
+/research/gdelt_cloud_docs/demos.zip
