@@ -1,14 +1,14 @@
 {
   "checks_passed": true,
   "main_scenes": 18,
-  "slides_with_appendices": 26,
+  "slides_with_appendices": 34,
   "seconds": 900,
   "unique_indicators": 311,
   "real_context_images": 4,
   "camera_GPS_verified": false,
   "context_is_operation_evidence": false,
   "javascript_errors": [],
-  "external_network_requests_on_startup": [],
+  "automatic_API_request_attempts": 1,
   "checks": [
     "four images decoded offline",
     "four evidence filters correct",

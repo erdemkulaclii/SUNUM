@@ -14,3 +14,10 @@ __pycache__/
 
 # Third-party examples were read for documentation; not required to rebuild the atlas.
 /research/gdelt_cloud_docs/demos.zip
+
+# Read for academic review; redistribution licenses were not established.
+/research/academic/*.pdf
+/research/academic/lazer2018.txt
+/research/academic/grinberg2019.txt
+/research/academic/vosoughi2018.txt
+/research/academic/allen2020.txt

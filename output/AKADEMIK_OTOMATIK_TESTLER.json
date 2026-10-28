@@ -1,0 +1,25 @@
+{
+  "checks_passed": true,
+  "test_data": "SYNTHETIC UI FIXTURES ONLY; not bundled as findings",
+  "live_GDELT_download_verified": false,
+  "core_scenes": 18,
+  "appendices": 16,
+  "APA_references": 12,
+  "planned_seconds": 900,
+  "checks": [
+    "automatic startup without click",
+    "frozen UTC query window",
+    "automatic timeline uses same window",
+    "deduplication and unsafe URL rejection",
+    "live scene summary updates",
+    "fresh cache avoids repeat requests",
+    "cached origin and original receipt retained",
+    "export preserves date and origin",
+    "bounded retry and stale cache fallback",
+    "empty response is not zero operations",
+    "offline IOC atlas",
+    "APA/method/speech tabs and speech download",
+    "mobile no horizontal overflow"
+  ],
+  "javascript_errors": []
+}

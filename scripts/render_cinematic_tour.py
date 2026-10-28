@@ -7,6 +7,7 @@ R=Path(__file__).resolve().parents[1];O=R/'output';T=Path('/tmp/sunum-cinematic-
 gif_frames=[];index=0
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);page=b.new_page(viewport={'width':1280,'height':720},device_scale_factor=1)
+ page.route('https://api.gdeltproject.org/**',lambda route:route.abort())
  page.set_content((O/'SINEMATIK_SUNUM.html').read_text());page.add_style_tag(content='.transport,.map-tabs,.map-tools,.chips,.hint,#scope,#notes{display:none!important}.timeline{height:54px}.reading .stage{height:calc(100vh - 54px);min-height:0}.reading .narrative{padding:27px 26px}.reading .narrative h1{font-size:37px}.reading .hero-number{font-size:59px}.reading .narrative .lead{font-size:13px}.reading .fact{font-size:11px;margin-top:18px}.reading #country-card.geo-card{width:290px}.reading .geo-photo{height:125px}.reading .geo-body{padding:10px 13px}.reading .geo-body h2{font-size:22px}.reading .geo-body h2 .count{font-size:29px}.reading .geo-body p{font-size:9px}.reading .geo-body .precision{font-size:8px}.reading .geo-credit{font-size:7px}.reading .geo-body details{display:none}')
  page.evaluate("document.body.classList.add('reading')")
  for scene,frames in [(5,12),(6,28),(7,28),(8,28),(9,28),(5,12)]:

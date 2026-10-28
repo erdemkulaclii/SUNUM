@@ -6,7 +6,8 @@ R=Path(__file__).resolve().parents[1];O=R/'output'
 with sync_playwright() as p:
  b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
  page=b.new_page(viewport={'width':1600,'height':1000});errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
- page.set_content((O/'CANLI_HARITA.html').read_text());page.wait_for_timeout(700)
+ page.route('https://api.gdeltproject.org/**',lambda r:r.fulfill(status=503,headers={'Access-Control-Allow-Origin':'*'},body='unavailable'))
+ page.set_content((O/'CANLI_HARITA.html').read_text());page.wait_for_timeout(1200)
  assert page.locator('.cell').count()==311
  page.locator('#open-api').click()
  assert 'api.gdeltproject.org/api/v2/doc/doc?' in page.locator('#direct-api').get_attribute('href')
@@ -51,7 +52,7 @@ with sync_playwright() as p:
  page.wait_for_function("document.getElementById('api-status').textContent.includes('Dosya kabul edilmedi')")
  assert not errors,errors
  # Fresh page verifies that the final presentation ships without any test articles.
- fresh=b.new_page(viewport={'width':1600,'height':1000});fresh.set_content((O/'CANLI_HARITA.html').read_text());fresh.wait_for_timeout(700)
+ fresh=b.new_page(viewport={'width':1600,'height':1000});fresh.route('https://api.gdeltproject.org/**',lambda r:r.abort());fresh.set_content((O/'CANLI_HARITA.html').read_text());fresh.wait_for_timeout(700)
  assert fresh.locator('#news-output .news-row').count()==0
  fresh.screenshot(path=str(O/'ATLAS_ONIZLEME.png'))
  fresh.set_viewport_size({'width':390,'height':844})

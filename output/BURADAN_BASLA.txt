@@ -1,31 +1,12 @@
-GÖRÜNMEZ CEPHE — YENİ ATLAS BASKISI
+GÖRÜNMEZ CEPHE — AKADEMİK SUNUM
 
-ÖNCE AÇ: SINEMATIK_SUNUM.html
-Dosyayı indirip Chrome veya Edge ile aç. İnternet olmadan IOC verisi ve sunum çalışır.
+1. SINEMATIK_SUNUM.html dosyasını Firefox/Chrome/Edge ile aç.
+2. F11 tam ekran; sağ/sol ok sahne; boşluk otomatik 15 dakikalık akış.
+3. “Araştırma dosyası · APA 7”: kaynakça, yöntem, savunma ve konuşma metni.
+4. GDELT güncel haber sorgusu açılışta otomatik çalışır. Elle bağlamak gerekmez.
+5. KONUSMA_METNI_15_DK.docx veya .pdf dosyasından prova yap.
 
-GDELT VERİSİ:
-1. “GDELT verisini bağla” düğmesine bas.
-2. Kampanya ve dönem seç; “GDELT’ten veriyi getir”i dene.
-3. Erişim hatasında resmî haber sorgusunu aç. JSON yanıtını kaydet ve içeri aktar.
-4. Haber kaynaklarını haritala. Mavi kaynak ülkeleri, kırmızı IOC hedeflerinden ayrıdır.
-5. Veri ve sorguyu indirerek sakla.
-API anahtarı gerekmez. Bu ortamda canlı indirme HTTP 403 nedeniyle doğrulanamadı.
+34 slayt = 18 ana sahne + 16 ek. Ana akış planı 900 saniye; gerçek okuma süresi prova ile ölçülmelidir.
 
-SUNUM:
-PowerPoint: SINEMATIK_SUNUM.pptx
-PDF: SINEMATIK_SUNUM.pdf
-Konuşma metni: KONUSMACI_NOTLARI.md
-18 ana sahne + 8 ek; 15 dakikalık anlatım.
-
-Oklar: sahneleri ilerlet. Boşluk: otomatik anlatım. N: konuşmacı notları.
-Ülkeye tıkla: kanıtlar. + / −: yakınlaş. Escape: açık pencereyi kapat.
-
-311 gerçek Meta alan adı göstergesi kullanılır; haber veya operasyon sayısı değildir.
-Animasyonlar vurgu amaçlıdır; gerçek zamanlı trafik gösterilmez.
-JSON içe aktarma, dosya kökeninin bağımsız doğrulandığı anlamına gelmez.
-GDELT_API_REHBERI.md dosyasında hazır resmî sorgular ve sınırlılıklar vardır.
-
-SİNEMATİK YENİLİKLER:
-Gerçek konum fotoğrafları, coğrafi bağlantı çizgileri ve yumuşak kamera hareketleri.
-“Ülke turu” düğmesi dört ülkeyi sırayla açar. “Sinematik görünüm” ile atlas görünümü arasında geçiş yap.
-HARITA_TURU.mp4: kısa hareketli önizleme. Konum görselleri operasyon kanıtı değildir.
+Gömülü gerçek IOC haritası internet olmadan çalışır. Canlı haber sorgusu internet/API erişimi ister. Bağlantı yoksa veri uydurulmaz; uygun eski API yanıtı varsa tarihi ve önbellek etiketiyle gösterilir.
+Güncel GDELT haber seçkisi 2022 tarihsel karşılaştırmasının yerine geçmez. 311, Meta’nın benzersiz alan adı göstergesidir; haber veya operasyon sayısı değildir.

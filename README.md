@@ -6,11 +6,31 @@ GitHub, HTML sunumunu doğrudan çalıştırmaz. Atlas dosyasını **Download ra
 
 Türkçe, akademik, 15 dakikalık sunum paketi. **Bu sürüm tamamlanmış GDELT araştırması değildir.** Gerçek Meta gösterge verisinden üretilmiş vaka analizi ve GDELT araştırma tasarımıdır. Ağ erişimi açılmadan GDELT sonucu üretilmemiştir.
 
+## Akademik sürüm: araştırma sorusu, APA 7 ve konuşma metni
+
+18 ana sahne / planlanan 15 dakika; 16 yöntem, savunma ve kaynakça eki; toplam **34 slayt**. Birinci araştırma sorusu gerçek Meta IOC verisiyle yanıtlanır. İkinci soru, hedef dağılımını haberlerin kaynak ve konu coğrafyalarıyla karşılaştırmaya yöneliktir; 2022 tarihsel GDELT karşılaştırması tamamlanmadı. Çerçeve: kavramlar → betimsel vaka tasarımı → veri temizleme → ülke bulguları → GDELT protokolü → geçerlilik → katkı → soruya dönüş.
+
+- [Konuşma metni — Word](output/KONUSMA_METNI_15_DK.docx) ve [PDF](output/KONUSMA_METNI_15_DK.pdf): doğrudan okunabilir 18 sahnelik Türkçe anlatı, zaman aralıkları, ayrı sahne yönergeleri, savunma yanıtları ve kaynakça. Planlanan 900 saniye, konuşmacının gerçek okuma süresi için garanti değildir; prova gerekir.
+- [Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf): özet, soru–veri matrisi, kuramsal ölçüm, kodlama/güvenirlik planı, geçerlilik, etik ve literatür sentezi.
+- [APA 7 kaynakça](output/APA7_KAYNAKCA.pdf): yazar–yıl atıfları, alfabetik kaynakça, italik eser/dergi adları, DOI URL ve asılı girinti. [Erişim denetimi](AKADEMIK_KAYNAK_DENETIMI.md) hangi metinlerin doğrudan incelendiğini gösterir.
+
+HTML içindeki **Araştırma dosyası · APA 7** düğmesi kaynakça, yöntem/savunma ve konuşma metnini açar. PowerPoint not alanlarında aynı metin vardır. Ana sahneler görsel olarak dışa aktarılmıştır; kaynakça ekleri düzenlenebilir metin olarak hazırlanmıştır. Dört hakemli makalenin erişilebilir kopyaları incelendi; diğer kaynakların bibliyografik erişimi tam metin incelemesi olarak sunulmadı. Makale PDF kopyaları yeniden dağıtılmaz.
+
+Bu, doktora araştırmasına uygun yöntem açıklığıyla hazırlanmış bir vaka sunumudur; tamamlanmış doktora tezi, sistematik literatür taraması veya nedensel etki araştırması değildir.
+
+## Otomatik GDELT nasıl çalışır?
+
+Açılıştan sonra bir ArtList isteği gönderilir. Başlangıç/bitiş UTC zamanları sabitlenir. Başarılı yanıtta URL’ler tekilleştirilir; geçersiz bağlantılar çıkarılır. Haber varsa aynı pencere için TimelineVolRaw isteği en az 6,5 saniye sonra yapılır. Ağ/servis hatasında en fazla bir otomatik tekrar vardır; sürekli tarama yapılmaz.
+
+Uygun bir yanıt tarayıcıda saklanabiliyorsa son 6 saatlik önbellek tekrar istek yapmadan açılır. Daha eski yanıt 30 gün sınırı içinde tarihi korunarak gösterilir ve güncelleme denenir. Önbellek **bu oturumda canlı doğrulanmış** gibi etiketlenmez. İçe aktarılan dosyalar otomatik API önbelleğine yükseltilmez. Özel gezinme veya dosya açma güvenlik kuralları kalıcı saklamayı engelleyebilir; sunum buna bağımlı değildir. İnternet/API/CORS engeli varsa kullanıcıdan manuel işlem istenmez; veri durumu açıkça gösterilir.
+
+Bu ortamda GDELT ağı hâlâ engellidir; otomasyonun başarı/boş/başarısız/önbellek/çevrimdışı davranışları açıkça sentetik test yanıtlarıyla sınandı. Test yanıtları araştırma bulgusu olarak veya dağıtılan HTML içinde bulunmaz. Anahtar isteyen GDELT Cloud istemcisi ayrı kalır; sunumda sır bulunmaz.
+
 ## Son sürüm: Sinematik konum dosyaları ve 18 sahnelik anlatı
 
 Öncelikle `output/GORUNMEZ_CEPHE_ATLAS.html` dosyasını açın. Yeni baskıda kâğıt tonları, serif başlıklar, kaynak gösteren harita, veri temizleme ve kanıt zinciri diyagramları kullanılır. Güncel PowerPoint/PDF: `output/ATLAS_SUNUMU.pptx` ve `output/ATLAS_SUNUMU.pdf`. Eski sürümler arşiv için korunmuştur.
 
-“GDELT verisini bağla” düğmesiyle kampanya ve dönem seçip doğrudan resmî DOC API’ye istek gönderilebilir. API anahtarı gerekmez. Mevcut ortamın GDELT erişimi hâlâ engelli; bu nedenle burada başarılı canlı indirme doğrulanmadı. Kullanıcının kendi tarayıcısındaki ağ/CORS koşulları da sonucu etkileyebilir. İstek başarısızsa resmî sorgu bağlantısını açıp kaydedilen JSON dosyasını içeri aktarma yolu vardır.
+Sunum açıldığında son 30 gün için resmî DOC API sorgusu otomatik çalışır; kullanıcı bağlantı veya dosya içe aktarma işlemi yapmak zorunda değildir. API anahtarı gerekmez. Mevcut ortamın GDELT erişimi hâlâ engelli; bu nedenle burada başarılı canlı indirme doğrulanmadı. Kullanıcının kendi tarayıcısındaki ağ/CORS koşulları da sonucu etkileyebilir. İstek başarısızsa bir kez otomatik tekrar denenir; mevcut gerçek yanıt varsa zamanı ve önbellek etiketiyle korunur. Elle JSON içe aktarma yalnızca isteğe bağlı bir gelişmiş araçtır.
 
 Gerçek API yanıtı geldiğinde haber URL’leri tekilleştirilir; kaynak ülkeleri mavi katmanda haritalanır. IOC hedefleri kırmızı katmanda kalır. İçe aktarılan dosya açıkça “kaynak bağımsız doğrulanmadı” etiketi alır. Yanıt, sorgu, dönem ve yükleme zamanı birlikte indirilebilir. Haberler otomatik dezenformasyon veya operasyon etiketi almaz. Arayüz testleri sentetik yanıtlarla yapıldı; bu yanıtlar sunumda veya araştırma bulgularında kullanılmadı.
 
@@ -18,19 +38,19 @@ Detaylar: `output/GDELT_API_REHBERI.md`.
 
 ## Sinematik sunum
 
-Önce [SINEMATIK_SUNUM.html](output/SINEMATIK_SUNUM.html) dosyasını indirip Chrome/Edge ile açın. [PowerPoint](output/SINEMATIK_SUNUM.pptx), [PDF](output/SINEMATIK_SUNUM.pdf) ve [17 saniyelik harita turu](output/HARITA_TURU.mp4) aynı anlatımı tamamlar. 18 ana sahne, 8 ek; konuşmacı zaman planı tam 900 saniyedir.
+Önce [SINEMATIK_SUNUM.html](output/SINEMATIK_SUNUM.html) dosyasını indirip Chrome/Edge ile açın. [PowerPoint](output/SINEMATIK_SUNUM.pptx), [PDF](output/SINEMATIK_SUNUM.pdf) ve [17 saniyelik harita turu](output/HARITA_TURU.mp4) aynı anlatımı tamamlar. 18 ana sahne, 16 ek; konuşmacı zaman planı tam 900 saniyedir.
 
 Ülke seçildiğinde kamera gerçek bir yer/kent referansına yaklaşır. Fotoğraf kartı, SVG coğrafi işaretine bağlı kalır; sürükleme, yakınlaşma ve ekran boyutu değişiminde bağlantı çizgisi yeniden hesaplanır. Berlin/Potsdamer Platz, Londra/Adams Place Bridge, Paris/Eiffel Kulesi ve Venedik kıyısı için gerçek arşiv görselleri gömülüdür. “Ülke turu” 4 dosyayı sırayla açar. Sinematik ve açık atlas görünümleri arasında geçilebilir; azaltılmış hareket tercihleri korunur.
 
 **Coğrafi kesinlik:** Koordinatlar yer işareti/kent referansıdır; kamera GPS konumu doğrulanmış değildir. Fotoğraflar operasyon anını veya operasyonun şehirde gerçekleştiğini göstermez. IOC verisi hedef ülke düzeyindedir. Künye, kaynak URL, işleme, lisans açıklaması ve SHA-256: [assets/locations/locations.json](assets/locations/locations.json). Paris görseli açık lisanslı diye etiketlenmez; kaynak galerinin küçük resmi ve telif künyesi korunur.
 
-PowerPoint 26 slaytta yumuşak geçiş içerir; 6. slaytta döngüsel harita animasyonu bulunur. PowerPoint masaüstü oynatma davranışı bu ortamda test edilemedi; en kapsamlı etkileşim HTML sürümündedir. PDF statiktir. Video, tarihsel bir olay zaman çizelgesi veya gerçek zamanlı trafik değildir.
+PowerPoint 34 slaytta yumuşak geçiş içerir; 6. slaytta döngüsel harita animasyonu bulunur. PowerPoint masaüstü oynatma davranışı bu ortamda test edilemedi; en kapsamlı etkileşim HTML sürümündedir. PDF statiktir. Video, tarihsel bir olay zaman çizelgesi veya gerçek zamanlı trafik değildir.
 
-Yeniden üretim: `python scripts/prepare_location_assets.py`, `python scripts/build_interactive.py`, `python scripts/render_cinematic_tour.py`, `python scripts/export_editorial.py`. Tarayıcı çıktısı ve video için Chromium/Playwright ile ffmpeg gerekir. Hazır yerel JPEG varlıkları zaten depoda olduğundan yeniden indirme gerekmez. `python scripts/verify_cinematic.py`, fotoğrafın coğrafi işaretine piksel hizası, kanıt filtreleri, 18 sahne/900 saniye, mobil yerleşim ve sıfır başlangıç ağ isteğini denetler.
+Yeniden üretim: `python scripts/prepare_location_assets.py`, `python scripts/build_interactive.py`, `python scripts/render_cinematic_tour.py`, `python scripts/export_editorial.py`. Tarayıcı çıktısı ve video için Chromium/Playwright ile ffmpeg gerekir. Hazır yerel JPEG varlıkları zaten depoda olduğundan yeniden indirme gerekmez. `python scripts/verify_cinematic.py`, fotoğrafın coğrafi işaretine piksel hizası, kanıt filtreleri, 18 sahne/900 saniye, mobil yerleşim ve yalnızca izin verilen otomatik API isteklerini denetler.
 
 ## Etkileşimli atlasın kullanımı
 
-**Önerilen dosya: `output/CANLI_HARITA.html`.** İndirip Chrome veya Edge ile açın. Harita, veri, tasarım ve kod tek dosyada gömülüdür. İnternet veya sunucu gerektirmez. Başlangıçta dış ağ isteği yapılmaz. Kaynak bağlantıları ve yeni GDELT veri getirme düğmesi, kullanıcı tıkladığında ilgili dış servise bağlanır.
+**Önerilen dosya: `output/CANLI_HARITA.html`.** İndirip Chrome veya Edge ile açın. Harita, veri, tasarım ve kod tek dosyada gömülüdür. İnternet veya sunucu gerektirmez. Açılışta resmî GDELT DOC API sorgusu otomatik denenir. Çevrimdışıyken gömülü IOC verisi ve harita çalışır. Kaynak bağlantıları tıklandığında ilgili dış sayfa açılır.
 
 - Ülke sınırına, işaretine veya ülke düğmesine tıklayın: sayı, kaynak etiketi ve gerçek alan adı örnekleri açılır.
 - “Kanıt kayıtlarını incele”: kaynak satırlarını arayın, ülke filtresi uygulayın, filtrelenmiş CSV indirin.

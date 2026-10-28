@@ -1,0 +1,110 @@
+[
+  {
+    "id": "allcott2017",
+    "cite": "Allcott & Gentzkow, 2017",
+    "apa": "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. <i>Journal of Economic Perspectives, 31</i>(2), 211–236.",
+    "url": "https://doi.org/10.1257/jep.31.2.211",
+    "kind": "Hakemli makale",
+    "access": "Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi",
+    "verification": "Başlık, yazar, yıl, cilt ve sayfalar Allen et al. (2020) kaynakça 1 ve Grinberg et al. (2019) kaynakça 8 ile karşılaştırıldı. DOI bağlantısı bu ortamda çözümlenmedi."
+  },
+  {
+    "id": "allen2020",
+    "cite": "Allen et al., 2020",
+    "apa": "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. <i>Science Advances, 6</i>(14), Article eaay3539.",
+    "url": "https://doi.org/10.1126/sciadv.aay3539",
+    "kind": "Hakemli makale",
+    "access": "Erişilebilir makale metni incelendi",
+    "verification": "Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı."
+  },
+  {
+    "id": "cohen1960",
+    "cite": "Cohen, 1960",
+    "apa": "Cohen, J. (1960). A coefficient of agreement for nominal scales. <i>Educational and Psychological Measurement, 20</i>(1), 37–46.",
+    "url": "https://doi.org/10.1177/001316446002000104",
+    "kind": "Hakemli yöntem makalesi",
+    "access": "Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi",
+    "verification": "Başlık, yazar, yıl, cilt ve sayfalar CRAN irr paketinin kappa2.Rd belgesiyle karşılaştırıldı; DOI çözümlemesi yapılamadı."
+  },
+  {
+    "id": "earl2004",
+    "cite": "Earl et al., 2004",
+    "apa": "Earl, J., Martin, A., McCarthy, J. D., & Soule, S. A. (2004). The use of newspaper data in the study of collective action. <i>Annual Review of Sociology, 30</i>, 65–80.",
+    "url": "https://doi.org/10.1146/annurev.soc.30.012703.110603",
+    "kind": "Hakemli yöntem derlemesi",
+    "access": "Bibliyografik bağlantı bulundu; tam metin incelenmedi",
+    "verification": "DOI bağlantısı erişilebilir ikincil bir araştırma önerisinde bulundu. Tam bibliyografik kayıt yayıncıdan bu oturumda doğrulanamadı; belirli alıntı veya ampirik sayı aktarılmadı."
+  },
+  {
+    "id": "gdelt2017",
+    "cite": "GDELT Project, 2017",
+    "apa": "GDELT Project. (2017). <i>GDELT DOC 2.0 API debuts!</i>",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "kind": "Resmî teknik belge",
+    "access": "Resmî bağlantı mevcut; canlı sayfaya erişilemedi",
+    "verification": "DOC sözleşmesi açık kaynak istemci koduyla karşılaştırıldı. Teknik işlev, hakemli yöntem doğrulaması veya başarılı veri indirmesi değildir."
+  },
+  {
+    "id": "grinberg2019",
+    "cite": "Grinberg et al., 2019",
+    "apa": "Grinberg, N., Joseph, K., Friedland, L., Swire-Thompson, B., & Lazer, D. (2019). Fake news on Twitter during the 2016 U.S. presidential election. <i>Science, 363</i>(6425), 374–378.",
+    "url": "https://doi.org/10.1126/science.aau2706",
+    "kind": "Hakemli makale",
+    "access": "Erişilebilir makale metni incelendi",
+    "verification": "Makale metnindeki yazar, başlık, dergi ve DOI karşılaştırıldı. ABD/Twitter örneklemi Batı Avrupa etkisine genellenmedi."
+  },
+  {
+    "id": "lazer2018",
+    "cite": "Lazer et al., 2018",
+    "apa": "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. <i>Science, 359</i>(6380), 1094–1096.",
+    "url": "https://doi.org/10.1126/science.aao2998",
+    "kind": "Hakemli kavramsal makale",
+    "access": "Erişilebilir yazar sürümü incelendi",
+    "verification": "Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor."
+  },
+  {
+    "id": "leetaru2013",
+    "cite": "Leetaru & Schrodt, 2013",
+    "apa": "Leetaru, K., & Schrodt, P. A. (2013, April). <i>GDELT: Global data on events, location, and tone, 1979–2012</i> [Conference presentation]. International Studies Association Annual Convention, San Francisco, CA, United States.",
+    "url": "http://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf",
+    "kind": "Konferans bildirisi; dergi makalesi değil",
+    "access": "Bibliyografik başvuru; tam metin incelenmedi",
+    "verification": "GDELT’in tarihsel araştırma bağlamı için verilir. 2013 bildirisi DOC 2.0 veya Cloud REST V2 teknik sözleşmesinin kanıtı olarak kullanılmadı."
+  },
+  {
+    "id": "meta2022",
+    "cite": "Meta, 2022",
+    "apa": "Meta. (2022, September 27). <i>2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv</i> [Data set]. GitHub.",
+    "url": "https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv",
+    "kind": "Birincil gösterge veri seti; hakemli yayın değil",
+    "access": "Ham veri indirildi, incelendi ve yeniden sayıldı",
+    "verification": "Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir."
+  },
+  {
+    "id": "naturalearth",
+    "cite": "Natural Earth, n.d.",
+    "apa": "Natural Earth. (n.d.). <i>Admin 0—Countries, 1:110m</i> [Map].",
+    "url": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+    "kind": "Kartografik veri",
+    "access": "GeoJSON kopyası indirildi ve incelendi",
+    "verification": "nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir."
+  },
+  {
+    "id": "vosoughi2018",
+    "cite": "Vosoughi et al., 2018",
+    "apa": "Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. <i>Science, 359</i>(6380), 1146–1151.",
+    "url": "https://doi.org/10.1126/science.aap9559",
+    "kind": "Hakemli makale",
+    "access": "Erişilebilir makale metni incelendi",
+    "verification": "Metin başlık, yazar ve DOI bilgisini içeriyor; nihai sayfalar Allen et al. (2020) kaynakçasıyla karşılaştırıldı. Yanlışlık, kasıt ve aktör atfı ayrıldı."
+  },
+  {
+    "id": "wardle2017",
+    "cite": "Wardle & Derakhshan, 2017",
+    "apa": "Wardle, C., & Derakhshan, H. (2017). <i>Information disorder: Toward an interdisciplinary framework for research and policy making</i> (Report No. DGI(2017)09). Council of Europe.",
+    "url": "https://rm.coe.int/information-disorder-toward-an-interdisciplinary-framework-for-researc/168076277c",
+    "kind": "Kurumsal kavramsal rapor; hakemli makale değil",
+    "access": "Bibliyografik kayıt karşılaştırıldı; özgün rapor incelenmedi",
+    "verification": "Yazar, başlık ve rapor numarası Lazer et al. (2018) kaynakça 1 ile karşılaştırıldı. Tanım aktarımı Lazer et al. üzerinden ikincil atıfla açıklandı."
+  }
+]

@@ -1,3 +1,17 @@
+# Otomatik GDELT bağlantısı
+
+Sunumu açmak yeterlidir: son 30 gün için resmî DOC sorgusu arka planda çalışır. Başarı, boş yanıt, bağlantı hatası ve tarihli önbellek ayrı gösterilir. “GDELT · otomatik” düğmesi yalnızca kanıt kaydını ve gelişmiş seçenekleri açar. Yeniden sorgulama ve JSON içe aktarma isteğe bağlıdır.
+
+Aynı sorgu/dönem için 6 saatten yeni yerel önbellek tekrar istek yapmadan kullanılır. Eski yanıt 30 gün sınırında korunarak güncelleme denenir. Ağ/servis hatasında bir otomatik tekrar yapılır. Başarılı haber yanıtından sonra aynı UTC penceresinde zaman serisi sorgulanır. Özel gezinme veya tarayıcı güvenlik kuralları önbelleği engellese de canlı sorgu denenebilir.
+
+Önbellek ve içe aktarılan dosya canlı doğrulama sayılmaz. Kaynak ülkesi, hedef ülke değildir. 250 sonuçluk seçki bütün haber evrenini temsil etmez. Haber başlıkları doğrulanmış dezenformasyon olarak etiketlenmez. Güncel sorgu 2022 tarihsel analizinin yerine geçmez.
+
+Bu ortamda başarılı canlı indirme doğrulanmadı. Testler sentetik yanıtlar kullanır; başlangıç sunumuna örnek haber eklenmez.
+
+---
+
+Önceki teknik ayrıntılar ve ileri seçenekler:
+
 # Gerçek GDELT verisini bağlama
 
 Güncel sunum: **GORUNMEZ_CEPHE_ATLAS.html**. Bilgisayarına indir, Chrome veya Edge ile aç. “GDELT verisini bağla” düğmesi, doğrudan resmî servise giden bir API bağlantısı içerir. API anahtarı istenmez.

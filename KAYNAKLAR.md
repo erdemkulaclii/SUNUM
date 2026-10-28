@@ -55,3 +55,8 @@ Berlin/Potsdamer Platz, Londra/Adams Place Bridge ve Venice Sunset gerçek 360°
 Paris/Eiffel Kulesi görseli, `eddyte/paris-photoblog` deposunun `dev/images/toureiffelmini.jpg` galeri küçük resmidir. Galeri bunu “Tour Eiffel” olarak adlandırır ve © 2018 Wildo Coda künyesi taşır. Açık yeniden kullanım lisansı doğrulanmadı; bu görsel CC0 olarak sunulmaz.
 
 Her dosyanın kaynak URL'si, lisans açıklaması, işleme bilgisi ve SHA-256 değeri `assets/locations/locations.json` içinde bulunur. Koordinatlar yer işareti/kent referanslarıdır; fotoğrafların kamera GPS konumu doğrulanmadı. Ülke etiketli IOC verisinden bu şehirlerde operasyon gerçekleştiği çıkarılamaz. Fotoğraflar olay kanıtı veya aynı döneme ait operasyon görüntüsü değildir. Harita bağlantı çizgisi fotoğrafı yer referansına bağlar; saldırı rotası göstermez.
+
+
+## Akademik kaynakça ve erişim günlüğü
+
+APA 7 tam kaynakça: [output/APA7_KAYNAKCA.md](output/APA7_KAYNAKCA.md). Yayıncıya erişim, okunmuş yazar/depo kopyası ve bibliyografik karşılaştırma ayrı düzeylerdir: [AKADEMIK_KAYNAK_DENETIMI.md](AKADEMIK_KAYNAK_DENETIMI.md). Dört erişilebilir akademik metnin özgün yöntem dersleri araştırma dosyasına işlendi; ABD/Twitter bulguları Batı Avrupa etkisi olarak aktarılmadı.

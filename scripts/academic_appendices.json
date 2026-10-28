@@ -1,0 +1,295 @@
+[
+  {
+    "title": "EK A · Soru–veri–yanıt matrisi",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "AS1: Yayımlanmış göstergeler hedef ülkeler arasında nasıl dağılıyor? → Meta CSV → ülke bazında benzersiz alan adı sayımı.",
+      "AS1 sonucu: 311 benzersiz alan adı; Almanya 298, Birleşik Krallık 4, Fransa 2, İtalya 2; diğer/çoklu 5.",
+      "AS2: Hedef dağılımı ile haberlerin kaynak/konu coğrafyaları nasıl karşılaştırılabilir? → tarihsel GDELT + insan kodlaması.",
+      "AS2 durumu: protokol hazır; aynı dönemli veri ve kodlama tamamlanmadı. Güncel otomatik seçki ayrı bir gözlemdir."
+    ],
+    "notes": "AS1 betimleyici bir sorudur. AS2 için dört ülkelik karşılaştırmadan nedensel veya güçlü istatistiksel çıkarım planlanmaz. Birimler ve zaman pencereleri eşitlenmeden ilişki katsayısı hesaplanmaz.",
+    "seconds": 0,
+    "citations": [
+      "meta2022",
+      "gdelt2017"
+    ],
+    "source": "Meta, 2022; GDELT Project, 2017"
+  },
+  {
+    "title": "EK B · Hipotez ve açıklama disiplini",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Bu çalışma keşfedici ve betimleyicidir; önceden kaydedilmiş doğrulayıcı hipotez testi yapılmadı.",
+      "Gözlenen Almanya ağırlığı, sonradan kurulmuş bir hipotezin doğrulanması diye sunulmaz.",
+      "İleri araştırma önermesi: hedef coğrafyası ile haber kaynak coğrafyası aynı dağılımı göstermek zorunda değildir. Bu önerme henüz sınanmadı.",
+      "Rakip açıklamalar: farklı altyapı kullanımı, platform görünürlüğü, tespit kapasitesi ve yayımlama seçimi. Mevcut veri bunları ayıramaz."
+    ],
+    "notes": "Hipotez izlenimi vermek için H1/H2 etiketleri eklemek araştırmayı güçlendirmez. Gelecekteki sınama için veri evreni, dönem, kodlama ve analiz ölçütleri sonuçlara bakmadan önce kaydedilmelidir.",
+    "seconds": 0,
+    "citations": [
+      "allen2020",
+      "meta2022"
+    ],
+    "source": "Allen et al., 2020; Meta, 2022"
+  },
+  {
+    "title": "EK C · Veri sözlüğü ve dönüşümler",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Birim: benzersiz domain_name. indicator_value küçük harfe çevrilir; yinelenen iki değer çıkarılır.",
+      "comment: kaynak hedef ülke etiketi. TLD, IP, barındırma veya haber kaynağı ülkesinden türetilmez.",
+      "ds: kaynağın gösterge tarihi. Tescil, ilk faaliyet veya saldırı başlangıcı olarak kullanılmaz.",
+      "Multiple-targeting ayrı kategori tutulur; ülkelere çoğaltılmaz. Letonya 3, Ukrayna 1, çoklu 1.",
+      "Dosya adı Çin ve Rusya’yı kapsar; açık China petition URL kayıtları alan adı analizinde yer almaz. Yeni bir aktör atfı yapılmaz."
+    ],
+    "notes": "Çıkarılan tekrarlar lnruzdeknn[.]online ve lrneuzdenken[.]online; her ikisi Almanya etiketli. Kaynak commit ve SHA-256 manifestte korunur.",
+    "seconds": 0,
+    "citations": [
+      "meta2022"
+    ],
+    "source": "Meta, 2022"
+  },
+  {
+    "title": "EK D · Tarihsel GDELT örnekleme planı",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "2022 tarihsel pencere örneği: 20 Eylül–11 Ekim 2022; rapor çevresindeki görünürlük. Bu pencere henüz analiz edilmedi.",
+      "GKG/uygun arşivde kapsam günlüğü tut: tarih, kaynak, dil, eksik dosya ve indirme durumu. Eksik gün sıfır haber değildir.",
+      "Kampanya varyasyonlarıyla keşif; IOC alan adları ve kaynak rapor bağlantılarıyla doğrulama; yanlış eşleşmelerin elle elenmesi.",
+      "Güncel DOC ArtList en çok 250 sonuç; göreli dönem sorgusu arşivlenmiş anda sabitlenir. Güncel sonuçlar 2022 ile eşleştirilmez."
+    ],
+    "notes": "GKG konum alanı hedef ülke yerine kullanılamaz. Olası görünürlük oranının paydası aynı dil, kaynak kapsamı ve dönemdeki bütün indeksli haberlerden gelmelidir; bu payda elde edilmeden oran üretilmez.",
+    "seconds": 0,
+    "citations": [
+      "gdelt2017",
+      "leetaru2013"
+    ],
+    "source": "GDELT Project, 2017; Leetaru & Schrodt, 2013"
+  },
+  {
+    "title": "EK E · Kodlama ve güvenirlik planı",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Pilot: uygun haberlerden seçilen küçük bir kümede iki bağımsız kodlayıcı; açık kod kitabı ve karar örnekleri.",
+      "Alanlar: uygunluk, kampanya, kaynak ülke, metindeki hedef ülke, anlatı, haberin işlevi ve belirsizlik.",
+      "İşlev kodları: aktarma; ifşa/çürütme; belirsiz; ilgisiz. Doğruluk ve davranış etiketleri ayrı tutulur.",
+      "Cohen κ = (Pₒ − Pₑ) / (1 − Pₑ). Ham uyum ve kategori frekanslarıyla birlikte raporlanır. Burada κ hesaplanmadı.",
+      "Anlaşmazlıklar uyum hesabından sonra karara bağlanır; özgün kodlar korunur. Otomatik model çıktısı bağımsız kodlayıcı yerine sayılmaz."
+    ],
+    "notes": "κ değeri üzerinde yalnız bir eşik üzerinden karar verilmez; kategori dengesizliği, örnek büyüklüğü ve belirsizlik tartışılır. Plan henüz uygulanmadı.",
+    "seconds": 0,
+    "citations": [
+      "cohen1960",
+      "lazer2018"
+    ],
+    "source": "Cohen, 1960; Lazer et al., 2018"
+  },
+  {
+    "title": "EK F · Geçerlilik, nedensellik ve etik",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Yapı geçerliliği: alan adı ≠ operasyon; haber görünürlüğü ≠ kullanıcı maruziyeti ≠ ikna.",
+      "Dış geçerlilik: platformun tespit/yayım seçimi olasılıklı örneklem değildir; dört ülke bütün Batı Avrupa’yı temsil etmez.",
+      "Nedensellik: ifşa raporu hem haber hacmini hem kamu farkındalığını etkileyebilir. Kontrolsüz zaman artışı başarı kanıtı değildir.",
+      "Etik: alan adları etkisizleştirilir; şüpheli siteler ziyaret edilmez. Kişisel veri veya anahtar sunum dosyasına konmaz.",
+      "Aktör atfı kaynakta korunur; Meta bulgusu bağımsız atıf diye sunulmaz. Fotoğrafın kente yakınlaşması operasyon GPS bilgisi değildir."
+    ],
+    "notes": "Toplumsal etki için farklı tasarım ve veri gerekir. Haber başlıkları otomatik dezenformasyon etiketi almaz.",
+    "seconds": 0,
+    "citations": [
+      "allen2020",
+      "grinberg2019",
+      "meta2022"
+    ],
+    "source": "Allen et al., 2020; Grinberg et al., 2019; Meta, 2022"
+  },
+  {
+    "title": "EK G · Savunmada gelebilecek sorular",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "“Neden Almanya?” → Bu liste yoğunlaşmayı gösterir; sebebini ayırt edecek karşılaştırmalı tespit ve faaliyet verisi yok.",
+      "“Bu bir doktora tezi mi?” → Hayır. Doktora araştırmasına uygun kaynak eleştirisi ve yöntem açıklığıyla hazırlanmış bir vaka sunumu.",
+      "“GDELT neyi kanıtlıyor?” → Başarılı yanıt, sorguya uyan haber seçkisini gösterir; operasyon doğruluğunu veya etkisini kanıtlamaz.",
+      "“İstatistiksel anlamlılık nerede?” → Olasılıklı örneklem ve tanımlı model yok; bu sürümde betimsel dağılım raporlanıyor.",
+      "“Rusya bağlantısı kesin mi?” → Kaynak raporlamasına ait; bağımsız çok-kaynaklı aktör atfı bu çalışmada yapılmadı."
+    ],
+    "notes": "Yanıtı uzatırken belirsizliği kesinliğe çevirmeyin. Veri sınırını açık söylemek, yapılmamış bir analiz için iddia üretmekten daha savunulabilirdir.",
+    "seconds": 0,
+    "citations": [
+      "meta2022",
+      "allen2020"
+    ],
+    "source": "Meta, 2022; Allen et al., 2020"
+  },
+  {
+    "title": "EK H · Kaynaklara erişim ve atıf biçimi",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Doğrudan incelenen akademik metinler: Lazer et al. (2018), Vosoughi et al. (2018), Grinberg et al. (2019), Allen et al. (2020). Erişilebilir depo/yazar kopyaları kullanıldı.",
+      "Bibliyografik düzey: Allcott ve Gentzkow; Cohen; Earl ve arkadaşları; Leetaru ve Schrodt; Wardle ve Derakhshan. Tam metinleri bu oturumda incelenmedi.",
+      "Wardle ve Derakhshan kavramsal çerçevesi Lazer et al. (2018) üzerinden aktarılır; bu ikincil erişim durumu metinde belirtilir.",
+      "DOI bağlantıları verilir; yayıncı/Crossref alan adlarının çözümlemesi ortam ağ politikası nedeniyle doğrulanamadı. Kaynak türleri hakemlilik açısından ayrıldı.",
+      "Birincil ampirik kanıt Meta CSV’sidir. Teknik belge ve konferans bildirisi hakemli dergi makalesi gibi sunulmaz."
+    ],
+    "notes": "APA 7 metin içi yazar–yıl; kaynakçada alfabetik sıra, yazar listeleri, eser/dergi italikleri, DOI URL ve asılı girinti kullanılır. Doğrudan alıntı yapılmadı.",
+    "seconds": 0,
+    "citations": [
+      "lazer2018",
+      "wardle2017",
+      "meta2022"
+    ],
+    "source": "Lazer et al., 2018; Wardle & Derakhshan, 2017; Meta, 2022"
+  },
+  {
+    "title": "EK I · Harita ve fotoğraf künyesi",
+    "kicker": "YÖNTEM VE TARTIŞMA EKLERİ",
+    "bullets": [
+      "Ülke sınırları: Natural Earth 1:110m; ülke hedef etiketleri: Meta CSV. Sınırlar ve kent fotoğrafları ayrı veri katmanlarıdır.",
+      "Berlin/Potsdamer Platz, Londra/Adams Place Bridge, Venice Sunset: HDRI Haven / Poly Haven gerçek panoramaları; pmndrs/drei-assets kopyaları; CC0.",
+      "Paris/Eiffel Kulesi: Wildo Coda (2018), eddyte/paris-photoblog galeri küçük resmi. Açık yeniden kullanım lisansı doğrulanmadı; CC0 denmez.",
+      "Koordinatlar kent/yer işareti referanslarıdır. Kamera GPS konumu doğrulanmadı. Görseller olay anını, saldırı rotasını veya şehirde operasyonu göstermez."
+    ],
+    "notes": "Tam kaynak URL, lisans notu, işleme, koordinat temeli ve SHA-256 assets/locations/locations.json dosyasındadır. Animasyonlar tarihsel olay ilerleyişi veya canlı trafik değil, anlatım vurgusudur.",
+    "seconds": 0,
+    "citations": [
+      "naturalearth",
+      "meta2022"
+    ],
+    "source": "Natural Earth, n.d.; Meta, 2022"
+  },
+  {
+    "title": "EK J · Literatürden araştırma problemine",
+    "kicker": "LİTERATÜR SENTEZİ / DÖRT İNCELENEN METİN",
+    "seconds": 0,
+    "citations": [
+      "lazer2018",
+      "vosoughi2018",
+      "grinberg2019",
+      "allen2020"
+    ],
+    "source": "Lazer et al., 2018; Vosoughi et al., 2018; Grinberg et al., 2019; Allen et al., 2020",
+    "bullets": [
+      "Lazer et al. (2018): haber biçimi, kurumsal normlar ve kavramsal tanım. Bu vaka: benzer alan adını içerik doğruluğu veya niyet ölçümüne çevirmeme.",
+      "Vosoughi et al. (2018): doğruluğu sınıflandırılmış haberlerin Twitter yayılımı. Bu vaka: yayılım ve doğruluk için bağımsız veri gereği; ABD/Twitter sonucunu ülkelere taşımama.",
+      "Grinberg et al. (2019): kullanıcı maruziyeti ve paylaşım örüntüleri. Bu vaka: alan adı sayısının kullanıcı deneyimi yerine geçmemesi.",
+      "Allen et al. (2020): veri kapsamı, temsil ve payda. Bu vaka: 311 içindeki payı operasyon evreni veya kamuoyu etkisi diye sunmama.",
+      "Sentez: altyapı, haber görünürlüğü ve etki farklı gözlem düzeyleridir. Sunumun araştırma problemi bunların coğrafi karşılaştırmada ayrılmasıdır."
+    ],
+    "notes": "Bu sentez bir sistematik literatür taraması değildir. Dört erişilebilir metinden alınan yöntem derslerini bu vakaya bağlar; literatürde ilk kez bulunan bir boşluk veya bütün çalışmaların aynı hatayı yaptığı iddiası kurulmaz."
+  },
+  {
+    "title": "EK K1 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Allcott, H., & Gentzkow, M. (2017). Social media and fake news in the 2016 election. Journal of Economic Perspectives, 31(2), 211–236. https://doi.org/10.1257/jep.31.2.211",
+      "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. Science Advances, 6(14), Article eaay3539. https://doi.org/10.1126/sciadv.aay3539"
+    ],
+    "notes": "Allcott & Gentzkow, 2017: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar Allen et al. (2020) kaynakça 1 ve Grinberg et al. (2019) kaynakça 8 ile karşılaştırıldı. DOI bağlantısı bu ortamda çözümlenmedi.\n\nAllen et al., 2020: Erişilebilir makale metni incelendi. Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "allcott2017",
+      "allen2020"
+    ],
+    "reference_ids": [
+      "allcott2017",
+      "allen2020"
+    ]
+  },
+  {
+    "title": "EK K2 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Cohen, J. (1960). A coefficient of agreement for nominal scales. Educational and Psychological Measurement, 20(1), 37–46. https://doi.org/10.1177/001316446002000104",
+      "Earl, J., Martin, A., McCarthy, J. D., & Soule, S. A. (2004). The use of newspaper data in the study of collective action. Annual Review of Sociology, 30, 65–80. https://doi.org/10.1146/annurev.soc.30.012703.110603"
+    ],
+    "notes": "Cohen, 1960: Bibliyografik kayıt karşılaştırıldı; tam metin incelenmedi. Başlık, yazar, yıl, cilt ve sayfalar CRAN irr paketinin kappa2.Rd belgesiyle karşılaştırıldı; DOI çözümlemesi yapılamadı.\n\nEarl et al., 2004: Bibliyografik bağlantı bulundu; tam metin incelenmedi. DOI bağlantısı erişilebilir ikincil bir araştırma önerisinde bulundu. Tam bibliyografik kayıt yayıncıdan bu oturumda doğrulanamadı; belirli alıntı veya ampirik sayı aktarılmadı.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "cohen1960",
+      "earl2004"
+    ],
+    "reference_ids": [
+      "cohen1960",
+      "earl2004"
+    ]
+  },
+  {
+    "title": "EK K3 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "GDELT Project. (2017). GDELT DOC 2.0 API debuts! https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "Grinberg, N., Joseph, K., Friedland, L., Swire-Thompson, B., & Lazer, D. (2019). Fake news on Twitter during the 2016 U.S. presidential election. Science, 363(6425), 374–378. https://doi.org/10.1126/science.aau2706"
+    ],
+    "notes": "GDELT Project, 2017: Resmî bağlantı mevcut; canlı sayfaya erişilemedi. DOC sözleşmesi açık kaynak istemci koduyla karşılaştırıldı. Teknik işlev, hakemli yöntem doğrulaması veya başarılı veri indirmesi değildir.\n\nGrinberg et al., 2019: Erişilebilir makale metni incelendi. Makale metnindeki yazar, başlık, dergi ve DOI karşılaştırıldı. ABD/Twitter örneklemi Batı Avrupa etkisine genellenmedi.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "gdelt2017",
+      "grinberg2019"
+    ],
+    "reference_ids": [
+      "gdelt2017",
+      "grinberg2019"
+    ]
+  },
+  {
+    "title": "EK K4 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. Science, 359(6380), 1094–1096. https://doi.org/10.1126/science.aao2998",
+      "Leetaru, K., & Schrodt, P. A. (2013, April). GDELT: Global data on events, location, and tone, 1979–2012 [Conference presentation]. International Studies Association Annual Convention, San Francisco, CA, United States. http://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf"
+    ],
+    "notes": "Lazer et al., 2018: Erişilebilir yazar sürümü incelendi. Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor.\n\nLeetaru & Schrodt, 2013: Bibliyografik başvuru; tam metin incelenmedi. GDELT’in tarihsel araştırma bağlamı için verilir. 2013 bildirisi DOC 2.0 veya Cloud REST V2 teknik sözleşmesinin kanıtı olarak kullanılmadı.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "lazer2018",
+      "leetaru2013"
+    ],
+    "reference_ids": [
+      "lazer2018",
+      "leetaru2013"
+    ]
+  },
+  {
+    "title": "EK K5 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Meta. (2022, September 27). 2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv [Data set]. GitHub. https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv",
+      "Natural Earth. (n.d.). Admin 0—Countries, 1:110m [Map]. https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/"
+    ],
+    "notes": "Meta, 2022: Ham veri indirildi, incelendi ve yeniden sayıldı. Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir.\n\nNatural Earth, n.d.: GeoJSON kopyası indirildi ve incelendi. nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "meta2022",
+      "naturalearth"
+    ],
+    "reference_ids": [
+      "meta2022",
+      "naturalearth"
+    ]
+  },
+  {
+    "title": "EK K6 · Kaynakça / APA 7",
+    "kicker": "KAYNAKÇA / ALFABETİK SIRA",
+    "bullets": [
+      "Vosoughi, S., Roy, D., & Aral, S. (2018). The spread of true and false news online. Science, 359(6380), 1146–1151. https://doi.org/10.1126/science.aap9559",
+      "Wardle, C., & Derakhshan, H. (2017). Information disorder: Toward an interdisciplinary framework for research and policy making (Report No. DGI(2017)09). Council of Europe. https://rm.coe.int/information-disorder-toward-an-interdisciplinary-framework-for-researc/168076277c"
+    ],
+    "notes": "Vosoughi et al., 2018: Erişilebilir makale metni incelendi. Metin başlık, yazar ve DOI bilgisini içeriyor; nihai sayfalar Allen et al. (2020) kaynakçasıyla karşılaştırıldı. Yanlışlık, kasıt ve aktör atfı ayrıldı.\n\nWardle & Derakhshan, 2017: Bibliyografik kayıt karşılaştırıldı; özgün rapor incelenmedi. Yazar, başlık ve rapor numarası Lazer et al. (2018) kaynakça 1 ile karşılaştırıldı. Tanım aktarımı Lazer et al. üzerinden ikincil atıfla açıklandı.",
+    "seconds": 0,
+    "source": "Kaynak erişim günlüğü: AKADEMIK_KAYNAK_DENETIMI.md; DOI bağlantısı, canlı çözümleme doğrulaması değildir.",
+    "citations": [
+      "vosoughi2018",
+      "wardle2017"
+    ],
+    "reference_ids": [
+      "vosoughi2018",
+      "wardle2017"
+    ]
+  }
+]
