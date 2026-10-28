@@ -4,7 +4,7 @@ PROFESYONEL_SUNUM.html dosyasına çift tıklayıp Firefox/Chrome/Edge ile aç.
 Doğrudan dosya açılışında gömülü harita kullanılır; OpenStreetMap isteği gönderilmez. Harita ve fotoğraflar internet olmadan çalışır.
 F11 tam ekran. Sağ/sol ok: sahne. Boşluk: 15 dakikalık akış. N: konuşma metni.
 Kaynakça üst menüde ve ana sunumun son sahnesinde. Sonuç sondan bir önceki sahnede.
-35 slayt = 18 ana sahne + 17 ek. Akış planı 900 saniye; prova gerekir.
+35 slayt = 18 ana sahne + 17 ek. Her ana slaytta sav taşıyan başlık, üç açıklayıcı cümle ve ana çıkarım bulunur. Konuşma metni 1.757 sözcük; süreler okuma hızı ve harita duraklamalarına göre toplam 900 saniyeye dengelenmiştir. Prova gerekir.
 
 Harita motoru Leaflet, doğrudan açılışın tabanı Natural Earth sınır verisidir. OSM sokak/kent ayrıntıları için kök klasörde BASLAT.sh çalıştırılabilir. OSM erişimi reddedilirse çevrimiçi katman kaldırılır, gömülü harita gösterilir; 403 hata görselleri gösterilmez. Haritada kullanılan taban yazılıdır.
 Fotoğraflar coğrafi bağlamdır; şehirde operasyon kanıtı değildir.

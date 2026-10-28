@@ -7,3 +7,54 @@
 @media(max-width:720px){.leaflet-top.leaflet-right{top:103px;right:8px}}
 
 .export-mode #tile-status{display:block!important}.export-mode .map-strip{left:24px;right:24px;max-width:none;display:flex}
+
+/* Presentation hierarchy: readable slide prose first, geographic evidence second. */
+.slide-deck .stage{grid-template-columns:minmax(460px,48%) 1fr;min-height:680px}
+.slide-deck .stage.method-scene{grid-template-columns:minmax(500px,55%) 1fr}
+.slide-deck .narrative{padding:30px 38px 24px;display:block}
+.slide-deck .eyebrow{font-size:11px;letter-spacing:1.5px;margin-bottom:17px}
+.slide-deck .narrative h1{font-size:clamp(31px,2.7vw,43px);line-height:1.12;letter-spacing:-1.15px;margin:0 0 18px;max-width:900px}
+.slide-deck .lead{font-size:17px;line-height:1.6;color:#b8c8d9;margin:0 0 20px}
+.slide-points{padding:0;margin:0 0 20px;list-style:none}
+.slide-points li{position:relative;padding:0 0 0 20px;margin:0 0 15px;font-size:18px;line-height:1.55;color:#e0e7ef}
+.slide-points li:before{content:'';position:absolute;left:0;top:.6em;width:5px;height:5px;background:#f27561}
+.slide-takeaway{border-left:3px solid #f06450;padding:11px 0 11px 17px;margin:17px 0 21px}
+.slide-takeaway>span{font:9px/1.5 ui-monospace,monospace;letter-spacing:1.6px;color:#f68c79;display:block;margin-bottom:6px}
+.slide-takeaway p{font-size:18px;line-height:1.5;font-weight:600;color:#f4f7fb;margin:0}
+.slide-metric{border-top:1px solid #344b65;border-bottom:1px solid #344b65;display:flex;align-items:center;gap:17px;padding:12px 0;margin:0 0 16px}
+.slide-metric b{font-size:29px;line-height:1.1;color:#fff;letter-spacing:-.5px;white-space:nowrap}
+.slide-metric span{font:11px/1.65 ui-monospace,monospace;color:#96b6d4;text-transform:uppercase;letter-spacing:.3px}
+.slide-deck .citation{font-size:11px;line-height:1.6;border:0;padding-top:0;margin:0}
+.slide-deck .scene-time{margin:9px 0 4px}
+.slide-deck .text-button{font-size:10px}
+.slide-deck .cover-scene .eyebrow{font-size:13px;color:#f08a76;letter-spacing:2px;margin-bottom:25px}
+.slide-deck .cover-scene .narrative h1{font-size:clamp(40px,3.5vw,58px);line-height:1.04;letter-spacing:-1.8px;margin-bottom:23px}
+.cover-topic{font-size:21px;line-height:1.5;color:#f2f5f9;font-weight:500;margin-bottom:18px}
+.slide-deck .cover-scene .lead{font-size:16px;line-height:1.65;color:#a8bdd1;margin-bottom:25px}
+.cover-agenda{list-style:none;margin:0 0 26px;padding:0}
+.cover-agenda li{display:grid;grid-template-columns:32px 1fr;gap:13px;align-items:start;border-top:1px solid #2c4158;padding:14px 0;font-size:16px;line-height:1.55;color:#d6e2ed}
+.cover-agenda b{font:12px/1.8 ui-monospace,monospace;color:#f67e69}
+.deck-meta{display:flex;gap:17px;flex-wrap:wrap;font:10px ui-monospace,monospace;color:#8faccc;text-transform:uppercase;letter-spacing:.5px;margin-bottom:21px}
+.deck-meta>span+span{border-left:1px solid #3f5570;padding-left:17px}
+.slide-deck .analysis-panel{padding:29px 28px}
+.slide-deck .analysis-panel h2{font-size:clamp(26px,2.2vw,34px);line-height:1.18}
+.slide-deck .analysis-panel .row{grid-template-columns:95px 1fr;gap:17px;padding:15px 0}
+.slide-deck .row p{font-size:15px;line-height:1.65}
+.slide-deck .panel-note{font-size:11px!important;line-height:1.7!important}
+.slide-deck .map-legend{font-size:11px;max-width:270px}
+.slide-deck .map-caption{font-size:9px;line-height:1.6}
+.slide-deck .reference-preview{grid-template-columns:1fr;gap:13px}
+.slide-deck .reference-preview>div{padding-top:10px}
+.slide-deck .reference-preview h3{font-size:13px;margin-bottom:4px}
+.slide-deck .reference-preview p{font-size:11px;line-height:1.5;margin-bottom:5px}
+.slide-deck .reference-preview a{font-size:10px}
+.slide-deck.reading .stage{min-height:0}
+.slide-deck.reading .narrative{padding-top:33px}
+@media(min-width:1700px){.slide-deck .lead{font-size:19px}.slide-points li{font-size:20px}.slide-takeaway p{font-size:20px}.slide-deck .narrative{padding:36px 44px}.slide-deck .citation{font-size:12px}}
+@media(max-height:850px) and (min-width:1000px){.slide-deck .narrative{padding-top:24px;padding-bottom:18px}.slide-deck .eyebrow{margin-bottom:12px;font-size:10px}.slide-deck .narrative h1{font-size:32px;margin-bottom:14px}.slide-deck .lead{font-size:15px;line-height:1.5;margin-bottom:15px}.slide-points{margin-bottom:14px}.slide-points li{font-size:16px;line-height:1.45;margin-bottom:11px}.slide-takeaway{margin:13px 0 16px;padding:8px 0 8px 14px}.slide-takeaway p{font-size:16px;line-height:1.4}.slide-metric{padding:10px 0;margin-bottom:12px}.slide-metric b{font-size:25px}.slide-metric span{font-size:10px}.slide-deck .citation{font-size:10px}.slide-deck .cover-scene .narrative h1{font-size:43px}.cover-topic{font-size:18px}.cover-agenda li{font-size:14px;padding:11px 0}.slide-deck .cover-scene .lead{font-size:14px;margin-bottom:18px}.slide-deck .cover-scene .eyebrow{margin-bottom:17px}.deck-meta{margin-bottom:15px}}
+@media(max-width:1100px) and (min-width:721px){.slide-deck .stage,.slide-deck .stage.method-scene{grid-template-columns:50% 50%}.slide-deck .narrative{padding-left:25px;padding-right:25px}.slide-deck .narrative h1{font-size:31px}.slide-deck .lead{font-size:15px}.slide-points li,.slide-takeaway p{font-size:16px}.slide-deck .analysis-panel{padding:23px 20px}.slide-deck .analysis-panel .row{grid-template-columns:75px 1fr;gap:12px}.slide-deck .row p{font-size:12px}.slide-deck .analysis-panel h2{font-size:26px}}
+@media(max-width:720px){.slide-deck .stage,.slide-deck .stage.method-scene{display:flex;min-height:0}.slide-deck .narrative{padding:28px 23px}.slide-deck .narrative h1{font-size:34px;line-height:1.15}.slide-deck .lead{font-size:15px;line-height:1.7}.slide-points li{font-size:15px;line-height:1.65;margin-bottom:14px}.slide-takeaway p{font-size:16px;line-height:1.6}.slide-metric b{font-size:28px}.slide-metric span{font-size:9px}.slide-deck .cover-scene .narrative h1{font-size:40px}.slide-deck .cover-scene .eyebrow{font-size:11px;margin-bottom:20px}.cover-topic{font-size:18px;line-height:1.6}.cover-agenda li{font-size:14px}.slide-deck .cover-scene .lead{font-size:14px}.slide-deck .analysis-panel{padding:24px 20px}.slide-deck .analysis-panel .row{grid-template-columns:76px 1fr;gap:13px}.slide-deck .row p{font-size:12px}.slide-deck .analysis-panel h2{font-size:27px}.slide-deck .map-caption{font-size:8px}.slide-deck.reading .narrative{padding-top:28px}}
+
+/* Keep the complete authored slide visible on common 720p projectors. */
+.reading .scene-time{display:none}
+@media(max-height:850px) and (min-width:1000px){.slide-deck .narrative{padding-top:18px;padding-bottom:12px}.slide-deck .eyebrow{margin-bottom:9px}.slide-deck .narrative h1{margin-bottom:11px}.slide-deck .lead{margin-bottom:12px}.slide-takeaway{margin:10px 0 13px}.slide-metric{padding:8px 0}.slide-deck .cover-scene .lead{font-size:15px;margin-bottom:14px;line-height:1.5}.cover-agenda li{font-size:15px;line-height:1.45;padding:9px 0}.cover-agenda{margin-bottom:18px}.slide-deck .cover-scene .eyebrow{margin-bottom:13px}}

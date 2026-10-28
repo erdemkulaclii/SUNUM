@@ -6,7 +6,7 @@ narrative=json.loads((R/'scripts/cinematic_narrative.json').read_text())
 references=json.loads((R/'scripts/academic_references.json').read_text())
 appendices=json.loads((R/'scripts/academic_appendices.json').read_text())
 assert len(narrative)==18 and sum(x['seconds'] for x in narrative)==900
-slides=[{'title':x['title'],'kicker':x['kicker'],'bullets':[x['lead'],re.sub('<[^>]+>','',x['fact'])],'notes':x['notes'],'cue':x.get('cue',''),'seconds':x['seconds'],'source':x['source'],'citations':x['citations']} for x in narrative]+appendices
+slides=[{'title':x['title'],'kicker':x['kicker'],'bullets':x.get('points',[x['lead'],re.sub('<[^>]+>','',x['fact'])]),'takeaway':x.get('takeaway',''),'notes':x['notes'],'cue':x.get('cue',''),'seconds':x['seconds'],'source':x['source'],'citations':x['citations']} for x in narrative]+appendices
 locations=json.loads((R/'assets/locations/locations.json').read_text())
 for location in locations.values():location['src']='data:image/jpeg;base64,'+base64.b64encode((R/'assets/locations'/location['image']).read_bytes()).decode()
 raw=next((R/'research/meta/indicators/csv').glob('2022_09*'))
@@ -31,7 +31,7 @@ result=result.replace('__LEAFLET_CSS__',(R/'assets/vendor/leaflet.css').read_tex
 result=result.replace('__STYLE__',(R/'scripts/professional.css').read_text()).replace('__SCRIPT__',(R/'scripts/basemap.js').read_text()+'\n'+(R/'scripts/professional.js').read_text())
 for name in ['PROFESYONEL_SUNUM.html','CANLI_HARITA.html','GORUNMEZ_CEPHE_ATLAS.html','SINEMATIK_SUNUM.html']:
  (R/'output'/name).write_text(result,encoding='utf8')
-notes=['# Görünmez Cephe — akademik konuşma metni','', f"18 ana sahne · 15 dakika · {len(appendices)} yöntem/kaynakça eki. Yaklaşık {sum(len(x['notes'].split()) for x in narrative)} sözcük; 104 sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.",'', 'Konum görselleri bağlamdır. Güncel otomatik GDELT yanıtı gelmesi, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.',''];elapsed=0
+notes=['# Görünmez Cephe — akademik konuşma metni','', f"18 ana sahne · 15 dakika · {len(appendices)} yöntem/kaynakça eki. Yaklaşık {sum(len(x['notes'].split()) for x in narrative)} sözcük; yaklaşık {round(sum(len(x['notes'].split()) for x in narrative)/15)} sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.",'', 'Konum görselleri bağlamdır. Güncel otomatik GDELT yanıtı gelmesi, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.',''];elapsed=0
 for i,s in enumerate(slides):
  end=elapsed+s['seconds'];slot=f'{elapsed//60:02}:{elapsed%60:02}–{end//60:02}:{end%60:02}' if i<len(narrative) else 'Soru-cevap eki'
  notes.extend([f"## {i+1}. {s['title']} · {slot}",'',s['notes'],'',f"Sahne yönergesi (okunmaz): {s['cue']}" if s.get('cue') else '',f"Metin içi atıf: {s['source']}",'']);elapsed=end

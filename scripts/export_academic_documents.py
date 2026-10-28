@@ -21,13 +21,14 @@ styles={
 }
 def para(t,style='body',markup=False):return Paragraph(t.replace('&','&amp;') if markup else html.escape(t),styles[style])
 def footer(c,d):
- c.setStrokeColorRGB(.65,.69,.59);c.line(48,43,547,43);c.setFont('Body',8);c.setFillColorRGB(.4,.45,.35);c.drawString(48,29,'GÖRÜNMEZ CEPHE · Akademik OSINT sunumu · 28 Ekim 2026');c.drawRightString(547,29,str(d.page))
+ c.setStrokeColorRGB(.65,.69,.59);c.line(48,43,547,43);c.setFont('Body',8);c.setFillColorRGB(.4,.45,.35);c.drawString(48,29,'GÖRÜNMEZ CEPHE · Akademik araştırma sunumu · 29 Ekim 2026');c.drawRightString(547,29,str(d.page))
 def pdf(name,flow):SimpleDocTemplate(str(O/name),pagesize=(595.28,841.89),leftMargin=48,rightMargin=48,topMargin=48,bottomMargin=58,title='Görünmez Cephe — '+name.replace('_',' '),author='SUNUM').build(flow,onFirstPage=footer,onLaterPages=footer)
 word=Document();section=word.sections[0];section.top_margin=Cm(2);section.bottom_margin=Cm(2);section.left_margin=Cm(2.3);section.right_margin=Cm(2.3)
 normal=word.styles['Normal'];normal.font.name='Calibri';normal.font.size=Pt(12);normal.paragraph_format.line_spacing=1.5
 word.core_properties.title='Görünmez Cephe — 15 dakikalık konuşma metni'
 word.add_heading('Görünmez Cephe',0);word.add_paragraph('15 dakikalık akademik sunum — doğrudan okunabilir konuşma metni')
-intro='18 ana sahne; planlanan toplam 900 saniye. Yaklaşık 1559 sözcük. Gerçek süre konuşmacının hızına ve harita duraklamalarına bağlıdır; sunum öncesi prova yapılmalıdır. Köşeli sahne yönergeleri okunmaz. Güncel otomatik GDELT yanıtı, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.'
+word_count=sum(len(x['notes'].split()) for x in N)
+intro=f'18 ana sahne; planlanan toplam 900 saniye. Yaklaşık {word_count} sözcük. Gerçek süre konuşmacının hızına ve harita duraklamalarına bağlıdır; sunum öncesi prova yapılmalıdır. Köşeli sahne yönergeleri okunmaz. Güncel GDELT seçkisi, 2022 tarihsel karşılaştırmasının yerine geçmez.'
 word.add_paragraph(intro)
 flow=[para('Görünmez Cephe','title'),para('15 dakikalık akademik konuşma metni','h'),para(intro,'small')];elapsed=0
 for i,s in enumerate(N):

@@ -22,7 +22,10 @@ with sync_playwright() as p:
  slides=page.evaluate('D.slides')
  main_count=page.evaluate('D.narrative.length')
  for i in range(main_count):
-  page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(1800 if i in [6,7,8,9] else 700);page.screenshot(path=str(T/f'{i:02}.png'))
+  page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(1800 if i in [6,7,8,9] else 700)
+  overflow=page.locator('.narrative').evaluate('(e)=>({scroll:e.scrollHeight,visible:e.clientHeight})')
+  assert overflow['scroll']<=overflow['visible']+2,('Text would be clipped',i,overflow)
+  page.screenshot(path=str(T/f'{i:02}.png'))
  b.close()
 prs=Presentation();prs.slide_width=Inches(13.333);prs.slide_height=Inches(7.5)
 prs.core_properties.title='Görünmez Cephe — Coğrafi OSINT Araştırması';prs.core_properties.subject='Araştırma soruları, kuramsal çerçeve, yöntem, APA 7 kaynakça ve 15 dakikalık konuşma metni. Gerçek Meta IOC vaka verisi; GDELT tarihsel analizi açık.'
@@ -86,3 +89,9 @@ shutil.copyfile(O/'ATLAS_SUNUMU.pptx',O/'SINEMATIK_SUNUM.pptx');shutil.copyfile(
 print(f'Exported {len(slides)} slides: {main_count} core + {len(slides)-main_count} appendices; fade transitions + animated map; matching PDF.')
 
 shutil.copyfile(O/'ATLAS_SUNUMU.pptx',O/'PROFESYONEL_SUNUM.pptx');shutil.copyfile(O/'ATLAS_SUNUMU.pdf',O/'PROFESYONEL_SUNUM.pdf')
+
+# The primary PowerPoint carries real editable slide text; PDF remains the browser rendering.
+import subprocess,sys
+subprocess.run([sys.executable,str(R/'scripts/export_editable_presentation.py')],check=True)
+for target in ['PROFESYONEL_SUNUM.pptx','ATLAS_SUNUMU.pptx','SINEMATIK_SUNUM.pptx']:
+ shutil.copyfile(O/'AKADEMIK_SUNUM_DUZENLENEBILIR.pptx',O/target)

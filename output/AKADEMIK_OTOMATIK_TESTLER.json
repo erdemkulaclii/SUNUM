@@ -28,5 +28,7 @@
     "offline retains 311 records"
   ],
   "javascript_errors": [],
-  "canonical_report": "LEAFLET_DOGRULAMA.json"
+  "canonical_report": "LEAFLET_DOGRULAMA.json",
+  "slide_readability_report": "SUNUM_OKUNABILIRLIK.json",
+  "editable_powerpoint_report": "DUZENLENEBILIR_SUNUM_DOGRULAMA.json"
 }

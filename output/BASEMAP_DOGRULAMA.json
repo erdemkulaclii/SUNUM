@@ -4,7 +4,7 @@
   "file_navigation": "blocked_by_chromium_enterprise_policy",
   "non_http_branch_verified_via_about_blank": true,
   "live_OSM_verified": false,
-  "checked_at_utc": "2026-10-28T21:50:22.336425+00:00",
+  "checked_at_utc": "2026-10-28T23:41:11.433126+00:00",
   "outcomes": [
     "about:blank embedded map: no OSM requests; Germany evidence and anchor intact",
     "file:// navigation: blocked by Chromium enterprise policy; about:blank behavior verified separately",

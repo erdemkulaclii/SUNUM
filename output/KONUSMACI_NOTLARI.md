@@ -1,133 +1,133 @@
 # Görünmez Cephe — akademik konuşma metni
 
-18 ana sahne · 15 dakika · 17 yöntem/kaynakça eki. Yaklaşık 1559 sözcük; 104 sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.
+18 ana sahne · 15 dakika · 17 yöntem/kaynakça eki. Yaklaşık 1757 sözcük; yaklaşık 117 sözcük/dakika ve harita duraklamalarıyla prova edilmelidir. 900 saniye planlanan süredir, gerçek okuma süresi konuşmacıya bağlıdır.
 
 Konum görselleri bağlamdır. Güncel otomatik GDELT yanıtı gelmesi, 2022 tarihsel analizinin tamamlandığı anlamına gelmez.
 
-## 1. Hibrit savaşın görünmez cephesi · 00:00–00:40
+## 1. Hibrit savaşın görünmez cephesi · 00:00–00:56
 
-Bir haber sitesini tanıdık yapan şey, yalnızca içeriği değil, adı ve görünüşüdür. Bu çalışma, haber markalarının güveninden yararlanabilen bir altyapıyı coğrafi olarak nasıl inceleyebileceğimizi soruyor. Başlığımız hibrit savaş; fakat ölçtüğümüz değişken savaşın bütünü veya kamuoyunun ikna düzeyi değil. Meta’nın yayımladığı gerçek bir gösterge listesinin ülke dağılımını hesaplıyoruz. GDELT ise ikinci bir gözlem düzlemi, yani bu tür operasyonlar hakkındaki haber görünürlüğü için kullanılıyor. İki veri türünü ayırmak, sunumun temel yöntem tercihidir. Haritada gördüğümüz her sayının hangi kayıttan geldiğini göstereceğim.
+Bir haber bağlantısına güvenirken yalnızca yazılanlara bakmayız; tanıdık bir isim, bir marka ve bir adres de güven duygusu yaratır. Bu sunumda, bu güven ilişkisinin dijital bilgi operasyonlarında nasıl bir araştırma problemine dönüştüğünü ele alıyorum. Başlığımız Hibrit Savaşın Görünmez Cephesi. İnceleme alanım, Rusya bağlantılı olarak raporlanan bir ağın yayımlanmış alan adı göstergeleri. Önce gerçek kayıtlardan hedef ülke dağılımını çıkaracağım; ardından bu altyapının haberlerdeki görünürlüğünü GDELT ile nasıl inceleyebileceğimizi göstereceğim. Böylece altyapının coğrafyası ile onun hakkında üretilen haberlerin coğrafyasını aynı soru gibi ele almadan karşılaştırabileceğiz. Sunumun akışı da bu ayrımı izliyor: önce araştırma problemini ve yöntemi kuruyor, ardından ülke bulgularını birlikte okuyup bunların anlamını sonuç bölümünde tartışıyoruz.
 
-Sahne yönergesi (okunmaz): Başlığı söyle; iki saniye dur. “Ölçtüğümüz şey” vurgusunu yap.
+Sahne yönergesi (okunmaz): Başlığı ve araştırmanın iki aşamasını söyle. Haritaya geçmeden önce dinleyicinin izleyeceği akışı kur.
 Metin içi atıf: Meta, 2022; Lazer et al., 2018
 
-## 2. Araştırma sorusu · 00:40–01:30
+## 2. Araştırma iki ayrı coğrafi soruya dayanır. · 00:56–01:39
 
-Ana araştırma sorum şu: Rusya bağlantılı olarak raporlanan bu ağın yayımlanmış alan adı göstergeleri, seçilen Avrupa ülkelerinde nasıl dağılıyor? Bunun ardından ikinci soruyu soruyorum: Bu hedef dağılımı, GDELT’te operasyon hakkında yayımlanan haberlerin kaynak ve konu coğrafyalarıyla nasıl karşılaştırılabilir? İlk soruyu elimizdeki veriyle yanıtlayabiliyoruz. İkinci soru için sorgu ve kodlama protokolü hazır; canlı bağlantı başarılı olursa güncel bir haber seçkisi geliyor. Ancak güncel seçki, iki bin yirmi iki tarihli karşılaştırmanın tamamlandığı anlamına gelmiyor. Soruları, mevcut kanıtın taşıyabileceği düzeyde kurmak araştırmanın ilk denetimidir.
+Araştırmanın çıkış noktası, bir operasyondan nerede söz edildiği ile operasyonun nereyi hedeflediğinin aynı bilgi olmamasıdır. İlk sorum şu: Rusya bağlantılı olarak raporlanan bu ağın yayımlanmış alan adı göstergeleri, seçilen Avrupa ülkelerinde nasıl dağılmaktadır? İkinci sorum ise bu hedef dağılımının, GDELT haberlerinin kaynak ve konu coğrafyalarıyla nasıl karşılaştırılabileceğidir. Bu iki sorunun araştırmadaki konumu farklı. İlkini birazdan gerçek veriden hesapladığım sayımlarla yanıtlayacağım. İkincisi, aynı dönemi kapsayan haber verisi ve içerik kodlamasıyla tamamlanacak karşılaştırmanın çerçevesini oluşturuyor. Bu ayrım, hangi sonucun elde edildiğini ve hangi aşamanın araştırma gündeminde kaldığını açık tutuyor.
 
-Sahne yönergesi (okunmaz): AS1’i tam cümleyle oku. AS2’nin durumunu ayrı söyle.
+Sahne yönergesi (okunmaz): İki soruyu sırayla oku; AS1’in ampirik bulgu, AS2’nin henüz tamamlanmamış karşılaştırma olduğunu belirt.
 Metin içi atıf: Meta, 2022; Allen et al., 2020
 
-## 3. Kuramsal çerçeve · 01:30–02:10
+## 3. Dezenformasyon, içerik kadar güven ilişkileriyle de ilgilidir. · 01:39–02:35
 
-Kuramsal çerçevede üç ayrım yapıyorum. Birincisi, yanlış veya yanıltıcı içerikle kasıtlı dezenformasyon aynı kavram değildir. Lazer ve arkadaşları bu ayrımı açıkça kuruyor; Wardle ve Derakhshan’ın çerçevesine de atıf yapıyor. İkincisi, Meta’nın koordineli sahte davranış etiketi bir davranış sınıflandırmasıdır; listedeki her metnin doğruluğuna ilişkin bağımsız hüküm değildir. Üçüncüsü, bir alan adıyla aktör arasındaki ilişki ayrıca araştırılmalıdır. Dolayısıyla bir alan adını saydığımda ne niyeti ne de siyasi etkiyi doğrudan ölçmüş oluyorum. Bu sınır, çalışmanın kavramsal geçerliliği için belirleyici.
+Kuramsal olarak çalışmanın merkezinde, haber görünümü ile güven arasındaki ilişki var. Lazer ve arkadaşları, haber biçimini taklit eden içerikleri kurumsal editoryal süreçlerle birlikte düşünmemiz gerektiğini açıklıyor. Aynı çalışma üzerinden Wardle ve Derakhshan’ın bilgi düzensizliği çerçevesine de ulaşıyoruz. Burada yanlış bilgi, kasıtlı yanıltma ve koordineli davranış birbirine indirgenmiyor. Ben de bu nedenle alan adı göstergesini, içeriğin doğruluğu veya operatörün niyetiyle aynı değişken saymıyorum. Hibrit savaş, bu bilgi faaliyetlerini daha geniş siyasi rekabet içinde tartışmamı sağlayan bağlamsal çerçeve. Bu çerçevede stratejik sorun, yalnız bir iddianın doğru olup olmaması değil; bilginin hangi yayın görünümü ve hangi dağıtım altyapısı içinde dolaşıma girdiğidir. Bir sonraki adımda bu kavramsal ayrımları, hangi birimi sayacağımıza ve nasıl coğrafi kodlama yapacağımıza bağlayacağım.
 
 
-Metin içi atıf: Lazer et al., 2018; Vosoughi et al., 2018; Wardle & Derakhshan, 2017
+Metin içi atıf: Lazer et al., 2018; Vosoughi et al., 2018; Wardle & Derakhshan, 2017, aktaran Lazer et al., 2018
 
-## 4. Araştırma tasarımı · 02:10–03:00
+## 4. Çalışma, izlenebilir bir tarihsel vaka incelemesidir. · 02:35–03:18
 
-Araştırma, amaçlı seçilmiş bir tarihsel vakanın betimleyici analizidir. Gözlem birimi benzersiz alan adı, coğrafi değişken ise kaynağın hedef ülke etiketidir. Bu listeyi Avrupa’daki bütün operasyonların olasılıklı örneklemi gibi değerlendirmiyorum. Platform önce bazı faaliyetleri görmüş, sınıflandırmış ve belirli göstergeleri yayımlamış. Biz bu seçilmiş görünüm üzerinde çalışıyoruz. Allen ve arkadaşlarının veri kaynağı ile temsil gücü arasındaki ayrımından burada yararlanıyorum. Kaynak eleştirisinin ikinci kısmı aktör atfıdır: Rusya bağlantısı kaynağın raporlamasına dayanır. Bizim bağımsız katkımız, yayımlanan kayıtların temizlenmesi, sayılması ve yeniden üretilebilir biçimde haritalanmasıdır.
+Çalışmayı, amaçlı seçilmiş bir tarihsel vakanın betimsel incelemesi olarak kuruyorum. Vakanın seçilmesinde, erişilebilir birincil gösterge dosyasının bulunması ve hesaplamaların kayıt düzeyinde denetlenebilmesi belirleyici oldu. Gözlem birimim benzersiz alan adı; coğrafi değişkenim kaynağın hedef ülke etiketi. Kanıt zincirini kaynak dosya, temizleme kuralı, ülke sayımı ve harita çıktısı biçiminde izliyorum. Burada kaynak eleştirisi de yöntemin parçası: Rusya bağlantısı benim yeni bir aktör atfım değil, kaynağın raporlamasıdır. Ayrıca dosya, platformun gördüğü ve yayımladığı kayıtları kapsar. Allen ve arkadaşlarının veri kapsamı ve temsil tartışmasını izleyerek sonuçları bu vaka sınırında yorumluyorum.
 
 
 Metin içi atıf: Meta, 2022; Allen et al., 2020
 
-## 5. Veri denetimi · 03:00–03:50
+## 5. Veri denetimi, doğru toplamı 311 olarak belirler. · 03:18–04:17
 
-Veri temizleme aşamasında üç ayrı toplam var. Dosyada üç yüz elli kayıt bulunuyor. Bunların üç yüz on üçü alan adı satırı. Alan adı üzerinde tekilleştirme yaptığımızda iki tekrar çıkıyor ve analitik toplam üç yüz on bir oluyor. Diğer yirmi iki CIB bağlantısı ile on beş Telegram bağlantısını aynı paydada toplamıyorum. Çünkü bir alan adı ile bir sosyal medya bağlantısı aynı analiz birimi değil. Hedef ülkeyi de nokta de veya nokta fr gibi uzantılardan tahmin etmiyorum; kaynağın yorum alanındaki etiketi kullanıyorum. Bu kararlar küçük teknik ayrıntılar değil, sonuçtaki yüzdelerin ne anlama geldiğini belirleyen ölçüm kurallarıdır.
+Veri denetiminde üç toplamı birbirinden ayırıyorum. Dosyada üç yüz elli kayıt var; bunların üç yüz on üçü alan adı satırı. Alan adı değerleri üzerinde tekilleştirme yaptığımda iki tekrar çıkıyor ve analitik toplam üç yüz on bir oluyor. Diğer yirmi iki CIB bağlantısı ile on beş Telegram bağlantısını aynı paydada birleştirmiyorum; çünkü bu varlıklar aynı analiz birimini temsil etmiyor. Ülkeyi de adresin uzantısından tahmin etmek yerine kaynağın yorum alanındaki hedef etiketinden kodluyorum. Bu aşama, yalnızca veri hazırlığı değil, sonucun anlamını belirleyen bir ölçüm kararı. Ham dosyanın sabit sürümü ve dosya özeti de korunduğu için, başka bir araştırmacı aynı kayıtları kullanarak sayımı baştan yapabilir ve dönüşüm kararlarını karşılaştırabilir. Birazdan göreceğimiz bütün oranların paydası bu kurallarla elde edilen listedir.
 
 
 Metin içi atıf: Meta, 2022
 
-## 6. Hedef ülkelerin dağılımı · 03:50–04:40
+## 6. Dört odak ülke 306 göstergeyle temsil edilir. · 04:17–05:14
 
-Bu haritada dört odak ülkenin hedef etiketlerini görüyoruz: Almanya, Birleşik Krallık, Fransa ve İtalya. Toplamları üç yüz altı benzersiz alan adı. Gerçek coğrafi taban OpenStreetMap; yakınlaşma ve ülke seçimi Leaflet üzerinden çalışıyor. Haritaya ait yol ve kent ayrıntıları ile araştırmanın kanıt çözünürlüğünü ayırmamız gerekiyor. Hedef verisi hâlâ ülke düzeyinde. Berlin veya Paris fotoğrafı açıldığında, bu kentlerde operasyon yürütüldüğü sonucuna ulaşmıyoruz. İnternet üzerinden harita döşemeleri gelmezse sınır verisi ve gerçek gösterge kayıtları kullanılabiliyor. Dolayısıyla görsel ayrıntıdan daha kesin bir ampirik iddia üretmiyoruz.
+Haritada Almanya, Birleşik Krallık, Fransa ve İtalya’yı birlikte görüyoruz. Bu dört ülkeye ait üç yüz altı benzersiz gösterge var. Bütün veri kümesinde kalan beş kayıt ise Letonya, Ukrayna ve çoklu hedef kategorisinde korunuyor. Buradaki dört ülke, vaka içi karşılaştırma için seçilmiş çalışma kümesi; Batı Avrupa’nın bütün tanımlarını kapsadığı iddiasını taşımıyor. Dosyadan açılan sunumda gömülü Natural Earth sınır haritası kullanılıyor. Leaflet, gerçek coğrafi referanslara yakınlaşmayı ve ülke seçimini sağlıyor; sunuculu sürümde erişim kabul edilirse OpenStreetMap ayrıntıları yüklenebiliyor. Haritanın araştırmadaki görevi, bu etiketleri mekânsal olarak düzenlemek; her ülkenin değerini kaynak kayıtlarıyla birlikte okunabilir bir karşılaştırmaya dönüştürmektir. Şimdi bu ortak görünümden ülke dosyalarına geçerek dağılımı gerçek kayıt örnekleriyle birlikte okuyacağım.
 
-Sahne yönergesi (okunmaz): Avrupa görünümünde birkaç saniye bekle; görselin veri çözünürlüğünü artırmadığını belirt.
+Sahne yönergesi (okunmaz): Avrupa görünümünü birkaç saniye göster; ardından Almanya sahnesine geç.
 Metin içi atıf: Meta, 2022; OpenStreetMap contributors, n.d.; Natural Earth, n.d.
 
-## 7. Almanya: 298 gösterge · 04:40–05:50
+## 7. Almanya, listedeki göstergelerin yüzde 95,8’ini oluşturur. · 05:14–06:17
 
-Almanya dosyasını açıyorum. Üç yüz on bir benzersiz alan adının iki yüz doksan sekizi Almanya hedefli etiket taşıyor. Bütün liste içindeki pay yüzde doksan beş virgül sekiz. Yalnızca dört odak ülkeyi payda yaptığımızda ise yüzde doksan yedi virgül dört. İki oran da aritmetik olarak doğru; ama farklı evrenleri betimliyor. Burada söyleyebileceğimiz en güçlü cümle, yayımlanmış bu listede Almanya hedefli göstergelerin baskın olduğudur. Neden bu kadar yüksek olduğu ise ayrı bir soru. Daha çok altyapı, daha fazla tespit veya farklı yayım tercihleri bu görünümü etkileyebilir; mevcut veri bunları ayıramıyor. Ekrandaki Berlin panoraması da bir operasyon merkezinin fotoğrafı değil, coğrafi referans. Alan adı sayısını operasyon sayısına, operasyon sayısını da etkiye çevirmek için burada bulunmayan ek kanıtlar gerekir.
+Almanya için iki yüz doksan sekiz benzersiz alan adı sayıyorum. Bu sayı, bütün üç yüz on bir kayıtlık listenin yüzde doksan beş virgül sekizini oluşturuyor. Yalnız dört odak ülkeyi karşılaştırdığımızda pay yüzde doksan yedi virgül dörde çıkıyor; bunun nedeni paydanın üç yüz altıya daralması. Buradaki temel bulgu, incelenen listede Almanya hedefli etiketlerin belirgin ağırlığı. Bild nokta pics gibi bir örnek de bu altyapının nasıl somut göstergelerle incelenebildiğini gösteriyor. Bundan sonra sorulması gereken açıklayıcı soru, yoğunluğun hangi faaliyet, tespit veya yayım süreçleriyle oluştuğu. Bu dosya dağılımı ortaya koyuyor; bu olası nedenleri birbirinden ayıracak karşılaştırmalı veriyi ise sağlamıyor. Bu ayrım, betimleme ile açıklamayı birbirinden ayırıyor: önce hangi örüntünün bulunduğunu ortaya koyuyor, ardından onun nedenlerini sınayacak yeni veri ihtiyacını tanımlıyoruz.
 
-Sahne yönergesi (okunmaz): Kartın açılmasını bekle. İki yüzdeyi ayrı paydalarla anlat; bir örnek alan adını göster.
+Sahne yönergesi (okunmaz): İki oranı paydalarıyla birlikte açıkla. Berlin fotoğrafını coğrafi bağlam olarak göster, bir kaynak kaydını aç.
 Metin içi atıf: Meta, 2022; Allen et al., 2020
 
-## 8. Birleşik Krallık: 4 gösterge · 05:50–06:35
+## 8. Birleşik Krallık kayıtları, ad benzerliğini somutlaştırır. · 06:17–07:05
 
-Birleşik Krallık için dört benzersiz alan adı var. Kaynakta bulunan dailymail nokta top örneği, tanıdık bir haber markasına benzeyen bir adresin nasıl görünebildiğini gösteriyor. Bu örneği ziyaret etmeden, yalnızca arşivlenmiş gösterge kaydı üzerinden inceliyoruz. Almanya ile sayı farkı çok büyük, fakat bunu iki ülkenin tehdit veya etkilenme sıralaması olarak okumuyoruz. Grinberg ve arkadaşlarının çalışması, içerikle karşılaşma ve paylaşmanın kullanıcı düzeyinde ayrıca ölçülmesi gerektiğini hatırlatıyor. Bizde o kullanıcı ölçümü yok. Dört gösterge, yalnızca bu listede dört benzersiz alan adı bulunduğu anlamına geliyor.
+Birleşik Krallık alt kümesini dört kaydın tamamıyla okuyabiliyoruz. Üç adres dailymail ad gövdesini taşıyor: nokta top, nokta cam ve nokta cfd. Dördüncü adres theguardian nokta co nokta com. Buradaki gözlem, aynı hedef ülke etiketi içinde alan adı varyasyonlarının bulunması. Kaydın sunduğu kanıt, bu adres dizileri ve kaynak sınıflandırmasıdır; sitelerin içeriğini yeniden ziyaret ederek bir doğrulama yapmadım. Bu küçük küme, Almanya’daki büyük toplamın yanında altyapının kayıt düzeyinde nasıl incelenebileceğini gösteriyor. Grinberg ve arkadaşlarının kullanıcı maruziyeti üzerine çalışması da neden bir sonraki analiz biriminin ayrıca tanımlanması gerektiğini hatırlatıyor: adres sayısından kullanıcı deneyimine doğrudan geçemeyiz.
 
 
 Metin içi atıf: Meta, 2022; Grinberg et al., 2019
 
-## 9. Fransa: 2 gösterge · 06:35–07:20
+## 9. Fransa kayıtları iki ayrı alan adını içerir. · 07:05–07:52
 
-Fransa’ya geçiyorum. Burada iki benzersiz alan adı var. Ekran bizi Paris’teki bir yer referansına yaklaştırıyor, ancak ampirik veri hâlâ ülke düzeyinde. Fotoğrafın ayrıntısı, verinin ayrıntısını artırmış olmuyor. Bu ayrım özellikle etkileyici haritalarda önem taşıyor; yakınlaşma, izleyicide sanki kesin olay yeri biliniyormuş izlenimi yaratabilir. Bu nedenle fotoğraf kartında konumun yalnızca bağlam olduğu yazıyor. Bu iki kayıt bize Paris’te operasyon yürütüldüğünü, altyapının Fransa’da barındırıldığını veya belirli bir kişinin hedeflendiğini söylemiyor. Harita, kaynağın verdiği ülke etiketini görünür kılıyor.
+Fransa alt kümesinde iki adres bulunuyor: avisindependent nokta eu ve 20minuts nokta com. Bu sahne, haritadaki bir sayının arkasındaki kayıtları açıkça görmemizi sağlıyor. İki adres de kaynakta Fransa hedefli CIB alan adı olarak etiketlenmiş; tekilleştirme sonrasında ayrı göstergeler olarak korunmuş. Böylece Fransa’ya atanan iki değerinin nasıl hesaplandığı görülebiliyor. Bu kayıtları sunarken alan adının işletmecisi, sahipliği veya bütün içeriği hakkında yeni bir hüküm üretmiyorum. Paris fotoğrafı ise kaydın kendisi değil, haritayı okumayı kolaylaştıran bir yer referansı. Araştırma açısından önemli olan, görsel sunumun arkasındaki ölçüm kararını ve kaynak satırını birlikte gösterebilmek.
 
 
 Metin içi atıf: Meta, 2022; Natural Earth, n.d.
 
-## 10. İtalya: 2 gösterge · 07:20–08:05
+## 10. İtalya örneği, altyapıdan içerik analizine geçişi açar. · 07:52–08:41
 
-İtalya dosyasında da iki benzersiz gösterge bulunuyor. Repubblica nokta life, kaynakta yer alan örneklerden biri. Lazer ve arkadaşlarının haber biçimini taklit eden içeriklere ilişkin kavramsal tartışması, bu tür benzerliklerin neden araştırmaya değer olduğunu açıklıyor. Yine de yalnızca alan adını görerek sitenin bütün içeriği, işletmecisi veya etkisi hakkında hüküm vermiyorum. Örneğin görevi, mekanizmayı somutlaştırmak. Sayısal karşılaştırmanın görevi ise listedeki dağılımı göstermek. Bir örneğin çarpıcı olması, onu bütün operasyonları temsil eden bir kanıta dönüştürmez. Venedik görüntüsü de aynı nedenle bağlam katmanında kalıyor.
+İtalya için repubblica nokta life ve ansa nokta ltd olmak üzere iki gösterge var. Haber adlarını çağrıştıran bu adresler, başlangıçtaki güven problemine geri dönmemi sağlıyor: Bir adın tanıdık gelmesi ile güvenilir bir yayın sürecinin bulunması aynı şey değil. Lazer ve arkadaşlarının kavramsal tartışması, bu ayrımı kurmak için yararlı. Ancak gösterge listesi bize esas olarak hangi adreslerin kaynakta yer aldığını söylüyor. Bu adresler üzerinden hangi anlatıların üretildiğini ve içeriklerin nasıl dolaşıma sokulduğunu anlamak için metin ve dağıtım kanıtlarına ilerlemek gerekiyor. Şimdi dört ülke dosyasını tamamlayarak, bu ikinci inceleme düzleminde hangi coğrafi değişkenleri birbirinden ayıracağımı göstereceğim.
 
 
 Metin içi atıf: Meta, 2022; Lazer et al., 2018
 
-## 11. Üç ayrı coğrafi değişken · 08:05–08:55
+## 11. Hedef, kaynak ve konu coğrafyaları ayrı ölçülmelidir. · 08:41–09:35
 
-İkinci araştırma sorusuna geçmeden önce üç değişkeni tanımlıyorum. T, kaynağın operasyon hedefi olarak etiketlediği ülke. S, haberi yayımlayan kaynağın ülkesi. M ise metinde anılan yerler. Londra merkezli bir yayın Almanya’yı hedefleyen bir ağ hakkında haber yaparsa, kaynak ülkesi Birleşik Krallık, hedef ülkesi Almanya olabilir. Metin ayrıca Moskova’dan söz edebilir. Bunları tek bir nerede değişkenine indirgersek yanlış bir harita elde ederiz. GDELT’te sourcecountry alanı T’yi ölçmez. DOC haber listesi de tek başına bütün metin konumlarını sağlamaz. Bu nedenle katmanları ayrı adlarla, ayrı renklerle ve ayrı paydalarla karşılaştırıyoruz.
+Şimdi altyapı haritasıyla haber verisini bağlamak için üç değişken tanımlıyorum. T, kaynağın hedef ülke etiketi; S, haberi yayımlayan kaynağın ülkesi; M ise metinde anılan yerler. Londra merkezli bir yayın, Almanya’yı hedefleyen bir ağ hakkında haber yapabilir ve metinde Moskova’dan da söz edebilir. Bu örnekte üç ayrı coğrafi bilgi var. Bunların hepsini tek bir ülke sütununa yazarsam, harita doğru çizilse bile araştırma yanlış bir soruyu yanıtlar. Bu nedenle hedefi Meta etiketlerinden, kaynağı DOC alanından, metindeki yerleri ise GKG veya insan kodlamasından alacak bir karşılaştırma kuruyorum. Cloud Event konumu da bu değişkenlerden ayrıca değerlendirilmelidir. Ayrı değişkenler kurmak, ileride iki harita birbirine benzediğinde bile bunun aynı mekanizmanın kanıtı olup olmadığını sorgulayabilmemi sağlıyor.
 
 
 Metin içi atıf: Meta, 2022; GDELT Project, 2017; Leetaru & Schrodt, 2013
 
-## 12. GDELT ile haber görünürlüğü · 08:55–09:55
+## 12. GDELT, altyapının haberlerdeki görünürlüğünü incelemeyi sağlar. · 09:35–10:20
 
-GDELT ile araştırmanın ikinci gözlem düzlemine geçiyoruz: operasyon hakkında üretilen haber görünürlüğü. Burada iki farklı ürün var. GDELT Cloud, kendi kodladığı Event ve hikâye kümelerini döndüren anahtarlı servis. DOC ise haber bağlantısı, başlık ve kaynak ülkesi sunan ücretsiz arayüz. Sunum bu bağlantıları otomatik deniyor; yanıt gelirse kaynağı ve alındığı zaman korunuyor. Fakat bir Event kaydı bir operasyonla, bir haber de doğrulanmış dezenformasyonla eşitlenmiyor. Bağlantı başarısız olduğunda sonuç üretilmiyor. Ayrıca bugünkü haber seçkisiyle iki bin yirmi iki yılının hedef dağılımı arasında aynı dönemli bir karşılaştırma yapmış olmuyoruz. O soru için tarihsel arşiv ve içerik analizi gerekiyor.
+GDELT’in bu araştırmaya katkısı, aynı alan adlarını yeniden saymak değil, operasyon hakkında üretilen haberleri incelemek. DOC arayüzünden haber bağlantısı, başlık, kaynak ülkesi ve indeksleme zamanı alınabiliyor. GDELT Cloud ise kendi kodladığı Event ve hikâye kümelerini sunan ayrı bir ürün. Bu nedenle Cloud Event kaydıyla DOC haber URL’sini aynı toplamda birleştirmiyorum. Sunum, bağlantıları otomatik deneyecek ve gelen yanıtın sorgu ile tarih kaydını koruyacak biçimde hazırlandı. Ancak bu ortamda başarılı gerçek indirme doğrulanmadığı için GDELT’e dayalı bir sayı veya ülke bulgusu sunmuyorum. Araştırmanın ilerleyen aşamasında bu katman, kodlama protokolüyle birlikte tamamlanacak.
 
 
 Metin içi atıf: GDELT Cloud, n.d.; GDELT Project, 2017; Leetaru & Schrodt, 2013
 
-## 13. İçerik analizi ve güvenirlik · 09:55–10:45
+## 13. Haberin araştırmadaki anlamını içerik kodlaması belirler. · 10:20–11:04
 
-Bir haberin kampanya adını içermesi, o kampanyanın propagandasını yaydığı anlamına gelmez. Haber operasyonu ifşa ediyor, eleştiriyor veya bambaşka bir anlamda aynı sözcüğü kullanıyor olabilir. Bu nedenle içerik analizi protokolünde dört durum ayırıyorum: operasyonu aktarma, ifşa veya çürütme, belirsiz kullanım ve ilgisiz eşleşme. Hedef ülke, anlatı ve kaynak türü ayrıca kodlanıyor. Plan, önce küçük bir pilot üzerinde iki bağımsız kodlayıcının çalışması; ardından nominal kategoriler için Cohen kappa ve kategori dağılımlarının raporlanması. Bu aşama henüz uygulanmadı. Dolayısıyla ekranda bir uyum katsayısı yok ve otomatik gelen haberler doğrulanmış dezenformasyon diye etiketlenmiyor.
+GDELT’ten gelen bir eşleşmenin anlamını yalnızca kampanya adının bulunmasına bakarak belirleyemeyiz. Haber, operasyonu eleştirel biçimde ifşa ediyor olabilir; aynı ad bambaşka bir konuda da kullanılmış olabilir. Bu nedenle önce uygunluk, ardından haberin işlevi, hedef ülke ve anlatı kodlanacak. İşlev ayrımında aktarma ile ifşa veya çürütmeyi birbirinden ayırıyorum. Planım, küçük bir pilot üzerinde iki bağımsız kodlayıcının çalışması ve karar örneklerinin kod kitabına eklenmesi. Cohen kappa, ham uyum ve kategori dağılımları birlikte raporlanacak; anlaşmazlık çözümü bundan sonra yapılacak. Bu aşama henüz uygulanmadı. Bugün verdiğim katkı, haberin hangi kurallarla incelemeye alınacağını önceden açıklamak.
 
 
 Metin içi atıf: Cohen, 1960; Lazer et al., 2018
 
-## 14. Sorgu ve zaman penceresi · 10:45–11:30
+## 14. Tarihsel karşılaştırma, aynı zaman penceresini gerektirir. · 11:04–11:50
 
-Sorgu tasarımı da araştırmanın denetlenebilir bir parçasıdır. Kampanya adının yazım varyasyonlarını Rusya bağlamıyla birlikte arıyoruz. Yanlış eşleşmeleri daha sonra kodlama aşamasında ayırıyoruz. Sorgu metni, zaman aralığı, uç nokta ve ham yanıt aynı kayıt içinde korunuyor. İki bin yirmi iki yılına ilişkin karşılaştırma yapılacaksa, aynı dönemi kapsayan GKG veya başka uygun tarihsel arşiv gerekir. Raporun yayımlandığı günün çevresinde haber hacmi artsa bile bu, operasyonun o gün başladığını göstermez. İfşa haberi de hacmi artırabilir. Bu nedenle tarihsel pencere ve karşılaştırma mantığı sonuçlara bakılmadan önce açıkça tanımlanmalıdır.
+Zaman eşleştirmesi, karşılaştırmanın en kritik koşullarından biri. İki bin yirmi iki tarihli bir gösterge listesini, bugün çıkan haberlerle aynı dönem gözlemi gibi sunamam. Güncel sorgu, kampanya adlarının ve ilgili yayınların keşfinde işe yarayabilir. Tarihsel karşılaştırma için ise rapor çevresindeki dönemi arşiv verisiyle kurmak gerekiyor. Bu aşamada hangi günlerin, dillerin ve kaynakların kapsandığı da kaydedilmeli. Sorgu metnini, uç noktayı, sabit başlangıç ve bitiş zamanlarını ve ham yanıtı birlikte saklıyorum. Böylece sonuca ilişkin bir soruyu yalnız anlatıyla değil, tekrar incelenebilen bir kayıtla yanıtlamak mümkün oluyor. Şimdi bu tasarımdan, mevcut verinin gerçekten ortaya koyduğu bulguya dönüyorum.
 
 
 Metin içi atıf: GDELT Project, 2017; Meta, 2022
 
-## 15. Bulgu: Almanya ağırlığı · 11:30–12:25
+## 15. Liste, Almanya hedefli göstergelerde belirgin biçimde yoğunlaşır. · 11:50–12:36
 
-Şimdi araştırma sorusuna dönüp yanıtı üç düzeyde veriyorum. Doğrudan bulgu, incelenen üç yüz on bir benzersiz alan adının iki yüz doksan sekizinin Almanya hedefli etiket taşımasıdır. Bunun vaka içi yorumu, yayımlanan altyapı göstergelerinde güçlü bir Almanya yoğunlaşması bulunmasıdır. Ancak bu yoğunlaşmanın nedenini veri tek başına açıklamıyor. Daha fazla operasyon faaliyeti ile daha fazla tespit veya daha ayrıntılı yayım arasında seçim yapamıyoruz. İkinci araştırma sorusunun tarihsel karşılaştırması da henüz tamamlanmadı. Otomatik sorgunun güncel haber getirmesi, o eksikliği geriye dönük kapatmıyor. Bu nedenle bir bulguyu, bir yorumu ve henüz açık olan soruyu aynı kesinlik düzeyinde sunmuyorum.
+Bulguları tek bir karşılaştırmada topladığımda Almanya’nın ağırlığı netleşiyor. Üç yüz on bir benzersiz göstergenin iki yüz doksan sekizi Almanya etiketli; diğer bütün kategoriler toplam on üç kayıt. Dört odak ülkeye baktığımızda ise Almanya dışındaki üç ülkenin toplamı sekiz. Böylece Almanya’nın payı bütün dosyada yüzde doksan beş virgül sekiz, odak kümede yüzde doksan yedi virgül dört oluyor. Bu iki hesabın birlikte verilmesi, sayımın kapsamını görünür kılıyor. Mevcut verinin yanıtladığı soru yoğunlaşmanın varlığı. Bu yoğunlaşmayı hangi tespit, faaliyet veya yayımlama sürecinin ürettiği ise açıklayıcı bir sonraki araştırmanın sorusu olarak kalıyor.
 
 
 Metin içi atıf: Meta, 2022; Allen et al., 2020
 
-## 16. Geçerlilik ve çıkarım sınırı · 12:25–13:20
+## 16. Görünürlük ve toplumsal etki farklı sonuç değişkenleridir. · 12:36–13:23
 
-Görünürlükten etkiye geçiş, çalışmanın en önemli geçerlilik sınırı. Bir operasyon hakkında çok haber çıkması, onun çok kişiyi ikna ettiğini göstermez. Haberler eleştirel olabilir; aynı ajans metni çok sayıda yerde yeniden basılmış olabilir; bir ifşa raporu gündemi değiştirmiş olabilir. Allen ve arkadaşları, büyük bir sayının anlamını değerlendirirken doğru paydanın önemini gösteriyor. Grinberg ve arkadaşları ise kullanıcıların karşılaşma ve paylaşma örüntülerini ayrıca ölçüyor. Bu çalışmaların ABD merkezli bulgularını bizim dört ülkemize taşımıyorum; yöntemsel derslerini kullanıyorum. Buradaki analiz, nedensel başarı tahmini değil. Maruziyet, tutum veya oy davranışı soruları için bağımsız veri ve farklı bir araştırma tasarımı gerekir.
+Tartışmanın merkezinde, bulgudan hangi düzeye kadar ilerleyebileceğimiz var. Bir alan adı altyapısı, o altyapı hakkında çıkan haberler ve insanların bu haberlerle karşılaşması aynı gözlem değil. Platformun tespit ve yayım seçimi ilk dağılımı; dil kapsamı, tekrar basımlar ve ifşa gündemi haber görünürlüğünü etkileyebilir. Allen ve arkadaşlarının çalışması kapsam ve doğru paydanın, Grinberg ve arkadaşlarının çalışması ise kullanıcı maruziyetinin ayrıca ölçülmesinin önemini gösteriyor. Bu çalışmaların ABD merkezli bulgularını Avrupa’ya taşımıyorum; ölçüm derslerini kullanıyorum. Bizim bulgumuz vaka içi altyapı yoğunlaşması. İnanma, ikna veya davranış etkisi sorulduğunda, bunun için başka veri ve uygun bir araştırma tasarımı gerektiğini belirtmek gerekiyor.
 
 
 Metin içi atıf: Allen et al., 2020; Grinberg et al., 2019; Vosoughi et al., 2018
 
-## 17. Sonuç · 13:20–14:10
+## 17. Bu vaka, Almanya hedefli göstergelerde yoğunlaşır. · 13:23–14:12
 
-Araştırma sorusuna verebileceğimiz sonuç cümlesi şu: İncelenen iki bin yirmi iki listesinde, Rusya bağlantılı olarak raporlanan ağın yayımlanmış alan adı göstergeleri Almanya hedefli etiketlerde yoğunlaşmaktadır. Bunu somutlaştıran sayı, üç yüz on bir göstergenin iki yüz doksan sekizidir; oran yüzde doksan beş virgül sekiz. Bu sonuç bir vaka içi altyapı yoğunlaşmasını gösteriyor. Bütün operasyonların Avrupa’daki dağılımını veya kamuoyunun ne ölçüde etkilendiğini ölçmüyor. Çalışmanın gücü de tam burada: açık bir soruyu gerçek kayıtlardan yanıtlıyor, bu yanıtı desteklemeyen daha geniş iddialara dönüştürmüyor. Haber görünürlüğüyle tarihsel karşılaştırma, bir sonraki ampirik aşama olarak ayrı tutuluyor.
+Sonuç cümlemi açık biçimde kuruyorum: İncelenen iki bin yirmi iki listesinde, Rusya bağlantılı olarak raporlanan ağın yayımlanmış alan adı göstergeleri Almanya hedefli etiketlerde yoğunlaşmaktadır. Bu yargıyı destekleyen sayı, üç yüz on bir benzersiz göstergenin iki yüz doksan sekizidir; oran yüzde doksan beş virgül sekiz. Böylece ilk araştırma sorusunu gerçek kaynak kayıtlarıyla yanıtladık. Haber görünürlüğüyle aynı dönemli karşılaştırmayı ise ikinci bir ampirik aşama olarak tanımladık. Çalışmanın yöntemsel katkısı, hedefi haber kaynağıyla veya metindeki yerle karıştırmadan, her sayıyı açık bir birime bağlayabilmesidir. Sonucun gücü, daha geniş bir iddiaya dönüşmesinden değil, dayandığı kanıtla denetlenebilir olmasından geliyor.
 
-Sahne yönergesi (okunmaz): Sonuç cümlesini yavaş ve tek parça halinde söyle. Orandan sonra kısa durakla.
+Sahne yönergesi (okunmaz): Sonuç cümlesini tek parça halinde söyle. Orandan sonra kısa durakla.
 Metin içi atıf: Meta, 2022; Allen et al., 2020
 
-## 18. Kaynakça · 14:10–15:00
+## 18. Kaynakça, araştırmanın kanıt zincirini tamamlar. · 14:12–15:00
 
-Son olarak kaynakları görünür kılmak istiyorum. Sayısal bulguların birincil dayanağı Meta’nın yayımladığı gösterge dosyası. Lazer, Allen, Grinberg ve Vosoughi ile çalışma arkadaşlarının makaleleri ise kavramsal ayrımları ve ölçüm tercihlerini kurmak için kullanıldı. Bu çalışmaların ABD merkezli bulgularını Avrupa’ya doğrudan taşımadım. Harita tabanında OpenStreetMap, sınır katmanında Natural Earth, etkileşimde Leaflet kullanılıyor. Ekrandaki görünüm kısaltılmış kaynakça; APA yazar listeleri, DOI bağlantıları ve kaynaklara erişim düzeyleri tam kaynakçada yer alıyor. İncelenmeyen bir tam metni okunmuş gibi göstermedim. Konuşma metni, yöntem dosyası ve ham göstergeler de teslim paketinde bulunuyor. Teşekkür ederim.
+Kapanışta kaynakların araştırmadaki farklı rollerini vurgulamak istiyorum. Sayısal bulguların birincil dayanağı Meta’nın gösterge dosyası. Lazer, Allen, Grinberg ve Vosoughi ile çalışma arkadaşlarının erişilebilir metinleri ise kavramsal ayrımları ve ölçüm tercihlerini kurmama yardımcı oldu. GDELT belgeleri veri bağlantısının teknik çerçevesini, Leaflet ve harita kaynakları da coğrafi görselleştirmenin altyapısını oluşturuyor. Ekranda kısaltılmış kaynakçayı görüyorsunuz; tam yazar listeleri, DOI bağlantıları ve erişim düzeyleri APA kaynakçada yer alıyor. İncelemediğim bir tam metni okunmuş gibi sunmadım. Konuşma metni, yöntem dosyası ve ham göstergeler birlikte teslim edildiği için bulguların kaynağı yeniden denetlenebilir. Teşekkür ederim; sorular için bu dosyaları birlikte açabiliriz.
 
-Sahne yönergesi (okunmaz): Kaynakça düğmesini göster. Soru gelirse tam künye ve yöntem dosyasını aç.
+Sahne yönergesi (okunmaz): Tam kaynakça düğmesini göster. Sorulara göre veri veya yöntem dosyasını aç.
 Metin içi atıf: Meta, 2022; Lazer et al., 2018; Allen et al., 2020; Grinberg et al., 2019
 
 ## 19. EK A · Soru–veri–yanıt matrisi · Soru-cevap eki

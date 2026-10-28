@@ -10,6 +10,12 @@ Rusya bağlantılı olarak raporlanan bir ağın yayımlanmış alan adı göste
 
 **35 slayt:** 18 ana sahne, 17 yöntem/savunma/kaynakça eki. 900 saniye planlanan akıştır; gerçek konuşma süresi prova ile ölçülmelidir.
 
+## Sunumun yazılı yapısı
+
+Kapakta tam araştırma konusu ve **Akademik Araştırma Sunumu** ifadesi bulunur. 18 ana slaytın her biri bir sav taşıyan başlık, açıklayıcı bir giriş, üç tam cümle ve tek bir ana çıkarım içerir. Akış: araştırma problemi ve sorular → kavramsal çerçeve ve yöntem → gerçek ülke bulguları → GDELT karşılaştırma tasarımı → tartışma ve sonuç → kaynakça. Ülke örnekleri doğrudan ham gösterge kayıtlarından alınır.
+
+[Özel düzenlenebilir PowerPoint](output/AKADEMIK_SUNUM_DUZENLENEBILIR.pptx), ana sunumun da temel PowerPoint sürümüdür. Konuşma metni 1.757 sözcüktür; 15 dakikalık plan, harita duraklamaları ve prova ile kullanılmalıdır. Slayt metinlerinin 1600×900 ve 1280×720 sunum görünümlerinde kesilmeden okunması ayrıca ölçülür: [okunabilirlik raporu](output/SUNUM_OKUNABILIRLIK.json).
+
 ## Harita
 
 Harita motoru gerçek **Leaflet 1.9.4**; kütüphane ve lisansı dosyaya gömülüdür. Dosyaya çift tıklayarak açılan `file://` sürümü, gömülü **Natural Earth sınır haritasıyla** başlar. Ülke seçiminde gerçek enlem/boylama uçuş yapılır, fotoğraf penceresi coğrafi referansa bağlı kalır. Kaynak hedef ülkeleri ve GDELT kaynak coğrafyası ayrı katmanlardır.
@@ -46,7 +52,7 @@ Güncel API yanıtı, **2022 ile aynı dönemli GDELT karşılaştırması deği
 
 14 kaynak APA 7 düzeninde; akademik araştırma, birincil veri, yazılım ve harita kaynakları ayrı türlerle gösterilir. Dört akademik metnin erişilebilir kopyası incelendi; diğer çalışmaların bibliyografik/tam metin erişim sınırları [denetim günlüğünde](AKADEMIK_KAYNAK_DENETIMI.md) açıklanır. Makale PDF kopyaları yeniden dağıtılmaz.
 
-[Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf), [tam APA kaynakça](output/APA7_KAYNAKCA.md), [konuşmacı notları](output/KONUSMACI_NOTLARI.md) ve [kanıt tablosu](output/alan_adi_kanit_tablosu.csv) teslim edilir. Aynı konuşma metni PowerPoint notlarında bulunur. Ana slaytlar görsel olarak dışa aktarılır; kaynakça ekleri düzenlenebilir metindir. PowerPoint masaüstü oynatma davranışı bu ortamda test edilmedi; tam etkileşim HTML sürümündedir.
+[Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf), [tam APA kaynakça](output/APA7_KAYNAKCA.md), [konuşmacı notları](output/KONUSMACI_NOTLARI.md) ve [kanıt tablosu](output/alan_adi_kanit_tablosu.csv) teslim edilir. Aynı konuşma metni PowerPoint notlarında bulunur. PowerPoint’in ana başlıkları, açıklamaları, üç maddelik anlatısı, çıkarım cümleleri, kaynakları ve bulgu grafikleri yerel, düzenlenebilir metin/şekillerdir. Harita sınırları ve gerçek bağlam fotoğrafları görsel olarak eklenir. PDF, aynı anlatının sabit sayfa çıktısıdır. PowerPoint masaüstü oynatma davranışı bu ortamda test edilmedi; tam etkileşim HTML sürümündedir.
 
 ## Yeniden üretim ve doğrulama
 
@@ -57,6 +63,7 @@ python scripts/render_cinematic_tour.py
 python scripts/export_editorial.py
 python scripts/export_academic_documents.py
 python scripts/verify_leaflet.py
+python scripts/verify_slide_readability.py --check-pptx
 python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
