@@ -1,0 +1,94 @@
+﻿first_dns_label,domain_count,distinct_last_label_count,is_multi_suffix_family,last_dns_labels,source_target_labels,defanged_domains,source_record_ordinals
+spiegel,9,9,True,"[""agency"", ""cab"", ""fun"", ""ink"", ""ltd"", ""pro"", ""quest"", ""today"", ""work""]","[""Germany""]","[""spiegel[.]agency"", ""spiegel[.]cab"", ""spiegel[.]fun"", ""spiegel[.]ink"", ""spiegel[.]ltd"", ""spiegel[.]pro"", ""spiegel[.]quest"", ""spiegel[.]today"", ""spiegel[.]work""]","[14, 21, 22, 23, 27, 38, 47, 56, 64]"
+bild,8,8,True,"[""asia"", ""com"", ""expert"", ""llc"", ""pics"", ""vip"", ""work"", ""ws""]","[""Germany""]","[""bild[.]asia"", ""bild[.]eu[.]com"", ""bild[.]expert"", ""bild[.]llc"", ""bild[.]pics"", ""bild[.]vip"", ""bild[.]work"", ""bild[.]ws""]","[4, 16, 17, 28, 29, 52, 53, 63]"
+deknuzesrtnach,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""deknuzesrtnach[.]fun"", ""deknuzesrtnach[.]online"", ""deknuzesrtnach[.]pw"", ""deknuzesrtnach[.]site"", ""deknuzesrtnach[.]space"", ""deknuzesrtnach[.]website""]","[235, 236, 237, 238, 239, 240]"
+deknzursntch,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""deknzursntch[.]fun"", ""deknzursntch[.]online"", ""deknzursntch[.]pw"", ""deknzursntch[.]site"", ""deknzursntch[.]space"", ""deknzursntch[.]website""]","[246, 247, 248, 249, 250, 251]"
+deknzusrtnach,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""deknzusrtnach[.]fun"", ""deknzusrtnach[.]online"", ""deknzusrtnach[.]pw"", ""deknzusrtnach[.]site"", ""deknzusrtnach[.]space"", ""deknzusrtnach[.]website""]","[252, 253, 254, 255, 256, 257]"
+dknuzsrntch,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""dknuzsrntch[.]fun"", ""dknuzsrntch[.]online"", ""dknuzsrntch[.]pw"", ""dknuzsrntch[.]site"", ""dknuzsrntch[.]space"", ""dknuzsrntch[.]website""]","[277, 278, 279, 280, 281, 282]"
+warhehit,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""warhehit[.]fun"", ""warhehit[.]online"", ""warhehit[.]pw"", ""warhehit[.]site"", ""warhehit[.]space"", ""warhehit[.]website""]","[214, 215, 216, 217, 218, 219]"
+whrheit,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""whrheit[.]fun"", ""whrheit[.]online"", ""whrheit[.]pw"", ""whrheit[.]site"", ""whrheit[.]space"", ""whrheit[.]website""]","[224, 225, 226, 227, 228, 305]"
+wrhheit,6,6,True,"[""fun"", ""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""wrhheit[.]fun"", ""wrhheit[.]online"", ""wrhheit[.]pw"", ""wrhheit[.]site"", ""wrhheit[.]space"", ""wrhheit[.]website""]","[229, 230, 231, 232, 233, 306]"
+affinemaiunng,5,5,True,"[""fun"", ""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""affinemaiunng[.]fun"", ""affinemaiunng[.]online"", ""affinemaiunng[.]site"", ""affinemaiunng[.]space"", ""affinemaiunng[.]website""]","[105, 106, 107, 108, 109]"
+alledrigns,5,5,True,"[""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""alledrigns[.]online"", ""alledrigns[.]pw"", ""alledrigns[.]site"", ""alledrigns[.]space"", ""alledrigns[.]website""]","[150, 151, 152, 153, 154]"
+allerdigns,5,5,True,"[""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""allerdigns[.]online"", ""allerdigns[.]pw"", ""allerdigns[.]site"", ""allerdigns[.]space"", ""allerdigns[.]website""]","[159, 160, 161, 162, 234]"
+denkuzesrtnch,5,5,True,"[""fun"", ""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""denkuzesrtnch[.]fun"", ""denkuzesrtnch[.]online"", ""denkuzesrtnch[.]site"", ""denkuzesrtnch[.]space"", ""denkuzesrtnch[.]website""]","[258, 259, 260, 261, 262]"
+denkzusrntch,5,5,True,"[""fun"", ""online"", ""pw"", ""site"", ""website""]","[""Germany""]","[""denkzusrntch[.]fun"", ""denkzusrntch[.]online"", ""denkzusrntch[.]pw"", ""denkzusrntch[.]site"", ""denkzusrntch[.]website""]","[263, 264, 265, 266, 267]"
+dknuzrstnach,5,5,True,"[""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""dknuzrstnach[.]online"", ""dknuzrstnach[.]pw"", ""dknuzrstnach[.]site"", ""dknuzrstnach[.]space"", ""dknuzrstnach[.]website""]","[272, 273, 274, 275, 276]"
+dknzursntach,5,5,True,"[""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""dknzursntach[.]online"", ""dknzursntach[.]pw"", ""dknzursntach[.]site"", ""dknzursntach[.]space"", ""dknzursntach[.]website""]","[283, 284, 285, 286, 287]"
+ferehtdwrhl,5,5,True,"[""fun"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""ferehtdwrhl[.]fun"", ""ferehtdwrhl[.]pw"", ""ferehtdwrhl[.]site"", ""ferehtdwrhl[.]space"", ""ferehtdwrhl[.]website""]","[290, 291, 292, 293, 294]"
+offinemaining,5,5,True,"[""fun"", ""online"", ""pw"", ""site"", ""website""]","[""Germany""]","[""offinemaining[.]fun"", ""offinemaining[.]online"", ""offinemaining[.]pw"", ""offinemaining[.]site"", ""offinemaining[.]website""]","[73, 74, 75, 76, 77]"
+offineminung,5,5,True,"[""online"", ""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""offineminung[.]online"", ""offineminung[.]pw"", ""offineminung[.]site"", ""offineminung[.]space"", ""offineminung[.]website""]","[88, 89, 90, 91, 92]"
+warhheit,5,5,True,"[""fun"", ""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""warhheit[.]fun"", ""warhheit[.]online"", ""warhheit[.]site"", ""warhheit[.]space"", ""warhheit[.]website""]","[220, 221, 222, 223, 304]"
+affinemainung,4,4,True,"[""fun"", ""online"", ""space"", ""website""]","[""Germany""]","[""affinemainung[.]fun"", ""affinemainung[.]online"", ""affinemainung[.]space"", ""affinemainung[.]website""]","[101, 102, 103, 104]"
+affinemiunng,4,4,True,"[""fun"", ""site"", ""space"", ""website""]","[""Germany""]","[""affinemiunng[.]fun"", ""affinemiunng[.]site"", ""affinemiunng[.]space"", ""affinemiunng[.]website""]","[116, 117, 118, 119]"
+alldrings,4,4,True,"[""online"", ""pw"", ""space"", ""website""]","[""Germany""]","[""alldrings[.]online"", ""alldrings[.]pw"", ""alldrings[.]space"", ""alldrings[.]website""]","[146, 147, 148, 149]"
+alledrngs,4,4,True,"[""online"", ""pw"", ""space"", ""website""]","[""Germany""]","[""alledrngs[.]online"", ""alledrngs[.]pw"", ""alledrngs[.]space"", ""alledrngs[.]website""]","[155, 156, 157, 158]"
+dassprachrohr,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""dassprachrohr[.]online"", ""dassprachrohr[.]site"", ""dassprachrohr[.]space"", ""dassprachrohr[.]website""]","[163, 164, 165, 166]"
+dassprahcrohr,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""dassprahcrohr[.]online"", ""dassprahcrohr[.]site"", ""dassprahcrohr[.]space"", ""dassprahcrohr[.]website""]","[167, 168, 169, 170]"
+dassrpahcorhr,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""dassrpahcorhr[.]online"", ""dassrpahcorhr[.]site"", ""dassrpahcorhr[.]space"", ""dassrpahcorhr[.]website""]","[174, 175, 176, 177]"
+deknzuerstnch,4,4,True,"[""fun"", ""pw"", ""site"", ""website""]","[""Germany""]","[""deknzuerstnch[.]fun"", ""deknzuerstnch[.]pw"", ""deknzuerstnch[.]site"", ""deknzuerstnch[.]website""]","[242, 243, 244, 245]"
+dknuzersntch,4,4,True,"[""online"", ""pw"", ""site"", ""website""]","[""Germany""]","[""dknuzersntch[.]online"", ""dknuzersntch[.]pw"", ""dknuzersntch[.]site"", ""dknuzersntch[.]website""]","[268, 269, 270, 271]"
+fariepoziitn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""fariepoziitn[.]online"", ""fariepoziitn[.]site"", ""fariepoziitn[.]space"", ""fariepoziitn[.]website""]","[120, 121, 122, 123]"
+faripoziiton,4,4,True,"[""fun"", ""online"", ""space"", ""website""]","[""Germany""]","[""faripoziiton[.]fun"", ""faripoziiton[.]online"", ""faripoziiton[.]space"", ""faripoziiton[.]website""]","[124, 125, 126, 127]"
+feriehtdewrahl,4,4,True,"[""pw"", ""site"", ""space"", ""website""]","[""Germany""]","[""feriehtdewrahl[.]pw"", ""feriehtdewrahl[.]site"", ""feriehtdewrahl[.]space"", ""feriehtdewrahl[.]website""]","[298, 299, 300, 301]"
+fraiepozition,4,4,True,"[""live"", ""online"", ""site"", ""store""]","[""Germany""]","[""fraiepozition[.]live"", ""fraiepozition[.]online"", ""fraiepozition[.]site"", ""fraiepozition[.]store""]","[67, 68, 69, 70]"
+lenreuzdeknen,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lenreuzdeknen[.]online"", ""lenreuzdeknen[.]site"", ""lenreuzdeknen[.]space"", ""lenreuzdeknen[.]website""]","[178, 179, 180, 181]"
+lenruzdeknn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lenruzdeknn[.]online"", ""lenruzdeknn[.]site"", ""lenruzdeknn[.]space"", ""lenruzdeknn[.]website""]","[182, 183, 184, 185]"
+lenrzuednken,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lenrzuednken[.]online"", ""lenrzuednken[.]site"", ""lenrzuednken[.]space"", ""lenrzuednken[.]website""]","[186, 187, 188, 189]"
+lernezudeknen,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lernezudeknen[.]online"", ""lernezudeknen[.]site"", ""lernezudeknen[.]space"", ""lernezudeknen[.]website""]","[190, 191, 192, 193]"
+lernezuednkn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lernezuednkn[.]online"", ""lernezuednkn[.]site"", ""lernezuednkn[.]space"", ""lernezuednkn[.]website""]","[194, 195, 196, 197]"
+lnruzdeknn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lnruzdeknn[.]online"", ""lnruzdeknn[.]site"", ""lnruzdeknn[.]space"", ""lnruzdeknn[.]website""]","[200, 201, 202, 203, 204]"
+lrneuzdenken,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lrneuzdenken[.]online"", ""lrneuzdenken[.]site"", ""lrneuzdenken[.]space"", ""lrneuzdenken[.]website""]","[205, 206, 207, 208, 209]"
+lrneuzednken,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""lrneuzednken[.]online"", ""lrneuzednken[.]site"", ""lrneuzednken[.]space"", ""lrneuzednken[.]website""]","[210, 211, 212, 213]"
+offebnarugn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""offebnarugn[.]online"", ""offebnarugn[.]site"", ""offebnarugn[.]space"", ""offebnarugn[.]website""]","[130, 131, 132, 133]"
+offebnurgn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""offebnurgn[.]online"", ""offebnurgn[.]site"", ""offebnurgn[.]space"", ""offebnurgn[.]website""]","[134, 135, 136, 137]"
+offenbarugn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""offenbarugn[.]online"", ""offenbarugn[.]site"", ""offenbarugn[.]space"", ""offenbarugn[.]website""]","[138, 139, 140, 141]"
+offenbaurgn,4,4,True,"[""online"", ""site"", ""space"", ""website""]","[""Germany""]","[""offenbaurgn[.]online"", ""offenbaurgn[.]site"", ""offenbaurgn[.]space"", ""offenbaurgn[.]website""]","[142, 143, 144, 145]"
+sueddeutsche,4,4,True,"[""cc"", ""co"", ""me"", ""online""]","[""Germany""]","[""sueddeutsche[.]cc"", ""sueddeutsche[.]co"", ""sueddeutsche[.]me"", ""sueddeutsche[.]online""]","[46, 48, 57, 59]"
+welt,4,4,True,"[""ltd"", ""media"", ""tours"", ""ws""]","[""Germany""]","[""welt[.]ltd"", ""welt[.]media"", ""welt[.]tours"", ""welt[.]ws""]","[6, 33, 58, 61]"
+affinemanung,3,3,True,"[""fun"", ""site"", ""website""]","[""Germany""]","[""affinemanung[.]fun"", ""affinemanung[.]site"", ""affinemanung[.]website""]","[110, 111, 112]"
+affineminung,3,3,True,"[""fun"", ""online"", ""site""]","[""Germany""]","[""affineminung[.]fun"", ""affineminung[.]online"", ""affineminung[.]site""]","[113, 114, 115]"
+dailymail,3,3,True,"[""cam"", ""cfd"", ""top""]","[""UK""]","[""dailymail[.]cam"", ""dailymail[.]cfd"", ""dailymail[.]top""]","[7, 10, 11]"
+dassprhcorhr,3,3,True,"[""online"", ""site"", ""space""]","[""Germany""]","[""dassprhcorhr[.]online"", ""dassprhcorhr[.]site"", ""dassprhcorhr[.]space""]","[171, 172, 173]"
+delfi,3,3,True,"[""life"", ""today"", ""top""]","[""Latvia""]","[""delfi[.]life"", ""delfi[.]today"", ""delfi[.]top""]","[9, 18, 19]"
+faz,3,3,True,"[""agency"", ""life"", ""ltd""]","[""Germany""]","[""faz[.]agency"", ""faz[.]life"", ""faz[.]ltd""]","[34, 54, 65]"
+ferhedtewrahl,3,3,True,"[""pw"", ""site"", ""website""]","[""Germany""]","[""ferhedtewrahl[.]pw"", ""ferhedtewrahl[.]site"", ""ferhedtewrahl[.]website""]","[295, 296, 297]"
+nd-aktuell,3,3,True,"[""co"", ""net"", ""pro""]","[""Germany""]","[""nd-aktuell[.]co"", ""nd-aktuell[.]net"", ""nd-aktuell[.]pro""]","[50, 55, 62]"
+offinemaiunng,3,3,True,"[""online"", ""pw"", ""space""]","[""Germany""]","[""offinemaiunng[.]online"", ""offinemaiunng[.]pw"", ""offinemaiunng[.]space""]","[81, 82, 83]"
+offinemanung,3,3,True,"[""online"", ""site"", ""website""]","[""Germany""]","[""offinemanung[.]online"", ""offinemanung[.]site"", ""offinemanung[.]website""]","[84, 85, 86]"
+spiegeli,3,3,True,"[""life"", ""live"", ""today""]","[""Germany""]","[""spiegeli[.]life"", ""spiegeli[.]live"", ""spiegeli[.]today""]","[30, 31, 32]"
+t-onlinl,3,3,True,"[""life"", ""live"", ""today""]","[""Germany""]","[""t-onlinl[.]life"", ""t-onlinl[.]live"", ""t-onlinl[.]today""]","[43, 44, 45]"
+t-onlinr,3,3,True,"[""life"", ""live"", ""today""]","[""Germany""]","[""t-onlinr[.]life"", ""t-onlinr[.]live"", ""t-onlinr[.]today""]","[35, 36, 37]"
+tonline,3,3,True,"[""cfd"", ""life"", ""today""]","[""Germany""]","[""tonline[.]cfd"", ""tonline[.]life"", ""tonline[.]today""]","[24, 25, 26]"
+werdunstorker,3,3,True,"[""fun"", ""online"", ""pw""]","[""Germany""]","[""werdunstorker[.]fun"", ""werdunstorker[.]online"", ""werdunstorker[.]pw""]","[78, 79, 80]"
+dnkzuesrtnach,2,2,True,"[""pw"", ""website""]","[""Germany""]","[""dnkzuesrtnach[.]pw"", ""dnkzuesrtnach[.]website""]","[288, 289]"
+ferihetderwahl,2,2,True,"[""online"", ""website""]","[""Germany""]","[""ferihetderwahl[.]online"", ""ferihetderwahl[.]website""]","[302, 303]"
+fraiopziiton,2,2,True,"[""online"", ""site""]","[""Germany""]","[""fraiopziiton[.]online"", ""fraiopziiton[.]site""]","[128, 129]"
+lernuzdenken,2,2,True,"[""online"", ""website""]","[""Germany""]","[""lernuzdenken[.]online"", ""lernuzdenken[.]website""]","[198, 199]"
+offinemainung,2,2,True,"[""info"", ""live""]","[""Germany""]","[""offinemainung[.]info"", ""offinemainung[.]live""]","[71, 72]"
+offinemiunng,2,2,True,"[""online"", ""space""]","[""Germany""]","[""offinemiunng[.]online"", ""offinemiunng[.]space""]","[93, 94]"
+offinemizung,2,2,True,"[""online"", ""website""]","[""Germany""]","[""offinemizung[.]online"", ""offinemizung[.]website""]","[95, 96]"
+offinemnung,2,2,True,"[""online"", ""space""]","[""Germany""]","[""offinemnung[.]online"", ""offinemnung[.]space""]","[97, 98]"
+offinemunng,2,2,True,"[""online"", ""website""]","[""Germany""]","[""offinemunng[.]online"", ""offinemunng[.]website""]","[99, 100]"
+spiegelr,2,2,True,"[""live"", ""today""]","[""Germany""]","[""spiegelr[.]live"", ""spiegelr[.]today""]","[41, 42]"
+tagesspiegel,2,2,True,"[""co"", ""ltd""]","[""Germany""]","[""tagesspiegel[.]co"", ""tagesspiegel[.]ltd""]","[40, 60]"
+warhheiiptdaunegn,2,2,True,"[""link"", ""pw""]","[""Germany""]","[""warhheiiptdaunegn[.]link"", ""warhheiiptdaunegn[.]pw""]","[311, 312]"
+warhheintdaunegn,2,2,True,"[""link"", ""pw""]","[""Germany""]","[""warhheintdaunegn[.]link"", ""warhheintdaunegn[.]pw""]","[314, 315]"
+20minuts,1,1,False,"[""com""]","[""France""]","[""20minuts[.]com""]",[12]
+ansa,1,1,False,"[""ltd""]","[""Italy""]","[""ansa[.]ltd""]",[13]
+avisindependent,1,1,False,"[""eu""]","[""France""]","[""avisindependent[.]eu""]",[3]
+deknzuersntch,1,1,False,"[""site""]","[""Germany""]","[""deknzuersntch[.]site""]",[241]
+fraiesvolk,1,1,False,"[""com""]","[""Germany""]","[""fraiesvolk[.]com""]",[66]
+kennediewahrheit,1,1,False,"[""live""]","[""Germany""]","[""kennediewahrheit[.]live""]",[307]
+lorketstonker,1,1,False,"[""store""]","[""Germany""]","[""lorketstonker[.]store""]",[308]
+neuigkeitenfursie,1,1,False,"[""tech""]","[""Germany""]","[""neuigkeitenfursie[.]tech""]",[309]
+offinemaunng,1,1,False,"[""online""]","[""Germany""]","[""offinemaunng[.]online""]",[87]
+rbk,1,1,False,"[""today""]","[""Ukraine""]","[""rbk[.]today""]",[20]
+repubblica,1,1,False,"[""life""]","[""Italy""]","[""repubblica[.]life""]",[8]
+rrn,1,1,False,"[""world""]","[""Multiple""]","[""rrn[.]world""]",[5]
+schlauespiel,1,1,False,"[""de""]","[""Germany""]","[""schlauespiel[.]de""]",[39]
+t-online,1,1,False,"[""life""]","[""Germany""]","[""t-online[.]life""]",[49]
+theguardian,1,1,False,"[""com""]","[""UK""]","[""theguardian[.]co[.]com""]",[15]
+wahrheitindenaugen,1,1,False,"[""pw""]","[""Germany""]","[""wahrheitindenaugen[.]pw""]",[310]
+warhheintbaunegn,1,1,False,"[""pw""]","[""Germany""]","[""warhheintbaunegn[.]pw""]",[313]
+zestiftung,1,1,False,"[""com""]","[""Germany""]","[""zestiftung[.]com""]",[51]

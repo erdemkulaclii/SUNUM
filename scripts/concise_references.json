@@ -1,0 +1,56 @@
+[
+  {
+    "id": "leaflet",
+    "cite": "Agafonkin & Leaflet contributors, 2023",
+    "apa": "Agafonkin, V., & Leaflet contributors. (2023). <i>Leaflet</i> (Version 1.9.4) [Computer software]. GitHub.",
+    "url": "https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4",
+    "kind": "Harita yazılımı; hakemli yayın değil",
+    "access": "Sürüm dosyaları ve lisans indirildi",
+    "verification": "Leaflet 1.9.4 JavaScript/CSS yerel olarak gömülüdür. BSD-2-Clause lisans künyesi assets/vendor/LEAFLET_LICENSE.txt içinde korunur."
+  },
+  {
+    "id": "allen2020",
+    "cite": "Allen et al., 2020",
+    "apa": "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. <i>Science Advances, 6</i>(14), Article eaay3539.",
+    "url": "https://doi.org/10.1126/sciadv.aay3539",
+    "kind": "Hakemli makale",
+    "access": "Erişilebilir makale metni incelendi",
+    "verification": "Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı."
+  },
+  {
+    "id": "lazer2018",
+    "cite": "Lazer et al., 2018",
+    "apa": "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. <i>Science, 359</i>(6380), 1094–1096.",
+    "url": "https://doi.org/10.1126/science.aao2998",
+    "kind": "Hakemli kavramsal makale",
+    "access": "Erişilebilir yazar sürümü incelendi",
+    "verification": "Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor."
+  },
+  {
+    "id": "meta2022",
+    "cite": "Meta, 2022",
+    "apa": "Meta. (2022, September 27). <i>2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv</i> [Data set]. GitHub.",
+    "url": "https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv",
+    "kind": "Birincil gösterge veri seti; hakemli yayın değil",
+    "access": "Ham veri indirildi, incelendi ve yeniden sayıldı",
+    "verification": "Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir."
+  },
+  {
+    "id": "naturalearth",
+    "cite": "Natural Earth, n.d.",
+    "apa": "Natural Earth. (n.d.). <i>Admin 0—Countries, 1:110m</i> [Map].",
+    "url": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
+    "kind": "Kartografik veri",
+    "access": "GeoJSON kopyası indirildi ve incelendi",
+    "verification": "nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir."
+  },
+  {
+    "id": "openstreetmap",
+    "cite": "OpenStreetMap contributors, n.d.",
+    "apa": "OpenStreetMap contributors. (n.d.). <i>OpenStreetMap</i> [Map].",
+    "url": "https://www.openstreetmap.org/copyright",
+    "kind": "İşbirlikli coğrafi veri ve taban haritası",
+    "access": "Standart döşeme uç noktası yapılandırıldı; canlı erişim ağ koşullarına bağlı",
+    "verification": "https://tile.openstreetmap.org/{z}/{x}/{y}.png kullanılır. Atıf haritada görünür. Döşeme erişimi başarısızsa Natural Earth sınır katmanı açıkça farklı etiketle gösterilir. OSM, IOC bulgularının kaynağı değildir."
+  }
+]

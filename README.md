@@ -1,65 +1,62 @@
-# Hibrit Savaşın Görünmez Cephesi
+# Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı
 
-Rusya bağlantılı olarak raporlanan bir ağın yayımlanmış alan adı göstergeleri üzerine, gerçek OSINT verisine dayanan Türkçe araştırma sunumu.
+Gerçek OSINT verisine dayanan Türkçe akademik vaka sunumu. Rusya bağlantısı kaynak raporlamasına dayanır; inceleme Meta’nın yayımladığı alan adı göstergelerinin hedef coğrafyasını ve sözcüksel yapısını çözümler.
 
-[Sunum](output/PROFESYONEL_SUNUM.html) · [PowerPoint](output/PROFESYONEL_SUNUM.pptx) · [PDF](output/PROFESYONEL_SUNUM.pdf) · [Konuşma metni / Word](output/KONUSMA_METNI_15_DK.docx) · [Konuşma metni / PDF](output/KONUSMA_METNI_15_DK.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.pdf)
+[Tam paket](output/PROFESYONEL_TAM_PAKET.zip) · [PowerPoint](output/AKADEMIK_ODAKLI_SUNUM.pptx) · [PDF](output/AKADEMIK_ODAKLI_SUNUM.pdf) · [Etkileşimli sunum](output/AKADEMIK_ODAKLI_SUNUM.html) · [Sunucu kartları](output/SUNUCU_KARTLARI.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.pdf)
 
-## Açılış
+## Sunumu açma
 
-`output/PROFESYONEL_SUNUM.html` dosyasına çift tıklayarak Firefox/Chrome/Edge ile açın. Bu doğrudan açılışta harita dosyanın içindeki Natural Earth verisini kullanır; OpenStreetMap’e döşeme isteği göndermez. Harita, ülke seçimi ve fotoğraflar internet olmadan çalışır. GitHub HTML’yi çalıştırmaz; dosyayı indirin. F11 tam ekran; sağ/sol ok sahne; boşluk 15 dakikalık akış; N o sahnenin konuşma metni. Kaynakça ve konuşma metni üst menüde, sonuç ve kaynakça ayrıca ana sunumun son iki sahnesindedir.
+Sunum salonunda **`output/AKADEMIK_ODAKLI_SUNUM.pptx`** dosyasını kullanın; aynı sayfa düzenindeki PDF yedeği yanında bulunsun. Başlıklar, metinler ve bulgu grafikleri PowerPoint’te düzenlenebilir; PDF metni seçilebilir. Masaüstü PowerPoint’in görüntüleme davranışı bu ortamda ayrıca sınanmadı.
 
-**35 slayt:** 18 ana sahne, 17 yöntem/savunma/kaynakça eki. 900 saniye planlanan akıştır; gerçek konuşma süresi prova ile ölçülmelidir.
+Etkileşimli kullanım için `output/AKADEMIK_ODAKLI_SUNUM.html` dosyasını indirip tarayıcıda açın. GitHub dosya görünümü HTML’yi çalıştırmaz. Sağ/sol ok slayt değiştirir; boşluk planlanan akışı başlatır/durdurur; **N** anlatıcı kartlarını açar. Üst menüde veri tablosu, kaynakça ve yardımcı atlas bulunur. Tarayıcıda F11 tam ekran kullanılabilir. `PROFESYONEL_SUNUM` ve `SINEMATIK_SUNUM` adları uyumlu kopyalar olarak korunur.
 
-## Sunumun yazılı yapısı
+**11 ana slayt, 13 dakika anlatım ve 2 dakika oturum payı.** Sekiz veri/yöntem/kaynakça ekiyle toplam 19 slayt vardır. Süreler anlatım planıdır; gerçek süre prova ile ölçülmelidir. Ana slaytlarda kısa metin, yüksek kontrast ve veri grafikleri kullanılır. Kent fotoğrafları kullanılmaz.
 
-Kapakta tam araştırma konusu ve **Akademik Araştırma Sunumu** ifadesi bulunur. 18 ana slaytın her biri bir sav taşıyan başlık, açıklayıcı bir giriş, üç tam cümle ve tek bir ana çıkarım içerir. Akış: araştırma problemi ve sorular → kavramsal çerçeve ve yöntem → gerçek ülke bulguları → GDELT karşılaştırma tasarımı → tartışma ve sonuç → kaynakça. Ülke örnekleri doğrudan ham gösterge kayıtlarından alınır.
+## Araştırma sorusu ve tamamlanmış bulgular
 
-[Özel düzenlenebilir PowerPoint](output/AKADEMIK_SUNUM_DUZENLENEBILIR.pptx), ana sunumun da temel PowerPoint sürümüdür. Konuşma metni 1.757 sözcüktür; 15 dakikalık plan, harita duraklamaları ve prova ile kullanılmalıdır. Slayt metinlerinin 1600×900 ve 1280×720 sunum görünümlerinde kesilmeden okunması ayrıca ölçülür: [okunabilirlik raporu](output/SUNUM_OKUNABILIRLIK.json).
+**Araştırma sorusu:** Bu listede hedef ülke etiketleri ile alan adlarının sözcüksel yapısı nasıl bir örüntü oluşturuyor?
 
-## Harita
+Analiz kümesi, 350 ham kayıttan seçilen 313 alan adı satırının tekilleştirilmesiyle elde edilen **311 benzersiz alan adıdır**. CIB ve Telegram bağlantıları bu paydada sayılmaz. Ülke, uzantıdan veya IP’den tahmin edilmez; kaynağın `comment` alanındaki hedef etiketinden alınır.
 
-Harita motoru gerçek **Leaflet 1.9.4**; kütüphane ve lisansı dosyaya gömülüdür. Dosyaya çift tıklayarak açılan `file://` sürümü, gömülü **Natural Earth sınır haritasıyla** başlar. Ülke seçiminde gerçek enlem/boylama uçuş yapılır, fotoğraf penceresi coğrafi referansa bağlı kalır. Kaynak hedef ülkeleri ve GDELT kaynak coğrafyası ayrı katmanlardır.
+| Tamamlanmış analiz | Sonuç |
+| --- | --- |
+| Hedef ülke dağılımı | Almanya 298/311: **%95,8**. Birleşik Krallık 4, Fransa 2, İtalya 2, Letonya 3, Ukrayna 1, çoklu hedef 1. |
+| Son DNS etiketi dağılımı | 39 farklı son etiket vardır. En sık altı etiket (`online`, `website`, `site`, `space`, `pw`, `fun`) 240/311 alan adını, **%77,2**’yi kapsar. Bu 240 kaydın tamamı Almanya hedeflidir. |
+| İlk DNS etiketinin tekrarı | 93 ayrı ilk etiketin 75’i birden fazla son etiketle kullanılır. Bu gruplar **293 alan adını** kapsar. |
 
-**OpenStreetMap sokak/kent ayrıntıları için** kök klasörde `BASLAT.sh` çalıştırılabilir. Bu sunuculu HTTP sürümü, tarayıcının normal Referer bilgisiyle OSM standart döşemelerini ister. Erişimin kabul edilmesi OSM ve ağ koşullarına bağlıdır. Döşeme görüntülenmeden önce HTTP durumu ve görüntü içerik türü denetlenir. 403 veya başka bir erişim hatası gelirse çevrimiçi katman tamamen kaldırılır ve gömülü harita gösterilir; hata görselleri haritanın üzerine dizilmez. Haritada hangi tabanın kullanıldığı yazılıdır.
+**Sonuç cümlesi:** İncelenen vaka, Almanya hedefli etiketlerdeki yoğunlaşma ile yinelenen ilk DNS etiketleri çevresinde oluşan adres çeşitliliğinin birlikte görülmesiyle tanımlanır.
 
-Ekrandaki eski “403 Access blocked” sorunu, reddedilmiş bir görüntünün yüklenmiş harita sanılmasından kaynaklanıyordu. Dosya açılışında OSM isteği göndermemek ve HTTP sürümünde yanıtı görüntülemeden denetlemek bu iki durumu ayırır. Başka sağlayıcıya veya aynaya geçerek erişim engeli aşılmaya çalışılmaz. Toplu döşeme indirmesi veya önceden önbellekleme yapılmaz. Bu bulut ortamında OSM erişimi engelli olduğundan statik PDF/PPTX/video çıktıları da etiketli gömülü sınır haritasıyla üretildi.
+İlk/son DNS etiketi, metnin ilk/son noktasına göre ayrılan gerçek dize parçasıdır. Bu hesap etkin kayıt son ekini, fiyatı, barındırma ülkesini veya ortak operatörü belirlemez. Bütün kayıtlarda `ds=2022-09-27` olduğu için faaliyet zaman serisi üretilmez. Bulgular yayımlanmış bu listeye aittir; bütün operasyonlara veya kamuoyu etkisine genellenmez.
 
-Kent işaretleri, fotoğrafların yer/kent referanslarıdır; kamera GPS veya operasyon konumu değildir. IOC verisi hedef ülke düzeyindedir. Fotoğraf kaynakları, lisanslar ve SHA-256: [konum künyesi](assets/locations/locations.json). Paris küçük resminin açık yeniden kullanım lisansı doğrulanmadı; CC0 diye etiketlenmez.
+## Veri, kaynakça ve anlatıcı belgeleri
 
-## GDELT Cloud ve verilen anahtar
+Birincil veri, Meta’nın [sabit commit bağlantısındaki CSV dosyasıdır](https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv). SHA-256:
 
-Cloud, `https://gdeltcloud.com/api/v2` üzerinden **sunucu tarafında** çağrılır. `BASLAT.sh` veya `python scripts/serve_presentation.py` sunuculu sürümü açar. Anahtar `GDELT_API_KEY` çalışma ortamı değişkeninden veya mevcut özel, Git tarafından dışlanan `.env` uygulama yapılandırmasından okunur. Değeri HTTP, HTML, GitHub veya ZIP’e verilmez. Başka bir bilgisayara indirilen paket bu özel anahtarı taşımaz.
+```text
+9f216a37e15c4772019d20ee620eafabf57a3876d4a7ab72fff5330fa8167d8d
+```
 
-Sunucu en fazla 10 Event adayı içeren bir sayfa ister; pencere son 7 tamamlanmış UTC günüdür. Başarılı yanıt 6 saat, başarısız bağlantı 60 saniye saklanır. Her sayfa açılışında sürekli tarama yapılmaz. Yanıtın filtreleri, kayıt kimlikleri ve sayfalama bilgisi doğrulanır. Event kaydı gerçek dünyadaki bağımsız olay veya doğrulanmış dezenformasyon sayısı değildir. Yalnız yanıtta açıkça gelen geçerli koordinatlar haritalanır.
+[Yapısal analiz](output/IOC_YAPISAL_ANALIZ.json), [311 kayıtlık kanıt tablosu](output/IOC_YAPISAL_KANIT.csv), [son etiket dağılımı](output/IOC_SON_ETIKET_DAGILIMI.csv), [ülke × son etiket](output/IOC_HEDEF_SON_ETIKET.csv) ve [ilk etiket grupları](output/IOC_GOVDE_AILELERI.csv) kaynak sıra numaralarıyla yeniden denetlenebilir. Etkileşimli HTML’de kayıtlar aranabilir ve süzülmüş tablo CSV olarak indirilebilir.
 
-**Verilen anahtarla bu oturumda gerçek istek yapıldı. Ağ/proxy aşamasında engellendi; anahtarın geçerli veya geçersiz olduğu belirlenemedi.** Durum kaydı: [Cloud çalışma kaydı](output/GDELT_CLOUD_RUNTIME_STATUS.json). Sunucunun özel dosyaları dışarı açmadığı ayrıca sınandı.
+[Sunucu kartları / PDF](output/SUNUCU_KARTLARI.pdf) ve [Word](output/SUNUCU_KARTLARI.docx), her slayt için 3–4 anahtar cümle içerir. [Ayrıntılı prova metni / PDF](output/KONUSMA_METNI_15_DK.pdf) ve [Word](output/KONUSMA_METNI_15_DK.docx) hazırlık içindir; zorunlu okuma metni değildir. [Konuşmacı notları](output/KONUSMACI_NOTLARI.md) ve PowerPoint notları aynı anlatı kaynağından üretilir.
 
-Cloud sunucusu yoksa HTML ücretsiz **GDELT Project DOC 2.0** sorgusunu otomatik dener. Bu ayrı ürün anahtar gerektirmez. Son 30 günlük pencere UTC başlangıç/bitiş zamanlarıyla sabitlenir; en fazla 250 haber URL’si gelir. Kaynak ülke operasyon hedefi değildir. Önbellek özgün alım tarihiyle etiketlenir. Başarısız veya boş yanıttan gözlem uydurulmaz.
+[Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf) soru, yöntem, tamamlanmış analizler ve kapsamı açıklar. [Seçilmiş APA 7 kaynakça](output/APA7_KAYNAKCA.md) **altı kullanılan kaynak** içerir: iki akademik metin, birincil veri, yazılım ve iki harita kaynağı. Kaynak türleri birbirinin yerine geçmez. Erişim düzeyleri [kaynak kaydında](KAYNAKLAR.md), geçmiş geniş bibliyografyanın erişim denetimi [ayrı günlükte](AKADEMIK_KAYNAK_DENETIMI.md) korunur. Makale kopyaları pakette yeniden dağıtılmaz.
 
-Mevcut bulut ortamının GDELT/OSM ağ izinleri henüz uygulanmış değil. Gerekli alan adları ve sunucu başlangıç talimatı ortam yapılandırma taslağına kaydedildi. Taslağın kaydedilmesi, çalışan ortamın ağ erişiminin açıldığı anlamına gelmez. Harita döşemelerinin düzeltilmesi, GDELT Cloud anahtarını veya canlı veri erişimini doğrulamaz; bunların bağlantı durumları ayrı tutulur.
+## Yardımcı harita ve GDELT’nin yeri
 
-## Araştırma ve sonuç
+Ana bulgu, aynı lineer ölçekteki yatay çubuk grafiklerle sunulur. **Yardımcı atlas** Leaflet 1.9.4 kullanır ve hedef ülke etiketlerini ülke düzeyinde gösterir. Doğrudan dosya açılışında gömülü Natural Earth sınır verisi kullanılır; OpenStreetMap döşemesi istenmez. Harita operasyonun, sunucunun veya fotoğrafın konumunu göstermiyor.
 
-**Araştırma sorusu:** Rusya bağlantılı olarak raporlanan bu ağın yayımlanmış alan adı göstergeleri seçilen Avrupa ülkelerinde nasıl dağılıyor?
+İsteğe bağlı HTTP kullanımında kök klasörde `BASLAT.sh` çalıştırılabilir. OSM erişimi ağ koşullarına bağlıdır. Döşeme yanıtları gösterilmeden önce denetlenir; erişim reddedildiğinde çevrimiçi katman kaldırılır ve gömülü sınır haritası kalır. OSM atfı ve kullanılan taban haritada yazılıdır. Toplu döşeme indirmesi yapılmaz.
 
-**Sonuç:** İncelenen 2022 listesinde yayımlanmış alan adı göstergeleri Almanya hedefli etiketlerde yoğunlaşmaktadır: 311 benzersiz göstergenin 298’i (%95,8). Bu vaka içi yoğunluk, bütün operasyonların dağılımını veya kamuoyu etkisini ölçmez.
+**GDELT, tek bir ileri araştırma slaytında ele alınır.** 2022 vakası için aynı dönemli haber arşivi, açık örnekleme kapsamı ve kaynak ülkesi/anılan yer ayrımı gerekir. Bu tarihsel karşılaştırma tamamlanmadı; sunumda GDELT haber sayısı veya etki bulgusu yoktur. Ana sunum API anahtarı, elle veri bağlama veya canlı haber yanıtı gerektirmez.
 
-Meta dosyası: 350 kayıt → 313 alan adı satırı → 311 benzersiz alan adı. İki tekrar çıkarıldı. Almanya 298, Birleşik Krallık 4, Fransa 2, İtalya 2; Letonya 3, Ukrayna 1, çoklu hedef 1. Hedef, `comment` alanındaki kaynak etiketidir. 22 CIB URL ve 15 Telegram URL alan adı sayımında kullanılmadı. Sabit commit ve dosya özeti [manifestte](output/veri_manifest.json) korunur.
+Önceki özel GDELT sunucu bağlantısı teknik araç olarak korunur. Anahtar yalnız sunucu tarafındaki özel yapılandırmada tutulur; HTML, GitHub ve dağıtım paketlerine eklenmez. Ağ engeli nedeniyle başarılı canlı GDELT alımı doğrulanmadı; anahtar geçerliliği hakkında sonuç çıkarılmadı. Güncel bir API seçkisi tarihsel 2022 karşılaştırmasının yerine geçmez.
 
-Güncel API yanıtı, **2022 ile aynı dönemli GDELT karşılaştırması değildir**. Tarihsel haber karşılaştırması, bağımsız aktör atfı çapraz kontrolü ve iki kodlayıcılı içerik analizi henüz tamamlanmadı. Bu sürümde GDELT haber sayısı veya nedensel etki bulgusu raporlanmaz.
-
-## Kaynaklar ve konuşma metni
-
-14 kaynak APA 7 düzeninde; akademik araştırma, birincil veri, yazılım ve harita kaynakları ayrı türlerle gösterilir. Dört akademik metnin erişilebilir kopyası incelendi; diğer çalışmaların bibliyografik/tam metin erişim sınırları [denetim günlüğünde](AKADEMIK_KAYNAK_DENETIMI.md) açıklanır. Makale PDF kopyaları yeniden dağıtılmaz.
-
-[Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf), [tam APA kaynakça](output/APA7_KAYNAKCA.md), [konuşmacı notları](output/KONUSMACI_NOTLARI.md) ve [kanıt tablosu](output/alan_adi_kanit_tablosu.csv) teslim edilir. Aynı konuşma metni PowerPoint notlarında bulunur. PowerPoint’in ana başlıkları, açıklamaları, üç maddelik anlatısı, çıkarım cümleleri, kaynakları ve bulgu grafikleri yerel, düzenlenebilir metin/şekillerdir. Harita sınırları ve gerçek bağlam fotoğrafları görsel olarak eklenir. PDF, aynı anlatının sabit sayfa çıktısıdır. PowerPoint masaüstü oynatma davranışı bu ortamda test edilmedi; tam etkileşim HTML sürümündedir.
-
-## Yeniden üretim ve doğrulama
+## Yeniden üretim
 
 ```bash
 python -m pip install -r requirements.txt
-MPLCONFIGDIR=/tmp/sunum-mpl XDG_CACHE_HOME=/tmp/sunum-cache python scripts/build_interactive.py
-python scripts/render_cinematic_tour.py
+python scripts/build_interactive.py
 python scripts/export_editorial.py
 python scripts/export_academic_documents.py
 python scripts/verify_leaflet.py
@@ -67,4 +64,6 @@ python scripts/verify_slide_readability.py --check-pptx
 python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-Tarayıcı çıktıları için `/usr/bin/chromium`, Playwright ve ffmpeg gerekir. Hazır HTML ve belgeler için Python kurulumu gerekmez. Leaflet tarayıcı testleri ve 12 istemci/sunucu testi geçti. Test API yanıtları **sentetiktir**; araştırma bulgusu veya dağıtılan HTML’nin başlangıç verisi değildir. [Tarayıcı denetimi](output/LEAFLET_DOGRULAMA.json) ve [gerçek erişim durumu](output/HARITA_BAGLANTI_DURUMU.json) ayrıdır.
+Hazır HTML ve belgeleri açmak için Python gerekmez. Yeniden üretimde tarayıcı denetimleri için Chromium ve Playwright gerekir. Yerel regresyon testlerindeki yapay API yanıtları araştırma bulgusu değildir ve dağıtılan sunum verisine katılmaz. Eleştiriden çıkarılan kararlar ve uygulanmayan önerilerin gerekçeleri [revizyon kaydındadır](REVIZYON_KARARLARI.md).
+
+Önizlemeler ve doğrulama raporlarıyla güncel ZIP paketini yeniden oluşturmak için `python scripts/build_release.py` kullanılır. Yardımcı ülke kamerasının videosu `python scripts/render_cinematic_tour.py` ile ayrıca üretilebilir.

@@ -1,18 +1,45 @@
-GÖRÜNMEZ CEPHE — COĞRAFİ OSINT ARAŞTIRMASI
+META 2022 CIB LİSTESİNDE HEDEF COĞRAFYASI VE ALAN ADI YAPISI
+Akademik araştırma sunumu
 
-PROFESYONEL_SUNUM.html dosyasına çift tıklayıp Firefox/Chrome/Edge ile aç.
-Doğrudan dosya açılışında gömülü harita kullanılır; OpenStreetMap isteği gönderilmez. Harita ve fotoğraflar internet olmadan çalışır.
-F11 tam ekran. Sağ/sol ok: sahne. Boşluk: 15 dakikalık akış. N: konuşma metni.
-Kaynakça üst menüde ve ana sunumun son sahnesinde. Sonuç sondan bir önceki sahnede.
-35 slayt = 18 ana sahne + 17 ek. Her ana slaytta sav taşıyan başlık, üç açıklayıcı cümle ve ana çıkarım bulunur. Konuşma metni 1.757 sözcük; süreler okuma hızı ve harita duraklamalarına göre toplam 900 saniyeye dengelenmiştir. Prova gerekir.
+1. Sunum salonu için AKADEMIK_ODAKLI_SUNUM.pptx dosyasını açın.
+   Başlıklar, metinler ve grafikler düzenlenebilir. Aynı sayfa düzenindeki
+   AKADEMIK_ODAKLI_SUNUM.pdf yedeğini yanınızda tutun.
 
-Harita motoru Leaflet, doğrudan açılışın tabanı Natural Earth sınır verisidir. OSM sokak/kent ayrıntıları için kök klasörde BASLAT.sh çalıştırılabilir. OSM erişimi reddedilirse çevrimiçi katman kaldırılır, gömülü harita gösterilir; 403 hata görselleri gösterilmez. Haritada kullanılan taban yazılıdır.
-Fotoğraflar coğrafi bağlamdır; şehirde operasyon kanıtı değildir.
+2. Etkileşimli kullanım için AKADEMIK_ODAKLI_SUNUM.html dosyasını tarayıcıda açın.
+   Sağ/sol ok: slayt. Boşluk: akışı başlat/durdur. N: anlatıcı kartları.
+   F11: tarayıcı tam ekran. Veri tablosu, kaynakça ve yardımcı atlas üst menüdedir.
+   HTML'yi GitHub sayfasından görüntülemek yerine indirip açın.
+   PROFESYONEL_SUNUM ve SINEMATIK_SUNUM adları uyumlu kopyalardır.
 
-Harita tabanı ve GDELT haber bağlantısı ayrıdır. Ücretsiz GDELT DOC sorgusu açılışta otomatik denenir. Anahtarlı GDELT Cloud için kök klasörde BASLAT.sh sunuculu sürümü açar; anahtar çalışma ortamında tutulur. GitHub/ZIP özel anahtarı içermez. API erişimi veya sunucu yoksa bu durum gizlenmez ve haber uydurulmaz.
+11 ana slayt = 13 dakika anlatım + 2 dakika oturum payı.
+8 yedek veri/yöntem/kaynakça ekiyle toplam 19 slayt vardır. Gerçek süreyi prova edin.
 
-KONUSMA_METNI_15_DK.docx / .pdf: okunabilir konuşma metni.
-APA7_KAYNAKCA.pdf: 14 kaynak.
-AKADEMIK_ARASTIRMA_DOSYASI.pdf: soru, yöntem, savunma ve literatür.
+SUNUCU_KARTLARI.pdf / .docx:
+Her slayt için 3–4 anahtar cümle; serbest anlatımın temel yardımcısı.
 
-Sonuç: Bu 2022 listesinde 311 benzersiz alan adı göstergesinin 298’i Almanya hedefli etiketlidir (%95,8). Bu, bütün operasyonların dağılımı veya kamuoyu etkisi değildir. Güncel API seçkisi 2022 tarihsel karşılaştırmasının yerine geçmez.
+KONUSMA_METNI_15_DK.pdf / .docx:
+Ayrıntılı prova metni; ezberlenmesi veya bütünüyle okunması gereken metin değildir.
+
+APA7_KAYNAKCA.pdf:
+Altı kullanılan kaynak; akademik metin, veri, yazılım ve harita türleri ayrıdır.
+
+AKADEMIK_ARASTIRMA_DOSYASI.pdf:
+Araştırma sorusu, yöntem, tamamlanmış üç analiz ve çıkarım sınırları.
+
+GERÇEK VERİDEN TAMAMLANMIŞ BULGULAR
+350 ham kayıt → 313 alan adı satırı → 311 benzersiz alan adı.
+Almanya: 298/311 (%95,8).
+En sık altı son DNS etiketi: 240/311 (%77,2); tamamı Almanya hedefli.
+75 ilk DNS etiketi, farklı son etiketlerle 293 adreste tekrarlanır.
+
+SONUÇ
+İncelenen vaka, Almanya hedefli etiketlerdeki yoğunlaşma ile yinelenen ilk DNS
+etiketleri çevresinde oluşan adres çeşitliliğinin birlikte görülmesiyle tanımlanır.
+
+Yardımcı harita Leaflet kullanır. Dosyaya doğrudan açılışta gömülü Natural Earth
+sınırları gösterilir; OSM isteği gönderilmez. Kent fotoğrafı kullanılmaz.
+Hedef ülke etiketi operasyon veya sunucu konumu değildir.
+
+Ana sunum API anahtarı veya elle GDELT bağlantısı gerektirmez. GDELT, aynı dönemli
+2022 haber karşılaştırması için tek bir ileri araştırma slaytındadır; bu analiz
+henüz tamamlanmadı ve mevcut üç bulgunun kaynağı değildir.

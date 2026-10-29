@@ -8,6 +8,7 @@ __pycache__/
 
 # Download bundles and superseded exports remain local; publish current atlas files.
 /output/*.zip
+!/output/PROFESYONEL_TAM_PAKET.zip
 /output/SUNUM_15dk.pdf
 /output/SUNUM_15dk.pptx
 /output/SUNUM_HAREKETLI.pptx
@@ -21,3 +22,7 @@ __pycache__/
 /research/academic/grinberg2019.txt
 /research/academic/vosoughi2018.txt
 /research/academic/allen2020.txt
+
+# Retained locally for historical inspection; excluded from distribution.
+/assets/locations/paris.jpg
+/research/locations/paris.jpg

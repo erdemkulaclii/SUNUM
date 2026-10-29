@@ -1,0 +1,283 @@
+{
+  "checks_passed": true,
+  "checked_at_utc": "2026-10-29T00:32:43.390846+00:00",
+  "html_sha256": "60ff9da42a7c9a3a41fd5c0f9372b9e6962cd8936d9fef96db1c6c04655b0ca3",
+  "narrative_sha256": "7993a4eab759e0d82fd7e700b04ffb8954ce3427a6e60344e2f7ad4a387b0280",
+  "main_slides": 11,
+  "planned_seconds": 780,
+  "buffer_seconds": 120,
+  "authored_main_words_including_subtitle": [
+    28,
+    24,
+    25,
+    22,
+    24,
+    24,
+    15,
+    22,
+    24,
+    27,
+    27
+  ],
+  "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
+  "APA_references": 6,
+  "analysis": {
+    "source_sha256_verified": true,
+    "raw_records": 350,
+    "domain_rows": 313,
+    "unique_domains": 311,
+    "three_completed_findings_recounted": true,
+    "activity_time_series_supported": false
+  },
+  "viewports": [
+    {
+      "width": 1600,
+      "height": 900,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
+          "prose_fonts_px": [
+            18,
+            22,
+            25,
+            65.6
+          ],
+          "violations": []
+        },
+        {
+          "scene": 2,
+          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 3,
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 4,
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 5,
+          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 6,
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 7,
+          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 8,
+          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 9,
+          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 10,
+          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 11,
+          "title": "Kaynakça",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "scenes": [
+        {
+          "scene": 1,
+          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
+          "prose_fonts_px": [
+            18,
+            19,
+            22,
+            45
+          ],
+          "violations": []
+        },
+        {
+          "scene": 2,
+          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 3,
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 4,
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 5,
+          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 6,
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 7,
+          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 8,
+          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 9,
+          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 10,
+          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 11,
+          "title": "Kaynakça",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        }
+      ]
+    }
+  ],
+  "violations": [],
+  "javascript_errors": [],
+  "external_requests": [],
+  "actual_GDELT_network_verified": false,
+  "live_OSM_verified": false,
+  "native_powerpoint": {
+    "verified": true,
+    "main_slides": 11,
+    "total_slides": 19,
+    "pdf_pages": 19,
+    "main_text_editable": true,
+    "main_slides_have_no_raster_picture": true,
+    "desktop_PowerPoint_render_verified": false
+  },
+  "legacy_report_alias_scope": "Current concise presentation only; no completed historical GDELT study or live API success is asserted."
+}

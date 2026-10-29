@@ -1,0 +1,31 @@
+{
+  "checks_passed": true,
+  "main_slides": 11,
+  "appendix_slides": 8,
+  "total_slides": 19,
+  "planned_talk_seconds": 780,
+  "remaining_session_buffer_seconds": 120,
+  "main_text_editable": true,
+  "authored_main_slide_word_counts": [
+    28,
+    24,
+    25,
+    22,
+    24,
+    24,
+    15,
+    22,
+    24,
+    27,
+    27
+  ],
+  "maximum_authored_main_words": 28,
+  "matched_native_PDF_pages": true,
+  "all_notes_nonempty": true,
+  "bounds_and_font_metrics_checked": true,
+  "no_photos_used": true,
+  "live_GDELT_observations_generated": false,
+  "desktop_PowerPoint_render_verified": false,
+  "pptx_sha256": "76b7275112234a99dadeb76fa6a66647272cee6e8c393d4921e4d4e4863b1fbf",
+  "pdf_sha256": "b851edcf7551b25e26bbc5b5da2892c8174e83e5c99a3dffd90eb39afb78aad0"
+}

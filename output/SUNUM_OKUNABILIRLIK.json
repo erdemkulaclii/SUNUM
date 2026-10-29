@@ -1,227 +1,148 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-28T23:43:49.859448+00:00",
-  "test_kind": "Actual DOM text measurements; no API data or synthetic observations",
+  "checked_at_utc": "2026-10-29T00:32:43.390846+00:00",
+  "html_sha256": "60ff9da42a7c9a3a41fd5c0f9372b9e6962cd8936d9fef96db1c6c04655b0ca3",
+  "narrative_sha256": "7993a4eab759e0d82fd7e700b04ffb8954ce3427a6e60344e2f7ad4a387b0280",
+  "main_slides": 11,
+  "planned_seconds": 780,
+  "buffer_seconds": 120,
+  "authored_main_words_including_subtitle": [
+    28,
+    24,
+    25,
+    22,
+    24,
+    24,
+    15,
+    22,
+    24,
+    27,
+    27
+  ],
+  "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
+  "APA_references": 6,
+  "analysis": {
+    "source_sha256_verified": true,
+    "raw_records": 350,
+    "domain_rows": 313,
+    "unique_domains": 311,
+    "three_completed_findings_recounted": true,
+    "activity_time_series_supported": false
+  },
   "viewports": [
     {
       "width": 1600,
       "height": 900,
-      "minimum_prose_font_px": 16,
       "scenes": [
         {
           "scene": 1,
-          "title": "Hibrit savaşın görünmez cephesi",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
           "prose_fonts_px": [
-            16,
-            21
+            18,
+            22,
+            25,
+            65.6
           ],
-          "prose_nodes": 7,
           "violations": []
         },
         {
           "scene": 2,
-          "title": "Araştırma iki ayrı coğrafi soruya dayanır.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 3,
-          "title": "Dezenformasyon, içerik kadar güven ilişkileriyle de ilgilidir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 4,
-          "title": "Çalışma, izlenebilir bir tarihsel vaka incelemesidir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 5,
-          "title": "Veri denetimi, doğru toplamı 311 olarak belirler.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 6,
-          "title": "Dört odak ülke 306 göstergeyle temsil edilir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 7,
-          "title": "Almanya, listedeki göstergelerin yüzde 95,8’ini oluşturur.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 8,
-          "title": "Birleşik Krallık kayıtları, ad benzerliğini somutlaştırır.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 9,
-          "title": "Fransa kayıtları iki ayrı alan adını içerir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 10,
-          "title": "İtalya örneği, altyapıdan içerik analizine geçişi açar.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 11,
-          "title": "Hedef, kaynak ve konu coğrafyaları ayrı ölçülmelidir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
+          "title": "Kaynakça",
           "prose_fonts_px": [
-            17,
-            18
+            24,
+            32,
+            52.8
           ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 12,
-          "title": "GDELT, altyapının haberlerdeki görünürlüğünü incelemeyi sağlar.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 13,
-          "title": "Haberin araştırmadaki anlamını içerik kodlaması belirler.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 14,
-          "title": "Tarihsel karşılaştırma, aynı zaman penceresini gerektirir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 15,
-          "title": "Liste, Almanya hedefli göstergelerde belirgin biçimde yoğunlaşır.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 16,
-          "title": "Görünürlük ve toplumsal etki farklı sonuç değişkenleridir.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 17,
-          "title": "Bu vaka, Almanya hedefli göstergelerde yoğunlaşır.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 18,
-          "title": "Kaynakça, araştırmanın kanıt zincirini tamamlar.",
-          "aside_visible_px": 814,
-          "aside_content_px": 814,
-          "prose_fonts_px": [
-            17,
-            18
-          ],
-          "prose_nodes": 6,
           "violations": []
         }
       ]
@@ -229,325 +150,134 @@
     {
       "width": 1280,
       "height": 720,
-      "minimum_prose_font_px": 15,
       "scenes": [
         {
           "scene": 1,
-          "title": "Hibrit savaşın görünmez cephesi",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
           "prose_fonts_px": [
-            15,
-            18
+            18,
+            19,
+            22,
+            45
           ],
-          "prose_nodes": 7,
           "violations": []
         },
         {
           "scene": 2,
-          "title": "Araştırma iki ayrı coğrafi soruya dayanır.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 3,
-          "title": "Dezenformasyon, içerik kadar güven ilişkileriyle de ilgilidir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 4,
-          "title": "Çalışma, izlenebilir bir tarihsel vaka incelemesidir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 5,
-          "title": "Veri denetimi, doğru toplamı 311 olarak belirler.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 6,
-          "title": "Dört odak ülke 306 göstergeyle temsil edilir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 7,
-          "title": "Almanya, listedeki göstergelerin yüzde 95,8’ini oluşturur.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 8,
-          "title": "Birleşik Krallık kayıtları, ad benzerliğini somutlaştırır.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 9,
-          "title": "Fransa kayıtları iki ayrı alan adını içerir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 10,
-          "title": "İtalya örneği, altyapıdan içerik analizine geçişi açar.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
           "violations": []
         },
         {
           "scene": 11,
-          "title": "Hedef, kaynak ve konu coğrafyaları ayrı ölçülmelidir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
+          "title": "Kaynakça",
           "prose_fonts_px": [
-            15,
-            16
+            19,
+            24,
+            35
           ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 12,
-          "title": "GDELT, altyapının haberlerdeki görünürlüğünü incelemeyi sağlar.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 13,
-          "title": "Haberin araştırmadaki anlamını içerik kodlaması belirler.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 14,
-          "title": "Tarihsel karşılaştırma, aynı zaman penceresini gerektirir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 15,
-          "title": "Liste, Almanya hedefli göstergelerde belirgin biçimde yoğunlaşır.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 16,
-          "title": "Görünürlük ve toplumsal etki farklı sonuç değişkenleridir.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 17,
-          "title": "Bu vaka, Almanya hedefli göstergelerde yoğunlaşır.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
-          "violations": []
-        },
-        {
-          "scene": 18,
-          "title": "Kaynakça, araştırmanın kanıt zincirini tamamlar.",
-          "aside_visible_px": 634,
-          "aside_content_px": 634,
-          "prose_fonts_px": [
-            15,
-            16
-          ],
-          "prose_nodes": 6,
           "violations": []
         }
       ]
     }
   ],
-  "native_powerpoint": {
-    "verified": true,
-    "path": "output/PROFESYONEL_SUNUM.pptx",
-    "total_slides": 35,
-    "main_slides": [
-      {
-        "scene": 1,
-        "native_text_shapes": 15,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 2,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 3,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 4,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 5,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 6,
-        "native_text_shapes": 17,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 7,
-        "native_text_shapes": 17,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 8,
-        "native_text_shapes": 17,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 9,
-        "native_text_shapes": 17,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 10,
-        "native_text_shapes": 17,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 11,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 12,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 13,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 14,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 15,
-        "native_text_shapes": 23,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 16,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 17,
-        "native_text_shapes": 16,
-        "heading_points_takeaway_editable": true
-      },
-      {
-        "scene": 18,
-        "native_text_shapes": 19,
-        "heading_points_takeaway_editable": true
-      }
-    ]
-  },
   "violations": [],
   "javascript_errors": [],
-  "external_requests": []
+  "external_requests": [],
+  "actual_GDELT_network_verified": false,
+  "live_OSM_verified": false,
+  "native_powerpoint": {
+    "verified": true,
+    "main_slides": 11,
+    "total_slides": 19,
+    "pdf_pages": 19,
+    "main_text_editable": true,
+    "main_slides_have_no_raster_picture": true,
+    "desktop_PowerPoint_render_verified": false
+  },
+  "legacy_report_alias_scope": "Current concise presentation only; no completed historical GDELT study or live API success is asserted."
 }

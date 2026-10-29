@@ -4,9 +4,9 @@
   "file_navigation": "blocked_by_chromium_enterprise_policy",
   "non_http_branch_verified_via_about_blank": true,
   "live_OSM_verified": false,
-  "checked_at_utc": "2026-10-28T23:41:11.433126+00:00",
+  "checked_at_utc": "2026-10-29T00:33:04.117979+00:00",
   "outcomes": [
-    "about:blank embedded map: no OSM requests; Germany evidence and anchor intact",
+    "about:blank embedded map: no OSM requests; country polygon evidence intact",
     "file:// navigation: blocked by Chromium enterprise policy; about:blank behavior verified separately",
     "403 decodable PNG: removed and correctly labelled as fallback",
     "200 HTML error: removed and correctly labelled as fallback",

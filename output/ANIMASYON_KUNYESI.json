@@ -1,14 +1,20 @@
 {
-  "frames": 136,
+  "frames": 132,
   "video_fps": 8,
-  "video_seconds": 17.0,
-  "gif_input_frames": 68,
-  "gif_frames": 28,
-  "gif_seconds": 17.0,
-  "data_snapshot": "2022-09-27",
-  "map_engine": "Leaflet 1.9.4",
-  "export_basemap": "Natural Earth boundary fallback; OSM tile network access blocked",
-  "interactive_basemap": "OpenStreetMap when accessible",
-  "interpretation": "Narrative camera tour with real geographic context images. Not historical event progression, live traffic, or operational routes.",
-  "images": "assets/locations/locations.json"
+  "video_seconds": 16.5,
+  "gif_seconds": 16.5,
+  "map_engine": "Leaflet1.9.4",
+  "basemap": "Embedded Natural Earth boundaries",
+  "source": "Meta2022CIB indicator CSV; source target-country labels",
+  "camera_targets": [
+    "Europe",
+    "Germany",
+    "UK",
+    "France",
+    "Italy",
+    "Europe"
+  ],
+  "photos_used": false,
+  "external_requests": [],
+  "interpretation": "Country camera tour only. No historical activity timeline, operation routes, live traffic or precise operational locations."
 }

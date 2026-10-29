@@ -3,3 +3,5 @@
 *.docx binary
 # Preserve the exact upstream vendor bytes and their recorded checksums.
 assets/vendor/* -whitespace
+# CSV writer uses the RFC 4180 CRLF record separator.
+output/IOC_*.csv whitespace=cr-at-eol

@@ -42,10 +42,10 @@ def assert_fallback(page):
     page.wait_for_function('document.body.dataset.tiles === "fallback"', timeout=10000)
     page.wait_for_timeout(500)
     assert visible_tiles(page) == 0, 'Blocked/unverified tiles remained visible over the embedded map'
-    assert 'ÇEVRİMİÇİ' not in page.locator('#tile-status').inner_text()
-    assert page.locator('#evidence-rows tr').count() == 311
-    assert page.evaluate('Object.keys(targetLayers).length') >= 4
-    assert not page.evaluate('newsState'), 'Tile failure must not invent GDELT observations'
+    assert 'ÇEVRİMİÇİ' not in page.locator('#atlas-status').inner_text()
+    assert page.locator('.leaflet-overlay-pane path').count() > 30
+    assert page.evaluate('Object.values(map._layers).filter(l=>l.getPopup?.()).length') == 6
+    assert page.evaluate('D.analysis.records.length') == 311
 
 
 def make_context(browser, html, handler):
@@ -72,20 +72,18 @@ def main():
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.set_content(html)
+        page.evaluate('openAtlas()')
         page.wait_for_timeout(1500)
         assert page.evaluate('location.protocol') == 'about:'
         assert page.evaluate('document.body.dataset.tiles') == 'embedded'
         assert not calls, 'about:blank requested OSM tiles without an HTTP origin'
         assert visible_tiles(page) == 0
-        assert page.locator('#evidence-rows tr').count() == 311
-        page.evaluate('go(6)')
-        page.wait_for_timeout(1900)
-        assert page.locator('.leaflet-popup .count').inner_text() == '298'
-        coords = page.evaluate('map._popup.getLatLng()')
-        assert abs(coords['lat'] - 52.5096) < 1e-8
-        assert abs(coords['lng'] - 13.3761) < 1e-8
+        assert page.evaluate('D.analysis.records.length') == 311
+        page.evaluate("Object.values(map._layers).find(l=>l.getTooltip?.()?.getContent().startsWith('Almanya')).openPopup()")
+        assert '298' in page.locator('.leaflet-popup').inner_text()
+        assert page.evaluate('Object.values(map._layers).filter(l=>l.getPopup?.()).length') == 6
         assert not errors, errors
-        outcomes.append('about:blank embedded map: no OSM requests; Germany evidence and anchor intact')
+        outcomes.append('about:blank embedded map: no OSM requests; country polygon evidence intact')
         ctx.close()
 
         # A real file URL is attempted independently. Enterprise browser policy may
@@ -100,6 +98,7 @@ def main():
                 raise
             outcomes.append('file:// navigation: blocked by Chromium enterprise policy; about:blank behavior verified separately')
         else:
+            page.evaluate('openAtlas()')
             page.wait_for_timeout(1500)
             assert page.evaluate('location.protocol') == 'file:'
             assert page.evaluate('document.body.dataset.tiles') == 'embedded'
@@ -122,6 +121,7 @@ def main():
             ctx = make_context(browser, html, respond)
             page = ctx.new_page()
             page.goto(APP, wait_until='domcontentloaded')
+            page.evaluate('openAtlas()')
             assert_fallback(page)
             assert tile_calls, 'HTTP map did not exercise the tile fetch path'
             outcomes.append(label + ': removed and correctly labelled as fallback')
@@ -131,6 +131,7 @@ def main():
         ctx = make_context(browser, html, lambda r: r.abort())
         page = ctx.new_page()
         page.goto(APP, wait_until='domcontentloaded')
+        page.evaluate('openAtlas()')
         assert_fallback(page)
         outcomes.append('network failure: clean embedded fallback')
         ctx.close()
@@ -145,11 +146,12 @@ def main():
         ctx = make_context(browser, html, transitioning)
         page = ctx.new_page()
         page.goto(APP, wait_until='domcontentloaded')
+        page.evaluate('openAtlas()')
         page.wait_for_function('document.body.dataset.tiles === "online"', timeout=10000)
         page.wait_for_timeout(1600)
         assert state['successes'] > 0
         assert visible_tiles(page) > 0
-        assert 'ÇEVRİMİÇİ' in page.locator('#tile-status').inner_text()
+        assert 'ÇEVRİMİÇİ' in page.locator('#atlas-status').inner_text()
         state['fail'] = True
         page.evaluate('map.panBy([900, 0], {animate: false})')
         assert_fallback(page)

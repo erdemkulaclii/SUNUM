@@ -35,24 +35,6 @@
     "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
     "processing": "Radiance HDR panorama converted to display JPEG"
   },
-  "France": {
-    "city": "Paris",
-    "place": "Eiffel Kulesi",
-    "coordinates": [
-      2.2945,
-      48.8584
-    ],
-    "image": "paris.jpg",
-    "kind": "Gerçek fotoğraf · kaynak galeri küçük resmi",
-    "credit": "Wildo Coda, Paris photoblog (2018); eddyte/paris-photoblog",
-    "source": "https://github.com/eddyte/paris-photoblog/blob/dev/gallerie.html",
-    "download": "https://raw.githubusercontent.com/eddyte/paris-photoblog/dev/images/toureiffelmini.jpg",
-    "license": "Kaynak © 2018 Wildo Coda; açık yeniden kullanım lisansı belirtilmiyor. CC0 değildir.",
-    "coordinate_basis": "Eiffel Kulesi yer işareti referansı; fotoğrafın kamera GPS konumu doğrulanmadı.",
-    "sha256": "8f2dd8c7f5195ef3108ca7207110ed4e41ddea0c6cae38fd3aad3aa4f8a8f630",
-    "role": "Geographic context only; not incident evidence, target-city attribution or a camera geolocation.",
-    "processing": "Original small gallery preview; no generative editing"
-  },
   "Italy": {
     "city": "Venedik",
     "place": "Lagün kıyısı · Venice Sunset",
