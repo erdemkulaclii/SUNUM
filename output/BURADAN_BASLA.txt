@@ -1,3 +1,7 @@
+TEK KOMUT:  python sunum.py
+(ya da çift tıklama: Windows → BASLAT.bat · macOS → BASLAT.command · Linux → BASLAT.sh)
+Sunum tam ekran açılır ve kendiliğinden oynar. Kapatmak için komut penceresinde Ctrl+C.
+
 DOPPELGÄNGER VAKASINDA HEDEF COĞRAFYASI VE HABER GÖRÜNÜRLÜĞÜ
 Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
 

@@ -5,3 +5,6 @@
 assets/vendor/* -whitespace
 # CSV writer uses the RFC 4180 CRLF record separator.
 output/IOC_*.csv whitespace=cr-at-eol
+*.bat text eol=crlf
+*.sh text eol=lf
+*.command text eol=lf

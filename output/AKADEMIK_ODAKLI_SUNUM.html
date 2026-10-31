@@ -711,6 +711,7 @@ body[data-scene="references"] .slide-grid{display:block}body[data-scene="referen
 body[data-scene="references"] #visual{max-height:none}body[data-scene="references"] .ref-list{column-count:2;column-gap:36px;column-rule:1px solid var(--line)}body[data-scene="references"] .ref-list p{font-size:clamp(10.5px,.78vw,13px);line-height:1.38;margin:0 0 6px;break-inside:avoid;overflow-wrap:anywhere}body[data-scene="references"] .ref-list a{color:#17577e}
 body[data-scene="references"] #takeaway{font-size:18px!important}
 @media(max-height:800px) and (min-width:900px){body[data-scene="references"] h1{font-size:30px;margin-bottom:4px}body[data-scene="references"] #takeaway{margin:2px 0 8px}body[data-scene="references"] .ref-list p{font-size:9.6px;line-height:1.28;margin-bottom:3px}}
+#start-overlay{position:fixed;inset:0;z-index:2000;background:#0c1b2df2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center}#start-now{font-size:clamp(28px,3vw,44px);font-weight:700;color:#fff;border:2px solid #f28a72;padding:22px 44px;display:flex;gap:18px;align-items:center}#start-now span{color:#f28a72}#start-now:hover{background:#f28a7222}#start-count{font-size:18px;color:#d5e1ec;margin:0}#start-overlay small{font-size:14px;color:#9fb3c8}
 </style></head><body data-scene="cover">
 <header><strong>AKADEMİK ARAŞTIRMA SUNUMU</strong><nav><button id="gdelt-open">GDELT haritası</button><button id="atlas-open">Hedef atlası</button><button id="evidence-open">Veri ve yöntem</button><button id="notes-open">Anlatıcı kartları</button><button id="refs-open">Kaynakça</button><button id="fullscreen">Sunumu başlat</button></nav></header>
 <main class="slide"><div id="kicker" class="kicker"></div><h1 id="slide-title"></h1><section class="slide-grid"><article id="prose"><div id="points"></div><p id="takeaway"></p></article><figure id="visual"></figure></section><div class="source"><span id="source"></span><span id="source-right"></span></div></main>
@@ -887,6 +888,20 @@ $('fullscreen').textContent='Sunumu başlat ▶';
 $('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0);if(elapsed>=T||scene===S.length-1)go(0);if(!playing)togglePlay()};
 document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;const k=e.key.toLowerCase();if(k==='s')voiceBtn.click();if(k==='c')capBtn.click()});
 render();
+
+/* ---------- Tek komutla başlatma: ?autoplay=1 (python sunum.py) ----------
+ * Tarayıcılar tam ekranı yalnız bir tıklamayla izin verir: ekranda tek düğme çıkar;
+ * tıklanmazsa 5 saniye sonra sunum tam ekransız da olsa kendiliğinden başlar.
+ */
+(function(){
+ const q=new URLSearchParams(location.search);if(q.get('autoplay')!=='1'&&location.hash!=='#autoplay')return;
+ document.body.classList.add('presentation');go(0);
+ const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tam ekran için tıklayın · Boşluk: durdur/devam · ←/→: slayt · S: sesli anlatım</small>';document.body.append(o);
+ let n=5,done=false;const tick=()=>{if(done)return;$('start-count').textContent=n+' saniye içinde kendiliğinden başlar';if(n--<=0)begin(false);else setTimeout(tick,1000)};
+ async function begin(full){if(done)return;done=true;o.remove();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
+ $('start-now').onclick=()=>begin(true);document.addEventListener('keydown',e=>{if(!done&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();begin(true)}},true);
+ $('start-now').focus();tick();
+})();
 </script><script>/* GDELT haber haritası (Bulgu 4 / AS3).
  * Katmanlar: (1) haberin kaynak ülkesi — DOC 2.0 artlist, (2) haberde anılan yer — GKG V2Locations,
  * (3) Meta hedef etiketi — karşılaştırma çerçevesi.

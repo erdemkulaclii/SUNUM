@@ -4,6 +4,24 @@ Meta’nın 2022 CIB gösterge listesi ile GDELT haber verisini birlikte kullana
 
 [PowerPoint](output/AKADEMIK_ODAKLI_SUNUM.pptx) · [PDF](output/AKADEMIK_ODAKLI_SUNUM.pdf) · [Etkileşimli sunum (HTML)](output/AKADEMIK_ODAKLI_SUNUM.html) · [Sunucu kartları](output/SUNUCU_KARTLARI.pdf) · [Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.md) · [Tam paket](output/PROFESYONEL_TAM_PAKET.zip)
 
+## Tek komutla başlatma
+
+```bash
+python sunum.py
+```
+
+Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (yoksa varsayılan tarayıcıda) açar ve otomatik oynatır. Ekrandaki “Sunumu başlat” düğmesine tıklarsanız tam ekrana geçer; tıklamazsanız 5 saniye sonra kendiliğinden başlar. Kapatmak için komut penceresinde Ctrl+C.
+
+Çift tıklama: Windows’ta **`BASLAT.bat`**, macOS’ta **`BASLAT.command`**, Linux’ta `./BASLAT.sh`. Yalnız Python 3 gerekir; ek paket gerekmez.
+
+| Komut | Ne yapar |
+|---|---|
+| `python sunum.py` | Sunucu + tam ekran + otomatik oynatma |
+| `python sunum.py --elle` | Otomatik oynatma olmadan (ok tuşları / Boşluk) |
+| `python sunum.py --pptx` · `--pdf` | PowerPoint ya da PDF yedeğini açar |
+| `python sunum.py --yeniden-uret` | HTML, PPTX, PDF ve belgeleri yeniden üretip başlatır |
+| `python sunum.py --kontrol` | Bütün testleri ve sunum doğrulamasını çalıştırır |
+
 ## Akış: 17 ana slayt, 13 dk 30 sn anlatım + 1 dk 30 sn pay
 
 | # | Bölüm | İçerik |

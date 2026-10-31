@@ -1,7 +1,7 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T08:51:12.164859+00:00",
-  "html_sha256": "bf2624f821c618e3526921ea78116b506b9b75f47718481066c974aec2ef7588",
+  "checked_at_utc": "2026-10-31T18:58:10.520564+00:00",
+  "html_sha256": "b1d0365485aa3e3a104926aabbfab913fddf5e80d7a7dd1e7617bcbfca519a2e",
   "narrative_sha256": "bd3fb6c216af9f0b0aabb5779189fbc09ab59a80e546999a2ee8f8376ae8e421",
   "main_slides": 17,
   "planned_seconds": 810,

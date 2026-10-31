@@ -103,3 +103,17 @@ $('fullscreen').textContent='Sunumu başlat ▶';
 $('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0);if(elapsed>=T||scene===S.length-1)go(0);if(!playing)togglePlay()};
 document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;const k=e.key.toLowerCase();if(k==='s')voiceBtn.click();if(k==='c')capBtn.click()});
 render();
+
+/* ---------- Tek komutla başlatma: ?autoplay=1 (python sunum.py) ----------
+ * Tarayıcılar tam ekranı yalnız bir tıklamayla izin verir: ekranda tek düğme çıkar;
+ * tıklanmazsa 5 saniye sonra sunum tam ekransız da olsa kendiliğinden başlar.
+ */
+(function(){
+ const q=new URLSearchParams(location.search);if(q.get('autoplay')!=='1'&&location.hash!=='#autoplay')return;
+ document.body.classList.add('presentation');go(0);
+ const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tam ekran için tıklayın · Boşluk: durdur/devam · ←/→: slayt · S: sesli anlatım</small>';document.body.append(o);
+ let n=5,done=false;const tick=()=>{if(done)return;$('start-count').textContent=n+' saniye içinde kendiliğinden başlar';if(n--<=0)begin(false);else setTimeout(tick,1000)};
+ async function begin(full){if(done)return;done=true;o.remove();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
+ $('start-now').onclick=()=>begin(true);document.addEventListener('keydown',e=>{if(!done&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();begin(true)}},true);
+ $('start-now').focus();tick();
+})();

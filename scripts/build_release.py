@@ -49,11 +49,11 @@ script_names=[
  'build_release.py','analyze_ioc_structure.py','build_concise_presentation.py','export_concise_deck.py','export_concise_documents.py',
  'build_interactive.py','build_presentation.py','export_editorial.py','export_academic_documents.py','export_editable_presentation.py',
  'concise.html','concise.css','concise.js','concise_narrative.json','concise_appendices.json','concise_references.json','basemap.js','presentation_meta.json',
- 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py',
+ 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py','test_sunum_launcher.py',
  'render_cinematic_tour.py','verify_concise.py','verify_leaflet.py','verify_slide_readability.py','verify_basemap.py',
  'serve_presentation.py','fetch_gdelt.py','fetch_gdelt_cloud.py','test_gdelt_cloud.py','test_presentation_server.py',
 ]
-files=[R/name for name in ['README.md','KAYNAKLAR.md','REVIZYON_KARARLARI.md','AKADEMIK_KAYNAK_DENETIMI.md','requirements.txt','BASLAT.sh','.env.example']]
+files=[R/name for name in ['README.md','KAYNAKLAR.md','REVIZYON_KARARLARI.md','AKADEMIK_KAYNAK_DENETIMI.md','requirements.txt','BASLAT.sh','BASLAT.bat','BASLAT.command','sunum.py','.env.example']]
 files += [O/name for name in output_names]+[R/'scripts'/name for name in script_names]
 files += list((R/'assets/vendor').glob('*'))
 files += [R/'research/countries.geojson',R/'research/meta/README.md',R/'research/meta/index.json',R/'research/meta/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv']
