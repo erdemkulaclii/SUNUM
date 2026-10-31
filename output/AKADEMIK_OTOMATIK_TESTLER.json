@@ -1,13 +1,13 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T19:07:52.841212+00:00",
-  "html_sha256": "a7765794b0d8d18b0707679fe40eb36d11c0c0b7ea4788cf17cbe33912a470a5",
-  "narrative_sha256": "bd3fb6c216af9f0b0aabb5779189fbc09ab59a80e546999a2ee8f8376ae8e421",
+  "checked_at_utc": "2026-10-31T19:12:56.194158+00:00",
+  "html_sha256": "26aa6af38774abe4402a260ca2a0502eb5060f52086d14cf64ed20086837d661",
+  "narrative_sha256": "4be9c46db80347585f6d1595702eeffe8cd5c62f53aa742753f22093982f8220",
   "main_slides": 17,
   "planned_seconds": 810,
   "buffer_seconds": 90,
   "authored_main_words_including_subtitle": [
-    34,
+    29,
     25,
     30,
     32,
@@ -42,7 +42,7 @@
       "scenes": [
         {
           "scene": 1,
-          "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
+          "title": "Hibrit Savaşın Görünmez Cephesi",
           "prose_fonts_px": [
             18,
             22,
@@ -218,7 +218,7 @@
       "scenes": [
         {
           "scene": 1,
-          "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
+          "title": "Hibrit Savaşın Görünmez Cephesi",
           "prose_fonts_px": [
             18,
             19,

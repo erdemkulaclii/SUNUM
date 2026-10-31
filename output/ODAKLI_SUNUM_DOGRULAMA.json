@@ -7,7 +7,7 @@
   "remaining_session_buffer_seconds": 90,
   "main_text_editable": true,
   "authored_main_slide_word_counts": [
-    34,
+    29,
     25,
     30,
     32,
@@ -33,6 +33,6 @@
   "gdelt_snapshot_embedded": true,
   "synthetic_GDELT_observations": false,
   "desktop_PowerPoint_render_verified": false,
-  "pptx_sha256": "2e3f2e8bb87d34e0517ae024688f45c52d7368206fda642a1ecedad611c674ab",
-  "pdf_sha256": "b29e546500b112ffe5ad148b6dd70e30e9d30e0e971306ebc989926afa76a380"
+  "pptx_sha256": "6aa368f37d720ff593664ca87c0d34781d23fbfc73e81fe6bd39718366afb48e",
+  "pdf_sha256": "0666a13ab46e06fee54cdb9bc3a2dc50247deb2e83de7e10fac3b6ed99f2e62d"
 }

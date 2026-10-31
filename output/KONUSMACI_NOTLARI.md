@@ -1,17 +1,17 @@
-# Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü
+# Hibrit Savaşın Görünmez Cephesi
 
 15 ana slayt · 13 dk 30 sn planlanan anlatım · 1 dk 30 sn soru ve geçiş payı.
 
 Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.
 
-## 01. Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü · 00:00–00:30
+## 01. Hibrit Savaşın Görünmez Cephesi · 00:00–00:30
 
-- Bu çalışma, Meta’nın 2022’de yayımladığı Rusya kaynaklı ağ göstergelerini inceliyor.
+- Hibrit savaşın görünmez cephesi bilgi alanıdır; bu sunum Rusya’nın Batı Avrupa’ya yönelik dezenformasyon operasyonlarını GDELT verisiyle haritalıyor.
 - İki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?
 - Birinci kaynak 311 alan adı; ikinci kaynak GDELT arşivindeki 5,9 milyon haber kaydı.
 - Sunum 13,5 dakika; ardından soru-cevap.
 
-**Ana mesaj:** Altyapı verisi ve haber verisi birlikte.
+**Ana mesaj:** Hedeflenen coğrafya ile görünür olan coğrafya.
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015
 

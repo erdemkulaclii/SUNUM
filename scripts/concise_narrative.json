@@ -1,21 +1,21 @@
 [
  {
   "id": "cover",
-  "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
-  "kicker": "AKADEMİK VAKA ÇALIŞMASI",
+  "title": "Hibrit Savaşın Görünmez Cephesi",
+  "kicker": "HİBRİT SAVAŞIN GÖRÜNMEZ CEPHESİ",
   "display_points": [
-   "311 alan adı göstergesi",
+   "Vaka: Doppelgänger (Meta, 2022)",
    "5,9 milyon GDELT haber kaydı"
   ],
-  "takeaway": "Altyapı verisi ve haber verisi birlikte.",
-  "notes": "Bu çalışma, Meta’nın 2022’de yayımladığı Rusya kaynaklı ağ göstergelerini inceliyor.\nİki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?\nBirinci kaynak 311 alan adı; ikinci kaynak GDELT arşivindeki 5,9 milyon haber kaydı.\nSunum 13,5 dakika; ardından soru-cevap.",
+  "takeaway": "Hedeflenen coğrafya ile görünür olan coğrafya.",
+  "notes": "Hibrit savaşın görünmez cephesi bilgi alanıdır; bu sunum Rusya’nın Batı Avrupa’ya yönelik dezenformasyon operasyonlarını GDELT verisiyle haritalıyor.\nİki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?\nBirinci kaynak 311 alan adı; ikinci kaynak GDELT arşivindeki 5,9 milyon haber kaydı.\nSunum 13,5 dakika; ardından soru-cevap.",
   "cue_sentences": [
-   "Bu çalışma, Meta’nın 2022’de yayımladığı Rusya kaynaklı ağ göstergelerini inceliyor.",
+   "Hibrit savaşın görünmez cephesi bilgi alanıdır; bu sunum Rusya’nın Batı Avrupa’ya yönelik dezenformasyon operasyonlarını GDELT verisiyle haritalıyor.",
    "İki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?",
    "Birinci kaynak 311 alan adı; ikinci kaynak GDELT arşivindeki 5,9 milyon haber kaydı.",
    "Sunum 13,5 dakika; ardından soru-cevap."
   ],
-  "full_notes": "Değerli hocalarım ve arkadaşlar, bu sunumda Doppelgänger olarak bilinen etki operasyonunu iki farklı veri türüyle inceliyorum. Birincisi, Meta’nın 27 Eylül 2022’de yayımladığı gösterge listesindeki 311 benzersiz alan adı. İkincisi, GDELT projesinin ham haber arşivinden taranan 5,9 milyon kayıt. Amacım bir operasyonun etkisini ölçmek değil; yayımlanmış altyapı göstergelerinin hangi ülkeleri hedeflediğini, nasıl bir adres yapısı izlediğini ve kaldırma haberinin hangi ülkelerin medyasında görünür olduğunu betimsel olarak ortaya koymak. Önce bağlamı ve literatürü, sonra yöntem ve bulguları, en sonda da tartışma ve sınırlılıkları sunacağım.",
+  "full_notes": "Değerli hocalarım ve arkadaşlar, sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”. Hibrit savaşta askerî olmayan araçlar, özellikle bilgi alanındaki operasyonlar, çoğu zaman görünmeyen bir cephe oluşturur. Bu cepheyi Rusya’nın Batı Avrupa’ya yönelik en kapsamlı dezenformasyon operasyonlarından biri olan Doppelgänger vakası üzerinden haritalıyorum. İki veri kullanıyorum: Meta’nın 27 Eylül 2022’de yayımladığı 311 alan adlık gösterge listesi ve GDELT’in ham haber arşivinden taranan 5,9 milyon kayıt. Amacım operasyonun hangi Batı Avrupa ülkelerini hedeflediğini ve operasyonun ifşasının hangi ülkelerin medyasında görünür olduğunu coğrafi olarak göstermek.",
   "seconds": 30,
   "visual": "cover",
   "citations": [
@@ -23,8 +23,8 @@
    "gdeltgkg"
   ],
   "source": "Meta, 2022; The GDELT Project, 2015",
-  "subtitle": "Meta 2022 CIB göstergeleri ve GDELT GKG arşiviyle betimsel bir vaka çalışması",
-  "visible_word_count": 34
+  "subtitle": "GDELT Verisiyle Rusya’nın Batı Avrupa’ya Yönelik Dezenformasyon Operasyonlarının Coğrafi Haritalanması",
+  "visible_word_count": 29
  },
  {
   "id": "outline",
