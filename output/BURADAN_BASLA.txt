@@ -1,45 +1,38 @@
-META 2022 CIB LİSTESİNDE HEDEF COĞRAFYASI VE ALAN ADI YAPISI
-Akademik araştırma sunumu
+DOPPELGÄNGER VAKASINDA HEDEF COĞRAFYASI VE HABER GÖRÜNÜRLÜĞÜ
+Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
 
-1. Sunum salonu için AKADEMIK_ODAKLI_SUNUM.pptx dosyasını açın.
-   Başlıklar, metinler ve grafikler düzenlenebilir. Aynı sayfa düzenindeki
-   AKADEMIK_ODAKLI_SUNUM.pdf yedeğini yanınızda tutun.
+1. Kapaktaki [Ad Soyad], [Bölüm, Üniversite], [Ders], [Tarih] alanlarını
+   scripts/presentation_meta.json içinde doldurun ve sunumu yeniden üretin
+   (ya da PowerPoint'te doğrudan düzenleyin).
 
-2. Etkileşimli kullanım için AKADEMIK_ODAKLI_SUNUM.html dosyasını tarayıcıda açın.
-   Sağ/sol ok: slayt. Boşluk: akışı başlat/durdur. N: anlatıcı kartları.
-   F11: tarayıcı tam ekran. Veri tablosu, kaynakça ve yardımcı atlas üst menüdedir.
-   HTML'yi GitHub sayfasından görüntülemek yerine indirip açın.
-   PROFESYONEL_SUNUM ve SINEMATIK_SUNUM adları uyumlu kopyalardır.
+2. GDELT haritası için en sağlam yol (sunumdan önce, kendi bilgisayarınızda):
+     python scripts/fetch_gdelt_map.py
+     python scripts/build_interactive.py
+     python scripts/export_editorial.py
+   Böylece gerçek GDELT verisi HTML'ye gömülür ve PowerPoint/PDF'teki
+   harita slaytına statik harita görüntüsü eklenir.
+   İsteğe bağlı "haberde anılan yer" katmanı: --bigquery --project <GCP projesi>
 
-11 ana slayt = 13 dakika anlatım + 2 dakika oturum payı.
-8 yedek veri/yöntem/kaynakça ekiyle toplam 19 slayt vardır. Gerçek süreyi prova edin.
+3. Etkileşimli sunum: BASLAT.sh (yerel sunucu, GDELT'e sunucu üzerinden bağlanır)
+   ya da AKADEMIK_ODAKLI_SUNUM.html dosyasını tarayıcıda açın. Veri gömülü değilse
+   sunum açılınca 2022 penceresi arka planda sorgulanır (~1 dk). Harita slaytında:
+   "2022 penceresini sorgula", "Son 30 gün", "JSON yükle", "JSON indir".
+   Sağ/sol ok: slayt. Boşluk: akış. N: anlatıcı kartları.
 
-SUNUCU_KARTLARI.pdf / .docx:
-Her slayt için 3–4 anahtar cümle; serbest anlatımın temel yardımcısı.
+4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (15 ana + 11 ek slayt).
 
-KONUSMA_METNI_15_DK.pdf / .docx:
-Ayrıntılı prova metni; ezberlenmesi veya bütünüyle okunması gereken metin değildir.
+15 ana slayt = 13 dk 30 sn anlatım + 1 dk 30 sn pay.
+Akış: Kapak · Plan · Vaka · Kavramsal çerçeve · Araştırma soruları · Yöntem ·
+Veri hazırlığı · Bulgu 1-3 (Meta) · Bulgu 4 (GDELT haritası) · Tartışma ·
+Sınırlılıklar · Sonuç · Kaynakça.
 
-APA7_KAYNAKCA.pdf:
-Altı kullanılan kaynak; akademik metin, veri, yazılım ve harita türleri ayrıdır.
-
-AKADEMIK_ARASTIRMA_DOSYASI.pdf:
-Araştırma sorusu, yöntem, tamamlanmış üç analiz ve çıkarım sınırları.
-
-GERÇEK VERİDEN TAMAMLANMIŞ BULGULAR
+TAMAMLANMIŞ META BULGULARI
 350 ham kayıt → 313 alan adı satırı → 311 benzersiz alan adı.
-Almanya: 298/311 (%95,8).
-En sık altı son DNS etiketi: 240/311 (%77,2); tamamı Almanya hedefli.
+Almanya: 298/311 (%95,8). En sık altı son DNS etiketi: 240/311 (%77,2).
 75 ilk DNS etiketi, farklı son etiketlerle 293 adreste tekrarlanır.
 
-SONUÇ
-İncelenen vaka, Almanya hedefli etiketlerdeki yoğunlaşma ile yinelenen ilk DNS
-etiketleri çevresinde oluşan adres çeşitliliğinin birlikte görülmesiyle tanımlanır.
-
-Yardımcı harita Leaflet kullanır. Dosyaya doğrudan açılışta gömülü Natural Earth
-sınırları gösterilir; OSM isteği gönderilmez. Kent fotoğrafı kullanılmaz.
-Hedef ülke etiketi operasyon veya sunucu konumu değildir.
-
-Ana sunum API anahtarı veya elle GDELT bağlantısı gerektirmez. GDELT, aynı dönemli
-2022 haber karşılaştırması için tek bir ileri araştırma slaytındadır; bu analiz
-henüz tamamlanmadı ve mevcut üç bulgunun kaynağı değildir.
+GDELT HARİTASI
+Renk: haberin yayımlandığı ülke (DOC 2.0). Nokta: haberde anılan yer (GKG).
+Kırmızı çerçeve: Meta hedef etiketi. Kaynak ülke hedef ülke değildir.
+Sayılar, verinin alındığı tarih ve kaynakla birlikte panelde gösterilir.
+Başarısız ya da boş yanıt "sıfır haber" sayılmaz; örnek veri uydurulmaz.

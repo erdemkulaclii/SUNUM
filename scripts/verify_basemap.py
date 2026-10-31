@@ -62,7 +62,7 @@ def main():
     html = HTML_PATH.read_text()
     outcomes = []
     with sync_playwright() as p:
-        browser = p.chromium.launch(executable_path='/usr/bin/chromium', headless=True, args=['--no-sandbox'])
+        browser = p.chromium.launch(executable_path=next(x for x in ['/usr/bin/chromium','/opt/pw-browsers/chromium'] if __import__('os').path.exists(x)), headless=True, args=['--no-sandbox'])
 
         # Double-click-compatible embedded mode must not ask a public tile service
         # to serve a page with no HTTP origin/referrer.

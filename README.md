@@ -1,69 +1,94 @@
-# Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı
+# Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü
 
-Gerçek OSINT verisine dayanan Türkçe akademik vaka sunumu. Rusya bağlantısı kaynak raporlamasına dayanır; inceleme Meta’nın yayımladığı alan adı göstergelerinin hedef coğrafyasını ve sözcüksel yapısını çözümler.
+Meta’nın 2022 CIB gösterge listesi ile GDELT haber verisini birlikte kullanan Türkçe akademik vaka sunumu. Rusya bağlantısı kaynak raporlamasına (Meta; EU DisinfoLab) dayanır; bağımsız bir atıf analizi değildir.
 
-[Tam paket](output/PROFESYONEL_TAM_PAKET.zip) · [PowerPoint](output/AKADEMIK_ODAKLI_SUNUM.pptx) · [PDF](output/AKADEMIK_ODAKLI_SUNUM.pdf) · [Etkileşimli sunum](output/AKADEMIK_ODAKLI_SUNUM.html) · [Sunucu kartları](output/SUNUCU_KARTLARI.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.pdf)
+[PowerPoint](output/AKADEMIK_ODAKLI_SUNUM.pptx) · [PDF](output/AKADEMIK_ODAKLI_SUNUM.pdf) · [Etkileşimli sunum (HTML)](output/AKADEMIK_ODAKLI_SUNUM.html) · [Sunucu kartları](output/SUNUCU_KARTLARI.pdf) · [Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.md) · [Tam paket](output/PROFESYONEL_TAM_PAKET.zip)
 
-## Sunumu açma
+## Akış: 15 ana slayt, 13 dk 30 sn anlatım + 1 dk 30 sn pay
 
-Sunum salonunda **`output/AKADEMIK_ODAKLI_SUNUM.pptx`** dosyasını kullanın; aynı sayfa düzenindeki PDF yedeği yanında bulunsun. Başlıklar, metinler ve bulgu grafikleri PowerPoint’te düzenlenebilir; PDF metni seçilebilir. Masaüstü PowerPoint’in görüntüleme davranışı bu ortamda ayrıca sınanmadı.
+| # | Bölüm | İçerik |
+|---|---|---|
+| 1 | Kapak | Başlık, alt başlık, yazar/kurum/ders/tarih (`scripts/presentation_meta.json`) |
+| 2 | Plan | Giriş · Yöntem · Bulgular · Tartışma |
+| 3 | Giriş / vaka | Doppelgänger: EU DisinfoLab (2022) ve Meta (Nimmo ve Agranovich, 2022) |
+| 4 | Kavramsal çerçeve | Bilgi düzensizliği; ölçüm ve payda; haber verisinde coğrafya |
+| 5 | Araştırma soruları | AS1 hedef coğrafyası · AS2 sözcüksel yapı · AS3 haber görünürlüğü |
+| 6 | Veri ve yöntem | Meta CSV · GDELT DOC 2.0 · GDELT GKG (ayrı ölçüm birimleri) |
+| 7 | Veri hazırlığı | 350 → 313 → 311 |
+| 8–10 | Bulgu 1–3 | Almanya %95,8 · altı son etiket 240 adres · 75 ilk etiket grubu 293 adres |
+| 11 | **Bulgu 4: GDELT haritası** | Kaynak ülke (renk) · anılan yer (nokta) · Meta hedefi (kırmızı çerçeve) |
+| 12 | Tartışma | Bulguların literatür/raporlarla karşılaştırması |
+| 13 | Sınırlılıklar | Seçilim, 250 sonuç sınırı, konum kodlaması |
+| 14 | Sonuç | AS1–AS3 yanıtları ve sonraki adım |
+| 15 | Kaynakça | Özet; tam APA 7 künyeleri eklerde (11 ek slayt) |
 
-Etkileşimli kullanım için `output/AKADEMIK_ODAKLI_SUNUM.html` dosyasını indirip tarayıcıda açın. GitHub dosya görünümü HTML’yi çalıştırmaz. Sağ/sol ok slayt değiştirir; boşluk planlanan akışı başlatır/durdurur; **N** anlatıcı kartlarını açar. Üst menüde veri tablosu, kaynakça ve yardımcı atlas bulunur. Tarayıcıda F11 tam ekran kullanılabilir. `PROFESYONEL_SUNUM` ve `SINEMATIK_SUNUM` adları uyumlu kopyalar olarak korunur.
+Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 
-**11 ana slayt, 13 dakika anlatım ve 2 dakika oturum payı.** Sekiz veri/yöntem/kaynakça ekiyle toplam 19 slayt vardır. Süreler anlatım planıdır; gerçek süre prova ile ölçülmelidir. Ana slaytlarda kısa metin, yüksek kontrast ve veri grafikleri kullanılır. Kent fotoğrafları kullanılmaz.
+## GDELT haritası
 
-## Araştırma sorusu ve tamamlanmış bulgular
+Harita slaytı üç katman gösterir:
 
-**Araştırma sorusu:** Bu listede hedef ülke etiketleri ile alan adlarının sözcüksel yapısı nasıl bir örüntü oluşturuyor?
+- **Renk — haberin yayımlandığı ülke.** GDELT DOC 2.0 `artlist`, sabit sorgu `(doppelganger OR "doppelgänger" OR "coordinated inauthentic") (russia OR russian OR meta OR facebook)`, Meta duyuru penceresi 20 Eylül – 11 Ekim 2022, üç günlük dilimler, URL düzeyinde tekilleştirme.
+- **Nokta — haberde anılan yer.** GDELT GKG 2.0 `V2Locations`, BigQuery (`scripts/gdelt_gkg_locations.sql`).
+- **Kırmızı çerçeve — Meta hedef etiketi** (Almanya kalın çizgi).
 
-Analiz kümesi, 350 ham kayıttan seçilen 313 alan adı satırının tekilleştirilmesiyle elde edilen **311 benzersiz alan adıdır**. CIB ve Telegram bağlantıları bu paydada sayılmaz. Ülke, uzantıdan veya IP’den tahmin edilmez; kaynağın `comment` alanındaki hedef etiketinden alınır.
+Yan panel tekil haber sayısını, en çok haber çıkan ülkeleri, Almanya’nın haber kaynaklarındaki payını (Meta’daki %95,8 ile karşılaştırmalı), 250 sınırına ulaşan dilimleri ve verinin ne zaman, nereden alındığını gösterir. **Kaynak ülke, hedef ülke veya okur ülkesi değildir.**
 
-| Tamamlanmış analiz | Sonuç |
-| --- | --- |
-| Hedef ülke dağılımı | Almanya 298/311: **%95,8**. Birleşik Krallık 4, Fransa 2, İtalya 2, Letonya 3, Ukrayna 1, çoklu hedef 1. |
-| Son DNS etiketi dağılımı | 39 farklı son etiket vardır. En sık altı etiket (`online`, `website`, `site`, `space`, `pw`, `fun`) 240/311 alan adını, **%77,2**’yi kapsar. Bu 240 kaydın tamamı Almanya hedeflidir. |
-| İlk DNS etiketinin tekrarı | 93 ayrı ilk etiketin 75’i birden fazla son etiketle kullanılır. Bu gruplar **293 alan adını** kapsar. |
+### Veriyi alma (önerilen: sunumdan önce, kendi bilgisayarınızda)
 
-**Sonuç cümlesi:** İncelenen vaka, Almanya hedefli etiketlerdeki yoğunlaşma ile yinelenen ilk DNS etiketleri çevresinde oluşan adres çeşitliliğinin birlikte görülmesiyle tanımlanır.
-
-İlk/son DNS etiketi, metnin ilk/son noktasına göre ayrılan gerçek dize parçasıdır. Bu hesap etkin kayıt son ekini, fiyatı, barındırma ülkesini veya ortak operatörü belirlemez. Bütün kayıtlarda `ds=2022-09-27` olduğu için faaliyet zaman serisi üretilmez. Bulgular yayımlanmış bu listeye aittir; bütün operasyonlara veya kamuoyu etkisine genellenmez.
-
-## Veri, kaynakça ve anlatıcı belgeleri
-
-Birincil veri, Meta’nın [sabit commit bağlantısındaki CSV dosyasıdır](https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv). SHA-256:
-
-```text
-9f216a37e15c4772019d20ee620eafabf57a3876d4a7ab72fff5330fa8167d8d
+```bash
+python scripts/fetch_gdelt_map.py
 ```
 
-[Yapısal analiz](output/IOC_YAPISAL_ANALIZ.json), [311 kayıtlık kanıt tablosu](output/IOC_YAPISAL_KANIT.csv), [son etiket dağılımı](output/IOC_SON_ETIKET_DAGILIMI.csv), [ülke × son etiket](output/IOC_HEDEF_SON_ETIKET.csv) ve [ilk etiket grupları](output/IOC_GOVDE_AILELERI.csv) kaynak sıra numaralarıyla yeniden denetlenebilir. Etkileşimli HTML’de kayıtlar aranabilir ve süzülmüş tablo CSV olarak indirilebilir.
+```bash
+python scripts/build_interactive.py && python scripts/export_editorial.py
+```
 
-[Sunucu kartları / PDF](output/SUNUCU_KARTLARI.pdf) ve [Word](output/SUNUCU_KARTLARI.docx), her slayt için 3–4 anahtar cümle içerir. [Ayrıntılı prova metni / PDF](output/KONUSMA_METNI_15_DK.pdf) ve [Word](output/KONUSMA_METNI_15_DK.docx) hazırlık içindir; zorunlu okuma metni değildir. [Konuşmacı notları](output/KONUSMACI_NOTLARI.md) ve PowerPoint notları aynı anlatı kaynağından üretilir.
+Bu, gerçek yanıtları `research/gdelt/` altına (ham yanıtlar + SHA-256) kaydeder, veriyi HTML’ye gömer ve PowerPoint/PDF harita slaytına statik harita görüntüsü ekler. Anılan yer katmanı için (Google Cloud projesi ve `bq` gerekir; önce `--dry-run` ile taranacak veri miktarını görün):
 
-[Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf) soru, yöntem, tamamlanmış analizler ve kapsamı açıklar. [Seçilmiş APA 7 kaynakça](output/APA7_KAYNAKCA.md) **altı kullanılan kaynak** içerir: iki akademik metin, birincil veri, yazılım ve iki harita kaynağı. Kaynak türleri birbirinin yerine geçmez. Erişim düzeyleri [kaynak kaydında](KAYNAKLAR.md), geçmiş geniş bibliyografyanın erişim denetimi [ayrı günlükte](AKADEMIK_KAYNAK_DENETIMI.md) korunur. Makale kopyaları pakette yeniden dağıtılmaz.
+```bash
+python scripts/fetch_gdelt_map.py --bigquery --project GCP_PROJENIZ
+```
 
-## Yardımcı harita ve GDELT’nin yeri
+DOC 2.0 resmî olarak son üç ayı destekler; 2022 penceresi veri döndürmezse GKG/BigQuery yolu tarihsel analiz için doğru yoldur. Güncel izleme için `--window recent30` kullanılabilir.
 
-Ana bulgu, aynı lineer ölçekteki yatay çubuk grafiklerle sunulur. **Yardımcı atlas** Leaflet 1.9.4 kullanır ve hedef ülke etiketlerini ülke düzeyinde gösterir. Doğrudan dosya açılışında gömülü Natural Earth sınır verisi kullanılır; OpenStreetMap döşemesi istenmez. Harita operasyonun, sunucunun veya fotoğrafın konumunu göstermiyor.
+### Sunum anında
 
-İsteğe bağlı HTTP kullanımında kök klasörde `BASLAT.sh` çalıştırılabilir. OSM erişimi ağ koşullarına bağlıdır. Döşeme yanıtları gösterilmeden önce denetlenir; erişim reddedildiğinde çevrimiçi katman kaldırılır ve gömülü sınır haritası kalır. OSM atfı ve kullanılan taban haritada yazılıdır. Toplu döşeme indirmesi yapılmaz.
+- `BASLAT.sh` → yerel sunucu (`http://127.0.0.1:8765`), GDELT isteklerini sunucu tarafında yapar (tarayıcı CORS engeli olmaz).
+- HTML’yi doğrudan açarsanız tarayıcı GDELT’e doğrudan bağlanmayı dener.
+- Veri gömülü değilse sunum açılınca 2022 penceresi arka planda bir kez sorgulanır (~1 dk; GDELT 5 saniyede bir isteğe izin verir). Harita slaytında “2022 penceresini sorgula”, “Son 30 gün”, “JSON yükle”, “JSON indir” düğmeleri vardır.
+- Başarısız veya boş yanıt “sıfır haber” sayılmaz ve hiçbir koşulda örnek veri gösterilmez.
 
-**GDELT, tek bir ileri araştırma slaytında ele alınır.** 2022 vakası için aynı dönemli haber arşivi, açık örnekleme kapsamı ve kaynak ülkesi/anılan yer ayrımı gerekir. Bu tarihsel karşılaştırma tamamlanmadı; sunumda GDELT haber sayısı veya etki bulgusu yoktur. Ana sunum API anahtarı, elle veri bağlama veya canlı haber yanıtı gerektirmez.
+**Not:** Bu sürüm hazırlanırken çalışma ortamının ağ politikası GDELT’i engellediği için depoda GDELT anlık görüntüsü yoktur; harita kodu yalnız sentetik test yanıtlarıyla sınandı. Canlı veriyi ilk kez kendi bilgisayarınızda alın ve sonuçları sunmadan önce kontrol edin.
 
-Önceki özel GDELT sunucu bağlantısı teknik araç olarak korunur. Anahtar yalnız sunucu tarafındaki özel yapılandırmada tutulur; HTML, GitHub ve dağıtım paketlerine eklenmez. Ağ engeli nedeniyle başarılı canlı GDELT alımı doğrulanmadı; anahtar geçerliliği hakkında sonuç çıkarılmadı. Güncel bir API seçkisi tarihsel 2022 karşılaştırmasının yerine geçmez.
+## Meta bulguları (tamamlanmış)
 
-## Yeniden üretim
+Analiz kümesi 350 ham kayıttan seçilen 313 alan adı satırının tekilleştirilmesiyle elde edilen **311 benzersiz alan adıdır**. Ülke, kaynağın `comment` alanındaki hedef etiketinden alınır.
+
+| Analiz | Sonuç |
+| --- | --- |
+| Hedef ülke | Almanya 298/311: **%95,8**. Birleşik Krallık 4, Fransa 2, İtalya 2, Letonya 3, Ukrayna 1, çoklu hedef 1. |
+| Son DNS etiketi | 39 farklı etiket; en sık altısı 240/311 (**%77,2**), tamamı Almanya hedefli. |
+| İlk DNS etiketi tekrarı | 93 ilk etiketin 75’i birden fazla son etiketle; **293 adres**. |
+
+Birincil veri: Meta’nın [sabit commit bağlantısındaki CSV](https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv), SHA-256 `9f216a37e15c4772019d20ee620eafabf57a3876d4a7ab72fff5330fa8167d8d`. Kaynak erişim düzeyleri [KAYNAKLAR.md](KAYNAKLAR.md), revizyon gerekçeleri [REVIZYON_KARARLARI.md](REVIZYON_KARARLARI.md) içindedir.
+
+## Yeniden üretim ve testler
 
 ```bash
 python -m pip install -r requirements.txt
-python scripts/build_interactive.py
-python scripts/export_editorial.py
-python scripts/export_academic_documents.py
-python scripts/verify_leaflet.py
-python scripts/verify_slide_readability.py --check-pptx
+```
+
+```bash
+python scripts/build_interactive.py && python scripts/export_editorial.py && python scripts/export_academic_documents.py
+```
+
+```bash
+python scripts/verify_concise.py --check-pptx
+```
+
+```bash
 python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-Hazır HTML ve belgeleri açmak için Python gerekmez. Yeniden üretimde tarayıcı denetimleri için Chromium ve Playwright gerekir. Yerel regresyon testlerindeki yapay API yanıtları araştırma bulgusu değildir ve dağıtılan sunum verisine katılmaz. Eleştiriden çıkarılan kararlar ve uygulanmayan önerilerin gerekçeleri [revizyon kaydındadır](REVIZYON_KARARLARI.md).
-
-Önizlemeler ve doğrulama raporlarıyla güncel ZIP paketini yeniden oluşturmak için `python scripts/build_release.py` kullanılır. Yardımcı ülke kamerasının videosu `python scripts/render_cinematic_tour.py` ile ayrıca üretilebilir.
+Tarayıcı denetimleri Chromium ve Playwright gerektirir. Testlerdeki API yanıtları sentetiktir ve sunum verisine katılmaz. Güncel ZIP paketi: `python scripts/build_release.py`.

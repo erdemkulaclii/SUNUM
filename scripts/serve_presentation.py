@@ -9,6 +9,8 @@ from urllib.parse import urlsplit,unquote,urlencode
 from urllib.request import urlopen,Request
 import argparse,datetime as dt,json,os,threading,time,webbrowser,mimetypes
 from fetch_gdelt_cloud import collect,CloudError
+from gdelt_common import doc_url,parse_doc,valid_chunk_params
+import datetime as _dt
 R=Path(__file__).resolve().parents[1];O=R/'output'
 
 def load_key():
@@ -57,8 +59,17 @@ def public_doc():
  if not isinstance(body,dict) or not isinstance(body.get('articles'),list):raise ValueError('DOC articles şeması dönmedi.')
  return {'provider':'GDELT Project DOC 2.0','status':'ok','raw':body,'endpoint':endpoint,'query':q,'retrieved_at':dt.datetime.now(dt.timezone.utc).isoformat()}
 
+def map_chunk(start,end,transport=None):
+ """Fixed-query DOC artlist slice for the map. Only timestamps are caller-controlled."""
+ a=_dt.datetime.strptime(start,'%Y%m%d%H%M%S');b=_dt.datetime.strptime(end,'%Y%m%d%H%M%S')
+ url=doc_url(a,b)
+ if transport:raw=transport(url)
+ else:
+  with urlopen(Request(url,headers={'User-Agent':'SUNUM-Research/3.0'}),timeout=60) as response:raw=response.read(20*1024*1024)
+ return {'status':'ok','endpoint':url,'articles':parse_doc(raw),'retrieved_at':_dt.datetime.now(_dt.timezone.utc).isoformat(timespec='seconds')}
+
 class Handler(BaseHTTPRequestHandler):
- gateway=None;doc_cache=None;doc_lock=threading.Lock();port=8765
+ gateway=None;doc_cache=None;doc_lock=threading.Lock();port=8765;map_lock=threading.Lock();map_last=0.0;map_cache={};map_transport=None
  def log_message(self,*args):pass
  def respond(self,status,body,ctype='application/json; charset=utf-8'):
   encoded=json.dumps(body,ensure_ascii=False).encode() if isinstance(body,dict) else body
@@ -71,13 +82,28 @@ class Handler(BaseHTTPRequestHandler):
   path=unquote(urlsplit(self.path).path)
   if path=='/health':return self.respond(200,{'status':'ok','cloud_key_configured':bool(self.gateway.key),'cloud_endpoint':'https://gdeltcloud.com/api/v2','key_exposed':False})
   if path=='/api/gdelt-cloud':return self.respond(200,self.gateway.get())
+  if path=='/api/gdelt-map-chunk':
+   from urllib.parse import parse_qs
+   q=parse_qs(urlsplit(self.path).query);start=(q.get('start') or [''])[0];end=(q.get('end') or [''])[0]
+   if not valid_chunk_params(start,end):return self.respond(400,{'status':'bad_request','message':'start/end YYYYMMDDHHMMSS olmalı; dilim en fazla 31 gün.'})
+   key=start+end
+   with Handler.map_lock:
+    hit=Handler.map_cache.get(key)
+    if hit and time.time()-hit[0]<21600:return self.respond(200,{**hit[1],'proxy_cache':True})
+    wait=5.2-(time.time()-Handler.map_last)
+    if wait>0:time.sleep(wait)
+    Handler.map_last=time.time()
+    try:result=map_chunk(start,end,Handler.map_transport)
+    except Exception as e:return self.respond(502,{'status':'request_failed','message':str(e)[:300]})
+    Handler.map_cache[key]=(time.time(),result)
+   return self.respond(200,{**result,'proxy_cache':False})
   if path=='/api/gdelt-doc':
    with self.doc_lock:
     if not Handler.doc_cache or time.time()-Handler.doc_cache[0]>21600:
      try:Handler.doc_cache=(time.time(),public_doc())
      except Exception:Handler.doc_cache=(time.time(),{'provider':'GDELT Project DOC 2.0','status':'request_failed','message':'DOC API için ağ/proxy/servis bağlantısı kurulamadı.'})
     return self.respond(200,Handler.doc_cache[1])
-  if path in ['/','/index.html']:target=O/'PROFESYONEL_SUNUM.html'
+  if path in ['/','/index.html']:target=O/'AKADEMIK_ODAKLI_SUNUM.html'
   else:
    name=path.removeprefix('/output/').lstrip('/')
    if '/' in name or name.startswith('.') or Path(name).suffix not in {'.html','.pdf','.pptx','.docx','.mp4','.gif','.png','.jpg','.json','.md','.txt'}:return self.respond(404,{'status':'not_found'})

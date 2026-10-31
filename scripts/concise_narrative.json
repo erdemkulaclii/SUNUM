@@ -1,287 +1,417 @@
 [
-  {
-    "id": "cover",
-    "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
-    "kicker": "AKADEMİK ARAŞTIRMA SUNUMU",
-    "display_points": [
-      "311 benzersiz alan adı",
-      "13+2 dakika"
-    ],
-    "takeaway": "Coğrafya ve yapı birlikte.",
-    "notes": "Bu çalışma, Meta’nın 2022 gösterge listesinin ikincil analizidir.\nTamamlanmış inceleme, hedef ülke dağılımını ve alan adlarının sözcüksel yapısını karşılaştırır.\nRusya bağlantısı kaynak raporlamasına aittir; yeni bir aktör atfı üretmiyorum.",
-    "cue_sentences": [
-      "Bu çalışma, Meta’nın 2022 gösterge listesinin ikincil analizidir.",
-      "Tamamlanmış inceleme, hedef ülke dağılımını ve alan adlarının sözcüksel yapısını karşılaştırır.",
-      "Rusya bağlantısı kaynak raporlamasına aittir; yeni bir aktör atfı üretmiyorum."
-    ],
-    "full_notes": "Bu sunumda, yayımlanmış bir gösterge dosyasından hangi sonuçların gerçekten çıkarılabileceğini araştırıyorum. İnceleme, Meta’nın 2022 tarihli koordineli sahte davranış gösterge paketindeki alan adı kayıtlarına dayanıyor. Rusya bağlantısını kaynağın raporlaması olarak koruyorum; bağımsız bir aktör atfı yaptığım iddiasında değilim. Tamamlanmış analiz iki soruyu birlikte ele alıyor: göstergeler hangi hedef ülke etiketlerinde yoğunlaşıyor ve alan adlarının yapısında hangi tekrarlar bulunuyor? Bu nedenle başlık, bütün Avrupa’daki operasyonları veya etkilerini açıklama iddiası yerine eldeki vakaya odaklanıyor. Önce veriyi nasıl temizlediğimi, ardından coğrafi ve yapısal bulguları göstereceğim. Son bölümde sonuçların kapsamını ve GDELT ile yapılabilecek ayrı bir tarihsel karşılaştırmayı kısaca tartışacağım.",
-    "seconds": 40,
-    "visual": "cover",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "subtitle": "Rusya bağlantısı kaynak raporlamasına dayanan bir vaka incelemesi.",
-    "visible_word_count": 28
+ {
+  "id": "cover",
+  "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
+  "kicker": "AKADEMİK VAKA ÇALIŞMASI",
+  "display_points": [
+   "311 alan adı göstergesi",
+   "GDELT haber haritası"
+  ],
+  "takeaway": "Altyapı verisi ve haber verisi birlikte.",
+  "notes": "Bu çalışma, Meta’nın 2022’de yayımladığı Rusya kaynaklı ağ göstergelerini inceliyor.\nİki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?\nBirinci kaynak 311 alan adı; ikinci kaynak GDELT haber verisi.\nSunum 13,5 dakika; ardından soru-cevap.",
+  "cue_sentences": [
+   "Bu çalışma, Meta’nın 2022’de yayımladığı Rusya kaynaklı ağ göstergelerini inceliyor.",
+   "İki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?",
+   "Birinci kaynak 311 alan adı; ikinci kaynak GDELT haber verisi.",
+   "Sunum 13,5 dakika; ardından soru-cevap."
+  ],
+  "full_notes": "Değerli hocalarım ve arkadaşlar, bu sunumda Doppelgänger olarak bilinen etki operasyonunu iki farklı veri türüyle inceliyorum. Birincisi, Meta’nın 27 Eylül 2022’de yayımladığı gösterge listesindeki 311 benzersiz alan adı. İkincisi, GDELT projesinin haber veritabanı. Amacım bir operasyonun etkisini ölçmek değil; yayımlanmış altyapı göstergelerinin hangi ülkeleri hedeflediğini, nasıl bir adres yapısı izlediğini ve kaldırma haberinin hangi ülkelerin medyasında görünür olduğunu betimsel olarak ortaya koymak. Önce bağlamı ve literatürü, sonra yöntem ve bulguları, en sonda da tartışma ve sınırlılıkları sunacağım.",
+  "seconds": 35,
+  "visual": "cover",
+  "citations": [
+   "meta2022",
+   "gdeltdoc"
+  ],
+  "source": "Meta, 2022; The GDELT Project, 2017",
+  "subtitle": "Meta 2022 CIB göstergeleri ve GDELT haber verisiyle betimsel bir inceleme",
+  "visible_word_count": 31
+ },
+ {
+  "id": "outline",
+  "title": "Sunum planı",
+  "kicker": "SUNUM PLANI",
+  "display_points": [
+   "Giriş ve kavramsal çerçeve",
+   "Veri ve yöntem",
+   "Bulgular ve GDELT haritası",
+   "Tartışma, sınırlılıklar ve sonuç"
+  ],
+  "takeaway": "Üç araştırma sorusu, iki veri kaynağı.",
+  "notes": "Sunum dört bölümden oluşuyor.\nÖnce vakayı ve literatürü konumlandırıyorum.\nArdından iki veri kaynağını ve ölçüm kurallarını açıklıyorum.\nBulgulardan sonra tartışma, sınırlılıklar ve sonuçla bitiriyorum.",
+  "cue_sentences": [
+   "Sunum dört bölümden oluşuyor.",
+   "Önce vakayı ve literatürü konumlandırıyorum.",
+   "Ardından iki veri kaynağını ve ölçüm kurallarını açıklıyorum.",
+   "Bulgulardan sonra tartışma, sınırlılıklar ve sonuçla bitiriyorum."
+  ],
+  "full_notes": "Sunum klasik bir araştırma makalesi akışını izliyor. Giriş bölümünde Doppelgänger vakasını ve bilgi düzensizliği literatürünü kısaca tanıtacağım. Veri ve yöntem bölümünde Meta gösterge dosyasını ve GDELT haber verisini, her birinin ölçüm birimini ayrı ayrı açıklayacağım. Bulgular bölümünde üç Meta bulgusunu ve GDELT haber haritasını göstereceğim. Son bölümde bu bulguları literatürle ilişkilendirip sınırlılıkları ve sonucu sunacağım.",
+  "seconds": 25,
+  "visual": "outline",
+  "citations": [],
+  "source": "Sunum yapısı",
+  "visible_word_count": 23
+ },
+ {
+  "id": "context",
+  "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
+  "kicker": "GİRİŞ / VAKA",
+  "display_points": [
+   "En az 17 medya markası taklit edildi (Alaphilippe vd., 2022)",
+   "Meta, 27.09.2022: 60’tan fazla taklit site; öncelikli hedef Almanya"
+  ],
+  "takeaway": "Vaka, kamuya açık göstergelerle incelenebilir.",
+  "notes": "EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.\nRapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.\nMeta aynı gün ağı kaldırdığını ve öncelikli hedefin Almanya olduğunu açıkladı.\nMeta ayrıca alan adı göstergelerini açık bir CSV dosyası olarak yayımladı.",
+  "cue_sentences": [
+   "EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.",
+   "Rapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.",
+   "Meta aynı gün ağı kaldırdığını ve öncelikli hedefin Almanya olduğunu açıkladı.",
+   "Meta ayrıca alan adı göstergelerini açık bir CSV dosyası olarak yayımladı."
+  ],
+  "full_notes": "Doppelgänger, tanınmış Avrupa haber sitelerinin görünümünü taklit eden sahte sitelerle yürütülen bir kampanyadır. EU DisinfoLab ve Qurium’un 27 Eylül 2022 tarihli raporu, kampanyanın en az Mayıs 2022’den beri sürdüğünü ve aralarında Bild, The Guardian ve ANSA’nın da bulunduğu en az on yedi medya markasının taklit edildiğini ortaya koydu. Aynı gün Meta, Rusya kaynaklı ağı platformlarından kaldırdığını duyurdu. Nimmo ve Agranovich’in raporuna göre ağ öncelikle Almanya’yı, ayrıca Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı hedefliyor ve altmıştan fazla taklit haber sitesi çevresinde kuruluydu. Bu çalışmayı mümkün kılan şey, Meta’nın göstergeleri kamuya açık bir veri dosyası olarak yayımlamasıdır. Rusya bağlantısı bu kaynakların raporlamasına dayanır; benim bağımsız bir atıf analizim değildir.",
+  "seconds": 55,
+  "visual": "context",
+  "citations": [
+   "disinfolab2022",
+   "nimmo2022"
+  ],
+  "source": "Alaphilippe et al., 2022; Nimmo & Agranovich, 2022",
+  "visible_word_count": 30
+ },
+ {
+  "id": "literature",
+  "title": "Kavramsal çerçeve",
+  "kicker": "KAVRAMSAL ÇERÇEVE",
+  "display_points": [
+   "Bilgi düzensizliği (Wardle ve Derakhshan, 2017)",
+   "Ölçüm ve payda (Lazer vd., 2018; Allen vd., 2020)",
+   "Haber verisinde coğrafya (Leetaru ve Schrodt, 2013)"
+  ],
+  "takeaway": "Bu çalışma: altyapı ve haber coğrafyası birlikte.",
+  "notes": "Wardle ve Derakhshan, bilgi düzensizliğini ajan, mesaj ve yorumlayıcı öğeleriyle çözümler.\nTaklit haber siteleri, bu çerçevede üretim ve dağıtım aşamasına ait altyapıdır.\nLazer ve Allen ile arkadaşları, ölçümde payda ve kapsamın açık tanımlanmasını vurgular.\nGDELT, haberleri yayımlandıkları ülke ve andıkları yerlerle kodlayan bir veri kaynağıdır.",
+  "cue_sentences": [
+   "Wardle ve Derakhshan, bilgi düzensizliğini ajan, mesaj ve yorumlayıcı öğeleriyle çözümler.",
+   "Taklit haber siteleri, bu çerçevede üretim ve dağıtım aşamasına ait altyapıdır.",
+   "Lazer ve Allen ile arkadaşları, ölçümde payda ve kapsamın açık tanımlanmasını vurgular.",
+   "GDELT, haberleri yayımlandıkları ülke ve andıkları yerlerle kodlayan bir veri kaynağıdır."
+  ],
+  "full_notes": "Kavramsal çerçeve olarak Wardle ve Derakhshan’ın bilgi düzensizliği modelini kullanıyorum. Bu model, sorunlu içeriği yanlış bilgi, dezenformasyon ve kötü niyetli bilgi olarak ayırır ve olguyu ajan, mesaj ve yorumlayıcı öğeleriyle; oluşturma, üretim ve dağıtım evreleriyle inceler. Taklit haber siteleri bu çerçevede üretim ve dağıtım altyapısına karşılık gelir. Lazer ve arkadaşları ile Allen ve arkadaşları, yalan haber araştırmalarında neyin, hangi paydaya göre sayıldığının açıkça tanımlanması gerektiğini vurgular; bu nedenle her bulguda paydayı açıkça veriyorum. Coğrafi boyut için Leetaru ve Schrodt’un tanıttığı GDELT verisini kullanıyorum. Literatürde operasyon altyapısı ile haber görünürlüğü genellikle ayrı incelenir; bu çalışma ikisini aynı vakada yan yana koymayı amaçlıyor.",
+  "seconds": 65,
+  "visual": "literature",
+  "citations": [
+   "wardle2017",
+   "lazer2018",
+   "allen2020",
+   "leetaru2013"
+  ],
+  "source": "Wardle & Derakhshan, 2017; Lazer et al., 2018; Allen et al., 2020; Leetaru & Schrodt, 2013",
+  "visible_word_count": 31
+ },
+ {
+  "id": "question",
+  "title": "Araştırma soruları",
+  "kicker": "ARAŞTIRMA SORULARI",
+  "display_points": [
+   "AS1: Göstergeler hangi ülkeleri hedefliyor?",
+   "AS2: Alan adları hangi yapıyı izliyor?",
+   "AS3: Vaka hangi ülkelerin haberlerinde görünür?"
+  ],
+  "takeaway": "Birimler: 311 alan adı ve GDELT haberleri.",
+  "notes": "Birinci soru hedef coğrafyasını soruyor.\nİkinci soru alan adlarının sözcüksel yapısını soruyor.\nÜçüncü soru, kaldırma haberinin hangi ülkelerin medyasında yer aldığını soruyor.\nİlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesidir.",
+  "cue_sentences": [
+   "Birinci soru hedef coğrafyasını soruyor.",
+   "İkinci soru alan adlarının sözcüksel yapısını soruyor.",
+   "Üçüncü soru, kaldırma haberinin hangi ülkelerin medyasında yer aldığını soruyor.",
+   "İlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesidir."
+  ],
+  "full_notes": "Çalışmayı üç betimsel araştırma sorusu yönlendiriyor. Birinci soru: yayımlanan göstergeler hangi ülkeleri hedef olarak etiketliyor? İkinci soru: bu alan adları, son ve ilk DNS etiketleri açısından nasıl bir yapı izliyor? Üçüncü soru: vaka ve kaldırma duyurusu hangi ülkelerin haber kaynaklarında görünür oldu ve bu haberler hangi yerleri andı? İlk iki sorunun analiz birimi benzersiz alan adı, üçüncüsünün birimi ise GDELT’in izlediği haber makalesidir. Bu ayrımı baştan yapıyorum, çünkü hedef ülke ile haberin yayımlandığı ülke farklı kavramlardır ve aynı paydada toplanamaz.",
+  "seconds": 45,
+  "visual": "question",
+  "citations": [
+   "meta2022",
+   "gdeltdoc"
+  ],
+  "source": "Meta, 2022; The GDELT Project, 2017",
+  "visible_word_count": 26
+ },
+ {
+  "id": "method",
+  "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
+  "kicker": "VERİ VE YÖNTEM",
+  "display_points": [
+   "Meta CSV: hedef etiketi, ilk ve son DNS etiketi",
+   "GDELT DOC 2.0: haberin kaynak ülkesi",
+   "GDELT GKG: haberde anılan yer"
+  ],
+  "takeaway": "Kaynak ülke, hedef ülke değildir.",
+  "notes": "Meta dosyasından hedef etiketi ve alan adının ilk ve son DNS etiketi çıkarıldı.\nGDELT DOC 2.0 sorgusu, vaka haberlerini kaynak ülkesiyle döndürür.\nGDELT GKG, aynı dönem haberlerinde anılan yerleri koordinatlarıyla verir.\nHer ölçüm kendi biriminde raporlanır; veriler birbirine dönüştürülmez.",
+  "cue_sentences": [
+   "Meta dosyasından hedef etiketi ve alan adının ilk ve son DNS etiketi çıkarıldı.",
+   "GDELT DOC 2.0 sorgusu, vaka haberlerini kaynak ülkesiyle döndürür.",
+   "GDELT GKG, aynı dönem haberlerinde anılan yerleri koordinatlarıyla verir.",
+   "Her ölçüm kendi biriminde raporlanır; veriler birbirine dönüştürülmez."
+  ],
+  "full_notes": "Yöntem iki veri kaynağına dayanıyor. Birincisi Meta’nın sabit bir commit bağlantısıyla arşivlenen CSV dosyası. Bu dosyadan kaynak yorum alanındaki hedef ülke etiketini ve alan adının ilk ve son DNS etiketlerini çıkarıyorum; ülkeyi uzantıdan veya IP adresinden tahmin etmiyorum. İkinci kaynak GDELT. GDELT DOC 2.0 arayüzü, sorguyla eşleşen haber makalelerini ve her makalenin yayımlandığı ülkeyi döndürüyor. Sorgu, Meta duyurusunu kapsayan 20 Eylül – 11 Ekim 2022 penceresinde üç günlük dilimlere bölünüyor ve URL düzeyinde tekilleştiriliyor. GDELT GKG ise aynı haberlerde anılan yer adlarını koordinatlarıyla veriyor; bu katman BigQuery sorgusuyla üretiliyor. Haritada üç bilgi ayrı katman olarak duruyor: hedef etiketi, haberin kaynak ülkesi ve haberde anılan yer.",
+  "seconds": 65,
+  "visual": "method",
+  "citations": [
+   "meta2022",
+   "gdeltdoc",
+   "leetaru2013"
+  ],
+  "source": "Meta, 2022; The GDELT Project, 2017; Leetaru & Schrodt, 2013",
+  "visible_word_count": 32
+ },
+ {
+  "id": "audit",
+  "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+  "kicker": "VERİ HAZIRLIĞI",
+  "display_points": [
+   "350 kayıt → 313 alan adı satırı → 311 benzersiz alan adı"
+  ],
+  "takeaway": "Farklı kayıt türleri aynı paydada toplanmadı.",
+  "notes": "Ham dosyada 350 kayıt, alan adı türünde 313 satır bulunuyor.\nİki yinelenen değer çıkarılınca analiz kümesi 311 oluyor.\nCIB ve Telegram bağlantıları farklı birimler olduğu için bu sayımdan ayrıldı.\nHer dönüşüm kaynak satırına ve dosya özetine bağlandı.",
+  "cue_sentences": [
+   "Ham dosyada 350 kayıt, alan adı türünde 313 satır bulunuyor.",
+   "İki yinelenen değer çıkarılınca analiz kümesi 311 oluyor.",
+   "CIB ve Telegram bağlantıları farklı birimler olduğu için bu sayımdan ayrıldı.",
+   "Her dönüşüm kaynak satırına ve dosya özetine bağlandı."
+  ],
+  "full_notes": "Veri hazırlığında üç toplamı ayırıyorum. Ham dosya üç yüz elli kayıt içeriyor. Alan adı türündeki satırları seçtiğimde üç yüz on üç kayıt kalıyor. Küçük harfe dönüştürülmüş tam alan adı üzerinde tekilleştirme iki yinelenen değer buluyor ve analiz kümesi üç yüz on bire iniyor. Dosyadaki yirmi iki CIB bağlantısı ile on beş Telegram bağlantısını bu toplama eklemiyorum; çünkü bunlar aynı analiz birimi değil. Hedef ülkeyi kaynağın yorum alanındaki açık etiketten alıyorum. Çoklu hedef kategorisini ülkelere çoğaltmadan ayrı tutuyorum. Bu işlemler, birincil dosyadan yeniden üretilebiliyor. Dolayısıyla birazdan göreceğimiz her sayı, belirsiz bir harita yoğunluğuna değil, tanımlanmış kayıtlar ve açık dönüşüm kurallarına dayanıyor.",
+  "seconds": 40,
+  "visual": "audit",
+  "citations": [
+   "meta2022"
+  ],
+  "source": "Meta, 2022",
+  "visible_word_count": 25
+ },
+ {
+  "id": "countries",
+  "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+  "kicker": "BULGU 1 / AS1 · HEDEF ÜLKE",
+  "display_points": [
+   "Almanya: 298/311 (%95,8)",
+   "Birleşik Krallık 4; Fransa 2; İtalya 2."
+  ],
+  "takeaway": "Bu oran, yayımlanmış vakanın dağılımını betimler.",
+  "notes": "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.\nBirleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.\nKalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.\nGrafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz.",
+  "cue_sentences": [
+   "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.",
+   "Birleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.",
+   "Kalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.",
+   "Grafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz."
+  ],
+  "full_notes": "İlk bulgu, Almanya hedefli etiketlerin açık ağırlığıdır. Üç yüz on bir benzersiz alan adının iki yüz doksan sekizi bu etiketi taşıyor; bütün listedeki pay yüzde doksan beş virgül sekiz. Birleşik Krallık dört, Fransa iki, İtalya iki göstergeyle yer alıyor. Letonya üç, Ukrayna bir, çoklu hedef kategorisi de bir kayıt içeriyor. Tek bir ülkenin bu kadar baskın olduğu dağılımı yatay çubuk grafik daha doğrudan anlatıyor. Küçük ülkeleri ayrı uzun bölümlere ayırmak yerine aynı tabloda birlikte gösteriyorum. Bu, yayımlanan vakanın hedef yönelimidir. Yoğunlaşmanın ne kadarının faaliyet, ne kadarının tespit veya yayımlama seçimiyle ilgili olduğunu ayıracak ek veri bulunmadığından, grafiği Avrupa’daki bütün operasyonların sıralaması olarak yorumlamıyorum.",
+  "seconds": 65,
+  "visual": "countries",
+  "citations": [
+   "meta2022"
+  ],
+  "source": "Meta, 2022",
+  "metric": {
+   "numerator": 298,
+   "denominator": 311,
+   "percentage": 95.8
   },
-  {
-    "id": "question",
-    "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
-    "kicker": "ARAŞTIRMA SORUSU",
-    "display_points": [
-      "Hedef ülke",
-      "Son DNS etiketi",
-      "İlk DNS etiketi tekrarı"
-    ],
-    "takeaway": "Araştırma birimi: 311 benzersiz alan adı göstergesi.",
-    "notes": "Araştırma sorusu, hedef dağılımını ve adres yapısını birlikte ele alıyor.\nGözlem birimi benzersiz alan adıdır; operasyon veya kullanıcı değildir.\nÜlke, kaynağın hedef etiketinden alınır; uzantıdan tahmin edilmez.",
-    "cue_sentences": [
-      "Araştırma sorusu, hedef dağılımını ve adres yapısını birlikte ele alıyor.",
-      "Gözlem birimi benzersiz alan adıdır; operasyon veya kullanıcı değildir.",
-      "Ülke, kaynağın hedef etiketinden alınır; uzantıdan tahmin edilmez."
-    ],
-    "full_notes": "Ana araştırma sorum şu: Bu listede hedef ülke etiketleri ile alan adlarının sözcüksel yapısı nasıl bir örüntü oluşturuyor? Soruyu üç gözlenebilir değişkene ayırıyorum. Birincisi kaynağın hedef ülke etiketi; ikincisi alan adının en sağındaki DNS etiketi; üçüncüsü aynı ilk etiketin farklı son etiketlerle yeniden kullanılması. Burada sayılan birim alan adıdır. Bir ağın birden fazla adres kullanması mümkün olduğundan, her adresi ayrı bir operasyon gibi değerlendirmiyorum. Aynı şekilde, bir ülke etiketi o ülkedeki kullanıcıların gördüğü içerik veya etkilendiği kişi sayısı anlamına gelmiyor. Bu ayrım, sonuçları baştan daraltmak için değil, ölçülen nesneyi açık tanımlamak için gerekli. Katkı, bu üç değişkeni aynı kayıt zinciri üzerinde karşılaştırmak.",
-    "seconds": 60,
-    "visual": "question",
-    "citations": [
-      "meta2022",
-      "allen2020"
-    ],
-    "source": "Meta, 2022; Allen et al., 2020",
-    "visible_word_count": 24
+  "visible_word_count": 22
+ },
+ {
+  "id": "tlds",
+  "title": "Altı son etiket, 240 alan adında birleşir.",
+  "kicker": "BULGU 2 / AS2 · SON DNS ETİKETİ",
+  "display_points": [
+   "39 farklı son DNS etiketi",
+   "En sık altı etiket: 240/311 (%77,2)"
+  ],
+  "takeaway": "Bu 240 kaydın tamamı Almanya hedeflidir.",
+  "notes": "En sık son etiketler online, website, site, space, pw ve fun.\nBu altı etiket toplam 240 alan adı içeriyor.\nBu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.\nYapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum.",
+  "cue_sentences": [
+   "En sık son etiketler online, website, site, space, pw ve fun.",
+   "Bu altı etiket toplam 240 alan adı içeriyor.",
+   "Bu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.",
+   "Yapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum."
+  ],
+  "full_notes": "İkinci bulgu, alan adının en sağındaki etikete bakıyor. Online elli üç, website elli, site kırk altı, space kırk iki, pw yirmi sekiz ve fun yirmi bir kez geçiyor. Altı etiket toplam iki yüz kırk alan adını, yani listenin yüzde yetmiş yedi virgül ikisini kapsıyor. Bu iki yüz kırk kaydın tamamı Almanya hedefli. Böylece coğrafi yoğunlaşmayı yalnız bir ülke toplamı olarak değil, belirli bir adres dağılımıyla birlikte görebiliyoruz. Ancak etiketin sık kullanılması, ucuz olduğunu kanıtlamaz; bunun için döneme ait tescil veya fiyat verisi gerekir. Etiket barındırma ülkesini de göstermiyor. Hesap, kaydın en sağındaki DNS etiketi üzerinden yapıldığı için etkin kayıt son ekiyle karıştırılmamalı.",
+  "seconds": 60,
+  "visual": "tlds",
+  "citations": [
+   "meta2022"
+  ],
+  "source": "Meta, 2022",
+  "metric": {
+   "numerator": 240,
+   "denominator": 311,
+   "percentage": 77.2
   },
-  {
-    "id": "audit",
-    "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
-    "kicker": "VERİ VE YÖNTEM",
-    "display_points": [
-      "350 kayıt → 313 alan adı satırı → 311 benzersiz alan adı"
-    ],
-    "takeaway": "Farklı kayıt türleri aynı paydada toplanmadı.",
-    "notes": "Ham dosyada 350 kayıt, alan adı türünde 313 satır bulunuyor.\nİki yinelenen değer çıkarılınca analiz kümesi 311 oluyor.\nCIB ve Telegram bağlantıları farklı birimler olduğu için bu sayımdan ayrıldı.\nHer dönüşüm kaynak satırına ve dosya özetine bağlandı.",
-    "cue_sentences": [
-      "Ham dosyada 350 kayıt, alan adı türünde 313 satır bulunuyor.",
-      "İki yinelenen değer çıkarılınca analiz kümesi 311 oluyor.",
-      "CIB ve Telegram bağlantıları farklı birimler olduğu için bu sayımdan ayrıldı.",
-      "Her dönüşüm kaynak satırına ve dosya özetine bağlandı."
-    ],
-    "full_notes": "Veri hazırlığında üç toplamı ayırıyorum. Ham dosya üç yüz elli kayıt içeriyor. Alan adı türündeki satırları seçtiğimde üç yüz on üç kayıt kalıyor. Küçük harfe dönüştürülmüş tam alan adı üzerinde tekilleştirme iki yinelenen değer buluyor ve analiz kümesi üç yüz on bire iniyor. Dosyadaki yirmi iki CIB bağlantısı ile on beş Telegram bağlantısını bu toplama eklemiyorum; çünkü bunlar aynı analiz birimi değil. Hedef ülkeyi kaynağın yorum alanındaki açık etiketten alıyorum. Çoklu hedef kategorisini ülkelere çoğaltmadan ayrı tutuyorum. Bu işlemler, birincil dosyadan yeniden üretilebiliyor. Dolayısıyla birazdan göreceğimiz her sayı, belirsiz bir harita yoğunluğuna değil, tanımlanmış kayıtlar ve açık dönüşüm kurallarına dayanıyor.",
-    "seconds": 65,
-    "visual": "audit",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "visible_word_count": 25
-  },
-  {
-    "id": "countries",
-    "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
-    "kicker": "BULGU 1 / HEDEF ÜLKE",
-    "display_points": [
-      "Almanya: 298/311 (%95,8)",
-      "Birleşik Krallık 4; Fransa 2; İtalya 2."
-    ],
-    "takeaway": "Bu oran, yayımlanmış vakanın dağılımını betimler.",
-    "notes": "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.\nBirleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.\nKalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.\nGrafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz.",
-    "cue_sentences": [
-      "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.",
-      "Birleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.",
-      "Kalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.",
-      "Grafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz."
-    ],
-    "full_notes": "İlk bulgu, Almanya hedefli etiketlerin açık ağırlığıdır. Üç yüz on bir benzersiz alan adının iki yüz doksan sekizi bu etiketi taşıyor; bütün listedeki pay yüzde doksan beş virgül sekiz. Birleşik Krallık dört, Fransa iki, İtalya iki göstergeyle yer alıyor. Letonya üç, Ukrayna bir, çoklu hedef kategorisi de bir kayıt içeriyor. Tek bir ülkenin bu kadar baskın olduğu dağılımı yatay çubuk grafik daha doğrudan anlatıyor. Küçük ülkeleri ayrı uzun bölümlere ayırmak yerine aynı tabloda birlikte gösteriyorum. Bu, yayımlanan vakanın hedef yönelimidir. Yoğunlaşmanın ne kadarının faaliyet, ne kadarının tespit veya yayımlama seçimiyle ilgili olduğunu ayıracak ek veri bulunmadığından, grafiği Avrupa’daki bütün operasyonların sıralaması olarak yorumlamıyorum.",
-    "seconds": 95,
-    "visual": "countries",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "metric": {
-      "numerator": 298,
-      "denominator": 311,
-      "percentage": 95.8
-    },
-    "visible_word_count": 22
-  },
-  {
-    "id": "tlds",
-    "title": "Altı son etiket, 240 alan adında birleşir.",
-    "kicker": "BULGU 2 / SON DNS ETİKETİ",
-    "display_points": [
-      "39 farklı son DNS etiketi",
-      "En sık altı etiket: 240/311 (%77,2)"
-    ],
-    "takeaway": "Bu 240 kaydın tamamı Almanya hedeflidir.",
-    "notes": "En sık son etiketler online, website, site, space, pw ve fun.\nBu altı etiket toplam 240 alan adı içeriyor.\nBu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.\nYapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum.",
-    "cue_sentences": [
-      "En sık son etiketler online, website, site, space, pw ve fun.",
-      "Bu altı etiket toplam 240 alan adı içeriyor.",
-      "Bu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.",
-      "Yapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum."
-    ],
-    "full_notes": "İkinci bulgu, alan adının en sağındaki etikete bakıyor. Online elli üç, website elli, site kırk altı, space kırk iki, pw yirmi sekiz ve fun yirmi bir kez geçiyor. Altı etiket toplam iki yüz kırk alan adını, yani listenin yüzde yetmiş yedi virgül ikisini kapsıyor. Bu iki yüz kırk kaydın tamamı Almanya hedefli. Böylece coğrafi yoğunlaşmayı yalnız bir ülke toplamı olarak değil, belirli bir adres dağılımıyla birlikte görebiliyoruz. Ancak etiketin sık kullanılması, ucuz olduğunu kanıtlamaz; bunun için döneme ait tescil veya fiyat verisi gerekir. Etiket barındırma ülkesini de göstermiyor. Hesap, kaydın en sağındaki DNS etiketi üzerinden yapıldığı için etkin kayıt son ekiyle karıştırılmamalı.",
-    "seconds": 90,
-    "visual": "tlds",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "metric": {
-      "numerator": 240,
-      "denominator": 311,
-      "percentage": 77.2
-    },
-    "visible_word_count": 24
-  },
-  {
-    "id": "reuse",
-    "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
-    "kicker": "BULGU 3 / SÖZCÜKSEL TEKRAR",
-    "display_points": [
-      "93 ayrı ilk etiket",
-      "75 tekrarlanan grup; 293 adres"
-    ],
-    "takeaway": "Adres çeşitliliği, yinelenen ilk etiketler çevresinde oluşur.",
-    "notes": "Alan adları, soldaki ilk DNS etiketinin tam eşleşmesine göre gruplandı.\n93 ayrı ilk etiketin 75’i birden fazla son etiketle yer alıyor.\nBu gruplar 293 adresi kapsıyor; spiegel dokuz, bild sekiz, dailymail üç örnek içeriyor.\nDize tekrarı, sahiplik veya içerik hakkında bağımsız hüküm vermiyor.",
-    "cue_sentences": [
-      "Alan adları, soldaki ilk DNS etiketinin tam eşleşmesine göre gruplandı.",
-      "93 ayrı ilk etiketin 75’i birden fazla son etiketle yer alıyor.",
-      "Bu gruplar 293 adresi kapsıyor; spiegel dokuz, bild sekiz, dailymail üç örnek içeriyor.",
-      "Dize tekrarı, sahiplik veya içerik hakkında bağımsız hüküm vermiyor."
-    ],
-    "full_notes": "Üçüncü bulgu, tam olarak aynı ilk DNS etiketinin yeniden kullanımını inceliyor. Üç yüz on bir alan adında doksan üç farklı ilk etiket var. Bunların yetmiş beşi birden fazla son etiketle birlikte kullanılıyor ve iki yüz doksan üç adres bu gruplarda toplanıyor. Örneğin spiegel ilk etiketi dokuz farklı son etiketle, bild sekiz, dailymail ise üç farklı son etiketle yer alıyor. Burada yazım benzerliğini yorumlayan bir model kullanmadım; yalnızca tam dize eşleşmesini saydım. Bu tercih, ölçümü yeniden üretilebilir ve denetlenebilir tutuyor. Sonuç, listede adres çeşitliliğinin önemli bir bölümünün yinelenen ilk etiketler çevresinde oluştuğunu gösteriyor. Ortak sahiplik, aynı operatör veya içerik taklidi için ise bu sayımın ötesinde kanıt gerekir.",
-    "seconds": 95,
-    "visual": "reuse",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "visible_word_count": 24
-  },
-  {
-    "id": "anatomy",
-    "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
-    "kicker": "ALAN ADININ ANATOMİSİ",
-    "display_points": [
-      "theguardian[.]co[.]com",
-      "dailymail[.]top"
-    ],
-    "takeaway": "İlk, ara ve son etiket ayrı ölçülür.",
-    "notes": "Theguardian örneğinde ilk etiket, ara etiket ve son etiket farklı parçalardır.\nBenim son etiket sayımım bu kaydı com altında sınıflandırıyor.\nHaber adını çağrıştıran dizeyi görmek, içeriği veya operatörü doğrulamak değildir.",
-    "cue_sentences": [
-      "Theguardian örneğinde ilk etiket, ara etiket ve son etiket farklı parçalardır.",
-      "Benim son etiket sayımım bu kaydı com altında sınıflandırıyor.",
-      "Haber adını çağrıştıran dizeyi görmek, içeriği veya operatörü doğrulamak değildir."
-    ],
-    "full_notes": "Bu iki örnek, yapılan ölçümün neyi saydığını somutlaştırıyor. Theguardian nokta co nokta com kaydında ilk etiket theguardian, ara etiket co, son etiket com. Son etiket tablosu bu alan adını com kategorisine yerleştiriyor. Bu, etkin kayıt sınırını veya yasal yayıncı kimliğini hesapladığım anlamına gelmiyor. Dailymail nokta top ise aynı ayrımı daha kısa bir yapıda gösteriyor. Lazer ve arkadaşlarının haber biçimi ile doğruluk süreçleri arasındaki ayrımı, tanıdık bir adın neden araştırmaya değer olduğunu düşünmemize yardım ediyor. Fakat kaynak listedeki bir dizeyi görmek, sitenin içeriğini incelediğimiz anlamına gelmez. Bu örnekler arşivlenmiş göstergelerden seçildi; içerik, niyet ve aktör atfı ayrıca doğrulanmalıdır.",
-    "seconds": 80,
-    "visual": "anatomy",
-    "citations": [
-      "meta2022",
-      "lazer2018"
-    ],
-    "source": "Meta, 2022; Lazer et al., 2018",
-    "visible_word_count": 15
-  },
-  {
-    "id": "limits",
-    "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
-    "kicker": "YORUM VE GEÇERLİLİK",
-    "display_points": [
-      "Seçilim: tespit ve yayımlama",
-      "Tarih: bütün kayıtlarda 27.09.2022"
-    ],
-    "takeaway": "Bu veri faaliyet zamanını, niyeti veya kamuoyu etkisini ölçmez.",
-    "notes": "Liste, platformun tespit ve yayımlama seçimini yansıtıyor.\nBütün kayıtlarda tarih aynı; bundan bir faaliyet zaman çizelgesi üretilemez.\nHedef etiketi, alan adı yapısı ve haber görünürlüğü farklı ölçümlerdir.\nÇıkarımlar bu veri kapsamıyla sınırlı tutuluyor.",
-    "cue_sentences": [
-      "Liste, platformun tespit ve yayımlama seçimini yansıtıyor.",
-      "Bütün kayıtlarda tarih aynı; bundan bir faaliyet zaman çizelgesi üretilemez.",
-      "Hedef etiketi, alan adı yapısı ve haber görünürlüğü farklı ölçümlerdir.",
-      "Çıkarımlar bu veri kapsamıyla sınırlı tutuluyor."
-    ],
-    "full_notes": "Bulguları değerlendirirken üç sınır birlikte düşünülmeli. Birincisi, yayımlanmış bu liste olasılıklı bir operasyon örneklemi değil; platformun tespit ve paylaşım seçimini yansıtıyor. İkincisi, dosyadaki üç yüz elli kaydın tamamında ds alanı yirmi yedi Eylül iki bin yirmi iki. Dolayısıyla bu tarihten faaliyetlerin ne zaman başladığı, arttığı veya sona erdiği hakkında bir zaman serisi çıkaramayız. Üçüncüsü, aynı veriyle altyapı sayısından kullanıcıların maruziyetine veya tutum değişikliğine geçemeyiz. Allen ve arkadaşlarının kapsam ve payda üzerine tartışması burada yararlı. Bu sınırlar bulguyu ortadan kaldırmıyor; bulgunun hangi nesne ve hangi evren için geçerli olduğunu belirliyor. Sonuçlarımız ülke etiketleri ve alan adı dizilerinin dağılımına aittir.",
-    "seconds": 75,
-    "visual": "limits",
-    "citations": [
-      "meta2022",
-      "allen2020"
-    ],
-    "source": "Meta, 2022; Allen et al., 2020",
-    "visible_word_count": 22
-  },
-  {
-    "id": "future",
-    "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
-    "kicker": "İLERİ ARAŞTIRMA",
-    "display_points": [
-      "Aynı dönem: 2022",
-      "Kaynak coğrafyası ve anılan yerler ayrılmalı."
-    ],
-    "takeaway": "Bu karşılaştırma henüz yapılmadı; mevcut sonuçlara dahil değildir.",
-    "notes": "GDELT, bu altyapının haberlerde nasıl görünür olduğunu ayrı bir çalışmada incelemeyi sağlayabilir.\n2022 vakası için aynı döneme ait arşiv ve açık kapsam tanımı gerekir.\nGüncel bir haber seçkisi tarihsel karşılaştırmanın yerine geçmez.",
-    "cue_sentences": [
-      "GDELT, bu altyapının haberlerde nasıl görünür olduğunu ayrı bir çalışmada incelemeyi sağlayabilir.",
-      "2022 vakası için aynı döneme ait arşiv ve açık kapsam tanımı gerekir.",
-      "Güncel bir haber seçkisi tarihsel karşılaştırmanın yerine geçmez."
-    ],
-    "full_notes": "Bir sonraki araştırma aşaması, bu altyapının haberlerdeki görünürlüğüdür. Bunun için GDELT kullanılarak aynı tarihsel dönemi kapsayan bir derlem kurulabilir. Ancak güncel DOC sorgusu iki bin yirmi iki tarihli vaka için doğrudan doğrulama sağlamaz; tarihsel arşiv, dönem ve kaynak kapsamı ayrıca belirlenmelidir. Haberi yayımlayan kaynağın ülkesiyle metinde adı geçen yerler de farklı değişkenler olarak kodlanmalı. Özellikle GKG konum alanlarından otomatik biçimde yayıncı ülkesi çıkarmak doğru olmaz. Bu karşılaştırma, mevcut sunumda tamamlanmış bir sonuç olarak yer almıyor. Bugünkü üç bulgu, yalnız Meta listesinin yeniden sayılması ve yapısal çözümlemesinden geliyor. GDELT burada bu sonuçların yerine geçen bir vaat değil, açıkça ayrılmış yeni bir araştırma adımıdır.",
-    "seconds": 60,
-    "visual": "future",
-    "citations": [],
-    "source": "İleri araştırma önerisi; bu çalışmanın tamamlanmış bulgusu değildir.",
-    "visible_word_count": 24
-  },
-  {
-    "id": "conclusion",
-    "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
-    "kicker": "SONUÇ",
-    "display_points": [
-      "Almanya payı: %95,8",
-      "75 ilk etiket, birden fazla son etiket"
-    ],
-    "takeaway": "Katkı: hedef coğrafyasıyla sözcüksel yapıyı kayıt düzeyinde birlikte göstermek.",
-    "notes": "Araştırma sorusunu üç tamamlanmış bulguyla yanıtlıyorum.\nCoğrafi yoğunlaşmaya, son etiket yoğunlaşması ve ilk etiket tekrarı eşlik ediyor.\nKatkı, bu örüntüleri aynı kaynak kayıtları üzerinde birlikte ve denetlenebilir biçimde göstermek.\nBu sonuçlar bütün operasyonlar veya toplumsal etki hakkında genellenmiyor.",
-    "cue_sentences": [
-      "Araştırma sorusunu üç tamamlanmış bulguyla yanıtlıyorum.",
-      "Coğrafi yoğunlaşmaya, son etiket yoğunlaşması ve ilk etiket tekrarı eşlik ediyor.",
-      "Katkı, bu örüntüleri aynı kaynak kayıtları üzerinde birlikte ve denetlenebilir biçimde göstermek.",
-      "Bu sonuçlar bütün operasyonlar veya toplumsal etki hakkında genellenmiyor."
-    ],
-    "full_notes": "Araştırma sorusuna dönerek bitiriyorum. İncelenen Meta iki bin yirmi iki listesi, Almanya hedefli etiketlerde yoğunlaşan ve aynı ilk DNS etiketlerinin farklı son etiketlerle tekrarlandığı bir adres kümesi ortaya koyuyor. Ülke bulgusu, son etiket dağılımı ve tam dize tekrarları birbirinden bağımsız birer evrensel iddia değil; aynı kayıtların farklı boyutlarda tamamlanmış betimsel çözümlemeleri. Çalışmanın katkısını bu nedenle tek cümleyle tanımlıyorum: hedef coğrafyasıyla sözcüksel yapıyı kayıt düzeyinde birlikte göstermek. Bu ifade yeni bir aktör atfı, etki tahmini veya bütün operasyonların haritası iddiası taşımıyor. Sonuç, yayımlanmış bir vaka hakkında dar ama açık bir yanıt veriyor ve daha ileri karşılaştırmalarda hangi değişkenlerin ayrı tutulması gerektiğini gösteriyor.",
-    "seconds": 75,
-    "visual": "conclusion",
-    "citations": [
-      "meta2022"
-    ],
-    "source": "Meta, 2022",
-    "visible_word_count": 27
-  },
-  {
-    "id": "references",
-    "title": "Kaynakça",
-    "kicker": "SEÇİLMİŞ KAYNAKLAR",
-    "display_points": [
-      "Meta (2022): birincil gösterge verisi.",
-      "Lazer ve arkadaşları (2018): kavramsal çerçeve.",
-      "Allen ve arkadaşları (2020): ölçüm ve payda."
-    ],
-    "takeaway": "Tam künyeler ve yöntem ayrıntıları eklerde yer alır.",
-    "notes": "Ampirik sonuçların birincil kaynağı, sabit commit ile arşivlenen Meta gösterge dosyası.\nKavramsal ayrımlar ve ölçüm tercihleri, incelenen akademik metinlerle ilişkilendiriliyor.\nTam kaynakça, dönüşüm kuralları ve kayıt düzeyindeki tablolar denetime açık.",
-    "cue_sentences": [
-      "Ampirik sonuçların birincil kaynağı, sabit commit ile arşivlenen Meta gösterge dosyası.",
-      "Kavramsal ayrımlar ve ölçüm tercihleri, incelenen akademik metinlerle ilişkilendiriliyor.",
-      "Tam kaynakça, dönüşüm kuralları ve kayıt düzeyindeki tablolar denetime açık."
-    ],
-    "full_notes": "Kaynakları işlevlerine göre ayırıyorum. Sayısal sonuçların birincil dayanağı Meta’nın sabit commit ile arşivlenen gösterge dosyası. Lazer ve arkadaşlarının metni, haber biçimi ve güven ilişkisi üzerine kavramsal çerçeve için kullanıldı. Allen ve arkadaşlarının çalışması ise veri kapsamını ve paydanın anlamını tartışmak için yararlı oldu. Bu çalışmaların başka ülke ve platformlardaki ampirik sonuçlarını burada doğrudan Avrupa’ya taşımadım. Sunumda yalnız kullanılan kaynakların seçilmiş künyeleri var; tam APA kayıtları, dönüşüm kuralları ve alan adı tabloları eklerde bulunuyor. Gösterge dosyasını, yapılan dönüşümleri ve söylenen sonucu aynı zincirde tutmak, bu incelemenin denetlenebilirliğini sağlıyor. Teşekkür ederim.",
-    "seconds": 45,
-    "visual": "references",
-    "citations": [
-      "meta2022",
-      "lazer2018",
-      "allen2020"
-    ],
-    "source": "Meta, 2022; Lazer et al., 2018; Allen et al., 2020",
-    "visible_word_count": 27
-  }
+  "visible_word_count": 24
+ },
+ {
+  "id": "reuse",
+  "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+  "kicker": "BULGU 3 / AS2 · İLK DNS ETİKETİ",
+  "display_points": [
+   "93 ayrı ilk etiket",
+   "75 tekrarlanan grup; 293 adres"
+  ],
+  "takeaway": "Adres çeşitliliği, yinelenen ilk etiketler çevresinde oluşur.",
+  "notes": "Alan adları, soldaki ilk DNS etiketinin tam eşleşmesine göre gruplandı.\n93 ayrı ilk etiketin 75’i birden fazla son etiketle yer alıyor.\nBu gruplar 293 adresi kapsıyor; spiegel dokuz, bild sekiz, dailymail üç örnek içeriyor.\nDize tekrarı, sahiplik veya içerik hakkında bağımsız hüküm vermiyor.",
+  "cue_sentences": [
+   "Alan adları, soldaki ilk DNS etiketinin tam eşleşmesine göre gruplandı.",
+   "93 ayrı ilk etiketin 75’i birden fazla son etiketle yer alıyor.",
+   "Bu gruplar 293 adresi kapsıyor; spiegel dokuz, bild sekiz, dailymail üç örnek içeriyor.",
+   "Dize tekrarı, sahiplik veya içerik hakkında bağımsız hüküm vermiyor."
+  ],
+  "full_notes": "Üçüncü bulgu, tam olarak aynı ilk DNS etiketinin yeniden kullanımını inceliyor. Üç yüz on bir alan adında doksan üç farklı ilk etiket var. Bunların yetmiş beşi birden fazla son etiketle birlikte kullanılıyor ve iki yüz doksan üç adres bu gruplarda toplanıyor. Örneğin spiegel ilk etiketi dokuz farklı son etiketle, bild sekiz, dailymail ise üç farklı son etiketle yer alıyor. Burada yazım benzerliğini yorumlayan bir model kullanmadım; yalnızca tam dize eşleşmesini saydım. Bu tercih, ölçümü yeniden üretilebilir ve denetlenebilir tutuyor. Sonuç, listede adres çeşitliliğinin önemli bir bölümünün yinelenen ilk etiketler çevresinde oluştuğunu gösteriyor. Ortak sahiplik, aynı operatör veya içerik taklidi için ise bu sayımın ötesinde kanıt gerekir.",
+  "seconds": 60,
+  "visual": "reuse",
+  "citations": [
+   "meta2022"
+  ],
+  "source": "Meta, 2022",
+  "visible_word_count": 24
+ },
+ {
+  "id": "gdelt_map",
+  "title": "Vaka hangi ülkelerin haberlerinde görünür oldu?",
+  "kicker": "BULGU 4 / AS3 · GDELT HABER HARİTASI",
+  "display_points": [
+   "Renk: haberin yayımlandığı ülke",
+   "Nokta: haberde anılan yer",
+   "Kırmızı çerçeve: Meta hedef etiketi"
+  ],
+  "takeaway": "Harita görünürlüğü gösterir; etkiyi ölçmez.",
+  "notes": "Renk tonu, GDELT’in eşleşen haberleri hangi ülkenin kaynaklarında bulduğunu gösteriyor.\nNoktalar, GKG’nin bu haberlerde tanıdığı yer adlarıdır.\nKırmızı çerçeveler Meta’nın hedef etiketleridir; karşılaştırma için üst üste konuldu.\nSağdaki kutu sorgu dönemini, haber sayısını ve verinin alındığı zamanı gösterir.",
+  "cue_sentences": [
+   "Renk tonu, GDELT’in eşleşen haberleri hangi ülkenin kaynaklarında bulduğunu gösteriyor.",
+   "Noktalar, GKG’nin bu haberlerde tanıdığı yer adlarıdır.",
+   "Kırmızı çerçeveler Meta’nın hedef etiketleridir; karşılaştırma için üst üste konuldu.",
+   "Sağdaki kutu sorgu dönemini, haber sayısını ve verinin alındığı zamanı gösterir."
+  ],
+  "full_notes": "Dördüncü bulgu GDELT haber haritası. Haritada üç katman var. Mavi tonlar, sorguyla eşleşen haberlerin hangi ülkelerin kaynaklarında yayımlandığını gösteriyor; ton koyulaştıkça tekil haber sayısı artıyor. Noktalar, GDELT Küresel Bilgi Grafiği’nin bu haberlerin metninde tanıdığı yerlerdir. Kırmızı çerçeveler ise Meta’nın hedef ülke etiketleridir. Böylece hedeflenen coğrafya ile haberin üretildiği coğrafyayı aynı harita üzerinde ama ayrı ölçülerle karşılaştırabiliyoruz. Sağdaki kutu sorgunun dönemini, toplam tekil haber sayısını, 250 sonuç sınırına takılan dilim olup olmadığını ve verinin ne zaman alındığını gösteriyor. Bu harita bir etki ölçümü değildir; haberin okunduğu yeri veya kamuoyuna etkisini göstermez, yalnızca GDELT’in izlediği kaynaklardaki görünürlüğü betimler.",
+  "seconds": 95,
+  "visual": "gdelt_map",
+  "citations": [
+   "gdeltdoc",
+   "leetaru2013",
+   "meta2022"
+  ],
+  "source": "The GDELT Project, 2017 (DOC 2.0 ve GKG); Meta, 2022",
+  "visible_word_count": 24
+ },
+ {
+  "id": "discussion",
+  "title": "Tartışma: yerelleşmiş taklit ve görünürlük",
+  "kicker": "TARTIŞMA",
+  "display_points": [
+   "Almanya ağırlığı, Meta ve EU DisinfoLab raporlarıyla uyumlu",
+   "Tanınmış yayın adları farklı son etiketlerle çoğaltılıyor",
+   "Haber coğrafyası, hedef coğrafyasıyla karşılaştırılabilir"
+  ],
+  "takeaway": "İki veri türü birbirinin yerine geçmez.",
+  "notes": "Kayıt düzeyindeki Almanya payı, raporların nitel Almanya vurgusunu sayısal olarak destekliyor.\nSpiegel ve Bild gibi adların çok sayıda son etiketle tekrarı, raporlardaki marka taklidi anlatısıyla örtüşüyor.\nGDELT haritası, hedeflenen ülkelerle haberin üretildiği ülkelerin örtüşüp örtüşmediğini sınamaya imkân veriyor.\nBu karşılaştırma betimseldir; nedensellik veya etki iddiası taşımaz.",
+  "cue_sentences": [
+   "Kayıt düzeyindeki Almanya payı, raporların nitel Almanya vurgusunu sayısal olarak destekliyor.",
+   "Spiegel ve Bild gibi adların çok sayıda son etiketle tekrarı, raporlardaki marka taklidi anlatısıyla örtüşüyor.",
+   "GDELT haritası, hedeflenen ülkelerle haberin üretildiği ülkelerin örtüşüp örtüşmediğini sınamaya imkân veriyor.",
+   "Bu karşılaştırma betimseldir; nedensellik veya etki iddiası taşımaz."
+  ],
+  "full_notes": "Bulguları literatürle ilişkilendirdiğimde üç nokta öne çıkıyor. Birincisi, Meta ve EU DisinfoLab raporları Almanya’yı nitel olarak öncelikli hedef olarak tanımlamıştı; kayıt düzeyindeki yüzde 95,8’lik pay bu vurguyu sayısal olarak destekliyor. İkincisi, Spiegel ve Bild gibi tanınmış yayın adlarının çok sayıda farklı son etiketle tekrarlanması, raporlarda anlatılan marka taklidi stratejisiyle örtüşüyor; ancak benim ölçümüm sahiplik veya içerik değil, yalnızca dize tekrarı. Üçüncüsü, GDELT haritası Wardle ve Derakhshan’ın dağıtım ve yorumlayıcı boyutuna ilişkin bir pencere açıyor: vakanın hangi ülkelerin medyasında konuşulduğunu, hedeflenen ülkelerle karşılaştırmamıza izin veriyor. Altyapı verisi ile haber verisi birbirini tamamlar; biri diğerinin yerine geçmez ve bu karşılaştırmadan nedensel bir sonuç çıkarmıyorum.",
+  "seconds": 65,
+  "visual": "discussion",
+  "citations": [
+   "nimmo2022",
+   "disinfolab2022",
+   "wardle2017",
+   "meta2022"
+  ],
+  "source": "Nimmo & Agranovich, 2022; Alaphilippe et al., 2022; Wardle & Derakhshan, 2017",
+  "visible_word_count": 31
+ },
+ {
+  "id": "limits",
+  "title": "Sınırlılıklar",
+  "kicker": "SINIRLILIKLAR",
+  "display_points": [
+   "Meta: tespit ve yayımlama seçilimi; tek kayıt tarihi",
+   "GDELT: sorgu başına 250 sonuç; kaynak ülke okur değildir",
+   "Otomatik konum kodlaması hata içerebilir"
+  ],
+  "takeaway": "Bulgular betimseldir; niyet veya etki iddiası yoktur.",
+  "notes": "Meta listesi bir örneklem değil, platformun tespit ve yayımlama seçimidir.\nBütün kayıtlarda tarih 27.09.2022; faaliyet zaman çizelgesi üretilemez.\nGDELT sorgusu sonuç sınırlıdır, dil ve kaynak kapsamı eşit değildir.\nOtomatik konum kodlaması doğrulama gerektirir (Hammond ve Weidmann, 2014).",
+  "cue_sentences": [
+   "Meta listesi bir örneklem değil, platformun tespit ve yayımlama seçimidir.",
+   "Bütün kayıtlarda tarih 27.09.2022; faaliyet zaman çizelgesi üretilemez.",
+   "GDELT sorgusu sonuç sınırlıdır, dil ve kaynak kapsamı eşit değildir.",
+   "Otomatik konum kodlaması doğrulama gerektirir (Hammond ve Weidmann, 2014)."
+  ],
+  "full_notes": "Bulguların sınırlarını açıkça belirtmek istiyorum. Birincisi, Meta listesi olasılıklı bir örneklem değil; platformun tespit ve yayımlama seçimini yansıtıyor. Dosyadaki bütün kayıtların tarihi aynı olduğu için faaliyetin zaman içindeki seyri çıkarılamıyor. İkincisi, GDELT DOC arayüzü her sorguda en fazla 250 makale döndürüyor; bu yüzden dönemi dilimlere bölüyor ve sınıra takılan dilimleri ayrıca işaretliyorum. GDELT’in kaynak kapsamı ülkeler ve diller arasında eşit değil ve resmî olarak son üç ayı destekliyor; 2022 penceresi için BigQuery üzerindeki GKG arşivi daha güvenilir yol. Üçüncüsü, haberin kaynak ülkesi okurun bulunduğu ülke değildir. Son olarak Hammond ve Weidmann’ın gösterdiği gibi otomatik kodlanmış konumlar hata içerebilir. Bu nedenle bulgular betimseldir; niyet, maruziyet veya etki hakkında iddia taşımaz.",
+  "seconds": 55,
+  "visual": "limits",
+  "citations": [
+   "meta2022",
+   "allen2020",
+   "gdeltdoc",
+   "hammond2014"
+  ],
+  "source": "Meta, 2022; Allen et al., 2020; Hammond & Weidmann, 2014",
+  "visible_word_count": 30
+ },
+ {
+  "id": "conclusion",
+  "title": "Sonuç: yoğun hedef, tekrarlanan adres, ölçülebilir görünürlük",
+  "kicker": "SONUÇ",
+  "display_points": [
+   "Almanya payı: %95,8 (298/311)",
+   "75 ilk etiket, birden fazla son etiketle",
+   "GDELT: haber görünürlüğünün kaynak ülke haritası"
+  ],
+  "takeaway": "Katkı: altyapı ve haber coğrafyasını kayıt düzeyinde birlikte göstermek.",
+  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket tekrar ediyor.\nAS3: GDELT haritası, vakanın haber görünürlüğünü kaynak ülke düzeyinde gösteriyor.\nSonraki adım: GKG arşiviyle 2022 penceresinin tam karşılaştırması ve içerik kodlaması.",
+  "cue_sentences": [
+   "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.",
+   "AS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket tekrar ediyor.",
+   "AS3: GDELT haritası, vakanın haber görünürlüğünü kaynak ülke düzeyinde gösteriyor.",
+   "Sonraki adım: GKG arşiviyle 2022 penceresinin tam karşılaştırması ve içerik kodlaması."
+  ],
+  "full_notes": "Araştırma sorularına dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde doksan beş virgül sekizi Almanya hedefli. İkinci soruya yanıt: altı son DNS etiketi iki yüz kırk adresi kapsıyor ve doksan üç ilk etiketin yetmiş beşi farklı son etiketlerle tekrarlanıyor; adres çeşitliliği tanınmış adların çevresinde üretilmiş görünüyor. Üçüncü soruya yanıt GDELT haritasında: vakanın hangi ülkelerin haber kaynaklarında görünür olduğunu, hedeflenen ülkelerle aynı harita üzerinde gösteriyorum. Çalışmanın katkısı, altyapı göstergelerini ve haber coğrafyasını açık paydalarla ve yeniden üretilebilir biçimde birlikte sunmak. Gelecek çalışmalar için GKG arşiviyle 2022 penceresinin tam taranması ve haber içeriklerinin iki kodlayıcıyla sınıflandırılması öneriyorum. Teşekkür ederim; sorularınızı memnuniyetle yanıtlarım.",
+  "seconds": 55,
+  "visual": "conclusion",
+  "citations": [
+   "meta2022",
+   "gdeltdoc"
+  ],
+  "source": "Meta, 2022; The GDELT Project, 2017",
+  "visible_word_count": 33
+ },
+ {
+  "id": "references",
+  "title": "Kaynakça",
+  "kicker": "KAYNAKÇA",
+  "display_points": [
+   "Veri: Meta (2022); The GDELT Project (2017)",
+   "Vaka: Alaphilippe vd. (2022); Nimmo ve Agranovich (2022)",
+   "Kuram ve yöntem: Wardle ve Derakhshan (2017); Lazer vd. (2018)"
+  ],
+  "takeaway": "Tam APA 7 künyeleri eklerdedir.",
+  "notes": "Birincil veri Meta dosyası ve GDELT arayüzüdür.\nVaka bilgisi EU DisinfoLab ve Meta raporlarından alındı.\nKuramsal çerçeve Wardle ve Derakhshan ile Lazer ve arkadaşlarına dayanıyor.\nBütün künyeler APA 7 biçiminde eklerde yer alıyor.",
+  "cue_sentences": [
+   "Birincil veri Meta dosyası ve GDELT arayüzüdür.",
+   "Vaka bilgisi EU DisinfoLab ve Meta raporlarından alındı.",
+   "Kuramsal çerçeve Wardle ve Derakhshan ile Lazer ve arkadaşlarına dayanıyor.",
+   "Bütün künyeler APA 7 biçiminde eklerde yer alıyor."
+  ],
+  "full_notes": "Kaynakçanın tamamı APA 7 biçiminde eklerde yer alıyor. Birincil veriler Meta’nın gösterge dosyası ve GDELT arayüzüdür. Vaka bilgisi EU DisinfoLab ve Meta raporlarından; kuramsal ve yöntemsel çerçeve Wardle ve Derakhshan, Lazer ve arkadaşları, Allen ve arkadaşları, Leetaru ve Schrodt ile Hammond ve Weidmann’dan alınmıştır. Teşekkür ederim.",
+  "seconds": 25,
+  "visual": "references",
+  "citations": [
+   "meta2022",
+   "gdeltdoc",
+   "disinfolab2022",
+   "nimmo2022",
+   "wardle2017",
+   "lazer2018"
+  ],
+  "source": "APA 7; tam künyeler eklerde",
+  "visible_word_count": 31
+ }
 ]

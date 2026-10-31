@@ -33,3 +33,14 @@ Eleştirideki B yolu benimsendi: GDELT karşılaştırması, kodlama ve uyum kat
 ## Sonraki sürümler için çalışma ilkesi
 
 Her yeni sav önce veri alanına, kaynak kaydına ve ölçüm kuralına bağlanmalı. Tarihsel GDELT sonucu gelirse dönem, örnekleme, tekilleştirme ve kaynak/konu coğrafyası ayrı raporlanmalı. Yeni aktör atfı, içerik taklidi veya etki savı ancak o savı doğrudan destekleyen ek kanıtla sunuma girmeli. Görsel hareket ve teknik bağlantı, veri kapsamını genişletmiş sayılmamalı.
+
+## 31 Ekim 2026: Akademik yapı ve GDELT haritası
+
+**İstek:** Sunumu gerçek bir akademik sunum yapısına kavuşturmak ve GDELT verisini haritada göstermek.
+
+- Ana akış 15 slayta çıkarıldı: Kapak (yazar/kurum alanları) · Plan · Vaka (Doppelgänger) · Kavramsal çerçeve · Üç araştırma sorusu · Veri ve yöntem · Veri hazırlığı · Bulgu 1–3 · **Bulgu 4: GDELT haber haritası** · Tartışma · Sınırlılıklar · Sonuç · Kaynakça. 810 s anlatım + 90 s pay.
+- Literatür; EU DisinfoLab ve Meta vaka raporları, Wardle ve Derakhshan (2017) çerçevesi, Leetaru ve Schrodt (2013) ile Hammond ve Weidmann (2014) GDELT kaynaklarıyla genişletildi (toplam 12 kaynak). Erişim düzeyi KAYNAKLAR.md’de yazılıdır.
+- Önceki “GDELT yalnız ileri araştırma” kararı, AS3 olarak ayrı bir ölçüm birimiyle (haber makalesi) uygulanacak biçimde güncellendi. Hedef ülke, haberin kaynak ülkesi ve haberde anılan yer ayrı katmanlarda tutulur; biri diğerine dönüştürülmez.
+- Harita üç kaynaktan veri alabilir: gömülü anlık görüntü, canlı sorgu (yerel sunucu vekili veya doğrudan API) ve elle JSON. Hiçbir durumda örnek veri gösterilmez; boş/başarısız yanıt “sıfır haber” sayılmaz.
+- Ana slayt kelime sınırı akademik içerik için 30’dan 34’e çıkarıldı; HTML okunabilirlik denetimleri (≥18 px gövde metni, taşma yok) korunur.
+- Bu ortamda GDELT’e ağ erişimi olmadığından canlı sorgu doğrulanamadı; tarayıcı ve vekil kodu yalnız sentetik test yanıtlarıyla sınandı. 2022 penceresi DOC 2.0’ın resmî üç aylık desteğinin dışındadır; veri dönmezse GKG/BigQuery yolu kullanılmalıdır.

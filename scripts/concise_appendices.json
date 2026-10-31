@@ -1,369 +1,404 @@
 [
-  {
-    "title": "Veri sözlüğü ve dönüşüm kuralları",
-    "kind": "bullets",
-    "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "bullets": [
-      "Birim, küçük harfe çevrilip tekilleştirilen tam alan adı dizesidir: 313 satır → 311 benzersiz değer.",
-      "Hedef ülke, comment alanındaki kaynak etiketidir; IP, barındırma veya uzantıdan türetilmez.",
-      "Son DNS etiketi, son noktadan sonraki dizedir. Etkin kayıt son eki veya kayıt edilebilir alan adı sınırı hesaplanmadı.",
-      "Gövde, ilk noktadan önceki DNS etiketidir. Yalnız tam dize eşitliği kullanıldı; benzerlik veya ortak operatör tahmini yapılmadı.",
-      "Bütün ds değerleri 2022-09-27. Bu alan tescil, faaliyet başlangıcı veya olay zaman çizelgesi değildir."
-    ]
-  },
-  {
-    "title": "Bütün hedef etiketleri",
-    "kind": "table",
-    "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "headers": [
-      "Kaynak hedef etiketi",
-      "Benzersiz alan adı"
-    ],
-    "rows": [
-      [
-        "Almanya",
-        "298"
-      ],
-      [
-        "Birleşik Krallık",
-        "4"
-      ],
-      [
-        "Letonya",
-        "3"
-      ],
-      [
-        "Fransa",
-        "2"
-      ],
-      [
-        "İtalya",
-        "2"
-      ],
-      [
-        "Ukrayna",
-        "1"
-      ],
-      [
-        "Çoklu hedef",
-        "1"
-      ]
-    ]
-  },
-  {
-    "title": "Son DNS etiketlerinin tam dağılımı (1/2)",
-    "kind": "table",
-    "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "headers": [
-      "Son etiket",
-      "Sayı",
-      "Liste payı"
-    ],
-    "rows": [
-      [
-        ".online",
-        "53",
-        "17,0%"
-      ],
-      [
-        ".website",
-        "50",
-        "16,1%"
-      ],
-      [
-        ".site",
-        "46",
-        "14,8%"
-      ],
-      [
-        ".space",
-        "42",
-        "13,5%"
-      ],
-      [
-        ".pw",
-        "28",
-        "9,0%"
-      ],
-      [
-        ".fun",
-        "21",
-        "6,8%"
-      ],
-      [
-        ".life",
-        "8",
-        "2,6%"
-      ],
-      [
-        ".today",
-        "8",
-        "2,6%"
-      ],
-      [
-        ".live",
-        "7",
-        "2,3%"
-      ],
-      [
-        ".com",
-        "5",
-        "1,6%"
-      ],
-      [
-        ".ltd",
-        "5",
-        "1,6%"
-      ],
-      [
-        ".co",
-        "3",
-        "1,0%"
-      ],
-      [
-        ".agency",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".cfd",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".link",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".pro",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".store",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".top",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".work",
-        "2",
-        "0,6%"
-      ],
-      [
-        ".ws",
-        "2",
-        "0,6%"
-      ]
-    ]
-  },
-  {
-    "title": "Son DNS etiketlerinin tam dağılımı (2/2)",
-    "kind": "table",
-    "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "headers": [
-      "Son etiket",
-      "Sayı",
-      "Liste payı"
-    ],
-    "rows": [
-      [
-        ".asia",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".cab",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".cam",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".cc",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".de",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".eu",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".expert",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".info",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".ink",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".llc",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".me",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".media",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".net",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".pics",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".quest",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".tech",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".tours",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".vip",
-        "1",
-        "0,3%"
-      ],
-      [
-        ".world",
-        "1",
-        "0,3%"
-      ]
-    ]
-  },
-  {
-    "title": "İlk DNS etiketi tekrarları: örnek aileler",
-    "kind": "table",
-    "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "headers": [
-      "İlk etiket",
-      "Alan adı",
-      "Farklı son etiket"
-    ],
-    "rows": [
-      [
-        "spiegel",
-        "9",
-        "9"
-      ],
-      [
-        "bild",
-        "8",
-        "8"
-      ],
-      [
-        "deknuzesrtnach",
-        "6",
-        "6"
-      ],
-      [
-        "deknzursntch",
-        "6",
-        "6"
-      ],
-      [
-        "deknzusrtnach",
-        "6",
-        "6"
-      ],
-      [
-        "dknuzsrntch",
-        "6",
-        "6"
-      ],
-      [
-        "warhehit",
-        "6",
-        "6"
-      ],
-      [
-        "whrheit",
-        "6",
-        "6"
-      ],
-      [
-        "wrhheit",
-        "6",
-        "6"
-      ],
-      [
-        "affinemaiunng",
-        "5",
-        "5"
-      ]
-    ]
-  },
-  {
-    "title": "Kaynakça / APA 7 (1/3)",
-    "kind": "references",
-    "source": "Kaynak türü ve erişim düzeyi ayrıca kayıtlıdır.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "reference_ids": [
-      "leaflet",
-      "allen2020"
-    ]
-  },
-  {
-    "title": "Kaynakça / APA 7 (2/3)",
-    "kind": "references",
-    "source": "Kaynak türü ve erişim düzeyi ayrıca kayıtlıdır.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "reference_ids": [
-      "lazer2018",
-      "meta2022"
-    ]
-  },
-  {
-    "title": "Kaynakça / APA 7 (3/3)",
-    "kind": "references",
-    "source": "Kaynak türü ve erişim düzeyi ayrıca kayıtlıdır.",
-    "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
-    "reference_ids": [
-      "naturalearth",
-      "openstreetmap"
-    ]
-  }
+ {
+  "title": "Veri sözlüğü ve dönüşüm kuralları",
+  "kind": "bullets",
+  "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "bullets": [
+   "Birim, küçük harfe çevrilip tekilleştirilen tam alan adı dizesidir: 313 satır → 311 benzersiz değer.",
+   "Hedef ülke, comment alanındaki kaynak etiketidir; IP, barındırma veya uzantıdan türetilmez.",
+   "Son DNS etiketi, son noktadan sonraki dizedir. Etkin kayıt son eki veya kayıt edilebilir alan adı sınırı hesaplanmadı.",
+   "Gövde, ilk noktadan önceki DNS etiketidir. Yalnız tam dize eşitliği kullanıldı; benzerlik veya ortak operatör tahmini yapılmadı.",
+   "Bütün ds değerleri 2022-09-27. Bu alan tescil, faaliyet başlangıcı veya olay zaman çizelgesi değildir."
+  ]
+ },
+ {
+  "title": "GDELT sorgu ve harita protokolü",
+  "kind": "bullets",
+  "source": "The GDELT Project, 2017; bu çalışmanın sorgu tasarımı.",
+  "notes": "Ek materyal; soru-cevap için. Sorgu ve pencere scripts/gdelt_common.py içinde sabittir.",
+  "bullets": [
+   "Sorgu: (doppelganger OR \"doppelgänger\" OR \"coordinated inauthentic\") (russia OR russian OR meta OR facebook) · DOC 2.0 artlist.",
+   "Pencere: 20 Eylül – 11 Ekim 2022, üç günlük dilimler; her dilim ≤ 250 makale. Sınıra ulaşan dilim ayrıca raporlanır.",
+   "Birim: URL düzeyinde tekilleştirilmiş haber. Renk = sourcecountry (yayın ülkesi); okur ya da hedef ülke değildir.",
+   "Noktalar: GKG V2Locations (BigQuery, gdelt-bq.gdeltv2.gkg_partitioned), aynı URL’ler veya başlıkta doppelgänger.",
+   "Her alımda zaman damgası, uç nokta ve SHA-256 saklanır; başarısız istek sıfır gözlem olarak kaydedilmez."
+  ]
+ },
+ {
+  "title": "Bütün hedef etiketleri",
+  "kind": "table",
+  "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "headers": [
+   "Kaynak hedef etiketi",
+   "Benzersiz alan adı"
+  ],
+  "rows": [
+   [
+    "Almanya",
+    "298"
+   ],
+   [
+    "Birleşik Krallık",
+    "4"
+   ],
+   [
+    "Letonya",
+    "3"
+   ],
+   [
+    "Fransa",
+    "2"
+   ],
+   [
+    "İtalya",
+    "2"
+   ],
+   [
+    "Ukrayna",
+    "1"
+   ],
+   [
+    "Çoklu hedef",
+    "1"
+   ]
+  ]
+ },
+ {
+  "title": "Son DNS etiketlerinin tam dağılımı (1/2)",
+  "kind": "table",
+  "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "headers": [
+   "Son etiket",
+   "Sayı",
+   "Liste payı"
+  ],
+  "rows": [
+   [
+    ".online",
+    "53",
+    "17,0%"
+   ],
+   [
+    ".website",
+    "50",
+    "16,1%"
+   ],
+   [
+    ".site",
+    "46",
+    "14,8%"
+   ],
+   [
+    ".space",
+    "42",
+    "13,5%"
+   ],
+   [
+    ".pw",
+    "28",
+    "9,0%"
+   ],
+   [
+    ".fun",
+    "21",
+    "6,8%"
+   ],
+   [
+    ".life",
+    "8",
+    "2,6%"
+   ],
+   [
+    ".today",
+    "8",
+    "2,6%"
+   ],
+   [
+    ".live",
+    "7",
+    "2,3%"
+   ],
+   [
+    ".com",
+    "5",
+    "1,6%"
+   ],
+   [
+    ".ltd",
+    "5",
+    "1,6%"
+   ],
+   [
+    ".co",
+    "3",
+    "1,0%"
+   ],
+   [
+    ".agency",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".cfd",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".link",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".pro",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".store",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".top",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".work",
+    "2",
+    "0,6%"
+   ],
+   [
+    ".ws",
+    "2",
+    "0,6%"
+   ]
+  ]
+ },
+ {
+  "title": "Son DNS etiketlerinin tam dağılımı (2/2)",
+  "kind": "table",
+  "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "headers": [
+   "Son etiket",
+   "Sayı",
+   "Liste payı"
+  ],
+  "rows": [
+   [
+    ".asia",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".cab",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".cam",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".cc",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".de",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".eu",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".expert",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".info",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".ink",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".llc",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".me",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".media",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".net",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".pics",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".quest",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".tech",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".tours",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".vip",
+    "1",
+    "0,3%"
+   ],
+   [
+    ".world",
+    "1",
+    "0,3%"
+   ]
+  ]
+ },
+ {
+  "title": "İlk DNS etiketi tekrarları: örnek aileler",
+  "kind": "table",
+  "source": "Meta, 2022; bu çalışmanın yeniden sayımı.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "headers": [
+   "İlk etiket",
+   "Alan adı",
+   "Farklı son etiket"
+  ],
+  "rows": [
+   [
+    "spiegel",
+    "9",
+    "9"
+   ],
+   [
+    "bild",
+    "8",
+    "8"
+   ],
+   [
+    "deknuzesrtnach",
+    "6",
+    "6"
+   ],
+   [
+    "deknzursntch",
+    "6",
+    "6"
+   ],
+   [
+    "deknzusrtnach",
+    "6",
+    "6"
+   ],
+   [
+    "dknuzsrntch",
+    "6",
+    "6"
+   ],
+   [
+    "warhehit",
+    "6",
+    "6"
+   ],
+   [
+    "whrheit",
+    "6",
+    "6"
+   ],
+   [
+    "wrhheit",
+    "6",
+    "6"
+   ],
+   [
+    "affinemaiunng",
+    "5",
+    "5"
+   ]
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (1/5)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "leaflet",
+   "disinfolab2022",
+   "allen2020"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (2/5)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "gdeltdoc",
+   "hammond2014"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (3/5)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "lazer2018",
+   "leetaru2013"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (4/5)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "meta2022",
+   "naturalearth"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (5/5)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "nimmo2022",
+   "openstreetmap",
+   "wardle2017"
+  ]
+ }
 ]

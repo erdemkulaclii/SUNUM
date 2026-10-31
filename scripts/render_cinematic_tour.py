@@ -10,7 +10,7 @@ from playwright.sync_api import sync_playwright
 R=Path(__file__).resolve().parents[1];O=R/'output';T=Path('/tmp/sunum-concise-tour');T.mkdir(exist_ok=True)
 frames=[];index=0;requests=[]
 with sync_playwright() as p:
- b=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox']);page=b.new_page(viewport={'width':1280,'height':720},device_scale_factor=1)
+ b=p.chromium.launch(executable_path=next(x for x in ['/usr/bin/chromium','/opt/pw-browsers/chromium'] if __import__('os').path.exists(x)),headless=True,args=['--no-sandbox']);page=b.new_page(viewport={'width':1280,'height':720},device_scale_factor=1)
  page.on('request',lambda req:requests.append(req.url))
  page.set_content((O/'AKADEMIK_ODAKLI_SUNUM.html').read_text());page.evaluate('openAtlas()')
  page.add_style_tag(content='.modal-backdrop{padding:0;background:#fff}.modal{max-width:none;max-height:none;height:100vh;border:0;padding:20px 35px;box-shadow:none}.modal-head{padding-bottom:9px;margin-bottom:12px}.modal-head h2{font-size:22px}.modal-head button{display:none}.atlas-wrap{height:430px}.atlas-note{font-size:11px!important;line-height:1.5!important}.atlas-controls{margin-bottom:8px}.atlas-focus{margin-bottom:10px!important}')

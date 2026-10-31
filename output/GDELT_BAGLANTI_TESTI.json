@@ -1,23 +1,27 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-29T00:32:43.390846+00:00",
-  "html_sha256": "60ff9da42a7c9a3a41fd5c0f9372b9e6962cd8936d9fef96db1c6c04655b0ca3",
-  "narrative_sha256": "7993a4eab759e0d82fd7e700b04ffb8954ce3427a6e60344e2f7ad4a387b0280",
-  "main_slides": 11,
-  "planned_seconds": 780,
-  "buffer_seconds": 120,
+  "checked_at_utc": "2026-10-31T07:36:19.288026+00:00",
+  "html_sha256": "edfcaffd6f53b3c27ad610a15637d5fb998b86fc70ba30b7368f6bb9528b2dd7",
+  "narrative_sha256": "0bd4dfa2e7f479eeab787c20e15e7af4f5b4705cde376861b1355588f3516bc0",
+  "main_slides": 15,
+  "planned_seconds": 810,
+  "buffer_seconds": 90,
   "authored_main_words_including_subtitle": [
-    28,
-    24,
+    31,
+    23,
+    30,
+    31,
+    26,
+    32,
     25,
     22,
     24,
     24,
-    15,
-    22,
     24,
-    27,
-    27
+    31,
+    30,
+    33,
+    31
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
   "APA_references": 6,
@@ -36,7 +40,7 @@
       "scenes": [
         {
           "scene": 1,
-          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
+          "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
           "prose_fonts_px": [
             18,
             22,
@@ -47,7 +51,7 @@
         },
         {
           "scene": 2,
-          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
+          "title": "Sunum planı",
           "prose_fonts_px": [
             24,
             32,
@@ -57,7 +61,7 @@
         },
         {
           "scene": 3,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
           "prose_fonts_px": [
             24,
             32,
@@ -67,7 +71,7 @@
         },
         {
           "scene": 4,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "Kavramsal çerçeve",
           "prose_fonts_px": [
             24,
             32,
@@ -77,7 +81,7 @@
         },
         {
           "scene": 5,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Araştırma soruları",
           "prose_fonts_px": [
             24,
             32,
@@ -87,7 +91,7 @@
         },
         {
           "scene": 6,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
           "prose_fonts_px": [
             24,
             32,
@@ -97,7 +101,7 @@
         },
         {
           "scene": 7,
-          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
             24,
             32,
@@ -107,7 +111,7 @@
         },
         {
           "scene": 8,
-          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             24,
             32,
@@ -117,7 +121,7 @@
         },
         {
           "scene": 9,
-          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
             24,
             32,
@@ -127,7 +131,7 @@
         },
         {
           "scene": 10,
-          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
             24,
             32,
@@ -137,6 +141,46 @@
         },
         {
           "scene": 11,
+          "title": "Vaka hangi ülkelerin haberlerinde görünür oldu?",
+          "prose_fonts_px": [
+            20,
+            24.8,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 12,
+          "title": "Tartışma: yerelleşmiş taklit ve görünürlük",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 13,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 14,
+          "title": "Sonuç: yoğun hedef, tekrarlanan adres, ölçülebilir görünürlük",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 15,
           "title": "Kaynakça",
           "prose_fonts_px": [
             24,
@@ -153,7 +197,7 @@
       "scenes": [
         {
           "scene": 1,
-          "title": "Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı",
+          "title": "Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü",
           "prose_fonts_px": [
             18,
             19,
@@ -164,7 +208,7 @@
         },
         {
           "scene": 2,
-          "title": "Bu liste hangi coğrafi ve yapısal örüntüleri gösteriyor?",
+          "title": "Sunum planı",
           "prose_fonts_px": [
             19,
             24,
@@ -174,7 +218,7 @@
         },
         {
           "scene": 3,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
           "prose_fonts_px": [
             19,
             24,
@@ -184,7 +228,7 @@
         },
         {
           "scene": 4,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "Kavramsal çerçeve",
           "prose_fonts_px": [
             19,
             24,
@@ -194,7 +238,7 @@
         },
         {
           "scene": 5,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Araştırma soruları",
           "prose_fonts_px": [
             19,
             24,
@@ -204,7 +248,7 @@
         },
         {
           "scene": 6,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
           "prose_fonts_px": [
             19,
             24,
@@ -214,7 +258,7 @@
         },
         {
           "scene": 7,
-          "title": "Haber adı çağrışımı, adresin yapısından ayrılmalıdır.",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
             19,
             24,
@@ -224,7 +268,7 @@
         },
         {
           "scene": 8,
-          "title": "Ölçtüğümüz şey yayımlanmış altyapı göstergeleridir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             19,
             24,
@@ -234,7 +278,7 @@
         },
         {
           "scene": 9,
-          "title": "GDELT, ayrı bir tarihsel karşılaştırma için kullanılabilir.",
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
             19,
             24,
@@ -244,7 +288,7 @@
         },
         {
           "scene": 10,
-          "title": "Vaka, Almanya ağırlığı ve tekrarlanan adres yapılarıyla tanımlanır.",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
             19,
             24,
@@ -254,6 +298,46 @@
         },
         {
           "scene": 11,
+          "title": "Vaka hangi ülkelerin haberlerinde görünür oldu?",
+          "prose_fonts_px": [
+            18,
+            19.84,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 12,
+          "title": "Tartışma: yerelleşmiş taklit ve görünürlük",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 13,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 14,
+          "title": "Sonuç: yoğun hedef, tekrarlanan adres, ölçülebilir görünürlük",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 15,
           "title": "Kaynakça",
           "prose_fonts_px": [
             19,
@@ -272,9 +356,9 @@
   "live_OSM_verified": false,
   "native_powerpoint": {
     "verified": true,
-    "main_slides": 11,
-    "total_slides": 19,
-    "pdf_pages": 19,
+    "main_slides": 15,
+    "total_slides": 26,
+    "pdf_pages": 26,
     "main_text_editable": true,
     "main_slides_have_no_raster_picture": true,
     "desktop_PowerPoint_render_verified": false

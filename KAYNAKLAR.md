@@ -1,6 +1,6 @@
 # Kaynak ve kanıt kaydı
 
-Bu sürümün nicel bulguları yalnız aşağıdaki sabit Meta CSV dosyasının yeniden analizinden gelir. Rusya bağlantısı kaynak raporlamasına aittir; bağımsız aktör atfı yapıldığı ileri sürülmez. Seçilmiş altı kaynağın APA 7 künyeleri [kaynakçada](output/APA7_KAYNAKCA.md) bulunur.
+Bu sürümün nicel bulguları yalnız aşağıdaki sabit Meta CSV dosyasının yeniden analizinden gelir. Rusya bağlantısı kaynak raporlamasına aittir; bağımsız aktör atfı yapıldığı ileri sürülmez. Kullanılan on iki kaynağın APA 7 künyeleri [kaynakçada](output/APA7_KAYNAKCA.md) bulunur.
 
 ## Birincil veri ve yeniden üretim
 
@@ -63,3 +63,19 @@ Teknik başvuru adresleri, seçilmiş ampirik kaynakçadan ayrıdır:
 ## Çıkarım sınırı
 
 Bu liste, yayımlanmış göstergelerin dağılımını gösterir. Alan adı sayısı operasyon sayısı değildir; hedef etiketi maruziyet veya ikna oranı değildir; son DNS etiketi fiyat veya barındırma ülkesi değildir; aynı ilk etiket ortak sahiplik veya operatör kanıtı değildir. Kaynakta yer almayan ülkeler için faaliyet yokluğu sonucu çıkarılamaz.
+
+
+## 31 Ekim 2026 revizyonunda eklenen kaynaklar
+
+Aşağıdaki künyeler yayıncı sayfaları ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı. Bu bulut ortamından disinfo.eu ve about.fb.com tam metinlerine erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanılır. Sunumdan önce tam metinlerin okunması önerilir.
+
+- **Alaphilippe, Machado, Miguel ve Poldi (2022), EU DisinfoLab** — kampanyanın en az Mayıs 2022’den beri sürdüğü; en az 17 medya markasının (ör. Bild, The Guardian, ANSA) taklit edildiği. https://www.disinfo.eu/doppelganger/
+- **Nimmo ve Agranovich (2022), Meta** — Rusya kaynaklı ağın öncelikle Almanya’yı, ayrıca Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı hedeflediği; 60’tan fazla taklit haber sitesi çevresinde kurulduğu. Not: yazarlar Ben Nimmo ve David Agranovich’tir.
+- **Wardle ve Derakhshan (2017), Council of Europe DGI(2017)09** — bilgi düzensizliği çerçevesi (ajan/mesaj/yorumlayıcı; oluşturma/üretim/dağıtım).
+- **Leetaru ve Schrodt (2013), ISA** — GDELT veri kümesinin tanıtımı.
+- **Hammond ve Weidmann (2014), Research & Politics 1(2), doi:10.1177/2053168014539924** — GDELT’in elle kodlanmış verilerle karşılaştırılması; otomatik konum kodlamasının doğrulama gerektirdiği. Makalenin sayısal doğruluk oranları sunumda aktarılmaz.
+- **The GDELT Project (2017), DOC 2.0 API** — artlist modu ve `sourcecountry` alanı; resmî destek son üç aydır.
+
+## GDELT haber verisi
+
+GDELT gözlemleri depoya ancak gerçek bir yanıt alındığında `research/gdelt/GDELT_HARITA_VERISI.json` olarak girer (bkz. `scripts/fetch_gdelt_map.py`). Her dilim için uç nokta, zaman damgası, dönen makale sayısı, 250 sınırına ulaşıp ulaşmadığı ve ham yanıtın SHA-256 özeti saklanır. Bu revizyon hazırlanırken çalışma ortamının ağ politikası `api.gdeltproject.org` erişimini engellediği için depoda GDELT anlık görüntüsü yoktur; sunumda GDELT sayısı uydurulmaz.

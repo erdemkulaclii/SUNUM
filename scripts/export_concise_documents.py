@@ -13,7 +13,10 @@ from docx.oxml.ns import qn
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from pypdf import PdfReader
 R=Path(__file__).resolve().parents[1];O=R/'output';INK='#14263a'
-for name,file in [('Body','DejaVuSans.ttf'),('BodyItalic','DejaVuSans-Oblique.ttf'),('BodyBold','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,'/usr/share/fonts/truetype/dejavu/'+file))
+def _font(file):
+ for cand in ['/usr/share/fonts/truetype/dejavu/'+file,'/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf','/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf']:
+  if Path(cand).is_file():return cand
+for name,file in [('Body','DejaVuSans.ttf'),('BodyItalic','DejaVuSans-Oblique.ttf'),('BodyBold','DejaVuSans-Bold.ttf')]:pdfmetrics.registerFont(TTFont(name,_font(file)))
 pdfmetrics.registerFontFamily('Body',normal='Body',italic='BodyItalic',bold='BodyBold',boldItalic='BodyItalic')
 ST={
  'title':ParagraphStyle('title',fontName='BodyBold',fontSize=24,leading=31,textColor=INK,spaceAfter=22),
@@ -38,6 +41,21 @@ def references(refs,access=False):
   if access:parts.append(para(r['kind']+' · '+r['access'],'small'))
   flow.append(KeepTogether(parts))
  return flow
+SNAP=None
+def gdelt_section():
+ sec=[PageBreak(),para('Bulgu 4 — GDELT haber görünürlüğü (AS3)','title'),para('Yöntem','h'),
+  para('GDELT DOC 2.0 artlist arayüzü (The GDELT Project, 2017), sabit sorgu “(doppelganger OR \"doppelgänger\" OR \"coordinated inauthentic\") (russia OR russian OR meta OR facebook)” ile 20 Eylül – 11 Ekim 2022 penceresinde üç günlük dilimler hâlinde sorgulanır. Her dilim en fazla 250 makale döndürür; sınıra ulaşan dilimler ayrıca raporlanır. Makaleler URL düzeyinde tekilleştirilir ve yayın ülkesine (sourcecountry) göre sayılır. Anılan yerler GDELT GKG 2.0 V2Locations alanından BigQuery ile üretilir (Leetaru ve Schrodt, 2013).'),
+  para('Ölçüm ayrımı','h'),para('Haberin kaynak ülkesi; Meta hedef etiketi, okur ülkesi veya haberde anılan yer ile aynı değişken değildir. Otomatik konum kodlaması doğrulama gerektirir (Hammond ve Weidmann, 2014).')]
+ if not SNAP:
+  return sec+[para('Durum','h'),para('Bu belge üretilirken depoda GDELT anlık görüntüsü yoktu; bu nedenle sayısal sonuç verilmez. Sonuç, python scripts/fetch_gdelt_map.py ile alınan tarihli kayıttan ya da sunum sırasında canlı sorgudan raporlanır. Başarısız veya boş yanıt sıfır haber olarak yorumlanmaz.')]
+ seen=set();cnt={}
+ for x in SNAP['articles']:
+  if x['url'] in seen:continue
+  seen.add(x['url']);k=x.get('sourcecountry') or 'Bilinmiyor';cnt[k]=cnt.get(k,0)+1
+ total=len(seen);rows=[[k,v,f'{v/total*100:.1f}'.replace('.',',')] for k,v in sorted(cnt.items(),key=lambda kv:-kv[1])[:12]]
+ w=SNAP['window']
+ return sec+[para('Sonuç','h'),para(f"Kayıt {SNAP.get('retrieved_at','')} tarihinde alındı. Pencere {w['start']} – {w['end']}; {total} tekil haber; sınıra ulaşan dilim: {SNAP.get('capped_chunks',0)}; yanıt vermeyen dilim: {SNAP.get('failed_chunks',0)}."),table(['Kaynak ülke (GDELT)','Haber','Pay (%)'],rows,[290,100,109])]
+
 def table(headers,rows,widths):
  t=Table([[para(x,'cell') for x in headers]]+[[para(x,'cell') for x in row] for row in rows],colWidths=widths,repeatRows=1,hAlign='LEFT')
  t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#e9eef3')),('LINEBELOW',(0,0),(-1,0),.8,colors.HexColor('#7b8b9b')),('LINEBELOW',(0,1),(-1,-1),.3,colors.HexColor('#d4dce4')),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),8),('RIGHTPADDING',(0,0),(-1,-1),8),('TOPPADDING',(0,0),(-1,-1),8),('BOTTOMPADDING',(0,0),(-1,-1),8)]));return t
@@ -45,7 +63,7 @@ def document(title):
  d=Document();s=d.sections[0];s.top_margin=s.bottom_margin=Cm(2);s.left_margin=s.right_margin=Cm(2.3)
  normal=d.styles['Normal'];normal.font.name='DejaVu Sans';normal.font.size=Pt(12);normal.font.color.rgb=RGBColor.from_string('14263A');normal.paragraph_format.line_spacing=1.4;normal.paragraph_format.space_after=Pt(12)
  for st in ['Title','Heading 1','Heading 2']:d.styles[st].font.name='DejaVu Sans';d.styles[st].font.color.rgb=RGBColor.from_string('14263A')
- d.core_properties.title=title;d.core_properties.subject='Tamamlanmış Meta IOC analizi; 11 ana slayt, 13 dakika anlatım ve 2 dakika oturum payı.';d.core_properties.author='SUNUM';return d
+ d.core_properties.title=title;d.core_properties.subject='Meta 2022 göstergeleri ve GDELT haber haritası; 15 ana slayt, 13,5 dakika anlatım ve 1,5 dakika oturum payı.';d.core_properties.author='SUNUM';return d
 def hyperlink(p,text,url):
  link=OxmlElement('w:hyperlink');link.set(qn('r:id'),p.part.relate_to(url,RT.HYPERLINK,is_external=True));run=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'174B78');pr.append(color);run.append(pr);tx=OxmlElement('w:t');tx.text=text;run.append(tx);link.append(run);p._p.append(link)
 def word_refs(d,refs):
@@ -58,28 +76,30 @@ def word_refs(d,refs):
    elif tok:p.add_run(html.unescape(tok)).italic=italic
   p.add_run(' ');hyperlink(p,r['url'],r['url'])
 def main():
+ global SNAP
+ sp=R/'research/gdelt/GDELT_HARITA_VERISI.json';SNAP=json.loads(sp.read_text()) if sp.is_file() else None
  O.mkdir(exist_ok=True);N=json.loads((R/'scripts/concise_narrative.json').read_text());F=json.loads((R/'scripts/concise_references.json').read_text());A=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());f,a,src=(A[k] for k in ['findings','audit','source'])
- assert len(N)==11 and sum(s['seconds'] for s in N)==780 and len(F)==6
- title='Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı'
- cueflow=[];md=[f'# {title}','','11 ana slayt · 13 dakika planlanan anlatım · 2 dakika soru ve geçiş payı.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
+ assert len(N)==15 and sum(s['seconds'] for s in N)==810 and len(F)==12
+ title=N[0]['title']
+ cueflow=[];md=[f'# {title}','','15 ana slayt · 13 dk 30 sn planlanan anlatım · 1 dk 30 sn soru ve geçiş payı.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
  cuedoc=document(title+' — Sunucu kartları');fullword=document(title+' — İsteğe bağlı prova metni');fullword.add_heading(title,0)
- intro='İsteğe bağlı prova metni. 15 dakikalık oturumun 13 dakikası anlatıma, 2 dakikası soru ve geçişlere ayrılmıştır. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
+ intro='İsteğe bağlı prova metni. 15 dakikalık oturumun 13,5 dakikası anlatıma, 1,5 dakikası soru ve geçişlere ayrılmıştır. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
  fullword.add_paragraph(intro);fullflow=[para(title,'title'),para('İsteğe bağlı prova metni','h'),para(intro)];elapsed=0
  for i,s in enumerate(N):
   end=elapsed+s['seconds'];slot=f'{stamp(elapsed)}–{stamp(end)}';heading=f'{i+1:02d}. {s["title"]}';cues=s['cue_sentences'];assert 3<=len(cues)<=4
   if i:cueflow.append(PageBreak());cuedoc.add_page_break()
-  cueflow += [para(f'SUNUCU KARTI {i+1:02d} / 11 · {slot}','small'),para(s['title'],'title')];cuedoc.add_paragraph(f'SUNUCU KARTI {i+1:02d} / 11 · {slot}',style='Subtitle');cuedoc.add_heading(s['title'],0)
+  cueflow += [para(f'SUNUCU KARTI {i+1:02d} / {len(N)} · {slot}','small'),para(s['title'],'title')];cuedoc.add_paragraph(f'SUNUCU KARTI {i+1:02d} / {len(N)} · {slot}',style='Subtitle');cuedoc.add_heading(s['title'],0)
   for cue in cues:
    cueflow.append(para(cue,'cue'));p=cuedoc.add_paragraph(cue);p.paragraph_format.space_after=Pt(20)
    for run in p.runs:run.font.size=Pt(16)
   cueflow += [Spacer(1,18),para('Ana mesaj: '+s['takeaway']),para('Atıf: '+s['source'],'small')];cuedoc.add_paragraph('Ana mesaj: '+s['takeaway']);cuedoc.add_paragraph('Atıf: '+s['source'],style='Caption')
   fullflow += [para(heading+' · '+slot,'h'),para(s['full_notes']),para('Atıf: '+s['source'],'small')];fullword.add_heading(heading+' · '+slot,1);fullword.add_paragraph(s['full_notes']);fullword.add_paragraph('Atıf: '+s['source'],style='Caption')
   md += [f'## {heading} · {slot}','']+['- '+x for x in cues]+['','**Ana mesaj:** '+s['takeaway'],'','**Atıf:** '+s['source'],''];elapsed=end
- md += ['## Oturum payı','','13:00–15:00: soru, geçiş ve süre tamponu. İleri araştırma slaydı, tamamlanmış GDELT bulgusu içermez.','']
+ md += ['## Oturum payı','','13:30–15:00: soru, geçiş ve süre tamponu. GDELT harita slaydındaki sayılar, sunum anında yüklenen veri kaydına aittir; tarihini ve kaynağını belirtin.','']
  word_refs(fullword,F);fullflow += [PageBreak()]+references(F)
  pdf('SUNUCU_KARTLARI.pdf',cueflow,title+' — Sunucu kartları');cuedoc.save(O/'SUNUCU_KARTLARI.docx');pdf('KONUSMA_METNI_15_DK.pdf',fullflow,title+' — İsteğe bağlı prova metni');fullword.save(O/'KONUSMA_METNI_15_DK.docx');(O/'KONUSMACI_NOTLARI.md').write_text('\n'.join(md),encoding='utf8');pdf('APA7_KAYNAKCA.pdf',references(F,True),title+' — APA 7 kaynakça')
  abstract='Bu çalışma, Meta’nın 27 Eylül 2022 tarihli koordineli sahte davranış gösterge dosyasındaki alan adlarını hedef coğrafyası ve sözcüksel yapı bakımından betimsel olarak inceler. 350 ham kayıttan 313 alan adı satırı seçilmiş, iki yinelenen değer çıkarılarak 311 benzersiz alan adı elde edilmiştir. Almanya hedefli 298 alan adı listenin %95,8’ini oluşturur. En sık altı son DNS etiketi 240 alan adını (%77,2) kapsar ve bu kayıtların tamamı Almanya hedeflidir. 93 farklı ilk DNS etiketinden 75’i birden fazla son etiketle kullanılır; bu gruplar 293 alan adını kapsar. Katkı, hedef ülke yoğunlaşmasını ve adres yapısındaki tekrarları aynı kaynak kayıtları üzerinde yeniden üretilebilir biçimde birlikte göstermektir. Sonuçlar yayımlanan gösterge listesiyle sınırlıdır; operasyon sayısı, kullanıcı maruziyeti veya kamuoyu etkisi ölçülmemiştir.'
- dossier=[para(title,'title'),para('Araştırma dosyası — tamamlanmış veri analizi','h'),para('Özet','h'),para(abstract),para('Anahtar sözcükler: OSINT; koordineli sahte davranış; alan adı; DNS; hedef coğrafyası; kaynak eleştirisi.','small'),para('Araştırma sorusu','h'),para('Yayımlanmış bu gösterge listesinde hedef ülke etiketleri ile alan adlarının sözcüksel yapısı nasıl bir örüntü oluşturur?'),para('Kapsam ve kaynak atfı','h'),para('İnceleme, dosyanın alan adı alt kümesinin ikincil analizidir. Rusya bağlantısı kaynak raporlamasına dayanır; bağımsız aktör atfı yapılmaz. Dosyanın başlığında Çin ve Rusya birlikte geçmektedir; bulgular, incelenen alan adı kayıtlarıyla sınırlandırılır.')]
+ dossier=[para(title,'title'),para('Araştırma dosyası — tamamlanmış veri analizi','h'),para('Özet','h'),para(abstract),para('Anahtar sözcükler: OSINT; koordineli sahte davranış; alan adı; DNS; hedef coğrafyası; kaynak eleştirisi.','small'),para('Araştırma sorusu','h'),para('AS1: Yayımlanan göstergeler hangi ülkeleri hedef olarak etiketliyor? AS2: Alan adları ilk ve son DNS etiketleri bakımından nasıl bir yapı izliyor? AS3: Vaka ve kaldırma duyurusu hangi ülkelerin haber kaynaklarında görünür oldu (GDELT)?'),para('Kapsam ve kaynak atfı','h'),para('İnceleme, dosyanın alan adı alt kümesinin ikincil analizidir. Rusya bağlantısı kaynak raporlamasına dayanır; bağımsız aktör atfı yapılmaz. Dosyanın başlığında Çin ve Rusya birlikte geçmektedir; bulgular, incelenen alan adı kayıtlarıyla sınırlandırılır.')]
  dossier += [PageBreak(),para('Veri kökeni ve yeniden üretim','title'),reference(next(r for r in F if r['id']=='meta2022')),para('Sabit kaynak commit’i: '+src['commit'],'small'),para('Ham dosyanın SHA-256 özeti: '+src['sha256'],'small'),table(['Aşama','Kayıt sayısı'],[['Ham dosya',a['raw_records']],['Alan adı satırı',a['domain_rows']],['Çıkarılan tekrar',a['duplicate_rows_removed']],['Benzersiz alan adı',a['unique_domains']],['CIB bağlantısı (ayrı birim)',a['raw_record_types']['cib_url']],['Telegram bağlantısı (ayrı birim)',a['raw_record_types']['telegram_url']]],[360,139]),para('Tekilleştirme ve izlenebilirlik','h'),para('Alan adı dizilerinin çevresindeki boşluklar çıkarılır ve harfler küçültülür; tam dize eşitliğine göre tekilleştirilir. Tekrarlanan iki değer lnruzdeknn[.]online ve lrneuzdenken[.]online’dır. Hedef ülke etiketleri, kaynak yorum alanından alınır.'),para('Her gösterge için kaynak kayıt sırası ve fiziksel CSV satır sonu korunur. Yeniden üretim komutu: python scripts/analyze_ioc_structure.py. Hesaplamalar ağ isteği yapmaz. Kanıt dosyası: output/IOC_YAPISAL_KANIT.csv; toplu hesap: output/IOC_YAPISAL_ANALIZ.json.','small')]
  dossier += [PageBreak(),para('Ölçüm tanımları','title'),table(['Değişken','İşlemsel tanım'],[['Analiz birimi','Benzersiz, küçük harfe dönüştürülmüş tam alan adı dizisi.'],['Hedef ülke','Kaynağın yorum alanındaki açık hedef etiketi; DNS uzantısından veya IP adresinden çıkarılmaz.'],['Son DNS etiketi','Son noktadan sonraki tam metin; etkin genel son ek veya kaydedilebilir alan adı sınırı hesaplanmaz.'],['İlk DNS etiketi','İlk noktadan önceki tam metin; yalnız tam dize eşitliği kullanılır.'],['Çoklu son etiket grubu','Aynı ilk DNS etiketinin birden fazla farklı son DNS etiketiyle kullanıldığı grup.'],['ds tarihi','Kaynak kayıt tarihi. Faaliyet başlangıcı, tescil tarihi veya haber yayın tarihi olarak yorumlanmaz.']],[125,374]),para('Örnek ayrıştırma','h'),para('theguardian[.]co[.]com → ilk etiket: theguardian; ara etiket: co; son etiket: com. Bu kayıt son etiket tablosunda com kategorisindedir. dailymail[.]top → ilk etiket: dailymail; son etiket: top.'),para('Tanıdık bir dizeyle eşleşmek; yayıncı kimliğini, içerik taklidini, ortak mülkiyeti veya operatörü doğrulamaz. Fiyat ve barındırma ülkesi bu değişkenlerden ölçülmemiştir.')]
  c=f['target_country_counts'];labels={'Germany':'Almanya','UK':'Birleşik Krallık','France':'Fransa','Italy':'İtalya','Latvia':'Letonya','Ukraine':'Ukrayna','Multiple':'Çoklu hedef'}
@@ -87,13 +107,14 @@ def main():
  dossier += [PageBreak(),para('Bulgu 2 — son etiket yoğunlaşması','title'),para('39 farklı son DNS etiketinden en sık altısı 240 alan adını kapsar: 240/311 = %77,2. Bu 240 kaydın tamamı kaynakta Almanya hedefli olarak etiketlenmiştir.'),table(['Son DNS etiketi','Alan adı','Pay (%)'],[[x['last_dns_label'],x['domain_count'],f"{x['share_percent']:.2f}".replace('.',',')] for x in f['top_six_last_dns_labels']],[290,100,109]),para('Yorum','h'),para('Hedef yoğunlaşmasına belirli son etiketlerin yoğun kullanımı eşlik eder. Buradaki ölçüm adres yapısına aittir; fiyat, barındırma ülkesi, tescil tarihi veya altyapı sahipliği incelenmemiştir.'),para('Tam dağılım: IOC_SON_ETIKET_DAGILIMI.csv. Ülke × son etiket çapraz tablosu: IOC_HEDEF_SON_ETIKET.csv.','small')]
  fam={r['first_dns_label']:r for r in A['first_label_families']}
  dossier += [PageBreak(),para('Bulgu 3 — ilk etiketin tekrarı','title'),para('311 alan adında 93 farklı ilk DNS etiketi bulunur. Bunların 75’i birden fazla son etiketle yer alır. Bu gruplar 293 adresi, yani listenin %94,2’sini kapsar. Kalan 18 grup tek bir alan adından oluşur.'),table(['İlk DNS etiketi','Alan adı','Farklı son etiket'],[[k,fam[k]['domain_count'],fam[k]['distinct_last_label_count']] for k in ['spiegel','bild','dailymail']],[260,110,129]),para('Yorum','h'),para('Adres çeşitliliğinin büyük bir bölümü yinelenen ilk etiketler çevresinde oluşur. Ölçüm, tam dize eşitliğine dayandığı için benzer yazımları birleştiren bir sınıflandırıcı içermez. Sözcüksel tekrar, ortak sahiplik veya operatör kanıtı olarak kullanılmaz.'),para('Tam 93 grup: IOC_GOVDE_AILELERI.csv. Her grubun üyeleri ve kaynak kayıt sıraları korunur.','small'),para('Sonuç','h'),para('Bu vaka, hedef etiketlerinde Almanya ağırlığı ve farklı son DNS etiketleri üzerinde yinelenen ilk etiketlerle tanımlanır. Çalışmanın katkısı, hedef coğrafyasıyla sözcüksel yapıyı aynı kayıt düzeyinde birlikte ve denetlenebilir biçimde göstermektir.')]
+ dossier += gdelt_section()
  dossier += [PageBreak(),para('Geçerlilik ve araştırma sınırları','title'),para('Seçilim ve genelleme','h'),para('Gösterge listesi olasılıklı bir operasyon örneklemi değildir. Bulgular, Avrupa’daki bütün operasyonlara veya toplumsal etkilere genellenmez. Alan adı sayısı; operasyon, içerik, kullanıcı veya maruziyet sayısıyla aynı ölçüm değildir (Allen et al., 2020).'),para('Zaman çözünürlüğü','h'),para('350 ham kaydın ve 311 benzersiz alan adının tamamında ds = 2022-09-27 bulunur. Bu alandan faaliyet zaman çizelgesi, büyüme eğrisi veya önce–sonra karşılaştırması üretilemez.'),para('Ad, içerik ve atıf','h'),para('Lazer ve arkadaşlarının (2018) haber biçimi ile doğrulama süreçlerini ayıran kavramsal tartışması, tanıdık adların neden dikkat çektiğini açıklamak için kullanılmıştır. Burada web içeriği, niyet ve kullanıcı etkisi kodlanmamıştır. Aktör bağlantısı Meta’nın raporlamasına ait olarak sunulur.'),para('İleri araştırma — GDELT','h'),para('GDELT ile ayrı bir haber görünürlüğü araştırması kurulabilir. 2022 vakası için aynı dönemi kapsayan tarihsel derlem ve açık kaynak kapsamı gerekir. Haber kaynağının ülkesi ile haberde anılan yerler ayrı değişkenler olmalıdır. Güncel haber seçkisi, 2022 karşılaştırmasının yerine geçmez. Bu karşılaştırma tamamlanmış bir sonuç olarak bu çalışmaya dahil edilmemiştir.'),para('Sunum planı','h'),para('11 ana slayt, 780 saniye (13 dakika) planlanan anlatım ve 120 saniye soru/geçiş payı. Ek tablolar ve tam kaynakça, ana anlatının dışında soru–cevap için tutulur.')]
  dossier += [PageBreak()]+references(F,True);pdf('AKADEMIK_ARASTIRMA_DOSYASI.pdf',dossier,title+' — Araştırma dosyası')
  report={}
  for name in ['SUNUCU_KARTLARI.pdf','KONUSMA_METNI_15_DK.pdf','APA7_KAYNAKCA.pdf','AKADEMIK_ARASTIRMA_DOSYASI.pdf']:
   reader=PdfReader(O/name);texts=[p.extract_text() or '' for p in reader.pages];assert all(len(t.strip())>40 for t in texts),(name,'empty page');report[name]={'pages':len(reader.pages),'text_selectable':True,'characters':sum(map(len,texts))}
- assert report['SUNUCU_KARTLARI.pdf']['pages']==11
+ assert report['SUNUCU_KARTLARI.pdf']['pages']==15
  for name in ['SUNUCU_KARTLARI.docx','KONUSMA_METNI_15_DK.docx']:
-  doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_11_sections_present':True,'paragraphs':len(doc.paragraphs)}
- report.update({'main_slides':11,'planned_talk_seconds':780,'session_buffer_seconds':120,'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
+  doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_15_sections_present':True,'paragraphs':len(doc.paragraphs)}
+ report.update({'main_slides':15,'planned_talk_seconds':810,'session_buffer_seconds':90,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

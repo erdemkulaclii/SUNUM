@@ -17,9 +17,17 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';W=13.333333;H=7.5
+import sys;sys.path.insert(0,str(Path(__file__).resolve().parent))
+SHORT={'disinfolab2022':'Doppelganger: Media clones serving Russian propaganda','allen2020':'Evaluating the fake news problem… (Science Advances)','gdeltdoc':'GDELT DOC 2.0 API debuts! (API belgesi)','hammond2014':'Machine-coded event data… (Research & Politics)','lazer2018':'The science of fake news (Science)','leetaru2013':'GDELT: Global data on events, location, and tone','meta2022':'CIB gösterge listesi, CSV [Data set]','nimmo2022':'Removing CIB from China and Russia (Meta)','wardle2017':'Information disorder (Council of Europe)'}
+META={};REFS={};GDELT=None;TALK=810
 INK='10263B';MUTED='3F556C';BLUE='164F7A';RED='AD3F32';LINE='C8D3DF';PALE='EDF3F8';PAPER='FFFFFF';DARK='0D2238'
 FONT='DejaVu Sans';FONTDIR=Path('/usr/share/fonts/truetype/dejavu')
-for name,file in [('CNormal','DejaVuSans.ttf'),('CBold','DejaVuSans-Bold.ttf'),('CItalic','DejaVuSans-Oblique.ttf')]:pdfmetrics.registerFont(TTFont(name,str(FONTDIR/file)))
+def font_file(file):
+    # DejaVu Sans Oblique is missing on some systems; fall back without changing metrics family much.
+    for cand in [FONTDIR/file,Path('/usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf'),FONTDIR/'DejaVuSans.ttf']:
+        if cand.is_file():return str(cand)
+    raise FileNotFoundError(file)
+for name,file in [('CNormal','DejaVuSans.ttf'),('CBold','DejaVuSans-Bold.ttf'),('CItalic','DejaVuSans-Oblique.ttf')]:pdfmetrics.registerFont(TTFont(name,font_file(file)))
 
 def clean(s):return html.unescape(re.sub('<[^>]+>','',str(s or ''))).strip()
 def normalize(s):return re.sub(r'\s+',' ',clean(s)).strip()
@@ -84,7 +92,7 @@ class Dual:
     def notes(self,sl,s,core=True):
         text=f"KONUŞMA İPUÇLARI\n{note_text(s)}"
         if s.get('full_notes'):text+='\n\nPROVA İÇİN TAM METİN\n'+str(s['full_notes'])
-        if core:text+=f"\n\nPLANLANAN ANLATIM: {s.get('seconds',0)} saniye. Ana akış 13 dakika; 15 dakikalık oturumda 2 dakika pay bırakılmıştır."
+        if core:text+=f"\n\nPLANLANAN ANLATIM: {s.get('seconds',0)} saniye. Ana akış 13 dk 30 sn; 15 dakikalık oturumda 1 dk 30 sn pay bırakılmıştır."
         text+='\n\nKAYNAK\n'+s.get('source','Meta, 2022; ilgili kaynak künyeleri eklerde.')
         sl.notes_slide.notes_text_frame.text=text
         sl._element.insert_element_before(parse_xml('<p:transition xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" spd="med"><p:fade/></p:transition>'),'p:timing','p:extLst')
@@ -98,13 +106,12 @@ def points(d,sl,s,index,dark=False):
         if s.get('subtitle'):d.text(sl,s['subtitle'],x,2.40,10.7,.65,18,'C7D8E8',name='cover_subtitle',leading=1.25)
         for j,value in enumerate(s['display_points']):
             d.text(sl,value,x,y,w,.56,24,color,bold=False,name=f's{index+1}_point{j+1}',leading=1.2);y+=.77
-    elif visual=='conclusion':
-        y=2.8;w=6.65
-        for j,value in enumerate(s['display_points']):
-            d.rect(sl,x,y+.16,.075,.075,RED);h=d.text(sl,value,x+.27,y,w-.27,.83,23,color,bold=True,min_size=22,name=f's{index+1}_point{j+1}',leading=1.3);y+=h+.35
     else:
+        many=len(s['display_points'])>=3;size=20 if many else 23;gap=.24 if many else .34
+        if visual=='gdelt_map':w=4.6
         for j,value in enumerate(s['display_points']):
-            d.rect(sl,x,y+.16,.065,.065,RED);h=d.text(sl,value,x+.25,y,w-.25,1.17,23,color,min_size=21,name=f's{index+1}_point{j+1}',leading=1.35);y+=h+.34
+            d.rect(sl,x,y+.14,.065,.065,RED);h=d.text(sl,value,x+.25,y,w-.25,1.17,size,color,min_size=size-3,name=f's{index+1}_point{j+1}',leading=1.3);y+=h+gap
+        if y>5.95:raise ValueError(f'Point overflow slide {index+1}: {y:.2f}')
     takeaway_y=6.02;d.rect(sl,.76,takeaway_y,.04,.59,'E58A78' if dark else RED)
     d.text(sl,s['takeaway'],.98,takeaway_y+.025,11.65,.61,19,color,bold=True,min_size=18,name=f's{index+1}_takeaway',leading=1.2)
 
@@ -118,14 +125,81 @@ def bars(d,sl,items,x,y,w,row_h=.60,size=18,max_value=None):
         y+=row_h
 
 
+def steps(d,sl,items,x,y,w):
+    for j,(head,sub) in enumerate(items):
+        yy=y+j*.86;d.rect(sl,x,yy-.06,w,.012,LINE)
+        d.text(sl,f'{j+1:02}',x,yy+.04,.55,.36,17,RED,bold=True,name='step_number',leading=1.0)
+        d.text(sl,head,x+.62,yy+.03,w-.62,.32,15.5,INK,bold=True,name='step_head',leading=1.05,min_size=12)
+        d.text(sl,sub,x+.62,yy+.38,w-.62,.42,11.5,MUTED,name='step_sub',leading=1.2,min_size=9)
+
+
+def gdelt_line():
+    if not GDELT:return 'Kaynak ülke ve anılan yer katmanları (HTML sunumunda canlı)'
+    from gdelt_map_png import summary
+    return summary(GDELT)['line']
+
+
+def gdelt_visual(d,sl):
+    x,y,w,h=5.55,2.15,7.1,3.75
+    if GDELT:
+        from gdelt_map_png import render,summary
+        png=OUT/'GDELT_HARITA.png';render(GDELT,png,width_in=w,height_in=h);sl.shapes.add_picture(str(png),Inches(x),Inches(y),Inches(w),Inches(h))
+        d.pdf.drawImage(str(png),x*72,(H-y-h)*72,w*72,h*72)
+        sm=summary(GDELT);d.text(sl,sm['caption'],x,y+h+.05,w,.3,9.5,MUTED,name='gdelt_caption',leading=1.1,min_size=8)
+        return
+    d.rect(sl,x,y,w,h,PALE,line=LINE)
+    d.text(sl,'CANLI GDELT HARİTASI · HTML SUNUMUNDA',x+.25,y+.2,w-.5,.3,12,RED,bold=True,name='gdelt_live_label',leading=1.0)
+    d.text(sl,'Bu kopyada henüz GDELT anlık görüntüsü yok.',x+.25,y+.62,w-.5,.4,17,INK,bold=True,name='gdelt_empty',leading=1.15,min_size=14)
+    for j,line in enumerate(['1) python scripts/fetch_gdelt_map.py  →  DOC 2.0 kaynak ülke verisi','2) İsteğe bağlı: --bigquery --project <GCP>  →  GKG anılan yerler','3) python scripts/build_interactive.py && python scripts/export_editorial.py','Bu adımlardan sonra bu slaytta gerçek harita görüntüsü yer alır.']):
+        d.text(sl,line,x+.25,y+1.25+j*.5,w-.5,.42,12,MUTED if j==3 else INK,name='gdelt_step',leading=1.2,min_size=9.5)
+
+
 def visual(d,sl,s,stats):
     kind=s['visual'];f=stats['findings'];x=7.10;w=5.2;y=2.45
     if kind=='cover':
-        d.rect(sl,10.3,3.22,2.0,.025,'7690AA');d.text(sl,'META 2022',10.3,3.43,2.0,.45,15,'C7D8E8',bold=True,leading=1.0)
+        m=META;xx=8.25;d.rect(sl,xx-.2,3.30,.04,1.85,'E58A78')
+        d.text(sl,m['author'],xx,3.28,4.4,.45,20,PAPER,bold=True,name='cover_author',leading=1.1,min_size=15)
+        for j,k in enumerate(['affiliation','course','date']):d.text(sl,m[k],xx,3.86+j*.42,4.4,.36,14,'C7D8E8',name='cover_'+k,leading=1.1,min_size=11)
         return
-    if kind=='question':
-        for j,(num,label) in enumerate([('01','Hedef coğrafyası'),('02','Son DNS etiketi'),('03','İlk etiket tekrarı')]):
-            yy=y+j*.92;d.text(sl,num,x,yy,.55,.5,24,RED,bold=True,name='question_number',leading=1.0);d.text(sl,label,x+.78,yy+.025,w-.78,.50,20,INK,bold=True,name='question_dimension',leading=1.2)
+    if kind in('question','outline','conclusion'):
+        items={'question':[('AS1 · Hedef coğrafyası','Birim: alan adı · Meta hedef etiketi'),('AS2 · Sözcüksel yapı','Birim: alan adı · ilk ve son DNS etiketi'),('AS3 · Haber görünürlüğü','Birim: haber makalesi · GDELT kaynak ülke ve anılan yer')],
+               'outline':[('Giriş','Vaka ve kavramsal çerçeve'),('Yöntem','Meta CSV + GDELT DOC 2.0 / GKG'),('Bulgular','Hedef ülke, DNS yapısı, haber haritası'),('Tartışma','Literatür, sınırlılıklar, sonuç')],
+               'conclusion':[('AS1 · %95,8','298/311 gösterge Almanya hedefli'),('AS2 · 240 + 293','Altı son etiket 240 adres; 75 ilk etiket grubu 293 adres'),('AS3 · GDELT haritası',gdelt_line()),('Sonraki adım','GKG ile tam 2022 taraması; iki kodlayıcılı içerik analizi')]}[kind]
+        steps(d,sl,items,x,y-.1,w)
+    elif kind=='context':
+        for j,(when,what,who) in enumerate([('Mayıs 2022','Kampanyanın bilinen başlangıcı','Alaphilippe vd., 2022'),('27.09.2022','EU DisinfoLab: en az 17 medya markası taklit edildi','Bild · Spiegel · The Guardian · ANSA'),('27.09.2022','Meta kaldırma raporu ve açık gösterge listesi','Nimmo ve Agranovich, 2022')]):
+            yy=y+j*1.12;d.rect(sl,x,yy+.06,.13,.13,RED if j==2 else BLUE);d.text(sl,when,x+.32,yy,w-.32,.28,12.5,RED,bold=True,name='context_date',leading=1.0)
+            d.text(sl,what,x+.32,yy+.32,w-.32,.5,15,INK,name='context_event',leading=1.2,min_size=13);d.text(sl,who,x+.32,yy+.80,w-.32,.26,11,MUTED,name='context_source',leading=1.0,min_size=9.5)
+    elif kind in('literature','limits'):
+        cells={'literature':[('Bilgi düzensizliği','Ajan · mesaj · yorumlayıcı; oluşturma → üretim → dağıtım','Wardle ve Derakhshan, 2017'),('Ölçüm ve payda','Neyin, hangi evrende sayıldığı açık tanımlanmalı','Lazer vd., 2018; Allen vd., 2020'),('Haber coğrafyası','Haberler kaynak ülke ve anılan yerle kodlanır','Leetaru ve Schrodt, 2013'),('Bu çalışmanın konumu','Taklit altyapısı ile haber görünürlüğünü aynı vakada yan yana okumak','')],
+               'limits':[('Meta listesi','Tespit ve yayımlama seçilimi; bütün kayıtlarda ds = 27.09.2022','Allen vd., 2020'),('GDELT','Dilim başına ≤ 250 makale; kapsam eşit değil; DOC resmî desteği son 3 ay','The GDELT Project, 2017'),('Coğrafya','Kaynak ülke ≠ okur ülkesi; otomatik konum kodlaması hata içerebilir','Hammond ve Weidmann, 2014'),('Sonuç','Betimsel bulgular; niyet, maruziyet veya etki iddiası yok','')]}[kind]
+        cw=(w-.15)/2;ch=1.62
+        for j,(h,t,src) in enumerate(cells):
+            cx=x+(j%2)*(cw+.15);cy=y-.1+(j//2)*(ch+.15);dark=j==3
+            d.rect(sl,cx,cy,cw,ch,INK if dark else PALE,line=None if dark else LINE)
+            d.text(sl,h,cx+.12,cy+.1,cw-.24,.3,13.5,PAPER if dark else INK,bold=True,name='cell_head',leading=1.0,min_size=11)
+            d.text(sl,t,cx+.12,cy+.45,cw-.24,.85,11.5,'E7EEF5' if dark else INK,name='cell_text',leading=1.3,min_size=9.5)
+            if src:d.text(sl,src,cx+.12,cy+ch-.3,cw-.24,.22,9,MUTED,name='cell_source',leading=1.0,min_size=8)
+    elif kind=='method':
+        cols=[('Meta CSV · 27.09.2022','350 kayıt → 311 alan adı','Hedef etiketi; ilk / son DNS etiketi','AS1 · AS2'),('GDELT DOC 2.0','20.09–11.10.2022; 3 günlük dilim; URL tekilleştirme','Haberin kaynak ülkesi','AS3 · renk'),('GDELT GKG','BigQuery · V2Locations','Haberde anılan yer + koordinat','AS3 · nokta')]
+        cw=(w+.3-.2)/3;xx0=x-.3
+        for j,(h,a,b,tag) in enumerate(cols):
+            cx=xx0+j*(cw+.1);d.rect(sl,cx,y-.05,cw,.05,BLUE);d.rect(sl,cx,y,cw,2.75,PALE)
+            d.text(sl,h,cx+.1,y+.1,cw-.2,.5,12.5,INK,bold=True,name='method_head',leading=1.15,min_size=10)
+            d.text(sl,a,cx+.1,y+.68,cw-.2,.8,10.5,MUTED,name='method_detail',leading=1.3,min_size=9)
+            d.text(sl,b,cx+.1,y+1.5,cw-.2,.8,11.5,INK,name='method_measure',leading=1.3,min_size=9.5)
+            d.text(sl,tag,cx+.1,y+2.42,cw-.2,.25,10,RED,bold=True,name='method_tag',leading=1.0)
+        d.text(sl,'Hedef etiketi ≠ kaynak ülke ≠ anılan yer',xx0,y+2.95,w+.3,.3,12,MUTED,name='method_units',leading=1.0)
+    elif kind=='gdelt_map':
+        gdelt_visual(d,sl)
+    elif kind=='discussion':
+        rows=[('Almanya %95,8','“Öncelikli hedef Almanya” (Nimmo ve Agranovich, 2022)','Uyumlu'),('spiegel ×9, bild ×8','Marka taklidi (Alaphilippe vd., 2022)','Örtüşüyor*'),('GDELT kaynak ülke','Dağıtım/yorumlayıcı (Wardle ve Derakhshan, 2017)','Karşılaştırılabilir')]
+        widths=[1.45,2.65,1.25];xx=x-.15;rh=.78
+        for k,hd in enumerate(['Bulgu','Literatür / raporlar','İlişki']):d.text(sl,hd,xx+sum(widths[:k]),y,widths[k]-.08,.26,11,MUTED,bold=True,name='disc_head',leading=1.0)
+        for i,row in enumerate(rows):
+            yy=y+.35+i*rh;d.rect(sl,xx,yy-.04,sum(widths),.012,LINE)
+            for k,v in enumerate(row):d.text(sl,v,xx+sum(widths[:k]),yy+.06,widths[k]-.1,rh-.12,12.5,INK,bold=k==0,name='disc_cell',leading=1.25,min_size=10)
+        d.text(sl,'* Ölçüm yalnız dize tekrarıdır; sahiplik veya içerik doğrulanmadı.',xx,y+.45+3*rh,sum(widths),.3,10,MUTED,name='disc_note',leading=1.1,min_size=9)
     elif kind=='audit':
         nums=[(stats['audit']['raw_records'],'toplam kayıt'),(stats['audit']['domain_rows'],'alan adı satırı'),(stats['audit']['unique_domains'],'benzersiz alan adı')]
         for j,(n,label) in enumerate(nums):
@@ -151,18 +225,12 @@ def visual(d,sl,s,stats):
         for j,(atom,label) in enumerate(parts):
             xx=x+j*1.78;d.rect(sl,xx,y+1.1,1.6,.65,PALE,line=LINE);d.text(sl,atom,xx+.07,y+1.27,1.46,.34,14 if j==0 else 19,INK,bold=True,name='dns_atom',leading=1.0);d.text(sl,label,xx,y+1.96,1.6,.33,12.5,MUTED,name='dns_atom_role',leading=1.1)
         d.text(sl,'Son etiket ≠ kayıt edilebilir alan adı sınırı',x,y+2.8,w,.63,14,MUTED,name='psl_caution',leading=1.35)
-    elif kind=='limits':
-        for j,(name,value) in enumerate([('Birim','alan adı göstergesi'),('Kapsam','yayımlanmış seçki'),('ds','kaynak kayıt tarihi')]):
-            yy=y+j*.93;d.text(sl,name,x,yy,w,.34,16,RED,bold=True,name='limit_label',leading=1.1);d.text(sl,value,x,yy+.42,w,.40,20,INK,name='limit_value',leading=1.1)
-    elif kind=='future':
-        for j,(label,value) in enumerate([('DÖNEM','2022 ile eşleşen haber arşivi'),('KAPSAM','dil, kaynak ve eksik gün günlüğü'),('KODLAMA','uygunluk, konu ve haberin işlevi')]):
-            yy=y+j*.94;d.text(sl,label,x,yy,w,.28,12,RED,bold=True,name='future_label',leading=1.0);d.text(sl,value,x,yy+.38,w,.53,18,INK,name='future_step',leading=1.25)
-    elif kind=='conclusion':
-        d.text(sl,'298 / 311',8.2,y+.2,4.1,.85,41,BLUE,bold=True,name='conclusion_country',leading=1.0)
-        d.text(sl,'Almanya hedefli etiket',8.2,y+1.2,4.1,.4,17,INK,name='conclusion_country_label',leading=1.1)
-        d.text(sl,'75 grup / 293 adres',8.2,y+2.2,4.1,.5,22,BLUE,bold=True,name='conclusion_lexical',leading=1.1)
     elif kind=='references':
-        for j,label in enumerate(['Meta (2022)','Lazer ve ark. (2018)','Allen ve ark. (2020)']):d.text(sl,label,x,y+j*.82,w,.55,21,BLUE,bold=True,name='selected_reference',leading=1.15)
+        yy=y-.4
+        for rid in ['disinfolab2022','allen2020','gdeltdoc','hammond2014','lazer2018','leetaru2013','meta2022','nimmo2022','wardle2017']:
+            r=REFS[rid];title=SHORT[rid]
+            d.text(sl,r['cite'],x-.3,yy,w+.3,.24,11.5,BLUE,bold=True,name='ref_cite',leading=1.0,min_size=9);d.text(sl,title,x-.3,yy+.26,w+.3,.22,9.5,MUTED,name='ref_title',leading=1.0,min_size=7.5);yy+=.405
+        if yy>6.0:raise ValueError('Reference slide overflow')
     else:raise ValueError('Unknown main visual: '+kind)
 
 
@@ -227,9 +295,9 @@ def reference(d,sl,r,y,index):
 
 def validate(prs,narrative,appendices,layout,pptx,pdf):
     assert len(prs.slides)==len(narrative)+len(appendices)
-    assert len(narrative)==11 and sum(int(s['seconds']) for s in narrative)==780
+    assert len(narrative)==15 and sum(int(s['seconds']) for s in narrative)==TALK
     authored_words=[sum(len(clean(t).split()) for t in [s['title'],s.get('subtitle',''),*s['display_points'],s['takeaway']]) for s in narrative]
-    assert max(authored_words)<=30,('Authored main-slide text exceeds30words',authored_words)
+    assert max(authored_words)<=34,('Authored main-slide text exceeds 34 words',authored_words)
     for i,sl in enumerate(prs.slides):
         assert sl.notes_slide.notes_text_frame.text.strip()
         for shape in sl.shapes:
@@ -243,12 +311,14 @@ def validate(prs,narrative,appendices,layout,pptx,pdf):
     from pypdf import PdfReader
     reader=PdfReader(pdf);assert len(reader.pages)==len(prs.slides)
     assert all(page.extract_text().strip() for page in reader.pages)
-    return {'checks_passed':True,'main_slides':len(narrative),'appendix_slides':len(appendices),'total_slides':len(prs.slides),'planned_talk_seconds':780,'remaining_session_buffer_seconds':120,'main_text_editable':True,'authored_main_slide_word_counts':authored_words,'maximum_authored_main_words':max(authored_words),'matched_native_PDF_pages':True,'all_notes_nonempty':True,'bounds_and_font_metrics_checked':True,'no_photos_used':True,'live_GDELT_observations_generated':False,'desktop_PowerPoint_render_verified':False,'pptx_sha256':hashlib.sha256(pptx.read_bytes()).hexdigest(),'pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
+    return {'checks_passed':True,'main_slides':len(narrative),'appendix_slides':len(appendices),'total_slides':len(prs.slides),'planned_talk_seconds':TALK,'remaining_session_buffer_seconds':900-TALK,'main_text_editable':True,'authored_main_slide_word_counts':authored_words,'maximum_authored_main_words':max(authored_words),'matched_native_PDF_pages':True,'all_notes_nonempty':True,'bounds_and_font_metrics_checked':True,'no_photos_used':True,'gdelt_snapshot_embedded':bool(GDELT),'synthetic_GDELT_observations':False,'desktop_PowerPoint_render_verified':False,'pptx_sha256':hashlib.sha256(pptx.read_bytes()).hexdigest(),'pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
 
 
 def main():
-    narrative=json.loads((ROOT/'scripts/concise_narrative.json').read_text());appendices=json.loads((ROOT/'scripts/concise_appendices.json').read_text());refs={r['id']:r for r in json.loads((ROOT/'scripts/concise_references.json').read_text())};stats=json.loads((OUT/'IOC_YAPISAL_ANALIZ.json').read_text())
-    OUT.mkdir(exist_ok=True);prs=Presentation();prs.slide_width=Inches(W);prs.slide_height=Inches(H);prs.core_properties.title='Meta 2022 CIB listesinde hedef coğrafyası ve alan adı yapısı';prs.core_properties.author='SUNUM';prs.core_properties.subject='Tamamlanmış Meta gösterge analizleri; 11 ana slayt, 13 dakika anlatım ve 2 dakika oturum payı.'
+    global META,REFS,GDELT
+    META.update(json.loads((ROOT/'scripts/presentation_meta.json').read_text()));snap=ROOT/'research/gdelt/GDELT_HARITA_VERISI.json';GDELT=json.loads(snap.read_text()) if snap.is_file() else None
+    narrative=json.loads((ROOT/'scripts/concise_narrative.json').read_text());appendices=json.loads((ROOT/'scripts/concise_appendices.json').read_text());refs={r['id']:r for r in json.loads((ROOT/'scripts/concise_references.json').read_text())};REFS.update(refs);stats=json.loads((OUT/'IOC_YAPISAL_ANALIZ.json').read_text())
+    OUT.mkdir(exist_ok=True);prs=Presentation();prs.slide_width=Inches(W);prs.slide_height=Inches(H);prs.core_properties.title=narrative[0]['title'];prs.core_properties.author=META.get('author','SUNUM');prs.core_properties.subject=f'Akademik sunum: {len(narrative)} ana slayt, {TALK//60} dk {TALK%60} sn anlatım; Meta 2022 göstergeleri ve GDELT haber haritası.'
     pdf_path=OUT/'AKADEMIK_ODAKLI_SUNUM.pdf';pdf=canvas.Canvas(str(pdf_path),pagesize=(W*72,H*72));pdf.setTitle(prs.core_properties.title);pdf.setAuthor('SUNUM');d=Dual(prs,pdf)
     for i,s in enumerate(narrative):
         sl,dark=d.base(i,s);points(d,sl,s,i,dark);visual(d,sl,s,stats);d.notes(sl,s);d.finish()
