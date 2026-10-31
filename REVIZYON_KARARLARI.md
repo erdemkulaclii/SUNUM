@@ -44,3 +44,14 @@ Her yeni sav önce veri alanına, kaynak kaydına ve ölçüm kuralına bağlanm
 - Harita üç kaynaktan veri alabilir: gömülü anlık görüntü, canlı sorgu (yerel sunucu vekili veya doğrudan API) ve elle JSON. Hiçbir durumda örnek veri gösterilmez; boş/başarısız yanıt “sıfır haber” sayılmaz.
 - Ana slayt kelime sınırı akademik içerik için 30’dan 34’e çıkarıldı; HTML okunabilirlik denetimleri (≥18 px gövde metni, taşma yok) korunur.
 - Bu ortamda GDELT’e ağ erişimi olmadığından canlı sorgu doğrulanamadı; tarayıcı ve vekil kodu yalnız sentetik test yanıtlarıyla sınandı. 2022 penceresi DOC 2.0’ın resmî üç aylık desteğinin dışındadır; veri dönmezse GKG/BigQuery yolu kullanılmalıdır.
+
+## 31 Ekim 2026 (ikinci revizyon): kendiliğinden ilerleyen sunum ve ham GDELT arşivi
+
+**İstek:** Sunum elle pencere açmadan kendiliğinden ilerlemeli; GDELT verisi yalnız API’den değil akademik kaynaklardan gelmeli; daha fazla akademik kaynak ve test edilebilirlik.
+
+- **Otomatik akış:** “Sunumu başlat ▶” tam ekran + otomatik oynatma. Maddeler sırayla açılır, ana fikir sonda gelir, anlatım şeridi konuşma cümlelerini zamanında gösterir, isteğe bağlı Türkçe sesli anlatım (S). Harita slaytı kendiliğinden oynar (gün gün birikim → Meta hedefleri → anılan yerler → yakınlaşma); grafik slaytı kendiliğinden çizilir. PowerPoint’te slaytlar planlanan sürelerle kendiliğinden geçer.
+- **Veri:** DOC API yerine GDELT GKG 2.0 ham arşivi (20.09–11.10.2022; 4.209 dosya, hepsi MD5 doğrulandı; 5.944.850 kayıt). 511 tekil eşleşen haber. Bu ortamda ham arşive erişim mümkündü; API’ye erişim değildi.
+- **Yeni bulgular:** (4) iki günlük haber dalgası; (5) hedef–kaynak coğrafyası asimetrisi (ABD 373, Almanya 29; oranlı ölçüde Almanya 2.).
+- **Test edilebilirlik:** MD5 manifesti, gün/ülke paydaları, sabit kurallar ve birim testleri, sabit tohumlu isabet örneklemi (%90,6; n=32; Wilson %95 GA 75,8–96,8), ham sonuçlarla anlık görüntü arasında tutarlılık testleri (`test_gdelt_snapshot.py`).
+- **Açık kalanlar:** isabet örnekleminin birinci kodlaması yapay zekâ destekli ön kodlamadır; ikinci (insan) kodlayıcı ve yanlış negatif ölçümü önerilir. Yeni kaynakların tam metinleri bu ortamda okunmadı. Wang vd. (2016) DOI’si doğrulanamadığından yazar kopyası bağlantısı verildi.
+- Ana slayt sayısı 17’ye çıktı; toplam süre 810 s + 90 s pay olarak korundu.

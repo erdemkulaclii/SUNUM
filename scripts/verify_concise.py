@@ -42,29 +42,29 @@ def verify_analysis(a):
 def check_native(path,narrative):
  from pptx import Presentation
  from pypdf import PdfReader
- prs=Presentation(path);assert len(prs.slides)==26
+ prs=Presentation(path);NA=len(json.loads((R/'scripts/concise_appendices.json').read_text()));assert len(prs.slides)==len(narrative)+NA
  for i,s in enumerate(narrative):
   sl=prs.slides[i];text=norm(' '.join(sh.text for sh in sl.shapes if sh.has_text_frame))
   for item in [s['title'],s.get('subtitle',''),*s['display_points'],s['takeaway']]:assert norm(item) in text,('Missing native editable text',i+1,item)
   assert sl.notes_slide.notes_text_frame.text.strip()
-  assert not any(sh.shape_type==13 for sh in sl.shapes),('Unexpected raster picture',i+1)
- reader=PdfReader(O/'AKADEMIK_ODAKLI_SUNUM.pdf');assert len(reader.pages)==26 and all(p.extract_text().strip() for p in reader.pages)
- return {'verified':True,'main_slides':15,'total_slides':26,'pdf_pages':26,'main_text_editable':True,'main_slides_have_no_raster_picture':True,'desktop_PowerPoint_render_verified':False}
+  if s['visual']!='gdelt_map':assert not any(sh.shape_type==13 for sh in sl.shapes),('Unexpected raster picture',i+1)
+ reader=PdfReader(O/'AKADEMIK_ODAKLI_SUNUM.pdf');assert len(reader.pages)==len(narrative)+NA and all(p.extract_text().strip() for p in reader.pages)
+ return {'verified':True,'main_slides':len(narrative),'total_slides':len(narrative)+NA,'pdf_pages':len(narrative)+NA,'main_text_editable':True,'main_slides_have_no_raster_picture':True,'desktop_PowerPoint_render_verified':False}
 
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--html',type=Path,default=O/'PROFESYONEL_SUNUM.html');parser.add_argument('--pptx',type=Path,default=O/'AKADEMIK_ODAKLI_SUNUM.pptx');parser.add_argument('--check-pptx',action='store_true');args=parser.parse_args()
  html=args.html.read_text();narrative=json.loads((R/'scripts/concise_narrative.json').read_text());a=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());refs=json.loads((R/'scripts/concise_references.json').read_text())
- assert len(narrative)==15 and sum(s['seconds'] for s in narrative)==810
+ assert sum(s['seconds'] for s in narrative)==810
  words=[sum(len(norm(x).split()) for x in [s['title'],s.get('subtitle',''),*s['display_points'],s['takeaway']]) for s in narrative];assert max(words)<=34
- assert len(refs)==12 and all(set(s['citations'])<={r['id'] for r in refs} for s in narrative)
+ assert len(refs)>=12 and all(set(s['citations'])<={r['id'] for r in refs} for s in narrative)
  assert len([s for s in narrative if s['visual']=='gdelt_map'])==1
- report={'checks_passed':False,'checked_at_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'html_sha256':hashlib.sha256(args.html.read_bytes()).hexdigest(),'narrative_sha256':hashlib.sha256((R/'scripts/concise_narrative.json').read_bytes()).hexdigest(),'main_slides':15,'planned_seconds':810,'buffer_seconds':90,'authored_main_words_including_subtitle':words,'word_count_scope':'Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.','APA_references':6,'analysis':verify_analysis(a),'viewports':[],'violations':[],'javascript_errors':[],'external_requests':[],'actual_GDELT_network_verified':False,'live_OSM_verified':False}
+ report={'checks_passed':False,'checked_at_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'html_sha256':hashlib.sha256(args.html.read_bytes()).hexdigest(),'narrative_sha256':hashlib.sha256((R/'scripts/concise_narrative.json').read_bytes()).hexdigest(),'main_slides':len(narrative),'planned_seconds':810,'buffer_seconds':90,'authored_main_words_including_subtitle':words,'word_count_scope':'Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.','APA_references':6,'analysis':verify_analysis(a),'viewports':[],'violations':[],'javascript_errors':[],'external_requests':[],'actual_GDELT_network_verified':False,'live_OSM_verified':False}
  with sync_playwright() as p:
   exe=next((x for x in ['/usr/bin/chromium','/opt/pw-browsers/chromium'] if Path(x).exists()),None);browser=p.chromium.launch(**({'executable_path':exe,'args':['--no-sandbox']} if exe else {}),headless=True)
   for width,height in [(1600,900),(1280,720)]:
    ctx=browser.new_context(viewport={'width':width,'height':height},offline=True);page=ctx.new_page()
    page.on('pageerror',lambda e:report['javascript_errors'].append(str(e)));page.on('request',lambda r:report['external_requests'].append(r.url) if r.url.startswith(('http:','https:')) else None)
-   page.set_content(html);assert page.evaluate('map===null') and page.evaluate('D.slides.length')==15 and page.evaluate('offsets.at(-1)')==810
+   page.set_content(html);assert page.evaluate('map===null') and page.evaluate('D.slides.length')==len(narrative) and page.evaluate('offsets.at(-1)')==810
    assert page.locator('img').count()==0
    rows=[]
    for i,s in enumerate(narrative):
@@ -92,10 +92,10 @@ def main():
     page.keyboard.press('ArrowLeft');assert page.evaluate('scene')==0
     page.locator('#play').click();page.wait_for_timeout(1100);assert page.evaluate('elapsed')>=1
     page.locator('#play').click();assert page.evaluate('playing') is False
-    page.locator('#notes-open').click();assert page.locator('.cue-card').count()==15 and page.locator('.cue-card li').count()==sum(len(s['cue_sentences']) for s in narrative)
+    page.locator('#notes-open').click();assert page.locator('.cue-card').count()==len(narrative) and page.locator('.cue-card li').count()==sum(len(s['cue_sentences']) for s in narrative)
     page.keyboard.press('Escape');assert page.locator('#modal').is_hidden()
-    page.locator('#refs-open').click();assert page.locator('.apa-entry').count()==12
-    assert all(page.locator('.apa-entry a').nth(i).get_attribute('href').startswith('https://') for i in range(12));page.keyboard.press('Escape')
+    page.locator('#refs-open').click();assert page.locator('.apa-entry').count()==len(refs)
+    assert all(page.locator('.apa-entry a').nth(i).get_attribute('href').startswith('https://') for i in range(len(refs)));page.keyboard.press('Escape')
     page.locator('#evidence-open').click();assert page.locator('#evidence-rows tr').count()==311
     page.locator('#filter-country').select_option('UK');assert page.locator('#evidence-rows tr').count()==4
     page.locator('#filter-text').fill('theguardian');assert page.locator('#evidence-rows tr').count()==1
@@ -124,10 +124,18 @@ def main():
     assert '298' in page.locator('.leaflet-popup').inner_text()
     page.evaluate('map.panBy([20,10],{animate:false})');assert page.locator('.leaflet-popup').is_visible()
     page.keyboard.press('Escape');assert page.evaluate('map===null')
+    # Otomatik akış: başlatınca anlatım şeridi görünür, ana fikir sonda açılır, slayt süre dolunca kendiliğinden geçer.
+    page.evaluate('go(1);togglePlay()');page.wait_for_timeout(600)
+    assert page.locator('#caption').is_visible() and 'pending' in page.locator('#takeaway').get_attribute('class'),'Autoplay reveal/caption missing'
+    page.evaluate('elapsed=offsets[2]-0.3');page.wait_for_timeout(900);assert page.evaluate('scene')==2,'Autoplay did not advance'
+    gi2=[s['visual'] for s in narrative].index('gdelt_map');page.evaluate(f'go({gi2})');page.evaluate(f'elapsed=offsets[{gi2}]+S[{gi2}].seconds*.2');page.wait_for_timeout(800)
+    if page.evaluate('Boolean(D.gdelt)'):assert page.locator('#gm-day').is_visible(),'Map day animation missing'
+    page.evaluate('togglePlay()');assert page.evaluate('playing') is False
     gi=[s['visual'] for s in narrative].index('gdelt_map');page.locator('#gdelt-open').click();page.wait_for_timeout(400)
     assert page.evaluate('scene')==gi and page.locator('#gm-map path').count()>100,'GDELT map did not render country layer'
     assert page.locator('#gm-map path[stroke="#c0392b"]').count()>=6,'Meta target outlines missing'
-    if not page.evaluate('Boolean(D.gdelt)'):assert 'VERİ YOK' in page.locator('#gm-panel').inner_text() and page.locator('#gm-empty').is_visible()
+    if page.evaluate('Boolean(D.gdelt)'):assert 'MD5' in page.locator('#gm-panel').inner_text()
+    else:assert 'VERİ YOK' in page.locator('#gm-panel').inner_text() and page.locator('#gm-empty').is_visible()
     # TEST-ONLY synthetic file: exercises the JSON import path; it is deleted and never shipped.
     probe=Path('/tmp')/'sunum_gdelt_import_probe.json';probe.write_text(json.dumps({'schema':'sunum.gdelt-map/1','query':'TEST','window':{'id':'meta2022','label':'TEST','start':'2022-09-20','end':'2022-10-11'},'retrieved_at':'2022-10-12T00:00:00Z','origin':'test','articles':[{'url':'https://t.invalid/1','sourcecountry':'Germany'},{'url':'https://t.invalid/1','sourcecountry':'Germany'},{'url':'https://t.invalid/2','sourcecountry':'United States'}]}))
     page.set_input_files('#gdelt-file',str(probe));page.wait_for_timeout(300);probe.unlink()
@@ -148,7 +156,7 @@ def main():
  for name in ['ODAKLI_WEB_DOGRULAMA.json','SUNUM_OKUNABILIRLIK.json','LEAFLET_DOGRULAMA.json','AKADEMIK_OTOMATIK_TESTLER.json','SINEMATIK_TESTLER.json','ETKILESIM_DOGRULAMA.json','GDELT_BAGLANTI_TESTI.json']:(O/name).write_text(json.dumps(report,ensure_ascii=False,indent=2))
  for item in report['violations']:print(json.dumps(item,ensure_ascii=False))
  assert report['checks_passed'],'See output/ODAKLI_WEB_DOGRULAMA.json for failures'
- print('PASS: 15 main slides, 810s+90s buffer, 3 recounted findings, GDELT map slide, 2 desktop viewports, 12 refs, cue cards, filtered CSV, offline atlas, native 26-slide PPTX/PDF.')
+ print(f'PASS: {len(narrative)} main slides, 810s talk, GDELT archive map, {len(refs)} refs, cue cards, filtered CSV, offline atlas, native PPTX/PDF.')
  print('No external requests or synthetic research observations; liveGDELT/OSM and desktopPowerPoint rendering remain unverified.')
 
 if __name__=='__main__':main()

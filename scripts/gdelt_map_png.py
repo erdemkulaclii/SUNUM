@@ -43,7 +43,7 @@ def summary(snap):
     share=f"%{de/total*100:.1f}".replace('.',',') if total else '—'
     w=snap['window'];when=snap.get('retrieved_at','')[:10]
     return {'total':total,'germany_share':share,'line':f"{total} haber · en çok: "+', '.join(f'{n} {v}' for n,v in top)+f" · Almanya kaynaklı {share}",
-            'caption':f"GDELT DOC 2.0 · {w['start']} – {w['end']} · {total} tekil haber · alındı {when} · sınıra takılan dilim: {snap.get('capped_chunks',0)} · kaynak ülke ≠ hedef ülke"}
+            'caption':(f"GDELT GKG 2.0 ham arşivi · {w['start']} – {w['end']} · {total} tekil haber · {snap['archive']['files_md5_verified']} dosya MD5 doğrulandı · kaynak ülke ≠ hedef ülke" if snap.get('archive') else f"GDELT DOC 2.0 · {w['start']} – {w['end']} · {total} tekil haber · alındı {when} · kaynak ülke ≠ hedef ülke")}
 def render(snap,out,width_in=7.1,height_in=3.75):
     feats=world();find=match(feats);c,total=counts(snap);by=Counter()
     for k,v in c.items():

@@ -49,7 +49,7 @@ def main():
  runpy.run_path(str(R/'scripts/analyze_ioc_structure.py'),run_name='__main__')
  s=json.loads((R/'scripts/concise_narrative.json').read_text());a=json.loads((R/'scripts/concise_appendices.json').read_text());refs=json.loads((R/'scripts/concise_references.json').read_text());analysis=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text())
  meta=json.loads((R/'scripts/presentation_meta.json').read_text())
- assert len(s)==15 and sum(x['seconds'] for x in s)==TALK_SECONDS
+ assert sum(x['seconds'] for x in s)==TALK_SECONDS
  for x in s:
   count=sum(len(v.split()) for v in [x['title'],x.get('subtitle',''),*x['display_points'],x['takeaway']]);assert count<=MAX_WORDS,(x['id'],count)
  ids={r['id'] for r in refs};assert all(set(x['citations'])<=ids for x in s)

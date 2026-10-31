@@ -79,7 +79,7 @@ def main():
  global SNAP
  sp=R/'research/gdelt/GDELT_HARITA_VERISI.json';SNAP=json.loads(sp.read_text()) if sp.is_file() else None
  O.mkdir(exist_ok=True);N=json.loads((R/'scripts/concise_narrative.json').read_text());F=json.loads((R/'scripts/concise_references.json').read_text());A=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());f,a,src=(A[k] for k in ['findings','audit','source'])
- assert len(N)==15 and sum(s['seconds'] for s in N)==810 and len(F)==12
+ assert sum(s['seconds'] for s in N)==810 and len(F)>=12
  title=N[0]['title']
  cueflow=[];md=[f'# {title}','','15 ana slayt · 13 dk 30 sn planlanan anlatım · 1 dk 30 sn soru ve geçiş payı.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
  cuedoc=document(title+' — Sunucu kartları');fullword=document(title+' — İsteğe bağlı prova metni');fullword.add_heading(title,0)
@@ -113,8 +113,8 @@ def main():
  report={}
  for name in ['SUNUCU_KARTLARI.pdf','KONUSMA_METNI_15_DK.pdf','APA7_KAYNAKCA.pdf','AKADEMIK_ARASTIRMA_DOSYASI.pdf']:
   reader=PdfReader(O/name);texts=[p.extract_text() or '' for p in reader.pages];assert all(len(t.strip())>40 for t in texts),(name,'empty page');report[name]={'pages':len(reader.pages),'text_selectable':True,'characters':sum(map(len,texts))}
- assert report['SUNUCU_KARTLARI.pdf']['pages']==15
+ assert report['SUNUCU_KARTLARI.pdf']['pages']==len(N)
  for name in ['SUNUCU_KARTLARI.docx','KONUSMA_METNI_15_DK.docx']:
-  doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_15_sections_present':True,'paragraphs':len(doc.paragraphs)}
- report.update({'main_slides':15,'planned_talk_seconds':810,'session_buffer_seconds':90,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
+  doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_sections_present':True,'paragraphs':len(doc.paragraphs)}
+ report.update({'main_slides':len(N),'planned_talk_seconds':810,'session_buffer_seconds':90,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

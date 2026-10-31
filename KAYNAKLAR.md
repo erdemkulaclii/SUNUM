@@ -79,3 +79,21 @@ Aşağıdaki künyeler yayıncı sayfaları ve bağımsız ikincil kayıtlarla b
 ## GDELT haber verisi
 
 GDELT gözlemleri depoya ancak gerçek bir yanıt alındığında `research/gdelt/GDELT_HARITA_VERISI.json` olarak girer (bkz. `scripts/fetch_gdelt_map.py`). Her dilim için uç nokta, zaman damgası, dönen makale sayısı, 250 sınırına ulaşıp ulaşmadığı ve ham yanıtın SHA-256 özeti saklanır. Bu revizyon hazırlanırken çalışma ortamının ağ politikası `api.gdeltproject.org` erişimini engellediği için depoda GDELT anlık görüntüsü yoktur; sunumda GDELT sayısı uydurulmaz.
+
+## 31 Ekim 2026 (ikinci revizyon): ham GDELT arşivi ve ek akademik kaynaklar
+
+**GDELT verisi artık API’den değil, akademik çalışmalarda kullanılan ham GKG 2.0 arşivinden gelir.** `scripts/gdelt_gkg_archive.py`, 20 Eylül – 11 Ekim 2022 arasındaki bütün 15 dakikalık İngilizce ve çeviri (translingual) GKG dosyalarını GDELT’in Google Cloud Storage aynasından indirir. Her dosya, GDELT’in `masterfilelist.txt` ve `masterfilelist-translation.txt` içinde yayımladığı **boyut ve MD5** değerleriyle karşılaştırılır; uyuşmayan dosya sayıma girmez ve manifestte hata olarak kalır. Kaynak ülke, GDELT’in 2018 alan adı–ülke dosyasından (SHA-256 manifestte) alınır.
+
+Eşleşme kuralları sabittir ve birim testleriyle korunur:
+- **R1 (kampanya adı):** başlık/URL’de “doppelgänger” yazımlarından biri **ve** Rusya bağlamı (başlık/URL’de Rusya terimi ya da makalenin GKG konumlarında RS).
+- **R2 (kaldırma haberi):** başlık/URL’de Meta/Facebook/Instagram **ve** Rusya terimi **ve** ağ/sahte/dezenformasyon/propaganda/kaldırma terimlerinden biri (çok dilli).
+
+Kuralların isabeti `scripts/gdelt_validation.py` ile sabit tohumlu (2022) rastgele örneklemde ölçülür; birinci kodlama yapay zekâ destekli ön kodlamadır ve ikinci (insan) kodlayıcı sütunu bırakılmıştır.
+
+Eklenen hakemli/kurumsal kaynaklar (künyeler web aramasıyla doğrulandı; tam metinler bu ortamda okunmadı):
+- Wang, Kennedy, Lazer ve Ramakrishnan (2016), *Science* 353(6307) — GDELT/ICEWS olay kodlamasının geçerlilik sorunları; bu çalışmadaki isabet denetiminin gerekçesi. DOI doğrulanamadığından yazar kopyası bağlantısı verildi.
+- Kwak ve An (2014), SocInfo, doi:10.1007/978-3-319-13734-6_22 — GDELT ile haber coğrafyası; bölgeselcilik.
+- Bennett ve Livingston (2018), *European Journal of Communication* 33(2), doi:10.1177/0267323118760317 — dezenformasyonun “haber ya da taklit belgesel biçimleri” tanımı.
+- Freelon ve Wells (2020), *Political Communication* 37(2) — dezenformasyon bir siyasal iletişim olgusu olarak.
+- Auswärtiges Amt (2024) teknik raporu — Almanya’nın kampanya hedefi olmayı sürdürdüğü.
+- The GDELT Project (2018) alan adı–ülke eşleştirme belgesi ve GKG 2.0 veri kümesi.

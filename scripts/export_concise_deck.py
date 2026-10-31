@@ -18,7 +18,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';W=13.333333;H=7.5
 import sys;sys.path.insert(0,str(Path(__file__).resolve().parent))
-SHORT={'disinfolab2022':'Doppelganger: Media clones serving Russian propaganda','allen2020':'Evaluating the fake news problem… (Science Advances)','gdeltdoc':'GDELT DOC 2.0 API debuts! (API belgesi)','hammond2014':'Machine-coded event data… (Research & Politics)','lazer2018':'The science of fake news (Science)','leetaru2013':'GDELT: Global data on events, location, and tone','meta2022':'CIB gösterge listesi, CSV [Data set]','nimmo2022':'Removing CIB from China and Russia (Meta)','wardle2017':'Information disorder (Council of Europe)'}
+SHORT={'auswaertiges2024':'Germany targeted by … “Doppelgänger” (teknik rapor)','bennett2018':'The disinformation order (Eur. J. of Communication)','gdeltgkg':'GDELT 2.0 GKG ham arşivi [Data set]','wang2016':'Growing pains for global monitoring… (Science)','kwak2014':'Global news coverage of disasters… GDELT (SocInfo)','disinfolab2022':'Doppelganger: Media clones serving Russian propaganda','allen2020':'Evaluating the fake news problem… (Science Advances)','gdeltdoc':'GDELT DOC 2.0 API debuts! (API belgesi)','hammond2014':'Machine-coded event data… (Research & Politics)','lazer2018':'The science of fake news (Science)','leetaru2013':'GDELT: Global data on events, location, and tone','meta2022':'CIB gösterge listesi, CSV [Data set]','nimmo2022':'Removing CIB from China and Russia (Meta)','wardle2017':'Information disorder (Council of Europe)'}
 META={};REFS={};GDELT=None;TALK=810
 INK='10263B';MUTED='3F556C';BLUE='164F7A';RED='AD3F32';LINE='C8D3DF';PALE='EDF3F8';PAPER='FFFFFF';DARK='0D2238'
 FONT='DejaVu Sans';FONTDIR=Path('/usr/share/fonts/truetype/dejavu')
@@ -95,7 +95,8 @@ class Dual:
         if core:text+=f"\n\nPLANLANAN ANLATIM: {s.get('seconds',0)} saniye. Ana akış 13 dk 30 sn; 15 dakikalık oturumda 1 dk 30 sn pay bırakılmıştır."
         text+='\n\nKAYNAK\n'+s.get('source','Meta, 2022; ilgili kaynak künyeleri eklerde.')
         sl.notes_slide.notes_text_frame.text=text
-        sl._element.insert_element_before(parse_xml('<p:transition xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" spd="med"><p:fade/></p:transition>'),'p:timing','p:extLst')
+        adv=f' advTm="{int(s.get("seconds",0))*1000}"' if core and s.get('seconds') else ''
+        sl._element.insert_element_before(parse_xml(f'<p:transition xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" spd="med"{adv}><p:fade/></p:transition>'),'p:timing','p:extLst')
     def finish(self):self.pdf.showPage()
 
 
@@ -133,6 +134,21 @@ def steps(d,sl,items,x,y,w):
         d.text(sl,sub,x+.62,yy+.38,w-.62,.42,11.5,MUTED,name='step_sub',leading=1.2,min_size=9)
 
 
+def wave(d,sl,x,y,w):
+    daily=(GDELT or {}).get('daily') or []
+    if not daily:
+        d.text(sl,'GDELT günlük serisi yok.',x,y,w,.4,14,MUTED,name='wave_empty',leading=1.1);return
+    mx=max(r['matches'] for r in daily) or 1;h=2.7;bw=w/len(daily);base=y+.35+h
+    d.text(sl,f'Günlük eşleşen haber (en çok {mx})',x,y,w,.28,11,MUTED,name='wave_axis',leading=1.0)
+    for i,r in enumerate(daily):
+        bh=h*r['matches']/mx
+        if bh>0:d.rect(sl,x+i*bw+.02,base-bh,bw-.04,bh,RED if r['day']=='20220927' else '9EC1E0')
+        mi=[q['day'] for q in daily].index('20220927') if any(q['day']=='20220927' for q in daily) else -9
+        if (i%3==0 and abs(i-mi)>1) or i==mi:d.text(sl,f"{r['day'][6:]}.{r['day'][4:6]}",x+i*bw-.1,base+.05,bw+.2,.22,8.5,MUTED,name='wave_tick',leading=1.0,align=PP_ALIGN.CENTER)
+    d.rect(sl,x,base,w,.012,LINE)
+    peak=max(daily,key=lambda r:r['matches']);d.text(sl,f"Zirve {peak['day'][6:]}.{peak['day'][4:6]}: {peak['matches']} haber · kırmızı: 27.09 Meta duyurusu",x,base+.32,w,.26,10.5,INK,name='wave_note',leading=1.0,min_size=9)
+
+
 def gdelt_line():
     if not GDELT:return 'Kaynak ülke ve anılan yer katmanları (HTML sunumunda canlı)'
     from gdelt_map_png import summary
@@ -140,7 +156,7 @@ def gdelt_line():
 
 
 def gdelt_visual(d,sl):
-    x,y,w,h=5.55,2.15,7.1,3.75
+    x,y,w,h=5.55,2.1,7.1,3.45
     if GDELT:
         from gdelt_map_png import render,summary
         png=OUT/'GDELT_HARITA.png';render(GDELT,png,width_in=w,height_in=h);sl.shapes.add_picture(str(png),Inches(x),Inches(y),Inches(w),Inches(h))
@@ -162,8 +178,8 @@ def visual(d,sl,s,stats):
         for j,k in enumerate(['affiliation','course','date']):d.text(sl,m[k],xx,3.86+j*.42,4.4,.36,14,'C7D8E8',name='cover_'+k,leading=1.1,min_size=11)
         return
     if kind in('question','outline','conclusion'):
-        items={'question':[('AS1 · Hedef coğrafyası','Birim: alan adı · Meta hedef etiketi'),('AS2 · Sözcüksel yapı','Birim: alan adı · ilk ve son DNS etiketi'),('AS3 · Haber görünürlüğü','Birim: haber makalesi · GDELT kaynak ülke ve anılan yer')],
-               'outline':[('Giriş','Vaka ve kavramsal çerçeve'),('Yöntem','Meta CSV + GDELT DOC 2.0 / GKG'),('Bulgular','Hedef ülke, DNS yapısı, haber haritası'),('Tartışma','Literatür, sınırlılıklar, sonuç')],
+        items={'question':[('AS1 · Hedef coğrafyası','Birim: alan adı · Meta hedef etiketi'),('AS2 · Sözcüksel yapı','Birim: alan adı · ilk ve son DNS etiketi'),('AS3 · Haber görünürlüğü','Birim: haber makalesi · GDELT GKG: gün, kaynak ülke, anılan yer')],
+               'outline':[('Giriş','Vaka ve kavramsal çerçeve'),('Yöntem','Meta CSV + GDELT GKG ham arşivi (MD5)'),('Bulgular','Hedef ülke, DNS yapısı, haber dalgası ve haritası'),('Tartışma','Literatür, sınırlılıklar, sonuç')],
                'conclusion':[('AS1 · %95,8','298/311 gösterge Almanya hedefli'),('AS2 · 240 + 293','Altı son etiket 240 adres; 75 ilk etiket grubu 293 adres'),('AS3 · GDELT haritası',gdelt_line()),('Sonraki adım','GKG ile tam 2022 taraması; iki kodlayıcılı içerik analizi')]}[kind]
         steps(d,sl,items,x,y-.1,w)
     elif kind=='context':
@@ -192,14 +208,20 @@ def visual(d,sl,s,stats):
         d.text(sl,'Hedef etiketi ≠ kaynak ülke ≠ anılan yer',xx0,y+2.95,w+.3,.3,12,MUTED,name='method_units',leading=1.0)
     elif kind=='gdelt_map':
         gdelt_visual(d,sl)
+    elif kind=='gdelt_wave':
+        wave(d,sl,x-.6,y-.2,w+.6)
+    elif kind=='validity':
+        v=(GDELT or {}).get('validation') or {};a=(GDELT or {}).get('archive') or {};allv=v.get('by_rule',{}).get('all') or {}
+        prec=f"%{allv['precision']*100:.0f} isabet (n={allv['n']}; %95 GA {allv['wilson95'][0]*100:.0f}–{allv['wilson95'][1]*100:.0f})".replace('.',',') if allv.get('n') else 'Örneklem denetimi bekleniyor'
+        steps(d,sl,[('MD5 doğrulaması',f"{a.get('files_md5_verified',0):,} / {a.get('files',0):,} ham GKG dosyası".replace(',','.')),('Tarama kapsamı',f"{a.get('rows_scanned',0):,} haber kaydı · 20.09–11.10.2022".replace(',','.')),('Eşleşme isabeti',prec),('Yeniden üretim','python scripts/gdelt_gkg_archive.py · test_gdelt_archive.py')],x,y-.1,w)
     elif kind=='discussion':
-        rows=[('Almanya %95,8','“Öncelikli hedef Almanya” (Nimmo ve Agranovich, 2022)','Uyumlu'),('spiegel ×9, bild ×8','Marka taklidi (Alaphilippe vd., 2022)','Örtüşüyor*'),('GDELT kaynak ülke','Dağıtım/yorumlayıcı (Wardle ve Derakhshan, 2017)','Karşılaştırılabilir')]
-        widths=[1.45,2.65,1.25];xx=x-.15;rh=.78
+        rows=[('Almanya %95,8 hedef','Öncelikli hedef Almanya (Nimmo ve Agranovich, 2022; Auswärtiges Amt, 2024)','Uyumlu'),('Kaynak: ABD 373/511','Haber coğrafyası bölgeseldir (Kwak ve An, 2014)','Asimetri'),('511 adres, 145 başlık','Dağıtım altyapısı (Wardle ve Derakhshan, 2017)','Ajans çoğaltması'),('“Doppelgänger”: 1 ilgili haber','Ad EU DisinfoLab raporuyla (2022) doğdu','Sonradan yaygınlaştı*')]
+        widths=[1.5,2.6,1.25];xx=x-.15;rh=.72
         for k,hd in enumerate(['Bulgu','Literatür / raporlar','İlişki']):d.text(sl,hd,xx+sum(widths[:k]),y,widths[k]-.08,.26,11,MUTED,bold=True,name='disc_head',leading=1.0)
         for i,row in enumerate(rows):
             yy=y+.35+i*rh;d.rect(sl,xx,yy-.04,sum(widths),.012,LINE)
             for k,v in enumerate(row):d.text(sl,v,xx+sum(widths[:k]),yy+.06,widths[k]-.1,rh-.12,12.5,INK,bold=k==0,name='disc_cell',leading=1.25,min_size=10)
-        d.text(sl,'* Ölçüm yalnız dize tekrarıdır; sahiplik veya içerik doğrulanmadı.',xx,y+.45+3*rh,sum(widths),.3,10,MUTED,name='disc_note',leading=1.1,min_size=9)
+        d.text(sl,'* Yalnız 2022 penceresi tarandı.',xx,y+.45+4*rh,sum(widths),.3,10,MUTED,name='disc_note',leading=1.1,min_size=9)
     elif kind=='audit':
         nums=[(stats['audit']['raw_records'],'toplam kayıt'),(stats['audit']['domain_rows'],'alan adı satırı'),(stats['audit']['unique_domains'],'benzersiz alan adı')]
         for j,(n,label) in enumerate(nums):
@@ -227,7 +249,7 @@ def visual(d,sl,s,stats):
         d.text(sl,'Son etiket ≠ kayıt edilebilir alan adı sınırı',x,y+2.8,w,.63,14,MUTED,name='psl_caution',leading=1.35)
     elif kind=='references':
         yy=y-.4
-        for rid in ['disinfolab2022','allen2020','gdeltdoc','hammond2014','lazer2018','leetaru2013','meta2022','nimmo2022','wardle2017']:
+        for rid in ['disinfolab2022','auswaertiges2024','bennett2018','gdeltgkg','kwak2014','lazer2018','meta2022','nimmo2022','wang2016']:
             r=REFS[rid];title=SHORT[rid]
             d.text(sl,r['cite'],x-.3,yy,w+.3,.24,11.5,BLUE,bold=True,name='ref_cite',leading=1.0,min_size=9);d.text(sl,title,x-.3,yy+.26,w+.3,.22,9.5,MUTED,name='ref_title',leading=1.0,min_size=7.5);yy+=.405
         if yy>6.0:raise ValueError('Reference slide overflow')
@@ -295,7 +317,7 @@ def reference(d,sl,r,y,index):
 
 def validate(prs,narrative,appendices,layout,pptx,pdf):
     assert len(prs.slides)==len(narrative)+len(appendices)
-    assert len(narrative)==15 and sum(int(s['seconds']) for s in narrative)==TALK
+    assert sum(int(s['seconds']) for s in narrative)==TALK
     authored_words=[sum(len(clean(t).split()) for t in [s['title'],s.get('subtitle',''),*s['display_points'],s['takeaway']]) for s in narrative]
     assert max(authored_words)<=34,('Authored main-slide text exceeds 34 words',authored_words)
     for i,sl in enumerate(prs.slides):

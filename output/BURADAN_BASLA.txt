@@ -5,7 +5,14 @@ Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
    scripts/presentation_meta.json içinde doldurun ve sunumu yeniden üretin
    (ya da PowerPoint'te doğrudan düzenleyin).
 
-2. GDELT haritası için en sağlam yol (sunumdan önce, kendi bilgisayarınızda):
+2. SUNUM KENDİLİĞİNDEN İLERLER: HTML'yi açın, "Sunumu başlat ▶" düğmesine basın.
+   Slaytlar, maddeler, grafik ve harita kendiliğinden ilerler; alttaki şerit
+   anlatım cümlelerini gösterir (C). S: Türkçe sesli anlatım. Boşluk: durdur.
+   PowerPoint slayt gösterisi de aynı sürelerle kendiliğinden geçer.
+
+   GDELT verisi gömülüdür (ham GKG arşivi, 4.209 dosya MD5 doğrulamalı).
+   Yeniden üretmek için: python scripts/gdelt_gkg_archive.py
+   İsteğe bağlı güncel API yolu (sunumdan önce, kendi bilgisayarınızda):
      python scripts/fetch_gdelt_map.py
      python scripts/build_interactive.py
      python scripts/export_editorial.py
@@ -19,11 +26,12 @@ Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
    "2022 penceresini sorgula", "Son 30 gün", "JSON yükle", "JSON indir".
    Sağ/sol ok: slayt. Boşluk: akış. N: anlatıcı kartları.
 
-4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (15 ana + 11 ek slayt).
+4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (17 ana + 13 ek slayt).
 
-15 ana slayt = 13 dk 30 sn anlatım + 1 dk 30 sn pay.
+17 ana slayt = 13 dk 30 sn anlatım + 1 dk 30 sn pay.
 Akış: Kapak · Plan · Vaka · Kavramsal çerçeve · Araştırma soruları · Yöntem ·
-Veri hazırlığı · Bulgu 1-3 (Meta) · Bulgu 4 (GDELT haritası) · Tartışma ·
+Veri hazırlığı · GDELT test edilebilirliği · Bulgu 1-3 (Meta) ·
+Bulgu 4 (haber dalgası) · Bulgu 5 (GDELT haritası) · Tartışma ·
 Sınırlılıklar · Sonuç · Kaynakça.
 
 TAMAMLANMIŞ META BULGULARI
@@ -36,3 +44,8 @@ Renk: haberin yayımlandığı ülke (DOC 2.0). Nokta: haberde anılan yer (GKG)
 Kırmızı çerçeve: Meta hedef etiketi. Kaynak ülke hedef ülke değildir.
 Sayılar, verinin alındığı tarih ve kaynakla birlikte panelde gösterilir.
 Başarısız ya da boş yanıt "sıfır haber" sayılmaz; örnek veri uydurulmaz.
+
+GDELT BULGULARI (ham GKG arşivi, 5.944.850 kayıt)
+511 tekil haber; %96,3'ü 27–28 Eylül'de. Kaynak ülke: ABD 373, Almanya 29, İtalya 13.
+100 bin kayıt başına: ABD 25,4; Almanya 15,4. Haberlerin %63,6'sı Almanya'yı anıyor.
+Kural isabeti: %90,6 (n=32; %95 GA 75,8–96,8).

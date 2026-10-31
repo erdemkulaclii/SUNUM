@@ -1,27 +1,29 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T07:36:19.288026+00:00",
-  "html_sha256": "edfcaffd6f53b3c27ad610a15637d5fb998b86fc70ba30b7368f6bb9528b2dd7",
-  "narrative_sha256": "0bd4dfa2e7f479eeab787c20e15e7af4f5b4705cde376861b1355588f3516bc0",
-  "main_slides": 15,
+  "checked_at_utc": "2026-10-31T08:40:06.734624+00:00",
+  "html_sha256": "cf964e56e3e6ec00ddd06b521bbc524493ededf09ee1513e0bd4081c431e8b98",
+  "narrative_sha256": "dfbc27afe7bfbae5f422989de716ee9ebb86664656f397b9ec61f4f0e86fc37f",
+  "main_slides": 17,
   "planned_seconds": 810,
   "buffer_seconds": 90,
   "authored_main_words_including_subtitle": [
-    31,
-    23,
-    30,
-    31,
-    26,
-    32,
+    34,
     25,
+    30,
+    32,
+    28,
+    34,
+    25,
+    33,
     22,
     24,
     24,
-    24,
-    31,
     30,
-    33,
-    31
+    32,
+    34,
+    30,
+    32,
+    29
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
   "APA_references": 6,
@@ -111,7 +113,7 @@
         },
         {
           "scene": 8,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
           "prose_fonts_px": [
             24,
             32,
@@ -121,7 +123,7 @@
         },
         {
           "scene": 9,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             24,
             32,
@@ -131,7 +133,7 @@
         },
         {
           "scene": 10,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
             24,
             32,
@@ -141,17 +143,17 @@
         },
         {
           "scene": 11,
-          "title": "Vaka hangi ülkelerin haberlerinde görünür oldu?",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
-            20,
-            24.8,
+            24,
+            32,
             52.8
           ],
           "violations": []
         },
         {
           "scene": 12,
-          "title": "Tartışma: yerelleşmiş taklit ve görünürlük",
+          "title": "Görünürlük iki günlük bir dalgadır",
           "prose_fonts_px": [
             24,
             32,
@@ -161,17 +163,17 @@
         },
         {
           "scene": 13,
-          "title": "Sınırlılıklar",
+          "title": "Hedef Avrupa; haber kaynağı ağırlıkla ABD",
           "prose_fonts_px": [
-            24,
-            32,
+            20,
+            24.8,
             52.8
           ],
           "violations": []
         },
         {
           "scene": 14,
-          "title": "Sonuç: yoğun hedef, tekrarlanan adres, ölçülebilir görünürlük",
+          "title": "Tartışma: hedeflenen kamu, görünür olan medya",
           "prose_fonts_px": [
             24,
             32,
@@ -181,6 +183,26 @@
         },
         {
           "scene": 15,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 16,
+          "title": "Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 17,
           "title": "Kaynakça",
           "prose_fonts_px": [
             24,
@@ -268,7 +290,7 @@
         },
         {
           "scene": 8,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
           "prose_fonts_px": [
             19,
             24,
@@ -278,7 +300,7 @@
         },
         {
           "scene": 9,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             19,
             24,
@@ -288,7 +310,7 @@
         },
         {
           "scene": 10,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Altı son etiket, 240 alan adında birleşir.",
           "prose_fonts_px": [
             19,
             24,
@@ -298,17 +320,17 @@
         },
         {
           "scene": 11,
-          "title": "Vaka hangi ülkelerin haberlerinde görünür oldu?",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
-            18,
-            19.84,
+            19,
+            24,
             35
           ],
           "violations": []
         },
         {
           "scene": 12,
-          "title": "Tartışma: yerelleşmiş taklit ve görünürlük",
+          "title": "Görünürlük iki günlük bir dalgadır",
           "prose_fonts_px": [
             19,
             24,
@@ -318,17 +340,17 @@
         },
         {
           "scene": 13,
-          "title": "Sınırlılıklar",
+          "title": "Hedef Avrupa; haber kaynağı ağırlıkla ABD",
           "prose_fonts_px": [
-            19,
-            24,
+            18,
+            19.84,
             35
           ],
           "violations": []
         },
         {
           "scene": 14,
-          "title": "Sonuç: yoğun hedef, tekrarlanan adres, ölçülebilir görünürlük",
+          "title": "Tartışma: hedeflenen kamu, görünür olan medya",
           "prose_fonts_px": [
             19,
             24,
@@ -338,6 +360,26 @@
         },
         {
           "scene": 15,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 16,
+          "title": "Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 17,
           "title": "Kaynakça",
           "prose_fonts_px": [
             19,
@@ -356,9 +398,9 @@
   "live_OSM_verified": false,
   "native_powerpoint": {
     "verified": true,
-    "main_slides": 15,
-    "total_slides": 26,
-    "pdf_pages": 26,
+    "main_slides": 17,
+    "total_slides": 30,
+    "pdf_pages": 30,
     "main_text_editable": true,
     "main_slides_have_no_raster_picture": true,
     "desktop_PowerPoint_render_verified": false

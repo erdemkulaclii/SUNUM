@@ -15,10 +15,10 @@ with sync_playwright() as p:
     page.on('request',lambda req:requests.append(req.url))
     page.on('pageerror',lambda err:errors.append(str(err)))
     page.set_content((O/'AKADEMIK_ODAKLI_SUNUM.html').read_text())
-    for i,name in [(0,'PROFESYONEL_KAPAK'),(7,'ULKE_DAGILIMI'),(8,'DNS_ETIKETLERI'),(9,'ILK_ETIKET_TEKRARI'),(5,'ALAN_ADI_ANATOMISI'),(10,'GDELT_HARITA_ONIZLEME'),(13,'SONUC_ONIZLEME'),(14,'KAYNAKCA_ONIZLEME')]:
-        page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(300 if i==10 else 0);page.screenshot(path=str(O/f'{name}.png'))
+    for i,name in [(0,'PROFESYONEL_KAPAK'),(8,'ULKE_DAGILIMI'),(9,'DNS_ETIKETLERI'),(10,'ILK_ETIKET_TEKRARI'),(5,'ALAN_ADI_ANATOMISI'),(11,'GDELT_DALGA_ONIZLEME'),(12,'GDELT_HARITA_ONIZLEME'),(15,'SONUC_ONIZLEME'),(16,'KAYNAKCA_ONIZLEME')]:
+        page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(600 if i in (11,12) else 0);page.screenshot(path=str(O/f'{name}.png'))
     page.evaluate('openAtlas()');page.wait_for_timeout(250);page.screenshot(path=str(O/'ATLAS_ONIZLEME.png'))
-    page.evaluate('closeModal();go(7)');page.set_viewport_size({'width':390,'height':844})
+    page.evaluate('closeModal();go(8)');page.set_viewport_size({'width':390,'height':844})
     page.screenshot(path=str(O/'MOBIL_ONIZLEME.png'),full_page=True)
     assert not requests and not errors,(requests,errors)
     browser.close()
@@ -41,7 +41,7 @@ output_names=[
  'SUNUCU_KARTLARI.pdf','SUNUCU_KARTLARI.docx','KONUSMA_METNI_15_DK.pdf','KONUSMA_METNI_15_DK.docx',
  'KONUSMACI_NOTLARI.md','APA7_KAYNAKCA.pdf','APA7_KAYNAKCA.md','AKADEMIK_ARASTIRMA_DOSYASI.pdf',
  'IOC_YAPISAL_ANALIZ.json','IOC_YAPISAL_KANIT.csv','IOC_SON_ETIKET_DAGILIMI.csv','IOC_HEDEF_SON_ETIKET.csv','IOC_GOVDE_AILELERI.csv',
- 'PROFESYONEL_KAPAK.png','ULKE_DAGILIMI.png','DNS_ETIKETLERI.png','ILK_ETIKET_TEKRARI.png','ALAN_ADI_ANATOMISI.png','SONUC_ONIZLEME.png','KAYNAKCA_ONIZLEME.png','GDELT_HARITA_ONIZLEME.png','ATLAS_ONIZLEME.png','MOBIL_ONIZLEME.png',
+ 'PROFESYONEL_KAPAK.png','ULKE_DAGILIMI.png','DNS_ETIKETLERI.png','ILK_ETIKET_TEKRARI.png','ALAN_ADI_ANATOMISI.png','SONUC_ONIZLEME.png','KAYNAKCA_ONIZLEME.png','GDELT_HARITA_ONIZLEME.png','GDELT_DALGA_ONIZLEME.png','GDELT_HARITA.png','ATLAS_ONIZLEME.png','MOBIL_ONIZLEME.png',
  'HARITA_TURU.mp4','HAREKETLI_HARITA.gif','ANIMASYON_KUNYESI.json',
  'ODAKLI_SUNUM_DOGRULAMA.json','ODAKLI_WEB_DOGRULAMA.json','ODAKLI_BELGE_DOGRULAMA.json','BASEMAP_DOGRULAMA.json',
 ]
@@ -49,7 +49,7 @@ script_names=[
  'build_release.py','analyze_ioc_structure.py','build_concise_presentation.py','export_concise_deck.py','export_concise_documents.py',
  'build_interactive.py','build_presentation.py','export_editorial.py','export_academic_documents.py','export_editable_presentation.py',
  'concise.html','concise.css','concise.js','concise_narrative.json','concise_appendices.json','concise_references.json','basemap.js','presentation_meta.json',
- 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py',
+ 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py',
  'render_cinematic_tour.py','verify_concise.py','verify_leaflet.py','verify_slide_readability.py','verify_basemap.py',
  'serve_presentation.py','fetch_gdelt.py','fetch_gdelt_cloud.py','test_gdelt_cloud.py','test_presentation_server.py',
 ]
@@ -61,7 +61,8 @@ assert all(path.is_file() for path in files),[str(p) for p in files if not p.is_
 assert all(p.name!='.env' and 'locations' not in p.parts for p in files)
 snap=R/'research/gdelt/GDELT_HARITA_VERISI.json'
 if snap.is_file():files.append(snap)
-manifest={'main_slides':15,'appendix_slides':11,'planned_seconds':810,'buffer_seconds':90,'unique_source_domains':311,'photos_included':False,'gdelt_snapshot_included':snap.is_file(),'synthetic_GDELT_observations':False,'files':{str(path.relative_to(R)):{'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in sorted(files)}}
+files += [p for p in [R/'research/gdelt/validation_sample.csv',R/'research/gdelt/gkg_archive/manifest.json',R/'research/gdelt/gkg_archive/matches.jsonl',R/'research/gdelt/gkg_archive/totals.json'] if p.is_file()]
+manifest={'main_slides':len(json.loads((R/'scripts/concise_narrative.json').read_text())),'appendix_slides':len(json.loads((R/'scripts/concise_appendices.json').read_text())),'planned_seconds':810,'buffer_seconds':90,'unique_source_domains':311,'photos_included':False,'gdelt_snapshot_included':snap.is_file(),'synthetic_GDELT_observations':False,'files':{str(path.relative_to(R)):{'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in sorted(files)}}
 manifest_path=O/'TESLIM_MANIFEST.json';manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');files.append(manifest_path)
 bundle=O/'PROFESYONEL_TAM_PAKET.zip'
 with zipfile.ZipFile(bundle,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

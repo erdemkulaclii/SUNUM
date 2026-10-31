@@ -31,3 +31,16 @@ body[data-scene="gdelt_map"] .slide-grid{grid-template-columns:27% 73%;align-ite
 .presentation .gm-controls{opacity:.35}.presentation .gm-controls:hover{opacity:1}
 @media(max-width:900px){body[data-scene="gdelt_map"] .slide-grid{display:flex}.gdelt-slot{min-height:620px}.gm-panel{position:static;width:auto;max-height:none;margin-top:8px;box-shadow:none}.gm-wrap{min-height:380px}.gm-empty{max-width:none;right:14px}.lit-grid,.flow{grid-template-columns:1fr}}
 @media(max-height:800px) and (min-width:900px){.ref-list p{font-size:11.5px;line-height:1.4;margin-bottom:5px}.ref-list small{font-size:11px}}
+
+/* --- Otomatik akış --- */
+#points p,#takeaway,#visual{transition:opacity .7s ease,transform .7s ease}
+.pending{opacity:0!important;transform:translateY(14px)}
+#caption{position:fixed;left:50%;transform:translateX(-50%);bottom:122px;max-width:min(1100px,90vw);background:#0c1b2de8;color:#fff;font-size:clamp(17px,1.35vw,22px);line-height:1.45;padding:12px 22px;border-left:4px solid #f28a72;z-index:900;box-shadow:0 8px 30px #0003}#caption[hidden]{display:none}
+.presentation #caption{bottom:110px}
+#track button{position:relative;overflow:hidden}#track button.active{background:#c2ccd5}#track button.active:after{content:'';position:absolute;inset:0;background:var(--accent);transform-origin:left;transform:scaleX(var(--fill,1))}
+body.autoplay #visual .bar{transform-origin:175px 0;animation:grow 1.4s ease-out both}@keyframes grow{from{transform:scaleX(0)}}
+body.autoplay .gm-controls{display:none}
+.gm-day{position:absolute;left:58px;top:12px;z-index:810;background:#0c1b2de6;color:#fff;padding:10px 16px;border-left:4px solid #f28a72}.gm-day[hidden]{display:none}.gm-day b{display:block;font:700 28px ui-monospace,monospace}.gm-day span{font-size:13px;color:#d5e1ec}
+.wave{width:100%;height:auto;max-height:430px;display:block}.wave-bar{fill:#9ec1e0}.wave-bar.peak{fill:#b02d26}.wave-line{fill:none;stroke:#10253c;stroke-width:2.5}.wave-base{stroke:#8ea3b6}.wave-mark{stroke:#b02d26;stroke-dasharray:4 3}.wave-note{font:700 13px Arial;fill:#b02d26}.wave-tick{font:12px ui-monospace,monospace;fill:#425970}.wave-axis,.wave-legend{font:13px Arial;fill:#425970}
+body[data-scene="references"] .ref-list p{font-size:12px;line-height:1.38;margin-bottom:5px}
+@media(max-height:800px) and (min-width:900px){body[data-scene="references"] .ref-list p{font-size:10.5px;line-height:1.3;margin-bottom:3px}body[data-scene="references"] .ref-list small{font-size:10px}}

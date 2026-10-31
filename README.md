@@ -4,62 +4,47 @@ Meta’nın 2022 CIB gösterge listesi ile GDELT haber verisini birlikte kullana
 
 [PowerPoint](output/AKADEMIK_ODAKLI_SUNUM.pptx) · [PDF](output/AKADEMIK_ODAKLI_SUNUM.pdf) · [Etkileşimli sunum (HTML)](output/AKADEMIK_ODAKLI_SUNUM.html) · [Sunucu kartları](output/SUNUCU_KARTLARI.pdf) · [Araştırma dosyası](output/AKADEMIK_ARASTIRMA_DOSYASI.pdf) · [APA 7 kaynakça](output/APA7_KAYNAKCA.md) · [Tam paket](output/PROFESYONEL_TAM_PAKET.zip)
 
-## Akış: 15 ana slayt, 13 dk 30 sn anlatım + 1 dk 30 sn pay
+## Akış: 17 ana slayt, 13 dk 30 sn anlatım + 1 dk 30 sn pay
 
 | # | Bölüm | İçerik |
 |---|---|---|
-| 1 | Kapak | Başlık, alt başlık, yazar/kurum/ders/tarih (`scripts/presentation_meta.json`) |
-| 2 | Plan | Giriş · Yöntem · Bulgular · Tartışma |
-| 3 | Giriş / vaka | Doppelgänger: EU DisinfoLab (2022) ve Meta (Nimmo ve Agranovich, 2022) |
-| 4 | Kavramsal çerçeve | Bilgi düzensizliği; ölçüm ve payda; haber verisinde coğrafya |
-| 5 | Araştırma soruları | AS1 hedef coğrafyası · AS2 sözcüksel yapı · AS3 haber görünürlüğü |
-| 6 | Veri ve yöntem | Meta CSV · GDELT DOC 2.0 · GDELT GKG (ayrı ölçüm birimleri) |
-| 7 | Veri hazırlığı | 350 → 313 → 311 |
-| 8–10 | Bulgu 1–3 | Almanya %95,8 · altı son etiket 240 adres · 75 ilk etiket grubu 293 adres |
-| 11 | **Bulgu 4: GDELT haritası** | Kaynak ülke (renk) · anılan yer (nokta) · Meta hedefi (kırmızı çerçeve) |
-| 12 | Tartışma | Bulguların literatür/raporlarla karşılaştırması |
-| 13 | Sınırlılıklar | Seçilim, 250 sonuç sınırı, konum kodlaması |
-| 14 | Sonuç | AS1–AS3 yanıtları ve sonraki adım |
-| 15 | Kaynakça | Özet; tam APA 7 künyeleri eklerde (11 ek slayt) |
+| 1–2 | Kapak, plan | Başlık, yazar alanları (`scripts/presentation_meta.json`), sunum planı |
+| 3 | Giriş / vaka | Doppelgänger: EU DisinfoLab (2022), Meta (Nimmo ve Agranovich, 2022) |
+| 4 | Kavramsal çerçeve | Bennett ve Livingston; Wardle ve Derakhshan; Lazer/Allen; Kwak ve An; Wang vd. |
+| 5 | Araştırma soruları | AS1 hedef · AS2 alan adı yapısı · AS3 haber görünürlüğü (zaman ve mekân) |
+| 6–8 | Yöntem | Veri ve yöntem · Meta veri hazırlığı · **GDELT test edilebilirliği (MD5, payda, isabet)** |
+| 9–11 | Bulgu 1–3 (Meta) | Almanya %95,8 · altı son etiket 240 adres · 75 ilk etiket grubu |
+| 12 | **Bulgu 4 (GDELT)** | Görünürlük iki günlük dalga: 27.09’da 392, 28.09’da 100 haber (%96,3) |
+| 13 | **Bulgu 5 (GDELT haritası)** | Kaynak ülke: ABD 373, Almanya 29; oranlı ölçüde Almanya 2.; haberlerin %63,6’sı Almanya’yı anıyor |
+| 14–16 | Tartışma, sınırlılıklar, sonuç | Hedef–görünürlük asimetrisi, ajans dağıtımı, isabet ve kapsam sınırları |
+| 17 | Kaynakça | 19 kaynak; tam APA 7 künyeleri eklerde (13 ek slayt) |
 
 Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 
-## GDELT haritası
+## Kendiliğinden ilerleyen sunum
 
-Harita slaytı üç katman gösterir:
+**“Sunumu başlat ▶”** tam ekrana geçer ve sunumu otomatik oynatır: slaytlar planlanan sürelerle geçer, her slaytta maddeler sırayla açılır, ana fikir sonda gelir, grafik ve harita slaytın süresi boyunca kendiliğinden ilerler (harita gün gün birikir, sonra Meta hedefleri, anılan yerler ve Almanya'ya yakınlaşma gelir). Alttaki **anlatım şeridi** o anda söylenecek cümleyi gösterir (C tuşu). **S** tuşu tarayıcının Türkçe sesiyle sesli anlatımı açar. Boşluk: durdur/devam, ok tuşları: elle geçiş. Hiçbir pencere açmanız gerekmez. PowerPoint sürümünde de slaytlar slayt gösterisinde aynı sürelerle kendiliğinden ilerler.
 
-- **Renk — haberin yayımlandığı ülke.** GDELT DOC 2.0 `artlist`, sabit sorgu `(doppelganger OR "doppelgänger" OR "coordinated inauthentic") (russia OR russian OR meta OR facebook)`, Meta duyuru penceresi 20 Eylül – 11 Ekim 2022, üç günlük dilimler, URL düzeyinde tekilleştirme.
-- **Nokta — haberde anılan yer.** GDELT GKG 2.0 `V2Locations`, BigQuery (`scripts/gdelt_gkg_locations.sql`).
-- **Kırmızı çerçeve — Meta hedef etiketi** (Almanya kalın çizgi).
+## GDELT verisi: ham arşivden, test edilebilir
 
-Yan panel tekil haber sayısını, en çok haber çıkan ülkeleri, Almanya’nın haber kaynaklarındaki payını (Meta’daki %95,8 ile karşılaştırmalı), 250 sınırına ulaşan dilimleri ve verinin ne zaman, nereden alındığını gösterir. **Kaynak ülke, hedef ülke veya okur ülkesi değildir.**
+GDELT verisi API'den değil, GDELT literatüründe (Leetaru ve Schrodt, 2013; Kwak ve An, 2014) kullanılan **ham GKG 2.0 arşivinden** gelir:
 
-### Veriyi alma (önerilen: sunumdan önce, kendi bilgisayarınızda)
+- 20 Eylül – 11 Ekim 2022 arasındaki bütün 15 dakikalık İngilizce ve çeviri (translingual) GKG dosyaları; her biri GDELT'in yayımladığı **MD5** değeriyle doğrulanır (`research/gdelt/gkg_archive/manifest.json`).
+- Sabit, birim testli eşleşme kuralları: **R1** “doppelgänger” + Rusya bağlamı; **R2** Meta/Facebook + Rusya + ağ/sahte/dezenformasyon terimi (çok dilli).
+- Kaynak ülke: GDELT'in 2018 alan adı–ülke listesi. Anılan yerler: aynı haberlerin `V2Locations` alanı. Payda: taranan bütün kayıtlar (gün ve ülke bazında).
+- İsabet testi: sabit tohumlu rastgele örneklem, Wilson %95 güven aralığı (`scripts/gdelt_validation.py`, `research/gdelt/validation_sample.csv`). Birinci kodlama yapay zekâ destekli ön kodlamadır; ikinci (insan) kodlayıcı sütunu boştur ve doldurulması önerilir (Cohen κ otomatik hesaplanır).
+
+Yeniden üretmek için (~10 dk, ~40 GB akış; disk gerekmez):
 
 ```bash
-python scripts/fetch_gdelt_map.py
+python scripts/gdelt_gkg_archive.py
 ```
 
 ```bash
-python scripts/build_interactive.py && python scripts/export_editorial.py
+python scripts/gdelt_validation.py score && python scripts/build_interactive.py && python scripts/export_editorial.py
 ```
 
-Bu, gerçek yanıtları `research/gdelt/` altına (ham yanıtlar + SHA-256) kaydeder, veriyi HTML’ye gömer ve PowerPoint/PDF harita slaytına statik harita görüntüsü ekler. Anılan yer katmanı için (Google Cloud projesi ve `bq` gerekir; önce `--dry-run` ile taranacak veri miktarını görün):
-
-```bash
-python scripts/fetch_gdelt_map.py --bigquery --project GCP_PROJENIZ
-```
-
-DOC 2.0 resmî olarak son üç ayı destekler; 2022 penceresi veri döndürmezse GKG/BigQuery yolu tarihsel analiz için doğru yoldur. Güncel izleme için `--window recent30` kullanılabilir.
-
-### Sunum anında
-
-- `BASLAT.sh` → yerel sunucu (`http://127.0.0.1:8765`), GDELT isteklerini sunucu tarafında yapar (tarayıcı CORS engeli olmaz).
-- HTML’yi doğrudan açarsanız tarayıcı GDELT’e doğrudan bağlanmayı dener.
-- Veri gömülü değilse sunum açılınca 2022 penceresi arka planda bir kez sorgulanır (~1 dk; GDELT 5 saniyede bir isteğe izin verir). Harita slaytında “2022 penceresini sorgula”, “Son 30 gün”, “JSON yükle”, “JSON indir” düğmeleri vardır.
-- Başarısız veya boş yanıt “sıfır haber” sayılmaz ve hiçbir koşulda örnek veri gösterilmez.
-
-**Not:** Bu sürüm hazırlanırken çalışma ortamının ağ politikası GDELT’i engellediği için depoda GDELT anlık görüntüsü yoktur; harita kodu yalnız sentetik test yanıtlarıyla sınandı. Canlı veriyi ilk kez kendi bilgisayarınızda alın ve sonuçları sunmadan önce kontrol edin.
+İsteğe bağlı güncel izleme için DOC 2.0 API yolu (`scripts/fetch_gdelt_map.py`, harita slaytındaki düğmeler) korunur; ancak sunumdaki bulgular ham arşivdendir.
 
 ## Meta bulguları (tamamlanmış)
 
@@ -91,4 +76,4 @@ python scripts/verify_concise.py --check-pptx
 python -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-Tarayıcı denetimleri Chromium ve Playwright gerektirir. Testlerdeki API yanıtları sentetiktir ve sunum verisine katılmaz. Güncel ZIP paketi: `python scripts/build_release.py`.
+Tarayıcı denetimleri Chromium ve Playwright gerektirir. Testlerdeki API/arşiv yanıtları sentetik fikstürlerdir ve sunum verisine katılmaz. Güncel ZIP paketi: `python scripts/build_release.py`.

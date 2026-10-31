@@ -13,16 +13,16 @@
   ]
  },
  {
-  "title": "GDELT sorgu ve harita protokolü",
+  "title": "GDELT arşiv protokolü ve test edilebilirlik",
   "kind": "bullets",
-  "source": "The GDELT Project, 2017; bu çalışmanın sorgu tasarımı.",
+  "source": "The GDELT Project, 2015, 2018; bu çalışmanın arşiv taraması.",
   "notes": "Ek materyal; soru-cevap için. Sorgu ve pencere scripts/gdelt_common.py içinde sabittir.",
   "bullets": [
-   "Sorgu: (doppelganger OR \"doppelgänger\" OR \"coordinated inauthentic\") (russia OR russian OR meta OR facebook) · DOC 2.0 artlist.",
-   "Pencere: 20 Eylül – 11 Ekim 2022, üç günlük dilimler; her dilim ≤ 250 makale. Sınıra ulaşan dilim ayrıca raporlanır.",
-   "Birim: URL düzeyinde tekilleştirilmiş haber. Renk = sourcecountry (yayın ülkesi); okur ya da hedef ülke değildir.",
-   "Noktalar: GKG V2Locations (BigQuery, gdelt-bq.gdeltv2.gkg_partitioned), aynı URL’ler veya başlıkta doppelgänger.",
-   "Her alımda zaman damgası, uç nokta ve SHA-256 saklanır; başarısız istek sıfır gözlem olarak kaydedilmez."
+   "Veri: GDELT GKG 2.0 ham 15 dakikalık dosyaları (İngilizce + çeviri akışı), 20 Eylül – 11 Ekim 2022; GDELT’in Google Cloud Storage aynası.",
+   "Doğrulama: her dosyanın boyutu ve MD5 değeri GDELT masterfilelist ile karşılaştırılır; uyuşmayan dosya sayılmaz, manifestte kalır.",
+   "R1: başlık/URL’de “doppelgänger” + Rusya bağlamı (terim ya da GKG konumu RS). R2: Meta/Facebook + Rusya + ağ/sahte/dezenformasyon terimi.",
+   "Kaynak ülke: GDELT 2018 alan adı–ülke listesi (haberin yayın ülkesi; hedef ya da okur ülkesi değil). Noktalar: aynı haberlerin V2Locations alanı.",
+   "İsabet: sabit tohumlu (2022) rastgele örneklem, kural başına ≤ 30 başlık; Wilson %95 güven aralığı. İkinci kodlayıcı sütunu açıktır."
   ]
  },
  {
@@ -350,7 +350,7 @@
   ]
  },
  {
-  "title": "Kaynakça / APA 7 (1/5)",
+  "title": "Kaynakça / APA 7 (1/7)",
   "kind": "references",
   "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
   "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
@@ -361,43 +361,66 @@
   ]
  },
  {
-  "title": "Kaynakça / APA 7 (2/5)",
+  "title": "Kaynakça / APA 7 (2/7)",
   "kind": "references",
   "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
   "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
   "reference_ids": [
+   "auswaertiges2024",
+   "bennett2018",
+   "freelon2020"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (3/7)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
+   "gdeltgkg",
    "gdeltdoc",
-   "hammond2014"
+   "gdeltdomains2018"
   ]
  },
  {
-  "title": "Kaynakça / APA 7 (3/5)",
+  "title": "Kaynakça / APA 7 (4/7)",
   "kind": "references",
   "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
   "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
   "reference_ids": [
-   "lazer2018",
-   "leetaru2013"
+   "hammond2014",
+   "kwak2014",
+   "lazer2018"
   ]
  },
  {
-  "title": "Kaynakça / APA 7 (4/5)",
+  "title": "Kaynakça / APA 7 (5/7)",
   "kind": "references",
   "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
   "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
   "reference_ids": [
+   "leetaru2013",
    "meta2022",
    "naturalearth"
   ]
  },
  {
-  "title": "Kaynakça / APA 7 (5/5)",
+  "title": "Kaynakça / APA 7 (6/7)",
   "kind": "references",
   "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
   "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
   "reference_ids": [
    "nimmo2022",
    "openstreetmap",
+   "wang2016"
+  ]
+ },
+ {
+  "title": "Kaynakça / APA 7 (7/7)",
+  "kind": "references",
+  "source": "APA 7; erişim ve doğrulama kayıtları KAYNAKLAR.md içinde.",
+  "notes": "Ek materyal; ana anlatım süresine dahil değildir.",
+  "reference_ids": [
    "wardle2017"
   ]
  }
