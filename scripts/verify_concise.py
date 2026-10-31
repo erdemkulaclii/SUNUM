@@ -131,7 +131,7 @@ def main():
     gi2=[s['visual'] for s in narrative].index('gdelt_map');page.evaluate(f'go({gi2})');page.evaluate(f'elapsed=offsets[{gi2}]+S[{gi2}].seconds*.2');page.wait_for_timeout(800)
     if page.evaluate('Boolean(D.gdelt)'):assert page.locator('#gm-day').is_visible(),'Map day animation missing'
     page.evaluate('togglePlay()');assert page.evaluate('playing') is False
-    gi=[s['visual'] for s in narrative].index('gdelt_map');page.locator('#gdelt-open').click();page.wait_for_timeout(400)
+    gi=[s['visual'] for s in narrative].index('gdelt_map');page.locator('#gdelt-open').click();page.wait_for_timeout(400);page.evaluate(f'cancelAnimationFrame(animFrame);window.onSlideProgress(S[{gi}],1,false)');page.wait_for_timeout(200)
     assert page.evaluate('scene')==gi and page.locator('#gm-map path').count()>100,'GDELT map did not render country layer'
     assert page.locator('#gm-map path[stroke="#c0392b"]').count()>=6,'Meta target outlines missing'
     if page.evaluate('Boolean(D.gdelt)'):assert 'MD5' in page.locator('#gm-panel').inner_text()

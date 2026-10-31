@@ -1,11 +1,11 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T19:12:56.194158+00:00",
-  "html_sha256": "26aa6af38774abe4402a260ca2a0502eb5060f52086d14cf64ed20086837d661",
-  "narrative_sha256": "4be9c46db80347585f6d1595702eeffe8cd5c62f53aa742753f22093982f8220",
+  "checked_at_utc": "2026-10-31T19:21:17.811880+00:00",
+  "html_sha256": "c6b97ca3ef99636c9a18812c3c1dbadd051c2a3224ea08cbd0eeee26835620ca",
+  "narrative_sha256": "d3a467857fc0091fe6c3fd446ce8e6aefc1f715e85f2b58756e9a4836a89c954",
   "main_slides": 17,
-  "planned_seconds": 810,
-  "buffer_seconds": 90,
+  "planned_seconds": 1200,
+  "buffer_seconds": 0,
   "authored_main_words_including_subtitle": [
     29,
     25,
