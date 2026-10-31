@@ -12,6 +12,8 @@ python sunum.py
 
 Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (yoksa varsayılan tarayıcıda) açar ve otomatik oynatır. Ekrandaki “Sunumu başlat” düğmesine tıklarsanız tam ekrana geçer; tıklamazsanız 5 saniye sonra kendiliğinden başlar. Kapatmak için komut penceresinde Ctrl+C.
 
+**Linux’ta sesli anlatım** için bir kez: `sudo apt install speech-dispatcher espeak-ng` (Fedora: `dnf`, Arch: `pacman`). Başlatıcı Chrome/Chromium’u `--enable-speech-dispatcher` ile açar; ses yoksa anlatım alttaki şeritte yazılı görünür.
+
 Çift tıklama: Windows’ta **`BASLAT.bat`**, macOS’ta **`BASLAT.command`**, Linux’ta `./BASLAT.sh`. Yalnız Python 3 gerekir; ek paket gerekmez.
 
 | Komut | Ne yapar |

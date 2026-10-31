@@ -73,6 +73,8 @@ def open_presentation(url: str, fullscreen: bool = True) -> str:
                 '--autoplay-policy=no-user-gesture-required']
         if fullscreen:
             args.append('--start-fullscreen')
+        if platform.system() == 'Linux':
+            args.append('--enable-speech-dispatcher')  # Linux'ta tarayıcı sesi için gerekli
         try:
             subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             return f'{Path(exe).name} (tam ekran uygulama penceresi; çıkmak için F11 ya da Alt+F4)'
@@ -108,6 +110,18 @@ def check() -> None:
     run([sys.executable, str(SCRIPTS / 'verify_concise.py'), '--check-pptx'])
 
 
+def linux_voice_hint() -> None:
+    """Linux'ta sesli anlatım speech-dispatcher + espeak-ng (Türkçe) ister; eksikse nasıl kurulacağını söyler."""
+    if platform.system() != 'Linux':
+        return
+    missing = [n for n in ('speech-dispatcher', 'espeak-ng') if not shutil.which(n)]
+    if missing:
+        print('Not: Sesli anlatım için şu paketler gerekli: ' + ' '.join(missing))
+        print('     Ubuntu/Debian: sudo apt install speech-dispatcher espeak-ng')
+        print('     Fedora: sudo dnf install speech-dispatcher espeak-ng   ·   Arch: sudo pacman -S speech-dispatcher espeak-ng')
+        print('     Ses olmadan da sunum çalışır; anlatım alttaki şeritte yazılı görünür.\n')
+
+
 def serve(autoplay: bool, open_browser: bool, port: int | None) -> None:
     import serve_presentation as sp
     if not HTML.is_file():
@@ -119,6 +133,7 @@ def serve(autoplay: bool, open_browser: bool, port: int | None) -> None:
     url = f'http://127.0.0.1:{port}/' + ('?autoplay=1' if autoplay else '')
     threading.Thread(target=server.serve_forever, daemon=True).start()
     print(f'\nSunum hazır: {url}')
+    linux_voice_hint()
     if open_browser:
         print('Açıldı:', open_presentation(url, fullscreen=autoplay))
     print('Sunum otomatik oynar · Boşluk: durdur/devam · ←/→: slayt · C: anlatım şeridi · S: sesli anlatım' if autoplay
