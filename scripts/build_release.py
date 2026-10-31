@@ -62,7 +62,7 @@ assert all(p.name!='.env' and 'locations' not in p.parts for p in files)
 snap=R/'research/gdelt/GDELT_HARITA_VERISI.json'
 if snap.is_file():files.append(snap)
 files += [p for p in [R/'research/gdelt/validation_sample.csv',R/'research/gdelt/gkg_archive/manifest.json',R/'research/gdelt/gkg_archive/matches.jsonl',R/'research/gdelt/gkg_archive/totals.json'] if p.is_file()]
-manifest={'main_slides':len(json.loads((R/'scripts/concise_narrative.json').read_text())),'appendix_slides':len(json.loads((R/'scripts/concise_appendices.json').read_text())),'planned_seconds':810,'buffer_seconds':90,'unique_source_domains':311,'photos_included':False,'gdelt_snapshot_included':snap.is_file(),'synthetic_GDELT_observations':False,'files':{str(path.relative_to(R)):{'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in sorted(files)}}
+manifest={'main_slides':len(json.loads((R/'scripts/concise_narrative.json').read_text())),'appendix_slides':len(json.loads((R/'scripts/concise_appendices.json').read_text())),'planned_seconds':1200,'buffer_seconds':0,'unique_source_domains':311,'photos_included':False,'gdelt_snapshot_included':snap.is_file(),'synthetic_GDELT_observations':False,'files':{str(path.relative_to(R)):{'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in sorted(files)}}
 manifest_path=O/'TESLIM_MANIFEST.json';manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');files.append(manifest_path)
 bundle=O/'PROFESYONEL_TAM_PAKET.zip'
 with zipfile.ZipFile(bundle,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:

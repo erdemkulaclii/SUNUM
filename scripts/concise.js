@@ -59,8 +59,8 @@ function openAtlas(){atlasTargets={};const body=openModal('Hedef ülkeler / yard
 $('atlas-open').onclick=openAtlas;
 $('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0)};
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)document.body.classList.remove('presentation')});
-document.addEventListener('keydown',e=>{if(!$('modal').hidden){if(e.key==='Escape')closeModal();if(e.key==='Tab'){const items=[...$('modal').querySelectorAll('button,input,select,a[href],summary')].filter(x=>x.offsetParent!==null),first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}return}if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){go(scene+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(scene-1);e.preventDefault()}if(e.key===' '){togglePlay();e.preventDefault()}if(e.key.toLowerCase()==='n')openNotes()});
-$('timing-label').textContent=fmt(T)+' ANLATIM + '+fmt(D.timing.session-T)+' PAY · SORU-CEVAP';
+document.addEventListener('keydown',e=>{if(!$('modal').hidden){if(e.key==='Escape')closeModal();if(e.key==='Tab'){const items=[...$('modal').querySelectorAll('button,input,select,a[href],summary')].filter(x=>x.offsetParent!==null),first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}return}if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){go(scene+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(scene-1);e.preventDefault()}if(e.key===' '){go(scene+1);e.preventDefault()}if(e.key.toLowerCase()==='p'){togglePlay();e.preventDefault()}if(e.key.toLowerCase()==='n')openNotes()});
+$('timing-label').textContent='YAKLAŞIK '+Math.round(T/60)+' DAKİKA · SLAYTLARI SUNUCU GEÇİRİR';
 render();
 
 /* ---------- Kendiliğinden ilerleyen sunum ----------
@@ -111,9 +111,22 @@ render();
 (function(){
  const q=new URLSearchParams(location.search);if(q.get('autoplay')!=='1'&&location.hash!=='#autoplay')return;
  document.body.classList.add('presentation');go(0);
- const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tıklayın: tam ekran · Boşluk: durdur/devam · ←/→: slayt · N: konuşma notları</small>';document.body.append(o);
- let n=5,done=false;const tick=()=>{if(done)return;$('start-count').textContent=n+' saniye içinde kendiliğinden başlar';if(n--<=0)begin(false);else setTimeout(tick,1000)};
- async function begin(full){if(done)return;done=true;o.remove();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
+ const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><small>Tıklayın: tam ekran · →, Boşluk, PageDown ya da tıklama: sonraki slayt · ←: önceki · N: konuşma notları</small>';document.body.append(o);
+ let done=false;
+ async function begin(full){if(done)return;done=true;o.remove();startClock();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}}
  $('start-now').onclick=()=>begin(true);document.addEventListener('keydown',e=>{if(!done&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();begin(true)}},true);
- $('start-now').focus();tick();
+ $('start-now').focus();
 })();
+
+/* ---------- Sunucu kontrollü akış ----------
+ * Slaytlar kendiliğinden geçmez ve yazılar süreyle açılmaz: her şey slayt açılınca görünür.
+ * Yalnız harita (≈14 sn) ve haber dalgası grafiği (≈3 sn) slayta girince bir kez oynar.
+ * Saat, sunumun başladığı andan itibaren geçen gerçek süreyi gösterir.
+ */
+let clockStart=null,clockTimer=null,animFrame=null;
+function startClock(){if(clockStart)return;clockStart=Date.now();clockTimer=setInterval(()=>{if(!playing)$('clock').textContent=fmt((Date.now()-clockStart)/1000)+' / '+fmt(T)},500)}
+function animateVisual(s){cancelAnimationFrame(animFrame);if(playing)return;const dur=s.visual==='gdelt_map'?14000:s.visual==='gdelt_wave'?3000:0;if(!dur)return;const t0=performance.now(),i=scene;
+ const step=t=>{if(scene!==i||playing)return;const f=Math.min(1,(t-t0)/dur);window.onSlideProgress?.(s,f,f<1);if(f<1)animFrame=requestAnimationFrame(step)};animFrame=requestAnimationFrame(step)}
+const renderManual=render;render=function(){renderManual();if(!clockStart)$('clock').textContent='00:00 / '+fmt(T);else if(!playing)$('clock').textContent=fmt((Date.now()-clockStart)/1000)+' / '+fmt(T);animateVisual(S[scene])};
+document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||document.getElementById('start-overlay'))return;if(e.key==='PageDown'){startClock();go(scene+1);e.preventDefault()}if(e.key==='PageUp'){go(scene-1);e.preventDefault()}if(e.key==='ArrowRight')startClock()});
+document.querySelector('main.slide').addEventListener('click',e=>{if(e.target.closest('a,button,input,select,label,.gdelt-slot,.leaflet-container')||document.getElementById('start-overlay'))return;startClock();go(scene+1)});

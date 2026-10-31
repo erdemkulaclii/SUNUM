@@ -3,8 +3,8 @@
   "main_slides": 17,
   "appendix_slides": 6,
   "total_slides": 23,
-  "planned_talk_seconds": 810,
-  "remaining_session_buffer_seconds": 90,
+  "planned_talk_seconds": 1200,
+  "remaining_session_buffer_seconds": -300,
   "main_text_editable": true,
   "authored_main_slide_word_counts": [
     29,
@@ -33,6 +33,6 @@
   "gdelt_snapshot_embedded": true,
   "synthetic_GDELT_observations": false,
   "desktop_PowerPoint_render_verified": false,
-  "pptx_sha256": "6aa368f37d720ff593664ca87c0d34781d23fbfc73e81fe6bd39718366afb48e",
-  "pdf_sha256": "0666a13ab46e06fee54cdb9bc3a2dc50247deb2e83de7e10fac3b6ed99f2e62d"
+  "pptx_sha256": "b7a90bb6f1b521f7b59bbb84c53017c39167334e1a35a9044344dce9a1897cdd",
+  "pdf_sha256": "05196334f783e2849a70de3606a33a943fa56e12e9b9b7f9eb2cdf2a522ff719"
 }

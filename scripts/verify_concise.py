@@ -54,17 +54,17 @@ def check_native(path,narrative):
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--html',type=Path,default=O/'PROFESYONEL_SUNUM.html');parser.add_argument('--pptx',type=Path,default=O/'AKADEMIK_ODAKLI_SUNUM.pptx');parser.add_argument('--check-pptx',action='store_true');args=parser.parse_args()
  html=args.html.read_text();narrative=json.loads((R/'scripts/concise_narrative.json').read_text());a=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());refs=json.loads((R/'scripts/concise_references.json').read_text())
- assert sum(s['seconds'] for s in narrative)==810
+ assert sum(s['seconds'] for s in narrative)==1200
  words=[sum(len(norm(x).split()) for x in [s['title'],s.get('subtitle',''),*s['display_points'],s['takeaway']]) for s in narrative];assert max(words)<=34
  assert len(refs)>=12 and all(set(s['citations'])<={r['id'] for r in refs} for s in narrative)
  assert len([s for s in narrative if s['visual']=='gdelt_map'])==1
- report={'checks_passed':False,'checked_at_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'html_sha256':hashlib.sha256(args.html.read_bytes()).hexdigest(),'narrative_sha256':hashlib.sha256((R/'scripts/concise_narrative.json').read_bytes()).hexdigest(),'main_slides':len(narrative),'planned_seconds':810,'buffer_seconds':90,'authored_main_words_including_subtitle':words,'word_count_scope':'Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.','APA_references':6,'analysis':verify_analysis(a),'viewports':[],'violations':[],'javascript_errors':[],'external_requests':[],'actual_GDELT_network_verified':False,'live_OSM_verified':False}
+ report={'checks_passed':False,'checked_at_utc':dt.datetime.now(dt.timezone.utc).isoformat(),'html_sha256':hashlib.sha256(args.html.read_bytes()).hexdigest(),'narrative_sha256':hashlib.sha256((R/'scripts/concise_narrative.json').read_bytes()).hexdigest(),'main_slides':len(narrative),'planned_seconds':1200,'buffer_seconds':0,'authored_main_words_including_subtitle':words,'word_count_scope':'Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.','APA_references':6,'analysis':verify_analysis(a),'viewports':[],'violations':[],'javascript_errors':[],'external_requests':[],'actual_GDELT_network_verified':False,'live_OSM_verified':False}
  with sync_playwright() as p:
   exe=next((x for x in ['/usr/bin/chromium','/opt/pw-browsers/chromium'] if Path(x).exists()),None);browser=p.chromium.launch(**({'executable_path':exe,'args':['--no-sandbox']} if exe else {}),headless=True)
   for width,height in [(1600,900),(1280,720)]:
    ctx=browser.new_context(viewport={'width':width,'height':height},offline=True);page=ctx.new_page()
    page.on('pageerror',lambda e:report['javascript_errors'].append(str(e)));page.on('request',lambda r:report['external_requests'].append(r.url) if r.url.startswith(('http:','https:')) else None)
-   page.set_content(html);assert page.evaluate('map===null') and page.evaluate('D.slides.length')==len(narrative) and page.evaluate('offsets.at(-1)')==810
+   page.set_content(html);assert page.evaluate('map===null') and page.evaluate('D.slides.length')==len(narrative) and page.evaluate('offsets.at(-1)')==1200
    assert page.locator('img').count()==0
    rows=[]
    for i,s in enumerate(narrative):
@@ -156,7 +156,7 @@ def main():
  for name in ['ODAKLI_WEB_DOGRULAMA.json','SUNUM_OKUNABILIRLIK.json','LEAFLET_DOGRULAMA.json','AKADEMIK_OTOMATIK_TESTLER.json','SINEMATIK_TESTLER.json','ETKILESIM_DOGRULAMA.json','GDELT_BAGLANTI_TESTI.json']:(O/name).write_text(json.dumps(report,ensure_ascii=False,indent=2))
  for item in report['violations']:print(json.dumps(item,ensure_ascii=False))
  assert report['checks_passed'],'See output/ODAKLI_WEB_DOGRULAMA.json for failures'
- print(f'PASS: {len(narrative)} main slides, 810s talk, GDELT archive map, {len(refs)} refs, cue cards, filtered CSV, offline atlas, native PPTX/PDF.')
+ print(f'PASS: {len(narrative)} main slides, 1200s talk, GDELT archive map, {len(refs)} refs, cue cards, filtered CSV, offline atlas, native PPTX/PDF.')
  print('No external requests or synthetic research observations; liveGDELT/OSM and desktopPowerPoint rendering remain unverified.')
 
 if __name__=='__main__':main()

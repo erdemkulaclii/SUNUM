@@ -32,7 +32,7 @@ Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
 
 4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (17 ana + 6 ek slayt; kaynakça tek sayfada).
 
-17 ana slayt = 13 dk 30 sn anlatım + 1 dk 30 sn pay.
+17 ana slayt · yaklaşık 20 dakika · soru-cevap yok · slaytları siz geçirirsiniz (→ / Boşluk / PageDown / tıklama).
 Akış: Kapak · Plan · Vaka · Kavramsal çerçeve · Araştırma soruları · Yöntem ·
 Veri hazırlığı · GDELT test edilebilirliği · Bulgu 1-3 (Meta) ·
 Bulgu 4 (haber dalgası) · Bulgu 5 (GDELT haritası) · Tartışma ·

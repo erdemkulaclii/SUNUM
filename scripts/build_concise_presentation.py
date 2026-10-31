@@ -10,7 +10,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from gdelt_common import QUERY,WINDOWS,MAX_RECORDS,DOC_ENDPOINT,SCHEMA
 R=Path(__file__).resolve().parents[1];O=R/'output';O.mkdir(exist_ok=True)
 SNAPSHOT=R/'research/gdelt/GDELT_HARITA_VERISI.json'
-MAX_WORDS=34;TALK_SECONDS=810;SESSION_SECONDS=900
+MAX_WORDS=34;TALK_SECONDS=1200;SESSION_SECONDS=1200
 
 def norm_name(s):
  s=unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower()

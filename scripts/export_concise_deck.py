@@ -19,7 +19,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'output';W=13.333333;H=7.5
 import sys;sys.path.insert(0,str(Path(__file__).resolve().parent))
 SHORT={'auswaertiges2024':'Germany targeted by … “Doppelgänger” (teknik rapor)','bennett2018':'The disinformation order (Eur. J. of Communication)','gdeltgkg':'GDELT 2.0 GKG ham arşivi [Data set]','wang2016':'Growing pains for global monitoring… (Science)','kwak2014':'Global news coverage of disasters… GDELT (SocInfo)','disinfolab2022':'Doppelganger: Media clones serving Russian propaganda','allen2020':'Evaluating the fake news problem… (Science Advances)','gdeltdoc':'GDELT DOC 2.0 API debuts! (API belgesi)','hammond2014':'Machine-coded event data… (Research & Politics)','lazer2018':'The science of fake news (Science)','leetaru2013':'GDELT: Global data on events, location, and tone','meta2022':'CIB gösterge listesi, CSV [Data set]','nimmo2022':'Removing CIB from China and Russia (Meta)','wardle2017':'Information disorder (Council of Europe)'}
-META={};REFS={};GDELT=None;TALK=810
+META={};REFS={};GDELT=None;TALK=1200
 INK='10263B';MUTED='3F556C';BLUE='164F7A';RED='AD3F32';LINE='C8D3DF';PALE='EDF3F8';PAPER='FFFFFF';DARK='0D2238'
 FONT='DejaVu Sans';FONTDIR=Path('/usr/share/fonts/truetype/dejavu')
 def font_file(file):
@@ -92,10 +92,10 @@ class Dual:
     def notes(self,sl,s,core=True):
         text=f"KONUŞMA İPUÇLARI\n{note_text(s)}"
         if s.get('full_notes'):text+='\n\nPROVA İÇİN TAM METİN\n'+str(s['full_notes'])
-        if core:text+=f"\n\nPLANLANAN ANLATIM: {s.get('seconds',0)} saniye. Ana akış 13 dk 30 sn; 15 dakikalık oturumda 1 dk 30 sn pay bırakılmıştır."
+        if core:text+=f"\n\nPLANLANAN ANLATIM: {s.get('seconds',0)} saniye. Toplam anlatım yaklaşık 20 dakika; soru-cevap yok. Süreler yalnız prova içindir; slaytlar kendiliğinden geçmez."
         text+='\n\nKAYNAK\n'+s.get('source','Meta, 2022; ilgili kaynak künyeleri eklerde.')
         sl.notes_slide.notes_text_frame.text=text
-        adv=f' advTm="{int(s.get("seconds",0))*1000}"' if core and s.get('seconds') else ''
+        adv=''  # slayt geçişi sunucuda: otomatik ilerleme yok
         sl._element.insert_element_before(parse_xml(f'<p:transition xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" spd="med"{adv}><p:fade/></p:transition>'),'p:timing','p:extLst')
     def finish(self):self.pdf.showPage()
 

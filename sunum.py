@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Sunumu tek komutla başlatır.
 
-    python sunum.py                  # sunucu + tarayıcı (tam ekran) + otomatik oynatma
+    python sunum.py                  # sunucu + tarayıcı (tam ekran); slaytları siz geçirirsiniz
     python sunum.py --elle           # otomatik oynatma olmadan, ok tuşlarıyla
     python sunum.py --yeniden-uret   # önce HTML/PPTX/PDF ve belgeleri yeniden üret, sonra başlat
     python sunum.py --pptx           # PowerPoint dosyasını varsayılan uygulamada aç
@@ -135,7 +135,7 @@ def serve(autoplay: bool, open_browser: bool, port: int | None) -> None:
     print(f'\nSunum hazır: {url}')
     if open_browser:
         print('Açıldı:', open_presentation(url, fullscreen=autoplay))
-    print('Sunum otomatik ilerler (ses yok) · Boşluk: durdur/devam · ←/→: slayt · N: konuşma notları' if autoplay
+    print('Slaytları siz geçirirsiniz: →, Boşluk, PageDown ya da tıklama · ←: geri · N: konuşma notları · F11: tam ekran' if autoplay
           else 'Elle mod · Boşluk: otomatik akışı başlat · ←/→: slayt')
     print('Kapatmak için bu pencerede Ctrl+C.\n', flush=True)
     try:

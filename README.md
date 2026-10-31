@@ -22,7 +22,7 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 | `python sunum.py --yeniden-uret` | HTML, PPTX, PDF ve belgeleri yeniden üretip başlatır |
 | `python sunum.py --kontrol` | Bütün testleri ve sunum doğrulamasını çalıştırır |
 
-## Akış: 17 ana slayt, 13 dk 30 sn anlatım + 1 dk 30 sn pay
+## Akış: 17 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
 
 | # | Bölüm | İçerik |
 |---|---|---|
@@ -39,9 +39,9 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 
 Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 
-## Kendiliğinden ilerleyen sunum
+## Sunumu siz yönetirsiniz
 
-**“Sunumu başlat ▶”** tam ekrana geçer ve sunumu otomatik oynatır: slaytlar planlanan sürelerle geçer, her slaytta maddeler sırayla açılır, ana fikir sonda gelir, grafik ve harita slaytın süresi boyunca kendiliğinden ilerler (harita gün gün birikir, sonra Meta hedefleri, anılan yerler ve Almanya'ya yakınlaşma gelir). Ses yoktur; anlatımı sunucu yapar. İstenirse alttaki anlatım şeridi C, tarayıcı sesi S tuşuyla açılabilir (varsayılan: kapalı). Boşluk: durdur/devam, ok tuşları: elle geçiş. Hiçbir pencere açmanız gerekmez. PowerPoint sürümünde de slaytlar slayt gösterisinde aynı sürelerle kendiliğinden ilerler.
+Slaytlar kendiliğinden geçmez, yazılar süreyle açılmaz: her slaytın içeriği hemen görünür. Geçiş: →, Boşluk, PageDown (sunum kumandası) ya da tıklama; geri: ←. Harita slaytı girişte bir kez oynar (≈14 sn; gün gün birikim → Meta hedefleri → anılan yerler), haber dalgası grafiği girişte çizilir. Saat, başladığınız andan itibaren geçen süreyi 20:00’ye karşı gösterir. N: konuşma notları.
 
 ## GDELT verisi: ham arşivden, test edilebilir
 

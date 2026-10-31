@@ -1,21 +1,21 @@
 # Hibrit Savaşın Görünmez Cephesi
 
-15 ana slayt · 13 dk 30 sn planlanan anlatım · 1 dk 30 sn soru ve geçiş payı.
+17 ana slayt · yaklaşık 20 dakika anlatım · soru-cevap yok · slaytları sunucu geçirir.
 
 Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.
 
-## 01. Hibrit Savaşın Görünmez Cephesi · 00:00–00:30
+## 01. Hibrit Savaşın Görünmez Cephesi · 00:00–00:45
 
 - Hibrit savaşın görünmez cephesi bilgi alanıdır; bu sunum Rusya’nın Batı Avrupa’ya yönelik dezenformasyon operasyonlarını GDELT verisiyle haritalıyor.
 - İki soruya bakıyorum: göstergeler kimi hedefliyor ve vaka haberlerde nerede görünür oldu?
 - Birinci kaynak 311 alan adı; ikinci kaynak GDELT arşivindeki 5,9 milyon haber kaydı.
-- Sunum 13,5 dakika; ardından soru-cevap.
+- Sunum yaklaşık 20 dakika.
 
 **Ana mesaj:** Hedeflenen coğrafya ile görünür olan coğrafya.
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015
 
-## 02. Sunum planı · 00:30–00:50
+## 02. Sunum planı · 00:45–01:15
 
 - Sunum dört bölümden oluşuyor.
 - Önce vakayı ve literatürü konumlandırıyorum.
@@ -26,7 +26,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Sunum yapısı
 
-## 03. Doppelgänger: tanınmış haber sitelerinin taklit edilmesi · 00:50–01:40
+## 03. Doppelgänger: tanınmış haber sitelerinin taklit edilmesi · 01:15–02:30
 
 - EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.
 - Rapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.
@@ -37,7 +37,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Alaphilippe et al., 2022; Nimmo & Agranovich, 2022
 
-## 04. Kavramsal çerçeve · 01:40–02:40
+## 04. Kavramsal çerçeve · 02:30–04:00
 
 - Bennett ve Livingston dezenformasyonu, haber ya da belgesel biçimini taklit eden kasıtlı yanlışlar olarak tanımlar; taklit haber siteleri tam bu biçimdir.
 - Wardle ve Derakhshan’ın çerçevesinde bu siteler üretim ve dağıtım altyapısıdır.
@@ -48,7 +48,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Bennett & Livingston, 2018; Wardle & Derakhshan, 2017; Lazer et al., 2018; Allen et al., 2020; Kwak & An, 2014
 
-## 05. Araştırma soruları · 02:40–03:20
+## 05. Araştırma soruları · 04:00–05:00
 
 - Birinci soru hedef coğrafyasını soruyor.
 - İkinci soru alan adlarının sözcüksel yapısını soruyor.
@@ -59,7 +59,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015
 
-## 06. Veri ve yöntem: iki kaynak, ayrı birimler · 03:20–04:15
+## 06. Veri ve yöntem: iki kaynak, ayrı birimler · 05:00–06:20
 
 - Meta dosyasından hedef etiketi ile ilk ve son DNS etiketi çıkarıldı.
 - GDELT verisini API’den değil, literatürde kullanılan ham GKG arşivinden aldım: 20 Eylül – 11 Ekim 2022, 4.209 dosya.
@@ -70,7 +70,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015, 2018; Leetaru & Schrodt, 2013
 
-## 07. Denetlenmiş analiz kümesi 311 benzersiz alan adıdır. · 04:15–04:50
+## 07. Denetlenmiş analiz kümesi 311 benzersiz alan adıdır. · 06:20–07:10
 
 - Ham dosyada 350 kayıt, alan adı türünde 313 satır bulunuyor.
 - İki yinelenen değer çıkarılınca analiz kümesi 311 oluyor.
@@ -81,7 +81,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022
 
-## 08. GDELT verisi test edilebilir: MD5, payda, isabet · 04:50–05:35
+## 08. GDELT verisi test edilebilir: MD5, payda, isabet · 07:10–08:15
 
 - Her arşiv dosyası, GDELT’in yayımladığı MD5 özetiyle karşılaştırıldı; 4.209 dosyanın hepsi eşleşti.
 - Toplam 5.944.850 haber kaydı tarandı ve 511 tekil haber kurallarla eşleşti.
@@ -92,7 +92,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** The GDELT Project, 2015; Wang et al., 2016; Hammond & Weidmann, 2014
 
-## 09. Almanya, bu listenin hedef coğrafyasında baskındır. · 05:35–06:30
+## 09. Almanya, bu listenin hedef coğrafyasında baskındır. · 08:15–09:35
 
 - Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.
 - Birleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.
@@ -103,7 +103,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022
 
-## 10. Altı son etiket, 240 alan adında birleşir. · 06:30–07:20
+## 10. Altı son etiket, 240 alan adında birleşir. · 09:35–10:50
 
 - En sık son etiketler online, website, site, space, pw ve fun.
 - Bu altı etiket toplam 240 alan adı içeriyor.
@@ -114,7 +114,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022
 
-## 11. Aynı ilk DNS etiketi farklı son etiketlerle yinelenir. · 07:20–08:10
+## 11. Aynı ilk DNS etiketi farklı son etiketlerle yinelenir. · 10:50–12:05
 
 - Alan adları, soldaki ilk DNS etiketinin tam eşleşmesine göre gruplandı.
 - 93 ayrı ilk etiketin 75’i birden fazla son etiketle yer alıyor.
@@ -125,7 +125,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022
 
-## 12. Görünürlük iki günlük bir dalgadır · 08:10–09:10
+## 12. Görünürlük iki günlük bir dalgadır · 12:05–13:35
 
 - Meta’nın duyurduğu 27 Eylül’de 392 haber, ertesi gün 100 haber var.
 - 511 haberin yüzde 96,3’ü bu iki günde; sonra görünürlük hızla sönüyor.
@@ -136,7 +136,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** The GDELT Project, 2015 (GKG 2.0 ham arşivi); bu çalışmanın taraması
 
-## 13. Hedef Avrupa; haber kaynağı ağırlıkla ABD · 09:10–10:30
+## 13. Hedef Avrupa; haber kaynağı ağırlıkla ABD · 13:35–15:35
 
 - Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.
 - Meta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.
@@ -147,7 +147,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** The GDELT Project, 2015, 2018; Kwak & An, 2014; Meta, 2022
 
-## 14. Tartışma: hedeflenen kamu, görünür olan medya · 10:30–11:30
+## 14. Tartışma: hedeflenen kamu, görünür olan medya · 15:35–17:05
 
 - Almanya’nın yüzde 95,8’lik payı, Meta ve EU DisinfoLab’ın nitel Almanya vurgusunu sayısal olarak destekliyor.
 - Ama kaldırma haberi ağırlıkla ABD’de ve İngilizce üretildi; bu, Kwak ve An’ın bölgesel haber coğrafyası bulgusuyla karşılaştırılmaya değer.
@@ -158,7 +158,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Nimmo & Agranovich, 2022; Alaphilippe et al., 2022; Auswärtiges Amt, 2024; Kwak & An, 2014
 
-## 15. Sınırlılıklar · 11:30–12:15
+## 15. Sınırlılıklar · 17:05–18:10
 
 - Meta listesi bir örneklem değil, platformun tespit ve yayımlama seçimidir; bütün kayıtların tarihi aynı.
 - GDELT yalnız izlediği kaynakları kapsar; ABD kaynakları fazla temsil edilir, bu yüzden oranlı ölçü de verildi.
@@ -169,7 +169,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022; Allen et al., 2020; Hammond & Weidmann, 2014; Wang et al., 2016
 
-## 16. Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük · 12:15–13:10
+## 16. Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük · 18:10–19:30
 
 - AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.
 - AS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket farklı son etiketlerle tekrar ediyor.
@@ -180,7 +180,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015
 
-## 17. Kaynakça · 13:10–13:30
+## 17. Kaynakça · 19:30–20:00
 
 - Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.
 - Birincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.
@@ -190,7 +190,3 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 **Ana mesaj:** APA 7 · 19 kaynak · erişim ve doğrulama kayıtları KAYNAKLAR.md içinde
 
 **Atıf:** APA 7; 19 kaynağın tamamı bu sayfada
-
-## Oturum payı
-
-13:30–15:00: soru, geçiş ve süre tamponu. GDELT harita slaydındaki sayılar, sunum anında yüklenen veri kaydına aittir; tarihini ve kaynağını belirtin.

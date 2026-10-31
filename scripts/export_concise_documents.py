@@ -67,7 +67,7 @@ def document(title):
  d=Document();s=d.sections[0];s.top_margin=s.bottom_margin=Cm(2);s.left_margin=s.right_margin=Cm(2.3)
  normal=d.styles['Normal'];normal.font.name='DejaVu Sans';normal.font.size=Pt(12);normal.font.color.rgb=RGBColor.from_string('14263A');normal.paragraph_format.line_spacing=1.4;normal.paragraph_format.space_after=Pt(12)
  for st in ['Title','Heading 1','Heading 2']:d.styles[st].font.name='DejaVu Sans';d.styles[st].font.color.rgb=RGBColor.from_string('14263A')
- d.core_properties.title=title;d.core_properties.subject='Meta 2022 göstergeleri ve GDELT haber haritası; 15 ana slayt, 13,5 dakika anlatım ve 1,5 dakika oturum payı.';d.core_properties.author='SUNUM';return d
+ d.core_properties.title=title;d.core_properties.subject='Meta 2022 göstergeleri ve GDELT haber haritası; 17 ana slayt, yaklaşık 20 dakika anlatım; soru-cevap yok.';d.core_properties.author='SUNUM';return d
 def hyperlink(p,text,url):
  link=OxmlElement('w:hyperlink');link.set(qn('r:id'),p.part.relate_to(url,RT.HYPERLINK,is_external=True));run=OxmlElement('w:r');pr=OxmlElement('w:rPr');color=OxmlElement('w:color');color.set(qn('w:val'),'174B78');pr.append(color);run.append(pr);tx=OxmlElement('w:t');tx.text=text;run.append(tx);link.append(run);p._p.append(link)
 def word_refs(d,refs):
@@ -83,11 +83,11 @@ def main():
  global SNAP
  sp=R/'research/gdelt/GDELT_HARITA_VERISI.json';SNAP=json.loads(sp.read_text()) if sp.is_file() else None
  O.mkdir(exist_ok=True);N=json.loads((R/'scripts/concise_narrative.json').read_text());F=json.loads((R/'scripts/concise_references.json').read_text());A=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());f,a,src=(A[k] for k in ['findings','audit','source'])
- assert sum(s['seconds'] for s in N)==810 and len(F)>=12
+ assert sum(s['seconds'] for s in N)==1200 and len(F)>=12
  title=N[0]['title']
- cueflow=[];md=[f'# {title}','','15 ana slayt · 13 dk 30 sn planlanan anlatım · 1 dk 30 sn soru ve geçiş payı.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
+ cueflow=[];md=[f'# {title}','',f'{len(N)} ana slayt · yaklaşık 20 dakika anlatım · soru-cevap yok · slaytları sunucu geçirir.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
  cuedoc=document(title+' — Sunucu kartları');fullword=document(title+' — İsteğe bağlı prova metni');fullword.add_heading(title,0)
- intro='İsteğe bağlı prova metni. 15 dakikalık oturumun 13,5 dakikası anlatıma, 1,5 dakikası soru ve geçişlere ayrılmıştır. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
+ intro='İsteğe bağlı prova metni. Toplam anlatım yaklaşık 20 dakikadır; soru-cevap bölümü yoktur. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
  fullword.add_paragraph(intro);fullflow=[para(title,'title'),para('İsteğe bağlı prova metni','h'),para(intro)];elapsed=0
  for i,s in enumerate(N):
   end=elapsed+s['seconds'];slot=f'{stamp(elapsed)}–{stamp(end)}';heading=f'{i+1:02d}. {s["title"]}';cues=s['cue_sentences'];assert 3<=len(cues)<=4
@@ -99,7 +99,7 @@ def main():
   cueflow += [Spacer(1,18),para('Ana mesaj: '+s['takeaway']),para('Atıf: '+s['source'],'small')];cuedoc.add_paragraph('Ana mesaj: '+s['takeaway']);cuedoc.add_paragraph('Atıf: '+s['source'],style='Caption')
   fullflow += [para(heading+' · '+slot,'h'),para(s['full_notes']),para('Atıf: '+s['source'],'small')];fullword.add_heading(heading+' · '+slot,1);fullword.add_paragraph(s['full_notes']);fullword.add_paragraph('Atıf: '+s['source'],style='Caption')
   md += [f'## {heading} · {slot}','']+['- '+x for x in cues]+['','**Ana mesaj:** '+s['takeaway'],'','**Atıf:** '+s['source'],''];elapsed=end
- md += ['## Oturum payı','','13:30–15:00: soru, geçiş ve süre tamponu. GDELT harita slaydındaki sayılar, sunum anında yüklenen veri kaydına aittir; tarihini ve kaynağını belirtin.','']
+ md += []
  word_refs(fullword,F);fullflow += [PageBreak()]+references(F)
  pdf('SUNUCU_KARTLARI.pdf',cueflow,title+' — Sunucu kartları');cuedoc.save(O/'SUNUCU_KARTLARI.docx');pdf('KONUSMA_METNI_15_DK.pdf',fullflow,title+' — İsteğe bağlı prova metni');fullword.save(O/'KONUSMA_METNI_15_DK.docx');(O/'KONUSMACI_NOTLARI.md').write_text('\n'.join(md),encoding='utf8');pdf('APA7_KAYNAKCA.pdf',references_onepage(F),title+' — APA 7 kaynakça')
  abstract='Bu çalışma, Meta’nın 27 Eylül 2022 tarihli koordineli sahte davranış gösterge dosyasındaki alan adlarını hedef coğrafyası ve sözcüksel yapı bakımından betimsel olarak inceler. 350 ham kayıttan 313 alan adı satırı seçilmiş, iki yinelenen değer çıkarılarak 311 benzersiz alan adı elde edilmiştir. Almanya hedefli 298 alan adı listenin %95,8’ini oluşturur. En sık altı son DNS etiketi 240 alan adını (%77,2) kapsar ve bu kayıtların tamamı Almanya hedeflidir. 93 farklı ilk DNS etiketinden 75’i birden fazla son etiketle kullanılır; bu gruplar 293 alan adını kapsar. Katkı, hedef ülke yoğunlaşmasını ve adres yapısındaki tekrarları aynı kaynak kayıtları üzerinde yeniden üretilebilir biçimde birlikte göstermektir. Sonuçlar yayımlanan gösterge listesiyle sınırlıdır; operasyon sayısı, kullanıcı maruziyeti veya kamuoyu etkisi ölçülmemiştir.'
@@ -121,5 +121,5 @@ def main():
  assert report['SUNUCU_KARTLARI.pdf']['pages']==len(N)
  for name in ['SUNUCU_KARTLARI.docx','KONUSMA_METNI_15_DK.docx']:
   doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_sections_present':True,'paragraphs':len(doc.paragraphs)}
- report.update({'main_slides':len(N),'planned_talk_seconds':810,'session_buffer_seconds':90,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
+ report.update({'main_slides':len(N),'planned_talk_seconds':1200,'session_buffer_seconds':0,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
