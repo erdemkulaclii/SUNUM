@@ -111,9 +111,9 @@ render();
 (function(){
  const q=new URLSearchParams(location.search);if(q.get('autoplay')!=='1'&&location.hash!=='#autoplay')return;
  document.body.classList.add('presentation');go(0);
- const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tam ekran için tıklayın · Boşluk: durdur/devam · ←/→: slayt · S: sesli anlatım</small>';document.body.append(o);
+ const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tıklayın: tam ekran + sesli anlatım · Boşluk: durdur/devam · ←/→: slayt · S: sesi aç/kapat</small>';document.body.append(o);
  let n=5,done=false;const tick=()=>{if(done)return;$('start-count').textContent=n+' saniye içinde kendiliğinden başlar';if(n--<=0)begin(false);else setTimeout(tick,1000)};
- async function begin(full){if(done)return;done=true;o.remove();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
+ async function begin(full){if(done)return;done=true;o.remove();if(q.get('ses')!=='0'&&!voice)voiceBtn.click();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
  $('start-now').onclick=()=>begin(true);document.addEventListener('keydown',e=>{if(!done&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();begin(true)}},true);
  $('start-now').focus();tick();
 })();
