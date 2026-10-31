@@ -26,7 +26,7 @@ Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
    "2022 penceresini sorgula", "Son 30 gün", "JSON yükle", "JSON indir".
    Sağ/sol ok: slayt. Boşluk: akış. N: anlatıcı kartları.
 
-4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (17 ana + 13 ek slayt).
+4. Yedek: AKADEMIK_ODAKLI_SUNUM.pptx ve .pdf (17 ana + 6 ek slayt; kaynakça tek sayfada).
 
 17 ana slayt = 13 dk 30 sn anlatım + 1 dk 30 sn pay.
 Akış: Kapak · Plan · Vaka · Kavramsal çerçeve · Araştırma soruları · Yöntem ·

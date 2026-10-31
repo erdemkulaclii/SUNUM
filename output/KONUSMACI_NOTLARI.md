@@ -182,14 +182,14 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 ## 17. Kaynakça · 13:10–13:30
 
-- Birincil veri Meta dosyası ve GDELT arayüzüdür.
-- Vaka bilgisi EU DisinfoLab ve Meta raporlarından alındı.
-- Kuramsal çerçeve Wardle ve Derakhshan ile Lazer ve arkadaşlarına dayanıyor.
-- Bütün künyeler APA 7 biçiminde eklerde yer alıyor.
+- Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.
+- Birincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.
+- Vaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.
+- Kuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları.
 
-**Ana mesaj:** Tam APA 7 künyeleri eklerdedir.
+**Ana mesaj:** APA 7 · 19 kaynak · erişim ve doğrulama kayıtları KAYNAKLAR.md içinde
 
-**Atıf:** APA 7; tam künyeler eklerde
+**Atıf:** APA 7; 19 kaynağın tamamı bu sayfada
 
 ## Oturum payı
 

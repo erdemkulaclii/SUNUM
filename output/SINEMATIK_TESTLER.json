@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T08:40:06.734624+00:00",
-  "html_sha256": "cf964e56e3e6ec00ddd06b521bbc524493ededf09ee1513e0bd4081c431e8b98",
-  "narrative_sha256": "dfbc27afe7bfbae5f422989de716ee9ebb86664656f397b9ec61f4f0e86fc37f",
+  "checked_at_utc": "2026-10-31T08:51:12.164859+00:00",
+  "html_sha256": "bf2624f821c618e3526921ea78116b506b9b75f47718481066c974aec2ef7588",
+  "narrative_sha256": "bd3fb6c216af9f0b0aabb5779189fbc09ab59a80e546999a2ee8f8376ae8e421",
   "main_slides": 17,
   "planned_seconds": 810,
   "buffer_seconds": 90,
@@ -23,7 +23,7 @@
     34,
     30,
     32,
-    29
+    13
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
   "APA_references": 6,
@@ -205,8 +205,7 @@
           "scene": 17,
           "title": "Kaynakça",
           "prose_fonts_px": [
-            24,
-            32,
+            18,
             52.8
           ],
           "violations": []
@@ -382,9 +381,8 @@
           "scene": 17,
           "title": "Kaynakça",
           "prose_fonts_px": [
-            19,
-            24,
-            35
+            18,
+            30
           ],
           "violations": []
         }
@@ -399,8 +397,8 @@
   "native_powerpoint": {
     "verified": true,
     "main_slides": 17,
-    "total_slides": 30,
-    "pdf_pages": 30,
+    "total_slides": 23,
+    "pdf_pages": 23,
     "main_text_editable": true,
     "main_slides_have_no_raster_picture": true,
     "desktop_PowerPoint_render_verified": false

@@ -17,7 +17,7 @@ Meta’nın 2022 CIB gösterge listesi ile GDELT haber verisini birlikte kullana
 | 12 | **Bulgu 4 (GDELT)** | Görünürlük iki günlük dalga: 27.09’da 392, 28.09’da 100 haber (%96,3) |
 | 13 | **Bulgu 5 (GDELT haritası)** | Kaynak ülke: ABD 373, Almanya 29; oranlı ölçüde Almanya 2.; haberlerin %63,6’sı Almanya’yı anıyor |
 | 14–16 | Tartışma, sınırlılıklar, sonuç | Hedef–görünürlük asimetrisi, ajans dağıtımı, isabet ve kapsam sınırları |
-| 17 | Kaynakça | 19 kaynak; tam APA 7 künyeleri eklerde (13 ek slayt) |
+| 17 | Kaynakça | 19 kaynağın tamamı tek sayfada, iki sütunlu APA 7 listesi (ek slayt: 6) |
 
 Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 

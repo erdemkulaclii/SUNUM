@@ -107,6 +107,9 @@ def points(d,sl,s,index,dark=False):
         if s.get('subtitle'):d.text(sl,s['subtitle'],x,2.40,10.7,.65,18,'C7D8E8',name='cover_subtitle',leading=1.25)
         for j,value in enumerate(s['display_points']):
             d.text(sl,value,x,y,w,.56,24,color,bold=False,name=f's{index+1}_point{j+1}',leading=1.2);y+=.77
+    elif visual=='references':
+        d.text(sl,s['takeaway'],.7,1.58,11.9,.28,11,MUTED,name=f's{index+1}_takeaway',leading=1.0,min_size=9)
+        return
     else:
         many=len(s['display_points'])>=3;size=20 if many else 23;gap=.24 if many else .34
         if visual=='gdelt_map':w=4.6
@@ -248,11 +251,7 @@ def visual(d,sl,s,stats):
             xx=x+j*1.78;d.rect(sl,xx,y+1.1,1.6,.65,PALE,line=LINE);d.text(sl,atom,xx+.07,y+1.27,1.46,.34,14 if j==0 else 19,INK,bold=True,name='dns_atom',leading=1.0);d.text(sl,label,xx,y+1.96,1.6,.33,12.5,MUTED,name='dns_atom_role',leading=1.1)
         d.text(sl,'Son etiket ≠ kayıt edilebilir alan adı sınırı',x,y+2.8,w,.63,14,MUTED,name='psl_caution',leading=1.35)
     elif kind=='references':
-        yy=y-.4
-        for rid in ['disinfolab2022','auswaertiges2024','bennett2018','gdeltgkg','kwak2014','lazer2018','meta2022','nimmo2022','wang2016']:
-            r=REFS[rid];title=SHORT[rid]
-            d.text(sl,r['cite'],x-.3,yy,w+.3,.24,11.5,BLUE,bold=True,name='ref_cite',leading=1.0,min_size=9);d.text(sl,title,x-.3,yy+.26,w+.3,.22,9.5,MUTED,name='ref_title',leading=1.0,min_size=7.5);yy+=.405
-        if yy>6.0:raise ValueError('Reference slide overflow')
+        reference_page(d,sl,REFS)
     else:raise ValueError('Unknown main visual: '+kind)
 
 
@@ -283,8 +282,8 @@ def ref_tokens(r):
             for word in html.unescape(span).split():tokens.append((word,italic,None))
     tokens.append((r['url'],False,r['url']));return tokens
 
-def reference(d,sl,r,y,index):
-    x=.92;w=11.5;size=12.8;leading=1.67;indent=18;lines=[];line=[];used=0
+def ref_lines(r,w,size,indent):
+    lines=[];line=[];used=0
     for word,italic,link in ref_tokens(r):
         font='CItalic' if italic else 'CNormal';remaining=word
         while remaining:
@@ -298,21 +297,48 @@ def reference(d,sl,r,y,index):
                     part+=c
                 line=[(part,italic,link)];lines.append(line);line=[];used=0;remaining=remaining[len(part):]
     if line:lines.append(line)
-    h=len(lines)*size*leading/72+.08
-    if y+h>6.65:raise ValueError('APA source does not fit appendix')
+    return lines
+
+
+def reference(d,sl,r,y,index,x=.92,w=11.5,size=12.8,leading=1.67,indent=18,gap=.32,bottom=6.65):
+    lines=ref_lines(r,w,size,indent)
+    h=len(lines)*size*leading/72+.04
+    if y+h>bottom:raise ValueError('APA source does not fit: '+r['id'])
     tx=sl.shapes.add_textbox(Inches(x),Inches(y),Inches(w),Inches(h));tx.name=f'APA_reference_{index}';tf=tx.text_frame;tf.clear();tf.margin_left=tf.margin_right=tf.margin_top=tf.margin_bottom=0;tf.word_wrap=False
     for j,line in enumerate(lines):
         p=tf.paragraphs[0] if j==0 else tf.add_paragraph();p.font.name=FONT;p.font.size=Pt(size);p.font.color.rgb=RGBColor.from_string(INK);p.line_spacing=Pt(size*leading);p.space_after=Pt(0);p.space_before=Pt(0)
         if j:p._p.get_or_add_pPr().set('marL',str(int(Pt(indent))))
         xx=x*72+(indent if j else 0);yy=H*72-y*72-size-j*size*leading
         for k,(word,italic,link) in enumerate(line):
-            value=(' ' if k else '')+word;run=p.add_run();run.text=value;run.font.italic=italic
+            value=(' ' if k else '')+word;run=p.add_run();run.text=value;run.font.italic=italic;run.font.size=Pt(size)
             if link:run.hyperlink.address=link;run.font.color.rgb=RGBColor.from_string(BLUE)
             font='CItalic' if italic else 'CNormal';d.pdf.setFont(font,size);d.pdf.setFillColor('#'+(BLUE if link else INK));d.pdf.drawString(xx,yy,value);amount=pdfmetrics.stringWidth(value,font,size)
             if link:d.pdf.linkURL(link,(xx,yy-2,xx+amount,yy+size),relative=0,thickness=0)
             xx+=amount
     d.checks.append({'slide':d.slide_index+1,'name':tx.name,'font_pt':size,'estimated_height_in':h,'box_height_in':h})
-    return y+h+.32
+    return y+h+gap
+
+
+def reference_page(d,sl,refs,top=1.95,bottom=6.88):
+    """All references on one slide: two columns, APA 7 hanging indent, clickable URLs."""
+    order=sorted(refs.values(),key=lambda r:re.sub(r'^The ','',clean(r['apa'])).lower())
+    colw=5.78;xs=[.70,6.85];size=8.6
+    while True:
+        lead=1.28;gap=.07;hs=[len(ref_lines(r,colw,size,12))*size*lead/72+.04+gap for r in order]
+        total=sum(hs);cut,acc=0,0
+        for k,h in enumerate(hs):
+            if acc+h>total/2+.15:break
+            acc+=h;cut=k+1
+        cols=[order[:cut],order[cut:]]
+        if max(sum(hs[:cut]),sum(hs[cut:]))<=bottom-top:break
+        size-=.2
+        if size<7:raise ValueError('References do not fit one page')
+    n=0
+    for c,col in enumerate(cols):
+        y=top
+        for r in col:y=reference(d,sl,r,y,n,x=xs[c],w=colw,size=size,leading=lead,indent=12,gap=gap,bottom=bottom+.01);n+=1
+    d.rect(sl,6.62,top,.008,bottom-top,LINE)
+    return size
 
 
 def validate(prs,narrative,appendices,layout,pptx,pdf):

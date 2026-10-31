@@ -450,20 +450,16 @@
   "id": "references",
   "title": "Kaynakça",
   "kicker": "KAYNAKÇA",
-  "display_points": [
-   "Veri: Meta (2022); The GDELT Project (2015, 2018)",
-   "Vaka: Alaphilippe vd. (2022); Auswärtiges Amt (2024)",
-   "Yöntem: Leetaru ve Schrodt (2013); Wang vd. (2016)"
-  ],
-  "takeaway": "Tam APA 7 künyeleri eklerdedir.",
-  "notes": "Birincil veri Meta dosyası ve GDELT arayüzüdür.\nVaka bilgisi EU DisinfoLab ve Meta raporlarından alındı.\nKuramsal çerçeve Wardle ve Derakhshan ile Lazer ve arkadaşlarına dayanıyor.\nBütün künyeler APA 7 biçiminde eklerde yer alıyor.",
+  "display_points": [],
+  "takeaway": "APA 7 · 19 kaynak · erişim ve doğrulama kayıtları KAYNAKLAR.md içinde",
+  "notes": "Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.\nBirincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.\nVaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.\nKuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları.",
   "cue_sentences": [
-   "Birincil veri Meta dosyası ve GDELT arayüzüdür.",
-   "Vaka bilgisi EU DisinfoLab ve Meta raporlarından alındı.",
-   "Kuramsal çerçeve Wardle ve Derakhshan ile Lazer ve arkadaşlarına dayanıyor.",
-   "Bütün künyeler APA 7 biçiminde eklerde yer alıyor."
+   "Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.",
+   "Birincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.",
+   "Vaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.",
+   "Kuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları."
   ],
-  "full_notes": "Kaynakçanın tamamı APA 7 biçiminde eklerde yer alıyor. Birincil veriler Meta’nın gösterge dosyası ve GDELT arayüzüdür. Vaka bilgisi EU DisinfoLab ve Meta raporlarından; kuramsal ve yöntemsel çerçeve Wardle ve Derakhshan, Lazer ve arkadaşları, Allen ve arkadaşları, Leetaru ve Schrodt ile Hammond ve Weidmann’dan alınmıştır. Teşekkür ederim.",
+  "full_notes": "Kaynakçanın tamamı bu tek sayfada, APA 7 biçiminde yer alıyor: toplam 19 kaynak. Birincil veriler Meta’nın gösterge dosyası ve GDELT’in GKG arşivi ile alan adı–ülke listesidir. Vaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri Bakanlığı raporlarından; kuramsal ve yöntemsel çerçeve Bennett ve Livingston, Wardle ve Derakhshan, Freelon ve Wells, Lazer ve arkadaşları, Allen ve arkadaşları, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları ile Hammond ve Weidmann’dan alınmıştır. Teşekkür ederim.",
   "seconds": 20,
   "visual": "references",
   "citations": [
@@ -474,7 +470,7 @@
    "leetaru2013",
    "wang2016"
   ],
-  "source": "APA 7; tam künyeler eklerde",
-  "visible_word_count": 29
+  "source": "APA 7; 19 kaynağın tamamı bu sayfada",
+  "visible_word_count": 13
  }
 ]

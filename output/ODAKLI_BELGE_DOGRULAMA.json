@@ -2,22 +2,22 @@
   "SUNUCU_KARTLARI.pdf": {
     "pages": 17,
     "text_selectable": true,
-    "characters": 9424
+    "characters": 9715
   },
   "KONUSMA_METNI_15_DK.pdf": {
     "pages": 9,
     "text_selectable": true,
-    "characters": 19877
+    "characters": 20126
   },
   "APA7_KAYNAKCA.pdf": {
-    "pages": 3,
+    "pages": 1,
     "text_selectable": true,
-    "characters": 5637
+    "characters": 4261
   },
   "AKADEMIK_ARASTIRMA_DOSYASI.pdf": {
     "pages": 12,
     "text_selectable": true,
-    "characters": 14641
+    "characters": 14749
   },
   "SUNUCU_KARTLARI.docx": {
     "all_sections_present": true,
@@ -32,8 +32,8 @@
   "session_buffer_seconds": 90,
   "gdelt_snapshot_included": true,
   "cue_sentence_count": 68,
-  "cue_word_count": 741,
-  "rehearsal_word_count": 1736,
+  "cue_word_count": 756,
+  "rehearsal_word_count": 1761,
   "selected_references": 19,
   "desktop_Word_render_verified": false
 }
