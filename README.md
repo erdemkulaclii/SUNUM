@@ -22,20 +22,24 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 | `python sunum.py --yeniden-uret` | HTML, PPTX, PDF ve belgeleri yeniden üretip başlatır |
 | `python sunum.py --kontrol` | Bütün testleri ve sunum doğrulamasını çalıştırır |
 
-## Akış: 17 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
+## Akış: 19 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
 
 | # | Bölüm | İçerik |
 |---|---|---|
-| 1–2 | Kapak, plan | Başlık, yazar alanları (`scripts/presentation_meta.json`), sunum planı |
-| 3 | Giriş / vaka | Doppelgänger: EU DisinfoLab (2022), Meta (Nimmo ve Agranovich, 2022) |
-| 4 | Kavramsal çerçeve | Bennett ve Livingston; Wardle ve Derakhshan; Lazer/Allen; Kwak ve An; Wang vd. |
-| 5 | Araştırma soruları | AS1 hedef · AS2 alan adı yapısı · AS3 haber görünürlüğü (zaman ve mekân) |
-| 6–8 | Yöntem | Veri ve yöntem · Meta veri hazırlığı · **GDELT test edilebilirliği (MD5, payda, isabet)** |
-| 9–11 | Bulgu 1–3 (Meta) | Almanya %95,8 · altı son etiket 240 adres · 75 ilk etiket grubu |
-| 12 | **Bulgu 4 (GDELT)** | Görünürlük iki günlük dalga: 27.09’da 392, 28.09’da 100 haber (%96,3) |
-| 13 | **Bulgu 5 (GDELT haritası)** | Kaynak ülke: ABD 373, Almanya 29; oranlı ölçüde Almanya 2.; haberlerin %63,6’sı Almanya’yı anıyor |
-| 14–16 | Tartışma, sınırlılıklar, sonuç | Hedef–görünürlük asimetrisi, ajans dağıtımı, isabet ve kapsam sınırları |
-| 17 | Kaynakça | 19 kaynağın tamamı tek sayfada, iki sütunlu APA 7 listesi (ek slayt: 6) |
+| 1 | Kapak | Hibrit Savaşın Görünmez Cephesi — Erdem Kulaçlı |
+| 2 | Sorun ve katkı | Operasyonu değil, izlerini ölçmek; vakaya özgü hakemli literatürün azlığı |
+| 3 | Kavramsal çerçeve I | Hibrit savaştan hibrit müdahaleye: Hoffman, Renz, Galeotti, Fridman, Caliskan; çalışma tanımı (Wigell; Hybrid CoE; Mumford ve Carlucci) |
+| 4 | Kavramsal çerçeve II | Görünmez cephenin mekanizması: stratejik anlatı → yorumlayıcı modeller → ödünç güvenilirlik |
+| 5 | Vaka | Doppelgänger 2022–2025: ifşa, atıf (SDA/Structura), evrim |
+| 6 | Araştırma soruları | AS1–AS3 ve kuramsal beklentiler |
+| 7–9 | Yöntem | Veri ve yöntem · Meta veri hazırlığı · GDELT test edilebilirliği |
+| 10–12 | Bulgular (Meta) | Almanya %95,8 · wrongTLD deseni · 75 marka etiketi |
+| 13–14 | Bulgular (GDELT) | İki günlük dalga · “Almanya hakkında, ama Almanya’da değil” haritası |
+| 15–16 | Tartışma | Altyapı ≠ erişim ≠ etki ≠ görünürlük · algı korsanlığı ve seçilim |
+| 17–18 | Sınırlılıklar, sonuç | |
+| 19 | Kaynakça | 29 kaynak tek sayfada (APA 7) |
+
+Akademik gerekçeler ve kaynak doğrulama etiketleri: [araştırma raporu](reports/Doppelgänger%20vakası%20akademik%20derinleştirme.md).
 
 Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 

@@ -1,14 +1,5 @@
 [
  {
-  "id": "leaflet",
-  "cite": "Agafonkin & Leaflet contributors, 2023",
-  "apa": "Agafonkin, V., & Leaflet contributors. (2023). <i>Leaflet</i> (Version 1.9.4) [Computer software]. GitHub.",
-  "url": "https://github.com/Leaflet/Leaflet/releases/tag/v1.9.4",
-  "kind": "Harita yazılımı; hakemli yayın değil",
-  "access": "Sürüm dosyaları ve lisans indirildi",
-  "verification": "Leaflet 1.9.4 JavaScript/CSS yerel olarak gömülüdür. BSD-2-Clause lisans künyesi assets/vendor/LEAFLET_LICENSE.txt içinde korunur."
- },
- {
   "id": "disinfolab2022",
   "cite": "Alaphilippe et al., 2022",
   "apa": "Alaphilippe, A., Machado, G., Miguel, R., & Poldi, F. (2022, September 27). <i>Doppelganger: Media clones serving Russian propaganda</i>. EU DisinfoLab.",
@@ -16,15 +7,6 @@
   "kind": "Araştırma raporu (gri literatür)",
   "access": "Künye ve özet doğrulandı",
   "verification": "Künye, yayıncı sayfası ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı (31.10.2026). Bu ortamdan tam metne erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanıldı. Kullanılan bilgi: kampanyanın en az Mayıs 2022’den beri sürdüğü ve en az 17 medya markasının taklit edildiği."
- },
- {
-  "id": "allen2020",
-  "cite": "Allen et al., 2020",
-  "apa": "Allen, J., Howland, B., Mobius, M., Rothschild, D., & Watts, D. J. (2020). Evaluating the fake news problem at the scale of the information ecosystem. <i>Science Advances, 6</i>(14), Article eaay3539.",
-  "url": "https://doi.org/10.1126/sciadv.aay3539",
-  "kind": "Hakemli makale",
-  "access": "Erişilebilir makale metni incelendi",
-  "verification": "Makale başlığı, beş yazar, yayın tarihi, dergi ve DOI metinle karşılaştırıldı; yayıncı alan adı bu ortamda açılamadı."
  },
  {
   "id": "auswaertiges2024",
@@ -45,13 +27,49 @@
   "verification": "Künye 31.10.2026 tarihinde web aramasıyla yayıncı/kurum kayıtları üzerinden doğrulandı; tam metin bu ortamda okunmadı. Sunumda yalnız özetlerde doğrulanan genel bilgi kullanılır. Kullanılan bilgi: dezenformasyonun ‘siyasi amaçlarla haber öyküsü veya taklit belgesel biçimlerde yayılan kasıtlı yanlışlar’ olarak tanımlanması."
  },
  {
-  "id": "freelon2020",
-  "cite": "Freelon & Wells, 2020",
-  "apa": "Freelon, D., & Wells, C. (2020). Disinformation as political communication. <i>Political Communication, 37</i>(2), 145–156.",
-  "url": "https://citap.unc.edu/?p=99086",
-  "kind": "Hakemli makale (özel sayı girişi)",
-  "access": "Künye ve özet doğrulandı",
-  "verification": "Künye 31.10.2026 tarihinde web aramasıyla yayıncı/kurum kayıtları üzerinden doğrulandı; tam metin bu ortamda okunmadı. Sunumda yalnız özetlerde doğrulanan genel bilgi kullanılır. Kullanılan bilgi: dezenformasyonun siyasal iletişim olgusu olarak; içerik ve alımlama çalışmaları biçiminde incelenmesi."
+  "id": "caliskan2019",
+  "cite": "Caliskan, 2019",
+  "apa": "Caliskan, M. (2019). Hybrid warfare through the lens of strategic theory. <i>Defense & Security Analysis, 35</i>(1), 40–58.",
+  "url": "https://doi.org/10.1080/14751798.2019.1565364",
+  "kind": "Hakemli makale",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda doi.org/Crossref engelli olduğu için canlı çözülemedi. Sunumdan önce doi.org’da kontrol edilmeli."
+ },
+ {
+  "id": "eady2023",
+  "cite": "Eady et al., 2023",
+  "apa": "Eady, G., Paskhalis, T., Zilinsky, J., Bonneau, R., Nagler, J., & Tucker, J. A. (2023). Exposure to the Russian Internet Research Agency foreign influence campaign on Twitter in the 2016 US election and its relationship to attitudes and voting behavior. <i>Nature Communications, 14</i>, Article 62.",
+  "url": "https://doi.org/10.1038/s41467-022-35576-9",
+  "kind": "Hakemli makale",
+  "access": "Künye ve DOI doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı. Kullanılan bilgi: maruziyetin %70’i kullanıcıların %1’inde; tutum ve oy davranışıyla ilişki saptanmadı."
+ },
+ {
+  "id": "hybridcoe",
+  "cite": "Hybrid CoE, n.d.",
+  "apa": "European Centre of Excellence for Countering Hybrid Threats. (n.d.). <i>Hybrid threats as a concept</i>. Hybrid CoE.",
+  "url": "https://www.hybridcoe.fi/hybrid-threats/",
+  "kind": "Kurumsal tanım (gri)",
+  "access": "Sayfa doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı. “Tespit ve atıf eşikleri” vurgusu için kullanıldı."
+ },
+ {
+  "id": "fridman2018",
+  "cite": "Fridman, 2018",
+  "apa": "Fridman, O. (2018). <i>Russian “hybrid warfare”: Resurgence and politicisation</i>. Oxford University Press.",
+  "url": "https://academic.oup.com/book/2879",
+  "kind": "Akademik kitap",
+  "access": "Künye doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "galeotti2018",
+  "cite": "Galeotti, 2018",
+  "apa": "Galeotti, M. (2018, March 5). I’m sorry for creating the “Gerasimov doctrine”. <i>Foreign Policy</i>.",
+  "url": "https://foreignpolicy.com/2018/03/05/im-sorry-for-creating-the-gerasimov-doctrine/",
+  "kind": "Analiz yazısı (gri)",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda doi.org/Crossref engelli olduğu için canlı çözülemedi. Sunumdan önce doi.org’da kontrol edilmeli."
  },
  {
   "id": "gdeltgkg",
@@ -61,15 +79,6 @@
   "kind": "Birincil veri kümesi",
   "access": "Ham dosyalar indirildi; her dosya GDELT masterfilelist MD5 değeriyle doğrulandı",
   "verification": "Dosya listesi, boyutlar ve MD5 değerleri research/gdelt/gkg_archive/manifest.json içinde. Betik: scripts/gdelt_gkg_archive.py."
- },
- {
-  "id": "gdeltdoc",
-  "cite": "GDELT Project, 2017",
-  "apa": "The GDELT Project. (2017). <i>GDELT DOC 2.0 API debuts!</i> [Blog post and API documentation]. GDELT Blog.",
-  "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
-  "kind": "Veri/API belgesi",
-  "access": "Belge adresi ve istemci belgeleri incelendi",
-  "verification": "API parametreleri depodaki gdeltdoc istemci belgeleriyle (research/gdelt_docs) karşılaştırıldı: artlist modu sourcecountry alanı döndürür; resmî destek son üç aydır, daha eski tarihler veri döndürebilir ancak garanti edilmez."
  },
  {
   "id": "gdeltdomains2018",
@@ -90,6 +99,42 @@
   "verification": "Künye, yayıncı sayfası ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı (31.10.2026). Bu ortamdan tam metne erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanıldı. Kullanılan bilgi: GDELT’in elle kodlanmış olay verileriyle karşılaştırılarak mikro düzey ve mekânsal analiz için sınandığı; bu nedenle otomatik konum kodlamasının doğrulama gerektirdiği."
  },
  {
+  "id": "hoffman2007",
+  "cite": "Hoffman, 2007",
+  "apa": "Hoffman, F. G. (2007). <i>Conflict in the 21st century: The rise of hybrid wars</i>. Potomac Institute for Policy Studies.",
+  "url": "https://www.potomacinstitute.org/",
+  "kind": "Kitap/rapor (kavramın kökeni)",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda doi.org/Crossref engelli olduğu için canlı çözülemedi. Sunumdan önce doi.org’da kontrol edilmeli. DOI yok."
+ },
+ {
+  "id": "hoffmann2022",
+  "cite": "Hoffmann et al., 2022",
+  "apa": "Hoffmann, M., Santos, F. G., Neumayer, C., & Mercea, D. (2022). Lifting the veil on the use of big data news repositories: A documentation and critical discussion of a protest event analysis. <i>Communication Methods and Measures, 16</i>(4), 283–302.",
+  "url": "https://doi.org/10.1080/19312458.2022.2128099",
+  "kind": "Hakemli yöntem makalesi",
+  "access": "Künye ve DOI doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "jungherr2024",
+  "cite": "Jungherr & Rauchfleisch, 2024",
+  "apa": "Jungherr, A., & Rauchfleisch, A. (2024). Negative downstream effects of alarmist disinformation discourse: Evidence from the United States. <i>Political Behavior, 46</i>(4), 2123–2143.",
+  "url": "https://doi.org/10.1007/s11109-024-09911-3",
+  "kind": "Hakemli makale",
+  "access": "Künye ve DOI doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "korczynski2018",
+  "cite": "Korczyński et al., 2018",
+  "apa": "Korczyński, M., Wullink, M., Tajalizadehkhoob, S., Moura, G. C. M., Noroozian, A., Bagley, D., & Hesselman, C. (2018). Cybercrime after the sunrise: A statistical analysis of DNS abuse in new gTLDs. In <i>Proceedings of the 2018 Asia Conference on Computer and Communications Security</i>. ACM.",
+  "url": "https://doi.org/10.1145/3196494.3196548",
+  "kind": "Hakemli konferans bildirisi",
+  "access": "Künye doğrulandı; DOI çözülmedi",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
   "id": "kwak2014",
   "cite": "Kwak & An, 2014",
   "apa": "Kwak, H., & An, J. (2014). A first look at global news coverage of disasters by using the GDELT dataset. In L. M. Aiello & D. McFarland (Eds.), <i>Social Informatics: SocInfo 2014</i> (Lecture Notes in Computer Science, Vol. 8851, pp. 300–308). Springer.",
@@ -97,15 +142,6 @@
   "kind": "Hakemli konferans bildirisi",
   "access": "Künye, DOI ve özet doğrulandı",
   "verification": "Künye 31.10.2026 tarihinde web aramasıyla yayıncı/kurum kayıtları üzerinden doğrulandı; tam metin bu ortamda okunmadı. Sunumda yalnız özetlerde doğrulanan genel bilgi kullanılır. Kullanılan bilgi: GDELT ile haber coğrafyası incelendiğinde güçlü bir bölgeselcilik görüldüğü."
- },
- {
-  "id": "lazer2018",
-  "cite": "Lazer et al., 2018",
-  "apa": "Lazer, D. M. J., Baum, M. A., Benkler, Y., Berinsky, A. J., Greenhill, K. M., Menczer, F., Metzger, M. J., Nyhan, B., Pennycook, G., Rothschild, D., Schudson, M., Sloman, S. A., Sunstein, C. R., Thorson, E. A., Watts, D. J., & Zittrain, J. L. (2018). The science of fake news. <i>Science, 359</i>(6380), 1094–1096.",
-  "url": "https://doi.org/10.1126/science.aao2998",
-  "kind": "Hakemli kavramsal makale",
-  "access": "Erişilebilir yazar sürümü incelendi",
-  "verification": "Açık kopya dizgi öncesi sayfa yer tutucuları içeriyor. Nihai cilt ve sayfalar Allen et al. (2020) kaynakça 3 ile karşılaştırıldı; tam yazar listesi aynı kayıtta bulunuyor."
  },
  {
   "id": "leetaru2013",
@@ -126,13 +162,22 @@
   "verification": "Sabit commit, kaynak satırları ve SHA-256 mevcut. Kaynak atfı bağımsız aktör doğrulaması değildir."
  },
  {
-  "id": "naturalearth",
-  "cite": "Natural Earth, n.d.",
-  "apa": "Natural Earth. (n.d.). <i>Admin 0—Countries, 1:110m</i> [Map].",
-  "url": "https://www.naturalearthdata.com/downloads/110m-cultural-vectors/110m-admin-0-countries/",
-  "kind": "Kartografik veri",
-  "access": "GeoJSON kopyası indirildi ve incelendi",
-  "verification": "nvkelso/natural-earth-vector deposundaki ne_110m_admin_0_countries.geojson kopyası kullanıldı. Operasyon konumu verisi değildir."
+  "id": "miskimmon2013",
+  "cite": "Miskimmon et al., 2013",
+  "apa": "Miskimmon, A., O’Loughlin, B., & Roselle, L. (2013). <i>Strategic narratives: Communication power and the new world order</i>. Routledge.",
+  "url": "https://doi.org/10.4324/9781315871264",
+  "kind": "Akademik kitap",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda doi.org/Crossref engelli olduğu için canlı çözülemedi. Sunumdan önce doi.org’da kontrol edilmeli."
+ },
+ {
+  "id": "mumford2023",
+  "cite": "Mumford & Carlucci, 2023",
+  "apa": "Mumford, A., & Carlucci, P. (2023). Hybrid warfare: The continuation of ambiguity by other means. <i>European Journal of International Security, 8</i>(2), 192–206.",
+  "url": "https://doi.org/10.1017/eis.2022.19",
+  "kind": "Hakemli makale",
+  "access": "Künye ve DOI doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
  },
  {
   "id": "nimmo2022",
@@ -144,13 +189,49 @@
   "verification": "Künye, yayıncı sayfası ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı (31.10.2026). Bu ortamdan tam metne erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanıldı. Kullanılan bilgi: Rusya kaynaklı ağın öncelikle Almanya’yı, ayrıca Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı hedeflediği; 60’tan fazla taklit haber sitesi çevresinde kurulduğu."
  },
  {
-  "id": "openstreetmap",
-  "cite": "OpenStreetMap contributors, n.d.",
-  "apa": "OpenStreetMap contributors. (n.d.). <i>OpenStreetMap</i> [Map].",
-  "url": "https://www.openstreetmap.org/copyright",
-  "kind": "İşbirlikli coğrafi veri ve taban haritası",
-  "access": "Standart döşeme uç noktası yapılandırıldı; canlı erişim ağ koşullarına bağlı",
-  "verification": "https://tile.openstreetmap.org/{z}/{x}/{y}.png kullanılır. Atıf haritada görünür. Döşeme erişimi başarısızsa Natural Earth sınır katmanı açıkça farklı etiketle gösterilir. OSM, IOC bulgularının kaynağı değildir."
+  "id": "pamment2025",
+  "cite": "Pamment & Tsurtsumia, 2025",
+  "apa": "Pamment, J., & Tsurtsumia, D. (2025). <i>Beyond Operation Doppelgänger: A capability assessment of the Social Design Agency</i>. Psychological Defence Research Institute, Lund University; Swedish Psychological Defence Agency.",
+  "url": "https://mpf.se/download/18.7cffbee41969f6d83e115221/1747230166207/Beyond%20Operation%20Doppelganger.pdf",
+  "kind": "Akademik kurum raporu (gri)",
+  "access": "Belge bulundu",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı. 3.000’den fazla sızdırılmış SDA belgesine dayanır; etkinin abartıldığı sonucunu verir."
+ },
+ {
+  "id": "paul2016",
+  "cite": "Paul & Matthews, 2016",
+  "apa": "Paul, C., & Matthews, M. (2016). <i>The Russian “firehose of falsehood” propaganda model: Why it might work and options to counter it</i> (PE-198). RAND Corporation.",
+  "url": "https://doi.org/10.7249/PE198",
+  "kind": "Politika raporu (gri)",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda doi.org/Crossref engelli olduğu için canlı çözülemedi. Sunumdan önce doi.org’da kontrol edilmeli."
+ },
+ {
+  "id": "renz2016",
+  "cite": "Renz, 2016",
+  "apa": "Renz, B. (2016). Russia and “hybrid warfare”. <i>Contemporary Politics, 22</i>(3), 283–300.",
+  "url": "https://doi.org/10.1080/13569775.2016.1201316",
+  "kind": "Hakemli makale",
+  "access": "Künye ve DOI doğrulandı",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "rogers2025",
+  "cite": "Rogers & Righetti, 2025",
+  "apa": "Rogers, R., & Righetti, N. (2025). Coordinated inauthentic behaviour on Facebook? A typology of manufactured attention. <i>Platforms & Society</i>.",
+  "url": "https://doi.org/10.1177/29768624251369784",
+  "kind": "Hakemli makale",
+  "access": "Künye ve DOI doğrulandı; cilt/sayı yok",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "tian2018",
+  "cite": "Tian et al., 2018",
+  "apa": "Tian, K., Jan, S. T. K., Hu, H., Yao, D., & Wang, G. (2018). Needle in a haystack: Tracking down elite phishing domains in the wild. In <i>Proceedings of the Internet Measurement Conference 2018</i> (pp. 429–442). ACM.",
+  "url": "https://doi.org/10.1145/3278532.3278569",
+  "kind": "Hakemli konferans bildirisi",
+  "access": "Künye doğrulandı; DOI ve sayfalar çözülmedi",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı. wrongTLD/typo/combo/homograph/bits sınıflaması için."
  },
  {
   "id": "wang2016",
@@ -169,5 +250,14 @@
   "kind": "Kurumsal kavramsal rapor",
   "access": "Künye ve çerçeve özeti doğrulandı",
   "verification": "Künye, yayıncı sayfası ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı (31.10.2026). Bu ortamdan tam metne erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanıldı. Kullanılan bilgi: yanlış/dezenformasyon/kötü niyetli bilgi ayrımı; ajan, mesaj ve yorumlayıcı öğeleri; oluşturma, üretim ve dağıtım evreleri."
+ },
+ {
+  "id": "wigell2019",
+  "cite": "Wigell, 2019",
+  "apa": "Wigell, M. (2019). Hybrid interference as a wedge strategy: A theory of external interference in liberal democracy. <i>International Affairs, 95</i>(2), 255–275.",
+  "url": "https://doi.org/10.1093/ia/iiz018",
+  "kind": "Hakemli makale",
+  "access": "Künye doğrulandı; DOI çözülmedi",
+  "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı. DOI bilgiye dayalı."
  }
 ]

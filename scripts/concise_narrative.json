@@ -16,7 +16,7 @@
    "Sunum yaklaşık 20 dakika."
   ],
   "full_notes": "Değerli hocalarım ve arkadaşlar, sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”. Hibrit savaşta askerî olmayan araçlar, özellikle bilgi alanındaki operasyonlar, çoğu zaman görünmeyen bir cephe oluşturur. Bu cepheyi Rusya’nın Batı Avrupa’ya yönelik en kapsamlı dezenformasyon operasyonlarından biri olan Doppelgänger vakası üzerinden haritalıyorum. İki veri kullanıyorum: Meta’nın 27 Eylül 2022’de yayımladığı 311 alan adlık gösterge listesi ve GDELT’in ham haber arşivinden taranan 5,9 milyon kayıt. Amacım operasyonun hangi Batı Avrupa ülkelerini hedeflediğini ve operasyonun ifşasının hangi ülkelerin medyasında görünür olduğunu coğrafi olarak göstermek.",
-  "seconds": 45,
+  "seconds": 35,
   "visual": "cover",
   "citations": [
    "meta2022",
@@ -27,143 +27,244 @@
   "visible_word_count": 29
  },
  {
-  "id": "outline",
-  "title": "Sunum planı",
-  "kicker": "SUNUM PLANI",
+  "id": "contribution",
+  "title": "Operasyonu değil, izlerini ölçmek",
+  "kicker": "SORUN VE KATKI",
   "display_points": [
-   "Giriş ve kavramsal çerçeve",
-   "Veri ve yöntem",
-   "Bulgular ve GDELT haritası",
-   "Tartışma, sınırlılıklar ve sonuç"
+   "Doppelgänger: tanınmış haber markalarını klonlayan Rus etki operasyonu",
+   "Hakemli ampirik literatür çok sınırlı"
   ],
-  "takeaway": "Üç araştırma sorusu, iki veri kaynağı, beş bulgu.",
-  "notes": "Sunum dört bölümden oluşuyor.\nÖnce vakayı ve literatürü konumlandırıyorum.\nArdından iki veri kaynağını ve ölçüm kurallarını açıklıyorum.\nBulgulardan sonra tartışma, sınırlılıklar ve sonuçla bitiriyorum.",
+  "takeaway": "Katkı: altyapı tipolojisi ve ifşanın haber coğrafyası.",
   "cue_sentences": [
-   "Sunum dört bölümden oluşuyor.",
-   "Önce vakayı ve literatürü konumlandırıyorum.",
-   "Ardından iki veri kaynağını ve ölçüm kurallarını açıklıyorum.",
-   "Bulgulardan sonra tartışma, sınırlılıklar ve sonuçla bitiriyorum."
+   "Doppelgänger, gerçek haber markalarını klonlayan ve sonradan Sosyal Tasarım Ajansı ile Structura’ya atfedilen bir etki operasyonu.",
+   "Vaka hakkındaki bilgi büyük ölçüde resmî ve gri raporlarda; hakemli ampirik çalışma neredeyse yok.",
+   "Bu çalışma iki iz ölçüyor: Meta’nın yayımladığı alan adı altyapısı ve bu altyapının ifşasının uluslararası haber görünürlüğü."
   ],
-  "full_notes": "Sunum klasik bir araştırma makalesi akışını izliyor. Giriş bölümünde Doppelgänger vakasını ve bilgi düzensizliği literatürünü kısaca tanıtacağım. Veri ve yöntem bölümünde Meta gösterge dosyasını ve GDELT haber verisini, her birinin ölçüm birimini ayrı ayrı açıklayacağım. Bulgular bölümünde üç Meta bulgusunu ve GDELT haber haritasını göstereceğim. Son bölümde bu bulguları literatürle ilişkilendirip sınırlılıkları ve sonucu sunacağım.",
-  "seconds": 30,
-  "visual": "outline",
-  "citations": [],
-  "source": "Sunum yapısı",
-  "visible_word_count": 25
- },
- {
-  "id": "context",
-  "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
-  "kicker": "GİRİŞ / VAKA",
-  "display_points": [
-   "En az 17 medya markası taklit edildi (Alaphilippe vd., 2022)",
-   "Meta, 27.09.2022: 60’tan fazla taklit site; öncelikli hedef Almanya"
-  ],
-  "takeaway": "Vaka, kamuya açık göstergelerle incelenebilir.",
-  "notes": "EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.\nRapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.\nMeta aynı gün ağı kaldırdığını ve öncelikli hedefin Almanya olduğunu açıkladı.\nMeta ayrıca alan adı göstergelerini açık bir CSV dosyası olarak yayımladı.",
-  "cue_sentences": [
-   "EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.",
-   "Rapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.",
-   "Meta aynı gün ağı kaldırdığını ve öncelikli hedefin Almanya olduğunu açıkladı.",
-   "Meta ayrıca alan adı göstergelerini açık bir CSV dosyası olarak yayımladı."
-  ],
-  "full_notes": "Doppelgänger, tanınmış Avrupa haber sitelerinin görünümünü taklit eden sahte sitelerle yürütülen bir kampanyadır. EU DisinfoLab ve Qurium’un 27 Eylül 2022 tarihli raporu, kampanyanın en az Mayıs 2022’den beri sürdüğünü ve aralarında Bild, The Guardian ve ANSA’nın da bulunduğu en az on yedi medya markasının taklit edildiğini ortaya koydu. Aynı gün Meta, Rusya kaynaklı ağı platformlarından kaldırdığını duyurdu. Nimmo ve Agranovich’in raporuna göre ağ öncelikle Almanya’yı, ayrıca Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı hedefliyor ve altmıştan fazla taklit haber sitesi çevresinde kuruluydu. Bu çalışmayı mümkün kılan şey, Meta’nın göstergeleri kamuya açık bir veri dosyası olarak yayımlamasıdır. Rusya bağlantısı bu kaynakların raporlamasına dayanır; benim bağımsız bir atıf analizim değildir.",
-  "seconds": 75,
-  "visual": "context",
+  "notes": "Doppelgänger, gerçek haber markalarını klonlayan ve sonradan Sosyal Tasarım Ajansı ile Structura’ya atfedilen bir etki operasyonu.\nVaka hakkındaki bilgi büyük ölçüde resmî ve gri raporlarda; hakemli ampirik çalışma neredeyse yok.\nBu çalışma iki iz ölçüyor: Meta’nın yayımladığı alan adı altyapısı ve bu altyapının ifşasının uluslararası haber görünürlüğü.",
+  "full_notes": "Sorunu ve katkımı baştan söylemek istiyorum. Doppelgänger, Spiegel, Bild, The Guardian gibi gerçek haber markalarının görünümünü kopyalayan, Rusya kaynaklı ve sonradan Sosyal Tasarım Ajansı ile Structura şirketlerine atfedilen bir etki operasyonu. Vaka hakkındaki bilgimiz büyük ölçüde EU DisinfoLab, Meta, Fransız VIGINUM ve Alman Dışişleri gibi kurumların raporlarına dayanıyor; vakayı doğrudan inceleyen hakemli ampirik çalışma neredeyse yok. Pamment ve Tsurtsumia’nın 2025 tarihli değerlendirmesi bu boşluğu açıkça gösteriyor. Bu nedenle operasyonun kendisini, yani kimlerin ne kadar etkilendiğini, ölçtüğümü iddia etmiyorum. Ölçtüğüm şey operasyonun izleri: Meta’nın yayımladığı alan adı altyapısı ve bu altyapının ifşasının uluslararası haber coğrafyası.",
+  "seconds": 50,
+  "visual": "steps",
   "citations": [
    "disinfolab2022",
-   "nimmo2022"
+   "pamment2025",
+   "meta2022"
   ],
-  "source": "Alaphilippe et al., 2022; Nimmo & Agranovich, 2022",
+  "source": "Alaphilippe et al., 2022; Pamment & Tsurtsumia, 2025; Meta, 2022",
+  "steps": [
+   [
+    "Vaka",
+    "Doppelgänger: haber markası klonlama · Rusya kaynaklı · SDA/Structura’ya atfedildi"
+   ],
+   [
+    "Boşluk",
+    "Bilgi çoğunlukla resmî/gri raporlarda; vakaya özgü hakemli ampirik çalışma çok az"
+   ],
+   [
+    "Katkı 1",
+    "Meta göstergelerinin hedef ve alan adı tipolojisi (311 alan adı)"
+   ],
+   [
+    "Katkı 2",
+    "İfşanın haber görünürlüğü: ham GDELT GKG arşivi (5,9 milyon kayıt)"
+   ]
+  ],
+  "visible_word_count": 24
+ },
+ {
+  "id": "definition",
+  "title": "Hibrit savaştan hibrit müdahaleye",
+  "kicker": "KAVRAMSAL ÇERÇEVE I",
+  "display_points": [
+   "Köken: Hoffman (2007), muharebe alanında araçların kaynaşması",
+   "Eleştiri: belirsizlik, aşırı genişleme, “Gerasimov doktrini” miti"
+  ],
+  "takeaway": "Çalışma tanımı: tespit ve atıf eşiğini istismar eden müdahale.",
+  "cue_sentences": [
+   "Hibrit savaş kavramı Hoffman’da askeri bir kavramdı; Kırım’dan sonra dezenformasyonu da kapsayacak şekilde genişledi.",
+   "Renz, Galeotti, Fridman ve Çalışkan bu genişlemeyi eleştirir; Galeotti “Gerasimov doktrini” etiketini kendisi geri çekmiştir.",
+   "Bu yüzden Wigell’in hibrit müdahale kavramını ve Hybrid CoE’nin “tespit ve atıf eşikleri” vurgusunu kullanıyorum.",
+   "Görünmez cephe: operasyon eşiğin altında tutulur; kamuoyu çoğu zaman operasyonu değil, yalnızca ifşasını görür."
+  ],
+  "notes": "Hibrit savaş kavramı Hoffman’da askeri bir kavramdı; Kırım’dan sonra dezenformasyonu da kapsayacak şekilde genişledi.\nRenz, Galeotti, Fridman ve Çalışkan bu genişlemeyi eleştirir; Galeotti “Gerasimov doktrini” etiketini kendisi geri çekmiştir.\nBu yüzden Wigell’in hibrit müdahale kavramını ve Hybrid CoE’nin “tespit ve atıf eşikleri” vurgusunu kullanıyorum.\nGörünmez cephe: operasyon eşiğin altında tutulur; kamuoyu çoğu zaman operasyonu değil, yalnızca ifşasını görür.",
+  "full_notes": "Başlığımdaki “hibrit savaş” kavramını açıkça tanımlamam gerekiyor. Kavram Hoffman’ın 2007 çalışmasında konvansiyonel ve düzensiz araçların aynı muharebe alanında kaynaşmasını anlatan askeri bir kavramdı. Kırım’dan sonra NATO ve AB kavramı dezenformasyonu da içeren “hibrit tehditler” yönünde genişletti. Bu genişleme ciddi eleştiri aldı: Renz kavramın Rus kapasitesini abarttığını, Fridman iki tarafta da siyasallaştığını, Çalışkan ise strateji kuramı açısından yeni bir savaş biçimi olmadığını savunur. “Gerasimov doktrini” ifadesini ortaya atan Galeotti de 2018’de bu etiketi geri çekmiştir. Bu nedenle ben kavramı Wigell’in “hibrit müdahale” kuramı ve Hybrid CoE’nin tanımı anlamında kullanıyorum: savaş eşiğinin altında kalan, tespit ve atıf eşiklerini istismar eden, açık toplumların bilgi altyapısındaki güven ilişkilerini hedef alan, inkâr edilebilir ve askeri olmayan faaliyetler. Mumford ve Carlucci’nin vurguladığı gibi bu müdahalenin çekirdeği belirsizliktir. “Görünmez cephe” derken kastettiğim de budur: operasyon kasıtlı olarak eşiğin altında tutulur ve kamuoyu çoğu zaman operasyonun kendisini değil, yalnızca ifşasını görür.",
+  "seconds": 90,
+  "visual": "quote",
+  "citations": [
+   "hoffman2007",
+   "renz2016",
+   "galeotti2018",
+   "fridman2018",
+   "caliskan2019",
+   "wigell2019",
+   "hybridcoe",
+   "mumford2023"
+  ],
+  "source": "Hoffman, 2007; Renz, 2016; Galeotti, 2018; Fridman, 2018; Caliskan, 2019; Wigell, 2019; Hybrid CoE; Mumford & Carlucci, 2023",
+  "quote": "Hibrit müdahale: devlet veya devlet bağlantılı aktörlerin savaş eşiğinin altında kalarak, tespit ve atıf eşiklerini istismar eden, açık toplumların bilgi altyapısındaki güven ilişkilerini hedef alan, koordineli ve inkâr edilebilir askeri olmayan faaliyetleri.",
+  "quote_note": "Wigell, 2019; Hybrid CoE; Mumford ve Carlucci, 2023. Birleşik bir Rus “hibrit doktrini” varsayılmaz (Renz, 2016; Galeotti, 2018; Caliskan, 2019).",
+  "visible_word_count": 27
+ },
+ {
+  "id": "mechanism",
+  "title": "Görünmez cephenin mekanizması: anlatı → güven → altyapı",
+  "kicker": "KAVRAMSAL ÇERÇEVE II",
+  "display_points": [
+   "Neden: stratejik anlatı",
+   "Nasıl: yansıtıcı kontrol, “yalan hortumu”",
+   "Hangi altyapıyla: ödünç alınmış güvenilirlik"
+  ],
+  "takeaway": "Klon haber sitesi, güveni ödünç alan ucuz bir altyapıdır.",
+  "cue_sentences": [
+   "Neden: Miskimmon ve arkadaşlarının stratejik anlatı kavramı; içerikler “Batı’nın çöküşü” anlatısına hizmet eder.",
+   "Nasıl: yansıtıcı kontrol ve “yalan hortumu” modelleri yüksek hacim ve çok kanalı açıklar; bunlar kanıtlanmış doktrin değil, yorumlayıcı modellerdir.",
+   "Hangi altyapıyla: okur tanıdık marka görünümüne güvenir; Bennett ve Livingston’ın tanımındaki “taklit haber biçimi” tam olarak budur."
+  ],
+  "notes": "Neden: Miskimmon ve arkadaşlarının stratejik anlatı kavramı; içerikler “Batı’nın çöküşü” anlatısına hizmet eder.\nNasıl: yansıtıcı kontrol ve “yalan hortumu” modelleri yüksek hacim ve çok kanalı açıklar; bunlar kanıtlanmış doktrin değil, yorumlayıcı modellerdir.\nHangi altyapıyla: okur tanıdık marka görünümüne güvenir; Bennett ve Livingston’ın tanımındaki “taklit haber biçimi” tam olarak budur.",
+  "full_notes": "Hibrit müdahale üst çerçeveyi veriyor; operasyonun işleyişini ise üç katmanda açıklıyorum. Neden sorusuna stratejik anlatı kavramı yanıt veriyor: Miskimmon ve arkadaşlarına göre devletler uluslararası düzene dair anlam inşa etmek için iletişim kurar; Doppelgänger içeriklerindeki “yaptırımlar Almanya’ya zarar veriyor” ya da “mülteciler yük” temaları Batı’nın çöküşü anlatısına hizmet eder. Nasıl sorusuna Paul ve Matthews’ın “yalan hortumu” modeli yanıt veriyor: yüksek hacim, çok kanal ve tekrar. Bunları kanıtlanmış Rus doktrini olarak değil, yorumlayıcı modeller olarak kullanıyorum. Hangi altyapıyla sorusunun yanıtı ise ödünç alınmış güvenilirlik: okurlar haberin güvenilirliğini çoğu zaman marka ve görünüm gibi kısa yollarla değerlendirir. Bennett ve Livingston dezenformasyonu “haber ya da belgesel biçimini taklit eden kasıtlı yanlışlar” olarak tanımlar; klon haber sitesi bu tanımın en doğrudan örneğidir. Wardle ve Derakhshan’ın çerçevesinde de bu siteler üretim ve dağıtım altyapısıdır.",
+  "seconds": 75,
+  "visual": "steps",
+  "citations": [
+   "miskimmon2013",
+   "paul2016",
+   "bennett2018",
+   "wardle2017"
+  ],
+  "source": "Miskimmon et al., 2013; Paul & Matthews, 2016; Bennett & Livingston, 2018; Wardle & Derakhshan, 2017",
+  "steps": [
+   [
+    "Neden · stratejik anlatı",
+    "“Yaptırımlar Almanya’ya zarar veriyor” → Batı’nın çöküşü (Miskimmon vd., 2013)"
+   ],
+   [
+    "Nasıl · yorumlayıcı modeller",
+    "Yansıtıcı kontrol; “yalan hortumu”: hacim, çok kanal, tekrar (Paul ve Matthews, 2016)"
+   ],
+   [
+    "Hangi altyapıyla · ödünç güvenilirlik",
+    "Tanıdık marka görünümü; haber biçimini taklit eden yanlışlar (Bennett ve Livingston, 2018)"
+   ],
+   [
+    "Bilgi düzensizliği",
+    "Üretim ve dağıtım altyapısı (Wardle ve Derakhshan, 2017)"
+   ]
+  ],
   "visible_word_count": 30
  },
  {
-  "id": "literature",
-  "title": "Kavramsal çerçeve",
-  "kicker": "KAVRAMSAL ÇERÇEVE",
+  "id": "context",
+  "title": "Doppelgänger 2022–2025: ifşa, atıf, evrim",
+  "kicker": "VAKA",
   "display_points": [
-   "Dezenformasyon düzeni (Bennett ve Livingston, 2018)",
-   "Ölçüm ve payda (Lazer vd., 2018; Allen vd., 2020)",
-   "GDELT ve haber coğrafyası (Kwak ve An, 2014)"
+   "27.09.2022: Meta ve EU DisinfoLab aynı gün ifşa etti",
+   "Atıf: SDA ve Structura (Meta, 2023; ABD, AB)"
   ],
-  "takeaway": "Bu çalışma: altyapı ve haber coğrafyası birlikte.",
-  "notes": "Bennett ve Livingston dezenformasyonu, haber ya da belgesel biçimini taklit eden kasıtlı yanlışlar olarak tanımlar; taklit haber siteleri tam bu biçimdir.\nWardle ve Derakhshan’ın çerçevesinde bu siteler üretim ve dağıtım altyapısıdır.\nLazer ve Allen ile arkadaşları, neyin hangi paydaya göre sayıldığının açık olmasını ister.\nLeetaru ve Schrodt GDELT’i tanıtır; Kwak ve An GDELT ile haber coğrafyasının bölgesel olduğunu gösterir.",
+  "takeaway": "2022 göstergeleri dört yıllık operasyonun ilk evresidir.",
+  "notes": "EU DisinfoLab, kampanyanın en az Mayıs 2022’den beri sürdüğünü raporladı.\nRapor, Bild, Spiegel, The Guardian ve ANSA gibi en az 17 markanın taklit edildiğini gösterdi.\nMeta aynı gün ağı kaldırdığını ve öncelikli hedefin Almanya olduğunu açıkladı.\nMeta ayrıca alan adı göstergelerini açık bir CSV dosyası olarak yayımladı.",
   "cue_sentences": [
-   "Bennett ve Livingston dezenformasyonu, haber ya da belgesel biçimini taklit eden kasıtlı yanlışlar olarak tanımlar; taklit haber siteleri tam bu biçimdir.",
-   "Wardle ve Derakhshan’ın çerçevesinde bu siteler üretim ve dağıtım altyapısıdır.",
-   "Lazer ve Allen ile arkadaşları, neyin hangi paydaya göre sayıldığının açık olmasını ister.",
-   "Leetaru ve Schrodt GDELT’i tanıtır; Kwak ve An GDELT ile haber coğrafyasının bölgesel olduğunu gösterir."
+   "27 Eylül 2022’de Meta ve EU DisinfoLab aynı gün ifşa etti; Meta 1.633 hesap ve 703 sayfa kaldırdı.",
+   "2022’de operatör belirsizdi; 2023’te Meta, sonra Fransa, AB ve ABD Sosyal Tasarım Ajansı ile Structura’yı işaret etti.",
+   "Operasyon sonra evrildi: Almanya’da 50 binden fazla sahte X hesabı, yapay zekâ içerikleri, el konan sitelerin yerine yenileri.",
+   "Bu yüzden 2022 listesi bir başlangıç anlık görüntüsüdür."
   ],
-  "full_notes": "Kavramsal olarak üç literatüre dayanıyorum. Birincisi dezenformasyon literatürü: Bennett ve Livingston dezenformasyonu siyasal amaçlarla haber öyküsü ya da taklit belgesel biçiminde yayılan kasıtlı yanlışlar olarak tanımlar; tanınmış gazetelerin görünümünü kopyalayan siteler bu tanımın doğrudan örneğidir. Wardle ve Derakhshan’ın bilgi düzensizliği çerçevesinde bu siteler üretim ve dağıtım altyapısına karşılık gelir; Freelon ve Wells de olguyu bir siyasal iletişim sorunu olarak ele alır. İkincisi ölçüm literatürü: Lazer ve arkadaşları ile Allen ve arkadaşları neyin, hangi paydaya göre sayıldığının açıkça tanımlanmasını vurgular. Üçüncüsü GDELT literatürü: Leetaru ve Schrodt veri kümesini tanıtır, Kwak ve An GDELT ile haber coğrafyasının güçlü biçimde bölgesel olduğunu gösterir, Wang ve arkadaşları ise otomatik kodlamanın doğrulanması gerektiğini hatırlatır. Bu çalışma altyapı göstergelerini ve haber görünürlüğünü aynı vakada, açık paydalarla yan yana koyuyor.",
-  "seconds": 90,
-  "visual": "literature",
+  "full_notes": "Vakanın kronolojisi bulguları okumak için önemli. 27 Eylül 2022’de EU DisinfoLab ile Qurium raporunu yayımladı ve aynı gün Meta ağı kaldırdığını duyurdu; Meta 1.633 Facebook hesabı ve 703 sayfa kaldırdı, yaklaşık 105 bin dolarlık reklam harcaması ve yaklaşık 4 bin sayfa takipçisi raporladı. O tarihte operatör açıkça belirlenmemişti. Meta 2023 başında ağı Sosyal Tasarım Ajansı ile Structura’ya bağladı; ardından Fransa, Avrupa Birliği ve ABD yaptırım ve el koyma kararlarıyla bu atfı destekledi. Bu atıf çok kaynaklı ve yüksek güvenli; Rus Başkanlık İdaresi’nin yönlendirdiği iddiası ise esas olarak ABD belgelerine dayanıyor. Operasyon daha sonra evrildi: Alman Dışişleri Bakanlığı 2024’te 50 binden fazla sahte X hesabı ve 1,8 milyon gönderi tespit etti; içerikler yapay zekâyla üretilmeye başlandı; ABD 2024’te 32 alan adına el koyduğunda yerlerine kısa sürede yenileri açıldı. Dolayısıyla incelediğim 2022 listesi operasyonun tamamı değil, ilk evresinin platform tarafından yayımlanmış bir anlık görüntüsüdür.",
+  "seconds": 80,
+  "visual": "steps",
   "citations": [
-   "bennett2018",
-   "wardle2017",
-   "freelon2020",
-   "lazer2018",
-   "allen2020",
-   "leetaru2013",
-   "kwak2014",
-   "wang2016"
+   "disinfolab2022",
+   "nimmo2022",
+   "auswaertiges2024",
+   "pamment2025"
   ],
-  "source": "Bennett & Livingston, 2018; Wardle & Derakhshan, 2017; Lazer et al., 2018; Allen et al., 2020; Kwak & An, 2014",
-  "visible_word_count": 32
+  "source": "Alaphilippe et al., 2022; Nimmo & Agranovich, 2022; Auswärtiges Amt, 2024; Pamment & Tsurtsumia, 2025",
+  "visible_word_count": 29,
+  "steps": [
+   [
+    "27.09.2022 · ifşa",
+    "EU DisinfoLab raporu ve Meta kaldırması aynı gün: 1.633 hesap, 703 sayfa, ≈105 bin $ reklam"
+   ],
+   [
+    "2023–2024 · atıf",
+    "Meta (2023), Fransa, AB ve ABD: SDA ve Structura; yaptırımlar ve alan adı el koyma"
+   ],
+   [
+    "2024–2025 · evrim",
+    "Almanya’da 50.000+ sahte X hesabı (Auswärtiges Amt, 2024); yapay zekâ içerikleri"
+   ],
+   [
+    "Sonuç",
+    "2022 göstergeleri operasyonun ilk evresine ait bir anlık görüntü"
+   ]
+  ]
  },
  {
   "id": "question",
-  "title": "Araştırma soruları",
+  "title": "Araştırma soruları ve kuramsal beklentiler",
   "kicker": "ARAŞTIRMA SORULARI",
   "display_points": [
-   "AS1: Göstergeler hangi ülkeleri hedefliyor?",
-   "AS2: Alan adları hangi yapıyı izliyor?",
-   "AS3: Kaldırma haberi ne zaman, nerede görünür oldu?"
+   "AS1: İfşa edilen altyapı hangi ülkeleri hedefliyor?",
+   "AS2: Alan adları hangi taklit tipini izliyor?",
+   "AS3: İfşa nerede ve ne süre görünür oldu?"
   ],
-  "takeaway": "Birimler: 311 alan adı ve GDELT haberleri.",
+  "takeaway": "Her soru için kuramdan bir beklenti var.",
   "notes": "Birinci soru hedef coğrafyasını soruyor.\nİkinci soru alan adlarının sözcüksel yapısını soruyor.\nÜçüncü soru, kaldırma haberinin ne zaman ve hangi ülkelerin medyasında görünür olduğunu soruyor.\nİlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesidir.",
   "cue_sentences": [
-   "Birinci soru hedef coğrafyasını soruyor.",
-   "İkinci soru alan adlarının sözcüksel yapısını soruyor.",
-   "Üçüncü soru, kaldırma haberinin ne zaman ve hangi ülkelerin medyasında görünür olduğunu soruyor.",
-   "İlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesidir."
+   "AS1 için beklenti: marka itibarının yüksek olduğu tek bir kilit ülkede yoğunlaşma.",
+   "AS2 için beklenti: yazım hatası değil, aynı markanın ucuz uzantılarda çoğaltılması.",
+   "AS3 için beklenti: kısa, tetikleyici olaya bağlı ve büyük ajanslar üzerinden dolaşan bir görünürlük."
   ],
-  "full_notes": "Çalışmayı üç betimsel araştırma sorusu yönlendiriyor. Birinci soru: yayımlanan göstergeler hangi ülkeleri hedef olarak etiketliyor? İkinci soru: bu alan adları, son ve ilk DNS etiketleri açısından nasıl bir yapı izliyor? Üçüncü soru: kaldırma duyurusu ne zaman ve hangi ülkelerin haber kaynaklarında görünür oldu, bu haberler hangi yerleri andı? İlk iki sorunun analiz birimi benzersiz alan adı, üçüncüsünün birimi ise GDELT’in izlediği haber makalesidir. Bu ayrımı baştan yapıyorum, çünkü hedef ülke ile haberin yayımlandığı ülke farklı kavramlardır ve aynı paydada toplanamaz.",
-  "seconds": 60,
-  "visual": "question",
+  "full_notes": "Üç araştırma sorum var ve her biri için kuramdan türetilmiş bir beklentim var. Birinci soru: ifşa edilen altyapı hangi ülkeleri hedefliyor? Ödünç güvenilirlik mantığına göre markanın yerel itibarının en yüksek olduğu kilit bir ülkede yoğunlaşma bekliyorum. İkinci soru: alan adları hangi taklit tipini izliyor? Güvenlik literatüründeki tipolojiye göre yazım hatası değil, aynı marka adının ucuz yeni uzantılarda çoğaltılmasını bekliyorum. Üçüncü soru: ifşa ne zaman ve hangi ülkelerin medyasında görünür oldu? Haber akışı kuramına göre kısa ömürlü, tetikleyici olaya bağlı ve büyük ajanslar üzerinden dolaşan bir görünürlük bekliyorum. İlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesidir.",
+  "seconds": 50,
+  "visual": "steps",
   "citations": [
-   "meta2022",
-   "gdeltgkg"
+   "tian2018",
+   "korczynski2018",
+   "kwak2014"
   ],
-  "source": "Meta, 2022; The GDELT Project, 2015",
-  "visible_word_count": 28
+  "source": "Tian et al., 2018; Korczyński et al., 2018; Kwak & An, 2014",
+  "visible_word_count": 34,
+  "steps": [
+   [
+    "AS1 · hedefleme",
+    "Beklenti: marka itibarının yüksek olduğu kilit ülkede yoğunlaşma · birim: alan adı"
+   ],
+   [
+    "AS2 · altyapı",
+    "Beklenti: typosquatting değil, ucuz yeni uzantılarda wrongTLD (Tian vd., 2018; Korczyński vd., 2018)"
+   ],
+   [
+    "AS3 · görünürlük",
+    "Beklenti: kısa, olay tetikli, ajans merkezli · birim: haber makalesi (Kwak ve An, 2014)"
+   ]
+  ]
  },
  {
   "id": "method",
   "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
   "kicker": "VERİ VE YÖNTEM",
   "display_points": [
-   "Meta CSV: hedef etiketi, ilk ve son DNS etiketi",
-   "GDELT GKG arşivi: 4.209 dosya, 5,9 milyon kayıt",
-   "Kaynak ülke, anılan yer, payda"
+   "Meta CSV: bir uygulama kaydı, örneklem değil",
+   "GDELT GKG: 4.209 dosya, 5,9 milyon kayıt",
+   "Hedef etiketi ≠ yayın ülkesi ≠ anılan yer"
   ],
   "takeaway": "Kaynak ülke, hedef ülke değildir.",
-  "notes": "Meta dosyasından hedef etiketi ile ilk ve son DNS etiketi çıkarıldı.\nGDELT verisini API’den değil, literatürde kullanılan ham GKG arşivinden aldım: 20 Eylül – 11 Ekim 2022, 4.209 dosya.\nHaberler iki sabit kuralla seçildi; kaynak ülke GDELT’in alan adı listesinden, anılan yerler GKG konum alanından geliyor.\nHer ölçüm kendi biriminde ve taranan bütün kayıtlarla paydalanarak raporlanıyor.",
+  "notes": "Meta listesi operasyonun örneklemi değil, platformun uygulama kaydıdır; Rogers ve Righetti’nin gösterdiği gibi bu tanım zamanla değişir.\nGDELT verisini API’den değil, literatürde kullanılan ham GKG arşivinden aldım: 20 Eylül – 11 Ekim 2022, 4.209 dosya.\nHaberler iki sabit kuralla seçildi; kaynak ülke GDELT’in alan adı listesinden, anılan yerler GKG konum alanından geliyor.\nHer ölçüm kendi biriminde ve taranan bütün kayıtlarla paydalanarak raporlanıyor.",
   "cue_sentences": [
-   "Meta dosyasından hedef etiketi ile ilk ve son DNS etiketi çıkarıldı.",
+   "Meta listesi operasyonun örneklemi değil, platformun uygulama kaydıdır; Rogers ve Righetti’nin gösterdiği gibi bu tanım zamanla değişir.",
    "GDELT verisini API’den değil, literatürde kullanılan ham GKG arşivinden aldım: 20 Eylül – 11 Ekim 2022, 4.209 dosya.",
    "Haberler iki sabit kuralla seçildi; kaynak ülke GDELT’in alan adı listesinden, anılan yerler GKG konum alanından geliyor.",
    "Her ölçüm kendi biriminde ve taranan bütün kayıtlarla paydalanarak raporlanıyor."
   ],
   "full_notes": "Yöntem iki veri kaynağına dayanıyor. Birincisi Meta’nın sabit commit bağlantısıyla arşivlenen CSV dosyası; hedef ülkeyi kaynak yorum alanından alıyorum, uzantıdan veya IP adresinden tahmin etmiyorum. İkincisi GDELT. GDELT verisini canlı bir API sorgusundan değil, akademik GDELT çalışmalarında kullanılan ham Küresel Bilgi Grafiği arşivinden aldım. Meta duyurusunu kapsayan 20 Eylül – 11 Ekim 2022 penceresindeki bütün on beş dakikalık İngilizce ve çeviri dosyalarını, toplam 4.209 dosyayı ve yaklaşık 5,9 milyon haber kaydını taradım. Haberleri iki sabit kuralla seçtim: kampanya adı ile Rusya bağlamı, ya da Meta veya Facebook ile Rusya ve ağ, sahte, propaganda gibi bir terimin birlikte geçmesi. Kaynak ülkeyi GDELT’in 2018 alan adı–ülke listesinden, anılan yerleri ise aynı haberlerin konum alanından aldım. Günlük ve ülke bazında bütün taranan kayıtları payda olarak saklıyorum.",
-  "seconds": 80,
+  "seconds": 70,
   "visual": "method",
   "citations": [
    "meta2022",
    "gdeltgkg",
    "gdeltdomains2018",
-   "leetaru2013"
+   "rogers2025",
+   "hoffmann2022"
   ],
-  "source": "Meta, 2022; The GDELT Project, 2015, 2018; Leetaru & Schrodt, 2013",
+  "source": "Meta, 2022; The GDELT Project, 2015, 2018; Rogers & Righetti, 2025; Hoffmann et al., 2022",
   "visible_word_count": 34
  },
  {
@@ -182,7 +283,7 @@
    "Her dönüşüm kaynak satırına ve dosya özetine bağlandı."
   ],
   "full_notes": "Veri hazırlığında üç toplamı ayırıyorum. Ham dosya üç yüz elli kayıt içeriyor. Alan adı türündeki satırları seçtiğimde üç yüz on üç kayıt kalıyor. Küçük harfe dönüştürülmüş tam alan adı üzerinde tekilleştirme iki yinelenen değer buluyor ve analiz kümesi üç yüz on bire iniyor. Dosyadaki yirmi iki CIB bağlantısı ile on beş Telegram bağlantısını bu toplama eklemiyorum; çünkü bunlar aynı analiz birimi değil. Hedef ülkeyi kaynağın yorum alanındaki açık etiketten alıyorum. Çoklu hedef kategorisini ülkelere çoğaltmadan ayrı tutuyorum. Bu işlemler, birincil dosyadan yeniden üretilebiliyor. Dolayısıyla birazdan göreceğimiz her sayı, belirsiz bir harita yoğunluğuna değil, tanımlanmış kayıtlar ve açık dönüşüm kurallarına dayanıyor.",
-  "seconds": 50,
+  "seconds": 35,
   "visual": "audit",
   "citations": [
    "meta2022"
@@ -208,7 +309,7 @@
    "Yanlış pozitifler kayıtlı; örneğin Putin’in dublörleri haberi. İkinci kodlayıcı için sütun açık."
   ],
   "full_notes": "GDELT verisinin güvenilirliğini üç testle gösteriyorum. Birincisi bütünlük: indirdiğim 4.209 ham dosyanın her birini GDELT’in kendi yayımladığı MD5 özetiyle karşılaştırdım; hepsi eşleşti, hiçbir dosya düşmedi. İkincisi kapsam ve payda: 5.944.850 haber kaydı tarandı; eşleşen 511 tekil haberi, aynı gün ve aynı ülkedeki bütün kayıtlara oranlayabiliyorum. Üçüncüsü isabet: Wang ve arkadaşlarının uyardığı gibi otomatik kodlamaya körü körüne güvenmemek için sabit tohumla rastgele 32 başlık çektim ve tek tek kodladım. 29’u gerçekten Meta’nın kaldırma haberi ya da kampanya haberiydi; isabet yüzde 90,6, Wilson yüzde 95 güven aralığı 76 ile 97 arası. Yanlış pozitifleri, örneğin Putin’in dublörleri haberini, kayıtta tutuyorum. Birinci kodlama yapay zekâ destekli bir ön kodlamadır; ikinci insan kodlayıcı için sütun hazır ve uyum katsayısı otomatik hesaplanıyor. Bütün süreç tek komutla yeniden üretilebiliyor ve birim testleriyle korunuyor.",
-  "seconds": 65,
+  "seconds": 60,
   "visual": "validity",
   "citations": [
    "gdeltgkg",
@@ -227,15 +328,15 @@
    "Birleşik Krallık 4; Fransa 2; İtalya 2."
   ],
   "takeaway": "Bu oran, yayımlanmış vakanın dağılımını betimler.",
-  "notes": "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.\nBirleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.\nKalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.\nGrafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz.",
+  "notes": "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.\nBirleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.\nKalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.\nBu bir hedefleme önceliği ve yatırımdır, erişim değil; etiket Meta’nın yargısıdır ve Meta metni Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı da sayar.",
   "cue_sentences": [
    "Listenin 298 kaydı Almanya hedefli; bütün listedeki payı yüzde 95,8.",
    "Birleşik Krallık, Fransa ve İtalya birlikte sekiz kayıttır.",
    "Kalan beş kayıt Letonya, Ukrayna ve çoklu hedef kategorilerindedir.",
-   "Grafik, ülke dağılımını gösterir; neden veya etkiyi açıklamaz."
+   "Bu bir hedefleme önceliği ve yatırımdır, erişim değil; etiket Meta’nın yargısıdır ve Meta metni Fransa, İtalya, Ukrayna ve Birleşik Krallık’ı da sayar."
   ],
   "full_notes": "İlk bulgu, Almanya hedefli etiketlerin açık ağırlığıdır. Üç yüz on bir benzersiz alan adının iki yüz doksan sekizi bu etiketi taşıyor; bütün listedeki pay yüzde doksan beş virgül sekiz. Birleşik Krallık dört, Fransa iki, İtalya iki göstergeyle yer alıyor. Letonya üç, Ukrayna bir, çoklu hedef kategorisi de bir kayıt içeriyor. Tek bir ülkenin bu kadar baskın olduğu dağılımı yatay çubuk grafik daha doğrudan anlatıyor. Küçük ülkeleri ayrı uzun bölümlere ayırmak yerine aynı tabloda birlikte gösteriyorum. Bu, yayımlanan vakanın hedef yönelimidir. Yoğunlaşmanın ne kadarının faaliyet, ne kadarının tespit veya yayımlama seçimiyle ilgili olduğunu ayıracak ek veri bulunmadığından, grafiği Avrupa’daki bütün operasyonların sıralaması olarak yorumlamıyorum.",
-  "seconds": 80,
+  "seconds": 70,
   "visual": "countries",
   "citations": [
    "meta2022"
@@ -250,33 +351,35 @@
  },
  {
   "id": "tlds",
-  "title": "Altı son etiket, 240 alan adında birleşir.",
+  "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
   "kicker": "BULGU 2 / AS2 · SON DNS ETİKETİ",
   "display_points": [
-   "39 farklı son DNS etiketi",
-   "En sık altı etiket: 240/311 (%77,2)"
+   "En sık altı uzantı: 240/311 (%77,2)",
+   "Typosquatting değil, wrongTLD (Tian vd., 2018)"
   ],
-  "takeaway": "Bu 240 kaydın tamamı Almanya hedeflidir.",
-  "notes": "En sık son etiketler online, website, site, space, pw ve fun.\nBu altı etiket toplam 240 alan adı içeriyor.\nBu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.\nYapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum.",
+  "takeaway": "Ucuz yeni uzantılarda atılabilir, engellemeye dayanıklı altyapı.",
+  "notes": "En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.\nMarka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.\nKorczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.\nFiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil.",
   "cue_sentences": [
-   "En sık son etiketler online, website, site, space, pw ve fun.",
-   "Bu altı etiket toplam 240 alan adı içeriyor.",
-   "Bu 240 kaydın tamamı kaynakta Almanya hedefli etiketlenmiş.",
-   "Yapısal dağılımı ölçüyorum; fiyat, barındırma ve operatör bilgisi çıkarmıyorum."
+   "En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.",
+   "Marka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.",
+   "Korczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.",
+   "Fiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil."
   ],
   "full_notes": "İkinci bulgu, alan adının en sağındaki etikete bakıyor. Online elli üç, website elli, site kırk altı, space kırk iki, pw yirmi sekiz ve fun yirmi bir kez geçiyor. Altı etiket toplam iki yüz kırk alan adını, yani listenin yüzde yetmiş yedi virgül ikisini kapsıyor. Bu iki yüz kırk kaydın tamamı Almanya hedefli. Böylece coğrafi yoğunlaşmayı yalnız bir ülke toplamı olarak değil, belirli bir adres dağılımıyla birlikte görebiliyoruz. Ancak etiketin sık kullanılması, ucuz olduğunu kanıtlamaz; bunun için döneme ait tescil veya fiyat verisi gerekir. Etiket barındırma ülkesini de göstermiyor. Hesap, kaydın en sağındaki DNS etiketi üzerinden yapıldığı için etkin kayıt son ekiyle karıştırılmamalı.",
-  "seconds": 75,
+  "seconds": 65,
   "visual": "tlds",
   "citations": [
-   "meta2022"
+   "meta2022",
+   "tian2018",
+   "korczynski2018"
   ],
-  "source": "Meta, 2022",
+  "source": "Meta, 2022; Tian et al., 2018; Korczyński et al., 2018",
   "metric": {
    "numerator": 240,
    "denominator": 311,
    "percentage": 77.2
   },
-  "visible_word_count": 24
+  "visible_word_count": 25
  },
  {
   "id": "reuse",
@@ -295,7 +398,7 @@
    "Dize tekrarı, sahiplik veya içerik hakkında bağımsız hüküm vermiyor."
   ],
   "full_notes": "Üçüncü bulgu, tam olarak aynı ilk DNS etiketinin yeniden kullanımını inceliyor. Üç yüz on bir alan adında doksan üç farklı ilk etiket var. Bunların yetmiş beşi birden fazla son etiketle birlikte kullanılıyor ve iki yüz doksan üç adres bu gruplarda toplanıyor. Örneğin spiegel ilk etiketi dokuz farklı son etiketle, bild sekiz, dailymail ise üç farklı son etiketle yer alıyor. Burada yazım benzerliğini yorumlayan bir model kullanmadım; yalnızca tam dize eşleşmesini saydım. Bu tercih, ölçümü yeniden üretilebilir ve denetlenebilir tutuyor. Sonuç, listede adres çeşitliliğinin önemli bir bölümünün yinelenen ilk etiketler çevresinde oluştuğunu gösteriyor. Ortak sahiplik, aynı operatör veya içerik taklidi için ise bu sayımın ötesinde kanıt gerekir.",
-  "seconds": 75,
+  "seconds": 55,
   "visual": "reuse",
   "citations": [
    "meta2022"
@@ -321,7 +424,7 @@
    "511 adres yalnız 145 farklı başlık taşıyor; aynı ajans haberi çok sayıda sitede yayımlanmış."
   ],
   "full_notes": "Dördüncü bulgu zamana ilişkin. Grafik her gün kurallarla eşleşen haber sayısını çubuk olarak, aynı gün taranan bütün GDELT kayıtlarına oranını ise çizgi olarak gösteriyor. Meta’nın duyuru yaptığı 27 Eylül’de 392 haber, ertesi gün 100 haber var; 511 haberin yüzde 96,3’ü bu iki günde toplanıyor. Oran çizgisi aynı şekli izliyor, yani zirve günlük haber hacmindeki bir artıştan kaynaklanmıyor. Duyurudan önce yalnızca bir haber var ve o da Almanya’daki Facebook tartışmasına ilişkin. Bir başka önemli nokta ajans dağıtımı: 511 farklı adres yalnızca 145 farklı başlık taşıyor; örneğin “Meta disables Russian propaganda network targeting Europe” başlığı onlarca yerel sitede yayımlanmış. Dolayısıyla görünürlük, bağımsız haber üretiminden çok ajans haberinin yeniden yayımlanmasıyla çoğalıyor. Kaldırma haberi kısa ömürlü bir haber olayı olarak görünüyor.",
-  "seconds": 90,
+  "seconds": 65,
   "visual": "gdelt_wave",
   "citations": [
    "gdeltgkg",
@@ -332,23 +435,23 @@
  },
  {
   "id": "gdelt_map",
-  "title": "Hedef Avrupa; haber kaynağı ağırlıkla ABD",
+  "title": "Almanya hakkında, ama Almanya’da değil",
   "kicker": "BULGU 5 / AS3 · MEKÂN",
   "display_points": [
-   "Kaynak ülke: ABD 373, Almanya 29, İtalya 13",
+   "Yayın ülkesi: ABD 373, Almanya 29, İtalya 13",
    "100 bin kayıt başına: ABD 25,4; Almanya 15,4",
    "Haberlerin %63,6’sı Almanya’yı anıyor"
   ],
-  "takeaway": "Hedef coğrafyası ile haber coğrafyası örtüşmez.",
-  "notes": "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.\nMeta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.\nTaranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.\nNoktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor.",
+  "takeaway": "Hipotez: hedef kamuoyu ifşayı en az gören olabilir.",
+  "notes": "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.\nMeta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.\nTaranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.\nNoktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor. Bu bir hipotezdir: Almanca akışta kaçırılan haber oranı ölçülmeden kanıt sayılmaz.",
   "cue_sentences": [
    "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.",
    "Meta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.",
    "Taranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.",
-   "Noktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor."
+   "Noktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor. Bu bir hipotezdir: Almanca akışta kaçırılan haber oranı ölçülmeden kanıt sayılmaz."
   ],
   "full_notes": "Beşinci bulgu mekâna ilişkin ve haritada kendiliğinden oynuyor. Renk tonu haberin yayımlandığı ülkeyi gösteriyor; harita duyuru günlerinden itibaren gün gün birikiyor. Mutlak sayılarda tablo çok net: 511 haberin 373’ü ABD kaynaklı, Almanya 29, İtalya 13 haberle izliyor. Meta göstergelerinde Almanya’nın payı yüzde 95,8 iken haber kaynakları içinde Almanya’nın payı yalnızca yüzde 5,7. Ancak GDELT’in ABD kaynaklarını çok daha fazla izlediğini hesaba katmak gerekiyor; bu yüzden aynı dönemde her ülkeden taranan bütün kayıtlara oranladım. Bu durumda ABD’de 100 bin kayıtta 25,4, Almanya’da 15,4 haber var; Almanya ikinci sıraya çıkıyor, İtalya 5,4 ile üçüncü. Noktalar haberlerde anılan yerler: haberlerin yüzde 63,6’sı Almanya’yı, yüzde 57’si Fransa ve İtalya’yı anıyor. Yani hedeflenen ülkeler haberlerin konusu, ama haberin üretildiği yer ağırlıkla ABD ve İngilizce medya. Bu bir görünürlük ölçüsüdür; okurun bulunduğu yeri veya etkiyi göstermez.",
-  "seconds": 120,
+  "seconds": 100,
   "visual": "gdelt_map",
   "citations": [
    "gdeltgkg",
@@ -357,46 +460,122 @@
    "meta2022"
   ],
   "source": "The GDELT Project, 2015, 2018; Kwak & An, 2014; Meta, 2022",
-  "visible_word_count": 32
+  "visible_word_count": 33
  },
  {
   "id": "discussion",
-  "title": "Tartışma: hedeflenen kamu, görünür olan medya",
-  "kicker": "TARTIŞMA",
+  "title": "Altyapı ≠ erişim ≠ etki ≠ görünürlük",
+  "kicker": "TARTIŞMA I",
   "display_points": [
-   "Hedef Almanya; haber kaynağı ağırlıkla ABD",
-   "Ajans dağıtımı görünürlüğü çoğaltır: 511 adres, 145 başlık",
-   "“Doppelgänger” adı 2022 haberlerinde nadir: 1 ilgili haber"
+   "Bu çalışma birinci ve beşinci katmanı ölçüyor",
+   "Büyük altyapı, küçük otantik kitle"
   ],
-  "takeaway": "İki veri türü birbirinin yerine geçmez.",
-  "notes": "Almanya’nın yüzde 95,8’lik payı, Meta ve EU DisinfoLab’ın nitel Almanya vurgusunu sayısal olarak destekliyor.\nAma kaldırma haberi ağırlıkla ABD’de ve İngilizce üretildi; bu, Kwak ve An’ın bölgesel haber coğrafyası bulgusuyla karşılaştırılmaya değer.\nAjans dağıtımı görünürlüğü çoğaltıyor: 511 adres, 145 başlık.\nKampanya adı 2022 haberlerinde neredeyse hiç geçmiyor; adlandırma sonradan yaygınlaştı.",
+  "takeaway": "Erişim ve etki ölçülmedi; “yoktu” denmiyor.",
   "cue_sentences": [
-   "Almanya’nın yüzde 95,8’lik payı, Meta ve EU DisinfoLab’ın nitel Almanya vurgusunu sayısal olarak destekliyor.",
-   "Ama kaldırma haberi ağırlıkla ABD’de ve İngilizce üretildi; bu, Kwak ve An’ın bölgesel haber coğrafyası bulgusuyla karşılaştırılmaya değer.",
-   "Ajans dağıtımı görünürlüğü çoğaltıyor: 511 adres, 145 başlık.",
-   "Kampanya adı 2022 haberlerinde neredeyse hiç geçmiyor; adlandırma sonradan yaygınlaştı."
+   "Literatür beş katmanı ayırır: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü.",
+   "Bu çalışma yalnız altyapıyı ve ifşanın görünürlüğünü ölçüyor.",
+   "Meta 2022: yaklaşık 4 bin sayfa takipçisi; büyük altyapı, küçük otantik kitle.",
+   "Eady ve arkadaşları: Rus IRA maruziyeti kullanıcıların yüzde 1’inde yoğunlaşmış, oy davranışıyla ilişki saptanmamış; ama bu bulgu doğrudan Doppelgänger’e aktarılamaz."
   ],
-  "full_notes": "Bulguları literatürle ilişkilendirdiğimde üç nokta öne çıkıyor. Birincisi hedef ile görünürlük arasındaki asimetri. Meta ve EU DisinfoLab raporları Almanya’yı öncelikli hedef olarak tanımlıyordu; Alman Dışişleri Bakanlığı’nın 2024 teknik raporu da Almanya’nın hedef olmayı sürdürdüğünü gösteriyor. Kayıt düzeyindeki yüzde 95,8’lik pay bu vurguyu destekliyor. Buna karşılık kaldırma haberi ağırlıkla ABD’de ve İngilizce üretildi. Kwak ve An GDELT’te haber coğrafyasının güçlü biçimde bölgesel olduğunu gösteriyordu; bizim vakamızda ise Avrupa’yı hedefleyen bir operasyonun haberi küresel İngilizce medyada yoğunlaşıyor. Oranlı ölçüde Almanya’nın ikinci sırada olması, Alman medyasının konuyu ilgiyle izlediğini ama mutlak hacmin ABD’de kaldığını gösteriyor. İkincisi ajans dağıtımı: 511 adres 145 başlık taşıyor. Üçüncüsü adlandırma: “Doppelgänger” adı 2022 haberlerinde yalnızca bir ilgili haberde geçiyor; kampanya adı sonradan yaygınlaşmış görünüyor. Bunlar betimsel karşılaştırmalardır; nedensellik iddiası taşımaz.",
-  "seconds": 90,
-  "visual": "discussion",
+  "notes": "Literatür beş katmanı ayırır: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü.\nBu çalışma yalnız altyapıyı ve ifşanın görünürlüğünü ölçüyor.\nMeta 2022: yaklaşık 4 bin sayfa takipçisi; büyük altyapı, küçük otantik kitle.\nEady ve arkadaşları: Rus IRA maruziyeti kullanıcıların yüzde 1’inde yoğunlaşmış, oy davranışıyla ilişki saptanmamış; ama bu bulgu doğrudan Doppelgänger’e aktarılamaz.",
+  "full_notes": "Bulguları yorumlarken beş katmanı ayırmak gerekiyor: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü. Bu çalışma yalnızca birinci ve beşinci katmanı ölçüyor. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir otantik kitle bildiriyor: yaklaşık 4 bin sayfa takipçisi ve 105 bin dolarlık reklam. Genel literatür de benzer bir tablo çiziyor: Eady ve arkadaşları 2016 ABD seçiminde Rus İnternet Araştırma Ajansı içeriklerine maruziyetin kullanıcıların yüzde 1’inde yoğunlaştığını ve tutum ya da oy davranışıyla ilişki saptanmadığını gösterdi. Ancak bu bulguyu Doppelgänger’e doğrudan aktaramayız; Almanya’da web izleme ya da panel verisiyle yapılmış bir maruziyet çalışması yok. Dolayısıyla “etki yoktu” demiyorum; erişim ve etki bu çalışmada ölçülmedi.",
+  "seconds": 80,
+  "visual": "table",
   "citations": [
    "nimmo2022",
-   "disinfolab2022",
-   "auswaertiges2024",
-   "kwak2014",
-   "bennett2018"
+   "eady2023",
+   "pamment2025"
   ],
-  "source": "Nimmo & Agranovich, 2022; Alaphilippe et al., 2022; Auswärtiges Amt, 2024; Kwak & An, 2014",
-  "visible_word_count": 34
+  "source": "Nimmo & Agranovich, 2022; Eady et al., 2023; Pamment & Tsurtsumia, 2025",
+  "table": {
+   "headers": [
+    "Katman",
+    "Ne ölçülür",
+    "Bu çalışma"
+   ],
+   "rows": [
+    [
+     "1 · Altyapı",
+     "Alan adı, hesap, sayfa",
+     "Ölçüldü (311 alan adı)"
+    ],
+    [
+     "2 · Erişim",
+     "Kaç kişi gördü",
+     "Ölçülmedi"
+    ],
+    [
+     "3 · Etkileşim",
+     "Beğeni, paylaşım, tıklama",
+     "Ölçülmedi (Meta: ≈4.000 takipçi)"
+    ],
+    [
+     "4 · Etki",
+     "Tutum, davranış",
+     "Ölçülmedi (Eady vd., 2023)"
+    ],
+    [
+     "5 · İfşa görünürlüğü",
+     "Haber hacmi ve coğrafyası",
+     "Ölçüldü (511 haber)"
+    ]
+   ]
+  },
+  "visible_word_count": 25
+ },
+ {
+  "id": "discussion2",
+  "title": "Algı korsanlığı ve seçilim sorunu",
+  "kicker": "TARTIŞMA II",
+  "display_points": [
+   "İfşanın görünürlüğü operatörün işine yarayabilir",
+   "Alarmist dil kendi başına zarar verebilir"
+  ],
+  "takeaway": "Görünür olan operasyon değil, ifşasıdır.",
+  "cue_sentences": [
+   "Gleicher’in algı korsanlığı kavramı: operatörler olduklarından daha etkili görünmek ister.",
+   "Pamment ve Tsurtsumia: sızan SDA belgeleri, Batı’daki haberlerin müşteriye başarı kanıtı olarak sunulduğunu gösteriyor.",
+   "Jungherr ve Rauchfleisch: alarmist dezenformasyon söylemi demokrasiden memnuniyeti düşürüyor; bu sunumun dili için de geçerli.",
+   "Seçilim: platform neyi kaldırıp yayımlayacağını, medya neyi haber yapacağını seçti."
+  ],
+  "notes": "Gleicher’in algı korsanlığı kavramı: operatörler olduklarından daha etkili görünmek ister.\nPamment ve Tsurtsumia: sızan SDA belgeleri, Batı’daki haberlerin müşteriye başarı kanıtı olarak sunulduğunu gösteriyor.\nJungherr ve Rauchfleisch: alarmist dezenformasyon söylemi demokrasiden memnuniyeti düşürüyor; bu sunumun dili için de geçerli.\nSeçilim: platform neyi kaldırıp yayımlayacağını, medya neyi haber yapacağını seçti.",
+  "full_notes": "İkinci tartışma noktası ifşanın kendisinin bir etki aracına dönüşebilmesi. Meta’nın Nathaniel Gleicher’ının “algı korsanlığı” dediği şey, operatörlerin olduklarından daha etkili görünmeye çalışmasıdır. Pamment ve Tsurtsumia’nın sızan 3 binden fazla Sosyal Tasarım Ajansı belgesine dayanan değerlendirmesi, Batı medyasındaki haberlerin müşteriye başarı kanıtı olarak sunulduğunu ve etkinin abartıldığını gösteriyor. Jungherr ve Rauchfleisch ise alarmist dezenformasyon söyleminin kendi başına demokrasiden memnuniyeti düşürdüğünü deneysel olarak gösterdi; bu, benim sunumumun dili için de bir uyarı. Son olarak bir seçilim zinciri var: platform neyi kaldırıp yayımlayacağını, medya neyi ne kadar haber yapacağını, araştırmacı da hangi anahtar sözcüklerle arayacağını seçiyor. Bu yüzden “görünmez cephe” tezini şöyle kuruyorum: kamuoyunun gördüğü şey operasyonun kendisi değil, büyük ölçüde ifşasıdır.",
+  "seconds": 75,
+  "visual": "steps",
+  "citations": [
+   "pamment2025",
+   "jungherr2024",
+   "rogers2025"
+  ],
+  "source": "Pamment & Tsurtsumia, 2025; Jungherr & Rauchfleisch, 2024; Rogers & Righetti, 2025",
+  "steps": [
+   [
+    "Algı korsanlığı",
+    "Operatörler olduklarından etkili görünmek ister (Gleicher; Meta, 2023)"
+   ],
+   [
+    "SDA belgeleri",
+    "Batı haberleri müşteriye başarı kanıtı olarak sunuldu (Pamment ve Tsurtsumia, 2025)"
+   ],
+   [
+    "Alarmist söylem",
+    "Demokrasiden memnuniyeti düşürür (Jungherr ve Rauchfleisch, 2024)"
+   ],
+   [
+    "Üçlü seçilim",
+    "Platform → medya → araştırmacı (Rogers ve Righetti, 2025)"
+   ]
+  ],
+  "visible_word_count": 21
  },
  {
   "id": "limits",
   "title": "Sınırlılıklar",
   "kicker": "SINIRLILIKLAR",
   "display_points": [
-   "Meta: tespit ve yayımlama seçilimi; tek kayıt tarihi",
-   "GDELT: izlenen kaynaklar; ülke listesi 2018 tarihli",
-   "Kural isabeti %90,6; konum kodlaması hatalı olabilir"
+   "Meta listesi: alt sınır ve 2022 anlık görüntüsü",
+   "GDELT: İngilizce ağırlıklı; yayın ülkesi çıkarımsal",
+   "Kaçırılan haber ölçülmedi; tek kodlayıcı"
   ],
   "takeaway": "Bulgular betimseldir; niyet veya etki iddiası yoktur.",
   "notes": "Meta listesi bir örneklem değil, platformun tespit ve yayımlama seçimidir; bütün kayıtların tarihi aynı.\nGDELT yalnız izlediği kaynakları kapsar; ABD kaynakları fazla temsil edilir, bu yüzden oranlı ölçü de verildi.\nKaynak ülke listesi 2018 tarihli ve okurun değil, yayının ülkesini verir.\nKural isabeti yüzde 90,6; otomatik konumlar hata içerebilir (Hammond ve Weidmann, 2014).",
@@ -407,70 +586,100 @@
    "Kural isabeti yüzde 90,6; otomatik konumlar hata içerebilir (Hammond ve Weidmann, 2014)."
   ],
   "full_notes": "Bulguların sınırlarını açıkça belirtmek istiyorum. Meta listesi olasılıklı bir örneklem değil; platformun tespit ve yayımlama seçimini yansıtıyor ve bütün kayıtların tarihi aynı olduğu için faaliyetin zaman içindeki seyri çıkarılamıyor. GDELT yalnızca izlediği kaynakları kapsıyor ve bu kapsam ülkeler ve diller arasında eşit değil; ABD kaynaklarının fazla temsilini dengelemek için ülke bazında oranlı ölçü verdim. Kaynak ülke, GDELT’in 2018 tarihli alan adı listesinden geliyor ve haberin yayın ülkesini gösteriyor, okurun bulunduğu ülkeyi değil. Eşleşme kurallarının isabeti örneklemde yüzde 90,6; tamamı değil. Yanlış negatifleri, yani kuralların kaçırdığı haberleri ölçmedim. Son olarak Hammond ve Weidmann’ın gösterdiği gibi otomatik kodlanmış konumlar hata içerebilir. Bu nedenle bulgular betimseldir; niyet, maruziyet veya etki hakkında iddia taşımaz.",
-  "seconds": 65,
-  "visual": "limits",
+  "seconds": 60,
+  "visual": "steps",
   "citations": [
-   "meta2022",
-   "allen2020",
-   "gdeltdomains2018",
-   "hammond2014",
+   "rogers2025",
+   "hoffmann2022",
    "wang2016"
   ],
-  "source": "Meta, 2022; Allen et al., 2020; Hammond & Weidmann, 2014; Wang et al., 2016",
-  "visible_word_count": 30
+  "source": "Rogers & Righetti, 2025; Hoffmann et al., 2022; Wang et al., 2016",
+  "visible_word_count": 27,
+  "steps": [
+   [
+    "Meta listesi",
+    "Uygulama kaydı ve alt sınır; Almanya etiketi Meta’nın yargısı; atıf geriye dönük"
+   ],
+   [
+    "GDELT kapsamı",
+    "Yalnız izlenen kaynaklar; ABD/İngilizce ağırlık; ülke listesi 2018, çıkarımsal"
+   ],
+   [
+    "Geçerlilik",
+    "İsabet %90,6 (n = 32); kaçırılan haber ölçülmedi; tek, YZ destekli kodlayıcı"
+   ],
+   [
+    "Çıkarım",
+    "Betimsel bulgular; erişim, etki ve niyet iddiası yok"
+   ]
+  ]
  },
  {
   "id": "conclusion",
-  "title": "Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük",
+  "title": "Sonuç: güveni ödünç alan altyapı, uzakta kalan görünürlük",
   "kicker": "SONUÇ",
   "display_points": [
    "AS1: Almanya %95,8 (298/311)",
-   "AS2: 75 ilk etiket tekrarlanıyor",
-   "AS3: 27–28 Eylül dalgası; kaynak ağırlıkla ABD"
+   "AS2: wrongTLD; 75 marka etiketi tekrarlanıyor",
+   "AS3: iki günlük dalga; kaynak ağırlıkla ABD"
   ],
-  "takeaway": "Katkı: altyapı ve haber coğrafyası, test edilebilir biçimde birlikte.",
+  "takeaway": "Görünmez cephe: hedef kamu operasyonu değil, ifşasını görüyor.",
   "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket farklı son etiketlerle tekrar ediyor.\nAS3: Kaldırma haberi iki günlük bir dalga; ağırlıkla ABD ve İngilizce medyada görünür oldu.\nSonraki adım: ikinci kodlayıcıyla isabet ve yanlış negatif ölçümü, içerik çözümlemesi.",
   "cue_sentences": [
-   "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.",
-   "AS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket farklı son etiketlerle tekrar ediyor.",
-   "AS3: Kaldırma haberi iki günlük bir dalga; ağırlıkla ABD ve İngilizce medyada görünür oldu.",
-   "Sonraki adım: ikinci kodlayıcıyla isabet ve yanlış negatif ölçümü, içerik çözümlemesi."
+   "Doppelgänger, ucuz ve atılabilir uzantılar üzerinde güveni ödünç alan bir hibrit müdahale aracıdır.",
+   "İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.",
+   "Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi."
   ],
-  "full_notes": "Araştırma sorularına dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altı son DNS etiketi 240 adresi kapsıyor ve 93 ilk etiketin 75’i farklı son etiketlerle tekrarlanıyor. Üçüncü soruya yanıt: kaldırma haberi 27–28 Eylül’de iki günlük bir dalga olarak görünür oldu ve 5,9 milyon kayıt içinde eşleşen 511 haberin 373’ü ABD kaynaklıydı; hedeflenen ülkeler haberlerin konusuydu ama haberin üreticisi değildi. Çalışmanın katkısı, altyapı göstergelerini ve haber coğrafyasını açık paydalarla, MD5 doğrulamalı ve yeniden üretilebilir biçimde birlikte göstermek. Gelecek çalışma için ikinci bir insan kodlayıcıyla isabetin ve kaçırılan haberlerin ölçülmesini, ayrıca haber içeriğinin çözümlenmesini öneriyorum. Teşekkür ederim.",
-  "seconds": 80,
-  "visual": "conclusion",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birincisi: ifşa edilen altyapının yüzde 95,8’i Almanya’yı hedefliyor. İkincisi: bu altyapı yazım hatalarından değil, aynı haber markasının ucuz yeni uzantılarda çoğaltılmasından oluşuyor; yani güveni ödünç alan, atılabilir ve engellemeye dayanıklı bir altyapı. Üçüncüsü: ifşa iki günlük bir haber dalgası olarak görünür oldu ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı. Bu sonuçları hibrit müdahale çerçevesine bağladığımda “görünmez cephe” tezini şöyle özetliyorum: operasyon tespit ve atıf eşiğinin altında tutuluyor; kamuoyunun gördüğü şey ise büyük ölçüde operasyonun kendisi değil, ifşası. Bu tez için sonraki adımlar belli: 145 tekil başlığın kör bir insan kodlayıcıyla yeniden kodlanması, Almanca akışta kaçırılan haberlerin ölçülmesi, ve erişimi ölçmek için web izleme paneli ile Dijital Hizmetler Yasası kapsamındaki veri erişimi. Teşekkür ederim.",
+  "seconds": 65,
+  "visual": "steps",
   "citations": [
    "meta2022",
-   "gdeltgkg"
+   "gdeltgkg",
+   "wigell2019"
   ],
-  "source": "Meta, 2022; The GDELT Project, 2015",
-  "visible_word_count": 32
+  "source": "Meta, 2022; The GDELT Project, 2015; Wigell, 2019",
+  "visible_word_count": 33,
+  "steps": [
+   [
+    "AS1 · hedefleme",
+    "298/311 alan adı Almanya etiketli: hedefleme önceliği, erişim değil"
+   ],
+   [
+    "AS2 · altyapı",
+    "wrongTLD: aynı marka, ucuz uzantılar; 75 marka etiketi 293 adreste"
+   ],
+   [
+    "AS3 · görünürlük",
+    "%96,3’ü 27–28 Eylül’de; 373/511 ABD kaynaklı; %63,6’sı Almanya’yı anıyor"
+   ],
+   [
+    "Sonraki adım",
+    "145 başlığın kör kodlaması · Almanca akışta recall · web izleme paneli · DSA md. 40"
+   ]
+  ]
  },
  {
   "id": "references",
   "title": "Kaynakça",
   "kicker": "KAYNAKÇA",
   "display_points": [],
-  "takeaway": "APA 7 · 19 kaynak · erişim ve doğrulama kayıtları KAYNAKLAR.md içinde",
-  "notes": "Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.\nBirincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.\nVaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.\nKuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları.",
+  "takeaway": "APA 7 · 29 kaynak · doğrulama kayıtları KAYNAKLAR.md içinde",
+  "notes": "Kaynakçanın tamamı, 29 kaynak, bu tek sayfada APA 7 biçiminde.\nBirincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.\nVaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.\nKuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları.",
   "cue_sentences": [
-   "Kaynakçanın tamamı, 19 kaynak, bu tek sayfada APA 7 biçiminde.",
+   "Kaynakçanın tamamı, 29 kaynak, bu tek sayfada APA 7 biçiminde.",
    "Birincil veriler Meta’nın gösterge dosyası ve GDELT GKG arşivi.",
    "Vaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri raporlarından.",
    "Kuram ve yöntem: Bennett ve Livingston, Wardle ve Derakhshan, Lazer, Allen, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları."
   ],
   "full_notes": "Kaynakçanın tamamı bu tek sayfada, APA 7 biçiminde yer alıyor: toplam 19 kaynak. Birincil veriler Meta’nın gösterge dosyası ve GDELT’in GKG arşivi ile alan adı–ülke listesidir. Vaka bilgisi EU DisinfoLab, Meta ve Alman Dışişleri Bakanlığı raporlarından; kuramsal ve yöntemsel çerçeve Bennett ve Livingston, Wardle ve Derakhshan, Freelon ve Wells, Lazer ve arkadaşları, Allen ve arkadaşları, Leetaru ve Schrodt, Kwak ve An, Wang ve arkadaşları ile Hammond ve Weidmann’dan alınmıştır. Teşekkür ederim.",
-  "seconds": 30,
+  "seconds": 20,
   "visual": "references",
   "citations": [
    "meta2022",
-   "gdeltgkg",
-   "disinfolab2022",
-   "auswaertiges2024",
-   "leetaru2013",
-   "wang2016"
+   "gdeltgkg"
   ],
-  "source": "APA 7; 19 kaynağın tamamı bu sayfada",
-  "visible_word_count": 13
+  "source": "APA 7; 29 kaynağın tamamı bu sayfada",
+  "visible_word_count": 11
  }
 ]

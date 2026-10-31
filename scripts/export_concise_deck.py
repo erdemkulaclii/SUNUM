@@ -175,6 +175,19 @@ def gdelt_visual(d,sl):
 
 def visual(d,sl,s,stats):
     kind=s['visual'];f=stats['findings'];x=7.10;w=5.2;y=2.45
+    if kind=='steps' and s.get('steps'):
+        steps(d,sl,[tuple(t) for t in s['steps']],x-.2,y-.15,w+.25);return
+    if kind=='quote':
+        d.rect(sl,x-.2,y-.15,w+.3,3.2,PALE);d.rect(sl,x-.2,y-.15,.06,3.2,RED)
+        d.text(sl,s['quote'],x+.05,y,w-.05,2.25,15.5,INK,bold=True,name='definition_quote',leading=1.35,min_size=12)
+        d.text(sl,s.get('quote_note',''),x+.05,y+2.35,w-.05,.65,10,MUTED,name='definition_note',leading=1.3,min_size=8.5);return
+    if kind=='table' and s.get('table'):
+        t=s['table'];widths=[1.45,1.95,2.1];xx=x-.4;rh=.56
+        for k,hd in enumerate(t['headers']):d.text(sl,hd,xx+sum(widths[:k]),y-.1,widths[k]-.08,.26,11,MUTED,bold=True,name='layer_head',leading=1.0)
+        for i,row in enumerate(t['rows']):
+            yy=y+.25+i*rh;d.rect(sl,xx,yy-.04,sum(widths),.012,LINE)
+            for k,v in enumerate(row):d.text(sl,v,xx+sum(widths[:k]),yy+.04,widths[k]-.1,rh-.08,11.5,('14532D' if k==2 and v.startswith('Ölçüldü') else INK),bold=(k==0 or (k==2 and v.startswith('Ölçüldü'))),name='layer_cell',leading=1.2,min_size=9)
+        return
     if kind=='cover':
         m=META;xx=8.25;d.rect(sl,xx-.2,3.30,.04,1.85,'E58A78')
         d.text(sl,m['author'],xx,3.28,4.4,.45,20,PAPER,bold=True,name='cover_author',leading=1.1,min_size=15)
@@ -320,24 +333,25 @@ def reference(d,sl,r,y,index,x=.92,w=11.5,size=12.8,leading=1.67,indent=18,gap=.
 
 
 def reference_page(d,sl,refs,top=1.95,bottom=6.88):
-    """All references on one slide: two columns, APA 7 hanging indent, clickable URLs."""
+    """All references on one slide: 2 or 3 columns, APA 7 hanging indent, clickable URLs."""
     order=sorted(refs.values(),key=lambda r:re.sub(r'^The ','',clean(r['apa'])).lower())
-    colw=5.78;xs=[.70,6.85];size=8.6
-    while True:
-        lead=1.28;gap=.07;hs=[len(ref_lines(r,colw,size,12))*size*lead/72+.04+gap for r in order]
-        total=sum(hs);cut,acc=0,0
-        for k,h in enumerate(hs):
-            if acc+h>total/2+.15:break
-            acc+=h;cut=k+1
-        cols=[order[:cut],order[cut:]]
-        if max(sum(hs[:cut]),sum(hs[cut:]))<=bottom-top:break
-        size-=.2
-        if size<7:raise ValueError('References do not fit one page')
+    for ncol,xs,colw in [(2,[.70,6.85],5.78),(3,[.6,4.72,8.84],3.82)]:
+        size=8.6
+        while size>=6.6:
+            lead=1.22;gap=.05;hs=[len(ref_lines(r,colw,size,10))*size*lead/72+.04+gap for r in order]
+            cols=[[]];acc=[0.0]
+            for r,h in zip(order,hs):
+                if acc[-1]+h>bottom-top and len(cols)<ncol:cols.append([]);acc.append(0.0)
+                cols[-1].append(r);acc[-1]+=h
+            if max(acc)<=bottom-top:break
+            size-=.2
+        if size>=6.6 and max(acc)<=bottom-top:break
+    else:raise ValueError('References do not fit one page')
     n=0
     for c,col in enumerate(cols):
         y=top
-        for r in col:y=reference(d,sl,r,y,n,x=xs[c],w=colw,size=size,leading=lead,indent=12,gap=gap,bottom=bottom+.01);n+=1
-    d.rect(sl,6.62,top,.008,bottom-top,LINE)
+        for r in col:y=reference(d,sl,r,y,n,x=xs[c],w=colw,size=size,leading=lead,indent=10,gap=gap,bottom=bottom+.01);n+=1
+    for c in range(1,len(cols)):d.rect(sl,xs[c]-.12,top,.008,bottom-top,LINE)
     return size
 
 
@@ -359,7 +373,7 @@ def validate(prs,narrative,appendices,layout,pptx,pdf):
     from pypdf import PdfReader
     reader=PdfReader(pdf);assert len(reader.pages)==len(prs.slides)
     assert all(page.extract_text().strip() for page in reader.pages)
-    return {'checks_passed':True,'main_slides':len(narrative),'appendix_slides':len(appendices),'total_slides':len(prs.slides),'planned_talk_seconds':TALK,'remaining_session_buffer_seconds':900-TALK,'main_text_editable':True,'authored_main_slide_word_counts':authored_words,'maximum_authored_main_words':max(authored_words),'matched_native_PDF_pages':True,'all_notes_nonempty':True,'bounds_and_font_metrics_checked':True,'no_photos_used':True,'gdelt_snapshot_embedded':bool(GDELT),'synthetic_GDELT_observations':False,'desktop_PowerPoint_render_verified':False,'pptx_sha256':hashlib.sha256(pptx.read_bytes()).hexdigest(),'pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
+    return {'checks_passed':True,'main_slides':len(narrative),'appendix_slides':len(appendices),'total_slides':len(prs.slides),'planned_talk_seconds':TALK,'remaining_session_buffer_seconds':0,'main_text_editable':True,'authored_main_slide_word_counts':authored_words,'maximum_authored_main_words':max(authored_words),'matched_native_PDF_pages':True,'all_notes_nonempty':True,'bounds_and_font_metrics_checked':True,'no_photos_used':True,'gdelt_snapshot_embedded':bool(GDELT),'synthetic_GDELT_observations':False,'desktop_PowerPoint_render_verified':False,'pptx_sha256':hashlib.sha256(pptx.read_bytes()).hexdigest(),'pdf_sha256':hashlib.sha256(pdf.read_bytes()).hexdigest()}
 
 
 def main():

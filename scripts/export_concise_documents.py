@@ -35,9 +35,9 @@ def reference(r):
  entry=r['apa'].replace('&','&amp;');url=html.escape(r['url'],quote=True)
  return Paragraph(entry+f' <link href="{url}" color="#174b78">{url}</link>',ST['apa'])
 def references_onepage(refs):
- st=ParagraphStyle('apa1',parent=ST['apa'],fontSize=8.3,leading=11.2,leftIndent=14,firstLineIndent=-14,spaceAfter=5)
+ st=ParagraphStyle('apa1',parent=ST['apa'],fontSize=6.9,leading=8.4,leftIndent=11,firstLineIndent=-11,spaceAfter=1.8)
  order=sorted(refs,key=lambda r:re.sub(r'^The ','',re.sub('<[^>]+>','',r['apa'])).lower())
- return [para('Kaynakça — APA 7','h'),para(f'{len(order)} kaynak. Erişim ve doğrulama kayıtları: KAYNAKLAR.md.','small')]+[Paragraph(r['apa'].replace('&','&amp;')+f' <link href="{html.escape(r["url"],quote=True)}" color="#174b78">{html.escape(r["url"])}</link>',st) for r in order]
+ return [Paragraph('Kaynakça — APA 7',ParagraphStyle('h1c',parent=ST['h'],spaceBefore=0,spaceAfter=4)),para(f'{len(order)} kaynak. Erişim ve doğrulama kayıtları: KAYNAKLAR.md.','small')]+[Paragraph(r['apa'].replace('&','&amp;')+f' <link href="{html.escape(r["url"],quote=True)}" color="#174b78">{html.escape(r["url"])}</link>',st) for r in order]
 def references(refs,access=False):
  flow=[para('Kaynakça — APA 7','title')]
  for r in refs:

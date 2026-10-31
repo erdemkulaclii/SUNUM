@@ -1,39 +1,39 @@
 {
   "SUNUCU_KARTLARI.pdf": {
-    "pages": 17,
+    "pages": 19,
     "text_selectable": true,
-    "characters": 9743
+    "characters": 12137
   },
   "KONUSMA_METNI_15_DK.pdf": {
-    "pages": 9,
+    "pages": 13,
     "text_selectable": true,
-    "characters": 20022
+    "characters": 25764
   },
   "APA7_KAYNAKCA.pdf": {
     "pages": 1,
     "text_selectable": true,
-    "characters": 4261
+    "characters": 6574
   },
   "AKADEMIK_ARASTIRMA_DOSYASI.pdf": {
-    "pages": 12,
+    "pages": 13,
     "text_selectable": true,
-    "characters": 14720
+    "characters": 17316
   },
   "SUNUCU_KARTLARI.docx": {
     "all_sections_present": true,
-    "paragraphs": 152
+    "paragraphs": 166
   },
   "KONUSMA_METNI_15_DK.docx": {
     "all_sections_present": true,
-    "paragraphs": 74
+    "paragraphs": 90
   },
-  "main_slides": 17,
+  "main_slides": 19,
   "planned_talk_seconds": 1200,
   "session_buffer_seconds": 0,
   "gdelt_snapshot_included": true,
-  "cue_sentence_count": 68,
-  "cue_word_count": 762,
-  "rehearsal_word_count": 1757,
-  "selected_references": 19,
+  "cue_sentence_count": 72,
+  "cue_word_count": 953,
+  "rehearsal_word_count": 2105,
+  "selected_references": 29,
   "desktop_Word_render_verified": false
 }

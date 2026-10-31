@@ -10,6 +10,9 @@ function bars(items,max,caption=''){return svg(items.map((r,i)=>{const y=36+i*47
 function steps(items,note=''){return '<ol class="steps">'+items.map(([h,t],i)=>'<li><b>'+String(i+1).padStart(2,'0')+'</b><div><strong>'+esc(h)+'</strong>'+(t?'<span>'+esc(t)+'</span>':'')+'</div></li>').join('')+'</ol>'+(note?'<p class="mini-note">'+esc(note)+'</p>':'')}
 function visual(s){
  const f=D.analysis.findings;
+ if(s.visual==='steps'&&s.steps)return steps(s.steps);
+ if(s.visual==='quote')return '<blockquote class="def-quote"><p>'+esc(s.quote)+'</p><footer>'+esc(s.quote_note||'')+'</footer></blockquote>';
+ if(s.visual==='table'&&s.table)return '<table class="visual-table compare layers"><thead><tr>'+s.table.headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+s.table.rows.map(r=>'<tr>'+r.map((c,i)=>'<td'+(i===2&&/^Ölçüldü/.test(c)?' class="measured"':'')+'>'+esc(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
  if(s.visual==='cover')return '<div class="cover-card"><p class="cover-author">'+esc(M.author)+'</p><p>'+esc(M.affiliation)+'</p><p>'+esc(M.course)+'</p><p>'+esc(M.date)+'</p><hr><p class="cover-data"><b>311</b> alan adı göstergesi · <b>5,9 milyon</b> GDELT haber kaydı</p></div>';
  if(s.visual==='outline')return steps([['Giriş','Vaka ve kavramsal çerçeve'],['Yöntem','Meta CSV + GDELT GKG ham arşivi (MD5 doğrulamalı)'],['Bulgular','Hedef ülke, DNS yapısı, haber dalgası, haber haritası'],['Tartışma','Literatürle ilişki, sınırlılıklar, sonuç']]);
  if(s.visual==='context')return '<div class="timeline"><div><time>Mayıs 2022</time><p>Kampanyanın bilinen başlangıcı</p><small>Alaphilippe vd., 2022</small></div><div><time>27.09.2022</time><p>EU DisinfoLab raporu: en az 17 medya markası taklit edildi</p><small>Bild · Spiegel · The Guardian · ANSA</small></div><div class="accent"><time>27.09.2022</time><p>Meta kaldırma raporu ve açık gösterge listesi</p><small>Nimmo ve Agranovich, 2022</small></div></div>';

@@ -97,3 +97,7 @@ Eklenen hakemli/kurumsal kaynaklar (künyeler web aramasıyla doğrulandı; tam 
 - Freelon ve Wells (2020), *Political Communication* 37(2) — dezenformasyon bir siyasal iletişim olgusu olarak.
 - Auswärtiges Amt (2024) teknik raporu — Almanya’nın kampanya hedefi olmayı sürdürdüğü.
 - The GDELT Project (2018) alan adı–ülke eşleştirme belgesi ve GKG 2.0 veri kümesi.
+
+## 31 Ekim 2026 (üçüncü revizyon): hibrit müdahale çerçevesi
+
+Kavramsal çerçeve hibrit savaş literatürüyle yeniden kuruldu: Hoffman (2007), Renz (2016), Galeotti (2018), Fridman (2018), Caliskan (2019), Wigell (2019), Mumford ve Carlucci (2023), Hybrid CoE; mekanizma için Miskimmon vd. (2013), Paul ve Matthews (2016); alan adı tipolojisi için Tian vd. (2018), Korczyński vd. (2018); yorum için Eady vd. (2023), Jungherr ve Rauchfleisch (2024), Rogers ve Righetti (2025), Hoffmann vd. (2022), Pamment ve Tsurtsumia (2025). Her kaynağın doğrulama düzeyi `scripts/concise_references.json` içindeki `access`/`verification` alanlarında ve araştırma raporunda ([V], [K], [gri]) yazılıdır. Bu oturumda doi.org ve Crossref erişimi olmadığından [K] etiketli DOI’ler sunumdan önce doi.org’da kontrol edilmelidir.

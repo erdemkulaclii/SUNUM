@@ -51,3 +51,9 @@ body[data-scene="references"] #visual{max-height:none}body[data-scene="reference
 body[data-scene="references"] #takeaway{font-size:18px!important}
 @media(max-height:800px) and (min-width:900px){body[data-scene="references"] h1{font-size:30px;margin-bottom:4px}body[data-scene="references"] #takeaway{margin:2px 0 8px}body[data-scene="references"] .ref-list p{font-size:9.6px;line-height:1.28;margin-bottom:3px}}
 #start-overlay{position:fixed;inset:0;z-index:2000;background:#0c1b2df2;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center}#start-now{font-size:clamp(28px,3vw,44px);font-weight:700;color:#fff;border:2px solid #f28a72;padding:22px 44px;display:flex;gap:18px;align-items:center}#start-now span{color:#f28a72}#start-now:hover{background:#f28a7222}#start-count{font-size:18px;color:#d5e1ec;margin:0}#start-overlay small{font-size:14px;color:#9fb3c8}
+.def-quote{margin:0;border-left:5px solid var(--accent);background:#f6f9fb;padding:22px 26px}.def-quote p{font-size:clamp(18px,1.45vw,23px);line-height:1.5;margin:0 0 14px;font-weight:600}.def-quote footer{font-size:14px;color:var(--muted);line-height:1.5}
+.visual-table.layers td.measured{color:#14532d;font-weight:700}
+body[data-scene="steps"] .steps strong{font-size:20px}body[data-scene="steps"] .steps span{font-size:16px}
+body[data-scene="references"] .ref-list{column-count:3;column-gap:26px}body[data-scene="references"] .ref-list p{font-size:clamp(9.5px,.66vw,11.5px);line-height:1.32;margin-bottom:4px}
+@media(max-height:800px) and (min-width:900px){body[data-scene="references"] .ref-list p{font-size:9px;line-height:1.25;margin-bottom:2px}}
+@media(max-width:900px){body[data-scene="references"] .ref-list{column-count:1}}

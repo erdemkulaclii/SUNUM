@@ -1,29 +1,31 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T19:21:17.811880+00:00",
-  "html_sha256": "c6b97ca3ef99636c9a18812c3c1dbadd051c2a3224ea08cbd0eeee26835620ca",
-  "narrative_sha256": "d3a467857fc0091fe6c3fd446ce8e6aefc1f715e85f2b58756e9a4836a89c954",
-  "main_slides": 17,
+  "checked_at_utc": "2026-10-31T19:37:47.853065+00:00",
+  "html_sha256": "41788188ffe89f4420fff17db3d810a4e4833b45f36e7bd07eefb2731f3239af",
+  "narrative_sha256": "b28da952981fc026cb33dd930575597450b6fee81fa9a2515b962fe6308024b7",
+  "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
   "authored_main_words_including_subtitle": [
     29,
-    25,
+    24,
+    27,
     30,
-    32,
-    28,
+    29,
+    34,
     34,
     25,
     33,
     22,
-    24,
+    25,
     24,
     30,
-    32,
-    34,
-    30,
-    32,
-    13
+    33,
+    25,
+    21,
+    27,
+    33,
+    11
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
   "APA_references": 6,
@@ -53,7 +55,7 @@
         },
         {
           "scene": 2,
-          "title": "Sunum planı",
+          "title": "Operasyonu değil, izlerini ölçmek",
           "prose_fonts_px": [
             24,
             32,
@@ -63,7 +65,7 @@
         },
         {
           "scene": 3,
-          "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
+          "title": "Hibrit savaştan hibrit müdahaleye",
           "prose_fonts_px": [
             24,
             32,
@@ -73,7 +75,7 @@
         },
         {
           "scene": 4,
-          "title": "Kavramsal çerçeve",
+          "title": "Görünmez cephenin mekanizması: anlatı → güven → altyapı",
           "prose_fonts_px": [
             24,
             32,
@@ -83,7 +85,7 @@
         },
         {
           "scene": 5,
-          "title": "Araştırma soruları",
+          "title": "Doppelgänger 2022–2025: ifşa, atıf, evrim",
           "prose_fonts_px": [
             24,
             32,
@@ -93,7 +95,7 @@
         },
         {
           "scene": 6,
-          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
+          "title": "Araştırma soruları ve kuramsal beklentiler",
           "prose_fonts_px": [
             24,
             32,
@@ -103,7 +105,7 @@
         },
         {
           "scene": 7,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
           "prose_fonts_px": [
             24,
             32,
@@ -113,7 +115,7 @@
         },
         {
           "scene": 8,
-          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
             24,
             32,
@@ -123,7 +125,7 @@
         },
         {
           "scene": 9,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
           "prose_fonts_px": [
             24,
             32,
@@ -133,7 +135,7 @@
         },
         {
           "scene": 10,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             24,
             32,
@@ -143,7 +145,7 @@
         },
         {
           "scene": 11,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
           "prose_fonts_px": [
             24,
             32,
@@ -153,7 +155,7 @@
         },
         {
           "scene": 12,
-          "title": "Görünürlük iki günlük bir dalgadır",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
             24,
             32,
@@ -163,17 +165,7 @@
         },
         {
           "scene": 13,
-          "title": "Hedef Avrupa; haber kaynağı ağırlıkla ABD",
-          "prose_fonts_px": [
-            20,
-            24.8,
-            52.8
-          ],
-          "violations": []
-        },
-        {
-          "scene": 14,
-          "title": "Tartışma: hedeflenen kamu, görünür olan medya",
+          "title": "Görünürlük iki günlük bir dalgadır",
           "prose_fonts_px": [
             24,
             32,
@@ -182,8 +174,18 @@
           "violations": []
         },
         {
+          "scene": 14,
+          "title": "Almanya hakkında, ama Almanya’da değil",
+          "prose_fonts_px": [
+            20,
+            24.8,
+            52.8
+          ],
+          "violations": []
+        },
+        {
           "scene": 15,
-          "title": "Sınırlılıklar",
+          "title": "Altyapı ≠ erişim ≠ etki ≠ görünürlük",
           "prose_fonts_px": [
             24,
             32,
@@ -193,7 +195,7 @@
         },
         {
           "scene": 16,
-          "title": "Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük",
+          "title": "Algı korsanlığı ve seçilim sorunu",
           "prose_fonts_px": [
             24,
             32,
@@ -203,6 +205,26 @@
         },
         {
           "scene": 17,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 18,
+          "title": "Sonuç: güveni ödünç alan altyapı, uzakta kalan görünürlük",
+          "prose_fonts_px": [
+            24,
+            32,
+            52.8
+          ],
+          "violations": []
+        },
+        {
+          "scene": 19,
           "title": "Kaynakça",
           "prose_fonts_px": [
             18,
@@ -229,7 +251,7 @@
         },
         {
           "scene": 2,
-          "title": "Sunum planı",
+          "title": "Operasyonu değil, izlerini ölçmek",
           "prose_fonts_px": [
             19,
             24,
@@ -239,7 +261,7 @@
         },
         {
           "scene": 3,
-          "title": "Doppelgänger: tanınmış haber sitelerinin taklit edilmesi",
+          "title": "Hibrit savaştan hibrit müdahaleye",
           "prose_fonts_px": [
             19,
             24,
@@ -249,7 +271,7 @@
         },
         {
           "scene": 4,
-          "title": "Kavramsal çerçeve",
+          "title": "Görünmez cephenin mekanizması: anlatı → güven → altyapı",
           "prose_fonts_px": [
             19,
             24,
@@ -259,7 +281,7 @@
         },
         {
           "scene": 5,
-          "title": "Araştırma soruları",
+          "title": "Doppelgänger 2022–2025: ifşa, atıf, evrim",
           "prose_fonts_px": [
             19,
             24,
@@ -269,7 +291,7 @@
         },
         {
           "scene": 6,
-          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
+          "title": "Araştırma soruları ve kuramsal beklentiler",
           "prose_fonts_px": [
             19,
             24,
@@ -279,7 +301,7 @@
         },
         {
           "scene": 7,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
           "prose_fonts_px": [
             19,
             24,
@@ -289,7 +311,7 @@
         },
         {
           "scene": 8,
-          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
           "prose_fonts_px": [
             19,
             24,
@@ -299,7 +321,7 @@
         },
         {
           "scene": 9,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "GDELT verisi test edilebilir: MD5, payda, isabet",
           "prose_fonts_px": [
             19,
             24,
@@ -309,7 +331,7 @@
         },
         {
           "scene": 10,
-          "title": "Altı son etiket, 240 alan adında birleşir.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
           "prose_fonts_px": [
             19,
             24,
@@ -319,7 +341,7 @@
         },
         {
           "scene": 11,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
           "prose_fonts_px": [
             19,
             24,
@@ -329,7 +351,7 @@
         },
         {
           "scene": 12,
-          "title": "Görünürlük iki günlük bir dalgadır",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
           "prose_fonts_px": [
             19,
             24,
@@ -339,17 +361,7 @@
         },
         {
           "scene": 13,
-          "title": "Hedef Avrupa; haber kaynağı ağırlıkla ABD",
-          "prose_fonts_px": [
-            18,
-            19.84,
-            35
-          ],
-          "violations": []
-        },
-        {
-          "scene": 14,
-          "title": "Tartışma: hedeflenen kamu, görünür olan medya",
+          "title": "Görünürlük iki günlük bir dalgadır",
           "prose_fonts_px": [
             19,
             24,
@@ -358,8 +370,18 @@
           "violations": []
         },
         {
+          "scene": 14,
+          "title": "Almanya hakkında, ama Almanya’da değil",
+          "prose_fonts_px": [
+            18,
+            19.84,
+            35
+          ],
+          "violations": []
+        },
+        {
           "scene": 15,
-          "title": "Sınırlılıklar",
+          "title": "Altyapı ≠ erişim ≠ etki ≠ görünürlük",
           "prose_fonts_px": [
             19,
             24,
@@ -369,7 +391,7 @@
         },
         {
           "scene": 16,
-          "title": "Sonuç: yoğun hedef, tekrarlanan adres, uzak görünürlük",
+          "title": "Algı korsanlığı ve seçilim sorunu",
           "prose_fonts_px": [
             19,
             24,
@@ -379,6 +401,26 @@
         },
         {
           "scene": 17,
+          "title": "Sınırlılıklar",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 18,
+          "title": "Sonuç: güveni ödünç alan altyapı, uzakta kalan görünürlük",
+          "prose_fonts_px": [
+            19,
+            24,
+            35
+          ],
+          "violations": []
+        },
+        {
+          "scene": 19,
           "title": "Kaynakça",
           "prose_fonts_px": [
             18,
@@ -396,9 +438,9 @@
   "live_OSM_verified": false,
   "native_powerpoint": {
     "verified": true,
-    "main_slides": 17,
-    "total_slides": 23,
-    "pdf_pages": 23,
+    "main_slides": 19,
+    "total_slides": 25,
+    "pdf_pages": 25,
     "main_text_editable": true,
     "main_slides_have_no_raster_picture": true,
     "desktop_PowerPoint_render_verified": false
