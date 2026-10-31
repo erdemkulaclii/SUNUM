@@ -133,10 +133,9 @@ def serve(autoplay: bool, open_browser: bool, port: int | None) -> None:
     url = f'http://127.0.0.1:{port}/' + ('?autoplay=1' if autoplay else '')
     threading.Thread(target=server.serve_forever, daemon=True).start()
     print(f'\nSunum hazır: {url}')
-    linux_voice_hint()
     if open_browser:
         print('Açıldı:', open_presentation(url, fullscreen=autoplay))
-    print('Sunum otomatik oynar · Boşluk: durdur/devam · ←/→: slayt · C: anlatım şeridi · S: sesli anlatım' if autoplay
+    print('Sunum otomatik ilerler (ses yok) · Boşluk: durdur/devam · ←/→: slayt · N: konuşma notları' if autoplay
           else 'Elle mod · Boşluk: otomatik akışı başlat · ←/→: slayt')
     print('Kapatmak için bu pencerede Ctrl+C.\n', flush=True)
     try:

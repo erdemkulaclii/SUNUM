@@ -126,7 +126,7 @@ def main():
     page.keyboard.press('Escape');assert page.evaluate('map===null')
     # Otomatik akış: başlatınca anlatım şeridi görünür, ana fikir sonda açılır, slayt süre dolunca kendiliğinden geçer.
     page.evaluate('go(1);togglePlay()');page.wait_for_timeout(600)
-    assert page.locator('#caption').is_visible() and 'pending' in page.locator('#takeaway').get_attribute('class'),'Autoplay reveal/caption missing'
+    assert page.locator('#caption').is_hidden() and 'pending' in page.locator('#takeaway').get_attribute('class'),'Autoplay reveal missing or caption shown by default'
     page.evaluate('elapsed=offsets[2]-0.3');page.wait_for_timeout(900);assert page.evaluate('scene')==2,'Autoplay did not advance'
     gi2=[s['visual'] for s in narrative].index('gdelt_map');page.evaluate(f'go({gi2})');page.evaluate(f'elapsed=offsets[{gi2}]+S[{gi2}].seconds*.2');page.wait_for_timeout(800)
     if page.evaluate('Boolean(D.gdelt)'):assert page.locator('#gm-day').is_visible(),'Map day animation missing'

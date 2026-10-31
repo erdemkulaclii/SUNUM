@@ -12,8 +12,6 @@ python sunum.py
 
 Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (yoksa varsayılan tarayıcıda) açar ve otomatik oynatır. Ekrandaki “Sunumu başlat” düğmesine tıklarsanız tam ekrana geçer; tıklamazsanız 5 saniye sonra kendiliğinden başlar. Kapatmak için komut penceresinde Ctrl+C.
 
-**Linux’ta sesli anlatım** için bir kez: `sudo apt install speech-dispatcher espeak-ng` (Fedora: `dnf`, Arch: `pacman`). Başlatıcı Chrome/Chromium’u `--enable-speech-dispatcher` ile açar; ses yoksa anlatım alttaki şeritte yazılı görünür.
-
 Çift tıklama: Windows’ta **`BASLAT.bat`**, macOS’ta **`BASLAT.command`**, Linux’ta `./BASLAT.sh`. Yalnız Python 3 gerekir; ek paket gerekmez.
 
 | Komut | Ne yapar |
@@ -43,7 +41,7 @@ Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli al
 
 ## Kendiliğinden ilerleyen sunum
 
-**“Sunumu başlat ▶”** tam ekrana geçer ve sunumu otomatik oynatır: slaytlar planlanan sürelerle geçer, her slaytta maddeler sırayla açılır, ana fikir sonda gelir, grafik ve harita slaytın süresi boyunca kendiliğinden ilerler (harita gün gün birikir, sonra Meta hedefleri, anılan yerler ve Almanya'ya yakınlaşma gelir). Alttaki **anlatım şeridi** o anda söylenecek cümleyi gösterir (C tuşu). **S** tuşu tarayıcının Türkçe sesiyle sesli anlatımı açar. Boşluk: durdur/devam, ok tuşları: elle geçiş. Hiçbir pencere açmanız gerekmez. PowerPoint sürümünde de slaytlar slayt gösterisinde aynı sürelerle kendiliğinden ilerler.
+**“Sunumu başlat ▶”** tam ekrana geçer ve sunumu otomatik oynatır: slaytlar planlanan sürelerle geçer, her slaytta maddeler sırayla açılır, ana fikir sonda gelir, grafik ve harita slaytın süresi boyunca kendiliğinden ilerler (harita gün gün birikir, sonra Meta hedefleri, anılan yerler ve Almanya'ya yakınlaşma gelir). Ses yoktur; anlatımı sunucu yapar. İstenirse alttaki anlatım şeridi C, tarayıcı sesi S tuşuyla açılabilir (varsayılan: kapalı). Boşluk: durdur/devam, ok tuşları: elle geçiş. Hiçbir pencere açmanız gerekmez. PowerPoint sürümünde de slaytlar slayt gösterisinde aynı sürelerle kendiliğinden ilerler.
 
 ## GDELT verisi: ham arşivden, test edilebilir
 

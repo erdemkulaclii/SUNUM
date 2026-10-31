@@ -69,11 +69,11 @@ render();
  * görseller (grafik, harita) slaytın süresine bağlı olarak kendiliğinden ilerler.
  * İsteğe bağlı sesli anlatım: tarayıcının Türkçe sesiyle (S tuşu).
  */
-const TICK=.25;let lastCue=-1,captions=true,voice=false;
+const TICK=.25;let lastCue=-1,captions=false,voice=false;
 const cap=document.createElement('div');cap.id='caption';cap.setAttribute('aria-live','polite');document.querySelector('main.slide').append(cap);
 const navBtn=(id,label,fn)=>{const b=document.createElement('button');b.id=id;b.textContent=label;b.onclick=fn;document.querySelector('header nav').prepend(b);return b};
 const voiceBtn=navBtn('voice-toggle','Sesli anlatım: kapalı',()=>{voice=!voice;voiceBtn.textContent='Sesli anlatım: '+(voice?'açık':'kapalı');if(!voice)speechSynthesis?.cancel();else{lastCue=-1;progress()}});
-const capBtn=navBtn('caption-toggle','Anlatım şeridi: açık',()=>{captions=!captions;capBtn.textContent='Anlatım şeridi: '+(captions?'açık':'kapalı');progress()});
+const capBtn=navBtn('caption-toggle','Anlatım şeridi: kapalı',()=>{captions=!captions;capBtn.textContent='Anlatım şeridi: '+(captions?'açık':'kapalı');progress()});
 function speak(text){try{if(!voice||!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='tr-TR';u.rate=1.02;const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.toLowerCase().startsWith('tr'));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
 function slideFraction(){const s=S[scene];return Math.min(1,Math.max(0,(elapsed-offsets[scene])/s.seconds))}
 function progress(){
@@ -111,9 +111,9 @@ render();
 (function(){
  const q=new URLSearchParams(location.search);if(q.get('autoplay')!=='1'&&location.hash!=='#autoplay')return;
  document.body.classList.add('presentation');go(0);
- const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tıklayın: tam ekran + sesli anlatım · Boşluk: durdur/devam · ←/→: slayt · S: sesi aç/kapat</small>';document.body.append(o);
+ const o=document.createElement('div');o.id='start-overlay';o.innerHTML='<button id="start-now"><span>▶</span>Sunumu başlat</button><p id="start-count"></p><small>Tıklayın: tam ekran · Boşluk: durdur/devam · ←/→: slayt · N: konuşma notları</small>';document.body.append(o);
  let n=5,done=false;const tick=()=>{if(done)return;$('start-count').textContent=n+' saniye içinde kendiliğinden başlar';if(n--<=0)begin(false);else setTimeout(tick,1000)};
- async function begin(full){if(done)return;done=true;o.remove();if(q.get('ses')!=='0'&&!voice)voiceBtn.click();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
+ async function begin(full){if(done)return;done=true;o.remove();if(full){try{await document.documentElement.requestFullscreen()}catch(e){}}if(!playing)togglePlay()}
  $('start-now').onclick=()=>begin(true);document.addEventListener('keydown',e=>{if(!done&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopImmediatePropagation();begin(true)}},true);
  $('start-now').focus();tick();
 })();
