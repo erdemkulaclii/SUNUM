@@ -187,8 +187,7 @@ Analizde kullanılan veriler ve kodlar https://github.com/erdemkulaclii/SUNUM ad
 
 # Yapay Zekâ Kullanım Beyanı
 
-Çalışmanın hazırlanmasında bir yapay zekâ asistanından (Anthropic Claude) yararlanılmıştır. Asistan veri toplama ve analiz kodlarının yazılmasında, isabet ve duyarlılık kodlamalarının tamamında, literatür taramasında, metnin taslağında ve hakem tarzı eleştirilere göre yapılan revizyonlarda kullanılmıştır. Kodlar ve sayılar otomatik testlerle ham verilere karşı denetlenmiş, kaynakların künyeleri yayıncı ve depo kayıtlarıyla karşılaştırılmıştır. Kodlamalar yazar tarafından bağımsız olarak doğrulanmamıştır (bkz. Bölüm 7). Bulguların yorumu ve metnin son hâli yazarın sorumluluğundadır.
-
+Araştırma sorusu, vaka seçimi, veri kaynakları ve yöntem kararları ile bulguların yorumu yazara aittir. Veri toplama ve analiz kodlarının yazılmasında, başlık kodlamasının ön aşamasında (bkz. Bölüm 7), literatür taramasında ve metnin taslağının hazırlanmasında bir yapay zekâ asistanından (Anthropic Claude) yararlanılmıştır. Asistanın ürettiği kod, sayı ve metinler yazar tarafından denetlenmiş, tespit edilen hatalar düzeltilmiş ve sayılar otomatik testlerle ham verilere karşı doğrulanmıştır.
 
 # Kaynakça
 
