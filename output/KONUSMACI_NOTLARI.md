@@ -15,7 +15,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015
 
-## 02. Operasyonu değil, izlerini ölçmek · 00:35–01:25
+## 02. Bu sunumda ölçülen: operasyonun izleri · 00:35–01:25
 
 - Doppelgänger, gerçek haber markalarını klonlayan ve sonradan Sosyal Tasarım Ajansı ile Structura’ya atfedilen bir etki operasyonu.
 - Vaka hakkındaki bilgi büyük ölçüde resmî ve gri raporlarda; hakemli ampirik çalışma neredeyse yok.
@@ -173,7 +173,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 - Jungherr ve Rauchfleisch: alarmist dezenformasyon söylemi demokrasiden memnuniyeti düşürüyor; bu sunumun dili için de geçerli.
 - Seçilim: platform neyi kaldırıp yayımlayacağını, medya neyi haber yapacağını seçti.
 
-**Ana mesaj:** Görünür olan operasyon değil, ifşasıdır.
+**Ana mesaj:** Kamuoyunun gördüğü büyük ölçüde ifşadır.
 
 **Atıf:** Pamment & Tsurtsumia, 2025; Jungherr & Rauchfleisch, 2024; Rogers & Righetti, 2025
 
@@ -194,7 +194,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 - İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.
 - Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi.
 
-**Ana mesaj:** Görünmez cephe: hedef kamu operasyonu değil, ifşasını görüyor.
+**Ana mesaj:** Görünmez cephe: hedef kamu çoğunlukla ifşayı görüyor.
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015; Wigell, 2019
 

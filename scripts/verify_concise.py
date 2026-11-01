@@ -136,10 +136,7 @@ def main():
     assert page.locator('#gm-map path[stroke="#c0392b"]').count()>=6,'Meta target outlines missing'
     if page.evaluate('Boolean(D.gdelt)'):assert 'MD5' in page.locator('#gm-panel').inner_text()
     else:assert 'VERİ YOK' in page.locator('#gm-panel').inner_text() and page.locator('#gm-empty').is_visible()
-    # TEST-ONLY synthetic file: exercises the JSON import path; it is deleted and never shipped.
-    probe=Path('/tmp')/'sunum_gdelt_import_probe.json';probe.write_text(json.dumps({'schema':'sunum.gdelt-map/1','query':'TEST','window':{'id':'meta2022','label':'TEST','start':'2022-09-20','end':'2022-10-11'},'retrieved_at':'2022-10-12T00:00:00Z','origin':'test','articles':[{'url':'https://t.invalid/1','sourcecountry':'Germany'},{'url':'https://t.invalid/1','sourcecountry':'Germany'},{'url':'https://t.invalid/2','sourcecountry':'United States'}]}))
-    page.set_input_files('#gdelt-file',str(probe));page.wait_for_timeout(300);probe.unlink()
-    panel=page.locator('#gm-panel').inner_text();assert 'YÜKLENEN DOSYA' in panel and '%50,0' in panel,'JSON import/aggregation failed: '+panel
+    assert page.locator('.gm-controls button[data-q], #gm-load, #gm-save').count()==0,'Data/JSON controls must not appear in the deck'
     page.evaluate("()=>{try{localStorage.clear()}catch(e){}}")
     page.set_viewport_size({'width':390,'height':844});page.evaluate('go(3)')
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth+2')

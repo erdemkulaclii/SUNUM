@@ -75,8 +75,8 @@ render();
 const TICK=.25;let lastCue=-1,captions=false,voice=false;
 const cap=document.createElement('div');cap.id='caption';cap.setAttribute('aria-live','polite');document.querySelector('main.slide').append(cap);
 const navBtn=(id,label,fn)=>{const b=document.createElement('button');b.id=id;b.textContent=label;b.onclick=fn;document.querySelector('header nav').prepend(b);return b};
-const voiceBtn=navBtn('voice-toggle','Sesli anlatım: kapalı',()=>{voice=!voice;voiceBtn.textContent='Sesli anlatım: '+(voice?'açık':'kapalı');if(!voice)speechSynthesis?.cancel();else{lastCue=-1;progress()}});
-const capBtn=navBtn('caption-toggle','Anlatım şeridi: kapalı',()=>{captions=!captions;capBtn.textContent='Anlatım şeridi: '+(captions?'açık':'kapalı');progress()});
+const voiceBtn=document.createElement('button');voiceBtn.hidden=true;voiceBtn.onclick=(()=>{voice=!voice;voiceBtn.textContent='Sesli anlatım: '+(voice?'açık':'kapalı');if(!voice)speechSynthesis?.cancel();else{lastCue=-1;progress()}});
+const capBtn=document.createElement('button');capBtn.hidden=true;capBtn.onclick=(()=>{captions=!captions;capBtn.textContent='Anlatım şeridi: '+(captions?'açık':'kapalı');progress()});
 function speak(text){try{if(!voice||!window.speechSynthesis)return;speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='tr-TR';u.rate=1.02;const v=speechSynthesis.getVoices().find(v=>v.lang&&v.lang.toLowerCase().startsWith('tr'));if(v)u.voice=v;speechSynthesis.speak(u)}catch(e){}}
 function slideFraction(){const s=S[scene];return Math.min(1,Math.max(0,(elapsed-offsets[scene])/s.seconds))}
 function progress(){

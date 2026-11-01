@@ -28,7 +28,7 @@
  },
  {
   "id": "contribution",
-  "title": "Operasyonu değil, izlerini ölçmek",
+  "title": "Bu sunumda ölçülen: operasyonun izleri",
   "kicker": "SORUN VE KATKI",
   "display_points": [
    "Doppelgänger: tanınmış haber markalarını klonlayan Rus etki operasyonu",
@@ -68,7 +68,7 @@
     "İfşanın haber görünürlüğü: ham GDELT GKG arşivi (5,9 milyon kayıt)"
    ]
   ],
-  "visible_word_count": 24
+  "visible_word_count": 25
  },
  {
   "id": "definition",
@@ -242,7 +242,7 @@
   "title": "Veri ve yöntem: iki kaynak, ayrı birimler",
   "kicker": "VERİ VE YÖNTEM",
   "display_points": [
-   "Meta CSV: bir uygulama kaydı, örneklem değil",
+   "Meta CSV: platformun uygulama kaydı, alt sınır",
    "GDELT GKG: 4.209 dosya, 5,9 milyon kayıt",
    "Hedef etiketi ≠ yayın ülkesi ≠ anılan yer"
   ],
@@ -355,7 +355,7 @@
   "kicker": "BULGU 2 / AS2 · SON DNS ETİKETİ",
   "display_points": [
    "En sık altı uzantı: 240/311 (%77,2)",
-   "Typosquatting değil, wrongTLD (Tian vd., 2018)"
+   "Tip: wrongTLD, marka adı aynen korunuyor (Tian vd., 2018)"
   ],
   "takeaway": "Ucuz yeni uzantılarda atılabilir, engellemeye dayanıklı altyapı.",
   "notes": "En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.\nMarka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.\nKorczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.\nFiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil.",
@@ -379,7 +379,7 @@
    "denominator": 311,
    "percentage": 77.2
   },
-  "visible_word_count": 25
+  "visible_word_count": 28
  },
  {
   "id": "reuse",
@@ -531,7 +531,7 @@
    "İfşanın görünürlüğü operatörün işine yarayabilir",
    "Alarmist dil kendi başına zarar verebilir"
   ],
-  "takeaway": "Görünür olan operasyon değil, ifşasıdır.",
+  "takeaway": "Kamuoyunun gördüğü büyük ölçüde ifşadır.",
   "cue_sentences": [
    "Gleicher’in algı korsanlığı kavramı: operatörler olduklarından daha etkili görünmek ister.",
    "Pamment ve Tsurtsumia: sızan SDA belgeleri, Batı’daki haberlerin müşteriye başarı kanıtı olarak sunulduğunu gösteriyor.",
@@ -623,7 +623,7 @@
    "AS2: wrongTLD; 75 marka etiketi tekrarlanıyor",
    "AS3: iki günlük dalga; kaynak ağırlıkla ABD"
   ],
-  "takeaway": "Görünmez cephe: hedef kamu operasyonu değil, ifşasını görüyor.",
+  "takeaway": "Görünmez cephe: hedef kamu çoğunlukla ifşayı görüyor.",
   "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket farklı son etiketlerle tekrar ediyor.\nAS3: Kaldırma haberi iki günlük bir dalga; ağırlıkla ABD ve İngilizce medyada görünür oldu.\nSonraki adım: ikinci kodlayıcıyla isabet ve yanlış negatif ölçümü, içerik çözümlemesi.",
   "cue_sentences": [
    "Doppelgänger, ucuz ve atılabilir uzantılar üzerinde güveni ödünç alan bir hibrit müdahale aracıdır.",
@@ -639,7 +639,7 @@
    "wigell2019"
   ],
   "source": "Meta, 2022; The GDELT Project, 2015; Wigell, 2019",
-  "visible_word_count": 33,
+  "visible_word_count": 32,
   "steps": [
    [
     "AS1 · hedefleme",

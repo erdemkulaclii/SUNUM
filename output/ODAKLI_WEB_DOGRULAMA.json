@@ -1,14 +1,14 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-10-31T19:37:47.853065+00:00",
-  "html_sha256": "41788188ffe89f4420fff17db3d810a4e4833b45f36e7bd07eefb2731f3239af",
-  "narrative_sha256": "b28da952981fc026cb33dd930575597450b6fee81fa9a2515b962fe6308024b7",
+  "checked_at_utc": "2026-11-01T11:54:03.688956+00:00",
+  "html_sha256": "cff824b36e9a8a401610982aa1061c2677acd5892fa358d4a74c6ec8cb79950f",
+  "narrative_sha256": "df74a391a47b7545c26f3579a8c872a02cdd003ab09555eee358d8d9b447f875",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
   "authored_main_words_including_subtitle": [
     29,
-    24,
+    25,
     27,
     30,
     29,
@@ -17,14 +17,14 @@
     25,
     33,
     22,
-    25,
+    28,
     24,
     30,
     33,
     25,
     21,
     27,
-    33,
+    32,
     11
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
@@ -55,7 +55,7 @@
         },
         {
           "scene": 2,
-          "title": "Operasyonu değil, izlerini ölçmek",
+          "title": "Bu sunumda ölçülen: operasyonun izleri",
           "prose_fonts_px": [
             24,
             32,
@@ -251,7 +251,7 @@
         },
         {
           "scene": 2,
-          "title": "Operasyonu değil, izlerini ölçmek",
+          "title": "Bu sunumda ölçülen: operasyonun izleri",
           "prose_fonts_px": [
             19,
             24,
