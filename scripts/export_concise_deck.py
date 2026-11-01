@@ -334,20 +334,20 @@ def reference(d,sl,r,y,index,x=.92,w=11.5,size=12.8,leading=1.67,indent=18,gap=.
     return y+h+gap
 
 
-def reference_page(d,sl,refs,top=1.95,bottom=6.88):
+def reference_page(d,sl,refs,top=1.88,bottom=6.92):
     """All references on one slide: 2 or 3 columns, APA 7 hanging indent, clickable URLs."""
     order=sorted(refs.values(),key=lambda r:re.sub(r'^The ','',clean(r['apa'])).lower())
     for ncol,xs,colw in [(2,[.70,6.85],5.78),(3,[.6,4.72,8.84],3.82)]:
         size=8.6
-        while size>=6.6:
-            lead=1.22;gap=.05;hs=[len(ref_lines(r,colw,size,10))*size*lead/72+.04+gap for r in order]
+        while size>=6.2:
+            lead=1.16;gap=.04;hs=[len(ref_lines(r,colw,size,10))*size*lead/72+.04+gap for r in order]
             cols=[[]];acc=[0.0]
             for r,h in zip(order,hs):
                 if acc[-1]+h>bottom-top and len(cols)<ncol:cols.append([]);acc.append(0.0)
                 cols[-1].append(r);acc[-1]+=h
             if max(acc)<=bottom-top:break
             size-=.2
-        if size>=6.6 and max(acc)<=bottom-top:break
+        if size>=6.2 and max(acc)<=bottom-top:break
     else:raise ValueError('References do not fit one page')
     n=0
     for c,col in enumerate(cols):

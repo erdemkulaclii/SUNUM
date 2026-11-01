@@ -32,13 +32,19 @@ Korczyński, M., Wullink, M., Tajalizadehkhoob, S., Moura, G. C. M., Noroozian, 
 
 Kwak, H., & An, J. (2014). A first look at global news coverage of disasters by using the GDELT dataset. In L. M. Aiello & D. McFarland (Eds.), *Social Informatics: SocInfo 2014* (Lecture Notes in Computer Science, Vol. 8851, pp. 300–308). Springer. https://doi.org/10.1007/978-3-319-13734-6_22
 
+Lanoszka, A. (2016). Russian hybrid warfare and extended deterrence in eastern Europe. *International Affairs, 92*(1), 175–195. https://doi.org/10.1111/1468-2346.12509
+
 Leetaru, K., & Schrodt, P. A. (2013, April). *GDELT: Global data on events, location, and tone, 1979–2012* [Paper presentation]. International Studies Association Annual Convention, San Francisco, CA, United States. https://www.gdeltproject.org/
+
+Meister, S. (2016, July 25). The “Lisa case”: Germany as a target of Russian disinformation. *NATO Review*. https://www.nato.int/docu/review/articles/2016/07/25/the-lisa-case-germany-as-a-target-of-russian-disinformation/index.html
 
 Meta. (2022, September 27). *2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv* [Data set]. GitHub. https://github.com/facebook/threat-research/blob/2d664e985e55fb754de7b1175f713e11f73cf8c8/indicators/csv/2022_09_removing_coordinated_inauthentic_behavior_from_china_and_russia.csv
 
 Miskimmon, A., O’Loughlin, B., & Roselle, L. (2013). *Strategic narratives: Communication power and the new world order*. Routledge. https://doi.org/10.4324/9781315871264
 
 Mumford, A., & Carlucci, P. (2023). Hybrid warfare: The continuation of ambiguity by other means. *European Journal of International Security, 8*(2), 192–206. https://doi.org/10.1017/eis.2022.19
+
+Nemeth, W. J. (2002). *Future war and Chechnya: A case for hybrid warfare* [Master’s thesis, Naval Postgraduate School]. https://calhoun.nps.edu/handle/10945/5865
 
 Nimmo, B., & Agranovich, D. (2022, September 27). *Removing coordinated inauthentic behavior from China and Russia*. Meta. https://about.fb.com/news/2022/09/removing-coordinated-inauthentic-behavior-from-china-and-russia/
 

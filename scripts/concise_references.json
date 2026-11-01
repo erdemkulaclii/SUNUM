@@ -144,6 +144,15 @@
   "verification": "Künye 31.10.2026 tarihinde web aramasıyla yayıncı/kurum kayıtları üzerinden doğrulandı; tam metin bu ortamda okunmadı. Sunumda yalnız özetlerde doğrulanan genel bilgi kullanılır. Kullanılan bilgi: GDELT ile haber coğrafyası incelendiğinde güçlü bir bölgeselcilik görüldüğü."
  },
  {
+  "id": "lanoszka2016",
+  "cite": "Lanoszka, 2016",
+  "apa": "Lanoszka, A. (2016). Russian hybrid warfare and extended deterrence in eastern Europe. <i>International Affairs, 92</i>(1), 175–195.",
+  "url": "https://doi.org/10.1111/1468-2346.12509",
+  "kind": "Hakemli makale",
+  "access": "Künye",
+  "verification": "Künye bilinen ve çok atıf alan bir çalışmaya ait; DOI bu oturumda çözülemedi."
+ },
+ {
   "id": "leetaru2013",
   "cite": "Leetaru & Schrodt, 2013",
   "apa": "Leetaru, K., & Schrodt, P. A. (2013, April). <i>GDELT: Global data on events, location, and tone, 1979–2012</i> [Paper presentation]. International Studies Association Annual Convention, San Francisco, CA, United States.",
@@ -151,6 +160,15 @@
   "kind": "Konferans bildirisi (veri kümesi tanıtımı)",
   "access": "Künye doğrulandı",
   "verification": "Künye, yayıncı sayfası ve bağımsız ikincil kayıtlarla bibliyografik olarak karşılaştırıldı (31.10.2026). Bu ortamdan tam metne erişilemedi; sunumda yalnız künyede ve özetlerde doğrulanan genel bilgiler kullanıldı. Kullanılan bilgi: GDELT’in haber kaynaklarından otomatik olarak kodlanan, konum bilgisi içeren küresel bir olay veri kümesi olduğu."
+ },
+ {
+  "id": "meister2016",
+  "cite": "Meister, 2016",
+  "apa": "Meister, S. (2016, July 25). The “Lisa case”: Germany as a target of Russian disinformation. <i>NATO Review</i>.",
+  "url": "https://www.nato.int/docu/review/articles/2016/07/25/the-lisa-case-germany-as-a-target-of-russian-disinformation/index.html",
+  "kind": "Analiz yazısı",
+  "access": "NATO Review sayfası",
+  "verification": "Künye bu oturumda depo/kurum kaydıyla doğrulandı; tam metin okunmadı."
  },
  {
   "id": "meta2022",
@@ -178,6 +196,15 @@
   "kind": "Hakemli makale",
   "access": "Künye ve DOI doğrulandı",
   "verification": "Künye bu oturumda arama sonucu, depo kaydı veya yayıncı sayfasıyla doğrulandı; tam metin okunmadı."
+ },
+ {
+  "id": "nemeth2002",
+  "cite": "Nemeth, 2002",
+  "apa": "Nemeth, W. J. (2002). <i>Future war and Chechnya: A case for hybrid warfare</i> [Master’s thesis, Naval Postgraduate School].",
+  "url": "https://calhoun.nps.edu/handle/10945/5865",
+  "kind": "Yüksek lisans tezi",
+  "access": "NPS Calhoun kaydı",
+  "verification": "Künye bu oturumda depo/kurum kaydıyla doğrulandı; tam metin okunmadı."
  },
  {
   "id": "nimmo2022",

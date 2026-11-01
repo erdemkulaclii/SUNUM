@@ -29,7 +29,7 @@ ST={
 def para(value,style='body'):return Paragraph(html.escape(str(value)),ST[style])
 def stamp(s):return f'{s//60:02}:{s%60:02}'
 def footer(c,d):
- c.setStrokeColor(colors.HexColor('#bcc6d1'));c.line(48,43,547,43);c.setFont('Body',8);c.setFillColor(colors.HexColor('#4a5a6c'));c.drawString(48,29,'Doppelgänger vakasında hedef coğrafyası ve haber görünürlüğü');c.drawRightString(547,29,str(d.page))
+ c.setStrokeColor(colors.HexColor('#bcc6d1'));c.line(48,43,547,43);c.setFont('Body',8);c.setFillColor(colors.HexColor('#4a5a6c'));c.drawString(48,29,'Hibrit Savaşın Görünmez Cephesi · Erdem Kulaçlı');c.drawRightString(547,29,str(d.page))
 def pdf(name,flow,title):SimpleDocTemplate(str(O/name),pagesize=(595.28,841.89),leftMargin=48,rightMargin=48,topMargin=48,bottomMargin=60,title=title,author='SUNUM').build(flow,onFirstPage=footer,onLaterPages=footer)
 def reference(r):
  entry=r['apa'].replace('&','&amp;');url=html.escape(r['url'],quote=True)
@@ -85,7 +85,7 @@ def main():
  O.mkdir(exist_ok=True);N=json.loads((R/'scripts/concise_narrative.json').read_text());F=json.loads((R/'scripts/concise_references.json').read_text());A=json.loads((O/'IOC_YAPISAL_ANALIZ.json').read_text());f,a,src=(A[k] for k in ['findings','audit','source'])
  assert sum(s['seconds'] for s in N)==1200 and len(F)>=12
  title=N[0]['title']
- cueflow=[];md=[f'# {title}','',f'{len(N)} ana slayt · yaklaşık 20 dakika anlatım · soru-cevap yok · slaytları sunucu geçirir.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
+ cueflow=[];md=[f'# {title}','',f'{len(N)} ana slayt · yaklaşık 20 dakika anlatım · soru-cevap yok · slaytları sunucu geçirir.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_20_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
  cuedoc=document(title+' — Sunucu kartları');fullword=document(title+' — İsteğe bağlı prova metni');fullword.add_heading(title,0)
  intro='İsteğe bağlı prova metni. Toplam anlatım yaklaşık 20 dakikadır; soru-cevap bölümü yoktur. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
  fullword.add_paragraph(intro);fullflow=[para(title,'title'),para('İsteğe bağlı prova metni','h'),para(intro)];elapsed=0
@@ -101,7 +101,7 @@ def main():
   md += [f'## {heading} · {slot}','']+['- '+x for x in cues]+['','**Ana mesaj:** '+s['takeaway'],'','**Atıf:** '+s['source'],''];elapsed=end
  md += []
  word_refs(fullword,F);fullflow += [PageBreak()]+references(F)
- pdf('SUNUCU_KARTLARI.pdf',cueflow,title+' — Sunucu kartları');cuedoc.save(O/'SUNUCU_KARTLARI.docx');pdf('KONUSMA_METNI_15_DK.pdf',fullflow,title+' — İsteğe bağlı prova metni');fullword.save(O/'KONUSMA_METNI_15_DK.docx');(O/'KONUSMACI_NOTLARI.md').write_text('\n'.join(md),encoding='utf8');pdf('APA7_KAYNAKCA.pdf',references_onepage(F),title+' — APA 7 kaynakça')
+ pdf('SUNUCU_KARTLARI.pdf',cueflow,title+' — Sunucu kartları');cuedoc.save(O/'SUNUCU_KARTLARI.docx');pdf('KONUSMA_METNI_20_DK.pdf',fullflow,title+' — İsteğe bağlı prova metni');fullword.save(O/'KONUSMA_METNI_20_DK.docx');(O/'KONUSMACI_NOTLARI.md').write_text('\n'.join(md),encoding='utf8');pdf('APA7_KAYNAKCA.pdf',references_onepage(F),title+' — APA 7 kaynakça')
  abstract='Bu çalışma, Meta’nın 27 Eylül 2022 tarihli koordineli sahte davranış gösterge dosyasındaki alan adlarını hedef coğrafyası ve sözcüksel yapı bakımından betimsel olarak inceler. 350 ham kayıttan 313 alan adı satırı seçilmiş, iki yinelenen değer çıkarılarak 311 benzersiz alan adı elde edilmiştir. Almanya hedefli 298 alan adı listenin %95,8’ini oluşturur. En sık altı son DNS etiketi 240 alan adını (%77,2) kapsar ve bu kayıtların tamamı Almanya hedeflidir. 93 farklı ilk DNS etiketinden 75’i birden fazla son etiketle kullanılır; bu gruplar 293 alan adını kapsar. Katkı, hedef ülke yoğunlaşmasını ve adres yapısındaki tekrarları aynı kaynak kayıtları üzerinde yeniden üretilebilir biçimde birlikte göstermektir. Sonuçlar yayımlanan gösterge listesiyle sınırlıdır; operasyon sayısı, kullanıcı maruziyeti veya kamuoyu etkisi ölçülmemiştir.'
  dossier=[para(title,'title'),para('Araştırma dosyası — tamamlanmış veri analizi','h'),para('Özet','h'),para(abstract),para('Anahtar sözcükler: OSINT; koordineli sahte davranış; alan adı; DNS; hedef coğrafyası; kaynak eleştirisi.','small'),para('Araştırma sorusu','h'),para('AS1: Yayımlanan göstergeler hangi ülkeleri hedef olarak etiketliyor? AS2: Alan adları ilk ve son DNS etiketleri bakımından nasıl bir yapı izliyor? AS3: Vaka ve kaldırma duyurusu hangi ülkelerin haber kaynaklarında görünür oldu (GDELT)?'),para('Kapsam ve kaynak atfı','h'),para('İnceleme, dosyanın alan adı alt kümesinin ikincil analizidir. Rusya bağlantısı kaynak raporlamasına dayanır; bağımsız aktör atfı yapılmaz. Dosyanın başlığında Çin ve Rusya birlikte geçmektedir; bulgular, incelenen alan adı kayıtlarıyla sınırlandırılır.')]
  dossier += [PageBreak(),para('Veri kökeni ve yeniden üretim','title'),reference(next(r for r in F if r['id']=='meta2022')),para('Sabit kaynak commit’i: '+src['commit'],'small'),para('Ham dosyanın SHA-256 özeti: '+src['sha256'],'small'),table(['Aşama','Kayıt sayısı'],[['Ham dosya',a['raw_records']],['Alan adı satırı',a['domain_rows']],['Çıkarılan tekrar',a['duplicate_rows_removed']],['Benzersiz alan adı',a['unique_domains']],['CIB bağlantısı (ayrı birim)',a['raw_record_types']['cib_url']],['Telegram bağlantısı (ayrı birim)',a['raw_record_types']['telegram_url']]],[360,139]),para('Tekilleştirme ve izlenebilirlik','h'),para('Alan adı dizilerinin çevresindeki boşluklar çıkarılır ve harfler küçültülür; tam dize eşitliğine göre tekilleştirilir. Tekrarlanan iki değer lnruzdeknn[.]online ve lrneuzdenken[.]online’dır. Hedef ülke etiketleri, kaynak yorum alanından alınır.'),para('Her gösterge için kaynak kayıt sırası ve fiziksel CSV satır sonu korunur. Yeniden üretim komutu: python scripts/analyze_ioc_structure.py. Hesaplamalar ağ isteği yapmaz. Kanıt dosyası: output/IOC_YAPISAL_KANIT.csv; toplu hesap: output/IOC_YAPISAL_ANALIZ.json.','small')]
@@ -116,10 +116,10 @@ def main():
  dossier += [PageBreak()]+references(F,True);pdf('AKADEMIK_ARASTIRMA_DOSYASI.pdf',dossier,title+' — Araştırma dosyası')
  report={}
  assert len(PdfReader(O/'APA7_KAYNAKCA.pdf').pages)==1,'APA7 kaynakça tek sayfa olmalı'
- for name in ['SUNUCU_KARTLARI.pdf','KONUSMA_METNI_15_DK.pdf','APA7_KAYNAKCA.pdf','AKADEMIK_ARASTIRMA_DOSYASI.pdf']:
+ for name in ['SUNUCU_KARTLARI.pdf','KONUSMA_METNI_20_DK.pdf','APA7_KAYNAKCA.pdf','AKADEMIK_ARASTIRMA_DOSYASI.pdf']:
   reader=PdfReader(O/name);texts=[p.extract_text() or '' for p in reader.pages];assert all(len(t.strip())>40 for t in texts),(name,'empty page');report[name]={'pages':len(reader.pages),'text_selectable':True,'characters':sum(map(len,texts))}
  assert report['SUNUCU_KARTLARI.pdf']['pages']==len(N)
- for name in ['SUNUCU_KARTLARI.docx','KONUSMA_METNI_15_DK.docx']:
+ for name in ['SUNUCU_KARTLARI.docx','KONUSMA_METNI_20_DK.docx']:
   doc=Document(O/name);text='\n'.join(p.text for p in doc.paragraphs);assert all(s['title'] in text for s in N),name;report[name]={'all_sections_present':True,'paragraphs':len(doc.paragraphs)}
  report.update({'main_slides':len(N),'planned_talk_seconds':1200,'session_buffer_seconds':0,'gdelt_snapshot_included':bool(SNAP),'cue_sentence_count':sum(len(s['cue_sentences']) for s in N),'cue_word_count':sum(len(x.split()) for s in N for x in s['cue_sentences']),'rehearsal_word_count':sum(len(s['full_notes'].split()) for s in N),'selected_references':len(F),'desktop_Word_render_verified':False});(O/'ODAKLI_BELGE_DOGRULAMA.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf8');print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
