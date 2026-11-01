@@ -145,6 +145,13 @@ def main() -> dict:
         se_o = math.sqrt(1 / outlets['United States'] - 1 / act['United States'] + 1 / outlets['Germany'] - 1 / act['Germany'])
         gd['outlet_ratio_us_de'] = rnd(pu / pd_, 2)
         gd['outlet_ratio_ci95'] = [rnd(math.exp(math.log(pu / pd_) - 1.96 * se_o), 2), rnd(math.exp(math.log(pu / pd_) + 1.96 * se_o), 2)]
+        # same comparison expressed as Germany relative to the United States (unrounded inverse)
+        gd['outlet_ratio_de_us'] = rnd(pd_ / pu, 2)
+        gd['outlet_ratio_de_us_ci95'] = [rnd(math.exp(math.log(pd_ / pu) - 1.96 * se_o), 2), rnd(math.exp(math.log(pd_ / pu) + 1.96 * se_o), 2)]
+        # average size of a monitored outlet: scanned records per active outlet
+        rpo = {c: rates[c]['scanned'] / act[c] for c in ['United States', 'Germany']}
+        gd['records_per_outlet'] = {c: round(v) for c, v in rpo.items()}
+        gd['records_per_outlet_ratio_de_us'] = rnd(rpo['Germany'] / rpo['United States'], 2)
     gd['title_ratio_us_de_raw'] = rnd(titles_c['United States'] / titles_c['Germany'], 2)
     # all source countries (appendix table): articles, outlets, scanned records, per-100k with exact CI
     allc = []
@@ -163,7 +170,7 @@ def main() -> dict:
     gd['fr_it_both_share_of_fr'] = rnd(gd['fr_it_both'] / mention['FR'] * 100)
     # per-rule precision from the random sample and population-weighted precision
     vr = val['by_rule']
-    w = sum(vr[r]['precision'] * gd['rules'].get(r, 0) for r in vr if r != 'all') / n
+    w = sum(vr[r]['relevant'] / vr[r]['n'] * gd['rules'].get(r, 0) for r in vr if r != 'all') / n
     gd['precision_weighted_pct'] = rnd(w * 100)
     # pre-disclosure article
     pre = [h for h in hits if h['day'] < '20220927']

@@ -5,7 +5,7 @@
 | Kaynak | Doğrulandı | Not |
 |---|---|---|
 | Alaphilippe vd. (2022) | Rapor PDF’i ve ikincil kayıtlar | Gri literatür |
-| Aras ve Yıldırım (2022) | DOAJ dizin kaydı (ikincil) | Dergi sayfası/DOI açılamadı |
+| Aras ve Yıldırım (2022) | DOAJ dizin kaydı (başlık, dergi, Eylül 2022) | Yazar adları ve sayfa aralığı dergi sayfasından kontrol edilmeli |
 | Auswärtiges Amt (2024a) | Ocak 2024 raporu bağlantısı (inceleme notundan) | 50.000 hesap / 1,8 milyon gönderi bu rapordan; dönem 20.12.2023–20.01.2024 |
 | Auswärtiges Amt (2024b) | Haziran 2024 raporu bağlantısı ve basın kayıtları | Resmî rapor |
 | Bennett ve Livingston (2018) | Yayıncı künyesi ve DOI | |
@@ -33,7 +33,7 @@
 | Mumford ve Carlucci (2023) | Depo kaydı, DOI | |
 | Nemeth (2002) | NPS Calhoun kaydı | Yüksek lisans tezi |
 | Nimmo ve Agranovich (2022) | Yayıncı bağlantısı ve basın kayıtları | Platform raporu |
-| Özdemir ve Eminoğlu (2022) | DergiPark yazar sayfası (ikincil) | Cilt/sayı eklenmeli |
+| Özdemir ve Eminoğlu (2022) | CEEOL kaydı | 15(1), 67–84 |
 | Pamment ve Tsurtsumia (2025) | Rapor PDF bağlantısı | Gri literatür |
 | Paul ve Matthews (2016) | Künye | DOI çözülmedi |
 | Renz (2016) | Depo kaydı, DOI | |
@@ -44,7 +44,7 @@
 | Wardle ve Derakhshan (2017) | Kurum yayını | |
 | Watanabe (2017) | LSE depo kaydı, DOI | |
 | Wigell (2019) | Künye | DOI çözülmedi |
-| Council of the European Union (2023) | Hukuk bürosu ve yaptırım izleme özetleri (ikincil) | Düzenleme numarası EUR-Lex’ten kontrol edilmeli |
+| Council of the European Union (2023) | EEAS basın açıklaması (28.07.2023) okundu | SDA ve Structura “RRN” kampanyası nedeniyle listelendi; tüzük numarası yerine basın açıklamasına atıf yapıldı |
 | U.S. Department of the Treasury (2024) | Basın bülteni JY-2195, ikincil kopyalar | 20.03.2024 |
 | U.S. Department of Justice (2024) | Basın bülteni (justice.gov) | 04.09.2024; 32 alan adı |
 

@@ -6,13 +6,13 @@ lang: tr-TR
 
 # Özet
 
-Makale, Rusya kaynaklı Doppelgänger etki operasyonunun Eylül 2022’de ifşa edilen alan adı altyapısını ve bu ifşanın uluslararası haber coğrafyasını iki açık veri kümesiyle incelemektedir. Birinci veri kümesi, Meta’nın 27 Eylül 2022’de yayımladığı ve 311 benzersiz alan adı içeren koordineli sahte davranış göstergeleridir. İkinci veri kümesi, GDELT Küresel Bilgi Grafiği’nin (GKG 2.0) 20 Eylül – 11 Ekim 2022 dönemine ait, GDELT’in yayımladığı MD5 özetleriyle doğrulanmış 4.209 ham dosyası ve bu dosyalardaki 5.944.850 haber kaydıdır. Meta, alan adlarının %95,8’ini Almanya hedefli olarak etiketlemiştir. Kural tabanlı ve yeniden üretilebilir bir sınıflamaya göre alan adlarının yalnızca %13,8’i gerçek bir haber markasının adını birebir taşımakta, %5,1’i bu adların yazım varyantlarından oluşmaktadır. Kalan %81,0 var olmayan “bağımsız yayın” adlarıdır ve bunların 174’ü, aynı Almanca ifadelerin harfleri yer değiştirilmiş yazımlarından oluşan 19 aileye dağılmaktadır. Birebir marka taklitleri 27 farklı uzantıya yayılırken uydurma yayın adlarının %94,4’ü altı yeni genel uzantıda toplanmıştır. Haber arşivinde sabit kurallarla 511 tekil haber eşleşmiş, 145 tekil başlığın tamamının kodlanmasıyla başlık düzeyinde isabet %91,7 olarak ölçülmüştür. Eşleşen haberlerin %96,3’ü 27–28 Eylül’de yayımlanmıştır. Haber düzeyinde ABD kaynaklı yoğunluk Almanya’nınkinin 1,65 katıdır, ancak bu fark ajans haberlerinin yeniden yayımlanmasından kaynaklanmaktadır. Dönem içinde aktif olan yayın kuruluşlarına oranlandığında ifşayı haberleştiren kuruluş payı Almanya’da ABD’dekinin yaklaşık 2,4 katıdır. Bulgular, hibrit müdahalenin bilgi boyutunda operasyon altyapısının büyük ölçüde uydurma bir yayıncılık kimliğine dayandığını ve ifşanın hedeflenen ülkenin medyasında görece yüksek bir kuruluş yoğunluğuyla yer aldığını göstermektedir.
+Makale, Rusya kaynaklı Doppelgänger etki operasyonunun Eylül 2022’de ifşa edilen alan adı altyapısını ve bu ifşanın haber coğrafyasını, Meta’nın 311 benzersiz alan adı içeren gösterge listesi ile GDELT Küresel Bilgi Grafiği’nin MD5 doğrulamalı 4.209 ham dosyasındaki 5.944.850 haber kaydı üzerinden incelemektedir. Alan adlarının %95,8’i Almanya hedeflidir. Yeniden üretilebilir bir tipolojiye göre adların yalnızca %13,8’i gerçek bir haber markasını birebir taklit etmekte, %81,0’ı ise var olmayan “bağımsız yayın” adlarından oluşmaktadır; bu adların 174’ü Almanca ifadelerin harfleri karıştırılmış yazımlarından oluşan 19 aileye dağılmakta, %94,4’ü ise altı yeni genel uzantıda toplanmaktadır. Sabit kurallarla eşleşen 511 haberin %96,3’ü 27–28 Eylül’de yayımlanmıştır; 145 tekil başlığın tamamının kodlanmasıyla isabet %91,7 bulunmuştur. Haber düzeyinde ABD’deki yoğunluk Almanya’nınkinin 1,65 katıdır, ancak bu fark ajans haberlerinin yeniden yayımlanmasından kaynaklanmaktadır. Aktif yayın kuruluşlarına oranlandığında ifşayı haberleştiren kuruluş payı Almanya’da yaklaşık 2,5 kat yüksektir; Alman kuruluşlarının ortalamada daha büyük olması bu farkın bir kısmını açıklamaktadır. Bulgular, operasyon altyapısının büyük ölçüde uydurma bir yayıncılık kimliğine dayandığını, ifşanın hedef ülkenin medyasında sınırlı kalmadığını ve ülke karşılaştırmalarının sayım düzeyine duyarlı olduğunu göstermektedir.
 
 **Anahtar kelimeler:** hibrit müdahale, dezenformasyon, Doppelgänger, alan adı taklidi, GDELT, haber coğrafyası
 
 # Abstract
 
-This article examines the domain infrastructure of the Russia-linked Doppelgänger influence operation disclosed in September 2022 and the international news geography of that disclosure. It uses Meta’s coordinated inauthentic behaviour indicators of 27 September 2022 (311 unique domains) and the raw GDELT Global Knowledge Graph 2.0 archive for 20 September – 11 October 2022 (4,209 MD5-verified files, 5,944,850 records). Meta labelled 95.8% of the domains as targeting Germany. A rule-based, reproducible typology shows that only 13.8% of the domains reproduce the exact name of a real news outlet and 5.1% are misspellings of such names; the remaining 81.0% are invented “independent outlet” names, 174 of which fall into 19 families of letter-permuted spellings of the same German phrases. Exact brand imitations are spread over 27 top-level domains, whereas 94.4% of the invented names sit on six new generic extensions. Fixed rules matched 511 unique news articles; coding all 145 distinct headlines yielded a headline-level precision of 91.7%. Of the matched articles, 96.3% appeared on 27–28 September. At the article level, coverage intensity in US-based outlets was 1.65 times that of German outlets, a gap produced by wire-story syndication. Relative to the outlets active in the period, the share of outlets that covered the disclosure was about 2.4 times higher in Germany than in the United States. The findings indicate that the operation’s infrastructure rested largely on an invented independent-media identity and that the disclosure reached the targeted country’s media with comparatively high outlet-level intensity.
+This article examines the domain infrastructure of the Russia-linked Doppelgänger influence operation disclosed in September 2022 and the news geography of that disclosure, using Meta’s indicator list (311 unique domains) and 5,944,850 records from 4,209 MD5-verified raw files of the GDELT Global Knowledge Graph. Meta labelled 95.8% of the domains as targeting Germany. A reproducible typology shows that only 13.8% exactly reproduce a real news brand, while 81.0% are invented “independent outlet” names; 174 of these fall into 19 families of letter-permuted German phrases, and 94.4% sit on six new generic extensions. Of 511 matched articles, 96.3% appeared on 27–28 September; coding all 145 distinct headlines yielded a precision of 91.7%. At the article level, US coverage intensity was 1.65 times that of Germany, a gap produced by wire-story syndication. Relative to active outlets, the share covering the disclosure was about 2.5 times higher in Germany, although German outlets were on average larger. The findings show that the infrastructure rested on an invented independent-media identity, that the disclosure was not marginal in the targeted country’s media, and that cross-country comparisons depend on the counting level.
 
 **Keywords:** hybrid interference, disinformation, Doppelgänger, domain impersonation, GDELT, news geography
 
@@ -125,7 +125,7 @@ AS2’nin ilk beklentisi büyük ölçüde karşılanmamıştır: marka adını 
 
 ## 5.3. Eşleşmelerin isabeti ve duyarlılığı
 
-Kurallar 511 tekil haberle eşleşmiştir; bunların 509’u R2’den, 2’si R1’den gelmektedir ve R3 hiçbir haberle eşleşmemiştir. Rastgele örneklemde R2 için 30 başlığın 28’i (%93,3), R1 için iki başlığın biri ilgili bulunmuştur. Kural büyüklüklerine göre ağırlıklandırılmış isabet %93,1’dir. 145 tekil başlığın tamamının kodlanmasında 133 başlık ilgili bulunmuş, başlık düzeyinde isabet %91,7 (Wilson %95 GA 86,1–95,2) ve haber düzeyinde isabet %96,9 olarak hesaplanmıştır. İlgisiz başlıklar Apple’ın VK uygulamasını mağazasından kaldırmasına, Rusya’nın Ekim 2022’de Meta’ya yönelik kararlarına, Putin’in “dublörleri” üzerine bir habere ve Finlandiya sınırına ilişkindir. R1’in iki eşleşmesinden biri ilgisizdir; kampanya adı 2022 haberlerinde neredeyse hiç kullanılmamıştır.
+Kurallar 511 tekil haberle eşleşmiştir; bunların 509’u R2’den, 2’si R1’den gelmektedir ve R3 hiçbir haberle eşleşmemiştir. Rastgele örneklemde R2 için 30 başlığın 28’i (%93,3), R1 için iki başlığın biri ilgili bulunmuştur. Kural büyüklüklerine göre ağırlıklandırılmış isabet %93,2’dir. 145 tekil başlığın tamamının kodlanmasında 133 başlık ilgili bulunmuş, başlık düzeyinde isabet %91,7 (Wilson %95 GA 86,1–95,2) ve haber düzeyinde isabet %96,9 olarak hesaplanmıştır. İlgisiz başlıklar Apple’ın VK uygulamasını mağazasından kaldırmasına, Rusya’nın Ekim 2022’de Meta’ya yönelik kararlarına, Putin’in “dublörleri” üzerine bir habere ve Finlandiya sınırına ilişkindir. R1’in iki eşleşmesinden biri ilgisizdir; kampanya adı 2022 haberlerinde neredeyse hiç kullanılmamıştır.
 
 Birinci duyarlılık havuzundaki 270 kaydın yalnızca biri ilgilidir: İsviçre kaynaklı watson.ch’nin 27 Eylül tarihli “Facebook bestätigt: So hat Putins Troll-Armee Westeuropa attackiert” başlıklı haberi. İkinci havuzda 77 kayıt bulunmuş, bunların sekizi ifşa haberi olarak kodlanmıştır. Sekiz haberin yedisi (%87,5; Wilson %95 GA 52,9–97,8) kurallarca zaten yakalanmıştır; kaçan tek haber yine watson.ch haberidir. Bu havuzdaki Almanya kaynaklı üç ifşa haberinin (ZDF, Der Spiegel, Bürstädter Zeitung) üçü de yakalanmıştır. Kuralların Almanca ifşa haberlerini sistematik olarak kaçırdığına ilişkin bir bulguya rastlanmamıştır.
 
@@ -144,12 +144,12 @@ Tablo 2, eşleşen haberlerin en fazla olduğu üç yayın ülkesini üç sayım
 **Tablo 2.** Üç sayım düzeyinde ifşanın yayın ülkesine göre dağılımı
 
 | Yayın ülkesi | Haber | 100.000 kayıt başına (%95 GA) | Yayın kuruluşu / aktif kuruluş | 1.000 aktif kuruluş başına (%95 GA) | Tekil başlık |
-|---|---:|---|---:|---|---:|
+|-------------|--------:|----------------------|---------------:|-------------------------|--------:|
 | ABD | 373 | 25,39 (22,88–28,10) | 230 / 6.786 | 33,89 (29,84–38,47) | 63 |
 | Almanya | 29 | 15,38 (10,30–22,09) | 29 / 347 | 83,57 (58,82–117,45) | 13 |
 | İtalya | 13 | 5,41 (2,88–9,25) | 9 / 488 | 18,44 (9,73–34,68) | 11 |
 
-Haber düzeyinde ABD öndedir: haberlerin %73,0’ı ABD’de, %5,7’si Almanya’da yayımlanmıştır ve ABD’deki yoğunluk Almanya’dakinin 1,65 katıdır (%95 GA 1,13–2,41). Fark ise büyük ölçüde ajans haberlerinin yeniden yayımlanmasından kaynaklanmaktadır; 373 ABD haberi 230 kuruluştan gelmekle birlikte yalnızca 63 farklı başlık taşımaktadır. Almanya’daki 29 haber ise 29 ayrı kuruluş tarafından ve 13 farklı başlıkla yayımlanmıştır. Yayın kuruluşu düzeyinde tablo tersine dönmektedir: dönem içinde aktif olan Alman kuruluşlarının binde 83,57’si ifşayı haberleştirmişken bu oran ABD’de binde 33,89’dur. ABD’nin Almanya’ya oranı 0,41’dir (%95 GA 0,28–0,59); başka bir ifadeyle Alman yayın kuruluşlarının ifşayı haberleştirme olasılığı yaklaşık 2,4 kat daha yüksektir.
+Haber düzeyinde ABD öndedir: haberlerin %73,0’ı ABD’de, %5,7’si Almanya’da yayımlanmıştır ve ABD’deki yoğunluk Almanya’dakinin 1,65 katıdır (%95 GA 1,13–2,41). Fark ise büyük ölçüde ajans haberlerinin yeniden yayımlanmasından kaynaklanmaktadır; 373 ABD haberi 230 kuruluştan gelmekle birlikte yalnızca 63 farklı başlık taşımaktadır. Almanya’daki 29 haber ise 29 ayrı kuruluş tarafından ve 13 farklı başlıkla yayımlanmıştır. Yayın kuruluşu düzeyinde tablo tersine dönmektedir: dönem içinde aktif olan Alman kuruluşlarının binde 83,57’si ifşayı haberleştirmişken bu oran ABD’de binde 33,89’dur. ABD’nin Almanya’ya oranı 0,41’dir (%95 GA 0,28–0,59); başka bir ifadeyle Alman yayın kuruluşlarının ifşayı haberleştirme olasılığı 2,47 kat daha yüksektir (%95 GA 1,70–3,57). Ne var ki iki ülkedeki kuruluşların ortalama büyüklüğü de farklıdır: dönem içinde ABD’deki bir kuruluş ortalama 217, Almanya’daki bir kuruluş ise ortalama 543 kayıt üretmiştir (oran 2,51). Daha fazla haber üreten bir kuruluşun ifşayı haberleştirme olasılığı da kendiliğinden daha yüksek olacağından, kuruluş düzeyindeki farkın önemli bir kısmı bu büyüklük farkıyla açıklanabilir.
 
 Haberlerde anılan yerler incelendiğinde haberlerin %63,6’sının Almanya’yı, %57,1’inin Fransa’yı ve İtalya’yı, %46,2’sinin Birleşik Krallık’ı andığı görülmektedir (Şekil 2). Ne var ki Fransa’yı anan 292 haberin 288’i (%98,6) İtalya’yı da anmaktadır; bu örüntü, anmaların büyük ölçüde ajans haberinde yer alan hedef ülke listesinden kaynaklandığını düşündürmektedir. Anılan yer verisi bu nedenle ajans metninin bir yansıması olarak yorumlanmıştır.
 
@@ -161,7 +161,7 @@ Hedefleme bulgusu, Almanya’ya ayrılan altyapı payının Doppelgänger raporl
 
 Alan adı bulgusu, “ödünç alınmış güvenilirlik” kavramının vakaya uygulanış biçimini değiştirmektedir. Gerçek markaları birebir kopyalayan adresler altyapının yalnızca küçük bir bölümünü oluşturmakta ve çok sayıda uzantıya dağılmaktadır. Altyapının asıl gövdesini, adları “hakikat”, “açık fikir” ya da “önce düşün” gibi alternatif medya söylemini çağrıştıran ifadelerden türetilmiş, var olmayan “bağımsız” Alman yayınları oluşturmaktadır. Bennett ve Livingston’ın (2018) tanımındaki haber biçimini taklit etme stratejisi böylece iki biçimde gerçekleşmektedir: adreslerin bir kısmı tanınmış markaların itibarını ödünç alırken büyük kısmı ana akım medyaya güvenmeyen okurlara hitap eden bir bağımsız yayıncılık kimliğini taklit etmektedir. Harf karışımı yazımlar, aynı kimliğin engellemelere karşı çok sayıda adrese çoğaltıldığını düşündürmekte ve Paul ve Matthews’ın (2016) yüksek hacim ve çok kanal vurgusuyla uyumlu bir altyapı mantığına işaret etmektedir. Eldeki veriyle adreslerin hangi sırayla ve hangi amaçla kaydedildiği belirlenememektedir.
 
-İfşanın coğrafyası, sayım düzeyinin sonucu nasıl belirlediğini göstermektedir. Haber sayısına bakıldığında ifşa, ABD’de ve İngilizce ajans ağında yoğunlaşmış bir haber olayı olarak görünmektedir. Yayın kuruluşu düzeyinde ise Almanya’daki kuruluş yoğunluğu ABD’dekinin yaklaşık 2,4 katıdır ve Alman haberleri daha çeşitli başlıklarla, daha az ajans tekrarıyla yayımlanmıştır. Duyarlılık sınamaları da kuralların Almanca ifşa haberlerini sistematik olarak kaçırmadığını göstermektedir. Bu sonuçlar, Kwak ve An’ın (2014) bölgesel haber coğrafyası bulgusuyla uyumludur: hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş, mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden kaynaklanmıştır. “Görünmez cephe” ifadesi bu bağlamda operasyonun kendisi için geçerliliğini korumakta, ifşa ise hedef ülkenin medyasında görünür olmaktadır.
+İfşanın coğrafyası, sayım düzeyinin sonucu nasıl belirlediğini göstermektedir. Haber sayısına bakıldığında ifşa, ABD’de ve İngilizce ajans ağında yoğunlaşmış bir haber olayı olarak görünmektedir. Yayın kuruluşu düzeyinde ise Almanya’daki kuruluş yoğunluğu ABD’dekinin yaklaşık 2,5 katıdır ve Alman haberleri daha çeşitli başlıklarla, daha az ajans tekrarıyla yayımlanmıştır. Ancak Alman kuruluşlarının ortalamada yaklaşık 2,5 kat daha büyük olması, bu farkın önemli bir kısmını açıklayabilecek düzeydedir. Dolayısıyla eldeki veri, Alman medyasının ifşayla ABD medyasından daha yoğun ilgilendiğini değil, ifşanın hedef ülkenin medyasında sınırlı kalmadığını güvenle desteklemektedir. Duyarlılık sınamaları da kuralların Almanca ifşa haberlerini sistematik olarak kaçırmadığını göstermektedir. Bu sonuçlar, Kwak ve An’ın (2014) bölgesel haber coğrafyası bulgusuyla çelişmemektedir: hedeflenen ülkenin medyası ifşayı kendi başlıklarıyla ve çok sayıda kuruluşta haberleştirmiş, mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden kaynaklanmıştır. “Görünmez cephe” ifadesi bu bağlamda operasyonun kendisi için geçerliliğini korumakta, ifşa ise hedef ülkenin medyasında görünür olmaktadır.
 
 Bulgular algı korsanlığı tartışmasıyla birlikte değerlendirilmelidir. İfşanın uluslararası haber değeri, operatörün müşterisine gösterebileceği bir başarı kanıtına dönüşebilmektedir (Pamment ve Tsurtsumia, 2025); ifşa haberlerinin dili de istenmeyen etkiler doğurabilmektedir (Jungherr ve Rauchfleisch, 2024). Hibrit müdahalenin bilgi boyutunda ifşanın nerede, ne kadar süre ve hangi dille dolaştığı, bu nedenle müdahalenin kendisi kadar incelenmeye değer bir konudur.
 
@@ -171,13 +171,13 @@ Meta’nın listesi platformun tespit ve yayımlama kararlarının ürünüdür 
 
 Tipoloji kuruluş listesine bağlıdır; listede yer almayan bir markanın taklidi “uydurma yayın adı” sınıfına düşebilir. Harf karışımı ailesi kuralı birebir harf eşitliğine dayandığından aile sayısı bir alt sınırdır. Alan adlarının kayıt tarihleri, maliyetleri ve barındırma bilgileri incelenmemiştir.
 
-GDELT yalnızca izlediği kaynakları kapsamaktadır ve bu kapsam ülkeler ile diller arasında eşit değildir (Hammond ve Weidmann, 2014; Hoffmann vd., 2022). Yayın ülkesi GDELT’in 2018 tarihli bir çıkarımıdır ve okurun ülkesini göstermemektedir. Aktif yayın kuruluşu sayısı, dönem içinde GDELT’in en az bir kaydını ürettiği alan adlarından hesaplanmıştır ve ülkelerin medya sistemlerinin yalnızca GDELT’in izlediği kesimini yansıtmaktadır. Eşleşme yalnızca başlık ve URL üzerinden yapıldığından konuyu metin içinde işleyen ancak başlığında anahtar sözcük bulunmayan haberler kapsam dışında kalmıştır. Duyarlılık sınamaları Almanca haberlerle ve kısa bir dönemle sınırlıdır ve ikinci havuzdaki ilgili haber sayısı küçüktür (n = 8).
+GDELT yalnızca izlediği kaynakları kapsamaktadır ve bu kapsam ülkeler ile diller arasında eşit değildir (Hammond ve Weidmann, 2014; Hoffmann vd., 2022). Yayın ülkesi GDELT’in 2018 tarihli bir çıkarımıdır ve okurun ülkesini göstermemektedir. Aktif yayın kuruluşu sayısı, dönem içinde GDELT’in en az bir kaydını ürettiği alan adlarından hesaplanmıştır ve ülkelerin medya sistemlerinin yalnızca GDELT’in izlediği kesimini yansıtmaktadır. Bu payda kuruluşların büyüklüğünü ve dış habere ayırdıkları yeri hesaba katmamaktadır; küçük yerel sitelerin yoğun olduğu medya sistemlerinde kuruluş düzeyindeki oran düşük çıkabilir. Kuruluş büyüklüğüne göre ağırlıklandırılmış bir karşılaştırma yapılmadığından kuruluş düzeyindeki ülke farkı temkinle yorumlanmalıdır. Eşleşme yalnızca başlık ve URL üzerinden yapıldığından konuyu metin içinde işleyen ancak başlığında anahtar sözcük bulunmayan haberler kapsam dışında kalmıştır. Duyarlılık sınamaları Almanca haberlerle ve kısa bir dönemle sınırlıdır ve ikinci havuzdaki ilgili haber sayısı küçüktür (n = 8).
 
 Kodlamaların tamamı yapay zekâ destekli tek bir kodlayıcı tarafından yapılmıştır ve kodlayıcılar arası güvenirlik henüz hesaplanmamıştır. Yazarın yapay zekâ etiketlerini görmeden kodladığı bağımsız bir ikinci kodlama ile uyum katsayısının raporlanması, sonuçların kesinleşmesi için gereklidir. Son olarak çalışma erişim, maruziyet, etkileşim ya da etki ölçmemektedir. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir takipçi kitlesi bildirmektedir (Nimmo ve Agranovich, 2022); bulgular bu nedenle altyapı ve görünürlük düzeyinde yorumlanmalıdır.
 
 # 8. Sonuç
 
-Doppelgänger’in 2022’de ifşa edilen altyapısı Almanya’ya yoğunlaşmış, ancak çoğunlukla tanınmış markaların değil, uydurma “bağımsız” yayınların adlarından oluşmuştur; bu adlar harf karışımı yazımlarla yeni genel uzantılarda çoğaltılmıştır. İfşa, iki gün süren ve mutlak hacmi ABD’deki ajans dağıtımıyla büyüyen bir haber olayı olarak görünür olmuştur. Aktif yayın kuruluşlarına oranlandığında ise ifşayı haberleştiren kuruluş payı hedeflenen ülkede, yani Almanya’da, ABD’dekinden belirgin biçimde yüksektir. Bulgular, hibrit müdahalenin bilgi boyutunu iki ölçülebilir ize bağlamaktadır: operasyonun bıraktığı ve büyük ölçüde uydurma bir yayıncılık kimliğine dayanan altyapı ile ifşanın haber coğrafyası. Coğrafi sonucun hangi sayım düzeyinin seçildiğine bağlı olması, benzer çalışmalarda haber, yayın kuruluşu ve başlık düzeylerinin birlikte raporlanmasını gerekli kılmaktadır.
+Doppelgänger’in 2022’de ifşa edilen altyapısı Almanya’ya yoğunlaşmış, ancak çoğunlukla tanınmış markaların değil, uydurma “bağımsız” yayınların adlarından oluşmuştur; bu adlar harf karışımı yazımlarla yeni genel uzantılarda çoğaltılmıştır. İfşa, iki gün süren ve mutlak hacmi ABD’deki ajans dağıtımıyla büyüyen bir haber olayı olarak görünür olmuştur. Aktif yayın kuruluşlarına oranlandığında ise ifşayı haberleştiren kuruluş payı hedeflenen ülkede, yani Almanya’da, ABD’dekinden yüksektir; Alman kuruluşlarının ortalamada daha büyük olması bu farkın bir kısmını açıklasa da ifşanın hedef ülkenin medyasında sınırlı kalmadığı açıktır. Bulgular, hibrit müdahalenin bilgi boyutunu iki ölçülebilir ize bağlamaktadır: operasyonun bıraktığı ve büyük ölçüde uydurma bir yayıncılık kimliğine dayanan altyapı ile ifşanın haber coğrafyası. Coğrafi sonucun hangi sayım düzeyinin seçildiğine bağlı olması, benzer çalışmalarda haber, yayın kuruluşu ve başlık düzeylerinin birlikte raporlanmasını gerekli kılmaktadır.
 
 Sonraki çalışmalar için dört adım öne çıkmaktadır: 145 tekil başlığın yazar tarafından kör biçimde yeniden kodlanması ve uyum katsayısının raporlanması; duyarlılık sınamasının Fransızca, İtalyanca ve İngilizce akışlara genişletilmesi; alan adlarının kayıt tarihleri ve barındırma verileriyle harf karışımı ailelerinin zamanlamasının incelenmesi; AB Dijital Hizmetler Yasası’nın 40. maddesi kapsamındaki veri erişimi ve web izleme panelleri aracılığıyla bu adreslerle gerçek okurların ne ölçüde karşılaştığının ölçülmesi.
 
@@ -187,50 +187,8 @@ Analizde kullanılan veriler ve kodlar https://github.com/erdemkulaclii/SUNUM ad
 
 # Yapay Zekâ Kullanım Beyanı
 
-Çalışmanın hazırlanmasında bir yapay zekâ asistanından (Anthropic Claude) yararlanılmıştır. Asistan veri toplama ve analiz kodlarının yazılmasında, isabet ve duyarlılık kodlamalarının tamamında, literatür taramasında ve metnin taslağında kullanılmıştır. Kodlar ve sayılar otomatik testlerle ham verilere karşı denetlenmiş, kaynakların künyeleri yayıncı ve depo kayıtlarıyla karşılaştırılmıştır. Kodlamalar yazar tarafından bağımsız olarak doğrulanmamıştır (bkz. Bölüm 7). Bulguların yorumu ve metnin son hâli yazarın sorumluluğundadır.
+Çalışmanın hazırlanmasında bir yapay zekâ asistanından (Anthropic Claude) yararlanılmıştır. Asistan veri toplama ve analiz kodlarının yazılmasında, isabet ve duyarlılık kodlamalarının tamamında, literatür taramasında, metnin taslağında ve hakem tarzı eleştirilere göre yapılan revizyonlarda kullanılmıştır. Kodlar ve sayılar otomatik testlerle ham verilere karşı denetlenmiş, kaynakların künyeleri yayıncı ve depo kayıtlarıyla karşılaştırılmıştır. Kodlamalar yazar tarafından bağımsız olarak doğrulanmamıştır (bkz. Bölüm 7). Bulguların yorumu ve metnin son hâli yazarın sorumluluğundadır.
 
-# Ek A. Bütün yayın ülkelerinde eşleşen haberler
-
-<!-- EK-A -->
-| Yayın ülkesi | Haber | Yayın kuruluşu | Taranan kayıt | 100.000 kayıt başına (%95 GA) |
-|---|---:|---:|---:|---|
-| ABD | 373 | 230 | 1.469.262 | 25,39 (22,88–28,10) |
-| Almanya | 29 | 29 | 188.558 | 15,38 (10,30–22,09) |
-| İtalya | 13 | 9 | 240.258 | 5,41 (2,88–9,25) |
-| Hindistan | 9 | 7 | 205.227 | 4,39 (2,01–8,32) |
-| Çin | 8 | 4 | 265.695 | 3,01 (1,30–5,93) |
-| Rusya | 6 | 4 | 207.379 | 2,89 (1,06–6,30) |
-| Birleşik Krallık | 6 | 6 | 293.147 | 2,05 (0,75–4,45) |
-| Kanada | 5 | 4 | 69.065 | 7,24 (2,35–16,89) |
-| Bulgaristan | 5 | 5 | 54.817 | 9,12 (2,96–21,29) |
-| Romanya | 4 | 4 | 66.349 | 6,03 (1,64–15,44) |
-| Fransa | 4 | 4 | 145.528 | 2,75 (0,75–7,04) |
-| Brezilya | 4 | 3 | 126.033 | 3,17 (0,86–8,13) |
-| Slovakya | 3 | 3 | 14.634 | 20,50 (4,23–59,91) |
-| Portekiz | 3 | 3 | 29.091 | 10,31 (2,13–30,14) |
-| Avusturya | 3 | 3 | 43.545 | 6,89 (1,42–20,13) |
-| Arnavutluk | 3 | 2 | 11.222 | 26,73 (5,51–78,13) |
-| Pakistan | 2 | 2 | 27.675 | 7,23 (0,88–26,11) |
-| Yeni Zelanda | 2 | 2 | 13.575 | 14,73 (1,78–53,22) |
-| Meksika | 2 | 2 | 111.189 | 1,80 (0,22–6,50) |
-| Ukrayna | 2 | 2 | 109.473 | 1,83 (0,22–6,60) |
-| Polonya | 2 | 2 | 44.726 | 4,47 (0,54–16,15) |
-| Japonya | 1 | 1 | 42.417 | 2,36 (0,06–13,14) |
-| Suriye | 1 | 1 | 16.737 | 5,97 (0,15–33,29) |
-| Kolombiya | 1 | 1 | 20.964 | 4,77 (0,12–26,58) |
-| İspanya | 1 | 1 | 133.752 | 0,75 (0,02–4,17) |
-| Norveç | 1 | 1 | 10.298 | 9,71 (0,25–54,10) |
-| İsviçre | 1 | 1 | 27.686 | 3,61 (0,09–20,12) |
-| Filipinler | 1 | 1 | 15.649 | 6,39 (0,16–35,60) |
-| Endonezya | 1 | 1 | 103.500 | 0,97 (0,02–5,38) |
-| Kamboçya | 1 | 1 | 4.067 | 24,59 (0,62–137,00) |
-| Litvanya | 1 | 1 | 29.071 | 3,44 (0,09–19,17) |
-| Hollanda | 1 | 1 | 45.954 | 2,18 (0,06–12,12) |
-| Gana | 1 | 1 | 9.395 | 10,64 (0,27–59,30) |
-| Ermenistan | 1 | 1 | 20.333 | 4,92 (0,12–27,40) |
-| Fildişi Sahili | 1 | 1 | 1.737 | 57,57 (1,46–320,76) |
-| Kenya | 1 | 1 | 4.783 | 20,91 (0,53–116,49) |
-<!-- /EK-A -->
 
 # Kaynakça
 
@@ -246,7 +204,7 @@ Bennett, W. L., & Livingston, S. (2018). The disinformation order: Disruptive co
 
 Caliskan, M. (2019). Hybrid warfare through the lens of strategic theory. *Defense & Security Analysis, 35*(1), 40–58. https://doi.org/10.1080/14751798.2019.1565364
 
-Council of the European Union. (2023, July 28). *Council Implementing Regulation (EU) 2023/1563 implementing Regulation (EU) No 269/2014 concerning restrictive measures in respect of actions undermining or threatening the territorial integrity, sovereignty and independence of Ukraine*. Official Journal of the European Union.
+Council of the European Union. (2023, July 28). *Information manipulation in Russia’s war of aggression against Ukraine: EU lists seven individuals and five entities* [Press release]. https://www.eeas.europa.eu/delegations/ukraine/information-manipulation-russia%E2%80%99s-war-aggression-against-ukraine-eu-lists-seven-individuals-and-five_en
 
 Eady, G., Paskhalis, T., Zilinsky, J., Bonneau, R., Nagler, J., & Tucker, J. A. (2023). Exposure to the Russian Internet Research Agency foreign influence campaign on Twitter in the 2016 US election and its relationship to attitudes and voting behavior. *Nature Communications, 14*, Article 62. https://doi.org/10.1038/s41467-022-35576-9
 
@@ -294,7 +252,7 @@ Nemeth, W. J. (2002). *Future war and Chechnya: A case for hybrid warfare* [Mast
 
 Nimmo, B., & Agranovich, D. (2022, September 27). *Removing coordinated inauthentic behavior from China and Russia*. Meta. https://about.fb.com/news/2022/09/removing-coordinated-inauthentic-behavior-from-china-and-russia/
 
-Özdemir, Ş., & Eminoğlu, A. (2022). Yeni nesil savaş: Rusya’nın Donbas’ta uyguladığı hibrit savaş yöntemi. *Hitit Sosyal Bilimler Dergisi*. https://doi.org/10.17218/hititsbd.1066684
+Özdemir, Ş., & Eminoğlu, A. (2022). Yeni nesil savaş: Rusya’nın Donbas’ta uyguladığı hibrit savaş yöntemi. *Hitit Sosyal Bilimler Dergisi, 15*(1), 67–84. https://doi.org/10.17218/hititsbd.1066684
 
 Pamment, J., & Tsurtsumia, D. (2025). *Beyond Operation Doppelgänger: A capability assessment of the Social Design Agency*. Psychological Defence Research Institute, Lund University; Swedish Psychological Defence Agency. https://www.psychologicaldefence.lu.se/article/beyond-operation-doppelganger-capability-assessment-social-design-agency
 
@@ -321,3 +279,46 @@ Wardle, C., & Derakhshan, H. (2017). *Information disorder: Toward an interdisci
 Watanabe, K. (2017). Measuring news bias: Russia’s official news agency ITAR-TASS’ coverage of the Ukraine crisis. *European Journal of Communication, 32*(3), 224–241. https://doi.org/10.1177/0267323117695735
 
 Wigell, M. (2019). Hybrid interference as a wedge strategy: A theory of external interference in liberal democracy. *International Affairs, 95*(2), 255–275. https://doi.org/10.1093/ia/iiz018
+
+# Ek A. Bütün yayın ülkelerinde eşleşen haberler
+
+<!-- EK-A -->
+| Yayın ülkesi | Haber | Yayın kuruluşu | Taranan kayıt | 100.000 kayıt başına (%95 GA) |
+|----------------|-------:|----------:|------------:|------------------------|
+| ABD | 373 | 230 | 1.469.262 | 25,39 (22,88–28,10) |
+| Almanya | 29 | 29 | 188.558 | 15,38 (10,30–22,09) |
+| İtalya | 13 | 9 | 240.258 | 5,41 (2,88–9,25) |
+| Hindistan | 9 | 7 | 205.227 | 4,39 (2,01–8,32) |
+| Çin | 8 | 4 | 265.695 | 3,01 (1,30–5,93) |
+| Rusya | 6 | 4 | 207.379 | 2,89 (1,06–6,30) |
+| Birleşik Krallık | 6 | 6 | 293.147 | 2,05 (0,75–4,45) |
+| Kanada | 5 | 4 | 69.065 | 7,24 (2,35–16,89) |
+| Bulgaristan | 5 | 5 | 54.817 | 9,12 (2,96–21,29) |
+| Romanya | 4 | 4 | 66.349 | 6,03 (1,64–15,44) |
+| Fransa | 4 | 4 | 145.528 | 2,75 (0,75–7,04) |
+| Brezilya | 4 | 3 | 126.033 | 3,17 (0,86–8,13) |
+| Slovakya | 3 | 3 | 14.634 | 20,50 (4,23–59,91) |
+| Portekiz | 3 | 3 | 29.091 | 10,31 (2,13–30,14) |
+| Avusturya | 3 | 3 | 43.545 | 6,89 (1,42–20,13) |
+| Arnavutluk | 3 | 2 | 11.222 | 26,73 (5,51–78,13) |
+| Pakistan | 2 | 2 | 27.675 | 7,23 (0,88–26,11) |
+| Yeni Zelanda | 2 | 2 | 13.575 | 14,73 (1,78–53,22) |
+| Meksika | 2 | 2 | 111.189 | 1,80 (0,22–6,50) |
+| Ukrayna | 2 | 2 | 109.473 | 1,83 (0,22–6,60) |
+| Polonya | 2 | 2 | 44.726 | 4,47 (0,54–16,15) |
+| Japonya | 1 | 1 | 42.417 | 2,36 (0,06–13,14) |
+| Suriye | 1 | 1 | 16.737 | 5,97 (0,15–33,29) |
+| Kolombiya | 1 | 1 | 20.964 | 4,77 (0,12–26,58) |
+| İspanya | 1 | 1 | 133.752 | 0,75 (0,02–4,17) |
+| Norveç | 1 | 1 | 10.298 | 9,71 (0,25–54,10) |
+| İsviçre | 1 | 1 | 27.686 | 3,61 (0,09–20,12) |
+| Filipinler | 1 | 1 | 15.649 | 6,39 (0,16–35,60) |
+| Endonezya | 1 | 1 | 103.500 | 0,97 (0,02–5,38) |
+| Kamboçya | 1 | 1 | 4.067 | 24,59 (0,62–137,00) |
+| Litvanya | 1 | 1 | 29.071 | 3,44 (0,09–19,17) |
+| Hollanda | 1 | 1 | 45.954 | 2,18 (0,06–12,12) |
+| Gana | 1 | 1 | 9.395 | 10,64 (0,27–59,30) |
+| Ermenistan | 1 | 1 | 20.333 | 4,92 (0,12–27,40) |
+| Fildişi Sahili | 1 | 1 | 1.737 | 57,57 (1,46–320,76) |
+| Kenya | 1 | 1 | 4.783 | 20,91 (0,53–116,49) |
+<!-- /EK-A -->

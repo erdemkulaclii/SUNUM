@@ -10,6 +10,8 @@ import makale_istatistikleri as mi
 R = Path(__file__).resolve().parents[1]
 TEXT = (R / 'makale/makale.md').read_text()
 BODY, REFS = TEXT.split('# Kaynakça', 1)
+REFS, APPENDIX = REFS.split('# Ek A', 1)
+BODY = BODY + '\n# Ek A' + APPENDIX
 BODY = BODY.split('# Özet', 1)[1]
 SUF = r'(?:’[a-zçğıöşü]+)?'
 
@@ -64,6 +66,8 @@ class ArticleNumbers(unittest.TestCase):
                f"%{tr(g['mention_share_pct']['GM'])}SUFFIX Almanya’yı", f"%{tr(g['mention_share_pct']['FR'])}SUFFIX Fransa’yı", f"%{tr(g['mention_share_pct']['UK'])}SUFFIX Birleşik Krallık’ı",
                f"{g['mentions']['FR']} haberin {g['fr_it_both']}SUFFIX (%{tr(g['fr_it_both_share_of_fr'])})",
                f"ağırlıklandırılmış isabet %{tr(g['precision_weighted_pct'])}SUFFIX",
+               f"{tr(g['outlet_ratio_de_us'], 2)} kat daha yüksektir (%95 GA {tr(g['outlet_ratio_de_us_ci95'][0], 2)}–{tr(g['outlet_ratio_de_us_ci95'][1], 2)})",
+               f"ortalama {g['records_per_outlet']['United States']}SUFFIX, Almanya’daki bir kuruluş ise ortalama {g['records_per_outlet']['Germany']} kayıt", f"(oran {tr(g['records_per_outlet_ratio_de_us'], 2)})",
                f"{cen['titles_relevant']} başlık ilgili", f"%{tr(cen['title_precision'] * 100)} (Wilson %95 GA {tr(cen['title_wilson95'][0] * 100)}–{tr(cen['title_wilson95'][1] * 100)})",
                f"haber düzeyinde isabet %{tr(cen['article_precision'] * 100)}",
                f"{rec['nearmiss_pool']} kaydın yalnızca {['', 'biri'][rec['nearmiss_relevant']]}", f"havuzda {rec['loose_pool']} kayıt", f"bunların sekizi ifşa haberi",

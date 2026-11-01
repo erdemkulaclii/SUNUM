@@ -423,6 +423,16 @@
    0.28,
    0.59
   ],
+  "outlet_ratio_de_us": 2.47,
+  "outlet_ratio_de_us_ci95": [
+   1.7,
+   3.57
+  ],
+  "records_per_outlet": {
+   "United States": 217,
+   "Germany": 543
+  },
+  "records_per_outlet_ratio_de_us": 2.51,
   "title_ratio_us_de_raw": 4.85,
   "all_countries": [
    {
@@ -835,7 +845,7 @@
   ],
   "fr_it_both": 288,
   "fr_it_both_share_of_fr": 98.6,
-  "precision_weighted_pct": 93.1,
+  "precision_weighted_pct": 93.2,
   "pre_disclosure": [
    {
     "date": "20220921104500",
