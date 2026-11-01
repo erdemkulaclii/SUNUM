@@ -9,7 +9,7 @@
   "end": "2022-10-11",
   "note": "Ham GKG dosyaları GDELT masterfilelist MD5 değerleriyle doğrulandı."
  },
- "retrieved_at": "2026-10-31T08:33:29+00:00",
+ "retrieved_at": "2026-11-01T12:51:27+00:00",
  "origin": "gkg_raw_archive",
  "archive": {
   "files": 4209,
@@ -5496,7 +5496,7 @@
  },
  "locations": {
   "provider": "GDELT GKG 2.0 V2Locations (aynı eşleşen makaleler)",
-  "retrieved_at": "2026-10-31T08:33:29+00:00",
+  "retrieved_at": "2026-11-01T12:51:27+00:00",
   "rows": [
    {
     "articles": 495,
@@ -5980,11 +5980,11 @@
    },
    {
     "articles": 1,
-    "name": "Polish",
-    "country_code": "PL",
-    "lat": 52.0,
-    "lon": 20.0,
-    "location_type": "1"
+    "name": "Petersburg, Sankt-Peterburg, Russia",
+    "country_code": "RS",
+    "lat": 59.8944,
+    "lon": 30.2642,
+    "location_type": "4"
    },
    {
     "articles": 1,
@@ -5996,11 +5996,11 @@
    },
    {
     "articles": 1,
-    "name": "Petersburg, Sankt-Peterburg, Russia",
-    "country_code": "RS",
-    "lat": 59.8944,
-    "lon": 30.2642,
-    "location_type": "4"
+    "name": "Polish",
+    "country_code": "PL",
+    "lat": 52.0,
+    "lon": 20.0,
+    "location_type": "1"
    },
    {
     "articles": 1,
@@ -6052,14 +6052,6 @@
    },
    {
     "articles": 1,
-    "name": "India",
-    "country_code": "IN",
-    "lat": 20.0,
-    "lon": 77.0,
-    "location_type": "1"
-   },
-   {
-    "articles": 1,
     "name": "London, London, City Of, United Kingdom",
     "country_code": "UK",
     "lat": 51.5,
@@ -6068,11 +6060,27 @@
    },
    {
     "articles": 1,
-    "name": "Norway",
-    "country_code": "NO",
-    "lat": 62.0,
-    "lon": 10.0,
+    "name": "India",
+    "country_code": "IN",
+    "lat": 20.0,
+    "lon": 77.0,
     "location_type": "1"
+   },
+   {
+    "articles": 1,
+    "name": "Poland",
+    "country_code": "PL",
+    "lat": 52.0,
+    "lon": 20.0,
+    "location_type": "1"
+   },
+   {
+    "articles": 1,
+    "name": "Virolahti, Kymenlaakso Region, Finland",
+    "country_code": "FI",
+    "lat": 60.5167,
+    "lon": 27.6831,
+    "location_type": "4"
    },
    {
     "articles": 1,
@@ -6092,14 +6100,6 @@
    },
    {
     "articles": 1,
-    "name": "Lithuania",
-    "country_code": "LH",
-    "lat": 56.0,
-    "lon": 24.0,
-    "location_type": "1"
-   },
-   {
-    "articles": 1,
     "name": "Vaalimaa, Kymenlaakso Region, Finland",
     "country_code": "FI",
     "lat": 60.5833,
@@ -6108,11 +6108,11 @@
    },
    {
     "articles": 1,
-    "name": "Virolahti, Kymenlaakso Region, Finland",
-    "country_code": "FI",
-    "lat": 60.5167,
-    "lon": 27.6831,
-    "location_type": "4"
+    "name": "Norway",
+    "country_code": "NO",
+    "lat": 62.0,
+    "lon": 10.0,
+    "location_type": "1"
    },
    {
     "articles": 1,
@@ -6124,10 +6124,10 @@
    },
    {
     "articles": 1,
-    "name": "Poland",
-    "country_code": "PL",
-    "lat": 52.0,
-    "lon": 20.0,
+    "name": "Lithuania",
+    "country_code": "LH",
+    "lat": 56.0,
+    "lon": 24.0,
     "location_type": "1"
    },
    {

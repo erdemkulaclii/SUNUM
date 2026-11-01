@@ -15,15 +15,15 @@
     34,
     34,
     25,
-    33,
+    34,
     22,
     29,
     24,
     30,
-    33,
+    29,
     25,
     21,
-    27,
+    31,
     34,
     11
   ],
@@ -35,6 +35,6 @@
   "gdelt_snapshot_embedded": true,
   "synthetic_GDELT_observations": false,
   "desktop_PowerPoint_render_verified": false,
-  "pptx_sha256": "12f7ee7ade0b7c7911171b18f6655dd1290b21c92301b4726edd2ae9b3e6c8ec",
-  "pdf_sha256": "b4e866fc3ffbe421074e25528539a746c36f572b43c4e68988c951b48a176d88"
+  "pptx_sha256": "68f08f5ba86ec13275276e3e1eddd76a6f8906c68b1b7de9bd20c578b6c37276",
+  "pdf_sha256": "3c1f4637583f8cd5b8142a7901cf285d73e8f2a309ae7582949f99507af690b9"
 }

@@ -129,6 +129,59 @@ def main() -> dict:
         'mean_tone': rnd(sum(tones) / len(tones), 2), 'tone_n': len(tones),
         'validation': val['by_rule'],
     }
+    # --- three counting levels; outlet level uses active outlets (distinct domains) as denominator ---
+    act = tot.get('active_domains_per_source_country', {})
+    levels = {}
+    for c in ['United States', 'Germany', 'Italy']:
+        o, A_ = outlets[c], act.get(c)
+        lv = {'articles': rates[c]['articles'], 'articles_per100k': rates[c]['per100k'], 'outlets': o, 'active_outlets': A_, 'titles': titles_c[c]}
+        if A_:
+            lo, hi = gv.wilson(o, A_)
+            lv.update(outlet_share_per1000=rnd(o / A_ * 1000, 2), outlet_share_ci95=[rnd(lo * 1000, 2), rnd(hi * 1000, 2)])
+        levels[c] = lv
+    gd['levels'] = levels
+    if act.get('United States') and act.get('Germany'):
+        pu, pd_ = outlets['United States'] / act['United States'], outlets['Germany'] / act['Germany']
+        se_o = math.sqrt(1 / outlets['United States'] - 1 / act['United States'] + 1 / outlets['Germany'] - 1 / act['Germany'])
+        gd['outlet_ratio_us_de'] = rnd(pu / pd_, 2)
+        gd['outlet_ratio_ci95'] = [rnd(math.exp(math.log(pu / pd_) - 1.96 * se_o), 2), rnd(math.exp(math.log(pu / pd_) + 1.96 * se_o), 2)]
+    gd['title_ratio_us_de_raw'] = rnd(titles_c['United States'] / titles_c['Germany'], 2)
+    # all source countries (appendix table): articles, outlets, scanned records, per-100k with exact CI
+    allc = []
+    for c, k in by_country.most_common():
+        if c == 'eşleşmedi':
+            continue
+        d = den.get(c, 0)
+        lo, hi = poisson_ci(k)
+        allc.append({'country': c, 'articles': k, 'outlets': len({h['domain'] for h in hits if h['sourcecountry'] == c}), 'scanned': d,
+                     'per100k': rnd(k / d * 1e5, 2) if d else None, 'ci95': [rnd(lo / d * 1e5, 2), rnd(hi / d * 1e5, 2)] if d else None})
+    gd['all_countries'] = allc
+    ranked = sorted([x for x in allc if x['articles'] >= 5], key=lambda x: -x['per100k'])
+    gd['rank_per100k_min5'] = [x['country'] for x in ranked]
+    # FR and IT mentioned together
+    gd['fr_it_both'] = sum(any(l['country_code'] == 'FR' for l in h['locations']) and any(l['country_code'] == 'IT' for l in h['locations']) for h in hits)
+    gd['fr_it_both_share_of_fr'] = rnd(gd['fr_it_both'] / mention['FR'] * 100)
+    # per-rule precision from the random sample and population-weighted precision
+    vr = val['by_rule']
+    w = sum(vr[r]['precision'] * gd['rules'].get(r, 0) for r in vr if r != 'all') / n
+    gd['precision_weighted_pct'] = rnd(w * 100)
+    # pre-disclosure article
+    pre = [h for h in hits if h['day'] < '20220927']
+    gd['pre_disclosure'] = [{'date': h['date'], 'domain': h['domain'], 'title': h['title'], 'language': h['language']} for h in pre]
+    # census coding and recall checks
+    cen = json.loads((R / 'output/KODLAMA_SONUCLARI.json').read_text())
+    gd['census'] = cen['census']; gd['recall'] = cen['recall']
+    # typology sensitivity: Damerau-Levenshtein threshold 1 instead of min(2, (len-1)//2)
+    alt = {'marka_birebir': 0, 'marka_varyant': 0, 'sahte_yayin': 0}
+    for r in a['records']:
+        lab = r['first_dns_label']
+        if lab in dt.OUTLETS:
+            alt['marka_birebir'] += 1
+        elif min(dt.dl(lab, o) for o in dt.OUTLETS) <= 1:
+            alt['marka_varyant'] += 1
+        else:
+            alt['sahte_yayin'] += 1
+    meta['typology_threshold1'] = alt
     out = {'meta': meta, 'gdelt': gd}
     (R / 'output/MAKALE_SAYILARI.json').write_text(json.dumps(out, ensure_ascii=False, indent=1))
     return out

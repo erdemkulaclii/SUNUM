@@ -1,0 +1,39 @@
+{
+ "census": {
+  "titles": 145,
+  "titles_relevant": 133,
+  "title_precision": 0.917,
+  "title_wilson95": [
+   0.861,
+   0.952
+  ],
+  "articles": 511,
+  "articles_relevant": 495,
+  "article_precision": 0.969,
+  "by_rule": {
+   "R1_campaign": {
+    "articles": 2,
+    "relevant": 1
+   },
+   "R2_takedown": {
+    "articles": 509,
+    "relevant": 494
+   }
+  },
+  "human_coded": 0
+ },
+ "recall": {
+  "nearmiss_pool": 270,
+  "nearmiss_relevant": 1,
+  "loose_pool": 77,
+  "loose_relevant": 8,
+  "loose_relevant_caught": 7,
+  "loose_recall": 0.875,
+  "loose_recall_wilson95": [
+   0.529,
+   0.978
+  ],
+  "loose_relevant_germany_source": 3,
+  "loose_relevant_germany_source_caught": 3
+ }
+}

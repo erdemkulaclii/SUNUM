@@ -36,7 +36,7 @@ class ParseTests(unittest.TestCase):
             gkg_line(gid='20220927120000-2', url='https://example.invalid/b', domain='unknown.invalid', title='Weather today'),
         ])
         rows = list(g.parse_rows(text, 'eng', {'spiegel.de': 'Germany'}))
-        self.assertEqual([(d, c) for d, c, _ in rows], [('20220927', 'Germany'), ('20220927', '')])
+        self.assertEqual([(d, c) for d, c, _, _ in rows], [('20220927', 'Germany'), ('20220927', '')])
         hit = rows[0][2]
         self.assertEqual(hit['rule'], 'R2_takedown')
         self.assertEqual(hit['tone'], -3.5)
@@ -60,7 +60,7 @@ class ParseTests(unittest.TestCase):
             z.writestr('x.gkg.csv', gkg_line(title='Meta removes Russian fake network'))
         blob = buf.getvalue()
         good = {'url': 'u', 'stream': 'eng', 'md5': hashlib.md5(blob).hexdigest(), 'size': len(blob)}
-        info, per_day, per_country, hits = g.process(good, {}, transport=lambda url: blob)
+        info, per_day, per_country, hits, domains = g.process(good, {}, transport=lambda url: blob)
         self.assertTrue(info['md5_verified'])
         self.assertEqual(len(hits), 1)
         with self.assertRaises(ValueError):

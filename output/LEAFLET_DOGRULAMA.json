@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-11-01T12:05:02.542598+00:00",
-  "html_sha256": "188a3823ff2bfd40fa38ceef573553c81b8f4fb023814a531a19732d4027ef50",
-  "narrative_sha256": "eed842135cc2b6bdfcf372a2ca7b4d6dcf48a7799d73d84ec72754ba103359c9",
+  "checked_at_utc": "2026-11-01T12:59:09.077256+00:00",
+  "html_sha256": "a679efdbc50c8b59d68f9de50a799039bf17d34082d797972bddab55692b319f",
+  "narrative_sha256": "c8f96762ab15fb46b5d4587903e29f4e9564fb60590d03a0e399d2424a083e43",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
@@ -15,15 +15,15 @@
     34,
     34,
     25,
-    33,
+    34,
     22,
     29,
     24,
     30,
-    33,
+    29,
     25,
     21,
-    27,
+    31,
     34,
     11
   ],
@@ -175,7 +175,7 @@
         },
         {
           "scene": 14,
-          "title": "Almanya hakkında, ama Almanya’da değil",
+          "title": "Hacim ABD’de, kuruluş yoğunluğu Almanya’da",
           "prose_fonts_px": [
             20,
             24.8,
@@ -371,7 +371,7 @@
         },
         {
           "scene": 14,
-          "title": "Almanya hakkında, ama Almanya’da değil",
+          "title": "Hacim ABD’de, kuruluş yoğunluğu Almanya’da",
           "prose_fonts_px": [
             18,
             19.84,

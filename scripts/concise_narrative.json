@@ -298,26 +298,44 @@
   "display_points": [
    "4.209 / 4.209 dosya MD5 ile doğrulandı",
    "5.944.850 kayıt tarandı; 511 tekil haber",
-   "Örneklem isabeti: %90,6 (n = 32)"
+   "Başlık sayımı isabeti %91,7; Almanca duyarlılık 7/8"
   ],
   "takeaway": "Aynı komut, aynı dosyalarla aynı sayıları üretir.",
-  "notes": "Her arşiv dosyası, GDELT’in yayımladığı MD5 özetiyle karşılaştırıldı; 4.209 dosyanın hepsi eşleşti.\nToplam 5.944.850 haber kaydı tarandı ve 511 tekil haber kurallarla eşleşti.\nSabit tohumlu rastgele 32 başlıkta isabet yüzde 90,6; yüzde 95 güven aralığı 76 ile 97 arasında.\nYanlış pozitifler kayıtlı; örneğin Putin’in dublörleri haberi. İkinci kodlayıcı için sütun açık.",
+  "notes": "Her arşiv dosyası, GDELT’in yayımladığı MD5 özetiyle karşılaştırıldı; 4.209 dosyanın hepsi eşleşti.\nToplam 5.944.850 haber kaydı tarandı ve 511 tekil haber kurallarla eşleşti.\n145 tekil başlığın tamamını kodladım: isabet yüzde 91,7; kurallardan bağımsız Almanca taramada 8 ifşa haberinin 7’si zaten yakalanmış.\nYanlış pozitifler kayıtlı; örneğin Putin’in dublörleri haberi. İkinci kodlayıcı için sütun açık.",
   "cue_sentences": [
    "Her arşiv dosyası, GDELT’in yayımladığı MD5 özetiyle karşılaştırıldı; 4.209 dosyanın hepsi eşleşti.",
    "Toplam 5.944.850 haber kaydı tarandı ve 511 tekil haber kurallarla eşleşti.",
-   "Sabit tohumlu rastgele 32 başlıkta isabet yüzde 90,6; yüzde 95 güven aralığı 76 ile 97 arasında.",
+   "145 tekil başlığın tamamını kodladım: isabet yüzde 91,7; kurallardan bağımsız Almanca taramada 8 ifşa haberinin 7’si zaten yakalanmış.",
    "Yanlış pozitifler kayıtlı; örneğin Putin’in dublörleri haberi. İkinci kodlayıcı için sütun açık."
   ],
-  "full_notes": "GDELT verisinin güvenilirliğini üç testle gösteriyorum. Birincisi bütünlük: indirdiğim 4.209 ham dosyanın her birini GDELT’in kendi yayımladığı MD5 özetiyle karşılaştırdım; hepsi eşleşti, hiçbir dosya düşmedi. İkincisi kapsam ve payda: 5.944.850 haber kaydı tarandı; eşleşen 511 tekil haberi, aynı gün ve aynı ülkedeki bütün kayıtlara oranlayabiliyorum. Üçüncüsü isabet: Wang ve arkadaşlarının uyardığı gibi otomatik kodlamaya körü körüne güvenmemek için sabit tohumla rastgele 32 başlık çektim ve tek tek kodladım. 29’u gerçekten Meta’nın kaldırma haberi ya da kampanya haberiydi; isabet yüzde 90,6, Wilson yüzde 95 güven aralığı 76 ile 97 arası. Yanlış pozitifleri, örneğin Putin’in dublörleri haberini, kayıtta tutuyorum. Birinci kodlama yapay zekâ destekli bir ön kodlamadır; ikinci insan kodlayıcı için sütun hazır ve uyum katsayısı otomatik hesaplanıyor. Bütün süreç tek komutla yeniden üretilebiliyor ve birim testleriyle korunuyor.",
+  "full_notes": "GDELT verisinin güvenilirliğini üç testle gösteriyorum. Birincisi bütünlük: indirdiğim 4.209 ham dosyanın her birini GDELT’in kendi yayımladığı MD5 özetiyle karşılaştırdım; hepsi eşleşti, hiçbir dosya düşmedi. İkincisi kapsam ve payda: 5.944.850 haber kaydı tarandı; eşleşen 511 tekil haberi, aynı gün ve aynı ülkedeki bütün kayıtlara oranlayabiliyorum. Üçüncüsü isabet ve duyarlılık: Wang ve arkadaşlarının uyardığı gibi otomatik eşleşmeye körü körüne güvenmemek için 145 tekil başlığın tamamını kodladım; 133’ü ilgili, isabet yüzde 91,7. Kuralların Almanca haberleri kaçırıp kaçırmadığını da ayrı bir gevşek taramayla sınadım; bulunan 8 ifşa haberinin 7’si zaten yakalanmıştı. Yanlış pozitifleri, örneğin Putin’in dublörleri haberini, kayıtta tutuyorum. Birinci kodlama yapay zekâ destekli bir ön kodlamadır; ikinci insan kodlayıcı için sütun hazır ve uyum katsayısı otomatik hesaplanıyor. Bütün süreç tek komutla yeniden üretilebiliyor ve birim testleriyle korunuyor.",
   "seconds": 60,
-  "visual": "validity",
+  "visual": "steps",
   "citations": [
    "gdeltgkg",
    "wang2016",
    "hammond2014"
   ],
   "source": "The GDELT Project, 2015; Wang et al., 2016; Hammond & Weidmann, 2014",
-  "visible_word_count": 33
+  "visible_word_count": 34,
+  "steps": [
+   [
+    "MD5 ve payda",
+    "4.209 / 4.209 dosya GDELT özetiyle eşleşti · 5.944.850 kayıt · gün, ülke ve kuruluş paydaları"
+   ],
+   [
+    "İsabet",
+    "145 başlığın tamamı: 133 ilgili, %91,7 (GA 86,1–95,2)"
+   ],
+   [
+    "Duyarlılık",
+    "Bağımsız gevşek Almanca tarama: 8 ifşa haberinin 7’si yakalandı"
+   ],
+   [
+    "Yeniden üretim",
+    "Tek komut + birim testleri; insan kodlama formu hazır"
+   ]
+  ]
  },
  {
   "id": "countries",
@@ -451,22 +469,22 @@
  },
  {
   "id": "gdelt_map",
-  "title": "Almanya hakkında, ama Almanya’da değil",
+  "title": "Hacim ABD’de, kuruluş yoğunluğu Almanya’da",
   "kicker": "BULGU 5 / AS3 · MEKÂN",
   "display_points": [
-   "Yayın ülkesi: ABD 373, Almanya 29, İtalya 13",
-   "100 bin kayıt başına: ABD 25,4; Almanya 15,4",
-   "Haberlerin %63,6’sı Almanya’yı anıyor"
+   "Haber: ABD 373, Almanya 29 (ajans tekrarı)",
+   "Aktif kuruluş başına: Almanya binde 83,6; ABD 33,9",
+   "Alman kuruluşlarında oran 2,4 kat"
   ],
-  "takeaway": "Hipotez: hedef kamuoyu ifşayı en az gören olabilir.",
-  "notes": "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.\nMeta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.\nTaranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.\nNoktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor. Bu bir hipotezdir: Almanca akışta kaçırılan haber oranı ölçülmeden kanıt sayılmaz.",
+  "takeaway": "Sonuç, sayım düzeyine bağlıdır.",
+  "notes": "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.\nHaber sayısında ABD önde: 373’e 29; ama ABD’deki 373 haber yalnız 63 farklı başlık, yani büyük ölçüde ajans tekrarı.\nDönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Alman kuruluşlarının binde 83,6’sı, ABD’dekilerin binde 33,9’u ifşayı haberleştirdi.\nAlmanca kaçırılan haber testi: bağımsız havuzdaki 8 ifşa haberinin 7’si zaten yakalanmış; Almanya kaynaklı üçünün üçü de.",
   "cue_sentences": [
    "Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.",
-   "Meta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.",
-   "Taranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.",
-   "Noktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor. Bu bir hipotezdir: Almanca akışta kaçırılan haber oranı ölçülmeden kanıt sayılmaz."
+   "Haber sayısında ABD önde: 373’e 29; ama ABD’deki 373 haber yalnız 63 farklı başlık, yani büyük ölçüde ajans tekrarı.",
+   "Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Alman kuruluşlarının binde 83,6’sı, ABD’dekilerin binde 33,9’u ifşayı haberleştirdi.",
+   "Almanca kaçırılan haber testi: bağımsız havuzdaki 8 ifşa haberinin 7’si zaten yakalanmış; Almanya kaynaklı üçünün üçü de."
   ],
-  "full_notes": "Beşinci bulgu mekâna ilişkin ve haritada kendiliğinden oynuyor. Renk tonu haberin yayımlandığı ülkeyi gösteriyor; harita duyuru günlerinden itibaren gün gün birikiyor. Mutlak sayılarda tablo çok net: 511 haberin 373’ü ABD kaynaklı, Almanya 29, İtalya 13 haberle izliyor. Meta göstergelerinde Almanya’nın payı yüzde 95,8 iken haber kaynakları içinde Almanya’nın payı yalnızca yüzde 5,7. Ancak GDELT’in ABD kaynaklarını çok daha fazla izlediğini hesaba katmak gerekiyor; bu yüzden aynı dönemde her ülkeden taranan bütün kayıtlara oranladım. Bu durumda ABD’de 100 bin kayıtta 25,4, Almanya’da 15,4 haber var; Almanya ikinci sıraya çıkıyor, İtalya 5,4 ile üçüncü. Noktalar haberlerde anılan yerler: haberlerin yüzde 63,6’sı Almanya’yı, yüzde 57’si Fransa ve İtalya’yı anıyor. Yani hedeflenen ülkeler haberlerin konusu, ama haberin üretildiği yer ağırlıkla ABD ve İngilizce medya. Bu bir görünürlük ölçüsüdür; okurun bulunduğu yeri veya etkiyi göstermez.",
+  "full_notes": "Beşinci bulgu mekâna ilişkin ve burada sayım düzeyi her şeyi değiştiriyor. Haber sayısına bakarsak ABD açık ara önde: 511 haberin 373’ü ABD kaynaklı, Almanya’da 29 haber var; taranan kayıtlara oranlasak da ABD’nin yoğunluğu Almanya’nın 1,65 katı. Ama ABD’deki 373 haber yalnızca 63 farklı başlık taşıyor; yani hacmin büyük kısmı ajans haberinin yüzlerce yerel sitede tekrar yayımlanması. Bu yüzden asıl ölçütü yayın kuruluşu düzeyi olarak aldım: dönemde aktif olan Alman kuruluşlarının binde 83,6’sı ifşayı haberleştirmiş, ABD’de bu oran binde 33,9; Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek. Kuralların Almanca haberleri kaçırıp kaçırmadığını da test ettim: kurallardan bağımsız, gevşek bir Almanca taramada bulunan 8 ifşa haberinin 7’si zaten yakalanmıştı ve Almanya kaynaklı üç haberin üçü de içerideydi. Sonuç: hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş, mutlak hacim ise ABD’deki ajans dağıtımından gelmiş.",
   "seconds": 100,
   "visual": "gdelt_map",
   "citations": [
@@ -476,7 +494,7 @@
    "meta2022"
   ],
   "source": "The GDELT Project, 2015, 2018; Kwak & An, 2014; Meta, 2022",
-  "visible_word_count": 33
+  "visible_word_count": 29
  },
  {
   "id": "discussion",
@@ -533,7 +551,7 @@
     [
      "5 · İfşa görünürlüğü",
      "Haber hacmi ve coğrafyası",
-     "Ölçüldü (511 haber)"
+     "Ölçüldü (511 haber; 3 düzey)"
     ]
    ]
   },
@@ -547,7 +565,7 @@
    "İfşanın görünürlüğü operatörün işine yarayabilir",
    "Alarmist dil kendi başına zarar verebilir"
   ],
-  "takeaway": "Kamuoyunun gördüğü büyük ölçüde ifşadır.",
+  "takeaway": "Operasyon eşiğin altında; ifşası görünür.",
   "cue_sentences": [
    "Gleicher’in algı korsanlığı kavramı: operatörler olduklarından daha etkili görünmek ister.",
    "Pamment ve Tsurtsumia: sızan SDA belgeleri, Batı’daki haberlerin müşteriye başarı kanıtı olarak sunulduğunu gösteriyor.",
@@ -591,7 +609,7 @@
   "display_points": [
    "Meta listesi: alt sınır ve 2022 anlık görüntüsü",
    "GDELT: İngilizce ağırlıklı; yayın ülkesi çıkarımsal",
-   "Kaçırılan haber ölçülmedi; tek kodlayıcı"
+   "İsabet %91,7; Almanca duyarlılık testi küçük (n = 8)"
   ],
   "takeaway": "Bulgular betimseldir; niyet veya etki iddiası yoktur.",
   "notes": "Meta listesi bir örneklem değil, platformun tespit ve yayımlama seçimidir; bütün kayıtların tarihi aynı.\nGDELT yalnız izlediği kaynakları kapsar; ABD kaynakları fazla temsil edilir, bu yüzden oranlı ölçü de verildi.\nKaynak ülke listesi 2018 tarihli ve okurun değil, yayının ülkesini verir.\nKural isabeti yüzde 90,6; otomatik konumlar hata içerebilir (Hammond ve Weidmann, 2014).",
@@ -610,7 +628,7 @@
    "wang2016"
   ],
   "source": "Rogers & Righetti, 2025; Hoffmann et al., 2022; Wang et al., 2016",
-  "visible_word_count": 27,
+  "visible_word_count": 31,
   "steps": [
    [
     "Meta listesi",
@@ -622,7 +640,7 @@
    ],
    [
     "Geçerlilik",
-    "İsabet %90,6 (n = 32); kaçırılan haber ölçülmedi; tek, YZ destekli kodlayıcı"
+    "İsabet %91,7 (145 başlık); duyarlılık 7/8; kodlamalar YZ destekli tek kodlayıcı, insan kodlaması bekleniyor"
    ],
    [
     "Çıkarım",
@@ -637,16 +655,16 @@
   "display_points": [
    "AS1: Almanya %95,8 (298/311)",
    "AS2: %81 uydurma yayın adı; marka taklidi %19",
-   "AS3: iki günlük dalga; kaynak ağırlıkla ABD"
+   "AS3: iki günlük dalga; kuruluş başına Almanya"
   ],
-  "takeaway": "Görünmez cephe: hedef kamu çoğunlukla ifşayı görüyor.",
-  "notes": "Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.\nİfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.\nGelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi.",
+  "takeaway": "Görünmez cephe: operasyon eşiğin altında, ifşası görünür.",
+  "notes": "Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.\nİfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya 2,4 kat önde.",
   "cue_sentences": [
    "Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.",
    "İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.",
-   "Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi."
+   "AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya 2,4 kat önde."
   ],
-  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birincisi: ifşa edilen altyapının yüzde 95,8’i Almanya’yı hedefliyor. İkincisi: altyapının beşte dördü var olmayan “bağımsız” yayınların adlarından oluşuyor ve bu adlar harf karışımı yazımlarla ucuz uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncüsü: ifşa iki günlük bir haber dalgası olarak görünür oldu ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı. Bu sonuçları hibrit müdahale çerçevesine bağladığımda “görünmez cephe” tezini şöyle özetliyorum: operasyon tespit ve atıf eşiğinin altında tutuluyor; kamuoyunun gördüğü şey ise büyük ölçüde operasyonun kendisi değil, ifşası. Bu tez için sonraki adımlar belli: 145 tekil başlığın kör bir insan kodlayıcıyla yeniden kodlanması, Almanca akışta kaçırılan haberlerin ölçülmesi, ve erişimi ölçmek için web izleme paneli ile Dijital Hizmetler Yasası kapsamındaki veri erişimi. Teşekkür ederim.",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birincisi: ifşa edilen altyapının yüzde 95,8’i Almanya’yı hedefliyor. İkincisi: altyapının beşte dördü var olmayan “bağımsız” yayınların adlarından oluşuyor ve bu adlar harf karışımı yazımlarla ucuz uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncüsü: ifşa iki günlük bir haber dalgası olarak görünür oldu; mutlak hacmi ABD’deki ajans dağıtımıyla büyüdü, ama aktif yayın kuruluşlarına oranlandığında Alman kuruluşları ifşayı yaklaşık 2,4 kat daha yüksek oranda haberleştirdi. Bu sonuçları hibrit müdahale çerçevesine bağladığımda “görünmez cephe” tezini şöyle özetliyorum: operasyon tespit ve atıf eşiğinin altında tutuluyor; operasyona dair kamusal bilgi ise büyük ölçüde ifşa anında ortaya çıkıyor. Bu tez için sonraki adımlar belli: 145 tekil başlığın kör bir insan kodlayıcıyla yeniden kodlanması, Almanca akışta kaçırılan haberlerin ölçülmesi, ve erişimi ölçmek için web izleme paneli ile Dijital Hizmetler Yasası kapsamındaki veri erişimi. Teşekkür ederim.",
   "seconds": 65,
   "visual": "steps",
   "citations": [
@@ -667,7 +685,7 @@
    ],
    [
     "AS3 · görünürlük",
-    "%96,3’ü 27–28 Eylül’de; 373/511 ABD kaynaklı; %63,6’sı Almanya’yı anıyor"
+    "%96,3’ü 27–28 Eylül’de; haber sayısında ABD (ajans tekrarı), aktif kuruluş başına Almanya 2,4 kat önde"
    ],
    [
     "Sonraki adım",

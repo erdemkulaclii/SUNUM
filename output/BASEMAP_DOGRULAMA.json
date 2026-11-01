@@ -4,7 +4,7 @@
   "file_navigation": "verified",
   "non_http_branch_verified_via_about_blank": true,
   "live_OSM_verified": false,
-  "checked_at_utc": "2026-11-01T12:05:41.175703+00:00",
+  "checked_at_utc": "2026-11-01T12:59:46.053710+00:00",
   "outcomes": [
     "about:blank embedded map: no OSM requests; country polygon evidence intact",
     "file:// embedded map: no OSM requests",

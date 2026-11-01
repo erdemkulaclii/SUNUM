@@ -51,14 +51,28 @@ ACTION = re.compile(r'network|netzwerk|réseau|reseau|rete\b|red de|sieć|siec|a
 STUDY_START, STUDY_END = '20220920', '20221011'
 
 
-def classify(title: str, url: str, location_countries: set[str]) -> str | None:
+# R3 (German-language disclosure without the platform/campaign name): forged/cloned + outlet/media + Russia.
+FAKE_DE = re.compile(r'gefälscht|gefaelscht|fälschung|faelschung|gefakt|fake-?(?:seite|website|webseite|medien|artikel|nachricht)|geklont|klon|kopie|kopiert|nachgeahmt|nachgemacht|imitier|doppelg', re.I)
+OUTLET_DE = re.compile(r'spiegel|\bbild\b|t-online|\bwelt\b|\bfaz\b|süddeutsche|sueddeutsche|tagesspiegel|nachrichtenseite|nachrichtenportal|medienseite|medienhäuser|medien\b|zeitung|webseite|website|internetseite', re.I)
+# Near-miss pool for recall estimation (not counted as matches): German-language or German-source
+# records that combine a Russia term with a broad disinformation/platform term but satisfy no rule.
+BROAD_DE = re.compile(r'desinform|propaganda|\bfake|gefälscht|fälsch|falschmeld|falschnachricht|kampagne|manipul|troll|\bbots?\b|\bmeta\b|facebook|instagram|netzwerk|einflussnahme|beeinflussung|hybrid|informationskrieg', re.I)
+
+
+def classify(title: str, url: str, location_countries: set[str], language: str = '', country: str = '') -> str | None:
     """R1: campaign name + Russia context (title/URL or GKG location RS).
-    R2: platform takedown story: Meta/Facebook + Russia + network/fake/... in title or URL."""
+    R2: platform takedown story: Meta/Facebook + Russia + network/fake/... in title or URL.
+    R3: German disclosure: forged/cloned + outlet/media + Russia in title or URL.
+    NM_de: near-miss candidate for recall estimation (never counted as a match)."""
     text = f'{title} {url}'
     if CAMPAIGN.search(text) and (RUSSIA.search(text) or 'RS' in location_countries):
         return 'R1_campaign'
     if PLATFORM.search(text) and RUSSIA.search(text) and ACTION.search(text):
         return 'R2_takedown'
+    if FAKE_DE.search(text) and OUTLET_DE.search(text) and RUSSIA.search(text):
+        return 'R3_german'
+    if (language == 'deu' or country == 'Germany') and RUSSIA.search(text) and BROAD_DE.search(text):
+        return 'NM_de'
     return None
 
 
@@ -87,16 +101,17 @@ def parse_rows(text: str, stream: str, domain_country: dict[str, str]):
         url = f[4]
         locs = parse_v2locations(f[10])
         cc = {l['country_code'] for l in locs}
-        rule = classify(title, url, cc)
+        lang = language(f[25]) if stream == 'trans' else 'eng'
+        rule = classify(title, url, cc, lang, country)
         hit = None
         if rule:
             tone = f[15].split(',')[0] if f[15] else ''
             hit = {'gkg_id': f[0], 'date': f[1], 'day': day, 'stream': stream, 'url': url, 'domain': domain,
                    'sourcecountry': country, 'title': title, 'rule': rule,
-                   'language': language(f[25]) if stream == 'trans' else 'eng',
+                   'language': lang,
                    'tone': round(float(tone), 3) if tone else None,
                    'locations': [{k: l[k] for k in ('name', 'country_code', 'lat', 'lon', 'type')} for l in locs][:40]}
-        yield day, country, hit
+        yield day, country, hit, domain
 
 
 def http_get(url: str, timeout: int = 120) -> bytes:
@@ -146,13 +161,15 @@ def process(entry: dict, domain_country, transport=http_get):
     z = zipfile.ZipFile(io.BytesIO(blob))
     text = z.read(z.namelist()[0]).decode('utf-8', 'replace')
     per_day, per_country, hits, rows = Counter(), Counter(), [], 0
-    for day, country, hit in parse_rows(text, entry['stream'], domain_country):
+    domains = defaultdict(set)
+    for day, country, hit, dom in parse_rows(text, entry['stream'], domain_country):
         rows += 1
         per_day[day] += 1
         per_country[country or 'unmatched'] += 1
+        domains[country or 'unmatched'].add(dom)
         if hit:
             hits.append(hit)
-    return {'rows': rows, 'md5_verified': True}, per_day, per_country, hits
+    return {'rows': rows, 'md5_verified': True}, per_day, per_country, hits, domains
 
 
 def run(start: str, end: str, workers: int, streams: list[str]) -> dict:
@@ -163,20 +180,23 @@ def run(start: str, end: str, workers: int, streams: list[str]) -> dict:
     totals_day = defaultdict(Counter)
     totals_country = defaultdict(Counter)
     hits, manifest, lock, done = [], [], threading.Lock(), [0]
+    active_domains = defaultdict(set)
     t0 = time.time()
 
     def job(e):
         try:
-            info, pd, pc, h = process(e, domain_country)
+            info, pd, pc, h, dm = process(e, domain_country)
             e = {**e, **info}
         except Exception as exc:  # recorded; never silently counted as zero
-            pd, pc, h = Counter(), Counter(), []
+            pd, pc, h, dm = Counter(), Counter(), [], {}
             e = {**e, 'error': str(exc)[:200], 'md5_verified': False}
         with lock:
             manifest.append(e)
             totals_day[e['stream']].update(pd)
             totals_country[e['stream']].update(pc)
             hits.extend(h)
+            for c, ds in dm.items():
+                active_domains[c] |= ds
             done[0] += 1
             if done[0] % 50 == 0 or done[0] == len(entries):
                 rate = done[0] / (time.time() - t0)
@@ -185,7 +205,11 @@ def run(start: str, end: str, workers: int, streams: list[str]) -> dict:
     with cf.ThreadPoolExecutor(workers) as ex:
         list(ex.map(job, entries))
     manifest.sort(key=lambda e: (e['stream'], e['stamp']))
-    hits.sort(key=lambda h: (h['date'], h['url']))
+    near = sorted([h for h in hits if h['rule'] == 'NM_de'], key=lambda h: (h['date'], h['url']))
+    hits = sorted([h for h in hits if h['rule'] != 'NM_de'], key=lambda h: (h['date'], h['url']))
+    with (OUT / 'nearmiss_de.jsonl').open('w') as fh:
+        for h in near:
+            fh.write(json.dumps({k: h[k] for k in ('date', 'url', 'domain', 'sourcecountry', 'language', 'title')}, ensure_ascii=False) + '\n')
     failed = [m for m in manifest if not m.get('md5_verified')]
     (OUT / 'manifest.json').write_text(json.dumps({
         'source': 'GDELT GKG 2.0 raw archive (gdeltv2/*.gkg.csv.zip and *.translation.gkg.csv.zip)',
@@ -194,7 +218,8 @@ def run(start: str, end: str, workers: int, streams: list[str]) -> dict:
         'files': len(manifest), 'files_md5_verified': len(manifest) - len(failed), 'files_failed': len(failed),
         'rows_scanned': sum(m.get('rows', 0) for m in manifest), 'entries': manifest}, indent=1))
     (OUT / 'totals.json').write_text(json.dumps({'per_day': {k: dict(sorted(v.items())) for k, v in totals_day.items()},
-                                                'per_source_country': {k: dict(v.most_common()) for k, v in totals_country.items()}}, ensure_ascii=False, indent=1))
+                                                'per_source_country': {k: dict(v.most_common()) for k, v in totals_country.items()},
+                                                'active_domains_per_source_country': dict(sorted(((c, len(v)) for c, v in active_domains.items()), key=lambda kv: -kv[1]))}, ensure_ascii=False, indent=1))
     with (OUT / 'matches.jsonl').open('w') as fh:
         for h in hits:
             fh.write(json.dumps(h, ensure_ascii=False) + '\n')

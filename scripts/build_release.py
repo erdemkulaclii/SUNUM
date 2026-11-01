@@ -4,7 +4,7 @@ import hashlib,json,runpy,shutil,zipfile
 from playwright.sync_api import sync_playwright
 
 R=Path(__file__).resolve().parents[1];O=R/'output'
-for name in ['build_concise_presentation.py','export_editorial.py','export_academic_documents.py','domain_typology.py','build_makale.py']:
+for name in ['build_concise_presentation.py','export_editorial.py','export_academic_documents.py','domain_typology.py','gdelt_census.py','build_makale.py']:
     runpy.run_path(str(R/'scripts'/name),run_name='__main__')
 
 with sync_playwright() as p:
@@ -49,7 +49,7 @@ script_names=[
  'build_release.py','analyze_ioc_structure.py','build_concise_presentation.py','export_concise_deck.py','export_concise_documents.py',
  'build_interactive.py','build_presentation.py','export_editorial.py','export_academic_documents.py','export_editable_presentation.py',
  'concise.html','concise.css','concise.js','concise_narrative.json','concise_appendices.json','concise_references.json','basemap.js','presentation_meta.json',
- 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py','test_sunum_launcher.py','domain_typology.py','test_domain_typology.py','makale_istatistikleri.py','makale_sekiller.py','build_makale.py','test_makale.py',
+ 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py','test_sunum_launcher.py','domain_typology.py','test_domain_typology.py','gdelt_census.py','gdelt_de_sensitivity.py','makale_istatistikleri.py','makale_sekiller.py','build_makale.py','test_makale.py',
  'render_cinematic_tour.py','verify_concise.py','verify_leaflet.py','verify_slide_readability.py','verify_basemap.py',
  'serve_presentation.py','fetch_gdelt.py','fetch_gdelt_cloud.py','test_gdelt_cloud.py','test_presentation_server.py',
 ]
@@ -61,8 +61,8 @@ assert all(path.is_file() for path in files),[str(p) for p in files if not p.is_
 assert all(p.name!='.env' and 'locations' not in p.parts for p in files)
 snap=R/'research/gdelt/GDELT_HARITA_VERISI.json'
 if snap.is_file():files.append(snap)
-files += [R/'makale'/n for n in ['makale.md','makale.docx','makale.pdf','sekil1_gunluk_dagilim.png','sekil2_harita.png','KAYNAK_DOGRULAMA.md']]+[O/'MAKALE_SAYILARI.json',O/'ALAN_ADI_TIPOLOJISI.json']
-files += [p for p in [R/'research/gdelt/validation_sample.csv',R/'research/gdelt/gkg_archive/manifest.json',R/'research/gdelt/gkg_archive/matches.jsonl',R/'research/gdelt/gkg_archive/totals.json'] if p.is_file()]
+files += [R/'makale'/n for n in ['makale.md','makale.docx','makale.pdf','sekil1_gunluk_dagilim.png','sekil2_harita.png','KAYNAK_DOGRULAMA.md']]+[O/'MAKALE_SAYILARI.json',O/'ALAN_ADI_TIPOLOJISI.json',O/'KODLAMA_SONUCLARI.json']+list((R/'makale/kodlama').glob('*.csv'))
+files += [p for p in [R/'research/gdelt/validation_sample.csv',R/'research/gdelt/gkg_archive/manifest.json',R/'research/gdelt/gkg_archive/matches.jsonl',R/'research/gdelt/gkg_archive/totals.json',R/'research/gdelt/gkg_archive/nearmiss_de.jsonl',R/'research/gdelt/gkg_archive/sensitivity_de_20220926_30.jsonl'] if p.is_file()]
 manifest={'main_slides':len(json.loads((R/'scripts/concise_narrative.json').read_text())),'appendix_slides':len(json.loads((R/'scripts/concise_appendices.json').read_text())),'planned_seconds':1200,'buffer_seconds':0,'unique_source_domains':311,'photos_included':False,'gdelt_snapshot_included':snap.is_file(),'synthetic_GDELT_observations':False,'files':{str(path.relative_to(R)):{'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()} for path in sorted(files)}}
 manifest_path=O/'TESLIM_MANIFEST.json';manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');files.append(manifest_path)
 bundle=O/'PROFESYONEL_TAM_PAKET.zip'

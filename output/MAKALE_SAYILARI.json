@@ -162,7 +162,12 @@
     "denkzusrntch",
     "dknuzersntch"
    ]
-  ]
+  ],
+  "typology_threshold1": {
+   "marka_birebir": 43,
+   "marka_varyant": 16,
+   "sahte_yayin": 252
+  }
  },
  "gdelt": {
   "window": [
@@ -374,6 +379,507 @@
      0.968
     ]
    }
+  },
+  "levels": {
+   "United States": {
+    "articles": 373,
+    "articles_per100k": 25.39,
+    "outlets": 230,
+    "active_outlets": 6786,
+    "titles": 63,
+    "outlet_share_per1000": 33.89,
+    "outlet_share_ci95": [
+     29.84,
+     38.47
+    ]
+   },
+   "Germany": {
+    "articles": 29,
+    "articles_per100k": 15.38,
+    "outlets": 29,
+    "active_outlets": 347,
+    "titles": 13,
+    "outlet_share_per1000": 83.57,
+    "outlet_share_ci95": [
+     58.82,
+     117.45
+    ]
+   },
+   "Italy": {
+    "articles": 13,
+    "articles_per100k": 5.41,
+    "outlets": 9,
+    "active_outlets": 488,
+    "titles": 11,
+    "outlet_share_per1000": 18.44,
+    "outlet_share_ci95": [
+     9.73,
+     34.68
+    ]
+   }
+  },
+  "outlet_ratio_us_de": 0.41,
+  "outlet_ratio_ci95": [
+   0.28,
+   0.59
+  ],
+  "title_ratio_us_de_raw": 4.85,
+  "all_countries": [
+   {
+    "country": "United States",
+    "articles": 373,
+    "outlets": 230,
+    "scanned": 1469262,
+    "per100k": 25.39,
+    "ci95": [
+     22.88,
+     28.1
+    ]
+   },
+   {
+    "country": "Germany",
+    "articles": 29,
+    "outlets": 29,
+    "scanned": 188558,
+    "per100k": 15.38,
+    "ci95": [
+     10.3,
+     22.09
+    ]
+   },
+   {
+    "country": "Italy",
+    "articles": 13,
+    "outlets": 9,
+    "scanned": 240258,
+    "per100k": 5.41,
+    "ci95": [
+     2.88,
+     9.25
+    ]
+   },
+   {
+    "country": "India",
+    "articles": 9,
+    "outlets": 7,
+    "scanned": 205227,
+    "per100k": 4.39,
+    "ci95": [
+     2.01,
+     8.32
+    ]
+   },
+   {
+    "country": "China",
+    "articles": 8,
+    "outlets": 4,
+    "scanned": 265695,
+    "per100k": 3.01,
+    "ci95": [
+     1.3,
+     5.93
+    ]
+   },
+   {
+    "country": "Russia",
+    "articles": 6,
+    "outlets": 4,
+    "scanned": 207379,
+    "per100k": 2.89,
+    "ci95": [
+     1.06,
+     6.3
+    ]
+   },
+   {
+    "country": "United Kingdom",
+    "articles": 6,
+    "outlets": 6,
+    "scanned": 293147,
+    "per100k": 2.05,
+    "ci95": [
+     0.75,
+     4.45
+    ]
+   },
+   {
+    "country": "Canada",
+    "articles": 5,
+    "outlets": 4,
+    "scanned": 69065,
+    "per100k": 7.24,
+    "ci95": [
+     2.35,
+     16.89
+    ]
+   },
+   {
+    "country": "Bulgaria",
+    "articles": 5,
+    "outlets": 5,
+    "scanned": 54817,
+    "per100k": 9.12,
+    "ci95": [
+     2.96,
+     21.29
+    ]
+   },
+   {
+    "country": "Romania",
+    "articles": 4,
+    "outlets": 4,
+    "scanned": 66349,
+    "per100k": 6.03,
+    "ci95": [
+     1.64,
+     15.44
+    ]
+   },
+   {
+    "country": "France",
+    "articles": 4,
+    "outlets": 4,
+    "scanned": 145528,
+    "per100k": 2.75,
+    "ci95": [
+     0.75,
+     7.04
+    ]
+   },
+   {
+    "country": "Brazil",
+    "articles": 4,
+    "outlets": 3,
+    "scanned": 126033,
+    "per100k": 3.17,
+    "ci95": [
+     0.86,
+     8.13
+    ]
+   },
+   {
+    "country": "Slovak Republic",
+    "articles": 3,
+    "outlets": 3,
+    "scanned": 14634,
+    "per100k": 20.5,
+    "ci95": [
+     4.23,
+     59.91
+    ]
+   },
+   {
+    "country": "Portugal",
+    "articles": 3,
+    "outlets": 3,
+    "scanned": 29091,
+    "per100k": 10.31,
+    "ci95": [
+     2.13,
+     30.14
+    ]
+   },
+   {
+    "country": "Austria",
+    "articles": 3,
+    "outlets": 3,
+    "scanned": 43545,
+    "per100k": 6.89,
+    "ci95": [
+     1.42,
+     20.13
+    ]
+   },
+   {
+    "country": "Albania",
+    "articles": 3,
+    "outlets": 2,
+    "scanned": 11222,
+    "per100k": 26.73,
+    "ci95": [
+     5.51,
+     78.13
+    ]
+   },
+   {
+    "country": "Pakistan",
+    "articles": 2,
+    "outlets": 2,
+    "scanned": 27675,
+    "per100k": 7.23,
+    "ci95": [
+     0.88,
+     26.11
+    ]
+   },
+   {
+    "country": "New Zealand",
+    "articles": 2,
+    "outlets": 2,
+    "scanned": 13575,
+    "per100k": 14.73,
+    "ci95": [
+     1.78,
+     53.22
+    ]
+   },
+   {
+    "country": "Mexico",
+    "articles": 2,
+    "outlets": 2,
+    "scanned": 111189,
+    "per100k": 1.8,
+    "ci95": [
+     0.22,
+     6.5
+    ]
+   },
+   {
+    "country": "Ukraine",
+    "articles": 2,
+    "outlets": 2,
+    "scanned": 109473,
+    "per100k": 1.83,
+    "ci95": [
+     0.22,
+     6.6
+    ]
+   },
+   {
+    "country": "Poland",
+    "articles": 2,
+    "outlets": 2,
+    "scanned": 44726,
+    "per100k": 4.47,
+    "ci95": [
+     0.54,
+     16.15
+    ]
+   },
+   {
+    "country": "Japan",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 42417,
+    "per100k": 2.36,
+    "ci95": [
+     0.06,
+     13.14
+    ]
+   },
+   {
+    "country": "Syria",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 16737,
+    "per100k": 5.97,
+    "ci95": [
+     0.15,
+     33.29
+    ]
+   },
+   {
+    "country": "Colombia",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 20964,
+    "per100k": 4.77,
+    "ci95": [
+     0.12,
+     26.58
+    ]
+   },
+   {
+    "country": "Spain",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 133752,
+    "per100k": 0.75,
+    "ci95": [
+     0.02,
+     4.17
+    ]
+   },
+   {
+    "country": "Norway",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 10298,
+    "per100k": 9.71,
+    "ci95": [
+     0.25,
+     54.1
+    ]
+   },
+   {
+    "country": "Switzerland",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 27686,
+    "per100k": 3.61,
+    "ci95": [
+     0.09,
+     20.12
+    ]
+   },
+   {
+    "country": "Philippines",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 15649,
+    "per100k": 6.39,
+    "ci95": [
+     0.16,
+     35.6
+    ]
+   },
+   {
+    "country": "Indonesia",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 103500,
+    "per100k": 0.97,
+    "ci95": [
+     0.02,
+     5.38
+    ]
+   },
+   {
+    "country": "Cambodia",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 4067,
+    "per100k": 24.59,
+    "ci95": [
+     0.62,
+     137.0
+    ]
+   },
+   {
+    "country": "Lithuania",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 29071,
+    "per100k": 3.44,
+    "ci95": [
+     0.09,
+     19.17
+    ]
+   },
+   {
+    "country": "Netherlands",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 45954,
+    "per100k": 2.18,
+    "ci95": [
+     0.06,
+     12.12
+    ]
+   },
+   {
+    "country": "Ghana",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 9395,
+    "per100k": 10.64,
+    "ci95": [
+     0.27,
+     59.3
+    ]
+   },
+   {
+    "country": "Armenia",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 20333,
+    "per100k": 4.92,
+    "ci95": [
+     0.12,
+     27.4
+    ]
+   },
+   {
+    "country": "Ivory Coast",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 1737,
+    "per100k": 57.57,
+    "ci95": [
+     1.46,
+     320.76
+    ]
+   },
+   {
+    "country": "Kenya",
+    "articles": 1,
+    "outlets": 1,
+    "scanned": 4783,
+    "per100k": 20.91,
+    "ci95": [
+     0.53,
+     116.49
+    ]
+   }
+  ],
+  "rank_per100k_min5": [
+   "United States",
+   "Germany",
+   "Bulgaria",
+   "Canada",
+   "Italy",
+   "India",
+   "China",
+   "Russia",
+   "United Kingdom"
+  ],
+  "fr_it_both": 288,
+  "fr_it_both_share_of_fr": 98.6,
+  "precision_weighted_pct": 93.1,
+  "pre_disclosure": [
+   {
+    "date": "20220921104500",
+    "domain": "faz.net",
+    "title": "Russische Kriegspropaganda im Netz: Facebook reagiert verzögert",
+    "language": "deu"
+   }
+  ],
+  "census": {
+   "titles": 145,
+   "titles_relevant": 133,
+   "title_precision": 0.917,
+   "title_wilson95": [
+    0.861,
+    0.952
+   ],
+   "articles": 511,
+   "articles_relevant": 495,
+   "article_precision": 0.969,
+   "by_rule": {
+    "R1_campaign": {
+     "articles": 2,
+     "relevant": 1
+    },
+    "R2_takedown": {
+     "articles": 509,
+     "relevant": 494
+    }
+   },
+   "human_coded": 0
+  },
+  "recall": {
+   "nearmiss_pool": 270,
+   "nearmiss_relevant": 1,
+   "loose_pool": 77,
+   "loose_relevant": 8,
+   "loose_relevant_caught": 7,
+   "loose_recall": 0.875,
+   "loose_recall_wilson95": [
+    0.529,
+    0.978
+   ],
+   "loose_relevant_germany_source": 3,
+   "loose_relevant_germany_source_caught": 3
   }
  }
 }

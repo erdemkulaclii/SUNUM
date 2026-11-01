@@ -93,7 +93,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 - Her arşiv dosyası, GDELT’in yayımladığı MD5 özetiyle karşılaştırıldı; 4.209 dosyanın hepsi eşleşti.
 - Toplam 5.944.850 haber kaydı tarandı ve 511 tekil haber kurallarla eşleşti.
-- Sabit tohumlu rastgele 32 başlıkta isabet yüzde 90,6; yüzde 95 güven aralığı 76 ile 97 arasında.
+- 145 tekil başlığın tamamını kodladım: isabet yüzde 91,7; kurallardan bağımsız Almanca taramada 8 ifşa haberinin 7’si zaten yakalanmış.
 - Yanlış pozitifler kayıtlı; örneğin Putin’in dublörleri haberi. İkinci kodlayıcı için sütun açık.
 
 **Ana mesaj:** Aynı komut, aynı dosyalarla aynı sayıları üretir.
@@ -144,14 +144,14 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** The GDELT Project, 2015 (GKG 2.0 ham arşivi); bu çalışmanın taraması
 
-## 14. Almanya hakkında, ama Almanya’da değil · 13:20–15:00
+## 14. Hacim ABD’de, kuruluş yoğunluğu Almanya’da · 13:20–15:00
 
 - Harita gün gün birikiyor: renk, haberin yayımlandığı ülke.
-- Meta hedeflerinin yüzde 95,8’i Almanya iken haberlerin yalnız 29’u, yani yüzde 5,7’si Alman kaynaklı; 373 haber ABD kaynaklı.
-- Taranan kayıt sayısına oranlandığında Almanya ikinci sırada: 100 bin kayıtta 15,4 haber.
-- Noktalar haberlerde anılan yerler; haberlerin yüzde 63,6’sı Almanya’yı anıyor. Bu bir hipotezdir: Almanca akışta kaçırılan haber oranı ölçülmeden kanıt sayılmaz.
+- Haber sayısında ABD önde: 373’e 29; ama ABD’deki 373 haber yalnız 63 farklı başlık, yani büyük ölçüde ajans tekrarı.
+- Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Alman kuruluşlarının binde 83,6’sı, ABD’dekilerin binde 33,9’u ifşayı haberleştirdi.
+- Almanca kaçırılan haber testi: bağımsız havuzdaki 8 ifşa haberinin 7’si zaten yakalanmış; Almanya kaynaklı üçünün üçü de.
 
-**Ana mesaj:** Hipotez: hedef kamuoyu ifşayı en az gören olabilir.
+**Ana mesaj:** Sonuç, sayım düzeyine bağlıdır.
 
 **Atıf:** The GDELT Project, 2015, 2018; Kwak & An, 2014; Meta, 2022
 
@@ -173,7 +173,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 - Jungherr ve Rauchfleisch: alarmist dezenformasyon söylemi demokrasiden memnuniyeti düşürüyor; bu sunumun dili için de geçerli.
 - Seçilim: platform neyi kaldırıp yayımlayacağını, medya neyi haber yapacağını seçti.
 
-**Ana mesaj:** Kamuoyunun gördüğü büyük ölçüde ifşadır.
+**Ana mesaj:** Operasyon eşiğin altında; ifşası görünür.
 
 **Atıf:** Pamment & Tsurtsumia, 2025; Jungherr & Rauchfleisch, 2024; Rogers & Righetti, 2025
 
@@ -192,9 +192,9 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 - Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.
 - İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.
-- Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi.
+- AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya 2,4 kat önde.
 
-**Ana mesaj:** Görünmez cephe: hedef kamu çoğunlukla ifşayı görüyor.
+**Ana mesaj:** Görünmez cephe: operasyon eşiğin altında, ifşası görünür.
 
 **Atıf:** Meta, 2022; The GDELT Project, 2015; Wigell, 2019
 
