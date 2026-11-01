@@ -11,6 +11,7 @@ function steps(items,note=''){return '<ol class="steps">'+items.map(([h,t],i)=>'
 function visual(s){
  const f=D.analysis.findings;
  if(s.visual==='steps'&&s.steps)return steps(s.steps);
+ if(s.visual==='bars'&&s.bars)return bars(s.bars,Math.max(...s.bars.map(b=>b[1])),s.bars_caption||'');
  if(s.visual==='quote')return '<blockquote class="def-quote"><p>'+esc(s.quote)+'</p><footer>'+esc(s.quote_note||'')+'</footer></blockquote>';
  if(s.visual==='table'&&s.table)return '<table class="visual-table compare layers"><thead><tr>'+s.table.headers.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+s.table.rows.map(r=>'<tr>'+r.map((c,i)=>'<td'+(i===2&&/^Ölçüldü/.test(c)?' class="measured"':'')+'>'+esc(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table>';
  if(s.visual==='cover')return '<div class="cover-card"><p class="cover-author">'+esc(M.author)+'</p><p>'+esc(M.affiliation)+'</p><p>'+esc(M.course)+'</p><p>'+esc(M.date)+'</p><hr><p class="cover-data"><b>311</b> alan adı göstergesi · <b>5,9 milyon</b> GDELT haber kaydı</p></div>';

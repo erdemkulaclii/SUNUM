@@ -1,0 +1,2987 @@
+{
+ "n": 311,
+ "class_counts": {
+  "marka_varyant": 16,
+  "sahte_yayin": 252,
+  "marka_birebir": 43
+ },
+ "brand_exact_by_outlet": {
+  "spiegel": 9,
+  "bild": 8,
+  "sueddeutsche": 4,
+  "welt": 4,
+  "dailymail": 3,
+  "delfi": 3,
+  "faz": 3,
+  "nd-aktuell": 3,
+  "tagesspiegel": 2,
+  "ansa": 1,
+  "repubblica": 1,
+  "t-online": 1,
+  "theguardian": 1
+ },
+ "brand_variant_labels": {
+  "spiegeli": 3,
+  "t-onlinl": 3,
+  "t-onlinr": 3,
+  "tonline": 3,
+  "spiegelr": 2,
+  "20minuts": 1,
+  "rbk": 1
+ },
+ "pseudo_distinct_labels": 73,
+ "anagram_families": 19,
+ "anagram_family_labels": 45,
+ "anagram_family_domains": 174,
+ "families": [
+  [
+   "affinemainung",
+   "affinemaiunng"
+  ],
+  [
+   "affineminung",
+   "affinemiunng"
+  ],
+  [
+   "alledrigns",
+   "allerdigns"
+  ],
+  [
+   "dassprachrohr",
+   "dassprahcrohr",
+   "dassrpahcorhr"
+  ],
+  [
+   "deknzuersntch",
+   "deknzuerstnch",
+   "denkuzesrtnch"
+  ],
+  [
+   "deknzursntch",
+   "denkzusrntch",
+   "dknuzersntch"
+  ],
+  [
+   "deknzusrtnach",
+   "dnkzuesrtnach"
+  ],
+  [
+   "dknuzrstnach",
+   "dknzursntach"
+  ],
+  [
+   "faripoziiton",
+   "fraiopziiton"
+  ],
+  [
+   "feriehtdewrahl",
+   "ferihetderwahl"
+  ],
+  [
+   "lenreuzdeknen",
+   "lernezudeknen"
+  ],
+  [
+   "lenrzuednken",
+   "lernezuednkn",
+   "lernuzdenken",
+   "lrneuzdenken",
+   "lrneuzednken"
+  ],
+  [
+   "offebnarugn",
+   "offenbarugn",
+   "offenbaurgn"
+  ],
+  [
+   "offinemainung",
+   "offinemaiunng"
+  ],
+  [
+   "offinemanung",
+   "offinemaunng"
+  ],
+  [
+   "offineminung",
+   "offinemiunng"
+  ],
+  [
+   "offinemnung",
+   "offinemunng"
+  ],
+  [
+   "warhehit",
+   "warhheit"
+  ],
+  [
+   "whrheit",
+   "wrhheit"
+  ]
+ ],
+ "top6_tld_by_class": {
+  "marka_varyant": 0,
+  "sahte_yayin": 238,
+  "marka_birebir": 2
+ },
+ "germany_by_class": {
+  "marka_varyant": 14,
+  "sahte_yayin": 250,
+  "marka_birebir": 34
+ },
+ "tld_by_class": {
+  "marka_varyant": {
+   "today": 6,
+   "life": 4,
+   "live": 4,
+   "com": 1,
+   "cfd": 1
+  },
+  "sahte_yayin": {
+   "online": 52,
+   "website": 50,
+   "site": 46,
+   "space": 42,
+   "pw": 28,
+   "fun": 20,
+   "live": 3,
+   "store": 2,
+   "com": 2,
+   "link": 2,
+   "eu": 1,
+   "tech": 1,
+   "info": 1,
+   "world": 1,
+   "de": 1
+  },
+  "marka_birebir": {
+   "ltd": 5,
+   "life": 4,
+   "co": 3,
+   "com": 2,
+   "work": 2,
+   "ws": 2,
+   "top": 2,
+   "today": 2,
+   "agency": 2,
+   "pro": 2,
+   "asia": 1,
+   "expert": 1,
+   "llc": 1,
+   "pics": 1,
+   "vip": 1,
+   "cam": 1,
+   "cfd": 1,
+   "net": 1,
+   "cab": 1,
+   "fun": 1,
+   "ink": 1,
+   "quest": 1,
+   "cc": 1,
+   "me": 1,
+   "online": 1,
+   "media": 1,
+   "tours": 1
+  }
+ },
+ "rows": [
+  {
+   "canonical_domain": "20minuts.com",
+   "first_dns_label": "20minuts",
+   "last_dns_label": "com",
+   "source_target_label": "France",
+   "class": "marka_varyant",
+   "brand": "20minutes",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "affinemainung.fun",
+   "first_dns_label": "affinemainung",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemainung.online",
+   "first_dns_label": "affinemainung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemainung.space",
+   "first_dns_label": "affinemainung",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemainung.website",
+   "first_dns_label": "affinemainung",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemaiunng.fun",
+   "first_dns_label": "affinemaiunng",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemaiunng.online",
+   "first_dns_label": "affinemaiunng",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemaiunng.site",
+   "first_dns_label": "affinemaiunng",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemaiunng.space",
+   "first_dns_label": "affinemaiunng",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemaiunng.website",
+   "first_dns_label": "affinemaiunng",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemanung.fun",
+   "first_dns_label": "affinemanung",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "affinemanung.site",
+   "first_dns_label": "affinemanung",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "affinemanung.website",
+   "first_dns_label": "affinemanung",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "affineminung.fun",
+   "first_dns_label": "affineminung",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affineminung.online",
+   "first_dns_label": "affineminung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affineminung.site",
+   "first_dns_label": "affineminung",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemiunng.fun",
+   "first_dns_label": "affinemiunng",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemiunng.site",
+   "first_dns_label": "affinemiunng",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemiunng.space",
+   "first_dns_label": "affinemiunng",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "affinemiunng.website",
+   "first_dns_label": "affinemiunng",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alldrings.online",
+   "first_dns_label": "alldrings",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alldrings.pw",
+   "first_dns_label": "alldrings",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alldrings.space",
+   "first_dns_label": "alldrings",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alldrings.website",
+   "first_dns_label": "alldrings",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alledrigns.online",
+   "first_dns_label": "alledrigns",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alledrigns.pw",
+   "first_dns_label": "alledrigns",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alledrigns.site",
+   "first_dns_label": "alledrigns",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alledrigns.space",
+   "first_dns_label": "alledrigns",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alledrigns.website",
+   "first_dns_label": "alledrigns",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "alledrngs.online",
+   "first_dns_label": "alledrngs",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alledrngs.pw",
+   "first_dns_label": "alledrngs",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alledrngs.space",
+   "first_dns_label": "alledrngs",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "alledrngs.website",
+   "first_dns_label": "alledrngs",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "allerdigns.online",
+   "first_dns_label": "allerdigns",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "allerdigns.pw",
+   "first_dns_label": "allerdigns",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "allerdigns.site",
+   "first_dns_label": "allerdigns",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "allerdigns.space",
+   "first_dns_label": "allerdigns",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "allerdigns.website",
+   "first_dns_label": "allerdigns",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "ansa.ltd",
+   "first_dns_label": "ansa",
+   "last_dns_label": "ltd",
+   "source_target_label": "Italy",
+   "class": "marka_birebir",
+   "brand": "ansa",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "avisindependent.eu",
+   "first_dns_label": "avisindependent",
+   "last_dns_label": "eu",
+   "source_target_label": "France",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.asia",
+   "first_dns_label": "bild",
+   "last_dns_label": "asia",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.eu.com",
+   "first_dns_label": "bild",
+   "last_dns_label": "com",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.expert",
+   "first_dns_label": "bild",
+   "last_dns_label": "expert",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.llc",
+   "first_dns_label": "bild",
+   "last_dns_label": "llc",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.pics",
+   "first_dns_label": "bild",
+   "last_dns_label": "pics",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.vip",
+   "first_dns_label": "bild",
+   "last_dns_label": "vip",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.work",
+   "first_dns_label": "bild",
+   "last_dns_label": "work",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "bild.ws",
+   "first_dns_label": "bild",
+   "last_dns_label": "ws",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "bild",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dailymail.cam",
+   "first_dns_label": "dailymail",
+   "last_dns_label": "cam",
+   "source_target_label": "UK",
+   "class": "marka_birebir",
+   "brand": "dailymail",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dailymail.cfd",
+   "first_dns_label": "dailymail",
+   "last_dns_label": "cfd",
+   "source_target_label": "UK",
+   "class": "marka_birebir",
+   "brand": "dailymail",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dailymail.top",
+   "first_dns_label": "dailymail",
+   "last_dns_label": "top",
+   "source_target_label": "UK",
+   "class": "marka_birebir",
+   "brand": "dailymail",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dassprachrohr.online",
+   "first_dns_label": "dassprachrohr",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprachrohr.site",
+   "first_dns_label": "dassprachrohr",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprachrohr.space",
+   "first_dns_label": "dassprachrohr",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprachrohr.website",
+   "first_dns_label": "dassprachrohr",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprahcrohr.online",
+   "first_dns_label": "dassprahcrohr",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprahcrohr.site",
+   "first_dns_label": "dassprahcrohr",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprahcrohr.space",
+   "first_dns_label": "dassprahcrohr",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprahcrohr.website",
+   "first_dns_label": "dassprahcrohr",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassprhcorhr.online",
+   "first_dns_label": "dassprhcorhr",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dassprhcorhr.site",
+   "first_dns_label": "dassprhcorhr",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dassprhcorhr.space",
+   "first_dns_label": "dassprhcorhr",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dassrpahcorhr.online",
+   "first_dns_label": "dassrpahcorhr",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassrpahcorhr.site",
+   "first_dns_label": "dassrpahcorhr",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassrpahcorhr.space",
+   "first_dns_label": "dassrpahcorhr",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dassrpahcorhr.website",
+   "first_dns_label": "dassrpahcorhr",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.fun",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.online",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.pw",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.site",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.space",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknuzesrtnach.website",
+   "first_dns_label": "deknuzesrtnach",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "deknzuersntch.site",
+   "first_dns_label": "deknzuersntch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzuerstnch.fun",
+   "first_dns_label": "deknzuerstnch",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzuerstnch.pw",
+   "first_dns_label": "deknzuerstnch",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzuerstnch.site",
+   "first_dns_label": "deknzuerstnch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzuerstnch.website",
+   "first_dns_label": "deknzuerstnch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.fun",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.online",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.pw",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.site",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.space",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzursntch.website",
+   "first_dns_label": "deknzursntch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.fun",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.online",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.pw",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.site",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.space",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "deknzusrtnach.website",
+   "first_dns_label": "deknzusrtnach",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "delfi.life",
+   "first_dns_label": "delfi",
+   "last_dns_label": "life",
+   "source_target_label": "Latvia",
+   "class": "marka_birebir",
+   "brand": "delfi",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "delfi.today",
+   "first_dns_label": "delfi",
+   "last_dns_label": "today",
+   "source_target_label": "Latvia",
+   "class": "marka_birebir",
+   "brand": "delfi",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "delfi.top",
+   "first_dns_label": "delfi",
+   "last_dns_label": "top",
+   "source_target_label": "Latvia",
+   "class": "marka_birebir",
+   "brand": "delfi",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "denkuzesrtnch.fun",
+   "first_dns_label": "denkuzesrtnch",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkuzesrtnch.online",
+   "first_dns_label": "denkuzesrtnch",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkuzesrtnch.site",
+   "first_dns_label": "denkuzesrtnch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkuzesrtnch.space",
+   "first_dns_label": "denkuzesrtnch",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkuzesrtnch.website",
+   "first_dns_label": "denkuzesrtnch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkzusrntch.fun",
+   "first_dns_label": "denkzusrntch",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkzusrntch.online",
+   "first_dns_label": "denkzusrntch",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkzusrntch.pw",
+   "first_dns_label": "denkzusrntch",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkzusrntch.site",
+   "first_dns_label": "denkzusrntch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "denkzusrntch.website",
+   "first_dns_label": "denkzusrntch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzersntch.online",
+   "first_dns_label": "dknuzersntch",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzersntch.pw",
+   "first_dns_label": "dknuzersntch",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzersntch.site",
+   "first_dns_label": "dknuzersntch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzersntch.website",
+   "first_dns_label": "dknuzersntch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzrstnach.online",
+   "first_dns_label": "dknuzrstnach",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzrstnach.pw",
+   "first_dns_label": "dknuzrstnach",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzrstnach.site",
+   "first_dns_label": "dknuzrstnach",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzrstnach.space",
+   "first_dns_label": "dknuzrstnach",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzrstnach.website",
+   "first_dns_label": "dknuzrstnach",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknuzsrntch.fun",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknuzsrntch.online",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknuzsrntch.pw",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknuzsrntch.site",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknuzsrntch.space",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknuzsrntch.website",
+   "first_dns_label": "dknuzsrntch",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "dknzursntach.online",
+   "first_dns_label": "dknzursntach",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknzursntach.pw",
+   "first_dns_label": "dknzursntach",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknzursntach.site",
+   "first_dns_label": "dknzursntach",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknzursntach.space",
+   "first_dns_label": "dknzursntach",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dknzursntach.website",
+   "first_dns_label": "dknzursntach",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dnkzuesrtnach.pw",
+   "first_dns_label": "dnkzuesrtnach",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "dnkzuesrtnach.website",
+   "first_dns_label": "dnkzuesrtnach",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "fariepoziitn.online",
+   "first_dns_label": "fariepoziitn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fariepoziitn.site",
+   "first_dns_label": "fariepoziitn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fariepoziitn.space",
+   "first_dns_label": "fariepoziitn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fariepoziitn.website",
+   "first_dns_label": "fariepoziitn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "faripoziiton.fun",
+   "first_dns_label": "faripoziiton",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "faripoziiton.online",
+   "first_dns_label": "faripoziiton",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "faripoziiton.space",
+   "first_dns_label": "faripoziiton",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "faripoziiton.website",
+   "first_dns_label": "faripoziiton",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "faz.agency",
+   "first_dns_label": "faz",
+   "last_dns_label": "agency",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "faz",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "faz.life",
+   "first_dns_label": "faz",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "faz",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "faz.ltd",
+   "first_dns_label": "faz",
+   "last_dns_label": "ltd",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "faz",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferehtdwrhl.fun",
+   "first_dns_label": "ferehtdwrhl",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferehtdwrhl.pw",
+   "first_dns_label": "ferehtdwrhl",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferehtdwrhl.site",
+   "first_dns_label": "ferehtdwrhl",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferehtdwrhl.space",
+   "first_dns_label": "ferehtdwrhl",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferehtdwrhl.website",
+   "first_dns_label": "ferehtdwrhl",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferhedtewrahl.pw",
+   "first_dns_label": "ferhedtewrahl",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferhedtewrahl.site",
+   "first_dns_label": "ferhedtewrahl",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "ferhedtewrahl.website",
+   "first_dns_label": "ferhedtewrahl",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "feriehtdewrahl.pw",
+   "first_dns_label": "feriehtdewrahl",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "feriehtdewrahl.site",
+   "first_dns_label": "feriehtdewrahl",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "feriehtdewrahl.space",
+   "first_dns_label": "feriehtdewrahl",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "feriehtdewrahl.website",
+   "first_dns_label": "feriehtdewrahl",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "ferihetderwahl.online",
+   "first_dns_label": "ferihetderwahl",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "ferihetderwahl.website",
+   "first_dns_label": "ferihetderwahl",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "fraiepozition.live",
+   "first_dns_label": "fraiepozition",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fraiepozition.online",
+   "first_dns_label": "fraiepozition",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fraiepozition.site",
+   "first_dns_label": "fraiepozition",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fraiepozition.store",
+   "first_dns_label": "fraiepozition",
+   "last_dns_label": "store",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fraiesvolk.com",
+   "first_dns_label": "fraiesvolk",
+   "last_dns_label": "com",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "fraiopziiton.online",
+   "first_dns_label": "fraiopziiton",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "fraiopziiton.site",
+   "first_dns_label": "fraiopziiton",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "kennediewahrheit.live",
+   "first_dns_label": "kennediewahrheit",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lenreuzdeknen.online",
+   "first_dns_label": "lenreuzdeknen",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenreuzdeknen.site",
+   "first_dns_label": "lenreuzdeknen",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenreuzdeknen.space",
+   "first_dns_label": "lenreuzdeknen",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenreuzdeknen.website",
+   "first_dns_label": "lenreuzdeknen",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenruzdeknn.online",
+   "first_dns_label": "lenruzdeknn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lenruzdeknn.site",
+   "first_dns_label": "lenruzdeknn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lenruzdeknn.space",
+   "first_dns_label": "lenruzdeknn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lenruzdeknn.website",
+   "first_dns_label": "lenruzdeknn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lenrzuednken.online",
+   "first_dns_label": "lenrzuednken",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenrzuednken.site",
+   "first_dns_label": "lenrzuednken",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenrzuednken.space",
+   "first_dns_label": "lenrzuednken",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lenrzuednken.website",
+   "first_dns_label": "lenrzuednken",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezudeknen.online",
+   "first_dns_label": "lernezudeknen",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezudeknen.site",
+   "first_dns_label": "lernezudeknen",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezudeknen.space",
+   "first_dns_label": "lernezudeknen",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezudeknen.website",
+   "first_dns_label": "lernezudeknen",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezuednkn.online",
+   "first_dns_label": "lernezuednkn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezuednkn.site",
+   "first_dns_label": "lernezuednkn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezuednkn.space",
+   "first_dns_label": "lernezuednkn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernezuednkn.website",
+   "first_dns_label": "lernezuednkn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernuzdenken.online",
+   "first_dns_label": "lernuzdenken",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lernuzdenken.website",
+   "first_dns_label": "lernuzdenken",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lnruzdeknn.online",
+   "first_dns_label": "lnruzdeknn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lnruzdeknn.site",
+   "first_dns_label": "lnruzdeknn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lnruzdeknn.space",
+   "first_dns_label": "lnruzdeknn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lnruzdeknn.website",
+   "first_dns_label": "lnruzdeknn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lorketstonker.store",
+   "first_dns_label": "lorketstonker",
+   "last_dns_label": "store",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "lrneuzdenken.online",
+   "first_dns_label": "lrneuzdenken",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzdenken.site",
+   "first_dns_label": "lrneuzdenken",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzdenken.space",
+   "first_dns_label": "lrneuzdenken",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzdenken.website",
+   "first_dns_label": "lrneuzdenken",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzednken.online",
+   "first_dns_label": "lrneuzednken",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzednken.site",
+   "first_dns_label": "lrneuzednken",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzednken.space",
+   "first_dns_label": "lrneuzednken",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "lrneuzednken.website",
+   "first_dns_label": "lrneuzednken",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "nd-aktuell.co",
+   "first_dns_label": "nd-aktuell",
+   "last_dns_label": "co",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "nd-aktuell",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "nd-aktuell.net",
+   "first_dns_label": "nd-aktuell",
+   "last_dns_label": "net",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "nd-aktuell",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "nd-aktuell.pro",
+   "first_dns_label": "nd-aktuell",
+   "last_dns_label": "pro",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "nd-aktuell",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "neuigkeitenfursie.tech",
+   "first_dns_label": "neuigkeitenfursie",
+   "last_dns_label": "tech",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offebnarugn.online",
+   "first_dns_label": "offebnarugn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offebnarugn.site",
+   "first_dns_label": "offebnarugn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offebnarugn.space",
+   "first_dns_label": "offebnarugn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offebnarugn.website",
+   "first_dns_label": "offebnarugn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offebnurgn.online",
+   "first_dns_label": "offebnurgn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offebnurgn.site",
+   "first_dns_label": "offebnurgn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offebnurgn.space",
+   "first_dns_label": "offebnurgn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offebnurgn.website",
+   "first_dns_label": "offebnurgn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offenbarugn.online",
+   "first_dns_label": "offenbarugn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbarugn.site",
+   "first_dns_label": "offenbarugn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbarugn.space",
+   "first_dns_label": "offenbarugn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbarugn.website",
+   "first_dns_label": "offenbarugn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbaurgn.online",
+   "first_dns_label": "offenbaurgn",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbaurgn.site",
+   "first_dns_label": "offenbaurgn",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbaurgn.space",
+   "first_dns_label": "offenbaurgn",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offenbaurgn.website",
+   "first_dns_label": "offenbaurgn",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemaining.fun",
+   "first_dns_label": "offinemaining",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemaining.online",
+   "first_dns_label": "offinemaining",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemaining.pw",
+   "first_dns_label": "offinemaining",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemaining.site",
+   "first_dns_label": "offinemaining",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemaining.website",
+   "first_dns_label": "offinemaining",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemainung.info",
+   "first_dns_label": "offinemainung",
+   "last_dns_label": "info",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemainung.live",
+   "first_dns_label": "offinemainung",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemaiunng.online",
+   "first_dns_label": "offinemaiunng",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemaiunng.pw",
+   "first_dns_label": "offinemaiunng",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemaiunng.space",
+   "first_dns_label": "offinemaiunng",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemanung.online",
+   "first_dns_label": "offinemanung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemanung.site",
+   "first_dns_label": "offinemanung",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemanung.website",
+   "first_dns_label": "offinemanung",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemaunng.online",
+   "first_dns_label": "offinemaunng",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offineminung.online",
+   "first_dns_label": "offineminung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offineminung.pw",
+   "first_dns_label": "offineminung",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offineminung.site",
+   "first_dns_label": "offineminung",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offineminung.space",
+   "first_dns_label": "offineminung",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offineminung.website",
+   "first_dns_label": "offineminung",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemiunng.online",
+   "first_dns_label": "offinemiunng",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemiunng.space",
+   "first_dns_label": "offinemiunng",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemizung.online",
+   "first_dns_label": "offinemizung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemizung.website",
+   "first_dns_label": "offinemizung",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "offinemnung.online",
+   "first_dns_label": "offinemnung",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemnung.space",
+   "first_dns_label": "offinemnung",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemunng.online",
+   "first_dns_label": "offinemunng",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "offinemunng.website",
+   "first_dns_label": "offinemunng",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "rbk.today",
+   "first_dns_label": "rbk",
+   "last_dns_label": "today",
+   "source_target_label": "Ukraine",
+   "class": "marka_varyant",
+   "brand": "rbc",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "repubblica.life",
+   "first_dns_label": "repubblica",
+   "last_dns_label": "life",
+   "source_target_label": "Italy",
+   "class": "marka_birebir",
+   "brand": "repubblica",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "rrn.world",
+   "first_dns_label": "rrn",
+   "last_dns_label": "world",
+   "source_target_label": "Multiple",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "schlauespiel.de",
+   "first_dns_label": "schlauespiel",
+   "last_dns_label": "de",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.agency",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "agency",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.cab",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "cab",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.fun",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.ink",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "ink",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.ltd",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "ltd",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.pro",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "pro",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.quest",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "quest",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.today",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegel.work",
+   "first_dns_label": "spiegel",
+   "last_dns_label": "work",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegeli.life",
+   "first_dns_label": "spiegeli",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegeli.live",
+   "first_dns_label": "spiegeli",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegeli.today",
+   "first_dns_label": "spiegeli",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegelr.live",
+   "first_dns_label": "spiegelr",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "spiegelr.today",
+   "first_dns_label": "spiegelr",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "spiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "sueddeutsche.cc",
+   "first_dns_label": "sueddeutsche",
+   "last_dns_label": "cc",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "sueddeutsche",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "sueddeutsche.co",
+   "first_dns_label": "sueddeutsche",
+   "last_dns_label": "co",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "sueddeutsche",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "sueddeutsche.me",
+   "first_dns_label": "sueddeutsche",
+   "last_dns_label": "me",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "sueddeutsche",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "sueddeutsche.online",
+   "first_dns_label": "sueddeutsche",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "sueddeutsche",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-online.life",
+   "first_dns_label": "t-online",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinl.life",
+   "first_dns_label": "t-onlinl",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinl.live",
+   "first_dns_label": "t-onlinl",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinl.today",
+   "first_dns_label": "t-onlinl",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinr.life",
+   "first_dns_label": "t-onlinr",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinr.live",
+   "first_dns_label": "t-onlinr",
+   "last_dns_label": "live",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "t-onlinr.today",
+   "first_dns_label": "t-onlinr",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "tagesspiegel.co",
+   "first_dns_label": "tagesspiegel",
+   "last_dns_label": "co",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "tagesspiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "tagesspiegel.ltd",
+   "first_dns_label": "tagesspiegel",
+   "last_dns_label": "ltd",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "tagesspiegel",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "theguardian.co.com",
+   "first_dns_label": "theguardian",
+   "last_dns_label": "com",
+   "source_target_label": "UK",
+   "class": "marka_birebir",
+   "brand": "theguardian",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "tonline.cfd",
+   "first_dns_label": "tonline",
+   "last_dns_label": "cfd",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "tonline.life",
+   "first_dns_label": "tonline",
+   "last_dns_label": "life",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "tonline.today",
+   "first_dns_label": "tonline",
+   "last_dns_label": "today",
+   "source_target_label": "Germany",
+   "class": "marka_varyant",
+   "brand": "t-online",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "wahrheitindenaugen.pw",
+   "first_dns_label": "wahrheitindenaugen",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhehit.fun",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhehit.online",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhehit.pw",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhehit.site",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhehit.space",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhehit.website",
+   "first_dns_label": "warhehit",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhheiiptdaunegn.link",
+   "first_dns_label": "warhheiiptdaunegn",
+   "last_dns_label": "link",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhheiiptdaunegn.pw",
+   "first_dns_label": "warhheiiptdaunegn",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhheintbaunegn.pw",
+   "first_dns_label": "warhheintbaunegn",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhheintdaunegn.link",
+   "first_dns_label": "warhheintdaunegn",
+   "last_dns_label": "link",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhheintdaunegn.pw",
+   "first_dns_label": "warhheintdaunegn",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "warhheit.fun",
+   "first_dns_label": "warhheit",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhheit.online",
+   "first_dns_label": "warhheit",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhheit.site",
+   "first_dns_label": "warhheit",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhheit.space",
+   "first_dns_label": "warhheit",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "warhheit.website",
+   "first_dns_label": "warhheit",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "welt.ltd",
+   "first_dns_label": "welt",
+   "last_dns_label": "ltd",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "welt",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "welt.media",
+   "first_dns_label": "welt",
+   "last_dns_label": "media",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "welt",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "welt.tours",
+   "first_dns_label": "welt",
+   "last_dns_label": "tours",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "welt",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "welt.ws",
+   "first_dns_label": "welt",
+   "last_dns_label": "ws",
+   "source_target_label": "Germany",
+   "class": "marka_birebir",
+   "brand": "welt",
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "werdunstorker.fun",
+   "first_dns_label": "werdunstorker",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "werdunstorker.online",
+   "first_dns_label": "werdunstorker",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "werdunstorker.pw",
+   "first_dns_label": "werdunstorker",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  },
+  {
+   "canonical_domain": "whrheit.fun",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "whrheit.online",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "whrheit.pw",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "whrheit.site",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "whrheit.space",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "whrheit.website",
+   "first_dns_label": "whrheit",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.fun",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "fun",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.online",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "online",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.pw",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "pw",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.site",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "site",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.space",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "space",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "wrhheit.website",
+   "first_dns_label": "wrhheit",
+   "last_dns_label": "website",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": true
+  },
+  {
+   "canonical_domain": "zestiftung.com",
+   "first_dns_label": "zestiftung",
+   "last_dns_label": "com",
+   "source_target_label": "Germany",
+   "class": "sahte_yayin",
+   "brand": null,
+   "anagram_family": false
+  }
+ ]
+}

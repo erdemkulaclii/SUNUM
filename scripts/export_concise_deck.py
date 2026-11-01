@@ -175,6 +175,8 @@ def gdelt_visual(d,sl):
 
 def visual(d,sl,s,stats):
     kind=s['visual'];f=stats['findings'];x=7.10;w=5.2;y=2.45
+    if kind=='bars' and s.get('bars'):
+        bars(d,sl,[tuple(b) for b in s['bars']],x,y+.1,w,row_h=.95,size=18);d.text(sl,s.get('bars_caption',''),x,y+3.05,w,.3,11,MUTED,name='bars_caption',leading=1.0,min_size=9);return
     if kind=='steps' and s.get('steps'):
         steps(d,sl,[tuple(t) for t in s['steps']],x-.2,y-.15,w+.25);return
     if kind=='quote':

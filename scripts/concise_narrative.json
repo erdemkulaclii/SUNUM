@@ -141,7 +141,7 @@
    ],
    [
     "Hangi altyapıyla · ödünç güvenilirlik",
-    "Tanıdık marka görünümü; haber biçimini taklit eden yanlışlar (Bennett ve Livingston, 2018)"
+    "Marka klonu (%19) ve uydurma “bağımsız yayın” kimliği (%81) (Bennett ve Livingston, 2018)"
    ],
    [
     "Bilgi düzensizliği",
@@ -229,7 +229,7 @@
    ],
    [
     "AS2 · altyapı",
-    "Beklenti: typosquatting değil, ucuz yeni uzantılarda wrongTLD (Tian vd., 2018; Korczyński vd., 2018)"
+    "Beklenti: marka adı korunup uzantı değişir (wrongTLD) ve ucuz uzantılar seçilir (Tian vd., 2018; Korczyński vd., 2018)"
    ],
    [
     "AS3 · görünürlük",
@@ -351,35 +351,51 @@
  },
  {
   "id": "tlds",
-  "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
-  "kicker": "BULGU 2 / AS2 · SON DNS ETİKETİ",
+  "title": "Altyapının %81’i uydurma yayın adı",
+  "kicker": "BULGU 2 / AS2 · ALAN ADI TİPOLOJİSİ",
   "display_points": [
-   "En sık altı uzantı: 240/311 (%77,2)",
-   "Tip: wrongTLD, marka adı aynen korunuyor (Tian vd., 2018)"
+   "Marka birebir 43 (%13,8); yazım varyantı 16 (%5,1)",
+   "Uydurma yayın adı 252; 174’ü harf karışımı ailelerinde"
   ],
-  "takeaway": "Ucuz yeni uzantılarda atılabilir, engellemeye dayanıklı altyapı.",
-  "notes": "En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.\nMarka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.\nKorczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.\nFiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil.",
+  "takeaway": "Ucuz uzantılardaki 240 adresin 238’i uydurma yayın adı.",
+  "notes": "311 alan adını kural tabanlı üç sınıfa ayırdım: marka birebir, marka varyantı ve uydurma yayın adı.\nGerçek markayı birebir taşıyan adres yalnız 43; bunlar 27 farklı uzantıya dağılmış.\n252 adres var olmayan “bağımsız” Alman yayınlarının adı; “Wahrheit”, “offene Meinung”, “denk zuerst nach” gibi ifadelerin harfleri karıştırılmış.\nEn sık altı ucuz uzantıdaki 240 adresin 238’i bu uydurma adlardan; wrongTLD beklentim büyük ölçüde karşılanmadı.",
   "cue_sentences": [
-   "En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.",
-   "Marka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.",
-   "Korczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.",
-   "Fiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil."
+   "311 alan adını kural tabanlı üç sınıfa ayırdım: marka birebir, marka varyantı ve uydurma yayın adı.",
+   "Gerçek markayı birebir taşıyan adres yalnız 43; bunlar 27 farklı uzantıya dağılmış.",
+   "252 adres var olmayan “bağımsız” Alman yayınlarının adı; “Wahrheit”, “offene Meinung”, “denk zuerst nach” gibi ifadelerin harfleri karıştırılmış.",
+   "En sık altı ucuz uzantıdaki 240 adresin 238’i bu uydurma adlardan; wrongTLD beklentim büyük ölçüde karşılanmadı."
   ],
-  "full_notes": "İkinci bulgu, alan adının en sağındaki etikete bakıyor. Online elli üç, website elli, site kırk altı, space kırk iki, pw yirmi sekiz ve fun yirmi bir kez geçiyor. Altı etiket toplam iki yüz kırk alan adını, yani listenin yüzde yetmiş yedi virgül ikisini kapsıyor. Bu iki yüz kırk kaydın tamamı Almanya hedefli. Böylece coğrafi yoğunlaşmayı yalnız bir ülke toplamı olarak değil, belirli bir adres dağılımıyla birlikte görebiliyoruz. Ancak etiketin sık kullanılması, ucuz olduğunu kanıtlamaz; bunun için döneme ait tescil veya fiyat verisi gerekir. Etiket barındırma ülkesini de göstermiyor. Hesap, kaydın en sağındaki DNS etiketi üzerinden yapıldığı için etkin kayıt son ekiyle karıştırılmamalı.",
+  "full_notes": "İkinci bulgu, alan adı altyapısının ne tür bir taklit izlediğiyle ilgili. Her alan adının ilk etiketini, vaka raporlarında taklit edildiği bilinen 15 yayın kuruluşunun etiketleriyle karşılaştırdım. Etiket birebir aynıysa “marka birebir”, bir iki harf farkla yakınsa “marka varyantı”, ikisi de değilse “uydurma yayın adı” saydım. Sonuç beklentimi büyük ölçüde boşa çıkardı. Gerçek bir markayı birebir taşıyan adres yalnız 43; Spiegel 9, Bild 8 ve bunlar 27 farklı uzantıya dağılmış. Yazım varyantı 16. Kalan 252 adres, yani yüzde 81, var olmayan “bağımsız” Alman yayınlarının adları. Bu adların çoğu “Wahrheit”, yani hakikat, “offene Meinung”, yani açık fikir, ya da “denk zuerst nach”, yani önce düşün gibi ifadelerin harfleri karıştırılarak yazılmış; 174 adres bu harf karışımı ailelerinde. En sık altı ucuz uzantıdaki 240 adresin 238’i bu uydurma adlardan oluşuyor. Yani operasyon tanınmış markaların itibarını ödünç almanın yanında, ana akım medyaya güvenmeyen okurlara hitap eden sahte bir bağımsız yayıncılık kimliğini çok sayıda ucuz adrese çoğaltmış.",
   "seconds": 65,
-  "visual": "tlds",
+  "visual": "bars",
   "citations": [
    "meta2022",
    "tian2018",
-   "korczynski2018"
+   "korczynski2018",
+   "disinfolab2022"
   ],
-  "source": "Meta, 2022; Tian et al., 2018; Korczyński et al., 2018",
+  "source": "Meta, 2022; Tian et al., 2018; Korczyński et al., 2018; Alaphilippe et al., 2022",
   "metric": {
    "numerator": 240,
    "denominator": 311,
    "percentage": 77.2
   },
-  "visible_word_count": 28
+  "visible_word_count": 29,
+  "bars": [
+   [
+    "Uydurma yayın adı",
+    252
+   ],
+   [
+    "Marka birebir",
+    43
+   ],
+   [
+    "Marka varyantı",
+    16
+   ]
+  ],
+  "bars_caption": "311 alan adı · yeniden üretilebilir kural tabanlı sınıflama"
  },
  {
   "id": "reuse",
@@ -620,17 +636,17 @@
   "kicker": "SONUÇ",
   "display_points": [
    "AS1: Almanya %95,8 (298/311)",
-   "AS2: wrongTLD; 75 marka etiketi tekrarlanıyor",
+   "AS2: %81 uydurma yayın adı; marka taklidi %19",
    "AS3: iki günlük dalga; kaynak ağırlıkla ABD"
   ],
   "takeaway": "Görünmez cephe: hedef kamu çoğunlukla ifşayı görüyor.",
-  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altı son etiket 240 adresi kapsıyor; 75 ilk etiket farklı son etiketlerle tekrar ediyor.\nAS3: Kaldırma haberi iki günlük bir dalga; ağırlıkla ABD ve İngilizce medyada görünür oldu.\nSonraki adım: ikinci kodlayıcıyla isabet ve yanlış negatif ölçümü, içerik çözümlemesi.",
+  "notes": "Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.\nİfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.\nGelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi.",
   "cue_sentences": [
-   "Doppelgänger, ucuz ve atılabilir uzantılar üzerinde güveni ödünç alan bir hibrit müdahale aracıdır.",
+   "Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.",
    "İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.",
    "Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi."
   ],
-  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birincisi: ifşa edilen altyapının yüzde 95,8’i Almanya’yı hedefliyor. İkincisi: bu altyapı yazım hatalarından değil, aynı haber markasının ucuz yeni uzantılarda çoğaltılmasından oluşuyor; yani güveni ödünç alan, atılabilir ve engellemeye dayanıklı bir altyapı. Üçüncüsü: ifşa iki günlük bir haber dalgası olarak görünür oldu ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı. Bu sonuçları hibrit müdahale çerçevesine bağladığımda “görünmez cephe” tezini şöyle özetliyorum: operasyon tespit ve atıf eşiğinin altında tutuluyor; kamuoyunun gördüğü şey ise büyük ölçüde operasyonun kendisi değil, ifşası. Bu tez için sonraki adımlar belli: 145 tekil başlığın kör bir insan kodlayıcıyla yeniden kodlanması, Almanca akışta kaçırılan haberlerin ölçülmesi, ve erişimi ölçmek için web izleme paneli ile Dijital Hizmetler Yasası kapsamındaki veri erişimi. Teşekkür ederim.",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birincisi: ifşa edilen altyapının yüzde 95,8’i Almanya’yı hedefliyor. İkincisi: altyapının beşte dördü var olmayan “bağımsız” yayınların adlarından oluşuyor ve bu adlar harf karışımı yazımlarla ucuz uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncüsü: ifşa iki günlük bir haber dalgası olarak görünür oldu ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı. Bu sonuçları hibrit müdahale çerçevesine bağladığımda “görünmez cephe” tezini şöyle özetliyorum: operasyon tespit ve atıf eşiğinin altında tutuluyor; kamuoyunun gördüğü şey ise büyük ölçüde operasyonun kendisi değil, ifşası. Bu tez için sonraki adımlar belli: 145 tekil başlığın kör bir insan kodlayıcıyla yeniden kodlanması, Almanca akışta kaçırılan haberlerin ölçülmesi, ve erişimi ölçmek için web izleme paneli ile Dijital Hizmetler Yasası kapsamındaki veri erişimi. Teşekkür ederim.",
   "seconds": 65,
   "visual": "steps",
   "citations": [
@@ -639,7 +655,7 @@
    "wigell2019"
   ],
   "source": "Meta, 2022; The GDELT Project, 2015; Wigell, 2019",
-  "visible_word_count": 32,
+  "visible_word_count": 34,
   "steps": [
    [
     "AS1 · hedefleme",
@@ -647,7 +663,7 @@
    ],
    [
     "AS2 · altyapı",
-    "wrongTLD: aynı marka, ucuz uzantılar; 75 marka etiketi 293 adreste"
+    "252/311 uydurma “bağımsız yayın” adı (174’ü harf karışımı); marka taklidi 59; ucuz uzantılarda toplanma"
    ],
    [
     "AS3 · görünürlük",

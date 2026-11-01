@@ -22,6 +22,18 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 | `python sunum.py --yeniden-uret` | HTML, PPTX, PDF ve belgeleri yeniden üretip başlatır |
 | `python sunum.py --kontrol` | Bütün testleri ve sunum doğrulamasını çalıştırır |
 
+## Makale
+
+**[makale/makale.pdf](makale/makale.pdf)** · [Word](makale/makale.docx) · [Markdown kaynağı](makale/makale.md) · [kaynak doğrulama kaydı](makale/KAYNAK_DOGRULAMA.md)
+
+“Hibrit Savaşın Görünmez Cephesi: Doppelgänger Ağının Alan Adı Altyapısı ve Uluslararası Haber Görünürlüğü (2022)”. Türkçe özet ve İngilizce abstract, kuramsal çerçeve, vaka, yöntem, bulgular (iki tablo, iki şekil), tartışma, sınırlılıklar, veri erişilebilirliği ve yapay zekâ kullanım beyanı, APA 7 kaynakça (37 kaynak).
+
+Makaledeki her sayı ham veriden yeniden hesaplanır ve otomatik testle metne karşı denetlenir:
+
+```bash
+python scripts/build_makale.py && python -m unittest scripts/test_makale.py
+```
+
 ## Akış: 19 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
 
 | # | Bölüm | İçerik |

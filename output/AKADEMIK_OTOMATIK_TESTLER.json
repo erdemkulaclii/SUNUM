@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-11-01T11:54:03.688956+00:00",
-  "html_sha256": "cff824b36e9a8a401610982aa1061c2677acd5892fa358d4a74c6ec8cb79950f",
-  "narrative_sha256": "df74a391a47b7545c26f3579a8c872a02cdd003ab09555eee358d8d9b447f875",
+  "checked_at_utc": "2026-11-01T12:05:02.542598+00:00",
+  "html_sha256": "188a3823ff2bfd40fa38ceef573553c81b8f4fb023814a531a19732d4027ef50",
+  "narrative_sha256": "eed842135cc2b6bdfcf372a2ca7b4d6dcf48a7799d73d84ec72754ba103359c9",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
@@ -17,14 +17,14 @@
     25,
     33,
     22,
-    28,
+    29,
     24,
     30,
     33,
     25,
     21,
     27,
-    32,
+    34,
     11
   ],
   "word_count_scope": "Title, optional subtitle, display points and takeaway; chart labels/source/navigation are separate.",
@@ -145,7 +145,7 @@
         },
         {
           "scene": 11,
-          "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
+          "title": "Altyapının %81’i uydurma yayın adı",
           "prose_fonts_px": [
             24,
             32,
@@ -341,7 +341,7 @@
         },
         {
           "scene": 11,
-          "title": "Marka sabit, uzantı değişken: wrongTLD deseni",
+          "title": "Altyapının %81’i uydurma yayın adı",
           "prose_fonts_px": [
             19,
             24,

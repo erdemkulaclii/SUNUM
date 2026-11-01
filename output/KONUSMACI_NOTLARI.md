@@ -111,16 +111,16 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 **Atıf:** Meta, 2022
 
-## 11. Marka sabit, uzantı değişken: wrongTLD deseni · 10:15–11:20
+## 11. Altyapının %81’i uydurma yayın adı · 10:15–11:20
 
-- En sık altı son etiket online, website, site, space, pw ve fun; toplam 240 alan adı.
-- Marka adı aynen korunup yalnız uzantı değiştiği için bu, Tian ve arkadaşlarının tipolojisinde typosquatting değil wrongTLD işgalidir.
-- Korczyński ve arkadaşları kötüye kullanımın ucuz yeni uzantılarda yoğunlaştığını gösterir; bu desen engellemeye dayanıklı, atılabilir bir altyapıya işaret eder.
-- Fiyat verisi yok; “ucuz” bir çıkarımdır, ölçüm değil.
+- 311 alan adını kural tabanlı üç sınıfa ayırdım: marka birebir, marka varyantı ve uydurma yayın adı.
+- Gerçek markayı birebir taşıyan adres yalnız 43; bunlar 27 farklı uzantıya dağılmış.
+- 252 adres var olmayan “bağımsız” Alman yayınlarının adı; “Wahrheit”, “offene Meinung”, “denk zuerst nach” gibi ifadelerin harfleri karıştırılmış.
+- En sık altı ucuz uzantıdaki 240 adresin 238’i bu uydurma adlardan; wrongTLD beklentim büyük ölçüde karşılanmadı.
 
-**Ana mesaj:** Ucuz yeni uzantılarda atılabilir, engellemeye dayanıklı altyapı.
+**Ana mesaj:** Ucuz uzantılardaki 240 adresin 238’i uydurma yayın adı.
 
-**Atıf:** Meta, 2022; Tian et al., 2018; Korczyński et al., 2018
+**Atıf:** Meta, 2022; Tian et al., 2018; Korczyński et al., 2018; Alaphilippe et al., 2022
 
 ## 12. Aynı ilk DNS etiketi farklı son etiketlerle yinelenir. · 11:20–12:15
 
@@ -190,7 +190,7 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_15_
 
 ## 18. Sonuç: güveni ödünç alan altyapı, uzakta kalan görünürlük · 18:35–19:40
 
-- Doppelgänger, ucuz ve atılabilir uzantılar üzerinde güveni ödünç alan bir hibrit müdahale aracıdır.
+- Doppelgänger altyapısı, tanınmış markaların yanında çoğunlukla uydurma “bağımsız” yayın kimliklerini ucuz adreslere çoğaltan bir hibrit müdahale aracıdır.
 - İfşası iki gün sürdü ve hedeflenen Almanya’dan çok ABD ve İngilizce ajans ekosisteminde dolaştı.
 - Gelecek çalışma: 145 başlığın kör kodlaması, Almanca akışta kaçırılan haber ölçümü, web izleme paneli ve DSA veri erişimi.
 

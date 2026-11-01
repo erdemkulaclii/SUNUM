@@ -33,8 +33,8 @@
       "sha256": "9e593d9ac3119c6d35584ef199d5f05ed198b6732ae20c09b89a9edb78132d07"
     },
     "README.md": {
-      "bytes": 6753,
-      "sha256": "ef1539c72385ace52030852d2e53ec54fa9384bd9dda9bb5c3a2ad9bfaea5212"
+      "bytes": 7491,
+      "sha256": "62e7cf60c495e178c298f014519938eb08b1805c4607b4dd967b580fbc103c47"
     },
     "REVIZYON_KARARLARI.md": {
       "bytes": 7852,
@@ -56,25 +56,53 @@
       "bytes": 147552,
       "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
     },
+    "makale/KAYNAK_DOGRULAMA.md": {
+      "bytes": 2739,
+      "sha256": "df52553439fa6971a86498340578dad7df0960aae0aa2d230873e6396ed2b10e"
+    },
+    "makale/makale.docx": {
+      "bytes": 308107,
+      "sha256": "ec353fafa50fb908bb3271a5ccec30f33ab9de7c42593adfe22ac5f20f847cd0"
+    },
+    "makale/makale.md": {
+      "bytes": 43529,
+      "sha256": "0e9143e1d64da854e1ab2a446a5fecc866ab9e248599fb1dffd3bb0391cb99af"
+    },
+    "makale/makale.pdf": {
+      "bytes": 360853,
+      "sha256": "dbf82ba2f7f4388b552b186c17275d08fe8bcb87cba43edc0382e50cd7ecbfec"
+    },
+    "makale/sekil1_gunluk_dagilim.png": {
+      "bytes": 67781,
+      "sha256": "6b272af6287f328ddda478e19ea35081b1efaad71e64880ec5e93ecfb817ed37"
+    },
+    "makale/sekil2_harita.png": {
+      "bytes": 223115,
+      "sha256": "39162e5c10da01ad4051e199d223d74bfa98d165899da0362a855ba4f2de085b"
+    },
     "output/AKADEMIK_ARASTIRMA_DOSYASI.pdf": {
       "bytes": 99721,
-      "sha256": "52235bda0ec4a90fab13117cc02ea066d544fc62e7c49dc0a3384a517adced2f"
+      "sha256": "379a4c19ab6c20e025e21da9d0bec91592a8fab70acd633002036c6f2caad16c"
     },
     "output/AKADEMIK_ODAKLI_SUNUM.html": {
-      "bytes": 826646,
-      "sha256": "cff824b36e9a8a401610982aa1061c2677acd5892fa358d4a74c6ec8cb79950f"
+      "bytes": 827697,
+      "sha256": "188a3823ff2bfd40fa38ceef573553c81b8f4fb023814a531a19732d4027ef50"
     },
     "output/AKADEMIK_ODAKLI_SUNUM.pdf": {
-      "bytes": 324685,
-      "sha256": "7a30d6e1845f48b8a57f692ad79e71a6c340e1558f67f725e78a25991fcb8238"
+      "bytes": 324663,
+      "sha256": "b4e866fc3ffbe421074e25528539a746c36f572b43c4e68988c951b48a176d88"
     },
     "output/AKADEMIK_ODAKLI_SUNUM.pptx": {
-      "bytes": 348666,
-      "sha256": "d436ade79214db454112da64ed26327c6c31706af4590eb195efd88c4a3d0d9c"
+      "bytes": 348631,
+      "sha256": "12f7ee7ade0b7c7911171b18f6655dd1290b21c92301b4726edd2ae9b3e6c8ec"
     },
     "output/ALAN_ADI_ANATOMISI.png": {
-      "bytes": 119748,
-      "sha256": "470fa059010190639af423274e3d2f3af0aa80e14adf3ece75ec5ec116ae56ee"
+      "bytes": 121087,
+      "sha256": "b2ec8d995a6eaee329cb5ba946445399ff6333b421ae84d1239bb61858277b8f"
+    },
+    "output/ALAN_ADI_TIPOLOJISI.json": {
+      "bytes": 73683,
+      "sha256": "79033943f0ee0508b1b6a5c00c52dc6f5b2f86bbc44c7ae3591ae472e1b52e4c"
     },
     "output/ANIMASYON_KUNYESI.json": {
       "bytes": 542,
@@ -86,7 +114,7 @@
     },
     "output/APA7_KAYNAKCA.pdf": {
       "bytes": 76782,
-      "sha256": "9537d9eb6ec418e7820cf3f9e0166c8420ee3a2976cb4b514a41fbe39d364f69"
+      "sha256": "3d436cd4661c6cb9a1255a3655c648c78b0801e95f449ec31a929815845f149a"
     },
     "output/ATLAS_ONIZLEME.png": {
       "bytes": 158631,
@@ -94,7 +122,7 @@
     },
     "output/BASEMAP_DOGRULAMA.json": {
       "bytes": 790,
-      "sha256": "dc770c94c487d1c6724b771f9b8fc7da6f0a4b70282933878424655389c661ad"
+      "sha256": "a4ea49aed64ca39e49c4615ddbd74a1ae714b64d92cc62d4eff5734645fa56a7"
     },
     "output/BURADAN_BASLA.txt": {
       "bytes": 3229,
@@ -113,8 +141,8 @@
       "sha256": "3b73b45bc243382675b1173b5f5df34c81c234e67c9a03080e06dc3ff5499e43"
     },
     "output/GDELT_HARITA_ONIZLEME.png": {
-      "bytes": 100742,
-      "sha256": "9fd42231fcaf27d060ffe6a6fcd20b1958edcf95574ade2d7de2e0a5af20a776"
+      "bytes": 100741,
+      "sha256": "821472946041cec26cb874d75a95b99bc90b1f9936abc3a16a374820dbf44ee1"
     },
     "output/HAREKETLI_HARITA.gif": {
       "bytes": 904332,
@@ -125,8 +153,8 @@
       "sha256": "cef2c10af3b15167a210c11f0afe5c6d6ffeeac4aaa119cd51a9eeabc1823420"
     },
     "output/ILK_ETIKET_TEKRARI.png": {
-      "bytes": 98874,
-      "sha256": "46dd08fc7df35b552b0eb42923bc93724cc529b21dfc606a1aec933de2ff5ac2"
+      "bytes": 100213,
+      "sha256": "ca17fb1eb24ede2dda5b9047cd353836ab4df82a94c7a5720be2bce1e88b4864"
     },
     "output/IOC_GOVDE_AILELERI.csv": {
       "bytes": 16892,
@@ -153,16 +181,20 @@
       "sha256": "724c602703784ba0672cf436403ddb1312bd895b0d5513a27b442c9457c13ee1"
     },
     "output/KONUSMACI_NOTLARI.md": {
-      "bytes": 12332,
-      "sha256": "f78dac846eae0982de9e40d64a8d79039077e4325903b25fb451e57ced2d3544"
+      "bytes": 12435,
+      "sha256": "b7a11e1ad4183c8c28e6e5aed95a1f46bd1e3d8e1c11b8b03141a1720086f0f1"
     },
     "output/KONUSMA_METNI_15_DK.docx": {
-      "bytes": 49716,
-      "sha256": "cbeec11b01c7d844e93043f8f77ee77c0ed620cb514fc463685d82c3048a8ab8"
+      "bytes": 49910,
+      "sha256": "46f403726a8c9093167240b5ee86d71536d480f80e55a143467fbf00dc8d980f"
     },
     "output/KONUSMA_METNI_15_DK.pdf": {
-      "bytes": 102480,
-      "sha256": "143d410eaa917d629976524bdc23e3486149cb681057d7c47961d81ee5236f8b"
+      "bytes": 102923,
+      "sha256": "dd482c37cae599c6b5092eb2415399a072d3beca1698cd8b35dfba6a4ea89d59"
+    },
+    "output/MAKALE_SAYILARI.json": {
+      "bytes": 6229,
+      "sha256": "f729b8dcafb389e2d8cfaab8389c375f72293f5842e84423dd212af422cf23ed"
     },
     "output/MOBIL_ONIZLEME.png": {
       "bytes": 118671,
@@ -170,55 +202,55 @@
     },
     "output/ODAKLI_BELGE_DOGRULAMA.json": {
       "bytes": 876,
-      "sha256": "c34fd4981276cc81931de1c1309f0854a8f4ff569a1c347e04541dd098a8450c"
+      "sha256": "2b0fee3e75bf25744cd0e48380dbf789b98a503e64ecc21348ab4e941d5c8546"
     },
     "output/ODAKLI_SUNUM_DOGRULAMA.json": {
       "bytes": 856,
-      "sha256": "c2b8e3eac33085210f2eedb943f395205a7028bdf695aaadbac3eae83f35fe8f"
+      "sha256": "5a93e3cdae0fc9e39bb55ee8733d48ebb8a9097094854ddf95c734c2ed83861a"
     },
     "output/ODAKLI_WEB_DOGRULAMA.json": {
-      "bytes": 10303,
-      "sha256": "0b04fb2fe2b7e388cd7d00eee61285e5ed988858ec8e426dc790a911c4af8f3e"
+      "bytes": 10287,
+      "sha256": "3e354697f0300ffa64bf27c768d3a7e8714d39d7abff0a42bdd97f7ae3cb5f5c"
     },
     "output/PROFESYONEL_KAPAK.png": {
       "bytes": 99940,
       "sha256": "6f1d96b26bc4869c234b8ecfce80c01ffab8d5b29e1775678e205e047e9b2641"
     },
     "output/PROFESYONEL_SUNUM.html": {
-      "bytes": 826646,
-      "sha256": "cff824b36e9a8a401610982aa1061c2677acd5892fa358d4a74c6ec8cb79950f"
+      "bytes": 827697,
+      "sha256": "188a3823ff2bfd40fa38ceef573553c81b8f4fb023814a531a19732d4027ef50"
     },
     "output/PROFESYONEL_SUNUM.pdf": {
-      "bytes": 324685,
-      "sha256": "7a30d6e1845f48b8a57f692ad79e71a6c340e1558f67f725e78a25991fcb8238"
+      "bytes": 324663,
+      "sha256": "b4e866fc3ffbe421074e25528539a746c36f572b43c4e68988c951b48a176d88"
     },
     "output/PROFESYONEL_SUNUM.pptx": {
-      "bytes": 348666,
-      "sha256": "d436ade79214db454112da64ed26327c6c31706af4590eb195efd88c4a3d0d9c"
+      "bytes": 348631,
+      "sha256": "12f7ee7ade0b7c7911171b18f6655dd1290b21c92301b4726edd2ae9b3e6c8ec"
     },
     "output/SINEMATIK_SUNUM.html": {
-      "bytes": 826646,
-      "sha256": "cff824b36e9a8a401610982aa1061c2677acd5892fa358d4a74c6ec8cb79950f"
+      "bytes": 827697,
+      "sha256": "188a3823ff2bfd40fa38ceef573553c81b8f4fb023814a531a19732d4027ef50"
     },
     "output/SINEMATIK_SUNUM.pdf": {
-      "bytes": 324685,
-      "sha256": "7a30d6e1845f48b8a57f692ad79e71a6c340e1558f67f725e78a25991fcb8238"
+      "bytes": 324663,
+      "sha256": "b4e866fc3ffbe421074e25528539a746c36f572b43c4e68988c951b48a176d88"
     },
     "output/SINEMATIK_SUNUM.pptx": {
-      "bytes": 348666,
-      "sha256": "d436ade79214db454112da64ed26327c6c31706af4590eb195efd88c4a3d0d9c"
+      "bytes": 348631,
+      "sha256": "12f7ee7ade0b7c7911171b18f6655dd1290b21c92301b4726edd2ae9b3e6c8ec"
     },
     "output/SONUC_ONIZLEME.png": {
       "bytes": 116129,
       "sha256": "2468cffd018e1e66248ff3a7036a9bdb5a2c0307913a5f7cfefcfb4aebf2caee"
     },
     "output/SUNUCU_KARTLARI.docx": {
-      "bytes": 42318,
-      "sha256": "da79d5f749ca8e941602c5f015dcfae8af91d721b0b8ef9681e00b5e86b08ce6"
+      "bytes": 42372,
+      "sha256": "c1f5fc0569f6e36999ec023019e1e02160f9ce78aecc8f7e90b3a4da13044c85"
     },
     "output/SUNUCU_KARTLARI.pdf": {
-      "bytes": 69350,
-      "sha256": "039fbf41fcba1cc1982067ee94fc6596eaa7b00fe95dd15bc2e6eb0f323a8941"
+      "bytes": 69396,
+      "sha256": "5c134cd307b0f43262c36959e1caa724606461555c59418201e061ed5cbbed39"
     },
     "output/ULKE_DAGILIMI.png": {
       "bytes": 139281,
@@ -280,13 +312,17 @@
       "bytes": 208,
       "sha256": "c4f9144b9341b4dc355cdb90a6cd3924b050eaf3d113e46c1f5dcee50e7708d2"
     },
+    "scripts/build_makale.py": {
+      "bytes": 1736,
+      "sha256": "f87b9558a3ddecde7c3224184640d93672f914046f656cd95768d00348c2532b"
+    },
     "scripts/build_presentation.py": {
       "bytes": 316,
       "sha256": "a089e91da4d256be100e599495c66d9c83adb2d0078e3b31cfe82b07c892a0f5"
     },
     "scripts/build_release.py": {
-      "bytes": 6503,
-      "sha256": "c150d56f6f4d672bf85dfce48ddd119ba4f09b9634007185fefb78b8ea3707ae"
+      "bytes": 6872,
+      "sha256": "8c5df390bda9b97b3523e411f188f985cebe9fa655b3edb3c5be467114fa413d"
     },
     "scripts/concise.css": {
       "bytes": 18797,
@@ -297,28 +333,32 @@
       "sha256": "b1ac824626986c3bc391be6a3f61082e61d0aa18812026452b4458e8eaa9fdc4"
     },
     "scripts/concise.js": {
-      "bytes": 27071,
-      "sha256": "3821f2aaf65649b7f3e481670b4dfdcb58ee796a25aa5ab2ddb2c03bc1e43815"
+      "bytes": 27174,
+      "sha256": "6921945c7d9b560dcd06fe0a68b42178862e4dc4ddb2b26592709ead25c5a77b"
     },
     "scripts/concise_appendices.json": {
       "bytes": 5534,
       "sha256": "b2f32201b814938dbf010f392bf7a0da08305a86eb89da6bb77ec9c9ee5b96f6"
     },
     "scripts/concise_narrative.json": {
-      "bytes": 49984,
-      "sha256": "df74a391a47b7545c26f3579a8c872a02cdd003ab09555eee358d8d9b447f875"
+      "bytes": 51001,
+      "sha256": "eed842135cc2b6bdfcf372a2ca7b4d6dcf48a7799d73d84ec72754ba103359c9"
     },
     "scripts/concise_references.json": {
       "bytes": 18764,
       "sha256": "c6a744b4ee01ae6021deee7db2e56a1067060ec97bc72756e6e0ee2692cd8c97"
+    },
+    "scripts/domain_typology.py": {
+      "bytes": 4885,
+      "sha256": "38bce2d8c1177172f1c41557f516138f604247c97ac2a8929f81183ee6811d0f"
     },
     "scripts/export_academic_documents.py": {
       "bytes": 149,
       "sha256": "d27a478ca8bba1607931467350090df7b438a1eb22683167345fd7a1e27d8e4a"
     },
     "scripts/export_concise_deck.py": {
-      "bytes": 32147,
-      "sha256": "c0603f61ed75c305f499988b0737d696b6b38fbbf6939224a76636ef1df67e56"
+      "bytes": 32371,
+      "sha256": "34a61307d96b5c3e7fed49c5ab1f68019bc1a887878c5337c0c202b20a556a58"
     },
     "scripts/export_concise_documents.py": {
       "bytes": 21083,
@@ -368,6 +408,14 @@
       "bytes": 4180,
       "sha256": "09dda2495a36d8a01af1c92ffa68a6f948bd82451be00e951b895160620b5cf1"
     },
+    "scripts/makale_istatistikleri.py": {
+      "bytes": 7158,
+      "sha256": "c29d8deab30b06a577c0944b03c22cde776015f627103a77c8c9542dd3c14c88"
+    },
+    "scripts/makale_sekiller.py": {
+      "bytes": 1288,
+      "sha256": "d0798fa398339db8f01d1044c0dd8bde41cc36075ea6cdcfa68b33e3788930ce"
+    },
     "scripts/presentation_meta.json": {
       "bytes": 266,
       "sha256": "b3097390ab1fa8a91478906cab8ff2883c4f118c7e152af6136809c99464d753"
@@ -379,6 +427,10 @@
     "scripts/serve_presentation.py": {
       "bytes": 8418,
       "sha256": "faa3786301bb542a1fb21f9cd551260a605a4d5eda67fb4ee1152f798e70383c"
+    },
+    "scripts/test_domain_typology.py": {
+      "bytes": 1753,
+      "sha256": "65f74cb3e37ff82bdb5940c6b40445036b9864d033b50145dba67d66e156606c"
     },
     "scripts/test_gdelt_archive.py": {
       "bytes": 3946,
@@ -395,6 +447,10 @@
     "scripts/test_gdelt_snapshot.py": {
       "bytes": 2983,
       "sha256": "5328e25b7d9dcc9064707a5c343de9a6725bf740053845d32efbc70fb3018a5a"
+    },
+    "scripts/test_makale.py": {
+      "bytes": 6206,
+      "sha256": "d710977e750187d533068c51a3c5e80372bbb868c3ae426a9c593c8da9c3d748"
     },
     "scripts/test_presentation_server.py": {
       "bytes": 2532,

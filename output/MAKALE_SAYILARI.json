@@ -1,0 +1,379 @@
+{
+ "meta": {
+  "raw_records": 350,
+  "domain_rows": 313,
+  "unique_domains": 311,
+  "duplicates_removed": 2,
+  "target_counts": {
+   "France": 2,
+   "Germany": 298,
+   "Italy": 2,
+   "UK": 4,
+   "Latvia": 3,
+   "Ukraine": 1,
+   "Multiple": 1
+  },
+  "germany_share_pct": 95.8,
+  "distinct_last_labels": 39,
+  "top6_domains": 240,
+  "top6_share_pct": 77.2,
+  "top6_labels": {
+   "online": 53,
+   "website": 50,
+   "site": 46,
+   "space": 42,
+   "pw": 28,
+   "fun": 21
+  },
+  "distinct_first_labels": 93,
+  "multi_suffix_families": 75,
+  "domains_in_multi_suffix_families": 293,
+  "typology": {
+   "n": 311,
+   "class_counts": {
+    "marka_varyant": 16,
+    "sahte_yayin": 252,
+    "marka_birebir": 43
+   },
+   "brand_exact_by_outlet": {
+    "spiegel": 9,
+    "bild": 8,
+    "sueddeutsche": 4,
+    "welt": 4,
+    "dailymail": 3,
+    "delfi": 3,
+    "faz": 3,
+    "nd-aktuell": 3,
+    "tagesspiegel": 2,
+    "ansa": 1,
+    "repubblica": 1,
+    "t-online": 1,
+    "theguardian": 1
+   },
+   "brand_variant_labels": {
+    "spiegeli": 3,
+    "t-onlinl": 3,
+    "t-onlinr": 3,
+    "tonline": 3,
+    "spiegelr": 2,
+    "20minuts": 1,
+    "rbk": 1
+   },
+   "pseudo_distinct_labels": 73,
+   "anagram_families": 19,
+   "anagram_family_labels": 45,
+   "anagram_family_domains": 174,
+   "top6_tld_by_class": {
+    "marka_varyant": 0,
+    "sahte_yayin": 238,
+    "marka_birebir": 2
+   },
+   "germany_by_class": {
+    "marka_varyant": 14,
+    "sahte_yayin": 250,
+    "marka_birebir": 34
+   },
+   "tld_by_class": {
+    "marka_varyant": {
+     "today": 6,
+     "life": 4,
+     "live": 4,
+     "com": 1,
+     "cfd": 1
+    },
+    "sahte_yayin": {
+     "online": 52,
+     "website": 50,
+     "site": 46,
+     "space": 42,
+     "pw": 28,
+     "fun": 20,
+     "live": 3,
+     "store": 2,
+     "com": 2,
+     "link": 2,
+     "eu": 1,
+     "tech": 1,
+     "info": 1,
+     "world": 1,
+     "de": 1
+    },
+    "marka_birebir": {
+     "ltd": 5,
+     "life": 4,
+     "co": 3,
+     "com": 2,
+     "work": 2,
+     "ws": 2,
+     "top": 2,
+     "today": 2,
+     "agency": 2,
+     "pro": 2,
+     "asia": 1,
+     "expert": 1,
+     "llc": 1,
+     "pics": 1,
+     "vip": 1,
+     "cam": 1,
+     "cfd": 1,
+     "net": 1,
+     "cab": 1,
+     "fun": 1,
+     "ink": 1,
+     "quest": 1,
+     "cc": 1,
+     "me": 1,
+     "online": 1,
+     "media": 1,
+     "tours": 1
+    }
+   }
+  },
+  "typology_share_pct": {
+   "marka_varyant": 5.1,
+   "sahte_yayin": 81.0,
+   "marka_birebir": 13.8
+  },
+  "anagram_family_examples": [
+   [
+    "affinemainung",
+    "affinemaiunng"
+   ],
+   [
+    "affineminung",
+    "affinemiunng"
+   ],
+   [
+    "alledrigns",
+    "allerdigns"
+   ],
+   [
+    "dassprachrohr",
+    "dassprahcrohr",
+    "dassrpahcorhr"
+   ],
+   [
+    "deknzuersntch",
+    "deknzuerstnch",
+    "denkuzesrtnch"
+   ],
+   [
+    "deknzursntch",
+    "denkzusrntch",
+    "dknuzersntch"
+   ]
+  ]
+ },
+ "gdelt": {
+  "window": [
+   "20220920",
+   "20221011"
+  ],
+  "files_listed": 4209,
+  "files_md5_verified": 4209,
+  "files_failed": 0,
+  "files_by_stream": {
+   "eng": 2112,
+   "trans": 2097
+  },
+  "files_expected_if_complete": 4224,
+  "rows_scanned": 5944850,
+  "matched_articles": 511,
+  "rules": {
+   "R2_takedown": 509,
+   "R1_campaign": 2
+  },
+  "day_0927": 392,
+  "day_0928": 100,
+  "two_day_share_pct": 96.3,
+  "before_0927": 1,
+  "after_0928": 18,
+  "distinct_titles": 145,
+  "distinct_outlets": 352,
+  "languages": {
+   "eng": 416,
+   "deu": 35,
+   "ita": 13,
+   "por": 8,
+   "bul": 5,
+   "fra": 5,
+   "ron": 4,
+   "spa": 4,
+   "pol": 4,
+   "sqi": 4,
+   "slk": 3,
+   "rus": 2,
+   "ukr": 2,
+   "nor": 1,
+   "ara": 1,
+   "urd": 1,
+   "ind": 1,
+   "nld": 1,
+   "hin": 1
+  },
+  "english_share_pct": 81.4,
+  "source_country_counts": {
+   "United States": 373,
+   "Germany": 29,
+   "Italy": 13,
+   "India": 9,
+   "eşleşmedi": 8,
+   "China": 8,
+   "Russia": 6,
+   "United Kingdom": 6,
+   "Canada": 5,
+   "Bulgaria": 5,
+   "Romania": 4,
+   "France": 4,
+   "Brazil": 4,
+   "Slovak Republic": 3,
+   "Portugal": 3,
+   "Austria": 3,
+   "Albania": 3,
+   "Pakistan": 2,
+   "New Zealand": 2,
+   "Mexico": 2,
+   "Ukraine": 2,
+   "Poland": 2,
+   "Japan": 1,
+   "Syria": 1,
+   "Colombia": 1,
+   "Spain": 1,
+   "Norway": 1,
+   "Switzerland": 1,
+   "Philippines": 1,
+   "Indonesia": 1,
+   "Cambodia": 1,
+   "Lithuania": 1,
+   "Netherlands": 1,
+   "Ghana": 1,
+   "Armenia": 1,
+   "Ivory Coast": 1,
+   "Kenya": 1
+  },
+  "source_countries_distinct": 36,
+  "unmatched_source_country": 8,
+  "us_share_pct": 73.0,
+  "germany_source_share_pct": 5.7,
+  "rates_per_100k": {
+   "United States": {
+    "articles": 373,
+    "scanned": 1469262,
+    "per100k": 25.39,
+    "ci95": [
+     22.88,
+     28.1
+    ]
+   },
+   "Germany": {
+    "articles": 29,
+    "scanned": 188558,
+    "per100k": 15.38,
+    "ci95": [
+     10.3,
+     22.09
+    ]
+   },
+   "Italy": {
+    "articles": 13,
+    "scanned": 240258,
+    "per100k": 5.41,
+    "ci95": [
+     2.88,
+     9.25
+    ]
+   },
+   "United Kingdom": {
+    "articles": 6,
+    "scanned": 293147,
+    "per100k": 2.05,
+    "ci95": [
+     0.75,
+     4.45
+    ]
+   },
+   "France": {
+    "articles": 4,
+    "scanned": 145528,
+    "per100k": 2.75,
+    "ci95": [
+     0.75,
+     7.04
+    ]
+   },
+   "Russia": {
+    "articles": 6,
+    "scanned": 207379,
+    "per100k": 2.89,
+    "ci95": [
+     1.06,
+     6.3
+    ]
+   }
+  },
+  "rate_ratio_us_de": 1.65,
+  "rate_ratio_ci95": [
+   1.13,
+   2.41
+  ],
+  "outlets_by_country": {
+   "United States": 230,
+   "Germany": 29,
+   "Italy": 9
+  },
+  "distinct_titles_by_country": {
+   "United States": 63,
+   "Germany": 13,
+   "Italy": 11
+  },
+  "mentions": {
+   "GM": 325,
+   "FR": 292,
+   "IT": 292,
+   "UK": 236,
+   "UP": 477,
+   "RS": 508,
+   "US": 418
+  },
+  "mention_share_pct": {
+   "GM": 63.6,
+   "FR": 57.1,
+   "IT": 57.1,
+   "UK": 46.2,
+   "UP": 93.3,
+   "RS": 99.4,
+   "US": 81.8
+  },
+  "mean_tone": -5.38,
+  "tone_n": 511,
+  "validation": {
+   "R1_campaign": {
+    "n": 2,
+    "relevant": 1,
+    "precision": 0.5,
+    "wilson95": [
+     0.095,
+     0.905
+    ]
+   },
+   "R2_takedown": {
+    "n": 30,
+    "relevant": 28,
+    "precision": 0.933,
+    "wilson95": [
+     0.787,
+     0.982
+    ]
+   },
+   "all": {
+    "n": 32,
+    "relevant": 29,
+    "precision": 0.906,
+    "wilson95": [
+     0.758,
+     0.968
+    ]
+   }
+  }
+ }
+}
