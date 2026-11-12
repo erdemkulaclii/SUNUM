@@ -72,14 +72,14 @@ function geo(){return{type:'FeatureCollection',features:D.features.map((f,i)=>({
 let GEO=null;
 function styleFor(t){return feat=>{const n=t&&G.show.src?t.counts.get(feat.properties.i)||0:0;return{color:'#8ea3b6',weight:.5,fillColor:n?'#1f5f99':'#eef2f5',fillOpacity:n?.18+.72*Math.log1p(n)/Math.log1p(t.max):1}}}
 function mount(){const slot=$('gdelt-slot');if(!slot)return;unmount();
- slot.innerHTML='<div class="gm-wrap"><div id="gm-day" class="gm-day" hidden></div><div id="gm-map" class="gm-map" role="application" aria-label="GDELT haber haritası"></div><div id="gm-empty" class="gm-empty"></div><aside id="gm-panel" class="gm-panel" aria-live="polite"></aside></div><div class="gm-controls"><label><input type="checkbox" data-l="src" checked>Kaynak ülke</label><label><input type="checkbox" data-l="loc" checked>Anılan yer</label><label><input type="checkbox" data-l="meta" checked>Meta hedefi</label><span class="gm-sep"></span><button data-v="eu">Avrupa</button><button data-v="world">Dünya</button></div>';
+ slot.innerHTML='<div class="gm-wrap"><div id="gm-day" class="gm-day" hidden></div><div id="gm-map" class="gm-map" role="application" aria-label="GDELT haber haritası"></div><div id="gm-empty" class="gm-empty"></div><aside id="gm-panel" class="gm-panel" aria-live="polite"></aside></div><div class="gm-controls"><label><input type="checkbox" data-l="src" checked>Kaynak ülke</label><label><input type="checkbox" data-l="loc" checked>Anılan yer</label><label><input type="checkbox" data-l="meta" checked>Meta hedefi</label><span class="gm-sep"></span><button data-v="eu">Avrupa</button><button data-v="world">Dünya</button><button id="gm-3d">3B küre</button></div>';
  GEO=GEO||geo();const map=L.map('gm-map',{keyboard:false,zoomSnap:.25,minZoom:1,maxZoom:7,worldCopyJump:false,attributionControl:true});G.map=map;map.setView([50,10],3);map.attributionControl.setPrefix('Leaflet 1.9.4');map.attributionControl.addAttribution('Sınırlar: Natural Earth · Veri: The GDELT Project');
  G.base=L.geoJSON(GEO,{style:styleFor(stats()),onEachFeature:(f,l)=>l.on('mouseover',()=>l.bindTooltip(tip(f.properties.i),{sticky:true}).openTooltip())}).addTo(map);
  map.createPane('meta');map.getPane('meta').style.zIndex=420;map.getPane('meta').style.pointerEvents='none';
  G.meta=L.geoJSON({type:'FeatureCollection',features:GEO.features.filter(f=>META_TARGETS[f.properties.name])},{pane:'meta',interactive:false,style:f=>({color:'#c0392b',weight:f.properties.name==='Germany'?3.2:2,dashArray:f.properties.name==='Germany'?null:'5 4',fill:false})});
  G.points=L.layerGroup();
  
- slot.querySelectorAll('[data-l]').forEach(c=>{c.checked=G.show[c.dataset.l];c.onchange=()=>{G.show[c.dataset.l]=c.checked;paint()}});slot.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>view(b.dataset.v));
+ const b3=$('gm-3d');if(b3){b3.hidden=!window.GDELT_FORCE_2D;b3.onclick=()=>{window.GDELT_FORCE_2D=false;go(scene)}}slot.querySelectorAll('[data-l]').forEach(c=>{c.checked=G.show[c.dataset.l];c.onchange=()=>{G.show[c.dataset.l]=c.checked;paint()}});slot.querySelectorAll('[data-v]').forEach(b=>b.onclick=()=>view(b.dataset.v));
  paint();requestAnimationFrame(()=>setTimeout(()=>{if(G.map!==map)return;map.invalidateSize(false);view(G.view||'eu',false)},30))}
 function view(v,anim=true){if(!G.map)return;G.view=v;const b=v==='world'?[[-50,-160],[72,165]]:[[35,-12],[62,34]],pw=($('gm-panel')?.offsetWidth||0)+16,o={paddingTopRight:[innerWidth>900?pw:0,0],paddingBottomLeft:[0,10]};anim?G.map.flyToBounds(b,{...o,duration:.9}):G.map.fitBounds(b,o)}
 function unmount(){if(G.map){G.map.remove();G.map=null}}
@@ -108,7 +108,7 @@ window.gdeltWaveSVG=()=>{const s=G.snap;if(!s?.daily?.length)return '<p class="m
  const mi=d.findIndex(r=>r.day==='20220927'),mxI=d.findIndex(r=>r.matches===mx);
  const ticks=d.map((r,i)=>(i%3===0&&Math.abs(i-mi)>1)||i===mi?`<text class="wave-tick" x="${(x0+i*bw+bw/2).toFixed(1)}" y="${y0+20}" text-anchor="middle">${r.day.slice(6)}.${r.day.slice(4,6)}</text>`:'').join('');
  return `<svg class="wave" viewBox="0 0 ${W} ${H+20}" role="img"><defs><clipPath id="wave-cp"><rect id="wave-clip" x="0" y="0" width="${W}" height="${H+20}"/></clipPath></defs><text class="wave-axis" x="0" y="20">Günlük eşleşen haber (en çok ${mx})</text><line class="wave-base" x1="${x0}" x2="${W}" y1="${y0}" y2="${y0}"/>${ticks}<g clip-path="url(#wave-cp)">${bars}<path class="wave-line" d="${line}"/></g>${mi>=0?`<line class="wave-mark" x1="${x0+mi*bw+bw/2}" x2="${x0+mi*bw+bw/2}" y1="40" y2="${y0}"/><text class="wave-note" x="${x0+mi*bw+bw/2+6}" y="54">27.09 · Meta duyurusu</text>`:''}<text class="wave-legend" x="${W}" y="20" text-anchor="end">— 100.000 GKG kaydı başına oran</text></svg><p class="mini-note">Kaynak: GDELT GKG 2.0 ham arşivi, ${nf.format(s.archive?.rows_scanned||0)} kayıt tarandı; ${nf.format(s.unique_articles)} tekil eşleşen haber.</p>`};
-window.onSlideRendered=s=>{G.dayCut=null;if(s.visual==='gdelt_map')mount();else unmount()};
+window.onSlideRendered=s=>{G.dayCut=null;if(s.visual==='gdelt_map'&&!(window.use3D&&window.use3D()))mount();else unmount()};
 // Otomatik akışta harita kendiliğinden oynar: gün gün birikim → Meta hedefleri → anılan yerler → Almanya'ya yakınlaşma.
 G.days=G.snap?[...new Set(G.snap.articles.map(dayOf).filter(Boolean))].sort():[];
 window.onSlideProgress=(s,f,auto)=>{if(s.visual==='gdelt_wave'){const c=document.getElementById('wave-clip');if(c)c.setAttribute('width',auto?Math.max(0,Math.min(1,f/.7))*620:620);return}if(s.visual!=='gdelt_map'||!G.map||!G.snap)return;
@@ -119,7 +119,7 @@ window.onSlideProgress=(s,f,auto)=>{if(s.visual==='gdelt_wave'){const c=document
  if(f<.8&&G.zoomed){G.zoomed=false;view('eu',false)}};
 $('gdelt-open').onclick=()=>{const i=D.slides.findIndex(s=>s.visual==='gdelt_map');if(i>=0)go(i)};
 if(D.gdelt&&validSnap(D.gdelt))G.snap=normalizeSnap(D.gdelt);restoreCache();paint();
-if(D.slides[scene]?.visual==='gdelt_map')mount();
+
 // Sunum açılınca, veri yoksa 2022 penceresi arka planda bir kez sorgulanır (≈ 1 dk); harita slaytına gelindiğinde hazır olur.
 if(!G.snap&&navigator.onLine)setTimeout(()=>{if(!G.snap&&!G.busy)runQuery('meta2022')},2500);
 })();

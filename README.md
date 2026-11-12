@@ -55,6 +55,16 @@ Akademik gerekçeler ve kaynak doğrulama etiketleri: [araştırma raporu](repor
 
 Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
 
+## 3B sahneler
+
+Sunumda üç 3B sahne vardır (three.js, dosyaya gömülü; internet gerekmez):
+
+- **Kapak:** hedef ülkeleri kırmızı gösteren, yavaş dönen küre.
+- **Alan adı takımyıldızı (Bulgu 2):** 311 alan adının her biri bir nokta. Dört aşama: üç sınıf → marka taklitleri (beyaz çekirdek = gerçek marka adı) → harf karışımı aileleri → en sık altı uzantı.
+- **GDELT küresi (Bulgu 5):** ülkelerin üzerinde yükselen sütunlar. Üç aşama: gün gün biriken haber sayısı → aktif kuruluş başına oran (ABD sütunu iner, Almanya yükselir) → haberlerde anılan yerler ve Meta hedefleri.
+
+Aşamaları sunucu ilerletir: **→ / Boşluk** önce sahnenin aşamasını, son aşamadan sonra slaytı değiştirir; **←** geri alır. Alttaki numaralı düğmelerle doğrudan bir aşamaya geçilebilir, sahne fareyle döndürülebilir. Oran aşamasında yalnızca en az 5 haberi ve 100 aktif kuruluşu olan ülkeler gösterilir. WebGL yoksa slaytlar 2B haritaya ve çubuk grafiğe düşer; küre slaytındaki “2B harita” düğmesi de elle geçiş sağlar. PowerPoint ve PDF sürümleri 2B görselleri kullanır.
+
 ## Sunumu siz yönetirsiniz
 
 Slaytlar kendiliğinden geçmez, yazılar süreyle açılmaz: her slaytın içeriği hemen görünür. Geçiş: →, Boşluk, PageDown (sunum kumandası) ya da tıklama; geri: ←. Harita slaytı girişte bir kez oynar (≈14 sn; gün gün birikim → Meta hedefleri → anılan yerler), haber dalgası grafiği girişte çizilir. Saat, başladığınız andan itibaren geçen süreyi 20:00’ye karşı gösterir. N: konuşma notları.

@@ -124,6 +124,27 @@ def main():
     assert '298' in page.locator('.leaflet-popup').inner_text()
     page.evaluate('map.panBy([20,10],{animate:false})');assert page.locator('.leaflet-popup').is_visible()
     page.keyboard.press('Escape');assert page.evaluate('map===null')
+    # 3B sahneler: küre ve takımyıldız açılır; → önce aşamayı, son aşamadan sonra slaytı ilerletir.
+    if page.evaluate('window.has3D&&window.has3D()'):
+     vis=[s['visual'] for s in narrative];g3=vis.index('gdelt_map');t3=vis.index('galaxy3d')
+     page.evaluate(f'go({g3})');page.wait_for_timeout(500)
+     assert page.locator('#globe3d canvas').count()==1 and page.evaluate('stageCtl.count')==3,'3D globe did not mount'
+     assert page.evaluate('scene3d.active._cols.length')==page.evaluate('D.globe.countries.length')
+     page.keyboard.press('ArrowRight');assert page.evaluate('scene')==g3 and page.evaluate('stageCtl.index')==1,'Stage did not advance'
+     de=page.evaluate("D.globe.countries.find(c=>c.admin==='Germany').per1000");us=page.evaluate("D.globe.countries.find(c=>c.admin==='United States of America').per1000");assert de>us,'Outlet-level rate must favour Germany'
+     assert '‰' in page.locator('#globe3d .s3-big').inner_text()
+     page.keyboard.press('ArrowLeft');assert page.evaluate('stageCtl.index')==0
+     for _ in range(3):page.keyboard.press('ArrowRight')
+     assert page.evaluate('scene')==g3+1,'Last stage must hand over to the next slide'
+     page.evaluate(f'go({t3})');page.wait_for_timeout(400)
+     assert page.locator('#galaxy3d canvas').count()==1 and page.evaluate('stageCtl.count')==4
+     assert page.evaluate('scene3d.active._nodes.length')==311,'Every domain must be a node'
+     page.locator('.stage-bar button').nth(3).click();assert page.evaluate('stageCtl.index')==3 and '238' in page.locator('#galaxy3d .s3-big').inner_text()
+     page.evaluate('go(0)');page.wait_for_timeout(300);assert page.locator('#bg3d canvas').count()==1,'Cover globe missing'
+     page.evaluate('go(1)');assert page.locator('#bg3d canvas').count()==0
+     report['three_d']={'webgl':True,'globe_stages':3,'galaxy_stages':4,'galaxy_nodes':311}
+    else:report['three_d']={'webgl':False,'fallback':'2D'}
+    page.evaluate('window.GDELT_FORCE_2D=true')
     # Otomatik akış: başlatınca anlatım şeridi görünür, ana fikir sonda açılır, slayt süre dolunca kendiliğinden geçer.
     page.evaluate('go(1);togglePlay()');page.wait_for_timeout(600)
     assert page.locator('#caption').is_hidden() and 'pending' in page.locator('#takeaway').get_attribute('class'),'Autoplay reveal missing or caption shown by default'

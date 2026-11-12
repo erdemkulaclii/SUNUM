@@ -109,12 +109,12 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_20_
 
 ## 11. Altyapının %81’i uydurma yayın adı · 10:35–11:55
 
-- 311 alan adını kural tabanlı üç sınıfa ayırdım: marka birebir, marka varyantı ve uydurma yayın adı.
-- Gerçek bir markayı birebir taşıyan adres yalnızca 43; bunlar 27 farklı uzantıya dağılmış.
-- 252 adres, var olmayan “bağımsız” Alman yayınlarının adı; çoğu “Wahrheit”, “offene Meinung” gibi ifadelerin harfleri karıştırılarak yazılmış.
-- En sık altı uzantıdaki 240 adresin 238’i bu uydurma adlardan oluşuyor; ilk beklentim büyük ölçüde karşılanmadı.
+- [Aşama 1] 311 alan adının her biri bir nokta; üç sınıf var: marka birebir, yazım varyantı ve uydurma yayın adı.
+- [Aşama 2 →] Gerçek bir markayı birebir taşıyan adres yalnızca 43; beyaz çekirdek gerçek marka, çevresindekiler 27 farklı uzantıdaki klonları.
+- [Aşama 3 →] 252 adres var olmayan “bağımsız” yayın adı; 174’ü “Wahrheit”, “offene Meinung” gibi ifadelerin harfleri karıştırılmış aileleri.
+- [Aşama 4 →] En sık altı uzantıdaki 240 adresin 238’i bu uydurma adlardan; ilk beklentim büyük ölçüde karşılanmadı.
 
-**Ana mesaj:** Ucuz uzantılardaki 240 adresin 238’i uydurma yayın adı.
+**Ana mesaj:** En sık altı uzantıdaki 240 adresin 238’i uydurma yayın adı.
 
 **Atıf:** Meta, 2022; Tian et al., 2018; Korczyński et al., 2018; Alaphilippe et al., 2022
 
@@ -140,10 +140,10 @@ Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_20_
 
 ## 14. Hacim ABD’de, kuruluş yoğunluğu Almanya’da · 13:55–15:20
 
-- Haber sayısında ABD önde: 373’e 29; ancak ABD’deki 373 haber yalnızca 63 farklı başlık, yani büyük ölçüde ajans tekrarı.
-- Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Alman kuruluşlarının binde 83,6’sı, ABD’dekilerin binde 33,9’u ifşayı haberleştirdi.
+- [Aşama 1] Sütunlar gün gün yükseliyor: haber sayısında ABD 373, Almanya 29; ancak ABD’deki haberler yalnızca 63 farklı başlık, yani ajans tekrarı.
+- [Aşama 2 →] Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Almanya binde 83,6, ABD binde 33,9.
 - Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek; sonuç, sayım düzeyine bağlı.
-- Almanya’yı anan haberlerin oranı yüksek, ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor.
+- [Aşama 3 →] Haberlerin yüzde 63,6’sı Almanya’yı anıyor; ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor.
 
 **Ana mesaj:** Sonuç, sayım düzeyine bağlıdır.
 

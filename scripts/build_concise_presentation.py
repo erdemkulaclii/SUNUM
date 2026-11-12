@@ -34,8 +34,48 @@ def world_features():
    if rings:polys.append(rings)
   if not polys:continue
   names=sorted({norm_name(pr.get(k)) for k in ['ADMIN','NAME','NAME_LONG','NAME_EN','FORMAL_EN','NAME_ALT','BRK_NAME','GEOUNIT','SUBUNIT','NAME_SORT','NAME_CIAWF'] if pr.get(k)}-{''})
-  features.append({'name':pr['ADMIN'],'name_tr':pr.get('NAME_TR') or pr['ADMIN'],'iso2':pr.get('ISO_A2_EH') or pr.get('ISO_A2'),'fips':pr.get('FIPS_10'),'names':names,'polygons':polys})
+  features.append({'name':pr['ADMIN'],'name_tr':pr.get('NAME_TR') or pr['ADMIN'],'c':[round(pr.get('LABEL_X') or 0,2),round(pr.get('LABEL_Y') or 0,2)],'iso2':pr.get('ISO_A2_EH') or pr.get('ISO_A2'),'fips':pr.get('FIPS_10'),'names':names,'polygons':polys})
  return features
+
+# GDELT source-country names that differ from Natural Earth ADMIN names
+ALIAS={'unitedstates':'United States of America','czechrepublic':'Czechia','bosniaherzegovina':'Bosnia and Herzegovina','macedonia':'North Macedonia','serbia':'Republic of Serbia','tanzania':'United Republic of Tanzania','burma':'Myanmar','swaziland':'eSwatini','congo':'Republic of the Congo','bahamas':'The Bahamas','slovakrepublic':'Slovakia','eastimor':'East Timor','russianfederation':'Russia','southkorea':'South Korea','korea':'South Korea'}
+MIN_ACTIVE,MIN_ARTICLES=100,5  # rate columns only for countries with stable denominators
+
+def globe_data(features,snap,analysis):
+ """Data for the 3D globe: every value comes from the archive scan outputs."""
+ paper=O/'MAKALE_SAYILARI.json';totals=R/'research/gdelt/gkg_archive/totals.json'
+ if not (snap and paper.is_file() and totals.is_file()):return None
+ S=json.loads(paper.read_text())['gdelt'];act=json.loads(totals.read_text()).get('active_domains_per_source_country',{})
+ by={norm_name(f['name']):f for f in features};idx={}
+ for f in features:
+  for n in f['names']:idx.setdefault(n,f)
+ def find(name):
+  k=norm_name(name)
+  return by.get(norm_name(ALIAS[k])) if k in ALIAS else (by.get(k) or idx.get(k))
+ from collections import Counter,defaultdict
+ daily=defaultdict(Counter);seen=set()
+ for a in snap['articles']:
+  if a['url'] in seen:continue
+  seen.add(a['url']);daily[a.get('sourcecountry') or ''][re.sub(r'\D','',a.get('seendate',''))[:8]]+=1
+ countries=[]
+ for x in S['all_countries']:
+  f=find(x['country'])
+  if not f:continue
+  a=act.get(x['country'])
+  countries.append({'name':f['name_tr'],'admin':f['name'],'lon':f['c'][0],'lat':f['c'][1],'articles':x['articles'],'outlets':x['outlets'],'active':a,
+   'per1000':round(x['outlets']/a*1000,1) if a else None,'rate_shown':bool(a and a>=MIN_ACTIVE and x['articles']>=MIN_ARTICLES),'daily':dict(sorted(daily[x['country']].items()))})
+ tc=analysis['findings']['target_country_counts'];tmap={'Germany':'Germany','UK':'United Kingdom','France':'France','Italy':'Italy','Latvia':'Latvia','Ukraine':'Ukraine'}
+ targets=[{'admin':adm,'name':by[norm_name(adm)]['name_tr'],'lon':by[norm_name(adm)]['c'][0],'lat':by[norm_name(adm)]['c'][1],'domains':tc[k]} for k,adm in tmap.items()]
+ places=[{'name':r['name'],'lat':r['lat'],'lon':r['lon'],'articles':r['articles']} for r in (snap.get('locations') or {}).get('rows',[])[:70]]
+ return {'countries':countries,'targets':targets,'places':places,'days':[d['day'] for d in snap['daily']],'total':S['matched_articles'],'rows_scanned':S['rows_scanned'],
+  'mention_de_pct':S['mention_share_pct']['GM'],'outlet_ratio':S['outlet_ratio_us_de'],'two_day_pct':S['two_day_share_pct'],'distinct_titles':S['distinct_titles'],
+  'titles_us':S['levels']['United States']['titles'],'min_active':MIN_ACTIVE,'min_articles':MIN_ARTICLES,'unique_domains':analysis['audit']['unique_domains']}
+
+def typology_data(analysis):
+ import domain_typology as dt
+ t=dt.analyse(analysis['records'])
+ return {'rows':[[r['first_dns_label'],r['last_dns_label'],r['class'],r['brand'] or '',int(r['anagram_family'])] for r in t['rows']],'families':t['families'],'counts':t['class_counts'],
+  'top6':['online','website','site','space','pw','fun'],'top6_by_class':t['top6_tld_by_class'],'family_domains':t['anagram_family_domains'],'family_count':t['anagram_families'],'brand_tlds':len(t['tld_by_class']['marka_birebir'])}
 
 def load_snapshot():
  if not SNAPSHOT.is_file():return None
@@ -53,10 +93,10 @@ def main():
  for x in s:
   count=sum(len(v.split()) for v in [x['title'],x.get('subtitle',''),*x['display_points'],x['takeaway']]);assert count<=MAX_WORDS,(x['id'],count)
  ids={r['id'] for r in refs};assert all(set(x['citations'])<=ids for x in s)
- snap=load_snapshot()
- payload={'slides':s,'appendices':a,'references':refs,'analysis':analysis,'features':world_features(),'gdelt':snap,'gdelt_config':{'query':QUERY,'windows':WINDOWS,'max_records':MAX_RECORDS,'endpoint':DOC_ENDPOINT,'schema':SCHEMA,'warnings':['sourcecountry haberin yayımlandığı ülkedir; hedef ülke veya okur ülkesi değildir.','Her dilim en fazla 250 makale döndürür; capped=true olan dilimlerde seçki eksiktir.','Eşleşme anahtar sözcüğe dayanır; makalelerin konuyla ilgisi elle kodlanmamıştır.']},'meta':meta,'timing':{'talk':TALK_SECONDS,'session':SESSION_SECONDS}}
+ snap=load_snapshot();features=world_features()
+ payload={'slides':s,'appendices':a,'references':refs,'analysis':analysis,'features':features,'gdelt':snap,'globe':globe_data(features,snap,analysis),'typology':typology_data(analysis),'gdelt_config':{'query':QUERY,'windows':WINDOWS,'max_records':MAX_RECORDS,'endpoint':DOC_ENDPOINT,'schema':SCHEMA,'warnings':['sourcecountry haberin yayımlandığı ülkedir; hedef ülke veya okur ülkesi değildir.','Her dilim en fazla 250 makale döndürür; capped=true olan dilimlerde seçki eksiktir.','Eşleşme anahtar sözcüğe dayanır; makalelerin konuyla ilgisi elle kodlanmamıştır.']},'meta':meta,'timing':{'talk':TALK_SECONDS,'session':SESSION_SECONDS}}
  result=(R/'scripts/concise.html').read_text().replace('__PAYLOAD__',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/'))
- for token,path in [('__LEAFLET_CSS__','assets/vendor/leaflet.css'),('__LEAFLET_JS__','assets/vendor/leaflet.js'),('__BASEMAP_JS__','scripts/basemap.js'),('__CSS__','scripts/concise.css'),('__JS__','scripts/concise.js'),('__GDELT_JS__','scripts/gdelt_map.js')]:result=result.replace(token,(R/path).read_text())
+ for token,path in [('__LEAFLET_CSS__','assets/vendor/leaflet.css'),('__LEAFLET_JS__','assets/vendor/leaflet.js'),('__BASEMAP_JS__','scripts/basemap.js'),('__CSS__','scripts/concise.css'),('__JS__','scripts/concise.js'),('__GDELT_JS__','scripts/gdelt_map.js'),('__THREE_JS__','assets/vendor/three.min.js'),('__SCENE3D_JS__','scripts/scene3d.js')]:result=result.replace(token,(R/path).read_text())
  for name in ['AKADEMIK_ODAKLI_SUNUM.html','PROFESYONEL_SUNUM.html','SINEMATIK_SUNUM.html','CANLI_HARITA.html','GORUNMEZ_CEPHE_ATLAS.html']:(O/name).write_text(result)
  (O/'APA7_KAYNAKCA.md').write_text('# Kaynakça / APA 7\n\n'+'\n\n'.join(r['apa'].replace('<i>','*').replace('</i>','*')+' '+r['url'] for r in refs)+'\n')
  print(f'Built {len(s)} main slides; {len(a)} appendices; {TALK_SECONDS}s talk + {SESSION_SECONDS-TALK_SECONDS}s buffer; GDELT snapshot embedded: {bool(snap)}; HTML {len(result)//1024} KB.')

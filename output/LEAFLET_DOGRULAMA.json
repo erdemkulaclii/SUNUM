@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-11-01T20:17:10.038270+00:00",
-  "html_sha256": "cb2c6b24cce1b0f066c508c41154528ebb5aa97f0eab5523026c21686bde6800",
-  "narrative_sha256": "e67b9e1bf9baa932c4c15713248dfb7351682dc466c912a04dcceebb9a8e9cce",
+  "checked_at_utc": "2026-11-12T20:38:35.930700+00:00",
+  "html_sha256": "9af14731a132b991522e3aeff439bae0d90046571225eb66266d4424f7800859",
+  "narrative_sha256": "ba079e51f44ae0211f65b032b718489c2201692c3c3e985e70104c53400261b2",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
@@ -17,7 +17,7 @@
     25,
     34,
     22,
-    29,
+    31,
     24,
     30,
     29,
@@ -147,8 +147,8 @@
           "scene": 11,
           "title": "Altyapının %81’i uydurma yayın adı",
           "prose_fonts_px": [
-            24,
-            32,
+            20,
+            24.8,
             52.8
           ],
           "violations": []
@@ -343,8 +343,8 @@
           "scene": 11,
           "title": "Altyapının %81’i uydurma yayın adı",
           "prose_fonts_px": [
-            19,
-            24,
+            18,
+            19.84,
             35
           ],
           "violations": []
@@ -436,6 +436,12 @@
   "external_requests": [],
   "actual_GDELT_network_verified": false,
   "live_OSM_verified": false,
+  "three_d": {
+    "webgl": true,
+    "globe_stages": 3,
+    "galaxy_stages": 4,
+    "galaxy_nodes": 311
+  },
   "native_powerpoint": {
     "verified": true,
     "main_slides": 19,

@@ -10,6 +10,7 @@ function bars(items,max,caption=''){return svg(items.map((r,i)=>{const y=36+i*47
 function steps(items,note=''){return '<ol class="steps">'+items.map(([h,t],i)=>'<li><b>'+String(i+1).padStart(2,'0')+'</b><div><strong>'+esc(h)+'</strong>'+(t?'<span>'+esc(t)+'</span>':'')+'</div></li>').join('')+'</ol>'+(note?'<p class="mini-note">'+esc(note)+'</p>':'')}
 function visual(s){
  const f=D.analysis.findings;
+ if(s.visual==='galaxy3d')return (window.has3D&&window.has3D()&&D.typology)?'<div id="galaxy-slot" class="gdelt-slot"></div>':bars(s.bars,Math.max(...s.bars.map(b=>b[1])),s.bars_caption||'');
  if(s.visual==='steps'&&s.steps)return steps(s.steps);
  if(s.visual==='bars'&&s.bars)return bars(s.bars,Math.max(...s.bars.map(b=>b[1])),s.bars_caption||'');
  if(s.visual==='quote')return '<blockquote class="def-quote"><p>'+esc(s.quote)+'</p><footer>'+esc(s.quote_note||'')+'</footer></blockquote>';
@@ -36,9 +37,11 @@ function visual(s){
 }
 function render(){const s=S[scene];document.body.dataset.scene=s.visual;$('kicker').textContent=s.kicker;$('slide-title').textContent=s.title;$('points').innerHTML=(s.subtitle?'<p class="cover-subtitle">'+esc(s.subtitle)+'</p>':'')+s.display_points.map(x=>'<p>'+esc(x)+'</p>').join('');$('takeaway').textContent=s.takeaway;$('visual').innerHTML=visual(s);$('visual').setAttribute('aria-label',s.title+' — veri görseli');$('source').textContent='Kaynak: '+s.source;$('source-right').textContent=[M.author,M.course].filter(Boolean).join(' · ');window.onSlideRendered?.(s);$('page').innerHTML='<b>'+String(scene+1).padStart(2,'0')+'</b> / '+S.length;$('clock').textContent=fmt(elapsed)+' / '+fmt(T);$('prev').disabled=scene===0;$('next').disabled=scene===S.length-1;[...$('track').children].forEach((b,i)=>{b.classList.toggle('active',i===scene);b.classList.toggle('done',i<scene);b.setAttribute('aria-current',i===scene?'step':'false')})}
 function go(i){if(i<0||i>=S.length)return;scene=i;elapsed=offsets[i];render()}
+// Aşamalı slaytlarda (3B sahneler) ileri/geri önce aşamayı, sonra slaytı değiştirir.
+function step(d){const c=window.stageCtl;if(c&&c.index+d>=0&&c.index+d<c.count){c.set(c.index+d);return}go(scene+d)}
 for(const[i,s]of S.entries()){const b=document.createElement('button');b.title=(i+1)+'. '+s.title;b.setAttribute('aria-label',b.title);b.onclick=()=>go(i);$('track').append(b)}
 function togglePlay(){playing=!playing;$('play').innerHTML=playing?'<span aria-hidden="true" class="pause-symbol"></span>':'<span aria-hidden="true" class="play-symbol"></span>';if(timer)clearInterval(timer);if(playing){if(elapsed>=T)go(0);timer=setInterval(()=>{elapsed++;if(elapsed>=T){elapsed=T;playing=false;clearInterval(timer);$('play').innerHTML='<span aria-hidden="true" class="play-symbol"></span>'}else if(elapsed>=offsets[scene+1]){scene++;render()}$('clock').textContent=fmt(elapsed)+' / '+fmt(T)},1000)}}
-$('prev').onclick=()=>go(scene-1);$('next').onclick=()=>go(scene+1);$('play').onclick=togglePlay;
+$('prev').onclick=()=>step(-1);$('next').onclick=()=>step(1);$('play').onclick=togglePlay;
 function openModal(title){priorFocus=document.activeElement;$('modal-title').textContent=title;$('modal-body').replaceChildren();$('modal').hidden=false;document.body.style.overflow='hidden';$('close-modal').focus();return $('modal-body')}
 function closeModal(){if(map){map.remove();map=null}$('modal').hidden=true;document.body.style.overflow='';priorFocus?.focus()}
 $('close-modal').onclick=closeModal;$('modal').onclick=e=>{if(e.target===$('modal'))closeModal()};
@@ -63,7 +66,7 @@ function openAtlas(){atlasTargets={};const body=openModal('Hedef ülkeler / yard
 $('atlas-open').onclick=openAtlas;
 $('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0)};
 document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement)document.body.classList.remove('presentation')});
-document.addEventListener('keydown',e=>{if(!$('modal').hidden){if(e.key==='Escape')closeModal();if(e.key==='Tab'){const items=[...$('modal').querySelectorAll('button,input,select,a[href],summary')].filter(x=>x.offsetParent!==null),first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}return}if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){go(scene+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(scene-1);e.preventDefault()}if(e.key===' '){go(scene+1);e.preventDefault()}if(e.key.toLowerCase()==='p'){togglePlay();e.preventDefault()}if(e.key.toLowerCase()==='n')openNotes()});
+document.addEventListener('keydown',e=>{if(!$('modal').hidden){if(e.key==='Escape')closeModal();if(e.key==='Tab'){const items=[...$('modal').querySelectorAll('button,input,select,a[href],summary')].filter(x=>x.offsetParent!==null),first=items[0],last=items.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}return}if(['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;if(e.key==='ArrowRight'){step(1);e.preventDefault()}if(e.key==='ArrowLeft'){step(-1);e.preventDefault()}if(e.key===' '){step(1);e.preventDefault()}if(e.key.toLowerCase()==='p'){togglePlay();e.preventDefault()}if(e.key.toLowerCase()==='n')openNotes()});
 $('timing-label').textContent='YAKLAŞIK '+Math.round(T/60)+' DAKİKA · SLAYTLARI SUNUCU GEÇİRİR';
 render();
 
@@ -104,7 +107,7 @@ togglePlay=function(){
 };
 $('play').onclick=togglePlay;
 $('fullscreen').textContent='Sunumu başlat ▶';
-$('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0);if(elapsed>=T||scene===S.length-1)go(0);if(!playing)togglePlay()};
+$('fullscreen').onclick=async()=>{document.body.classList.add('presentation');try{await document.documentElement.requestFullscreen()}catch(e){}window.scrollTo(0,0);if(typeof startClock==='function')startClock()};
 document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName))return;const k=e.key.toLowerCase();if(k==='s')voiceBtn.click();if(k==='c')capBtn.click()});
 render();
 
@@ -132,5 +135,5 @@ function startClock(){if(clockStart)return;clockStart=Date.now();clockTimer=setI
 function animateVisual(s){cancelAnimationFrame(animFrame);if(playing)return;const dur=s.visual==='gdelt_map'?14000:s.visual==='gdelt_wave'?3000:0;if(!dur)return;const t0=performance.now(),i=scene;
  const step=t=>{if(scene!==i||playing)return;const f=Math.min(1,(t-t0)/dur);window.onSlideProgress?.(s,f,f<1);if(f<1)animFrame=requestAnimationFrame(step)};animFrame=requestAnimationFrame(step)}
 const renderManual=render;render=function(){renderManual();if(!clockStart)$('clock').textContent='00:00 / '+fmt(T);else if(!playing)$('clock').textContent=fmt((Date.now()-clockStart)/1000)+' / '+fmt(T);animateVisual(S[scene])};
-document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||document.getElementById('start-overlay'))return;if(e.key==='PageDown'){startClock();go(scene+1);e.preventDefault()}if(e.key==='PageUp'){go(scene-1);e.preventDefault()}if(e.key==='ArrowRight')startClock()});
-document.querySelector('main.slide').addEventListener('click',e=>{if(e.target.closest('a,button,input,select,label,.gdelt-slot,.leaflet-container')||document.getElementById('start-overlay'))return;startClock();go(scene+1)});
+document.addEventListener('keydown',e=>{if(!$('modal').hidden||['INPUT','SELECT','TEXTAREA'].includes(e.target.tagName)||document.getElementById('start-overlay'))return;if(e.key==='PageDown'){startClock();step(1);e.preventDefault()}if(e.key==='PageUp'){step(-1);e.preventDefault()}if(e.key==='ArrowRight')startClock()});
+document.querySelector('main.slide').addEventListener('click',e=>{if(e.target.closest('a,button,input,select,label,.gdelt-slot,.leaflet-container,.stage3d,.stage-bar')||document.getElementById('start-overlay'))return;startClock();step(1)});

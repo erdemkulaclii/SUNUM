@@ -17,6 +17,12 @@ with sync_playwright() as p:
     page.set_content((O/'AKADEMIK_ODAKLI_SUNUM.html').read_text())
     for i,name in [(0,'PROFESYONEL_KAPAK'),(8,'ULKE_DAGILIMI'),(9,'DNS_ETIKETLERI'),(10,'ILK_ETIKET_TEKRARI'),(5,'ALAN_ADI_ANATOMISI'),(11,'GDELT_DALGA_ONIZLEME'),(12,'GDELT_HARITA_ONIZLEME'),(15,'SONUC_ONIZLEME'),(16,'KAYNAKCA_ONIZLEME')]:
         page.evaluate('(i)=>go(i)',i);page.wait_for_timeout(600 if i in (11,12) else 0);page.screenshot(path=str(O/f'{name}.png'))
+    # 3B sahne önizlemeleri (WebGL varsa)
+    if page.evaluate('window.has3D&&window.has3D()'):
+        vis=page.evaluate('S.map(s=>s.visual)')
+        page.evaluate(f"go({vis.index('gdelt_map')});stageCtl.set(1)");page.wait_for_timeout(3500);page.screenshot(path=str(O/'KURE_3B_ONIZLEME.png'))
+        page.evaluate(f"go({vis.index('galaxy3d')});stageCtl.set(2)");page.wait_for_timeout(3500);page.screenshot(path=str(O/'TAKIMYILDIZ_3B_ONIZLEME.png'))
+        page.evaluate('go(0)');page.wait_for_timeout(1500);page.screenshot(path=str(O/'PROFESYONEL_KAPAK.png'))
     page.evaluate('openAtlas()');page.wait_for_timeout(250);page.screenshot(path=str(O/'ATLAS_ONIZLEME.png'))
     page.evaluate('closeModal();go(8)');page.set_viewport_size({'width':390,'height':844})
     page.screenshot(path=str(O/'MOBIL_ONIZLEME.png'),full_page=True)
@@ -41,7 +47,7 @@ output_names=[
  'SUNUCU_KARTLARI.pdf','SUNUCU_KARTLARI.docx','KONUSMA_METNI_20_DK.pdf','KONUSMA_METNI_20_DK.docx',
  'KONUSMACI_NOTLARI.md','APA7_KAYNAKCA.pdf','APA7_KAYNAKCA.md','AKADEMIK_ARASTIRMA_DOSYASI.pdf',
  'IOC_YAPISAL_ANALIZ.json','IOC_YAPISAL_KANIT.csv','IOC_SON_ETIKET_DAGILIMI.csv','IOC_HEDEF_SON_ETIKET.csv','IOC_GOVDE_AILELERI.csv',
- 'PROFESYONEL_KAPAK.png','ULKE_DAGILIMI.png','DNS_ETIKETLERI.png','ILK_ETIKET_TEKRARI.png','ALAN_ADI_ANATOMISI.png','SONUC_ONIZLEME.png','KAYNAKCA_ONIZLEME.png','GDELT_HARITA_ONIZLEME.png','GDELT_DALGA_ONIZLEME.png','GDELT_HARITA.png','ATLAS_ONIZLEME.png','MOBIL_ONIZLEME.png',
+ 'PROFESYONEL_KAPAK.png','ULKE_DAGILIMI.png','DNS_ETIKETLERI.png','ILK_ETIKET_TEKRARI.png','ALAN_ADI_ANATOMISI.png','SONUC_ONIZLEME.png','KAYNAKCA_ONIZLEME.png','GDELT_HARITA_ONIZLEME.png','GDELT_DALGA_ONIZLEME.png','GDELT_HARITA.png','KURE_3B_ONIZLEME.png','TAKIMYILDIZ_3B_ONIZLEME.png','ATLAS_ONIZLEME.png','MOBIL_ONIZLEME.png',
  'HARITA_TURU.mp4','HAREKETLI_HARITA.gif','ANIMASYON_KUNYESI.json',
  'ODAKLI_SUNUM_DOGRULAMA.json','ODAKLI_WEB_DOGRULAMA.json','ODAKLI_BELGE_DOGRULAMA.json','BASEMAP_DOGRULAMA.json',
 ]
@@ -49,7 +55,7 @@ script_names=[
  'build_release.py','analyze_ioc_structure.py','build_concise_presentation.py','export_concise_deck.py','export_concise_documents.py',
  'build_interactive.py','build_presentation.py','export_editorial.py','export_academic_documents.py','export_editable_presentation.py',
  'concise.html','concise.css','concise.js','concise_narrative.json','concise_appendices.json','concise_references.json','basemap.js','presentation_meta.json',
- 'gdelt_map.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py','test_sunum_launcher.py','domain_typology.py','test_domain_typology.py','gdelt_census.py','gdelt_de_sensitivity.py','makale_istatistikleri.py','makale_sekiller.py','build_makale.py','test_makale.py',
+ 'gdelt_map.js','scene3d.js','gdelt_common.py','gdelt_map_png.py','gdelt_gkg_locations.sql','fetch_gdelt_map.py','test_gdelt_map.py','gdelt_gkg_archive.py','gdelt_validation.py','test_gdelt_archive.py','test_gdelt_snapshot.py','test_sunum_launcher.py','domain_typology.py','test_domain_typology.py','gdelt_census.py','gdelt_de_sensitivity.py','makale_istatistikleri.py','makale_sekiller.py','build_makale.py','test_makale.py',
  'render_cinematic_tour.py','verify_concise.py','verify_leaflet.py','verify_slide_readability.py','verify_basemap.py',
  'serve_presentation.py','fetch_gdelt.py','fetch_gdelt_cloud.py','test_gdelt_cloud.py','test_presentation_server.py',
 ]

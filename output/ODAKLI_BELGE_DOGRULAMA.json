@@ -2,7 +2,7 @@
   "SUNUCU_KARTLARI.pdf": {
     "pages": 19,
     "text_selectable": true,
-    "characters": 11597
+    "characters": 11670
   },
   "KONUSMA_METNI_20_DK.pdf": {
     "pages": 14,
@@ -32,7 +32,7 @@
   "session_buffer_seconds": 0,
   "gdelt_snapshot_included": true,
   "cue_sentence_count": 65,
-  "cue_word_count": 905,
+  "cue_word_count": 926,
   "rehearsal_word_count": 2288,
   "selected_references": 32,
   "desktop_Word_render_verified": false

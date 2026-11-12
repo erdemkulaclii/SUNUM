@@ -1,21 +1,42 @@
 {
-  "product": "Leaflet",
-  "version": "1.9.4",
-  "files": {
-    "leaflet.js": {
-      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js",
-      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
-      "bytes": 147552
+  "packages": [
+    {
+      "product": "Leaflet",
+      "version": "1.9.4",
+      "files": {
+        "leaflet.js": {
+          "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js",
+          "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+          "bytes": 147552
+        },
+        "leaflet.css": {
+          "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css",
+          "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+          "bytes": 14806
+        },
+        "LEAFLET_LICENSE.txt": {
+          "source": "https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE",
+          "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+          "bytes": 1395
+        }
+      }
     },
-    "leaflet.css": {
-      "source": "https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css",
-      "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
-      "bytes": 14806
-    },
-    "LEAFLET_LICENSE.txt": {
-      "source": "https://raw.githubusercontent.com/Leaflet/Leaflet/v1.9.4/LICENSE",
-      "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
-      "bytes": 1395
+    {
+      "product": "three.js",
+      "version": "0.149.0",
+      "license": "MIT",
+      "files": {
+        "three.min.js": {
+          "source": "npm:three@0.149.0/build/three.min.js",
+          "sha256": "8a5f7249903b54d30f79f708699d2fed2d6a1d0741a4cd41377d1f01bb5a2271",
+          "bytes": 608081
+        },
+        "THREE_LICENSE.txt": {
+          "source": "npm:three@0.149.0/LICENSE",
+          "sha256": "852e0e8699169bf9f6fdc6bda3e682d078dcbc738b5d33e74df594721bff271d",
+          "bytes": 1081
+        }
+      }
     }
-  }
+  ]
 }
