@@ -87,7 +87,7 @@ def main():
  title=N[0]['title']
  cueflow=[];md=[f'# {title}','',f'{len(N)} ana slayt · yaklaşık 20 dakika anlatım · soru-cevap yok · slaytları sunucu geçirir.','','Bu dosya sunucu kartlarını içerir. Ayrıntılı prova metni KONUSMA_METNI_20_DK dosyalarındadır; ezberlenmesi veya aynen okunması gerekmez.','']
  cuedoc=document(title+' — Sunucu kartları');fullword=document(title+' — İsteğe bağlı prova metni');fullword.add_heading(title,0)
- intro='İsteğe bağlı prova metni. Toplam anlatım yaklaşık 20 dakikadır; soru-cevap bölümü yoktur. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir.'
+ intro='İsteğe bağlı prova metni. Toplam anlatım yaklaşık 20 dakikadır; soru-cevap bölümü yoktur. Metin, düşünce akışını çalışmak içindir; konuşma hızına göre prova edilerek kısaltılabilir. Sunum sırasında kısa sunucu kartları kullanılabilir. Üç boyutlu sahnelerde (11. ve 14. slayt) metindeki [→ Aşama …] işaretleri, → ya da Boşluk tuşuna basıp sahnenin bir sonraki aşamasına geçeceğiniz yeri gösterir; son aşamadan sonra aynı tuş bir sonraki slayta geçer.'
  fullword.add_paragraph(intro);fullflow=[para(title,'title'),para('İsteğe bağlı prova metni','h'),para(intro)];elapsed=0
  for i,s in enumerate(N):
   end=elapsed+s['seconds'];slot=f'{stamp(elapsed)}–{stamp(end)}';heading=f'{i+1:02d}. {s["title"]}';cues=s['cue_sentences'];assert 3<=len(cues)<=4

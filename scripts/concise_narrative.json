@@ -8,14 +8,14 @@
    "5,9 milyon GDELT haber kaydı"
   ],
   "takeaway": "Hedeflenen coğrafya ile görünür olan coğrafya.",
-  "notes": "Sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”.\nRusya kaynaklı Doppelgänger operasyonunu iki iz üzerinden inceliyorum: Meta’nın yayımladığı 311 alan adı ve GDELT arşivindeki 5,9 milyon haber kaydı.\nSorum şu: operasyon nasıl bir altyapı kurdu ve ifşası nerede, ne kadar görünür oldu?",
+  "notes": "Sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”; kürede kırmızı ülkeler operasyonun hedef etiketleri, en koyusu Almanya.\nRusya kaynaklı Doppelgänger operasyonunu iki iz üzerinden inceliyorum: Meta’nın yayımladığı 311 alan adı ve GDELT arşivindeki 5,9 milyon haber kaydı.\nSorum şu: operasyon nasıl bir altyapı kurdu ve ifşası nerede, ne kadar görünür oldu?",
   "cue_sentences": [
-   "Sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”.",
+   "Sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”; kürede kırmızı ülkeler operasyonun hedef etiketleri, en koyusu Almanya.",
    "Rusya kaynaklı Doppelgänger operasyonunu iki iz üzerinden inceliyorum: Meta’nın yayımladığı 311 alan adı ve GDELT arşivindeki 5,9 milyon haber kaydı.",
    "Sorum şu: operasyon nasıl bir altyapı kurdu ve ifşası nerede, ne kadar görünür oldu?"
   ],
-  "full_notes": "Değerli hocalarım, değerli arkadaşlar; sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”. Bu başlıkla, hibrit müdahalenin askerî olmayan ve çoğu zaman fark edilmeden yürüyen bilgi boyutunu kastediyorum. Konuyu tek bir vaka üzerinden inceliyorum: Rusya kaynaklı ve sonradan “Doppelgänger” adıyla anılan etki operasyonu. Elimde iki iz var. Birincisi, Meta’nın Eylül 2022’de yayımladığı ve 311 alan adından oluşan gösterge listesi. İkincisi, GDELT haber arşivinden taradığım yaklaşık 5,9 milyon haber kaydı. Bu iki izle iki soruya yanıt arıyorum: operasyon nasıl bir adres altyapısı kurdu ve operasyonun ifşası hangi ülkelerin medyasında, ne yoğunlukta görünür oldu?",
-  "seconds": 45,
+  "full_notes": "Değerli hocalarım, değerli arkadaşlar; sunumumun başlığı “Hibrit Savaşın Görünmez Cephesi”. Bu başlıkla, hibrit müdahalenin askerî olmayan ve çoğu zaman fark edilmeden yürüyen bilgi boyutunu kastediyorum. Arkamda dönen kürede kırmızıyla işaretli ülkeler, incelediğim operasyonun hedef olarak etiketlenen ülkeleri; en koyu olan Almanya. Konuyu tek bir vaka üzerinden inceliyorum: Rusya kaynaklı ve sonradan “Doppelgänger” adıyla anılan etki operasyonu. Elimde iki iz var. Birincisi, Meta’nın Eylül 2022’de yayımladığı ve 311 alan adından oluşan gösterge listesi. İkincisi, GDELT haber arşivinden taradığım yaklaşık 5,9 milyon haber kaydı. Bu iki izle iki soruya yanıt arıyorum: operasyon nasıl bir adres altyapısı kurdu ve operasyonun ifşası hangi ülkelerin medyasında, ne yoğunlukta görünür oldu?",
+  "seconds": 50,
   "visual": "cover",
   "citations": [
    "meta2022",
@@ -41,7 +41,7 @@
   ],
   "notes": "Doppelgänger, tanınmış haber markalarının görünümünü kopyalayan ve sonradan SDA ile Structura’ya atfedilen bir etki operasyonu.\nVaka hakkındaki bilgi çoğunlukla resmî raporlarda; vakaya özgü hakemli ampirik çalışma çok az.\nBu yüzden operasyonun etkisini değil, bıraktığı izleri ölçüyorum: altyapıyı ve ifşanın haber coğrafyasını.",
   "full_notes": "Önce neyi ölçtüğümü ve neyi ölçmediğimi netleştirmek istiyorum. Doppelgänger; Spiegel, Bild, The Guardian gibi gerçek haber markalarının görünümünü kopyalayan ve sonradan Rus şirketleri Sosyal Tasarım Ajansı ile Structura’ya atfedilen bir etki operasyonudur. Vaka hakkında bildiklerimizin büyük kısmı EU DisinfoLab, Meta, Fransız VIGINUM ve Alman Dışişleri Bakanlığı gibi kurumların raporlarına dayanıyor; vakayı doğrudan inceleyen hakemli ampirik çalışma neredeyse yok. Sızdırılmış SDA belgelerine dayanan en kapsamlı değerlendirme bile, Pamment ve Tsurtsumia’nın 2025 tarihli raporu, bir araştırma enstitüsü raporudur. Bu nedenle kimin ne kadar etkilendiğini ölçtüğümü iddia etmiyorum. Ölçtüğüm şey operasyonun bıraktığı iki iz: alan adı altyapısı ve ifşanın uluslararası haber coğrafyası. Katkım da bu iki izi aynı vakada, yeniden üretilebilir biçimde birlikte göstermek.",
-  "seconds": 60,
+  "seconds": 55,
   "visual": "steps",
   "citations": [
    "disinfolab2022",
@@ -86,7 +86,7 @@
   ],
   "notes": "Hibrit savaş kavramı Hoffman’da askerî bir kavramdı; Kırım’dan sonra dezenformasyonu da kapsayacak şekilde genişledi.\nRenz, Fridman ve Caliskan bu genişlemeyi eleştirir; Galeotti “Gerasimov doktrini” etiketini kendisi geri çekmiştir.\nBu yüzden Wigell’in hibrit müdahale kavramını ve Hybrid CoE’nin “tespit ve atıf eşikleri” vurgusunu kullanıyorum.\nGörünmez cephe: operasyon eşiğin altında tutulur; kamusal bilgi çoğunlukla ifşa anında ortaya çıkar.",
   "full_notes": "Başlığımdaki “hibrit savaş” kavramını açıkça tanımlamam gerekiyor, çünkü kavram akademide ciddi biçimde tartışmalı. Terimin erken kullanımlarından biri Nemeth’in 2002’de Çeçenya üzerine yazdığı tezdir; Hoffman ise 2007’de kavramı, konvansiyonel ve düzensiz araçların aynı muharebe alanında kaynaştığı savaşlar için kullanmıştır. Yani kavram askerîdir ve dezenformasyon çekirdeğinde yer almaz. Kırım’ın ilhakından sonra NATO ve AB kavramı, dezenformasyonu da kapsayan “hibrit tehditler” yönünde genişletti. Bu genişlemeye yöneltilen eleştiriler güçlü: Renz kavramın Rus kapasitesini abarttığını, Fridman iki tarafta da siyasallaştığını, Caliskan ise strateji kuramı açısından yeni bir savaş biçimi olmadığını savunur. “Gerasimov doktrini” ifadesini ortaya atan Galeotti de 2018’de bu etiketi geri çekmiştir. Ben bu nedenle kavramı Wigell’in “hibrit müdahale” kuramı ve Hybrid CoE’nin tanımı doğrultusunda daraltarak kullanıyorum: savaş eşiğinin altında kalan, tespit ve atıf eşiklerini istismar eden, açık toplumların bilgi altyapısındaki güven ilişkilerini hedef alan, inkâr edilebilir ve askerî olmayan faaliyetler. Mumford ve Carlucci’nin vurguladığı gibi bu müdahalenin çekirdeği belirsizliktir. “Görünmez cephe” derken de tam bunu kastediyorum: operasyon tespit eşiğinin altında tutulur ve operasyona dair kamusal bilgi çoğunlukla ifşa anında ortaya çıkar.",
-  "seconds": 95,
+  "seconds": 85,
   "visual": "quote",
   "citations": [
    "nemeth2002",
@@ -167,7 +167,7 @@
    "Bu yüzden 2022 listesi, operasyonun ilk evresine ait bir anlık görüntüdür."
   ],
   "full_notes": "Kısaca kronolojiye bakalım, çünkü verinin ne olduğunu kronoloji belirliyor. 27 Eylül 2022’de EU DisinfoLab ile Qurium raporlarını yayımladı ve aynı gün Meta ağı kaldırdığını açıkladı. Meta 1.633 Facebook hesabı ile 703 sayfa kaldırdığını, yaklaşık 105 bin dolarlık reklam harcaması ve yaklaşık 4 bin sayfa takipçisi bulunduğunu bildirdi; soruşturmanın Alman gazetecilerin haberleriyle başladığını da belirtti. O gün operatörün adı verilmedi. Atıf sonraki iki yılda netleşti: Fransa’nın VIGINUM birimi 2023’te Rus aktörleri tespit etti, Avrupa Birliği Temmuz 2023’te yaptırım listesine aldı, ABD Hazinesi Mart 2024’te Sosyal Tasarım Ajansı ile Structura’ya yaptırım uyguladı ve ABD Adalet Bakanlığı Eylül 2024’te 32 alan adına el koydu. Operasyon da durmadı: Alman Dışişleri Bakanlığı 2024 başında 50 binden fazla sahte X hesabı ve 1,8 milyondan fazla Almanca gönderi tespit etti. Kısacası incelediğim 2022 listesi operasyonun tamamı değil; ilk evresine ait ve platformun seçerek yayımladığı bir anlık görüntü.",
-  "seconds": 75,
+  "seconds": 70,
   "visual": "steps",
   "citations": [
    "disinfolab2022",
@@ -213,7 +213,7 @@
    "AS3: İfşa ne zaman ve nerede görünür oldu? Beklenti, kısa ömürlü ve ajans ağları üzerinden dolaşan bir haber olayı."
   ],
   "full_notes": "Üç araştırma sorum var ve her biri için literatürden türettiğim bir beklenti var. Birinci soru hedeflemeyle ilgili: yayımlanan göstergeler hangi ülkeleri hedefliyor? Ödünç güvenilirlik mantığına göre markaların yerel itibarının en yüksek olduğu tek bir kilit ülkede yoğunlaşma bekliyorum. İkinci soru altyapıyla ilgili: alan adları hangi taklit örüntüsünü izliyor? Bilgisayar güvenliği literatüründen iki beklenti çıkıyor: birincisi, marka adının aynen korunup yalnızca uzantının değiştirilmesi; ikincisi, yeni genel uzantıların tercih edilmesi. Üçüncü soru görünürlükle ilgili: ifşa ne zaman ve hangi ülkelerin medyasında, ne yoğunlukta yer aldı? Haber akışı literatürüne göre kısa ömürlü, tetikleyici olaya bağlı ve büyük ajanslar üzerinden dolaşan bir görünürlük bekliyorum. İlk iki sorunun birimi alan adı, üçüncüsünün birimi haber makalesi; bu birimleri birbirine dönüştürmüyorum.",
-  "seconds": 60,
+  "seconds": 55,
   "visual": "steps",
   "citations": [
    "tian2018",
@@ -254,7 +254,7 @@
    "Haberleri sabit kurallarla seçtim; yayın ülkesi GDELT’in alan adı listesinden, payda olarak da taranan kayıtlar ve aktif yayın kuruluşları kullanılıyor."
   ],
   "full_notes": "Yöntem iki veri kaynağına dayanıyor. Birincisi Meta’nın sabit bir bağlantıyla arşivlenmiş gösterge dosyası. Bu dosyadan her alan adının hedef ülke etiketini ve adresin ilk ve son DNS etiketini çıkardım; ülkeyi uzantıdan ya da IP adresinden tahmin etmedim. Rogers ve Righetti’nin gösterdiği gibi Meta’nın tanımları zamanla değiştiği için listeyi bir örneklem değil, platformun 2022’deki uygulama kararlarının kaydı olarak ele alıyorum. İkinci kaynak GDELT. Haber verisini canlı bir arama arayüzünden değil, akademik çalışmalarda kullanılan ham Küresel Bilgi Grafiği arşivinden aldım: Meta duyurusunu çevreleyen 20 Eylül – 11 Ekim 2022 dönemindeki 4.209 dosya ve yaklaşık 5,9 milyon haber kaydı. Haberleri başlık ve adres üzerinde çalışan sabit kurallarla seçtim. Yayın ülkesini GDELT’in alan adı–ülke listesinden aldım ve ülkeler arasında adil bir karşılaştırma için iki payda kullandım: o ülkeden taranan bütün kayıtlar ve o dönemde aktif olan yayın kuruluşları.",
-  "seconds": 70,
+  "seconds": 65,
   "visual": "method",
   "citations": [
    "meta2022",
@@ -351,7 +351,7 @@
    "Bu bir hedefleme önceliği ve yatırımdır, erişim değil; etiket de Meta’nın sınıflandırmasıdır."
   ],
   "full_notes": "İlk bulgu hedeflemeyle ilgili ve çok net. 311 alan adının 298’i, yani yüzde 95,8’i, Meta tarafından Almanya hedefli olarak etiketlenmiş. Birleşik Krallık dört, Fransa ve İtalya ikişer, Letonya üç, Ukrayna bir kayıtla yer alıyor. Bu yoğunlaşma, Meta’nın ve EU DisinfoLab’ın Almanya’yı öncelikli hedef olarak tanımlamasıyla uyumlu. Lanoszka’nın argümanıyla birlikte okuduğumda da anlamlı: Almanya’da Rusya’nın kullanabileceği askerî bir kaldıraç yok, etnik kaldıraç ise sınırlı ve dolaylı; 2016’daki Lisa vakası bunun bilinen örneği. Böyle bir toplumda müdahale bilgi alanına yöneliyor. Yine de bu oran bir hedefleme önceliğini ve yatırımı gösteriyor, okurların bu adreslere ne kadar ulaştığını göstermiyor; Almanya etiketi de Meta’nın kendi sınıflandırması.",
-  "seconds": 55,
+  "seconds": 50,
   "visual": "countries",
   "citations": [
    "meta2022",
@@ -382,8 +382,8 @@
    "[Aşama 3 →] 252 adres var olmayan “bağımsız” yayın adı; 174’ü “Wahrheit”, “offene Meinung” gibi ifadelerin harfleri karıştırılmış aileleri.",
    "[Aşama 4 →] En sık altı uzantıdaki 240 adresin 238’i bu uydurma adlardan; ilk beklentim büyük ölçüde karşılanmadı."
   ],
-  "full_notes": "İkinci bulgu, bu çalışmanın bence en özgün bulgusu. Her alan adının ilk etiketini, taklit edildiği bilinen 15 yayın kuruluşunun etiketleriyle karşılaştırdım. Etiket birebir aynıysa “marka birebir”, bir iki harf farkla yakınsa “marka varyantı”, ikisi de değilse “uydurma yayın adı” saydım. Sonuç beklentimi büyük ölçüde boşa çıkardı. Gerçek bir markayı birebir taşıyan adres yalnızca 43; aralarında Spiegel dokuz, Bild sekiz adresle öne çıkıyor ve bu 43 adres 27 farklı uzantıya dağılmış. Yazım varyantı 16 adres. Kalan 252 adres, yani yüzde 81, var olmayan “bağımsız” Alman yayınlarının adları. Bu adların çoğu “Wahrheit”, yani hakikat; “offene Meinung”, yani açık fikir; ya da “denk zuerst nach”, yani önce düşün gibi ifadelerin harfleri karıştırılarak üretilmiş. 174 adres bu tür harf karışımı ailelerinde toplanıyor. En sık altı uzantıdaki 240 adresin 238’i de bu uydurma adlardan oluşuyor. Yani literatürdeki “marka adını koru, uzantıyı değiştir” beklentisi altyapının ancak küçük bir kısmında geçerli; ikinci beklenti ise doğrulanıyor: çoğaltılan adresler yeni genel uzantılarda toplanmış.",
-  "seconds": 80,
+  "full_notes": "İkinci bulgu, bu çalışmanın bence en özgün bulgusu ve onu üç boyutlu bir sahnede göstereceğim. Ekrandaki her nokta, Meta’nın listesindeki 311 alan adından biri. Her adresin ilk etiketini, taklit edildiği bilinen 15 yayın kuruluşunun adıyla karşılaştırdım: ad birebir aynıysa “marka birebir”, bir iki harf farkla yakınsa “yazım varyantı”, ikisi de değilse “uydurma yayın adı” saydım. Solda kırmızı ve turuncu küme marka taklitleri, sağda mavi ve gri bulut uydurma adlar; daha ilk bakışta ağırlığın sağda olduğu görülüyor. [→ Aşama 2] Marka taklitlerine yaklaşalım. Beyaz çekirdekler gerçek marka adları; çevrelerindeki kırmızı noktalar o adı taşıyan klon adresler. Spiegel dokuz, Bild sekiz adresle öne çıkıyor, ama toplamda gerçek bir markayı birebir taşıyan adres yalnızca 43 ve bunlar 27 farklı uzantıya dağılmış. Turuncu noktalar, bir iki harfi değiştirilmiş 16 yazım varyantı. [→ Aşama 3] Şimdi asıl gövdeye bakalım. 252 adres, yani yüzde 81, var olmayan “bağımsız” Alman yayınlarının adları. Bu adların çoğu “Wahrheit”, yani hakikat; “offene Meinung”, yani açık fikir; ya da “denk zuerst nach”, yani önce düşün gibi ifadelerin harfleri karıştırılarak üretilmiş. Her küme bir aile: 174 adres bu tür 19 ailede toplanıyor. [→ Aşama 4] Son olarak en sık kullanılan altı uzantıyı yakıyorum. Bu uzantılardaki 240 adresin 238’i uydurma adlardan oluşuyor. Yani literatürdeki “marka adını koru, uzantıyı değiştir” beklentisi altyapının ancak küçük bir kısmında geçerli; ikinci beklenti ise doğrulanıyor: çoğaltılan adresler yeni genel uzantılarda toplanmış.",
+  "seconds": 110,
   "visual": "galaxy3d",
   "citations": [
    "meta2022",
@@ -455,7 +455,7 @@
    "511 haber yalnızca 145 farklı başlık taşıyor; aynı ajans haberi çok sayıda sitede yayımlanmış."
   ],
   "full_notes": "Dördüncü bulgu zamana ilişkin. Grafikte çubuklar her gün eşleşen haber sayısını, çizgi ise aynı gün taranan bütün GDELT kayıtlarına oranını gösteriyor. Meta’nın duyurusunun yapıldığı 27 Eylül’de 392, ertesi gün 100 haber var; 511 haberin yüzde 96,3’ü bu iki günde toplanıyor. Oran çizgisi de aynı biçimi izlediği için bu zirve o günlerdeki genel haber hacminden kaynaklanmıyor. Duyurudan önce yalnızca bir haber var: 21 Eylül tarihli bir FAZ haberi, Facebook’un Rus savaş propagandasına geç tepki verdiğini yazıyor; Meta’nın soruşturmayı Alman gazetecilerin haberleriyle başlattığı bilgisiyle uyumlu bir öncül. İkinci önemli nokta ajans dağıtımı: 511 adres yalnızca 145 farklı başlık taşıyor. Örneğin “Meta disables Russian propaganda network targeting Europe” başlığı onlarca yerel sitede aynen yayımlanmış. Kampanya adının kendisi ise 2022 haberlerinde neredeyse hiç geçmiyor; “Doppelgänger” adı sonradan yaygınlaşmış.",
-  "seconds": 65,
+  "seconds": 60,
   "visual": "gdelt_wave",
   "citations": [
    "gdeltgkg",
@@ -481,8 +481,8 @@
    "Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek; sonuç, sayım düzeyine bağlı.",
    "[Aşama 3 →] Haberlerin yüzde 63,6’sı Almanya’yı anıyor; ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor."
   ],
-  "full_notes": "Beşinci bulgu mekâna ilişkin ve burada sayım düzeyi sonucu doğrudan belirliyor. Harita gün gün dolarken renkler haberin yayımlandığı ülkeyi gösteriyor. Haber sayısına bakarsak ABD açık ara önde: 511 haberin 373’ü ABD kaynaklı, Almanya’da 29 haber var; taranan kayıtlara oranladığımızda bile ABD’deki yoğunluk Almanya’nın 1,65 katı. Ancak ABD’deki 373 haber yalnızca 63 farklı başlık taşıyor; yani hacmin büyük kısmı aynı ajans haberinin yüzlerce yerel sitede tekrar yayımlanması. Bu yüzden asıl ölçüt olarak yayın kuruluşu düzeyini aldım ve o dönemde aktif olan kuruluşlara oranladım. Bu durumda tablo tersine dönüyor: aktif Alman kuruluşlarının binde 83,6’sı ifşayı haberleştirmiş, ABD’de bu oran binde 33,9. Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek ve Alman haberleri daha çeşitli başlıklarla yayımlanmış. Haritadaki noktalar ise haberlerde anılan yerler: haberlerin yüzde 63,6’sı Almanya’yı anıyor. Fakat Fransa’yı anan haberlerin yüzde 98,6’sı İtalya’yı da anıyor; bu anmalar büyük ölçüde ajans metnindeki hedef ülke listesinden geliyor. Kısacası hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş; mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden gelmiş.",
-  "seconds": 85,
+  "full_notes": "Beşinci bulgu mekâna ilişkin ve burada sayım düzeyi sonucu doğrudan belirliyor; bunu küre üzerinde üç aşamada göstereceğim. İlk aşamada sütunlar, her ülkede yayımlanan haber sayısını gösteriyor ve gün gün yükseliyor. Sonuç çok açık görünüyor: 511 haberin 373’ü ABD kaynaklı, Almanya’da yalnızca 29 haber var. Ancak ABD’deki 373 haber yalnızca 63 farklı başlık taşıyor; yani bu sütunun büyük kısmı, aynı ajans haberinin yüzlerce yerel sitede tekrar yayımlanması. [→ Aşama 2] Bu yüzden asıl ölçüt olarak yayın kuruluşu düzeyini aldım: ifşayı en az bir kez haberleştiren kuruluşları, o dönemde aktif olan kuruluşlara oranladım. Sütunlara dikkat edin: ABD iniyor, Almanya yükseliyor. Aktif Alman kuruluşlarının binde 83,6’sı ifşayı haberleştirmiş, ABD’de bu oran binde 33,9; Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek. Bu aşamada yalnızca en az beş haberi ve yüz aktif kuruluşu olan ülkeleri gösteriyorum, çünkü küçük paydalı ülkelerde oran yanıltıcı biçimde büyüyor. [→ Aşama 3] Son aşamada Avrupa’ya yaklaşıyoruz. Kırmızı ülkeler Meta’nın hedef etiketleri, sarı noktalar ise haberlerde anılan yerler. Haberlerin yüzde 63,6’sı Almanya’yı anıyor. Fakat Fransa’yı anan haberlerin yüzde 98,6’sı İtalya’yı da anıyor; yani bu anmalar büyük ölçüde ajans metnindeki hedef ülke listesinden geliyor. Kısacası hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş; mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden gelmiş.",
+  "seconds": 100,
   "visual": "gdelt_map",
   "citations": [
    "gdeltgkg",
@@ -616,7 +616,7 @@
    "İsabet yüzde 91,7; duyarlılık testi küçük ve yalnızca Almanca; kodlamalar henüz bağımsız bir insan kodlayıcıyla doğrulanmadı."
   ],
   "full_notes": "Sınırlılıkları açıkça söylemek istiyorum. Meta listesi bir örneklem değil, platformun tespit ve yayımlama kararlarının kaydı; operasyonun alt sınırını gösteriyor. Almanya etiketi Meta’nın kendi sınıflandırması ve operatörlerin SDA ile Structura olarak tanımlanması 2022 sonrasında yapılmış geriye dönük bir atıf. GDELT yalnızca izlediği kaynakları kapsıyor ve bu kapsam ülkeler arasında eşit değil; yayın ülkesi 2018 tarihli bir çıkarım ve okurun bulunduğu ülkeyi göstermiyor. Eşleşmeyi yalnızca başlık ve adres üzerinden yaptım; konuyu metin içinde işleyip başlığında anahtar sözcük taşımayan haberler kapsam dışında kaldı. İsabet yüzde 91,7, duyarlılık testi ise küçük bir havuza ve Almancaya dayanıyor. Son olarak kodlamaların tamamı yapay zekâ destekli tek bir kodlayıcıya ait; bağımsız bir insan kodlaması yapılmadan bu sonuçları kesin saymamak gerekiyor.",
-  "seconds": 60,
+  "seconds": 55,
   "visual": "steps",
   "citations": [
    "rogers2025",
@@ -662,7 +662,7 @@
    "Sonraki adımlar: kör insan kodlaması, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü."
   ],
   "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında Alman kuruluşları ifşayı yaklaşık 2,4 kat daha yüksek oranda haberleştirdi. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız bir insan kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
-  "seconds": 80,
+  "seconds": 75,
   "visual": "steps",
   "citations": [
    "meta2022",

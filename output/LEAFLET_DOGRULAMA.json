@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-11-12T20:38:35.930700+00:00",
-  "html_sha256": "9af14731a132b991522e3aeff439bae0d90046571225eb66266d4424f7800859",
-  "narrative_sha256": "ba079e51f44ae0211f65b032b718489c2201692c3c3e985e70104c53400261b2",
+  "checked_at_utc": "2026-11-12T20:44:16.229689+00:00",
+  "html_sha256": "880bbf8e0a49224097c7f37f095ea2696f2198e60bc42ed7130bb193cd510304",
+  "narrative_sha256": "bfc06e05a3c7cafb48a5cc25062885ddfeac6e0858206d6ab1bded84a592d846",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
