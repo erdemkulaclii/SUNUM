@@ -299,14 +299,14 @@
    "Başlık sayımı isabeti %91,7; Almanca duyarlılık 7/8"
   ],
   "takeaway": "Aynı komut, aynı dosyalarla aynı sayıları üretir.",
-  "notes": "4.209 arşiv dosyasının hepsi, GDELT’in kendi yayımladığı MD5 özetiyle eşleşti; 5,9 milyon kayıt tarandı.\n145 tekil başlığın tamamını kodladım: 133’ü ilgili, isabet yüzde 91,7.\nKuralların Almanca haberleri kaçırıp kaçırmadığını bağımsız bir taramayla sınadım: 8 ifşa haberinin 7’si zaten yakalanmıştı.\nKodlamalar yapay zekâ destekli; bağımsız insan kodlaması için form hazır.",
+  "notes": "4.209 arşiv dosyasının hepsi, GDELT’in kendi yayımladığı MD5 özetiyle eşleşti; 5,9 milyon kayıt tarandı.\n145 tekil başlığın tamamını kodladım: 133’ü ilgili, isabet yüzde 91,7.\nKuralların Almanca haberleri kaçırıp kaçırmadığını bağımsız bir taramayla sınadım: 8 ifşa haberinin 7’si zaten yakalanmıştı.\nKodlamalar tek kodlayıcıya ait; bağımsız ikinci kodlama için form hazır.",
   "cue_sentences": [
    "4.209 arşiv dosyasının hepsi, GDELT’in kendi yayımladığı MD5 özetiyle eşleşti; 5,9 milyon kayıt tarandı.",
    "145 tekil başlığın tamamını kodladım: 133’ü ilgili, isabet yüzde 91,7.",
    "Kuralların Almanca haberleri kaçırıp kaçırmadığını bağımsız bir taramayla sınadım: 8 ifşa haberinin 7’si zaten yakalanmıştı.",
-   "Kodlamalar yapay zekâ destekli; bağımsız insan kodlaması için form hazır."
+   "Kodlamalar tek kodlayıcıya ait; bağımsız ikinci kodlama için form hazır."
   ],
-  "full_notes": "GDELT verisinin güvenilirliğini üç testle gösteriyorum. Birincisi bütünlük: indirdiğim 4.209 ham dosyanın her birini GDELT’in yayımladığı MD5 özetiyle karşılaştırdım; hepsi eşleşti ve toplam 5.944.850 kayıt tarandı. İkincisi isabet: Wang ve arkadaşlarının uyardığı gibi otomatik eşleşmeye körü körüne güvenmemek için eşleşen haberlerin taşıdığı 145 tekil başlığın tamamını kodladım. 133’ü gerçekten Meta’nın kaldırma duyurusu ya da Doppelgänger hakkındaydı; başlık düzeyinde isabet yüzde 91,7, haber düzeyinde yüzde 96,9. İlgisiz olanlar Apple’ın VK uygulamasını kaldırması ya da Rusya’nın Meta’yı terör listesine alması gibi haberler. Üçüncüsü duyarlılık: kuralların Almanca haberleri kaçırıp kaçırmadığını, kurallardan bağımsız ve daha gevşek bir Almanca taramayla sınadım. Bu taramada bulunan 8 ifşa haberinin 7’si zaten yakalanmıştı; Almanya kaynaklı üç haberin üçü de içerideydi. Bir sınırı da açıkça söyleyeyim: kodlamaları yapay zekâ destekli tek bir kodlayıcı yaptı; bağımsız insan kodlaması için form hazır ve uyum katsayısı otomatik hesaplanıyor.",
+  "full_notes": "GDELT verisinin güvenilirliğini üç testle gösteriyorum. Birincisi bütünlük: indirdiğim 4.209 ham dosyanın her birini GDELT’in yayımladığı MD5 özetiyle karşılaştırdım; hepsi eşleşti ve toplam 5.944.850 kayıt tarandı. İkincisi isabet: Wang ve arkadaşlarının uyardığı gibi otomatik eşleşmeye körü körüne güvenmemek için eşleşen haberlerin taşıdığı 145 tekil başlığın tamamını kodladım. 133’ü gerçekten Meta’nın kaldırma duyurusu ya da Doppelgänger hakkındaydı; başlık düzeyinde isabet yüzde 91,7, haber düzeyinde yüzde 96,9. İlgisiz olanlar Apple’ın VK uygulamasını kaldırması ya da Rusya’nın Meta’yı terör listesine alması gibi haberler. Üçüncüsü duyarlılık: kuralların Almanca haberleri kaçırıp kaçırmadığını, kurallardan bağımsız ve daha gevşek bir Almanca taramayla sınadım. Bu taramada bulunan 8 ifşa haberinin 7’si zaten yakalanmıştı; Almanya kaynaklı üç haberin üçü de içerideydi. Bir sınırı da açıkça söyleyeyim: kodlamalar tek bir kodlayıcıya ait; bağımsız ikinci kodlama için form hazır ve uyum katsayısı otomatik hesaplanıyor.",
   "seconds": 70,
   "visual": "steps",
   "citations": [
@@ -331,7 +331,7 @@
    ],
    [
     "Yeniden üretim",
-    "Tek komut + birim testleri; insan kodlama formu hazır"
+    "Tek komut + birim testleri; ikinci kodlama formu hazır"
    ]
   ]
  },
@@ -609,13 +609,13 @@
    "İsabet %91,7; Almanca duyarlılık testi küçük (n = 8)"
   ],
   "takeaway": "Bulgular betimseldir; niyet veya etki iddiası yoktur.",
-  "notes": "Meta listesi bir uygulama kaydı ve alt sınır; Almanya etiketi Meta’nın sınıflandırması; atıf geriye dönük.\nGDELT yalnızca izlediği kaynakları kapsıyor; yayın ülkesi 2018 tarihli bir çıkarım ve okurun ülkesini göstermiyor.\nİsabet yüzde 91,7; duyarlılık testi küçük ve yalnızca Almanca; kodlamalar henüz bağımsız bir insan kodlayıcıyla doğrulanmadı.",
+  "notes": "Meta listesi bir uygulama kaydı ve alt sınır; Almanya etiketi Meta’nın sınıflandırması; atıf geriye dönük.\nGDELT yalnızca izlediği kaynakları kapsıyor; yayın ülkesi 2018 tarihli bir çıkarım ve okurun ülkesini göstermiyor.\nİsabet yüzde 91,7; duyarlılık testi küçük ve yalnızca Almanca; kodlamalar henüz bağımsız ikinci bir kodlayıcıyla doğrulanmadı.",
   "cue_sentences": [
    "Meta listesi bir uygulama kaydı ve alt sınır; Almanya etiketi Meta’nın sınıflandırması; atıf geriye dönük.",
    "GDELT yalnızca izlediği kaynakları kapsıyor; yayın ülkesi 2018 tarihli bir çıkarım ve okurun ülkesini göstermiyor.",
-   "İsabet yüzde 91,7; duyarlılık testi küçük ve yalnızca Almanca; kodlamalar henüz bağımsız bir insan kodlayıcıyla doğrulanmadı."
+   "İsabet yüzde 91,7; duyarlılık testi küçük ve yalnızca Almanca; kodlamalar henüz bağımsız ikinci bir kodlayıcıyla doğrulanmadı."
   ],
-  "full_notes": "Sınırlılıkları açıkça söylemek istiyorum. Meta listesi bir örneklem değil, platformun tespit ve yayımlama kararlarının kaydı; operasyonun alt sınırını gösteriyor. Almanya etiketi Meta’nın kendi sınıflandırması ve operatörlerin SDA ile Structura olarak tanımlanması 2022 sonrasında yapılmış geriye dönük bir atıf. GDELT yalnızca izlediği kaynakları kapsıyor ve bu kapsam ülkeler arasında eşit değil; yayın ülkesi 2018 tarihli bir çıkarım ve okurun bulunduğu ülkeyi göstermiyor. Eşleşmeyi yalnızca başlık ve adres üzerinden yaptım; konuyu metin içinde işleyip başlığında anahtar sözcük taşımayan haberler kapsam dışında kaldı. İsabet yüzde 91,7, duyarlılık testi ise küçük bir havuza ve Almancaya dayanıyor. Son olarak kodlamaların tamamı yapay zekâ destekli tek bir kodlayıcıya ait; bağımsız bir insan kodlaması yapılmadan bu sonuçları kesin saymamak gerekiyor.",
+  "full_notes": "Sınırlılıkları açıkça söylemek istiyorum. Meta listesi bir örneklem değil, platformun tespit ve yayımlama kararlarının kaydı; operasyonun alt sınırını gösteriyor. Almanya etiketi Meta’nın kendi sınıflandırması ve operatörlerin SDA ile Structura olarak tanımlanması 2022 sonrasında yapılmış geriye dönük bir atıf. GDELT yalnızca izlediği kaynakları kapsıyor ve bu kapsam ülkeler arasında eşit değil; yayın ülkesi 2018 tarihli bir çıkarım ve okurun bulunduğu ülkeyi göstermiyor. Eşleşmeyi yalnızca başlık ve adres üzerinden yaptım; konuyu metin içinde işleyip başlığında anahtar sözcük taşımayan haberler kapsam dışında kaldı. İsabet yüzde 91,7, duyarlılık testi ise küçük bir havuza ve Almancaya dayanıyor. Son olarak kodlamaların tamamı tek bir kodlayıcıya ait; bağımsız ikinci bir kodlama yapılmadan bu sonuçları kesin saymamak gerekiyor.",
   "seconds": 55,
   "visual": "steps",
   "citations": [
@@ -636,7 +636,7 @@
    ],
    [
     "Geçerlilik",
-    "İsabet %91,7 (145 başlık); duyarlılık 7/8; kodlamalar YZ destekli tek kodlayıcı, insan kodlaması bekleniyor"
+    "İsabet %91,7 (145 başlık); duyarlılık 7/8; kodlamalar tek kodlayıcı, ikinci kodlama bekleniyor"
    ],
    [
     "Çıkarım",
@@ -654,14 +654,14 @@
    "AS3: iki günlük dalga; kuruluş başına Almanya"
   ],
   "takeaway": "Görünmez cephe: operasyon eşiğin altında, ifşası görünür.",
-  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya yaklaşık 2,4 kat önde.\nSonraki adımlar: kör insan kodlaması, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü.",
+  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya yaklaşık 2,4 kat önde.\nSonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü.",
   "cue_sentences": [
    "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.",
    "AS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.",
    "AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya yaklaşık 2,4 kat önde.",
-   "Sonraki adımlar: kör insan kodlaması, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü."
+   "Sonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü."
   ],
-  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında Alman kuruluşları ifşayı yaklaşık 2,4 kat daha yüksek oranda haberleştirdi. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız bir insan kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında Alman kuruluşları ifşayı yaklaşık 2,4 kat daha yüksek oranda haberleştirdi. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız ikinci bir kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
   "seconds": 75,
   "visual": "steps",
   "citations": [

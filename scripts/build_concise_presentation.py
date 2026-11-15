@@ -93,7 +93,7 @@ def main():
  for x in s:
   count=sum(len(v.split()) for v in [x['title'],x.get('subtitle',''),*x['display_points'],x['takeaway']]);assert count<=MAX_WORDS,(x['id'],count)
  ids={r['id'] for r in refs};assert all(set(x['citations'])<=ids for x in s)
- snap=load_snapshot();features=world_features()
+ snap=load_snapshot();(snap or {}).get('validation',{}).pop('coder_note',None);features=world_features()
  payload={'slides':s,'appendices':a,'references':refs,'analysis':analysis,'features':features,'gdelt':snap,'globe':globe_data(features,snap,analysis),'typology':typology_data(analysis),'gdelt_config':{'query':QUERY,'windows':WINDOWS,'max_records':MAX_RECORDS,'endpoint':DOC_ENDPOINT,'schema':SCHEMA,'warnings':['sourcecountry haberin yayımlandığı ülkedir; hedef ülke veya okur ülkesi değildir.','Her dilim en fazla 250 makale döndürür; capped=true olan dilimlerde seçki eksiktir.','Eşleşme anahtar sözcüğe dayanır; makalelerin konuyla ilgisi elle kodlanmamıştır.']},'meta':meta,'timing':{'talk':TALK_SECONDS,'session':SESSION_SECONDS}}
  result=(R/'scripts/concise.html').read_text().replace('__PAYLOAD__',json.dumps(payload,ensure_ascii=False,separators=(',',':')).replace('</','<\\/'))
  for token,path in [('__LEAFLET_CSS__','assets/vendor/leaflet.css'),('__LEAFLET_JS__','assets/vendor/leaflet.js'),('__BASEMAP_JS__','scripts/basemap.js'),('__CSS__','scripts/concise.css'),('__JS__','scripts/concise.js'),('__GDELT_JS__','scripts/gdelt_map.js'),('__THREE_JS__','assets/vendor/three.min.js'),('__SCENE3D_JS__','scripts/scene3d.js')]:result=result.replace(token,(R/path).read_text())
