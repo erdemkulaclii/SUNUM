@@ -193,7 +193,7 @@ def visual(d,sl,s,stats):
     if kind=='cover':
         m=META;xx=8.25;d.rect(sl,xx-.2,3.30,.04,1.85,'E58A78')
         d.text(sl,m['author'],xx,3.28,4.4,.45,20,PAPER,bold=True,name='cover_author',leading=1.1,min_size=15)
-        for j,k in enumerate(['affiliation','course','date']):d.text(sl,m[k],xx,3.86+j*.42,4.4,.36,14,'C7D8E8',name='cover_'+k,leading=1.1,min_size=11)
+        for j,k in enumerate([k for k in ['affiliation','course','date'] if m.get(k)]):d.text(sl,m[k],xx,3.86+j*.42,4.4,.36,14,'C7D8E8',name='cover_'+k,leading=1.1,min_size=11)
         return
     if kind in('question','outline','conclusion'):
         items={'question':[('AS1 · Hedef coğrafyası','Birim: alan adı · Meta hedef etiketi'),('AS2 · Sözcüksel yapı','Birim: alan adı · ilk ve son DNS etiketi'),('AS3 · Haber görünürlüğü','Birim: haber makalesi · GDELT GKG: gün, kaynak ülke, anılan yer')],

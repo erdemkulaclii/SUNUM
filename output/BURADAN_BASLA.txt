@@ -5,8 +5,8 @@ Sunum tam ekran açılır ve kendiliğinden oynar. Kapatmak için komut penceres
 DOPPELGÄNGER VAKASINDA HEDEF COĞRAFYASI VE HABER GÖRÜNÜRLÜĞÜ
 Meta 2022 CIB göstergeleri ve GDELT haber verisiyle akademik sunum
 
-1. Kapaktaki [Ad Soyad], [Bölüm, Üniversite], [Ders], [Tarih] alanlarını
-   scripts/presentation_meta.json içinde doldurun ve sunumu yeniden üretin
+1. Kapakta yalnızca ad soyad görünür. Başka bilgi eklemek isterseniz
+   scripts/presentation_meta.json içindeki boş alanları doldurup sunumu yeniden üretin
    (ya da PowerPoint'te doğrudan düzenleyin).
 
 2. SUNUM KENDİLİĞİNDEN İLERLER: HTML'yi açın, "Sunumu başlat ▶" düğmesine basın.

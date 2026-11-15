@@ -1,7 +1,7 @@
 {
  "author": "Erdem Kulaçlı",
- "affiliation": "[Bölüm, Üniversite]",
- "course": "[Ders adı / Seminer]",
- "date": "[Sunum tarihi]",
- "_note": "Kapakta görünen bilgiler. Köşeli parantezli alanları kendi bilgilerinizle değiştirip sunumu yeniden üretin."
+ "affiliation": "",
+ "course": "",
+ "date": "",
+ "_note": "Kapakta yalnızca ad soyad görünür. Boş alanlar gösterilmez."
 }

@@ -53,7 +53,7 @@ python scripts/build_makale.py && python -m unittest scripts/test_makale.py
 
 Akademik gerekçeler ve kaynak doğrulama etiketleri: [araştırma raporu](reports/Doppelgänger%20vakası%20akademik%20derinleştirme.md).
 
-Sunmadan önce `scripts/presentation_meta.json` içindeki köşeli parantezli alanları doldurup sunumu yeniden üretin (ya da PowerPoint’te doğrudan düzenleyin).
+Sunmadan önce `scripts/presentation_meta.json` içindeki boş alanları (kurum, ders, tarih) doldurup sunumu yeniden üretebilirsiniz; boş bırakılırsa kapakta yalnızca ad soyad görünür (ya da PowerPoint’te doğrudan düzenleyin).
 
 ## 3B sahneler
 
