@@ -173,7 +173,7 @@ Tipoloji kuruluş listesine bağlıdır; listede yer almayan bir markanın takli
 
 GDELT yalnızca izlediği kaynakları kapsamaktadır ve bu kapsam ülkeler ile diller arasında eşit değildir (Hammond ve Weidmann, 2014; Hoffmann vd., 2022). Yayın ülkesi GDELT’in 2018 tarihli bir çıkarımıdır ve okurun ülkesini göstermemektedir. Aktif yayın kuruluşu sayısı, dönem içinde GDELT’in en az bir kaydını ürettiği alan adlarından hesaplanmıştır ve ülkelerin medya sistemlerinin yalnızca GDELT’in izlediği kesimini yansıtmaktadır. Eşleşme yalnızca başlık ve URL üzerinden yapıldığından konuyu metin içinde işleyen ancak başlığında anahtar sözcük bulunmayan haberler kapsam dışında kalmıştır. Duyarlılık sınamaları Almanca haberlerle ve kısa bir dönemle sınırlıdır ve ikinci havuzdaki ilgili haber sayısı küçüktür (n = 8).
 
-Kodlamaların tamamı yapay zekâ destekli tek bir kodlayıcı tarafından yapılmıştır ve kodlayıcılar arası güvenirlik henüz hesaplanmamıştır. Yazarın yapay zekâ etiketlerini görmeden kodladığı bağımsız bir ikinci kodlama ile uyum katsayısının raporlanması, sonuçların kesinleşmesi için gereklidir. Son olarak çalışma erişim, maruziyet, etkileşim ya da etki ölçmemektedir. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir takipçi kitlesi bildirmektedir (Nimmo ve Agranovich, 2022); bulgular bu nedenle altyapı ve görünürlük düzeyinde yorumlanmalıdır.
+Kodlamaların tamamı tek bir kodlayıcı tarafından yapılmıştır ve kodlayıcılar arası güvenirlik henüz hesaplanmamıştır. İlk kodlamanın etiketleri görülmeden yapılacak bağımsız bir ikinci kodlama ile uyum katsayısının raporlanması, sonuçların kesinleşmesi için gereklidir. Son olarak çalışma erişim, maruziyet, etkileşim ya da etki ölçmemektedir. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir takipçi kitlesi bildirmektedir (Nimmo ve Agranovich, 2022); bulgular bu nedenle altyapı ve görünürlük düzeyinde yorumlanmalıdır.
 
 # 8. Sonuç
 
@@ -183,11 +183,7 @@ Sonraki çalışmalar için dört adım öne çıkmaktadır: 145 tekil başlığ
 
 # Veri ve Kod Erişilebilirliği
 
-Analizde kullanılan veriler ve kodlar https://github.com/erdemkulaclii/SUNUM adresindeki depoda yer almaktadır. Depoda Meta gösterge dosyasının kopyası ve SHA-256 özeti, alan adı tipolojisinin kuralları, GDELT dosya listesi ve MD5 doğrulama kayıtları, eşleşen haberler, günlük ve ülke paydaları, aktif yayın kuruluşu sayıları, isabet ve duyarlılık kodlamaları ile yazarın kör kodlaması için hazırlanmış form bulunmaktadır. Makalede raporlanan her sayıyı ham dosyalardan yeniden hesaplayan betik ile bu sayıların metinle eşleştiğini denetleyen otomatik testler de depoda yer almaktadır.
-
-# Yapay Zekâ Kullanım Beyanı
-
-Çalışmanın hazırlanmasında bir yapay zekâ asistanından (Anthropic Claude) yararlanılmıştır. Asistan veri toplama ve analiz kodlarının yazılmasında, isabet ve duyarlılık kodlamalarının tamamında, literatür taramasında ve metnin taslağında kullanılmıştır. Kodlar ve sayılar otomatik testlerle ham verilere karşı denetlenmiş, kaynakların künyeleri yayıncı ve depo kayıtlarıyla karşılaştırılmıştır. Kodlamalar yazar tarafından bağımsız olarak doğrulanmamıştır (bkz. Bölüm 7). Bulguların yorumu ve metnin son hâli yazarın sorumluluğundadır.
+Analizde kullanılan veriler ve kodlar https://github.com/erdemkulaclii/SUNUM adresindeki depoda yer almaktadır. Depoda Meta gösterge dosyasının kopyası ve SHA-256 özeti, alan adı tipolojisinin kuralları, GDELT dosya listesi ve MD5 doğrulama kayıtları, eşleşen haberler, günlük ve ülke paydaları, aktif yayın kuruluşu sayıları, isabet ve duyarlılık kodlamaları ile kör ikinci kodlama için hazırlanmış form bulunmaktadır. Makalede raporlanan her sayıyı ham dosyalardan yeniden hesaplayan betik ile bu sayıların metinle eşleştiğini denetleyen otomatik testler de depoda yer almaktadır.
 
 # Ek A. Bütün yayın ülkelerinde eşleşen haberler
 

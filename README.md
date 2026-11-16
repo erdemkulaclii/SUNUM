@@ -26,7 +26,7 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 
 **[makale/makale.pdf](makale/makale.pdf)** · [Word](makale/makale.docx) · [Markdown kaynağı](makale/makale.md) · [kaynak doğrulama kaydı](makale/KAYNAK_DOGRULAMA.md)
 
-“Hibrit Savaşın Görünmez Cephesi: Doppelgänger Ağının Alan Adı Altyapısı ve Uluslararası Haber Görünürlüğü (2022)”. Türkçe özet ve İngilizce abstract, kuramsal çerçeve, vaka, yöntem, bulgular (iki tablo, iki şekil), tartışma, sınırlılıklar, veri erişilebilirliği ve yapay zekâ kullanım beyanı, APA 7 kaynakça (37 kaynak).
+“Hibrit Savaşın Görünmez Cephesi: Doppelgänger Ağının Alan Adı Altyapısı ve Uluslararası Haber Görünürlüğü (2022)”. Türkçe özet ve İngilizce abstract, kuramsal çerçeve, vaka, yöntem, bulgular (iki tablo, iki şekil), tartışma, sınırlılıklar, veri erişilebilirliği, APA 7 kaynakça (37 kaynak).
 
 Makaledeki her sayı ham veriden yeniden hesaplanır ve otomatik testle metne karşı denetlenir:
 
