@@ -471,17 +471,17 @@
   "display_points": [
    "Haber: ABD 373, Almanya 29 (ajans tekrarı)",
    "Aktif kuruluş başına: Almanya binde 83,6; ABD 33,9",
-   "Alman kuruluşlarında oran 2,4 kat"
+   "Fark eşiğe bağlı: 1,2–2,5 kat"
   ],
   "takeaway": "Sonuç, sayım düzeyine bağlıdır.",
-  "notes": "[Aşama 1] Sütunlar gün gün yükseliyor: haber sayısında ABD 373, Almanya 29; ancak ABD’deki haberler yalnızca 63 farklı başlık, yani ajans tekrarı.\n[Aşama 2 →] Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Almanya binde 83,6, ABD binde 33,9.\nAlman kuruluşlarında oran yaklaşık 2,4 kat yüksek; sonuç, sayım düzeyine bağlı.\n[Aşama 3 →] Haberlerin yüzde 63,6’sı Almanya’yı anıyor; ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor.",
+  "notes": "[Aşama 1] Sütunlar gün gün yükseliyor: haber sayısında ABD 373, Almanya 29; ancak ABD’deki haberler yalnızca 63 farklı başlık, yani ajans tekrarı.\n[Aşama 2 →] Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Almanya binde 83,6, ABD binde 33,9.\nAlman kuruluşlarında oran 2,5 kata kadar yüksek; ama küçük siteler çıkarıldıkça fark 1,2 kata iniyor.\n[Aşama 3 →] Haberlerin yüzde 63,6’sı Almanya’yı anıyor; ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor.",
   "cue_sentences": [
    "[Aşama 1] Sütunlar gün gün yükseliyor: haber sayısında ABD 373, Almanya 29; ancak ABD’deki haberler yalnızca 63 farklı başlık, yani ajans tekrarı.",
    "[Aşama 2 →] Dönemde aktif kuruluşlara oranlayınca tablo tersine dönüyor: Almanya binde 83,6, ABD binde 33,9.",
-   "Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek; sonuç, sayım düzeyine bağlı.",
+   "Alman kuruluşlarında oran 2,5 kata kadar yüksek; ama küçük siteler çıkarıldıkça fark 1,2 kata iniyor.",
    "[Aşama 3 →] Haberlerin yüzde 63,6’sı Almanya’yı anıyor; ama Fransa ve İtalya anmaları neredeyse tamamen aynı ajans metninden geliyor."
   ],
-  "full_notes": "Beşinci bulgu mekâna ilişkin ve burada sayım düzeyi sonucu doğrudan belirliyor; bunu küre üzerinde üç aşamada göstereceğim. İlk aşamada sütunlar, her ülkede yayımlanan haber sayısını gösteriyor ve gün gün yükseliyor. Sonuç çok açık görünüyor: 511 haberin 373’ü ABD kaynaklı, Almanya’da yalnızca 29 haber var. Ancak ABD’deki 373 haber yalnızca 63 farklı başlık taşıyor; yani bu sütunun büyük kısmı, aynı ajans haberinin yüzlerce yerel sitede tekrar yayımlanması. [→ Aşama 2] Bu yüzden asıl ölçüt olarak yayın kuruluşu düzeyini aldım: ifşayı en az bir kez haberleştiren kuruluşları, o dönemde aktif olan kuruluşlara oranladım. Sütunlara dikkat edin: ABD iniyor, Almanya yükseliyor. Aktif Alman kuruluşlarının binde 83,6’sı ifşayı haberleştirmiş, ABD’de bu oran binde 33,9; Alman kuruluşlarında oran yaklaşık 2,4 kat yüksek. Bu aşamada yalnızca en az beş haberi ve yüz aktif kuruluşu olan ülkeleri gösteriyorum, çünkü küçük paydalı ülkelerde oran yanıltıcı biçimde büyüyor. [→ Aşama 3] Son aşamada Avrupa’ya yaklaşıyoruz. Kırmızı ülkeler Meta’nın hedef etiketleri, sarı noktalar ise haberlerde anılan yerler. Haberlerin yüzde 63,6’sı Almanya’yı anıyor. Fakat Fransa’yı anan haberlerin yüzde 98,6’sı İtalya’yı da anıyor; yani bu anmalar büyük ölçüde ajans metnindeki hedef ülke listesinden geliyor. Kısacası hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş; mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden gelmiş.",
+  "full_notes": "Beşinci bulgu mekâna ilişkin ve burada sayım düzeyi sonucu doğrudan belirliyor; bunu küre üzerinde üç aşamada göstereceğim. İlk aşamada sütunlar, her ülkede yayımlanan haber sayısını gösteriyor ve gün gün yükseliyor. Sonuç çok açık görünüyor: 511 haberin 373’ü ABD kaynaklı, Almanya’da yalnızca 29 haber var. Ancak ABD’deki 373 haber yalnızca 63 farklı başlık taşıyor; yani bu sütunun büyük kısmı, aynı ajans haberinin yüzlerce yerel sitede tekrar yayımlanması. [→ Aşama 2] Bu yüzden asıl ölçüt olarak yayın kuruluşu düzeyini aldım: ifşayı en az bir kez haberleştiren kuruluşları, o dönemde aktif olan kuruluşlara oranladım. Sütunlara dikkat edin: ABD iniyor, Almanya yükseliyor. Aktif Alman kuruluşlarının binde 83,6’sı ifşayı haberleştirmiş, ABD’de bu oran binde 33,9; Alman kuruluşlarında oran yaklaşık 2,5 kat yüksek. Ancak bu fark eşiğe duyarlı: dönemde çok az kaydı olan küçük siteleri paydadan çıkardıkça oran düşüyor; en az 500 kaydı olan kuruluşlarda 1,2 kata iniyor ve istatistiksel olarak anlamlı olmaktan çıkıyor. Sağlam olan sonuç şu: haber sayısındaki ABD üstünlüğü kuruluş düzeyinde kayboluyor. Bu aşamada yalnızca en az beş haberi ve yüz aktif kuruluşu olan ülkeleri gösteriyorum, çünkü küçük paydalı ülkelerde oran yanıltıcı biçimde büyüyor. [→ Aşama 3] Son aşamada Avrupa’ya yaklaşıyoruz. Kırmızı ülkeler Meta’nın hedef etiketleri, sarı noktalar ise haberlerde anılan yerler. Haberlerin yüzde 63,6’sı Almanya’yı anıyor. Fakat Fransa’yı anan haberlerin yüzde 98,6’sı İtalya’yı da anıyor; yani bu anmalar büyük ölçüde ajans metnindeki hedef ülke listesinden geliyor. Kısacası hedeflenen ülkenin medyası ifşayla kuruluş düzeyinde yoğun biçimde ilgilenmiş; mutlak hacim ise ABD’deki ajans dağıtım ağının büyüklüğünden gelmiş.",
   "seconds": 100,
   "visual": "gdelt_map",
   "citations": [
@@ -654,14 +654,14 @@
    "AS3: iki günlük dalga; kuruluş başına Almanya"
   ],
   "takeaway": "Görünmez cephe: operasyon eşiğin altında, ifşası görünür.",
-  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya yaklaşık 2,4 kat önde.\nSonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü.",
+  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı; kuruluş başına Almanya eşiğe göre 1,2–2,5 kat önde.\nSonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü.",
   "cue_sentences": [
    "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.",
    "AS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.",
-   "AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı, aktif kuruluş başına Almanya yaklaşık 2,4 kat önde.",
+   "AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı; kuruluş başına Almanya eşiğe göre 1,2–2,5 kat önde.",
    "Sonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü."
   ],
-  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında Alman kuruluşları ifşayı yaklaşık 2,4 kat daha yüksek oranda haberleştirdi. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız ikinci bir kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında ABD üstünlüğü kayboldu; Alman kuruluşlarının oranı eşiğe göre 1,2 ile 2,5 kat arasında daha yüksek ve büyük kuruluşlar arasında fark anlamlı değil. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız ikinci bir kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
   "seconds": 75,
   "visual": "steps",
   "citations": [
@@ -682,7 +682,7 @@
    ],
    [
     "AS3 · görünürlük",
-    "%96,3’ü 27–28 Eylül’de; haber sayısında ABD (ajans tekrarı), aktif kuruluş başına Almanya 2,4 kat önde"
+    "%96,3’ü 27–28 Eylül’de; haber sayısında ABD (ajans tekrarı), aktif kuruluş başına Almanya 1,2–2,5 kat önde (eşiğe bağlı)"
    ],
    [
     "Sonraki adım",

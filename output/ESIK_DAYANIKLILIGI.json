@@ -1,0 +1,146 @@
+[
+ {
+  "min_records": 1,
+  "germany": [
+   29,
+   347
+  ],
+  "united_states": [
+   230,
+   6786
+  ],
+  "ratio_de_us": 2.47,
+  "ci95": [
+   1.7,
+   3.57
+  ]
+ },
+ {
+  "min_records": 5,
+  "germany": [
+   29,
+   272
+  ],
+  "united_states": [
+   230,
+   5305
+  ],
+  "ratio_de_us": 2.46,
+  "ci95": [
+   1.7,
+   3.55
+  ]
+ },
+ {
+  "min_records": 10,
+  "germany": [
+   29,
+   253
+  ],
+  "united_states": [
+   230,
+   4726
+  ],
+  "ratio_de_us": 2.36,
+  "ci95": [
+   1.64,
+   3.39
+  ]
+ },
+ {
+  "min_records": 25,
+  "germany": [
+   29,
+   217
+  ],
+  "united_states": [
+   230,
+   3917
+  ],
+  "ratio_de_us": 2.28,
+  "ci95": [
+   1.59,
+   3.27
+  ]
+ },
+ {
+  "min_records": 50,
+  "germany": [
+   29,
+   196
+  ],
+  "united_states": [
+   230,
+   3261
+  ],
+  "ratio_de_us": 2.1,
+  "ci95": [
+   1.47,
+   3.0
+  ]
+ },
+ {
+  "min_records": 100,
+  "germany": [
+   29,
+   157
+  ],
+  "united_states": [
+   227,
+   2295
+  ],
+  "ratio_de_us": 1.87,
+  "ci95": [
+   1.31,
+   2.65
+  ]
+ },
+ {
+  "min_records": 250,
+  "germany": [
+   29,
+   109
+  ],
+  "united_states": [
+   218,
+   1214
+  ],
+  "ratio_de_us": 1.48,
+  "ci95": [
+   1.06,
+   2.07
+  ]
+ },
+ {
+  "min_records": 500,
+  "germany": [
+   28,
+   82
+  ],
+  "united_states": [
+   164,
+   587
+  ],
+  "ratio_de_us": 1.22,
+  "ci95": [
+   0.88,
+   1.7
+  ]
+ },
+ {
+  "min_records": 1000,
+  "germany": [
+   26,
+   61
+  ],
+  "united_states": [
+   70,
+   199
+  ],
+  "ratio_de_us": 1.21,
+  "ci95": [
+   0.86,
+   1.71
+  ]
+ }
+]
