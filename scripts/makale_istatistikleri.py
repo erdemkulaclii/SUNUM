@@ -16,6 +16,7 @@ from pathlib import Path
 R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'scripts'))
 import domain_typology as dt
+import gdelt_gkg_archive as gg
 import gdelt_validation as gv
 from gdelt_gkg_archive import dedupe
 
@@ -144,8 +145,33 @@ def main() -> dict:
         pu, pd_ = outlets['United States'] / act['United States'], outlets['Germany'] / act['Germany']
         se_o = math.sqrt(1 / outlets['United States'] - 1 / act['United States'] + 1 / outlets['Germany'] - 1 / act['Germany'])
         gd['outlet_ratio_us_de'] = rnd(pu / pd_, 2)
+        gd['outlet_ratio_us_de_exact'] = pu / pd_
         gd['outlet_ratio_ci95'] = [rnd(math.exp(math.log(pu / pd_) - 1.96 * se_o), 2), rnd(math.exp(math.log(pu / pd_) + 1.96 * se_o), 2)]
     gd['title_ratio_us_de_raw'] = rnd(titles_c['United States'] / titles_c['Germany'], 2)
+    # title level: distinct titles per 100,000 scanned records, US/DE ratio (log-normal approximation)
+    tu, tg = titles_c['United States'], titles_c['Germany']
+    trr = (tu / rates['United States']['scanned']) / (tg / rates['Germany']['scanned'])
+    tse = math.sqrt(1 / tu + 1 / tg)
+    gd['title_rate_per100k'] = {'United States': rnd(tu / rates['United States']['scanned'] * 1e5, 2), 'Germany': rnd(tg / rates['Germany']['scanned'] * 1e5, 2)}
+    gd['title_ratio_us_de'] = rnd(trr, 2)
+    gd['title_ratio_ci95'] = [rnd(math.exp(math.log(trr) - 1.96 * tse), 2), rnd(math.exp(math.log(trr) + 1.96 * tse), 2)]
+    # outlet level under minimum-volume thresholds (records per domain in the window)
+    vol_path = R / 'research/gdelt/gkg_archive/domain_volume.json'
+    if vol_path.is_file():
+        vol = json.loads(vol_path.read_text())
+        dc, _ = gg.load_domains()
+        hit_dom = {c: {h['domain'] for h in hits if h['sourcecountry'] == c} for c in ('Germany', 'United States')}
+        thr = []
+        for k_min in (1, 10, 50, 100, 250, 500, 1000):
+            cnt = {}
+            for c in ('Germany', 'United States'):
+                cnt[c] = (sum(1 for d_ in hit_dom[c] if vol.get(d_, 0) >= k_min), sum(1 for d_, v_ in vol.items() if dc.get(d_) == c and v_ >= k_min))
+            (ka, na), (kb, nb) = cnt['Germany'], cnt['United States']
+            q = (ka / na) / (kb / nb); s_ = math.sqrt(1 / ka - 1 / na + 1 / kb - 1 / nb)
+            thr.append({'min_records': k_min, 'germany': [ka, na], 'united_states': [kb, nb], 'ratio_de_us': rnd(q, 2),
+                        'ci95': [rnd(math.exp(math.log(q) - 1.96 * s_), 2), rnd(math.exp(math.log(q) + 1.96 * s_), 2)]})
+        gd['outlet_threshold'] = thr
+        gd['outlet_ratio_de_us'] = rnd(1 / (gd['outlet_ratio_us_de_exact']), 2)
     # all source countries (appendix table): articles, outlets, scanned records, per-100k with exact CI
     allc = []
     for c, k in by_country.most_common():
@@ -163,7 +189,8 @@ def main() -> dict:
     gd['fr_it_both_share_of_fr'] = rnd(gd['fr_it_both'] / mention['FR'] * 100)
     # per-rule precision from the random sample and population-weighted precision
     vr = val['by_rule']
-    w = sum(vr[r]['precision'] * gd['rules'].get(r, 0) for r in vr if r != 'all') / n
+    # exact fractions (relevant / n), not the rounded per-rule precision
+    w = sum(vr[r]['relevant'] / vr[r]['n'] * gd['rules'].get(r, 0) for r in vr if r != 'all' and vr[r]['n']) / n
     gd['precision_weighted_pct'] = rnd(w * 100)
     # pre-disclosure article
     pre = [h for h in hits if h['day'] < '20220927']
@@ -182,6 +209,23 @@ def main() -> dict:
         else:
             alt['sahte_yayin'] += 1
     meta['typology_threshold1'] = alt
+    alt3 = {'marka_birebir': 0, 'marka_varyant': 0, 'sahte_yayin': 0}; moved3 = []
+    for r in a['records']:
+        lab = r['first_dns_label']
+        if lab in dt.OUTLETS:
+            alt3['marka_birebir'] += 1
+        elif min(dt.dl(lab, o) for o in dt.OUTLETS) <= 3:
+            alt3['marka_varyant'] += 1
+            if dt.classify(lab)[0] != 'marka_varyant':
+                moved3.append(lab)
+        else:
+            alt3['sahte_yayin'] += 1
+    meta['typology_threshold3'] = alt3
+    meta['typology_threshold3_moved'] = sorted(set(moved3))
+    pseudo = sorted({r['first_dns_label'] for r in a['records'] if dt.classify(r['first_dns_label'])[0] == 'sahte_yayin'})
+    near = [(l, o) for l in pseudo for o in dt.WIDE_OUTLETS if dt.dl(l, o) <= max(1, len(o) // 3)]
+    meta['wide_outlet_list_size'] = len(dt.WIDE_OUTLETS)
+    meta['pseudo_near_wide_outlet'] = near
     out = {'meta': meta, 'gdelt': gd}
     (R / 'output/MAKALE_SAYILARI.json').write_text(json.dumps(out, ensure_ascii=False, indent=1))
     return out

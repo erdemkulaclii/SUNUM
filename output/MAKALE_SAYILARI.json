@@ -167,7 +167,17 @@
    "marka_birebir": 43,
    "marka_varyant": 16,
    "sahte_yayin": 252
-  }
+  },
+  "typology_threshold3": {
+   "marka_birebir": 43,
+   "marka_varyant": 17,
+   "sahte_yayin": 251
+  },
+  "typology_threshold3_moved": [
+   "rrn"
+  ],
+  "wide_outlet_list_size": 51,
+  "pseudo_near_wide_outlet": []
  },
  "gdelt": {
   "window": [
@@ -419,11 +429,136 @@
    }
   },
   "outlet_ratio_us_de": 0.41,
+  "outlet_ratio_us_de_exact": 0.4055509822453937,
   "outlet_ratio_ci95": [
    0.28,
    0.59
   ],
   "title_ratio_us_de_raw": 4.85,
+  "title_rate_per100k": {
+   "United States": 4.29,
+   "Germany": 6.89
+  },
+  "title_ratio_us_de": 0.62,
+  "title_ratio_ci95": [
+   0.34,
+   1.13
+  ],
+  "outlet_threshold": [
+   {
+    "min_records": 1,
+    "germany": [
+     29,
+     347
+    ],
+    "united_states": [
+     230,
+     6786
+    ],
+    "ratio_de_us": 2.47,
+    "ci95": [
+     1.7,
+     3.57
+    ]
+   },
+   {
+    "min_records": 10,
+    "germany": [
+     29,
+     253
+    ],
+    "united_states": [
+     230,
+     4726
+    ],
+    "ratio_de_us": 2.36,
+    "ci95": [
+     1.64,
+     3.39
+    ]
+   },
+   {
+    "min_records": 50,
+    "germany": [
+     29,
+     196
+    ],
+    "united_states": [
+     230,
+     3261
+    ],
+    "ratio_de_us": 2.1,
+    "ci95": [
+     1.47,
+     3.0
+    ]
+   },
+   {
+    "min_records": 100,
+    "germany": [
+     29,
+     157
+    ],
+    "united_states": [
+     227,
+     2295
+    ],
+    "ratio_de_us": 1.87,
+    "ci95": [
+     1.31,
+     2.65
+    ]
+   },
+   {
+    "min_records": 250,
+    "germany": [
+     29,
+     109
+    ],
+    "united_states": [
+     218,
+     1214
+    ],
+    "ratio_de_us": 1.48,
+    "ci95": [
+     1.06,
+     2.07
+    ]
+   },
+   {
+    "min_records": 500,
+    "germany": [
+     28,
+     82
+    ],
+    "united_states": [
+     164,
+     587
+    ],
+    "ratio_de_us": 1.22,
+    "ci95": [
+     0.88,
+     1.7
+    ]
+   },
+   {
+    "min_records": 1000,
+    "germany": [
+     26,
+     61
+    ],
+    "united_states": [
+     70,
+     199
+    ],
+    "ratio_de_us": 1.21,
+    "ci95": [
+     0.86,
+     1.71
+    ]
+   }
+  ],
+  "outlet_ratio_de_us": 2.47,
   "all_countries": [
    {
     "country": "United States",
@@ -835,7 +970,7 @@
   ],
   "fr_it_both": 288,
   "fr_it_both_share_of_fr": 98.6,
-  "precision_weighted_pct": 93.1,
+  "precision_weighted_pct": 93.2,
   "pre_disclosure": [
    {
     "date": "20220921104500",

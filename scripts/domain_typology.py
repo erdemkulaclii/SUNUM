@@ -22,6 +22,15 @@ OUTLETS = {'spiegel': 'Der Spiegel (spiegel.de)', 'bild': 'Bild (bild.de)', 'wel
            'delfi': 'Delfi (delfi.lv/.lt/.ee)', 'rbc': 'RBC Ukraine (rbc.ua)'}
 
 
+# Robustness check only (not used for classification): a wider list of German-language and
+# DACH news outlets, used to test whether any 'sahte_yayin' label resembles a real outlet.
+WIDE_OUTLETS = sorted({'zeit', 'focus', 'stern', 'n-tv', 'ntv', 'merkur', 'tagesschau', 'zdf', 'ard', 'handelsblatt', 'spiegel', 'taz',
+                       'faz', 'welt', 'bild', 'rnd', 'mdr', 'ndr', 'wdr', 'swr', 'dw', 'heise', 'cicero', 'tichyseinblick', 'achgut',
+                       'compact', 'jungefreiheit', 'junge-freiheit', 'jungewelt', 'berliner-zeitung', 'morgenpost', 'abendblatt',
+                       'rp-online', 'ksta', 'express', 'wiwo', 'manager-magazin', 'capital', 'freitag', 'nzz', 'krone', 'derstandard',
+                       'kurier', 'watson', 'blick', '20min', 'sueddeutsche', 't-online', 'tagesspiegel', 'nd-aktuell', 'br'})
+
+
 def dl(a: str, b: str) -> int:
     """Damerau-Levenshtein (optimal string alignment) distance."""
     d = [[0] * (len(b) + 1) for _ in range(len(a) + 1)]

@@ -42,6 +42,10 @@ class ArticleNumbers(unittest.TestCase):
                f"{t['pseudo_distinct_labels']} farklı ilk etiket", f"{t['anagram_family_labels']} etiket {t['anagram_families']} harf karışımı ailesi", f"toplam {t['anagram_family_domains']} alan adı",
                f"{t['top6_tld_by_class']['sahte_yayin']}SUFFIX (%{tr(t['top6_tld_by_class']['sahte_yayin'] / cc['sahte_yayin'] * 100)})",
                f"{len(t['tld_by_class']['marka_birebir'])} farklı uzantıya", f"*online* ({m['top6_labels']['online']})", f"*fun* ({m['top6_labels']['fun']})"]
+        exp += [f"{m['wide_outlet_list_size']} etiketlik daha geniş"]
+        self.assertEqual(m['pseudo_near_wide_outlet'], [])
+        self.assertEqual(m['typology_threshold3_moved'], ['rrn'])
+        self.assertEqual(m['typology_threshold1'], cc)
         for brand, n in t['brand_exact_by_outlet'].items():
             self.assertIn(f'({n})', BODY, brand)
         self.assertEqual(max(t['tld_by_class']['marka_birebir'].values()), 5)
@@ -77,6 +81,16 @@ class ArticleNumbers(unittest.TestCase):
             exp.append(f"| {label} | {x['articles']} | {tr(x['per100k'], 2)} ({tr(x['ci95'][0], 2)}–{tr(x['ci95'][1], 2)}) | {l['outlets']} / {th(l['active_outlets'])} | {tr(l['outlet_share_per1000'], 2)} ({tr(l['outlet_share_ci95'][0], 2)}–{tr(l['outlet_share_ci95'][1], 2)}) | {l['titles']} |")
         v = g['validation']
         exp.append(f"30 başlığın {v['R2_takedown']['relevant']}SUFFIX (%{tr(v['R2_takedown']['precision'] * 100)})")
+        tl = g['title_rate_per100k']
+        exp += [f"ABD’de {tr(tl['United States'], 2)}, Almanya’da {tr(tl['Germany'], 2)} başlık",
+                f"oranı {tr(g['title_ratio_us_de'], 2)}SUFFIX (%95 GA {tr(g['title_ratio_ci95'][0], 2)}–{tr(g['title_ratio_ci95'][1], 2)})",
+                f"Almanya lehine oran {tr(g['outlet_ratio_de_us'], 2)}"]
+        thr = {x['min_records']: x for x in g['outlet_threshold']}
+        exp += [f"oran {tr(thr[250]['ratio_de_us'], 2)}SUFFIX", f"üretenlerle sınırlandığında {tr(thr[500]['ratio_de_us'], 2)}SUFFIX"]
+        self.assertLess(thr[500]['ci95'][0], 1)
+        self.assertGreater(thr[250]['ci95'][0], 1)
+        for x in g['outlet_threshold']:
+            self.assertIn(f"| {th(x['min_records'])} | {x['germany'][0]} / {th(x['germany'][1])} | {x['united_states'][0]} / {th(x['united_states'][1])} | {tr(x['ratio_de_us'], 2)} ({tr(x['ci95'][0], 2)}–{tr(x['ci95'][1], 2)}) |", BODY)
         ranked = [c for c in g['rank_per100k_min5']]
         self.assertEqual(ranked[:2], ['United States', 'Germany'])
         for e in exp:
