@@ -26,3 +26,4 @@ __pycache__/
 # Retained locally for historical inspection; excluded from distribution.
 /assets/locations/paris.jpg
 /research/locations/paris.jpg
+output/osint/onbellek.json

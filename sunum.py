@@ -156,12 +156,16 @@ def main() -> None:
     p.add_argument('--pdf', action='store_true', help='PDF yedeğini aç')
     p.add_argument('--kontrol', action='store_true', help='testleri ve sunum doğrulamasını çalıştır')
     p.add_argument('--tarayici-acma', action='store_true', help='yalnız sunucuyu başlat (tarayıcı açma)')
+    p.add_argument('--osint', action='store_true', help='makaledeki kaynakları, haber bağlantılarını ve alan adlarını açık kaynaklarla doğrula')
     p.add_argument('--port', type=int)
     a = p.parse_args()
     if a.yeniden_uret:
         rebuild()
     if a.kontrol:
         check()
+        return
+    if a.osint:
+        run([sys.executable, str(SCRIPTS / 'osint_dogrula.py')])
         return
     if a.pptx:
         open_file(OUT / 'AKADEMIK_ODAKLI_SUNUM.pptx')

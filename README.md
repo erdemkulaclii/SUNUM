@@ -34,6 +34,20 @@ Makaledeki her sayı ham veriden yeniden hesaplanır ve otomatik testle metne ka
 python scripts/build_makale.py && python -m unittest scripts/test_makale.py
 ```
 
+## OSINT doğrulama (kendi bilgisayarınızda)
+
+Makaledeki kaynakları ve verileri açık kaynaklara karşı sınayan araç. İnternete açık bir bilgisayarda çalıştırın; yalnız Python 3 gerekir.
+
+```bash
+python3 scripts/osint_dogrula.py --kaynaklar
+```
+
+```bash
+python3 sunum.py --osint
+```
+
+İlki yalnız kaynakçayı denetler (~2 dk); ikincisi her şeyi (~20–40 dk). Denetlenenler: kaynakçadaki DOI'lerin Crossref kaydı (başlık, ilk yazar, yıl), bağlantıların bugün açılıp açılmadığı ve Wayback kopyası; VIGINUM 2023 raporu ve Galeotti 2014 yazısı; eşleşen 511 haberin canlı ve arşiv durumu; Meta'nın 311 alan adının bugünkü DNS ve RDAP kaydı ile Wayback'teki ilk ve son kopya tarihi (bu alan adlarına HTTP isteği gönderilmez); Meta CSV'sinin SHA-256'sı; rastgele GDELT dosyalarının MD5'i. Sonuç `output/osint/OSINT_RAPORU.md` ve yanındaki CSV dosyalarındadır; yarıda kalırsa aynı komut kaldığı yerden devam eder.
+
 ## Akış: 19 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
 
 | # | Bölüm | İçerik |
