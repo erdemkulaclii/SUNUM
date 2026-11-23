@@ -35,6 +35,6 @@
   "gdelt_snapshot_embedded": true,
   "synthetic_GDELT_observations": false,
   "desktop_PowerPoint_render_verified": false,
-  "pptx_sha256": "7a1bf53924f67bfe30c1ec24c308a86bc333a31a63604862dc120ddd4a7ecaf6",
-  "pdf_sha256": "96d06f4f0f52b26c35c6fc1a154aa0359881ae039b41ab0cd4c64ca32f0adc49"
+  "pptx_sha256": "090fadff57613ddba1fc9db64b86145f015d7a0b8d5e6b7b1192938988bc8f2b",
+  "pdf_sha256": "2fe63d266912e4d2a0478b7ac03b959debd0edaf26fc018ee5d2d9bf817c7752"
 }
