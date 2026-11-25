@@ -1,8 +1,8 @@
 {
   "checks_passed": true,
-  "checked_at_utc": "2026-11-25T16:15:06.451818+00:00",
-  "html_sha256": "c8964cf21bfc0b66bc43891f0e752cfc0ef7266665b13b413e2ad04e03cdf98c",
-  "narrative_sha256": "217537abdb5cf31a8c3be1c580ef8661bb47470a1a9beedef116e9d6e0ff3794",
+  "checked_at_utc": "2026-11-25T19:04:41.644642+00:00",
+  "html_sha256": "1448d01124bc04c170e211ba7dfd7741f6d3123ca2e727ebd3631cede3e72044",
+  "narrative_sha256": "4e1d614d862f0a0f8b7ed3663b42ac4db4b73436163b8822b4d97652172b09a1",
   "main_slides": 19,
   "planned_seconds": 1200,
   "buffer_seconds": 0,
@@ -115,7 +115,7 @@
         },
         {
           "scene": 8,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır",
           "prose_fonts_px": [
             24,
             32,
@@ -135,7 +135,7 @@
         },
         {
           "scene": 10,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır",
           "prose_fonts_px": [
             24,
             32,
@@ -155,7 +155,7 @@
         },
         {
           "scene": 12,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir",
           "prose_fonts_px": [
             24,
             32,
@@ -311,7 +311,7 @@
         },
         {
           "scene": 8,
-          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+          "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır",
           "prose_fonts_px": [
             19,
             24,
@@ -331,7 +331,7 @@
         },
         {
           "scene": 10,
-          "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+          "title": "Almanya, bu listenin hedef coğrafyasında baskındır",
           "prose_fonts_px": [
             19,
             24,
@@ -351,7 +351,7 @@
         },
         {
           "scene": 12,
-          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+          "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir",
           "prose_fonts_px": [
             19,
             24,

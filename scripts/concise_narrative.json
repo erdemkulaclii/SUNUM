@@ -269,7 +269,7 @@
  },
  {
   "id": "audit",
-  "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır.",
+  "title": "Denetlenmiş analiz kümesi 311 benzersiz alan adıdır",
   "kicker": "VERİ HAZIRLIĞI",
   "display_points": [
    "350 kayıt → 313 alan adı satırı → 311 benzersiz alan adı"
@@ -338,11 +338,11 @@
  },
  {
   "id": "countries",
-  "title": "Almanya, bu listenin hedef coğrafyasında baskındır.",
+  "title": "Almanya, bu listenin hedef coğrafyasında baskındır",
   "kicker": "BULGU 1 / AS1 · HEDEF ÜLKE",
   "display_points": [
    "Almanya: 298/311 (%95,8)",
-   "Birleşik Krallık 4; Fransa 2; İtalya 2."
+   "Birleşik Krallık 4; Fransa 2; İtalya 2"
   ],
   "takeaway": "Bu oran, yayımlanmış vakanın dağılımını betimler.",
   "notes": "311 alan adının 298’i, yani yüzde 95,8’i Almanya hedefli olarak etiketlenmiş.\nBirleşik Krallık 4, Fransa 2, İtalya 2; kalan beş kayıt Letonya, Ukrayna ve çoklu hedef.\nBu bir hedefleme önceliği ve yatırımdır, erişim değil; etiket de Meta’nın sınıflandırmasıdır.",
@@ -417,7 +417,7 @@
  },
  {
   "id": "reuse",
-  "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir.",
+  "title": "Aynı ilk DNS etiketi farklı son etiketlerle yinelenir",
   "kicker": "BULGU 3 / AS2 · İLK DNS ETİKETİ",
   "display_points": [
    "93 ayrı ilk etiket",
@@ -510,7 +510,7 @@
    "Eady ve arkadaşlarının bulgusu bağlam veriyor ama doğrudan Doppelgänger’e aktarılamaz."
   ],
   "notes": "Literatür beş katmanı ayırır: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü.\nBu çalışma yalnızca birinci ve beşinci katmanı ölçüyor.\nMeta 2022: yaklaşık 4 bin sayfa takipçisi; büyük altyapı, küçük otantik kitle.\nEady ve arkadaşlarının bulgusu bağlam veriyor ama doğrudan Doppelgänger’e aktarılamaz.",
-  "full_notes": "Tartışmaya geçerken bulguları doğru katmana yerleştirmek istiyorum. Literatür beş katmanı ayırır: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü. Bu çalışma yalnızca birinci ve beşinci katmanı ölçüyor. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir otantik kitle bildiriyor: yaklaşık 4 bin sayfa takipçisi ve yaklaşık 105 bin dolarlık reklam. Genel literatür de benzer bir tablo çiziyor; Eady ve arkadaşları 2016 ABD seçiminde Rus İnternet Araştırma Ajansı içeriklerine maruziyetin kullanıcıların yüzde birinde yoğunlaştığını ve tutum ya da oy davranışıyla ilişkisinin saptanmadığını gösterdi. Ancak bu bulguyu doğrudan Doppelgänger’e aktaramam; Almanya’da bu adreslere maruziyeti ölçen bir panel çalışması yok. Bu yüzden etkinin olmadığını söylemiyorum; erişim ve etki bu çalışmada ölçülmedi.",
+  "full_notes": "Tartışmaya geçerken bulguları doğru katmana yerleştirmek istiyorum. Literatür beş katmanı ayırır: altyapı, erişim, etkileşim, etki ve ifşanın görünürlüğü. Bu çalışma yalnızca birinci ve beşinci katmanı ölçüyor. Meta’nın 2022 raporu büyük bir altyapıya karşılık küçük bir otantik kitle bildiriyor: yaklaşık 4 bin sayfa takipçisi ve yaklaşık 105 bin dolarlık reklam. Genel literatür de benzer bir tablo çiziyor; Eady ve arkadaşları 2016 ABD seçiminde Rus İnternet Araştırma Ajansı içeriklerine maruz kalmanın kullanıcıların yüzde birinde yoğunlaştığını ve tutum ya da oy davranışıyla ilişkisinin saptanmadığını gösterdi. Ancak bu bulguyu doğrudan Doppelgänger’e aktaramam; Almanya’da bu adreslere maruz kalmayı ölçen bir panel çalışması yok. Bu yüzden etkinin olmadığını söylemiyorum; erişim ve etki bu çalışmada ölçülmedi.",
   "seconds": 55,
   "visual": "table",
   "citations": [
@@ -655,14 +655,14 @@
    "AS3: iki günlük dalga; kuruluş başına Almanya"
   ],
   "takeaway": "Görünmez cephe: operasyon eşiğin altında, ifşası görünür.",
-  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı; kuruluş başına Almanya eşiğe göre 1,2–2,5 kat önde.\nSonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü.",
+  "notes": "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.\nAS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.\nAS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı; kuruluş başına Almanya eşiğe göre 1,2–2,5 kat önde.\nSonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruz kalma ölçümü.",
   "cue_sentences": [
    "AS1: Göstergelerin yüzde 95,8’i Almanya hedefli.",
    "AS2: Altyapının yüzde 81’i uydurma “bağımsız yayın” adı; gerçek markaların birebir taklidi yalnızca 43 adres.",
    "AS3: İfşa iki günlük bir dalga; haber sayısında ABD önde ama bu ajans tekrarı; kuruluş başına Almanya eşiğe göre 1,2–2,5 kat önde.",
-   "Sonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruziyet ölçümü."
+   "Sonraki adımlar: kör ikinci kodlama, diğer dillerde duyarlılık testi, kayıt tarihleri ve maruz kalma ölçümü."
   ],
-  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında ABD üstünlüğü kayboldu; Alman kuruluşlarının oranı eşiğe göre 1,2 ile 2,5 kat arasında daha yüksek ve büyük kuruluşlar arasında fark anlamlı değil. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız ikinci bir kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruziyetin ölçülmesi. Dinlediğiniz için teşekkür ederim.",
+  "full_notes": "Araştırma sorularıma dönerek bitiriyorum. Birinci soruya yanıt: yayımlanan göstergelerin yüzde 95,8’i Almanya hedefli. İkinci soruya yanıt: altyapının beşte dördü var olmayan “bağımsız” Alman yayınlarının adlarından oluşuyor ve bu adlar harfleri karıştırılarak yeni genel uzantılarda çoğaltılmış; tanınmış markaların birebir taklidi yalnızca 43 adres. Üçüncü soruya yanıt: ifşa iki günlük bir haber dalgası olarak görünür oldu; haber sayısında ABD öndeydi, ancak bu fark ajans tekrarından geliyordu ve aktif yayın kuruluşlarına oranlandığında ABD üstünlüğü kayboldu; Alman kuruluşlarının oranı eşiğe göre 1,2 ile 2,5 kat arasında daha yüksek ve büyük kuruluşlar arasında fark anlamlı değil. Bu bulguları hibrit müdahale çerçevesine bağladığımda şunu söyleyebilirim: operasyon büyük ölçüde uydurma bir yayıncılık kimliği üzerine kurulmuş ve tespit eşiğinin altında tutulmuş; ifşası ise hedeflenen ülkenin medyasında görünür olmuş. Coğrafi sonucun sayım düzeyine bağlı olması da benzer çalışmalar için önemli bir yöntem dersi. Sonraki adımlar belli: başlıkların bağımsız ikinci bir kodlayıcıyla yeniden kodlanması, duyarlılık testinin Fransızca, İtalyanca ve İngilizceye genişletilmesi, alan adlarının kayıt tarihlerinin incelenmesi ve bu adreslere gerçek maruz kalmanın ölçülmesi. Dinlediğiniz için teşekkür ederim.",
   "seconds": 75,
   "visual": "steps",
   "citations": [
@@ -687,7 +687,7 @@
    ],
    [
     "Sonraki adım",
-    "145 başlığın kör kodlaması · Almanca akışta recall · web izleme paneli · DSA md. 40"
+    "145 başlığın kör kodlaması · Almanca akışta duyarlılık · web izleme paneli · DSA md. 40"
    ]
   ]
  },
