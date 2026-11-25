@@ -43,7 +43,7 @@ MIN_ACTIVE,MIN_ARTICLES=100,5  # rate columns only for countries with stable den
 
 def globe_data(features,snap,analysis):
  """Data for the 3D globe: every value comes from the archive scan outputs."""
- paper=O/'MAKALE_SAYILARI.json';totals=R/'research/gdelt/gkg_archive/totals.json'
+ paper=O/'ANALIZ_SAYILARI.json';totals=R/'research/gdelt/gkg_archive/totals.json'
  if not (snap and paper.is_file() and totals.is_file()):return None
  S=json.loads(paper.read_text())['gdelt'];act=json.loads(totals.read_text()).get('active_domains_per_source_country',{})
  by={norm_name(f['name']):f for f in features};idx={}

@@ -5,7 +5,7 @@ announcement (Russian or Chinese network; both were in the same announcement) or
 Doppelgänger campaign. Everything else is NOT relevant.
 
 First coder: AI-assisted (Claude), title + URL only. Second coder: the author fills
-makale/kodlama/insan_kodlama_formu.csv WITHOUT seeing the AI labels; `python scripts/gdelt_census.py`
+research/kodlama/insan_kodlama_formu.csv WITHOUT seeing the AI labels; `python scripts/gdelt_census.py`
 then reports agreement and Cohen's kappa.
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ R = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(R / 'scripts'))
 from gdelt_gkg_archive import dedupe
 from gdelt_validation import wilson, kappa
-K = R / 'makale/kodlama'
+K = R / 'research/kodlama'
 A = R / 'research/gdelt/gkg_archive'
 
 # AI-assisted first coding: normalized titles judged NOT relevant (with reason). All others relevant.

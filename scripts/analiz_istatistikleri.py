@@ -1,6 +1,6 @@
 """Every number reported in the article, recomputed from the raw data files.
 
-    python scripts/makale_istatistikleri.py   -> output/MAKALE_SAYILARI.json
+    python scripts/analiz_istatistikleri.py   -> output/ANALIZ_SAYILARI.json
 
 Inputs: Meta CSV analysis (output/IOC_YAPISAL_ANALIZ.json, rebuilt from the CSV by
 analyze_ioc_structure.py), domain typology (domain_typology.py), GDELT GKG scan
@@ -227,7 +227,7 @@ def main() -> dict:
     meta['wide_outlet_list_size'] = len(dt.WIDE_OUTLETS)
     meta['pseudo_near_wide_outlet'] = near
     out = {'meta': meta, 'gdelt': gd}
-    (R / 'output/MAKALE_SAYILARI.json').write_text(json.dumps(out, ensure_ascii=False, indent=1))
+    (R / 'output/ANALIZ_SAYILARI.json').write_text(json.dumps(out, ensure_ascii=False, indent=1))
     return out
 
 

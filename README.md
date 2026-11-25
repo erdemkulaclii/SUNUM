@@ -22,21 +22,9 @@ Yerel sunucuyu açar, sunumu Chrome/Edge varsa tam ekran uygulama penceresinde (
 | `python sunum.py --yeniden-uret` | HTML, PPTX, PDF ve belgeleri yeniden üretip başlatır |
 | `python sunum.py --kontrol` | Bütün testleri ve sunum doğrulamasını çalıştırır |
 
-## Makale
-
-**[makale/makale.pdf](makale/makale.pdf)** · [Word](makale/makale.docx) · [Markdown kaynağı](makale/makale.md) · [kaynak doğrulama kaydı](makale/KAYNAK_DOGRULAMA.md)
-
-“Hibrit Savaşın Görünmez Cephesi: GDELT Verisiyle Rusya’nın Batı Avrupa’ya Yönelik Dezenformasyon Operasyonlarının Coğrafi Haritalanması” (alt başlık: Doppelgänger Vakası: Alan Adı Altyapısı ve İfşanın Haber Coğrafyası, 2022). Türkçe özet ve İngilizce abstract, kuramsal çerçeve, vaka, yöntem, bulgular (iki tablo, iki şekil), tartışma, sınırlılıklar, veri erişilebilirliği, APA 7 kaynakça (37 kaynak).
-
-Makaledeki her sayı ham veriden yeniden hesaplanır ve otomatik testle metne karşı denetlenir:
-
-```bash
-python scripts/build_makale.py && python -m unittest scripts/test_makale.py
-```
-
 ## OSINT doğrulama (kendi bilgisayarınızda)
 
-Makaledeki kaynakları ve verileri açık kaynaklara karşı sınayan araç. İnternete açık bir bilgisayarda çalıştırın; yalnız Python 3 gerekir.
+Sunumdaki kaynakları ve verileri açık kaynaklara karşı sınayan araç. İnternete açık bir bilgisayarda çalıştırın; yalnız Python 3 gerekir.
 
 ```bash
 python3 scripts/osint_dogrula.py --kaynaklar
@@ -46,7 +34,7 @@ python3 scripts/osint_dogrula.py --kaynaklar
 python3 sunum.py --osint
 ```
 
-İlki yalnız kaynakçayı denetler (~2 dk); ikincisi her şeyi (~20–40 dk). Denetlenenler: kaynakçadaki DOI'lerin Crossref kaydı (başlık, ilk yazar, yıl), bağlantıların bugün açılıp açılmadığı ve Wayback kopyası; VIGINUM 2023 raporu ve Galeotti 2014 yazısı; eşleşen 511 haberin canlı ve arşiv durumu; Meta'nın 311 alan adının bugünkü DNS ve RDAP kaydı ile Wayback'teki ilk ve son kopya tarihi (bu alan adlarına HTTP isteği gönderilmez); Meta CSV'sinin SHA-256'sı; rastgele GDELT dosyalarının MD5'i. Sonuç `output/osint/OSINT_RAPORU.md` ve yanındaki CSV dosyalarındadır; yarıda kalırsa aynı komut kaldığı yerden devam eder.
+İlki yalnız kaynakçayı denetler (~2 dk); ikincisi her şeyi (~20–40 dk). Denetlenenler: sunum kaynakçasındaki DOI'lerin Crossref kaydı (başlık, ilk yazar, yıl), bağlantıların bugün açılıp açılmadığı ve Wayback kopyası; VIGINUM 2023 raporu ve Galeotti 2014 yazısı; eşleşen 511 haberin canlı ve arşiv durumu; Meta'nın 311 alan adının bugünkü DNS ve RDAP kaydı ile Wayback'teki ilk ve son kopya tarihi (bu alan adlarına HTTP isteği gönderilmez); Meta CSV'sinin SHA-256'sı; rastgele GDELT dosyalarının MD5'i. Sonuç `output/osint/OSINT_RAPORU.md` ve yanındaki CSV dosyalarındadır; yarıda kalırsa aynı komut kaldığı yerden devam eder.
 
 ## Akış: 19 ana slayt, yaklaşık 20 dakika (soru-cevap yok)
 

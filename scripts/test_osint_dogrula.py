@@ -29,10 +29,13 @@ def fake_fetch(url, max_bytes):
 
 class Parsing(unittest.TestCase):
     def test_reference_parsing(self):
-        refs = od.parse_references((od.R / 'makale/makale.md').read_text())
-        self.assertGreaterEqual(len(refs), 40)
-        b = next(r for r in refs if r['ilk_yazar'] == 'Bennett')
-        self.assertEqual((b['yil'], b['doi']), ('2018', '10.1177/0267323118760317'))
+        refs = od.load_references()
+        self.assertEqual(len(refs), 32)
+        self.assertGreaterEqual(sum(bool(r['doi']) for r in refs), 10)
+        self.assertTrue(all(r['yil'] for r in refs))
+        md = '# Kaynakça\n\nBennett, W. L., & Livingston, S. (2018). The disinformation order. *European Journal of Communication, 33*(2), 122–139. https://doi.org/10.1177/0267323118760317\n'
+        b = od.parse_references(md)[0]
+        self.assertEqual((b['ilk_yazar'], b['yil'], b['doi']), ('Bennett', '2018', '10.1177/0267323118760317'))
         self.assertTrue(all(not u.endswith('.') for r in refs for u in r['urls']))
 
     def test_title_match(self):

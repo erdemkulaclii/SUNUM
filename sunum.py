@@ -156,7 +156,7 @@ def main() -> None:
     p.add_argument('--pdf', action='store_true', help='PDF yedeğini aç')
     p.add_argument('--kontrol', action='store_true', help='testleri ve sunum doğrulamasını çalıştır')
     p.add_argument('--tarayici-acma', action='store_true', help='yalnız sunucuyu başlat (tarayıcı açma)')
-    p.add_argument('--osint', action='store_true', help='makaledeki kaynakları, haber bağlantılarını ve alan adlarını açık kaynaklarla doğrula')
+    p.add_argument('--osint', action='store_true', help='sunumdaki kaynakları, haber bağlantılarını ve alan adlarını açık kaynaklarla doğrula')
     p.add_argument('--port', type=int)
     a = p.parse_args()
     if a.yeniden_uret:

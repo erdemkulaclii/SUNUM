@@ -1,4 +1,4 @@
-"""OSINT doğrulama aracı: makaledeki iddiaları açık kaynaklara karşı sınar.
+"""OSINT doğrulama aracı: sunumdaki kaynakları ve verileri açık kaynaklara karşı sınar.
 
 Kendi bilgisayarınızda çalıştırın (yalnız Python 3 standart kitaplığı gerekir):
 
@@ -135,6 +135,20 @@ def wayback(http: Http, url: str, ts: str = DISCLOSURE) -> dict:
 
 
 # ---------------------------------------------------------------- kaynakça
+def load_references() -> list[dict]:
+    """Sunumun kaynakçası (scripts/concise_references.json) → parse_references ile aynı biçim."""
+    out = []
+    for r in json.loads((R / 'scripts/concise_references.json').read_text()):
+        apa = html.unescape(re.sub(r'<[^>]+>', '', r.get('apa', '')))
+        url = r.get('url', '') or ''
+        doi = re.search(r'doi\.org/(\S+)', url) or re.search(r'https?://doi\.org/(\S+?)\.?(?:\s|$)', apa)
+        m = re.match(r'(.+?)\s\((\d{4}|t\.y\.|n\.d\.)', apa)
+        urls = [u for u in [url] if u and 'doi.org/' not in u]
+        out.append({'kaynak': f'{apa} {url}'.strip(), 'ilk_yazar': re.split(r'[,.(]', apa, 1)[0].strip(), 'yil': m.group(2) if m else '',
+                    'doi': doi.group(1).rstrip('.') if doi else '', 'urls': urls})
+    return out
+
+
 def parse_references(md: str) -> list[dict]:
     part = md.split('# Kaynakça', 1)[1]
     part = re.split(r'\n# ', part, 1)[0]
@@ -209,7 +223,7 @@ def check_url(http: Http, url: str) -> dict:
 
 
 def run_references(http: Http, workers: int) -> tuple[list[dict], list[dict]]:
-    refs = parse_references((R / 'makale/makale.md').read_text())
+    refs = load_references()
     rows = []
 
     def one(ref):
